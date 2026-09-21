@@ -30,7 +30,8 @@ const HEALTH_BANDS: GaugeBand[] = [
   { from: 0, to: 40, color: "#dc2626", label: "Stressed" },
   { from: 40, to: 60, color: "#d97706", label: "Vulnerable" },
   { from: 60, to: 75, color: "#eab308", label: "Stable" },
-  { from: 75, to: 100, color: "#16a34a", label: "Good" },
+  { from: 75, to: 90, color: "#4ade80", label: "Good" },
+  { from: 90, to: 100, color: "#16a34a", label: "Excellent" },
 ];
 
 
@@ -234,6 +235,47 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
 
       <section>
         <SectionHeader
+          icon={Landmark}
+          title="Relationship with IDBI"
+          toggleOptions={["Accounts & Products", "Loans & Credits", "Credit Cards"]}
+          selectedToggleOption={idbiView}
+          onToggleOptionChange={setIdbiView}
+        />
+        <MetricGrid metrics={customer.relationshipSummary.map((item: any, index: number) => ({ label: item.label, value: item.value, secondary: item.secondary, icon: [CalendarDays, Landmark, BadgeIndianRupee, CreditCard][index], tone: index === 2 ? "amber" as const : "blue" as const }))} />
+        {/* One table at a time behind the header toggle — no sub-headings over tables. */}
+        <div className="mt-4">
+          {idbiView === "Accounts & Products" && (
+            <CompactTable minWidth={680}>
+              <colgroup><col style={{ width: "30%" }} /><col style={{ width: "15%" }} /><col style={{ width: "21%" }} /><col style={{ width: "17%" }} /><col style={{ width: "17%" }} /></colgroup>
+              <TableHead><Th>Product</Th><Th>Account No</Th><Th center>Balance / Deposit Value</Th><Th center>Opened</Th><Th center>Status</Th></TableHead>
+              <tbody>{customer.accounts.map(row => {
+                const [product, account] = row.product.split(" · ");
+                return (
+                  <tr key={row.product}>
+                    <Td className="font-medium text-slate-900">{product}</Td>
+                    <Td className="tabular-nums">{account}</Td>
+                    <Td center className="font-semibold text-slate-900">{row.value}</Td>
+                    <Td center>{row.opened}</Td>
+                    <Td center><StatusPill tone="emerald">{row.status}</StatusPill></Td>
+                  </tr>
+                );
+              })}</tbody>
+            </CompactTable>
+          )}
+          {idbiView === "Loans & Credits" && (
+            <CompactTable minWidth={900}><TableHead><Th>Loan / Facility</Th><Th right>Outstanding</Th><Th right>Sanctioned Amount / Limit</Th><Th>Repayment</Th><Th>12-cycle Repayment</Th><Th>Status / Conduct</Th></TableHead><tbody>{customer.loans.map(row => <tr key={row.facility}><Td className="font-medium text-slate-900">{row.facility}</Td><Td right className="font-semibold">{row.outstanding}</Td><Td right>{row.limit}</Td><Td>{row.repayment}</Td><Td><RepaymentStrip values={row.timeline} /></Td><Td><StatusPill tone="emerald">{row.conduct}</StatusPill></Td></tr>)}</tbody></CompactTable>
+          )}
+          {idbiView === "Credit Cards" && (
+            <DataUnavailable
+              icon={ShieldAlert}
+              headline="No IDBI credit-card relationship found for this customer."
+              required="IDBI card records, or a bureau report from CIBIL, CRIF High Mark, Experian or Equifax for external cards"
+            />
+          )}
+        </div>
+      </section>
+      <section>
+        <SectionHeader
           icon={CreditCard}
           title="CIBIL Score Trend"
           action={
@@ -300,47 +342,6 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
         </div>
       </section>
 
-      <section>
-        <SectionHeader
-          icon={Landmark}
-          title="Relationship with IDBI"
-          toggleOptions={["Accounts & Products", "Loans & Credits", "Credit Cards"]}
-          selectedToggleOption={idbiView}
-          onToggleOptionChange={setIdbiView}
-        />
-        <MetricGrid metrics={customer.relationshipSummary.map((item: any, index: number) => ({ label: item.label, value: item.value, secondary: item.secondary, icon: [CalendarDays, Landmark, BadgeIndianRupee, CreditCard][index], tone: index === 2 ? "amber" as const : "blue" as const }))} />
-        {/* One table at a time behind the header toggle — no sub-headings over tables. */}
-        <div className="mt-4">
-          {idbiView === "Accounts & Products" && (
-            <CompactTable minWidth={680}>
-              <colgroup><col style={{ width: "30%" }} /><col style={{ width: "15%" }} /><col style={{ width: "21%" }} /><col style={{ width: "17%" }} /><col style={{ width: "17%" }} /></colgroup>
-              <TableHead><Th>Product</Th><Th>Account No</Th><Th>Balance / Deposit Value</Th><Th center>Opened</Th><Th center>Status</Th></TableHead>
-              <tbody>{customer.accounts.map(row => {
-                const [product, account] = row.product.split(" · ");
-                return (
-                  <tr key={row.product}>
-                    <Td className="font-medium text-slate-900">{product}</Td>
-                    <Td className="tabular-nums">{account}</Td>
-                    <Td className="font-semibold text-slate-900">{row.value}</Td>
-                    <Td center>{row.opened}</Td>
-                    <Td center><StatusPill tone="emerald">{row.status}</StatusPill></Td>
-                  </tr>
-                );
-              })}</tbody>
-            </CompactTable>
-          )}
-          {idbiView === "Loans & Credits" && (
-            <CompactTable minWidth={900}><TableHead><Th>Loan / Facility</Th><Th right>Outstanding</Th><Th right>Sanctioned Amount / Limit</Th><Th>Repayment</Th><Th>12-cycle Repayment</Th><Th>Status / Conduct</Th></TableHead><tbody>{customer.loans.map(row => <tr key={row.facility}><Td className="font-medium text-slate-900">{row.facility}</Td><Td right className="font-semibold">{row.outstanding}</Td><Td right>{row.limit}</Td><Td>{row.repayment}</Td><Td><RepaymentStrip values={row.timeline} /></Td><Td><StatusPill tone="emerald">{row.conduct}</StatusPill></Td></tr>)}</tbody></CompactTable>
-          )}
-          {idbiView === "Credit Cards" && (
-            <DataUnavailable
-              icon={ShieldAlert}
-              headline="No IDBI credit-card relationship found for this customer."
-              required="IDBI card records, or a bureau report from CIBIL, CRIF High Mark, Experian or Equifax for external cards"
-            />
-          )}
-        </div>
-      </section>
     </div>
   );
 }

@@ -14,6 +14,14 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { CustomCard } from "@/components/custom/CustomCard";
 import { BubbleTag } from "@/components/custom/BubbleTag";
 import { CollapseButton } from "@/components/custom/CollapseButton";
+import {
+  Table as ShadTable,
+  TableBody as ShadTableBody,
+  TableCell as ShadTableCell,
+  TableHead as ShadTableHead,
+  TableHeader as ShadTableHeader,
+  TableRow as ShadTableRow,
+} from "@/components/ui/table";
 import SectionHeaderWithFlags from "@/components/custom/SectionHeaderWithFlags";
 import { LucideIcon } from "lucide-react";
 
@@ -169,20 +177,45 @@ export function SegmentedToggle({ value, onChange, options }: { value: string; o
   );
 }
 
+/**
+ * Every table in the app renders through these four, so they all share one design.
+ * The language is the insolvency Financial Statements table: the shadcn Table
+ * primitives, header cells at py-2, body cells at py-3, right/centre alignment opt-in.
+ */
 export function CompactTable({ children, minWidth = 760 }: { children: React.ReactNode; minWidth?: number }) {
-  return <div className="overflow-x-auto rounded-lg border border-slate-200 bg-white"><table className="w-full border-collapse text-left text-xs" style={{ minWidth }}>{children}</table></div>;
+  // Bordered, rounded container with a tinted header — the framing the reference tables
+  // use. Without it a table just bleeds into the page.
+  return (
+    <div className="w-full overflow-hidden rounded-md border border-gray-200 bg-white">
+      <div className="overflow-x-auto">
+        <ShadTable style={{ minWidth }} className="[&_tbody_tr:last-child_td]:border-b-0">{children}</ShadTable>
+      </div>
+    </div>
+  );
 }
 
 export function TableHead({ children }: { children: React.ReactNode }) {
-  return <thead className="bg-slate-50 text-[10px] font-semibold uppercase tracking-[.055em] text-slate-500"><tr>{children}</tr></thead>;
+  return (
+    <ShadTableHeader className="bg-gray-50">
+      <ShadTableRow className="hover:bg-gray-50">{children}</ShadTableRow>
+    </ShadTableHeader>
+  );
 }
 
 export function Th({ children, right = false, center = false }: { children: React.ReactNode; right?: boolean; center?: boolean }) {
-  return <th className={cn("border-b border-slate-200 px-3 py-2.5 font-semibold", right && "text-right", center && "text-center")}>{children}</th>;
+  return (
+    <ShadTableHead className={cn("px-4 py-3 text-xs font-semibold uppercase tracking-wider text-gray-600", right && "text-right", center && "text-center")}>
+      {children}
+    </ShadTableHead>
+  );
 }
 
 export function Td({ children, right = false, center = false, className }: { children: React.ReactNode; right?: boolean; center?: boolean; className?: string }) {
-  return <td className={cn("border-b border-slate-100 px-3 py-3 align-top text-slate-700 last:border-b-0", right && "text-right", center && "text-center", className)}>{children}</td>;
+  return (
+    <ShadTableCell className={cn("border-b border-gray-200 px-4 py-3 align-top", right && "text-right", center && "text-center", className)}>
+      {children}
+    </ShadTableCell>
+  );
 }
 
 export function RepaymentStrip({ values }: { values: string[] }) {

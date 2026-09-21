@@ -9,15 +9,16 @@
 // from this app, so a driver opens as a docked tab rather than a sheet.
 
 import * as React from "react";
-import { BarChart3, CircleGauge, Coins, FileText, ListChecks, ShieldCheck, Sparkles, TrendingUp, ChevronRight } from "lucide-react";
+import { BarChart3, CalendarCheck, ChevronRight, Coins, CreditCard, FileText, Landmark, LifeBuoy, ListChecks, PiggyBank, Receipt, ShieldCheck, Sparkles, TrendingUp, Wallet } from "lucide-react";
 
 import data from "@/app/idbi-data/vandana-workspace.json";
 import { cn } from "@/lib/utils";
 import {
-  CompactTable, InfoTip, InsightBox, MetricCard, SectionHeader, SegmentedToggle,
-  StatusPill, TableHead, Td, Th,
+  InfoTip, InsightBox, MetricCard, SectionHeader, SegmentedToggle, StatusPill,
 } from "@/components/idbi/workspace-ui";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowSegmentBar, BandScale, GaugeBand } from "@/components/idbi/ScoreVisuals";
+import { FactTable } from "./FactTable";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
@@ -50,7 +51,8 @@ const HEALTH_BANDS: GaugeBand[] = [
   { from: 0, to: 40, color: "#dc2626", label: "Stressed" },
   { from: 40, to: 60, color: "#d97706", label: "Vulnerable" },
   { from: 60, to: 75, color: "#eab308", label: "Stable" },
-  { from: 75, to: 100, color: "#16a34a", label: "Good" },
+  { from: 75, to: 90, color: "#4ade80", label: "Good" },
+  { from: 90, to: 100, color: "#16a34a", label: "Excellent" },
 ];
 const DRIVER_COLORS = ["#1e4e8c", "#3b82f6", "#93c5fd"];
 const healthPanelBg = (score: number) => (score >= 75 ? "bg-green-50" : score >= 60 ? "bg-blue-50" : score >= 40 ? "bg-amber-50" : "bg-red-50");
@@ -63,6 +65,7 @@ const DRIVER_PLAIN: Record<string, { title: string; meaning: string }> = {
   "Financial Resilience": { title: "Cushion for a bad month", meaning: "Savings and deposits available if income dips for a while." },
 };
 const BAND_PLAIN: Record<string, string> = {
+  Excellent: "very strong, well ahead of peers",
   Good: "comfortable, can take on more",
   Stable: "steady, no immediate concern",
   Vulnerable: "tight, watch closely",
@@ -70,6 +73,25 @@ const BAND_PLAIN: Record<string, string> = {
 };
 
 const healthBandLabel = (score: number) => (HEALTH_BANDS.find(b => score >= b.from && score <= b.to) ?? HEALTH_BANDS[0]).label;
+
+/** Group icons, matching the Monthly Metrics grouping. */
+const GROUP_ICONS: Record<string, React.ElementType> = {
+  "cash-flow": TrendingUp, debt: Coins, resilience: ShieldCheck,
+};
+
+/** Per-driver icon, so a row is scannable without reading the code. */
+const DRIVER_ICONS: Record<string, React.ElementType> = {
+  CFS01: Wallet, CFS02: Receipt, CFS03: PiggyBank,
+  DBS01: Coins, DBS02: CalendarCheck, DBS03: CreditCard,
+  FRS01: ShieldCheck, FRS02: Landmark, FRS03: LifeBuoy,
+};
+
+const bandIconTone = (band: string) =>
+  band === "Strong" ? "bg-emerald-50 text-emerald-600"
+    : band === "Stable" ? "bg-blue-50 text-blue-600"
+      : band === "Vulnerable" || band === "Review" ? "bg-amber-50 text-amber-600"
+        : band === "Not applicable" ? "bg-slate-100 text-slate-500"
+          : "bg-rose-50 text-rose-600";
 
 const bandTone = (band: string) =>
   band === "Strong" ? "emerald"
@@ -130,19 +152,25 @@ export function AiAnalysisTab() {
       {d.components?.length > 0 && (
         <div className="mt-6 border-t border-slate-200 pt-5">
           <div className="flex items-center gap-2"><BarChart3 className="size-4 text-blue-600" /><h4 className="text-sm font-semibold text-slate-950">Key metrics</h4></div>
-          <div className="mt-3">
-            <CompactTable minWidth={380}>
-              <TableHead><Th>Metric</Th><Th>Current</Th><Th>Benchmark</Th></TableHead>
-              <tbody>
+          <div className="mt-3 overflow-x-auto">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className="py-2">Metric</TableHead>
+                  <TableHead className="py-2">Current</TableHead>
+                  <TableHead className="py-2">Benchmark</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
                 {d.components.map(c => (
-                  <tr key={c.metric}>
-                    <Td className="font-semibold text-slate-900">{c.label}</Td>
-                    <Td className="font-semibold tabular-nums">{c.value}</Td>
-                    <Td>{c.benchmark}</Td>
-                  </tr>
+                  <TableRow key={c.metric}>
+                    <TableCell className="py-3 font-medium text-slate-900">{c.label}</TableCell>
+                    <TableCell className="py-3 font-medium tabular-nums text-slate-900">{c.value}</TableCell>
+                    <TableCell className="py-3 text-slate-600">{c.benchmark}</TableCell>
+                  </TableRow>
                 ))}
-              </tbody>
-            </CompactTable>
+              </TableBody>
+            </Table>
           </div>
         </div>
       )}
@@ -166,55 +194,6 @@ export function AiAnalysisTab() {
               <><strong>Watchout:</strong> Build accessible reserves towards at least three months of regular expenses and debt commitments.</>,
             ]}
           />
-        </section>
-
-        <section>
-          <SectionHeader icon={CircleGauge} title="Financial Health Score" />
-          <div className="grid gap-4 xl:grid-cols-[1.06fr_.94fr]">
-            <div className="rounded-lg border border-slate-200 bg-white p-4">
-              <div className="flex flex-wrap items-end justify-between gap-3">
-                <div className="flex items-end gap-2">
-                  <span className="text-5xl font-semibold tracking-tight text-slate-950">{health.score}</span>
-                  <span className="pb-1 text-sm font-medium text-slate-400">/ 100</span>
-                  <span className="pb-1"><StatusPill tone="emerald">{health.band}</StatusPill></span>
-                </div>
-                <p className="pb-1 text-[11px] text-slate-500"><span className="font-semibold text-emerald-600">▲ +4</span> vs previous assessment</p>
-              </div>
-              <div className="mt-5"><BandScale score={health.score} bands={ASSESSMENT_BANDS} /></div>
-              <div className="mt-6 grid gap-3 sm:grid-cols-3">
-                {health.pillars.map((pillar: any) => {
-                  const v = PILLAR_VISUALS[pillar.id];
-                  return (
-                    <MetricCard
-                      key={pillar.id}
-                      icon={v.icon}
-                      label={pillar.label}
-                      value={`${pillar.score} · ${pillar.band}`}
-                      secondary={v.copy}
-                      tone={v.tone}
-                    />
-                  );
-                })}
-              </div>
-            </div>
-
-            <div className="rounded-lg border border-slate-200 bg-white p-4">
-              <div className="flex items-center gap-2">
-                <FileText className="size-4 text-blue-600" />
-                <h3 className="text-sm font-semibold text-slate-950">Assessment Commentary</h3>
-                <InfoTip text="Plain-language interpretation of the three Financial Health pillars. A contextual demo assessment, not a credit decision." />
-              </div>
-              <div className="mt-3 divide-y divide-slate-200">
-                {(health.summary as Array<{ label: string; text: string }>).slice(1).map(row => (
-                  <div key={row.label} className="grid gap-2 py-3 sm:grid-cols-[104px_1fr]">
-                    <p className="text-xs font-semibold text-slate-900">{row.label}</p>
-                    <p className="text-xs leading-5 text-slate-600">{row.text}</p>
-                  </div>
-                ))}
-              </div>
-              <p className="mt-3 rounded-lg border border-blue-100 bg-blue-50 px-3 py-2.5 text-[11px] leading-5 text-blue-900">{health.calculationSummary}</p>
-            </div>
-          </div>
         </section>
 
       <section>
@@ -321,6 +300,15 @@ export function AiAnalysisTab() {
       </section>
 
         <section>
+          <SectionHeader icon={FileText} title="Assessment Commentary" />
+            <FactTable
+              rows={(health.summary as Array<{ label: string; text: string }>).slice(1).map(row => ({ label: row.label, value: row.text }))}
+              labelWidth="200px"
+            />
+            <p className="mt-3 rounded-lg border border-blue-100 bg-blue-50 px-3 py-2.5 text-[11px] leading-5 text-blue-900">{health.calculationSummary}</p>
+        </section>
+
+        <section>
           <SectionHeader
             icon={ListChecks}
             title="Assessment Drivers & Flags"
@@ -335,6 +323,7 @@ export function AiAnalysisTab() {
               />
             }
           />
+          {/* Group filter sits between the section header and the table. */}
           {!showingNA && (
             <div className="mb-3">
               <SegmentedToggle
@@ -348,35 +337,46 @@ export function AiAnalysisTab() {
             </div>
           )}
 
-          <div className="space-y-4">
-            {groups.map(group => (
-              <div key={group.id}>
-                <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-slate-500">
-                  {group.label} <span className="font-medium text-slate-400">({group.drivers.length})</span>
-                </p>
-                <CompactTable minWidth={820}>
-                  <TableHead><Th>Driver</Th><Th>Insight</Th><Th center>Score</Th><Th center>Status</Th><Th> </Th></TableHead>
-                  <tbody>
+          <div className="overflow-x-auto">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className="sticky left-0 z-10 w-[360px] bg-white py-2">Driver</TableHead>
+                  <TableHead className="w-[42%] py-2">Insight</TableHead>
+                  <TableHead className="py-2 text-right">Score</TableHead>
+                  <TableHead className="py-2">Status</TableHead>
+                  <TableHead className="w-10 py-2"> </TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {groups.map(group => (
+                  <React.Fragment key={group.id}>
+                    <TableRow className="bg-slate-50 hover:bg-slate-50">
+                      <TableCell colSpan={5} className="sticky left-0 bg-slate-50 py-1.5 font-semibold">
+                        <span className="inline-flex items-center gap-2">
+                          {(() => { const GIcon = GROUP_ICONS[group.id] ?? ListChecks; return <GIcon className="size-3.5 text-blue-600" />; })()}
+                          {group.label} <span className="font-medium text-slate-400">({group.drivers.length})</span>
+                        </span>
+                      </TableCell>
+                    </TableRow>
                     {group.drivers.map(driver => (
-                      <tr
-                        key={driver.code}
-                        onClick={() => openDriver(driver)}
-                        className="cursor-pointer transition-colors hover:bg-[#f4f8ff]"
-                      >
-                        <Td>
-                          <span className="mr-2 font-mono text-[10px] font-semibold tracking-[.04em] text-slate-500">{driver.code}</span>
-                          <span className="font-semibold text-slate-900">{driver.name}</span>
-                        </Td>
-                        <Td className="text-slate-600">{driver.assessment}</Td>
-                        <Td center className="font-semibold tabular-nums text-slate-800">{typeof driver.score === "number" ? driver.score : "—"}</Td>
-                        <Td center><StatusPill tone={bandTone(driver.band) as any}>{driver.band}</StatusPill></Td>
-                        <Td center><ChevronRight className="size-4 text-slate-400" /></Td>
-                      </tr>
+                      <TableRow key={driver.code} onClick={() => openDriver(driver)} className="cursor-pointer">
+                        <TableCell className="sticky left-0 bg-white py-3">
+                          <span className="flex min-w-0 items-baseline gap-2">
+                            <span className="font-medium text-slate-900">{driver.name}</span>
+                            <span className="shrink-0 font-mono text-[10px] font-semibold tracking-[.04em] text-slate-400">{driver.code}</span>
+                          </span>
+                        </TableCell>
+                        <TableCell className="py-3 text-slate-600">{driver.assessment}</TableCell>
+                        <TableCell className="py-3 text-right font-medium tabular-nums text-slate-800">{typeof driver.score === "number" ? driver.score : "—"}</TableCell>
+                        <TableCell className="py-3"><StatusPill tone={bandTone(driver.band) as any}>{driver.band}</StatusPill></TableCell>
+                        <TableCell className="py-3"><ChevronRight className="size-4 text-slate-400" /></TableCell>
+                      </TableRow>
                     ))}
-                  </tbody>
-                </CompactTable>
-              </div>
-            ))}
+                  </React.Fragment>
+                ))}
+              </TableBody>
+            </Table>
           </div>
         </section>
       <Sheet open={Boolean(selectedDriver)} onOpenChange={open => !open && setSelectedDriver(null)}>

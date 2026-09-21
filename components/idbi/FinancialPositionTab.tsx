@@ -144,10 +144,10 @@ export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: 
 
         {cashflowView === "monthly" ? (
           <>
-            <div className="mt-4"><CompactTable minWidth={760}><TableHead><Th>Month</Th><Th right>Income</Th><Th right>Spending</Th><Th>Income vs Spending</Th><Th right>Net</Th><Th right>Closing Balance</Th><Th right>Bounces</Th></TableHead><tbody>{months.slice().reverse().map(row => {
+            <div className="mt-4"><CompactTable minWidth={760}><TableHead><Th>Month</Th><Th right>Income</Th><Th right>Spending</Th><Th><span className="pl-16">Income vs Spending</span></Th><Th right>Net</Th><Th right>Closing Balance</Th><Th right>Bounces</Th></TableHead><tbody>{months.slice().reverse().map(row => {
               const net = row.income - row.spending;
               const max = Math.max(row.income, row.spending);
-              return <tr key={row.month}><Td className="font-semibold text-slate-900">{row.month} 2026</Td><Td right>₹{row.income.toFixed(2)}L</Td><Td right>₹{row.spending.toFixed(2)}L</Td><Td><div className="flex w-28 items-center gap-1 pl-8"><span className="h-1.5 rounded-full bg-emerald-500" style={{ width: `${Math.max(18, (row.income / max) * 52)}px` }} /><span className="h-1.5 rounded-full bg-rose-400" style={{ width: `${Math.max(18, (row.spending / max) * 52)}px` }} /></div></Td><Td right className={net >= 0 ? "font-semibold text-emerald-700" : "font-semibold text-rose-600"}>{net >= 0 ? "+" : "−"}₹{Math.abs(net).toFixed(2)}L</Td><Td right>₹{row.closing.toFixed(2)}L</Td><Td right className={row.bounces ? "font-semibold text-amber-700" : undefined}>{row.bounces}</Td></tr>;
+              return <tr key={row.month}><Td className="font-semibold text-slate-900">{row.month} 2026</Td><Td right>₹{row.income.toFixed(2)}L</Td><Td right>₹{row.spending.toFixed(2)}L</Td><Td><div className="flex w-28 items-center gap-1 pl-16"><span className="h-1.5 rounded-full bg-emerald-500" style={{ width: `${Math.max(18, (row.income / max) * 52)}px` }} /><span className="h-1.5 rounded-full bg-rose-400" style={{ width: `${Math.max(18, (row.spending / max) * 52)}px` }} /></div></Td><Td right className={net >= 0 ? "font-semibold text-emerald-700" : "font-semibold text-rose-600"}>{net >= 0 ? "+" : "−"}₹{Math.abs(net).toFixed(2)}L</Td><Td right>₹{row.closing.toFixed(2)}L</Td><Td right className={row.bounces ? "font-semibold text-amber-700" : undefined}>{row.bounces}</Td></tr>;
             })}</tbody></CompactTable></div>
           </>
         ) : (
