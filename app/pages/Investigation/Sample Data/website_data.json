@@ -1,0 +1,785 @@
+{
+    "website_status": {
+        "https_enabled": true,
+        "status_code": 200,
+        "ssl_certificate_valid": true,
+        "final_url": "https://cracku.in/",
+        "response_time": "0.5909309387207031 seconds"
+    },
+    "domain_info": {
+        "domain_information": {
+            "ip_address": "174.138.120.144",
+            "country": "India",
+            "owner": "None",
+            "created_date": "None",
+            "age": "None",
+            "registrar": "None",
+            "privacy_protection": "None",
+            "https_certificates": [
+                "SSL certificate (valid)"
+            ],
+            "is_subdomain": "No. The website URL (https://cracku.in) uses its own domain and does not contain Shopify, Zoho Commerce, Vercel, Wordpress, or similar subdomain service providers."
+        }
+    },
+    "about_data": {
+        "name": "cracku",
+        "lob": "Online education platform focused on preparation for MBA entrance exams (CAT, XAT, SNAP, NMAT, CMAT, MAH-MBA-CET, SRCC GBO, CUET PG, IPMAT, GMAT) and related management entrance tests.",
+        "copyright_line": "©2014-2025 Chaya Education Pvt Ltd | Terms and Conditions | Privacy Policy Made In India ❤️"
+    },
+    "social_media_data": {
+        "urls": [
+            {
+                "name": "YouTube",
+                "link": "https://www.youtube.com/channel/UCjrG4n3cS6y45BfCJjp3boQ",
+                "status": "Working",
+                "profile_exists": "yes"
+            },
+            {
+                "name": "Instagram",
+                "link": "https://www.instagram.com/crackuexam",
+                "status": "Working",
+                "profile_exists": "yes"
+            },
+            {
+                "name": "Facebook",
+                "link": "https://www.facebook.com/crackuexam",
+                "status": "Working",
+                "profile_exists": "yes"
+            },
+            {
+                "name": "LinkedIn",
+                "link": "https://www.linkedin.com/company/cracku/",
+                "status": "Working",
+                "profile_exists": "yes"
+            },
+            {
+                "name": "WhatsApp",
+                "link": "https://cracku.in/s/cracku-whatsapp-group",
+                "status": "Working",
+                "profile_exists": "yes"
+            }
+        ]
+    },
+    "facebook_social_media_data": [
+        {
+            "url": "https://www.facebook.com/crackuexam/",
+            "description": "Cracku, Hyderabad. 39248 likes · 965 talking about this. We are a group of IIM Ahmedabad Alumni helping students prepare for competitive examinations.",
+            "aligned_with_lob": {
+                "reasoning": "Explicitly states helping students prepare for competitive examinations and is repeatedly associated with MBA and CAT exam updates in the context.",
+                "binary": "yes"
+            },
+            "site_data": {
+                "facebook": {
+                    "url": "https://www.facebook.com/crackuexam/",
+                    "followers": "39K",
+                    "number_of_posts": 10,
+                    "detailed_about_merchant": "Cracku is an education website based in Hyderabad, India, with a follower base of 39,000 on Facebook. Their primary content consists of short video reels focused on educational topics. Cracku's Facebook activity centers around providing video-based learning materials, tips, and strategies for competitive exam preparation—especially for exams like the Common Admission Test (CAT). The page promotes online courses and study resources through its website links and consistent video posts. No descriptive text or titles were found for individual posts or reels in the visible section; however, their educational focus is reinforced by their web presence and business category.",
+                    "address_or_contact": {
+                        "address": "Hyderabad, Hyderabad, India, 500084",
+                        "mobile": "063032 39042",
+                        "email": "support@cracku.in"
+                    },
+                    "profile_logo_features": "The Cracku profile logo is circular with a dominant blue background color. The central design features white font with the brand name 'cracku' in lowercase letters. The font style is modern sans-serif with rounded edges for a friendly appearance. There is a white icon resembling an open book above or integrated within the text, reinforcing the educational theme. The overall arrangement is clean and visually balanced, supporting strong brand identity consistency across digital platforms."
+                }
+            }
+        },
+        {
+            "url": "https://www.facebook.com/crackuexam?locale=gn_PY",
+            "description": "Cracku. We are a group of IIM Ahmedabad Alumni helping students prepare for competitive examinations.",
+            "aligned_with_lob": {
+                "reasoning": "This is an alternate locale link of the main page above, describing preparation for competitive exams.",
+                "binary": "yes"
+            },
+            "site_data": {
+                "social_media": [
+                    {
+                        "platform": "Facebook",
+                        "url": "https://www.facebook.com/crackuexam?locale=gn_PY",
+                        "followers": "39 mil",
+                        "number_of_posts": null,
+                        "about_merchant": "We are a group of IIM Ahmedabad Alumni helping students prepare for competitive examinations.",
+                        "address_or_contact": {
+                            "address": "Hyderabad, Hyderabad, India, Telangana",
+                            "phone": "063032 39042",
+                            "email": "support@cracku.in"
+                        },
+                        "profile_logo_features": "The profile logo has a dominant blue background with a white circular border. Inside the circle is an icon featuring a graduation cap above a pair of eyeglasses, both rendered in white. Below the icon is the text 'cracku' in lowercase sans-serif font in white. The design is simple and academic-themed, presenting a clean and professional brand identity focused on education."
+                    }
+                ]
+            }
+        },
+        {
+            "url": "https://www.facebook.com/groups/cracku/",
+            "description": "This group is created to bring all CAT aspirants together in one place so that they can discuss and improve their performance in the examination.",
+            "aligned_with_lob": {
+                "reasoning": "Focus on CAT aspirants (MBA entrance exam), group context for preparation.",
+                "binary": "yes"
+            },
+            "site_data": {
+                "facebook": {
+                    "url": "https://www.facebook.com/groups/cracku/",
+                    "followers": "20,396 members",
+                    "number_of_posts": "7 posts in the last month",
+                    "about_merchant": "This group is created to bring all CAT aspirants together in one place so that they can discuss and improve their performance in the examination.",
+                    "address_or_contact": null,
+                    "profile_logo_features": "The banner/logo at the top features a large blue background with white bold text stating “3 FULL-LENGTH FREE CAT MOCKS” and additional smaller white text below it (“With Solutions, Analysis & Percentile”). There is a pink-red horizontal area at the bottom edge of the banner. The font is modern, bold, sans-serif, with high contrast against the blue background. No specific icons beyond text are visible; overall presentation emphasizes clarity and educational offer."
+                }
+            }
+        }
+    ],
+    "instagram_social_media_data": [
+        {
+            "url": "https://www.instagram.com/crackuexam/",
+            "description": "India's #1 CAT Online Coaching 540+ 99%iler & 250+ Converted Top IIMs In 2024 Trusted for 11+ Years +91 6303239042 CAT/MBA & FREE content ...",
+            "aligned_with_lob": {
+                "reasoning": "This Instagram profile is directly related to online MBA exam coaching and education services, specifically for CAT/MBA preparation.",
+                "binary": "yes"
+            },
+            "site_data": {
+                "social_media": [
+                    {
+                        "platform": "Instagram",
+                        "username": "crackuexam",
+                        "profile_url": "https://www.instagram.com/crackuexam/",
+                        "followers": "52.3K",
+                        "number_of_posts": "3,800",
+                        "about_merchant": "Cracku | CAT Online Coaching & MBA Entrance Prep. India's #1 CAT Online Coaching. 540+ students scored 99 percentile or higher, and 250+ converted to top IIMs in 2024. Trusted for over 11 years in the industry. The profile highlights educational resources such as WhatsApp Groups, Profile Reviews, Success Stories, Challenges, Tips for CAT, Formulae Sheets, Study Resources, and more—showcasing a focus on supporting students preparing for competitive MBA entrance exams like CAT.",
+                        "contact_info": {
+                            "phone": "+91 6303239042",
+                            "website": "cracku.in/s/cat-whatsapp-group",
+                            "physical_address": null
+                        },
+                        "profile_logo_features": "The profile logo is circular with a dominant blue background inside a multi-color ring border (pink/yellow gradient). The central icon is a white graduation cap positioned above stylized round eyeglasses—suggesting education and intelligence. The word 'cracku' appears in lowercase below the icon in a clean sans-serif font; text color is white/light blue contrasting against the blue background. The design is minimalistic, modern, and visually impactful—emphasizing clarity and academic achievement."
+                    }
+                ]
+            }
+        }
+    ],
+    "linkedin_social_media_data": [
+        {
+            "url": "https://in.linkedin.com/company/cracku",
+            "description": "We are a group of IIT-IIM alumni looking to revolutionize the way students prepare for entrance exams. We believe preparation can be more social and fun.",
+            "aligned_with_lob": {
+                "reasoning": "The description clearly identifies Cracku as a company focused on online education for entrance exams.",
+                "binary": "yes"
+            },
+            "site_data": {
+                "linkedin": {
+                    "url": "https://www.linkedin.com/company/cracku/",
+                    "followers": 6555,
+                    "number_of_employees": "11-50",
+                    "number_of_posts": null,
+                    "about_merchant": "A smarter way to prepare for CAT & Other MBA exams - #Learn, #Practice, #Succeed!",
+                    "address_or_contact": "Hyderabad, Telangana  \nhr@cracku.in / 8978676084",
+                    "profile_logo_features": {
+                        "dominant_colors": [
+                            "Blue",
+                            "White"
+                        ],
+                        "logo_style": "Blue square containing a simple white icon of a graduation cap sitting above round spectacles.",
+                        "typography": "No text present within the logo itself.",
+                        "iconography_patterns": "Graduation cap and glasses symbolizing education/preparation focus; clean minimal style with strong color contrast.",
+                        "brand_text": "Brand text ('Cracku') appears adjacent to but not inside the logo on profile page header."
+                    }
+                }
+            }
+        },
+        {
+            "url": "https://in.linkedin.com/in/srikanthlingamneni",
+            "description": "Hyderabad, Telangana, India · Co-Founder · Cracku. Co-Founder at Cracku.in · Experience: Cracku · Education: Indian Institute of Management, Calcutta · Location: Hyderabad · 219 connections on LinkedIn.",
+            "aligned_with_lob": {
+                "reasoning": "Profile is for a co-founder of Cracku, which is directly related to the company's online education business.",
+                "binary": "yes"
+            },
+            "site_data": {
+                "social_media": [
+                    {
+                        "platform": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/srikanthlingamneni/",
+                        "followers": 314,
+                        "number_of_employees": null,
+                        "number_of_posts": 0,
+                        "about_merchant": {
+                            "name": "srikanth lingamneni",
+                            "title": "Co-Founder at Cracku.in",
+                            "location": "Hyderabad, Telangana, India",
+                            "associated_organization": [
+                                "Cracku.in",
+                                "Indian Institute of Management, Calcutta"
+                            ],
+                            "company_description": null
+                        },
+                        "address_or_contact": {
+                            "location": "Hyderabad, Telangana, India",
+                            "address": null,
+                            "contact": null
+                        },
+                        "profile_logo_features": {
+                            "dominant_colors": "blue background, person wearing glasses and a dark suit",
+                            "font_typography": "Standard LinkedIn sans-serif fonts",
+                            "notable_icons_patterns": "No notable brand icons; only an individual portrait photograph",
+                            "arrangement_of_brand_text": "Name at top center with title/co-founder role below it; company logos shown as small icons to the right under experience/education sections"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "url": "https://in.linkedin.com/in/sayali-kale-160628a",
+            "description": "Andhra Pradesh, India · Co-founder · Cracku. Cracku.in is an online test-preparation portal to help students prepare for MBA entrance exams. I am responsible for content development for Cracku.",
+            "aligned_with_lob": {
+                "reasoning": "Profile is for a co-founder and describes Cracku’s line of business as an online test-prep portal for MBA exams.",
+                "binary": "yes"
+            },
+            "site_data": {
+                "linkedin_url": "https://www.linkedin.com/in/sayali-kale-160628a",
+                "followers": null,
+                "connections": 79,
+                "number_of_employees": null,
+                "number_of_posts": null,
+                "about_merchant": null,
+                "address_or_contact": "Andhra Pradesh, India",
+                "profile_logo_features": "Blank placeholder circle with a pale blue background; no icons, brand marks, text, or distinguishable color/style elements."
+            }
+        }
+    ],
+    "youtube_social_media_data": [
+        {
+            "url": "https://www.youtube.com/@CrackuInexam",
+            "description": "CAT 2025 Preparation Videos | Complete Lectures & Tutorials · Start your CAT 2025 preparation with Cracku's complete video lecture series! · CAT 2026 Quant ...",
+            "aligned_with_lob": {
+                "reasoning": "The snippet highlights complete lectures and tutorials for CAT preparation, which matches Cracku's business focus on MBA entrance exam prep.",
+                "binary": "yes"
+            },
+            "site_data": {
+                "social_media": [
+                    {
+                        "platform": "YouTube",
+                        "url": "https://www.youtube.com/@CrackuInexam",
+                        "number_of_subscribers": "200K subscribers",
+                        "total_videos_or_reels": "2.8K videos",
+                        "address_or_contact": "Not available from channel homepage or visible sections.",
+                        "profile_logo_features": {
+                            "dominant_colors": "Bright blue background with white iconography",
+                            "icon_pattern": "Stylized white graduation cap above a pair of glasses; clean circular design",
+                            "typography": "The text 'cracku' appears in lowercase sans-serif font below the icon in white",
+                            "brand_text_arrangement": "Icon and text are centrally aligned within a circular frame; simple and modern layout",
+                            "visual_impact": "High contrast between blue and white; minimalistic and professional look"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=kJ-OrYaX0pw",
+            "description": "In this video, Sayali Ma'am explains the complete details of Cracku's CAT 2025 Course, including the resources provided and how to best ...",
+            "aligned_with_lob": {
+                "reasoning": "The video provides details about Cracku’s CAT course and resources, directly related to their educational offerings.",
+                "binary": "yes"
+            },
+            "site_data": {
+                "platform": "YouTube",
+                "profile_url": "https://www.youtube.com/@CrackuInexam",
+                "number_of_subscribers": "200K subscribers",
+                "total_videos_or_reels": "2.8K videos",
+                "address_or_contact": "Not available on the channel page.",
+                "profile_logo_features": {
+                    "dominant_color": "Blue background (#2299e7 approx)",
+                    "icon": "White graduation cap and eyeglasses icon centered above text",
+                    "typography": "Lowercase sans-serif font ('cracku'), clean and modern in white",
+                    "arrangement": "Icon above, text below; simple circular badge style",
+                    "visual_impact": "Strong academic theme, approachable branding; high contrast with minimal distractions; visually consistent with educational identity."
+                }
+            }
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=KR_aKPFm8Xo",
+            "description": "You can upload your response sheet on the Krakco score calculator and you'll get your raw score your expected skilled score and your expected percentile.",
+            "aligned_with_lob": {
+                "reasoning": "The snippet discusses a tool for calculating CAT scores, relevant to test preparation—a key service offered by Cracku.",
+                "binary": "yes"
+            },
+            "site_data": {
+                "youtube_url": [
+                    "https://www.youtube.com/@CrackuInexam",
+                    "https://www.youtube.com/channel/UCjrG4n3cS6y45BfCJjp3boQ"
+                ],
+                "number_of_subscribers": "200K subscribers",
+                "total_videos_or_reels": "Not displayed on this screen",
+                "address_or_contact": "Not present on this page",
+                "profile_logo_features": "The profile logo is a circular blue icon featuring a white stylized text 'cracku' in modern sans-serif font. Above one of the letters is a simple white graduation cap icon. The arrangement is horizontal, with no additional complex patterns or icons. The design emphasizes clarity and educational branding with its minimalistic color scheme (blue and white) and direct academic symbolism."
+            }
+        }
+    ],
+    "play.google_social_media_data": [
+        {
+            "url": "https://play.google.com/store/apps/details?id=in.cracku.app&hl=en_IN",
+            "description": "Cracku CAT 2025 Preparation – Best Online Coaching for MBA Exams! Download the Ultimate CAT 2025 Preparation App! Get ready for CAT, XAT, NMAT, SNAP, CMAT,...",
+            "aligned_with_lob": {
+                "reasoning": "This app is specifically targeted at preparation for MBA entrance exams (CAT, XAT, NMAT, SNAP, CMAT), which is directly aligned with Cracku's LOB.",
+                "binary": "yes"
+            },
+            "site_data": {
+                "play_store_url": "https://play.google.com/store/apps/details?id=in.cracku.app&hl=en_IN",
+                "number_of_downloads": "5L+",
+                "app_rating": "4.8",
+                "address_or_contact": "WhatsApp contact was displayed in a developer response within user reviews; no additional address is listed on this page.",
+                "profile_logo_features": {
+                    "dominant_colors": "Blue background with white foreground elements.",
+                    "key_icons_patterns": "The logo consists of a white graduation cap angled to the right above a pair of round spectacles; both icons are centered within a rounded blue square.",
+                    "font_typography_styles": "There is no brand text or typography present within the logo itself; it is icon-based only.",
+                    "presentation_arrangement": "The graduation cap overlays directly above the spectacles, creating an academic/educational visual impression with a clean and modern flat design style. The use of minimalistic iconography and strong color contrast supports high brand identity consistency and visual impact."
+                },
+                "social_media_links": []
+            }
+        },
+        {
+            "url": "https://play.google.com/store/apps/developer?id=Cracku",
+            "description": "Android Apps by Cracku on Google Play. Games · Apps · Movies & TV · Books · Kids ... Cracku. 4.9star. Google Play. Play Pass · Play Points · Gift cards · Redeem.",
+            "aligned_with_lob": {
+                "reasoning": "This is the official developer page listing all apps by Cracku; it includes their educational apps for MBA/management entrance exams preparation and is thus aligned with the LOB.",
+                "binary": "yes"
+            },
+            "site_data": {
+                "apps": [
+                    {
+                        "name": "CAT Exam Preparation 2025",
+                        "play_store_url": "https://play.google.com/store/apps/details?id=in.cracku.app",
+                        "number_of_downloads": "Not available",
+                        "app_rating": "4.8",
+                        "address_or_contact": "Not available"
+                    },
+                    {
+                        "name": "GMATPoint: GMAT Prep by Cracku",
+                        "play_store_url": "https://play.google.com/store/apps/details?id=com.gmatpoint.app",
+                        "number_of_downloads": "Not available",
+                        "app_rating": "4.3",
+                        "address_or_contact": "Not available"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "https://play.google.com/store/apps/developer?id=Cracku&hl=pa",
+            "description": "ਸਭ ਤੋਂ ਨਵੀਆਂ ਲੱਖਾਂ ਹੀ Android ਐਪਾਂ, ਗੇਮਾਂ, ਸੰਗੀਤ, ਫ਼ਿਲਮਾਂ, ਟੀਵੀ, ਕਿਤਾਬਾਂ, ਰਸਾਲਿਆਂ ਅਤੇ ਹੋਰ ਚੀਜ਼ਾਂ ਦਾ ਆਨੰਦ ਮਾਣੋ। ਤੁਹਾਡੀ ਡੀਵਾਈਸਾਂ ਵਿਚਕਾਰ ਕਿਸੇ ਵੇਲੇ ਵੀ, ਕਿਤੋਂ ਵੀ। (Enjoy millions of latest Android apps...)",
+            "aligned_with_lob": {
+                "reasoning": "This is another language version of the official developer page for Cracku's educational apps focused on MBA/management entrance exam preparation.",
+                "binary": "yes"
+            },
+            "site_data": {
+                "apps": [
+                    {
+                        "play_store_url": "https://play.google.com/store/apps/details?id=in.cracku.app",
+                        "number_of_downloads": "Not visible",
+                        "app_rating": "4.8 out of 5",
+                        "address_or_contact": "Not visible",
+                        "profile_logo_features": {
+                            "image_url": "https://play-lh.googleusercontent.com/YyZ-5aqWcF1z1w63I9yO1G_rf7-T3-kv0B8jU-e3V7CC60VjINaG7IhWK9xejden7aQ=s64-rw",
+                            "description": "No textual description available"
+                        }
+                    },
+                    {
+                        "play_store_url": "https://play.google.com/store/apps/details?id=com.gmatpoint.app",
+                        "number_of_downloads": "Not visible",
+                        "app_rating": "4.3 out of 5",
+                        "address_or_contact": "Not visible",
+                        "profile_logo_features": {
+                            "image_url": "https://play-lh.googleusercontent.com/9MWkY3uFPD8RitoLaU27J0v4uq7Z05n6za0Gg6ZCRibtNS3V_cqhrzL1iazXgneDUA=s64-rw",
+                            "description": "No textual description available"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "apps.apple.com_social_media_data": [],
+    "navigation_flow": {
+        "url_analysis": {
+            "initial_url": "https://cracku.in/",
+            "final_url": "https://cracku.in/"
+        },
+        "navbar_links": {
+            "links": [
+                {
+                    "url": "https://cracku.in/cat-2026-course",
+                    "status": "working"
+                },
+                {
+                    "url": "https://cracku.in/cat-repeaters-batch",
+                    "status": "working"
+                },
+                {
+                    "url": "https://cracku.in/cat-mock-test",
+                    "status": "working"
+                },
+                {
+                    "url": "https://cracku.in/cat/sectional-tests",
+                    "status": "working"
+                },
+                {
+                    "url": "https://cracku.in/cat-previous-papers",
+                    "status": "working"
+                },
+                {
+                    "url": "https://cracku.in/xat-previous-papers",
+                    "status": "working"
+                },
+                {
+                    "url": "https://cracku.in/trending",
+                    "status": "working"
+                },
+                {
+                    "url": "https://cracku.in/users/login?next=/projected-percentile/",
+                    "status": "working"
+                }
+            ],
+            "summary": {
+                "working_count": 8,
+                "total_count": 8
+            }
+        },
+        "broken_links": [],
+        "signup_details": {
+            "redirects_to_external": false,
+            "signup_fields": [
+                "Name",
+                "Email",
+                "Password"
+            ]
+        },
+        "login_details": {
+            "redirects_to_external": false,
+            "login_fields": [
+                "Email",
+                "Password"
+            ]
+        },
+        "critical_issues": []
+    },
+    "contact_data": {
+        "website_urls": [
+            "https://cracku.in/",
+            "https://cracku.in/about",
+            "https://cracku.in/jobs",
+            "https://cracku.in/terms",
+            "https://cracku.in/privacy"
+        ],
+        "communication_channels": [
+            "Email",
+            "Phone Call"
+        ],
+        "phone_numbers": [
+            "+91 630 323 9042"
+        ],
+        "email_ids": [
+            "support@cracku.in"
+        ],
+        "contact_addresses": []
+    },
+    "policy_data": {
+        "urls": [
+            {
+                "name": "Terms and Conditions",
+                "legal_name": "Chaya Education Private Limited",
+                "link": "https://cracku.in/terms",
+                "summary": "The Terms and Conditions govern access and use of www.cracku.in, outlining user obligations, membership rules, payment/refund policies, third-party content, intellectual property rights, disclaimers, limitations of liability, dispute resolution procedures, and compliance with applicable laws."
+            },
+            {
+                "name": "Privacy Policy",
+                "legal_name": "Chaya Education Private Limited",
+                "link": "https://cracku.in/privacy",
+                "summary": "Chaya Education Private Limited's Privacy Policy outlines how personal information (name, email, etc.) is collected via registration or Facebook login, use of cookies, usage for service provision and security, possible disclosure under legal compulsion, and retention practices."
+            }
+        ]
+    },
+    "product_analysis": {
+        "navigation_links": [
+            {
+                "link_name": "Our Courses",
+                "link_url": "Not available",
+                "top_10_products": [
+                    {
+                        "product_name": "CAT 2026 Exclusive",
+                        "product_description": "Get intensive, targeted preparation with expert guidance, daily live classes for CAT, and comprehensive practice materials for CAT 2026 exam with focused study plan.",
+                        "customization_options": "Not specified",
+                        "price": {
+                            "original_price": "49999",
+                            "discount_percentage": "40",
+                            "final_price": "29999",
+                            "currency": "INR"
+                        },
+                        "sku": "Not available",
+                        "pricing_analysis": {
+                            "description": "Discounted price is consistent with Indian MBA entrance exam coaching market.",
+                            "is_suspicious": "False",
+                            "analysis_reason": "Discounted price is within typical range for online test prep services in India.",
+                            "market_comparison": "Comparable to industry standard for this product category."
+                        }
+                    },
+                    {
+                        "product_name": "CAT 2026 Complete Cracku",
+                        "product_description": "Intensive preparation with daily live classes & materials for CAT/other MBA exams; focused study plan.",
+                        "customization_options": "Not specified",
+                        "price": {
+                            "original_price": "79999",
+                            "discount_percentage": "Not available",
+                            "final_price": "39999",
+                            "currency": "INR"
+                        },
+                        "sku": "Not available",
+                        "pricing_analysis": {
+                            "description": "Discounted price is consistent with Indian MBA entrance exam coaching market.",
+                            "is_suspicious": "False",
+                            "analysis_reason": "Discounted price is within typical range for online test prep services in India.",
+                            "market_comparison": "Comparable to industry standard for this product category."
+                        }
+                    },
+                    {
+                        "product_name": "CAT Repeaters Batch (Exclusively For CAT)",
+                        "product_description": "Strategic prep for repeaters with expert guidance; detailed schedule & materials.",
+                        "customization_options": "Not specified",
+                        "price": {
+                            "original_price": "59999",
+                            "discount_percentage": "58",
+                            "final_price": "24999",
+                            "currency": "INR"
+                        },
+                        "sku": "Not available",
+                        "pricing_analysis": {
+                            "description": "Discounted price is consistent with Indian MBA entrance exam coaching market.",
+                            "is_suspicious": "False",
+                            "analysis_reason": "Discounted price is within typical range for online test prep services in India.",
+                            "market_comparison": "Comparable to industry standard for this product category."
+                        }
+                    },
+                    {
+                        "product_name": "CAT 2027 Complete Cracku",
+                        "product_description": "Intensive prep for CAT/other MBA exams with live classes & materials; focused study plan.",
+                        "customization_options": "Not specified",
+                        "price": {
+                            "original_price": "99999",
+                            "discount_percentage": "Not available",
+                            "final_price": "59999",
+                            "currency": "INR"
+                        },
+                        "sku": "Not available",
+                        "pricing_analysis": {
+                            "description": "Discounted price is consistent with Indian MBA entrance exam coaching market.",
+                            "is_suspicious": "False",
+                            "analysis_reason": "Discounted price is within typical range for online test prep services in India.",
+                            "market_comparison": "Comparable to industry standard for this product category."
+                        }
+                    },
+                    {
+                        "product_name": "XAT Crash Course Online Coaching (Pre-recorded)",
+                        "product_description": "Videos/material by XAT topper; study plan/materials/test series incl.; starts today.",
+                        "customization_options": "Not specified",
+                        "price": {
+                            "original_price": "14999",
+                            "discount_percentage": "73",
+                            "final_price": "3999",
+                            "currency": "INR"
+                        },
+                        "sku": "Not available",
+                        "pricing_analysis": {
+                            "description": "Discounted price is consistent with Indian MBA entrance exam coaching market.",
+                            "is_suspicious": "False",
+                            "analysis_reason": "Discounted price is within typical range for online test prep services in India.",
+                            "market_comparison": "Comparable to industry standard for this product category."
+                        }
+                    },
+                    {
+                        "product_name": "XAT Crash Course Online Coaching (Inc. Live Classes)",
+                        "product_description": "Live classes/material by XAT topper; full material/test series included; starts today.",
+                        "customization_options": "Not specified",
+                        "price": {
+                            "original_price": "24999",
+                            "discount_percentage": "80",
+                            "final_price": "4999",
+                            "currency": "INR"
+                        },
+                        "sku": "Not available",
+                        "pricing_analysis": {
+                            "description": "Discounted price is consistent with Indian MBA entrance exam coaching market.",
+                            "is_suspicious": "False",
+                            "analysis_reason": "Discounted price is within typical range for online test prep services in India.",
+                            "market_comparison": "Comparable to industry standard for this product category."
+                        }
+                    },
+                    {
+                        "product_name": "XAT Mocks and Sectionals",
+                        "product_description": "All‐India full‐length mocks w/solns plus sectionals covering all topics.",
+                        "customization_options": "Not specified",
+                        "price": {
+                            "original_price": "2999",
+                            "discount_percentage": "50",
+                            "final_price": "1499",
+                            "currency": "INR"
+                        },
+                        "sku": "Not available",
+                        "pricing_analysis": {
+                            "description": "Discounted price is consistent with Indian MBA entrance exam coaching market.",
+                            "is_suspicious": "False",
+                            "analysis_reason": "Discounted price is within typical range for online test prep services in India.",
+                            "market_comparison": "Comparable to industry standard for this product category."
+                        }
+                    },
+                    {
+                        "product_name": "SNAP Mock Series",
+                        "product_description": "Full‐length SNAP mocks w/solutions plus sectionals included.",
+                        "customization_options": "Not specified",
+                        "price": {
+                            "original_price": "2999",
+                            "discount_percentage": "67",
+                            "final_price": "999",
+                            "currency": "INR"
+                        },
+                        "sku": "Not available",
+                        "pricing_analysis": {
+                            "description": "Discounted price is consistent with Indian MBA entrance exam coaching market.",
+                            "is_suspicious": "False",
+                            "analysis_reason": "Discounted price is within typical range for online test prep services in India.",
+                            "market_comparison": "Comparable to industry standard for this product category."
+                        }
+                    },
+                    {
+                        "product_name": "NMAT Adaptive Mocks",
+                        "product_description": "Full‐length NMAT adaptive mocks w/solutions included.",
+                        "customization_options": "Not specified",
+                        "price": {
+                            "original_price": "2999",
+                            "discount_percentage": "67",
+                            "final_price": "999",
+                            "currency": "INR"
+                        },
+                        "sku": "Not available",
+                        "pricing_analysis": {
+                            "description": "Discounted price is consistent with Indian MBA entrance exam coaching market.",
+                            "is_suspicious": "False",
+                            "analysis_reason": "Discounted price is within typical range for online test prep services in India.",
+                            "market_comparison": "Comparable to industry standard for this product category."
+                        }
+                    }
+                ],
+                "availability_status": {
+                    "description": "Most courses are available for enrollment unless otherwise marked by start date or batch info. No products are labeled out of stock or coming soon.",
+                    "status_options": [
+                        "In Stock",
+                        "Out of Stock",
+                        "Coming Soon",
+                        "Limited Stock"
+                    ],
+                    "product_availability": [
+                        {
+                            "product_name": "CAT 2026 Exclusive",
+                            "availability": "Starts on 15 Dec"
+                        },
+                        {
+                            "product_name": "CAT 2026 Complete Cracku",
+                            "availability": "Starts on 15 Dec"
+                        },
+                        {
+                            "product_name": "CAT Repeaters Batch (Exclusively For CAT)",
+                            "availability": "Starts on 15 Dec"
+                        },
+                        {
+                            "product_name": "CAT 2027 Complete Cracku",
+                            "availability": "Not specified"
+                        },
+                        {
+                            "product_name": "XAT Crash Course Online Coaching (Pre-recorded)",
+                            "availability": "Starts Today"
+                        },
+                        {
+                            "product_name": "XAT Crash Course Online Coaching (Inc. Live Classes)",
+                            "availability": "Starts Today"
+                        },
+                        {
+                            "product_name": "XAT Mocks and Sectionals",
+                            "availability": "Not specified"
+                        },
+                        {
+                            "product_name": "SNAP Mock Series",
+                            "availability": "Not specified"
+                        },
+                        {
+                            "product_name": "NMAT Adaptive Mocks",
+                            "availability": "Not specified"
+                        }
+                    ]
+                },
+                "image_analysis": {
+                    "description": "Each major course/product has a different image associated with it. The images are not identical across products/courses but unique per offering.",
+                    "all_images_identical": "False",
+                    "image_details": "Images are unique per product, of good quality, and match the course or mock test being offered. No obvious red flags.",
+                    "suspicious_findings": "No suspicious patterns detected in product imagery."
+                }
+            }
+        ]
+    },
+    "content_analysis": {
+        "urls": [
+            {
+                "complete_url": "https://cracku.in/",
+                "impersonation_check": {
+                    "status": "No",
+                    "reasoning": "There is no evidence that the website mimics or impersonates any well-known, famous, or legitimate brand. The branding is consistent with 'Cracku', which appears to be an original test prep/coaching provider. No misspellings of famous brands or claims of official distributorship were found."
+                },
+                "placeholder_content_check": {
+                    "status": "No",
+                    "reasoning": "The reviewed content does not contain any generic placeholder text or dummy content such as 'Lorem Ipsum,' 'your text here,' or template filler text. All testimonials use real names and exam results; course/product sections are fully described."
+                },
+                "language_support": [
+                    "English"
+                ],
+                "grammar_check": {
+                    "status": "Yes",
+                    "reasoning": "The overall grammatical quality is high and professional. There are no spelling mistakes or awkward machine-translated phrases in the visible content. Sentences are coherent and properly punctuated."
+                },
+                "hidden_content_check": {
+                    "status": "No",
+                    "reasoning": "There is no evidence of hidden text (e.g., color-matched to background, display:none) in the extracted visible areas. All relevant content is directly accessible without any special actions like hover or JavaScript triggers."
+                },
+                "objectionable_content_check": {
+                    "status": "No",
+                    "reasoning": "None of the reviewed content matches any category from the objectionable/banned list as defined by https://payu.in/BannedRestrictedCategorylist."
+                },
+                "frequent_words": [
+                    "CAT",
+                    "Cracku",
+                    "Course",
+                    "Batch",
+                    "Preparation",
+                    "Practice",
+                    "Percentile",
+                    "Test(s)",
+                    "Mock(s)",
+                    "Sectional(s)",
+                    "XAT",
+                    "GMAT",
+                    "SNAP",
+                    "NMAT",
+                    "CMAT",
+                    "IPMAT",
+                    "JIPMAT",
+                    "SRCC",
+                    "CUET",
+                    "MAT",
+                    "Live",
+                    "Class(es)",
+                    "Video(s)",
+                    "Students",
+                    "Faculty",
+                    "Guidance",
+                    "Expert",
+                    "Mentor"
+                ]
+            }
+        ]
+    },
+    "logo_analysis": {
+        "logo_presence": "The logo is present at the top left of the website.",
+        "logo_matching": "no. The logo does not exactly match any well-known business; it features the word 'cracku' in lowercase blue letters with a stylized academic cap icon over the 'u', which is unique and not an exact copy of any famous company logo.",
+        "logo_features": "Dominant colors are blue for the brand name text and a white background. The font is a simple, modern sans-serif in all lowercase letters ('cracku'). The notable icon is a stylized blue academic cap (graduation hat) placed above the letter 'u', emphasizing an educational theme. The arrangement is horizontal, with the brand name 'cracku' and the academic cap icon above and slightly to the right of the final letter, reinforcing a consistent education-focused brand identity."
+    }
+}

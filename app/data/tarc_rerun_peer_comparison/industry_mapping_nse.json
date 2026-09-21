@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "message": "Industry mapping retrieved",
+  "data": {
+    "company_name": "TARC LIMITED",
+    "mappings": [
+      {
+        "industry_code": "IN020501001",
+        "macro_economic_sector": "Consumer Discretionary",
+        "sector": "Realty",
+        "industry": "Realty"
+      },
+      {
+        "industry_code": "INO20501002",
+        "macro_economic_sector": "Consumer Discretionary",
+        "sector": "Realty",
+        "industry": "Realty"
+      }
+    ]
+  }
+}

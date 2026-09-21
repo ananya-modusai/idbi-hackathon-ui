@@ -1,0 +1,2465 @@
+{
+    "summary": "There are two misaligned transactions (IDs: 4366543237, 4366537414) with extremely low amounts (₹1), which are atypical for LOB transactions and likely represent tests or errors.",
+    "transaction_analysis": [
+        {
+            "txnid": "4516592703",
+            "amount": "22973",
+            "reasoning": "The amount is within a reasonable range for financial services, forex, money transfer, or travel booking transactions.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4516587648",
+            "amount": "22973",
+            "reasoning": "The amount is typical for services like money transfer, bill payments, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4516580207",
+            "amount": "22973",
+            "reasoning": "This amount is plausible for financial services or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4516539468",
+            "amount": "8046",
+            "reasoning": "This is a reasonable amount for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4516116308",
+            "amount": "20575",
+            "reasoning": "The amount fits within the expected range for money transfer, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4515335446",
+            "amount": "35944",
+            "reasoning": "This amount is suitable for financial services, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4514228615",
+            "amount": "51582",
+            "reasoning": "The amount is appropriate for forex, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4514176043",
+            "amount": "2590",
+            "reasoning": "This is a typical amount for bill payments, prepaid cards, or small insurance premiums.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4513268426",
+            "amount": "44935",
+            "reasoning": "The amount is reasonable for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4513190710",
+            "amount": "58289",
+            "reasoning": "This amount aligns with high-value money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4511447173",
+            "amount": "5546",
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4511019707",
+            "amount": "150755",
+            "reasoning": "High-value transactions like this are plausible for forex, large money transfers, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4510962695",
+            "amount": "150755",
+            "reasoning": "Large transactions are expected in forex, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4510933763",
+            "amount": "150755",
+            "reasoning": "This high amount is plausible for forex or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4510822639",
+            "amount": "150755",
+            "reasoning": "Such high-value transactions are common in forex or large travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4510817292",
+            "amount": "150755",
+            "reasoning": "The amount is suitable for forex, money transfer, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4509177914",
+            "amount": "22050",
+            "reasoning": "This is a reasonable amount for money transfer, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4508983106",
+            "amount": "10546",
+            "reasoning": "This amount is typical for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4508290655",
+            "amount": "44584",
+            "reasoning": "The amount is plausible for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4508263346",
+            "amount": "30584",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4505043739",
+            "amount": "10918",
+            "reasoning": "This amount is suitable for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4504926043",
+            "amount": "10748",
+            "reasoning": "This is a typical amount for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4504925708",
+            "amount": "10748",
+            "reasoning": "This amount is reasonable for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4503838824",
+            "amount": "5779",
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4501564133",
+            "amount": "12296",
+            "reasoning": "This amount is suitable for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4501490726",
+            "amount": "5646",
+            "reasoning": "This is a typical amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4500395449",
+            "amount": "98434",
+            "reasoning": "High-value transactions like this are plausible for forex, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4500201216",
+            "amount": "99690",
+            "reasoning": "This high amount is suitable for forex, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4498136752",
+            "amount": "4139",
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4493780070",
+            "amount": "54274",
+            "reasoning": "This amount is plausible for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4492594269",
+            "amount": "50596",
+            "reasoning": "The amount is suitable for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4491694824",
+            "amount": "28380",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4490143900",
+            "amount": "60615",
+            "reasoning": "This amount is plausible for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4489923121",
+            "amount": "82922",
+            "reasoning": "High-value transactions like this are plausible for forex, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4489582570",
+            "amount": "5848",
+            "reasoning": "This is a typical amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4486304866",
+            "amount": "2198",
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4484480163",
+            "amount": "20547",
+            "reasoning": "This amount is suitable for money transfer, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4483370722",
+            "amount": "35409",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4483149796",
+            "amount": "30558",
+            "reasoning": "This amount is plausible for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4483147541",
+            "amount": "30558",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4482941990",
+            "amount": "12616",
+            "reasoning": "This amount is suitable for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4481679488",
+            "amount": "50596",
+            "reasoning": "This amount is plausible for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4481595984",
+            "amount": "73089",
+            "reasoning": "High-value transactions like this are plausible for forex, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4481199765",
+            "amount": "35278",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4481116004",
+            "amount": "18306",
+            "reasoning": "This amount is suitable for money transfer, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4481109221",
+            "amount": "155067",
+            "reasoning": "High-value transactions like this are plausible for forex, money transfer, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4480618654",
+            "amount": "24888",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4480221465",
+            "amount": "3443",
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4479558843",
+            "amount": "62507",
+            "reasoning": "This amount is plausible for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4479391473",
+            "amount": "60888",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4479365955",
+            "amount": "14444",
+            "reasoning": "This amount is suitable for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4478388484",
+            "amount": "45698",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4478037900",
+            "amount": "200800",
+            "reasoning": "Very high-value transactions like this are plausible for forex, large money transfers, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4478032065",
+            "amount": "200800",
+            "reasoning": "Such high-value transactions are expected in forex, money transfer, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4477324788",
+            "amount": "89651",
+            "reasoning": "High-value transactions like this are plausible for forex, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4477321587",
+            "amount": "89651",
+            "reasoning": "This high amount is suitable for forex, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4477107808",
+            "amount": "20035",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4476935406",
+            "amount": "89670",
+            "reasoning": "High-value transactions like this are plausible for forex, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4476914641",
+            "amount": "45075",
+            "reasoning": "This amount is plausible for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4476899930",
+            "amount": "89651",
+            "reasoning": "High-value transactions like this are plausible for forex, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4476896172",
+            "amount": "89651",
+            "reasoning": "This high amount is suitable for forex, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4476883884",
+            "amount": "89651",
+            "reasoning": "High-value transactions like this are plausible for forex, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4476023564",
+            "amount": "10546",
+            "reasoning": "This is a typical amount for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4476016180",
+            "amount": "10592",
+            "reasoning": "This amount is suitable for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4475996397",
+            "amount": "25592",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4475986272",
+            "amount": "25548",
+            "reasoning": "This amount is plausible for money transfer, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4475077859",
+            "amount": "173786",
+            "reasoning": "Very high-value transactions like this are plausible for forex, large money transfers, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4473373977",
+            "amount": "11880",
+            "reasoning": "This is a typical amount for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4473370769",
+            "amount": "12108",
+            "reasoning": "This amount is suitable for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4473365163",
+            "amount": "45586",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4471627320",
+            "amount": "52119",
+            "reasoning": "This amount is plausible for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4471511235",
+            "amount": "47427",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4471181897",
+            "amount": "5733",
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4468609315",
+            "amount": "59266",
+            "reasoning": "This amount is plausible for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4468590499",
+            "amount": "21260",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4468429305",
+            "amount": "3249",
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4468409517",
+            "amount": "3248",
+            "reasoning": "This is a typical amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4468351847",
+            "amount": "3247",
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4467363955",
+            "amount": "3124",
+            "reasoning": "This is a typical amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4467345933",
+            "amount": "5705",
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4467343930",
+            "amount": "5705",
+            "reasoning": "This is a typical amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4467338057",
+            "amount": "15822",
+            "reasoning": "This amount is suitable for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4465495571",
+            "amount": "3654",
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4462608646",
+            "amount": "61873",
+            "reasoning": "This amount is plausible for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4460099026",
+            "amount": "29645",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4457465615",
+            "amount": "38878",
+            "reasoning": "This amount is plausible for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4454848416",
+            "amount": "19500",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4454730968",
+            "amount": "50596",
+            "reasoning": "This amount is plausible for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4454267143",
+            "amount": "1045",
+            "reasoning": "This is a typical amount for small bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4453985303",
+            "amount": "1593",
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4453747863",
+            "amount": "121963",
+            "reasoning": "High-value transactions like this are plausible for forex, money transfer, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4453746934",
+            "amount": "121963",
+            "reasoning": "Such high-value transactions are expected in forex, money transfer, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4453687234",
+            "amount": "48500",
+            "reasoning": "This amount is plausible for money transfer, forex, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4453381540",
+            "amount": "16027",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4452880770",
+            "amount": "3545",
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4452119464",
+            "amount": "5725",
+            "reasoning": "This is a typical amount for bill payments, prepaid cards, or insurance.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4450511363",
+            "amount": "8959",
+            "reasoning": "This amount is suitable for bill payments, insurance, or prepaid cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4448682715",
+            "amount": "26069",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4448379623",
+            "amount": "75644",
+            "reasoning": "High-value transactions like this are plausible for forex, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4447524664",
+            "amount": "33558",
+            "reasoning": "This is a reasonable amount for financial services, money transfer, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4445346863",
+            "amount": 40602,
+            "reasoning": "The amount is within a reasonable range for financial services, forex, money transfer, prepaid cards, bill payments, insurance, travel booking, or gift cards, which can involve transactions from a few thousand to several lakhs.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4445289659",
+            "amount": 40602,
+            "reasoning": "This amount is typical for the LOBs listed, especially for travel bookings, insurance, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4443754564",
+            "amount": 18385,
+            "reasoning": "This amount aligns with the LOBs, as it could represent a travel booking, insurance premium, or a money transfer.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4443432897",
+            "amount": 2458,
+            "reasoning": "A transaction of this size is common for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4442831472",
+            "amount": 52822,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4442399377",
+            "amount": 6281,
+            "reasoning": "This amount fits within the expected range for bill payments, prepaid cards, or small travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4441788774",
+            "amount": 1762,
+            "reasoning": "This is a typical amount for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4441518301",
+            "amount": 50596,
+            "reasoning": "This amount is suitable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4441298777",
+            "amount": 89898,
+            "reasoning": "This is a high but plausible amount for travel bookings (flights, hotels), insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4439369202",
+            "amount": 6166,
+            "reasoning": "This amount is common for bill payments, prepaid cards, or small travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4439169765",
+            "amount": 30558,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4438799566",
+            "amount": 11816,
+            "reasoning": "This amount is typical for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4438462135",
+            "amount": 9494,
+            "reasoning": "This amount is within the expected range for bill payments, prepaid cards, or small travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4436928625",
+            "amount": 2245,
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4434503016",
+            "amount": 90673,
+            "reasoning": "This is a high but plausible amount for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4433342545",
+            "amount": 9358,
+            "reasoning": "This amount is typical for bill payments, prepaid cards, or small travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4432415191",
+            "amount": 4846,
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4432329717",
+            "amount": 26575,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4431619128",
+            "amount": 12447,
+            "reasoning": "This amount is typical for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4431582601",
+            "amount": 251166,
+            "reasoning": "This is a very high amount but can be justified for large travel bookings (group holidays), high-value insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4431010951",
+            "amount": 358612,
+            "reasoning": "This is a very high amount, but it can align with large group travel bookings, high-value insurance, or significant money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4430941647",
+            "amount": 89962,
+            "reasoning": "This is a high but plausible amount for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4430938180",
+            "amount": 89962,
+            "reasoning": "This is a high but plausible amount for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4428842517",
+            "amount": 1867,
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4427725419",
+            "amount": 30423,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4427231789",
+            "amount": 89952,
+            "reasoning": "This is a high but plausible amount for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4427201113",
+            "amount": 182880,
+            "reasoning": "This is a very high amount but can be justified for large travel bookings, high-value insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4427141357",
+            "amount": 9474,
+            "reasoning": "This amount is typical for bill payments, prepaid cards, or small travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4426849479",
+            "amount": 13295,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4426056710",
+            "amount": 45476,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4425854322",
+            "amount": 63506,
+            "reasoning": "This is a high but plausible amount for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4425785852",
+            "amount": 18608,
+            "reasoning": "This amount is typical for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4424547871",
+            "amount": 10546,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4424543120",
+            "amount": 10546,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4424447302",
+            "amount": 31769,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4423597805",
+            "amount": 30558,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4423592134",
+            "amount": 30558,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4423587952",
+            "amount": 30558,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4423586812",
+            "amount": 30558,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4422283301",
+            "amount": 32764,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4422259168",
+            "amount": 33376,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4422248393",
+            "amount": 32785,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4422229286",
+            "amount": 32793,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4422218092",
+            "amount": 32793,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4422216548",
+            "amount": 32793,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4421966119",
+            "amount": 53065,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4421479285",
+            "amount": 21512,
+            "reasoning": "This amount is typical for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4421475082",
+            "amount": 21512,
+            "reasoning": "This amount is typical for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4421172047",
+            "amount": 24048,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4420939294",
+            "amount": 11004,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4420937751",
+            "amount": 11004,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4419823362",
+            "amount": 3029,
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4419230238",
+            "amount": 70830,
+            "reasoning": "This is a high but plausible amount for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4418949797",
+            "amount": 1593,
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4418132904",
+            "amount": 35453,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4416959901",
+            "amount": 30651,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4416732078",
+            "amount": 5246,
+            "reasoning": "This amount is within the expected range for bill payments, prepaid cards, or small travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4416715359",
+            "amount": 5346,
+            "reasoning": "This amount is within the expected range for bill payments, prepaid cards, or small travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4415431921",
+            "amount": 50596,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4415393897",
+            "amount": 11845,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4414748542",
+            "amount": 10964,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4414634106",
+            "amount": 21602,
+            "reasoning": "This amount is typical for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4414291212",
+            "amount": 75644,
+            "reasoning": "This is a high but plausible amount for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4412491281",
+            "amount": 115638,
+            "reasoning": "This is a very high amount but can be justified for large travel bookings, high-value insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4412484338",
+            "amount": 115638,
+            "reasoning": "This is a very high amount but can be justified for large travel bookings, high-value insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4411486754",
+            "amount": 121278,
+            "reasoning": "This is a very high amount but can be justified for large travel bookings, high-value insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4411481971",
+            "amount": 121262,
+            "reasoning": "This is a very high amount but can be justified for large travel bookings, high-value insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4410852561",
+            "amount": 55029,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4410563593",
+            "amount": 12976,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4410474240",
+            "amount": 12976,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4410465628",
+            "amount": 12976,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4410134572",
+            "amount": 16283,
+            "reasoning": "This amount is typical for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4410042538",
+            "amount": 22865,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4409969596",
+            "amount": 3813,
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4409967220",
+            "amount": 3813,
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4409367039",
+            "amount": 45200,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4408525007",
+            "amount": 12568,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4407507078",
+            "amount": 46589,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4406521733",
+            "amount": 16236,
+            "reasoning": "This amount is typical for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4406116190",
+            "amount": 70003,
+            "reasoning": "This is a high but plausible amount for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4405122667",
+            "amount": 37815,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4403934837",
+            "amount": 23913,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4402248686",
+            "amount": 11016,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4402110232",
+            "amount": 99989,
+            "reasoning": "This is a high but plausible amount for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4401903298",
+            "amount": 85514,
+            "reasoning": "This is a high but plausible amount for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4401309371",
+            "amount": 95850,
+            "reasoning": "This is a high but plausible amount for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4401185754",
+            "amount": 11058,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4401137935",
+            "amount": 10013,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4401024320",
+            "amount": 27491,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4401023720",
+            "amount": 27491,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4400960668",
+            "amount": 27518,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4400603692",
+            "amount": 95939,
+            "reasoning": "This is a high but plausible amount for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4399932183",
+            "amount": 2983,
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4398602207",
+            "amount": 45245,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4398567859",
+            "amount": 198749,
+            "reasoning": "This is a very high amount but can be justified for large travel bookings, high-value insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4398429153",
+            "amount": 30290,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4397666537",
+            "amount": 54775,
+            "reasoning": "This amount is reasonable for travel bookings, insurance, or money transfer services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4397027878",
+            "amount": 11546,
+            "reasoning": "This amount is within the expected range for insurance, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4396881190",
+            "amount": 89150,
+            "reasoning": "This is a high but plausible amount for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4396504762",
+            "amount": 2545,
+            "reasoning": "This is a common amount for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4396500803",
+            "amount": 2545,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfer/gift card transactions within the financial services LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4396475755",
+            "amount": 25548,
+            "reasoning": "Amount aligns with higher-value bill payments, insurance premiums, or travel bookings, which are common in the financial services LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4396460588",
+            "amount": 26044,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments, aligning with the LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4396459030",
+            "amount": 26044,
+            "reasoning": "Same as previous, aligns with travel, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4396409288",
+            "amount": 223921,
+            "reasoning": "High amount, but can be justified for group travel bookings, insurance, or high-value money transfers within the LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4396387989",
+            "amount": 7689,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4396375879",
+            "amount": 7689,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4395304161",
+            "amount": 5899,
+            "reasoning": "Amount is typical for bill payments, prepaid cards, or small travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4395210674",
+            "amount": 5546,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4395167625",
+            "amount": 4006,
+            "reasoning": "Amount is suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4395154155",
+            "amount": 4006,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4394594024",
+            "amount": 153033,
+            "reasoning": "High amount, but can be justified for group travel bookings, insurance, or high-value money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4394592164",
+            "amount": 370213,
+            "reasoning": "Very high amount, but possible for group travel, insurance, or large money transfers in financial services.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4394585606",
+            "amount": 153033,
+            "reasoning": "High amount, but aligns with group travel, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4394547798",
+            "amount": 370213,
+            "reasoning": "Very high amount, but possible for group travel, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4394498317",
+            "amount": 373507,
+            "reasoning": "Very high amount, but can be justified for group travel, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4394411841",
+            "amount": 3001,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4393995936",
+            "amount": 5546,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4393993181",
+            "amount": 5546,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4393977317",
+            "amount": 2545,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4393503961",
+            "amount": 105533,
+            "reasoning": "High amount, but can be justified for travel bookings, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4393481312",
+            "amount": 102321,
+            "reasoning": "High amount, but aligns with travel, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4393442875",
+            "amount": 101426,
+            "reasoning": "High amount, but aligns with travel, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4393422767",
+            "amount": 101426,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4393420861",
+            "amount": 101426,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4393156600",
+            "amount": 10546,
+            "reasoning": "Amount is reasonable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4392145539",
+            "amount": 4725,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4392100493",
+            "amount": 9518,
+            "reasoning": "Amount is reasonable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4391822648",
+            "amount": 4771,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4391814636",
+            "amount": 4771,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4391808893",
+            "amount": 4771,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4391804159",
+            "amount": 4742,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4391650924",
+            "amount": 1545,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4391428060",
+            "amount": 4546,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4391222317",
+            "amount": 50596,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4391015971",
+            "amount": 30558,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4390976377",
+            "amount": 36536,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4390657031",
+            "amount": 102659,
+            "reasoning": "High amount, but can be justified for group travel, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4390191446",
+            "amount": 4127,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4390178131",
+            "amount": 12485,
+            "reasoning": "Amount is reasonable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4390173311",
+            "amount": 12485,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4389017916",
+            "amount": 3745,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4389011670",
+            "amount": 3545,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4388990905",
+            "amount": 5007,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4388783400",
+            "amount": 40577,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4388404759",
+            "amount": 1592,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4387902900",
+            "amount": 30558,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4386869142",
+            "amount": 68314,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4386471855",
+            "amount": 24340,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4385952924",
+            "amount": 90673,
+            "reasoning": "High amount, but can be justified for group travel, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4385668770",
+            "amount": 30558,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4385667856",
+            "amount": 12710,
+            "reasoning": "Amount is reasonable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4385667808",
+            "amount": 10983,
+            "reasoning": "Amount is reasonable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4385666244",
+            "amount": 10983,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4385230606",
+            "amount": 11208,
+            "reasoning": "Amount is reasonable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4384677694",
+            "amount": 27552,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4383650322",
+            "amount": 89878,
+            "reasoning": "High amount, but can be justified for group travel, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4383642252",
+            "amount": 89878,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4383625532",
+            "amount": 72011,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4382497697",
+            "amount": 3539,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4380834061",
+            "amount": 1545,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4378910956",
+            "amount": 20515,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4377386834",
+            "amount": 4025,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4375972219",
+            "amount": 299888,
+            "reasoning": "Very high amount, but possible for group travel, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4375768546",
+            "amount": 10546,
+            "reasoning": "Amount is reasonable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4375296217",
+            "amount": 5546,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4375185844",
+            "amount": 1765,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4375182732",
+            "amount": 1765,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4374666016",
+            "amount": 20547,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4374181089",
+            "amount": 8921,
+            "reasoning": "Amount is reasonable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4374152370",
+            "amount": 858,
+            "reasoning": "Amount is low but can be for small bill payments, prepaid cards, or gift cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4372068138",
+            "amount": 21344,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4369380585",
+            "amount": 23008,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4368345054",
+            "amount": 140515,
+            "reasoning": "High amount, but can be justified for group travel, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4368315712",
+            "amount": 140515,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4368313441",
+            "amount": 140515,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4367869066",
+            "amount": 72464,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4366786541",
+            "amount": 77120,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4366780878",
+            "amount": 75644,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4366543237",
+            "amount": 1,
+            "reasoning": "Amount is extremely low and not typical for any LOB transaction; likely a test or error.",
+            "align_with_lob": "no"
+        },
+        {
+            "txnid": "4366537414",
+            "amount": 1,
+            "reasoning": "Amount is extremely low and not typical for any LOB transaction; likely a test or error.",
+            "align_with_lob": "no"
+        },
+        {
+            "txnid": "4365794673",
+            "amount": 5284,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4365778633",
+            "amount": 5284,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4364450396",
+            "amount": 20132,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4364322361",
+            "amount": 50096,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4364235162",
+            "amount": 15194,
+            "reasoning": "Amount is reasonable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4364101472",
+            "amount": 10046,
+            "reasoning": "Amount is reasonable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4361006578",
+            "amount": 4532,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4360749847",
+            "amount": 99190,
+            "reasoning": "High amount, but can be justified for group travel, insurance, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4360712619",
+            "amount": 8989,
+            "reasoning": "Amount is reasonable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4360707183",
+            "amount": 8989,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4360314606",
+            "amount": 10576,
+            "reasoning": "Amount is reasonable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4359924841",
+            "amount": 75165,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4359879582",
+            "amount": 77828,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4359879430",
+            "amount": 77828,
+            "reasoning": "Same as previous, aligns with LOB.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4359837753",
+            "amount": 84624,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4359403211",
+            "amount": 3054,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4358096615",
+            "amount": 2476,
+            "reasoning": "Amount is reasonable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4358015087",
+            "amount": 20547,
+            "reasoning": "Amount is suitable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4357430943",
+            "amount": 15526,
+            "reasoning": "Amount is reasonable for travel bookings, insurance, or large bill payments.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4357420041",
+            "amount": 16258,
+            "reasoning": "Amount is within a reasonable range for financial services, forex, money transfer, prepaid cards, bill payments, insurance, or travel booking transactions.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4357419468",
+            "amount": 16258,
+            "reasoning": "Amount is within a reasonable range for the specified LOBs, such as money transfer, bill payments, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4357092177",
+            "amount": 7294,
+            "reasoning": "Amount is typical for bill payments, insurance premiums, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4356359735",
+            "amount": 32545,
+            "reasoning": "Amount aligns with higher-value transactions such as insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4355236138",
+            "amount": 667,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4354448720",
+            "amount": 37962,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or large money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4352363531",
+            "amount": 74213,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4352355546",
+            "amount": 74213,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4352296292",
+            "amount": 74263,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4352292121",
+            "amount": 74263,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4352287769",
+            "amount": 76894,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4352279192",
+            "amount": 74242,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4351714648",
+            "amount": 8918,
+            "reasoning": "Amount is reasonable for bill payments, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4351597578",
+            "amount": 292147,
+            "reasoning": "Very high amount, but can align with forex, large insurance premiums, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4351369098",
+            "amount": 8513,
+            "reasoning": "Amount is reasonable for bill payments, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4350542811",
+            "amount": 31495,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4348134052",
+            "amount": 2138,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4348132767",
+            "amount": 1494,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4347430781",
+            "amount": 1252,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4347141250",
+            "amount": 24488,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4347128062",
+            "amount": 24488,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4346872883",
+            "amount": 1155,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4346860019",
+            "amount": 1155,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4346795827",
+            "amount": 75045,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4345716908",
+            "amount": 30732,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4345374287",
+            "amount": 15680,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4345366876",
+            "amount": 199820,
+            "reasoning": "Very high amount, but can align with forex, large insurance premiums, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4345365362",
+            "amount": 199820,
+            "reasoning": "Very high amount, but can align with forex, large insurance premiums, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4345237069",
+            "amount": 1821,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4345236088",
+            "amount": 1821,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4345161893",
+            "amount": 10884,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4344876610",
+            "amount": 11606,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4344555947",
+            "amount": 73853,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4344526329",
+            "amount": 73874,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4343724881",
+            "amount": 72860,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4343008243",
+            "amount": 6059,
+            "reasoning": "Amount is reasonable for bill payments, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4343000360",
+            "amount": 6274,
+            "reasoning": "Amount is reasonable for bill payments, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4341700516",
+            "amount": 10544,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4341642562",
+            "amount": 26835,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4341502025",
+            "amount": 46550,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4340080293",
+            "amount": 6049,
+            "reasoning": "Amount is reasonable for bill payments, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4339007221",
+            "amount": 48673,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4338575784",
+            "amount": 773,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4338574423",
+            "amount": 795,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4337309499",
+            "amount": 96579,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4336168143",
+            "amount": 59113,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4334200695",
+            "amount": 1086,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4333882659",
+            "amount": 936,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4333705591",
+            "amount": 133200,
+            "reasoning": "Very high amount, but can align with forex, large insurance premiums, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4333699357",
+            "amount": 133200,
+            "reasoning": "Very high amount, but can align with forex, large insurance premiums, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4333156156",
+            "amount": 62174,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4333150319",
+            "amount": 62174,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4333104280",
+            "amount": 209817,
+            "reasoning": "Very high amount, but can align with forex, large insurance premiums, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4331360704",
+            "amount": 14481,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4331233921",
+            "amount": 120662,
+            "reasoning": "Very high amount, but can align with forex, large insurance premiums, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4331226459",
+            "amount": 120662,
+            "reasoning": "Very high amount, but can align with forex, large insurance premiums, or group travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4330440901",
+            "amount": 134,
+            "reasoning": "Very low amount, but can align with small bill payments, prepaid cards, or gift cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4330429151",
+            "amount": 17765,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4329837974",
+            "amount": 74750,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4329552444",
+            "amount": 60116,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4328603488",
+            "amount": 8358,
+            "reasoning": "Amount is reasonable for bill payments, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4328056967",
+            "amount": 647,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4327763078",
+            "amount": 62831,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4326572478",
+            "amount": 18642,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4325580049",
+            "amount": 18659,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4325344455",
+            "amount": 22368,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4324676440",
+            "amount": 20047,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4322486708",
+            "amount": 13364,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4322206716",
+            "amount": 72313,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4322203536",
+            "amount": 72313,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4321841958",
+            "amount": 60283,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4321201858",
+            "amount": 51098,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4320561788",
+            "amount": 10092,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4320556147",
+            "amount": 10092,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4320509645",
+            "amount": 88970,
+            "reasoning": "High amount, but aligns with forex, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4320493123",
+            "amount": 2814,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4318319728",
+            "amount": 5858,
+            "reasoning": "Amount is reasonable for bill payments, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4318316704",
+            "amount": 693,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4317612231",
+            "amount": 5246,
+            "reasoning": "Amount is reasonable for bill payments, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4317098239",
+            "amount": 6498,
+            "reasoning": "Amount is reasonable for bill payments, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4317012325",
+            "amount": 1645,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4315563160",
+            "amount": 8912,
+            "reasoning": "Amount is reasonable for bill payments, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4315528076",
+            "amount": 1545,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4315523404",
+            "amount": 1545,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4315516510",
+            "amount": 1545,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4315315050",
+            "amount": 10366,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4314789054",
+            "amount": 51904,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4314570779",
+            "amount": 51948,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4313426572",
+            "amount": 36369,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4313409941",
+            "amount": 26652,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4313343606",
+            "amount": 27910,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4313295014",
+            "amount": 18620,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4313142969",
+            "amount": 147,
+            "reasoning": "Very low amount, but can align with small bill payments, prepaid cards, or gift cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4313140229",
+            "amount": 147,
+            "reasoning": "Very low amount, but can align with small bill payments, prepaid cards, or gift cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4312431988",
+            "amount": 46936,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4311411704",
+            "amount": 2433,
+            "reasoning": "Low amount, suitable for bill payments, prepaid cards, or small money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4311258526",
+            "amount": 6978,
+            "reasoning": "Amount is reasonable for bill payments, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4311203583",
+            "amount": 10825,
+            "reasoning": "Amount is reasonable for insurance, travel bookings, or forex.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4311200553",
+            "amount": 7261,
+            "reasoning": "Amount is reasonable for bill payments, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4311196798",
+            "amount": 7261,
+            "reasoning": "Amount is reasonable for bill payments, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4310452304",
+            "amount": "50596",
+            "reasoning": "The amount of 50,596 is reasonable for LOBs such as Forex, Money Transfer, Travel Booking (flights, hotels), or Insurance, where high-value transactions are common.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4309692901",
+            "amount": "114138",
+            "reasoning": "The amount of 114,138 aligns with LOBs like Forex, Money Transfer, Travel Booking, or Insurance, which can involve large sums.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4271181288",
+            "amount": "2753",
+            "reasoning": "The amount of 2,753 is typical for bill payments, prepaid cards, insurance premiums, or travel bookings (such as cabs, buses, or budget hotels).",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4266670611",
+            "amount": "1217",
+            "reasoning": "The amount of 1,217 is reasonable for bill payments, prepaid cards, insurance, or travel bookings (cabs, buses, budget hotels).",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4258352374",
+            "amount": "240",
+            "reasoning": "The amount of 240 is typical for small bill payments, prepaid cards, or gift cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4250888998",
+            "amount": "10075",
+            "reasoning": "The amount of 10,075 is reasonable for insurance premiums, travel bookings, or money transfers.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4248310887",
+            "amount": "2807",
+            "reasoning": "The amount of 2,807 is typical for bill payments, prepaid cards, insurance, or travel bookings.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4248036173",
+            "amount": "48",
+            "reasoning": "The amount of 48 is reasonable for small bill payments, prepaid cards, or gift cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4247973025",
+            "amount": "46",
+            "reasoning": "The amount of 46 is reasonable for small bill payments, prepaid cards, or gift cards.",
+            "align_with_lob": "yes"
+        },
+        {
+            "txnid": "4192701264",
+            "amount": "322760",
+            "reasoning": "The amount of 322,760 is high but aligns with LOBs such as Forex, Money Transfer, Travel Booking (international flights, luxury hotels), or Insurance, where large transactions are possible.",
+            "align_with_lob": "yes"
+        }
+    ]
+}

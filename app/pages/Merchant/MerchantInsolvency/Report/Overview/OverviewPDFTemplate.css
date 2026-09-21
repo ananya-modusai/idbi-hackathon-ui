@@ -1,0 +1,736 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* PDF Template Styles - Optimized for A4 Horizontal */
+.pdf-template {
+  width: 100%;
+  max-width: 1122px; /* A4 horizontal width at 96 DPI */
+  margin: 0 auto;
+  padding: 10px 40px;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #333;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+.pdf-header {
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.pdf-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pdf-title-section {
+  flex: 1;
+}
+
+.pdf-main-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2563eb;
+  margin: 0 0 8px 0;
+  overflow: visible !important;
+  max-width: 100%;
+}
+
+.pdf-subtitle-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pdf-industry-tag {
+  font-size: 10px;
+  font-weight: 500;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.pdf-industry-tag.high-risk {
+  color: #dc2626;
+}
+
+.pdf-industry-tag.medium-risk {
+  color: #d97706;
+}
+
+.pdf-industry-tag.low-risk {
+  color: #16a34a;
+}
+
+.pdf-industry-tag.default-risk {
+  color: #0891b2;
+}
+
+.pdf-cin {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.pdf-report-info {
+  text-align: right;
+}
+
+.pdf-report-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0 0 4px 0;
+}
+
+.pdf-report-date {
+  font-size: 11px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Section Styles */
+.pdf-section {
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+.pdf-section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #e5e7eb;
+  justify-content: flex-start; /* Ensure headings stay on the left */
+}
+
+.pdf-section-icon {
+  width: 16px;
+  height: 16px;
+  color: #2563eb;
+}
+
+.pdf-section-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0;
+  text-align: left !important; /* Force left alignment */
+  margin-left: 0 !important;   /* Prevent auto-margins pushing to right */
+  padding-bottom: 6px;
+}
+
+.pdf-section-content {
+  padding-left: 0px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* Subsection Styles */
+.pdf-subsection {
+  margin-top: 20px;
+}
+
+.pdf-subsection-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.pdf-subsection-icon {
+  width: 14px;
+  height: 14px;
+  color: #2563eb;
+}
+
+.pdf-subsection-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.pdf-subsection-content {
+  padding-left: 20px;
+}
+
+/* Page Break */
+.pdf-page-break {
+  page-break-before: always !important;
+  break-before: page !important;
+  -webkit-page-break-before: always !important;
+}
+
+/* Ensure page breaks work in print and PDF generation */
+@media print {
+  .pdf-page-break {
+    page-break-before: always !important;
+    break-before: page !important;
+    -webkit-page-break-before: always !important;
+  }
+}
+
+/* Text Styles */
+.pdf-text {
+  margin: 0 0 12px 0;
+  text-align: left;
+}
+
+.pdf-loading {
+  color: #6b7280;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Sources Styles */
+.pdf-sources {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #f9fafb;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.pdf-sources-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.pdf-sources-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.pdf-sources-list {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.pdf-source-item {
+  color: #2563eb;
+}
+
+.pdf-source-separator {
+  margin: 0 8px;
+  color: #6b7280;
+}
+
+/* Metrics Table (no flex/grid) */
+.pdf-metrics-table-wrapper {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.pdf-metrics-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 12px; /* gap between cards */
+  table-layout: fixed; /* equal width columns */
+}
+
+
+
+.pdf-metrics-td {
+  width: 25%;
+  vertical-align: middle;
+}
+
+
+
+.pdf-metric-card {
+  padding: 0; /* handled by inner for vertical centering */
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  background-color: #f9fafb;
+  height: 60px; /* optimal card height */
+}
+
+/* Use flex for easy left icon + content layout */
+.pdf-metric-card-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+}
+
+.pdf-metric-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #1f2937;
+  font-weight: 600;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+/* Inner cell used for vertical centering and text layout */
+.pdf-metric-card-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center label + value */
+  height: 100%;
+  width: calc(100% - 46px);
+  text-align: left;
+  padding: 0;
+  position: relative;
+}
+
+.pdf-metric-label {
+  font-size: 10px;
+  color: #374151;
+  margin-bottom:4px;
+  font-weight: 600;
+  text-align: left;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  display: block;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+.pdf-metric-value {
+  /* padding-top: 4px; */
+  line-height: 2;
+  font-size: 12px;
+  font-weight: bold;
+  color: #111827;
+  text-align: left;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  display: block;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+/* Risk Assessment Styles */
+.pdf-risk-assessment {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+}
+
+.pdf-risk-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #dc2626;
+  margin: 0 0 8px 0;
+}
+
+.pdf-risk-text {
+  margin: 0;
+  color: #7f1d1d;
+}
+
+/* Component Wrappers */
+.pdf-pod-wrapper,
+.pdf-risk-wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Red Flags Styles */
+.pdf-red-flags-section {
+  margin: 12px 0;
+  background-color: #f9f7f0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.pdf-red-flags-content {
+  padding: 4px 8px;
+  /* Center the red flags table under the section header */
+  text-align: center !important;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  /* min-height: 40px; */
+}
+
+.pdf-red-flags-table {
+  /* Make table shrink-to-fit and center it */
+  display: inline-table;
+  width: auto;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+/* Ensure red flags content is vertically centered within rows */
+.pdf-red-flags-table td,
+.pdf-red-flags-table th {
+  vertical-align: middle !important;
+  padding: 6px 8px;
+}
+
+.pdf-red-flag-row {
+  border-bottom: 1px solid rgba(229, 231, 235, 0.3);
+}
+
+.pdf-red-flag-row:last-child {
+  border-bottom: none;
+}
+
+.pdf-red-flag-severity {
+  width: 80px;
+  text-align: left !important;
+  vertical-align: middle !important;
+}
+
+.pdf-red-flag-description {
+  text-align: left;
+  font-size: 12px;
+  color: #4b5563;
+  flex-grow: 1;
+  vertical-align: middle !important;
+}
+
+.pdf-red-flag-category {
+  width: auto;
+  text-align: right;
+  vertical-align: middle !important;
+}
+
+/* Severity and Category Text Styles */
+.pdf-severity-text {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.pdf-severity-text.red {
+  color: #dc2626;
+}
+
+.pdf-severity-text.orange {
+  color: #ea580c;
+}
+
+.pdf-severity-text.yellow {
+  color: #ca8a04;
+}
+
+.pdf-severity-text.gray {
+  color: #6b7280;
+}
+
+.pdf-category-text {
+  font-size: 11px;
+  font-weight: 500;
+  color: #2563eb;
+}
+
+/* PD Section Size Overrides */
+.pdf-template .space-y-6 {
+  gap: 1rem !important;
+}
+
+.pdf-template .space-y-2 > * + * {
+  margin-top: 0.25rem !important;
+}
+
+.pdf-template .text-3xl {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+  text-align: left !important;
+}
+
+.pdf-template .text-xl {
+  font-size: 1rem !important;
+  line-height: 1.25rem !important;
+  text-align: left !important;
+}
+
+.pdf-template .text-sm {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+  text-align: left !important;
+}
+
+.pdf-template .text-xs {
+  font-size: 0.625rem !important;
+  line-height: 0.875rem !important;
+  text-align: left !important;
+}
+
+.pdf-template .p-6 {
+  padding: 1rem !important;
+}
+
+.pdf-template .gap-6 {
+  gap: 0.75rem !important;
+}
+
+.pdf-template .gap-4 {
+  gap: 0.5rem !important;
+}
+
+.pdf-template .pt-4 {
+  padding-top: 0.5rem !important;
+}
+
+/* Ensure all metric values in PD section are left-aligned */
+.pdf-template .space-y-2 {
+  text-align: left !important;
+}
+
+.pdf-template .font-semibold {
+  text-align: left !important;
+}
+
+.pdf-template .font-bold {
+  text-align: left !important;
+}
+
+/* Override component styles for PDF */
+.pdf-template .bg-white {
+  background-color: transparent !important;
+}
+
+.pdf-template .shadow-sm,
+.pdf-template .shadow-md,
+.pdf-template .shadow-lg {
+  box-shadow: none !important;
+}
+
+.pdf-template .border {
+  border: 1px solid #e5e7eb !important;
+}
+
+.pdf-template .rounded-lg,
+.pdf-template .rounded-md {
+  border-radius: 6px !important;
+}
+
+/* Footer */
+.pdf-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  color: #6b7280;
+  font-size: 10px;
+}
+
+.pdf-footer p {
+  margin: 4px 0;
+}
+
+/* Print-specific styles */
+@media print {
+  .pdf-template {
+    padding: 20px;
+    font-size: 11px;
+  }
+  
+  .pdf-main-title {
+    font-size: 20px;
+  }
+  
+  .pdf-report-title {
+    font-size: 16px;
+  }
+  
+  .pdf-section-title {
+    font-size: 14px;
+  }
+  
+  .pdf-section {
+    margin-bottom: 20px;
+  }
+  
+  /* Keep 3 columns on print if space permits */
+  .pdf-metrics-td { width: 33.3333%; }
+
+  /* Ensure consistent vertical centering in PDF */
+  .pdf-metric-card-inner {
+    padding: 0;
+  }
+
+  .pdf-metric-card-cell {
+    vertical-align: middle !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pdf-template {
+    padding: 20px;
+  }
+  
+  .pdf-header-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .pdf-report-info {
+    text-align: left;
+  }
+  
+  /* Stack to 1 column on small screens */
+  .pdf-metrics-td { width: 100%; }
+  .pdf-metrics-table { border-spacing: 8px; }
+}
+
+/* Watermark styles */
+.pdf-watermarked {
+  position: relative;
+  overflow: visible;
+}
+
+/* Group wrapper for sections that should share a single watermark */
+.pdf-watermarked-group {
+  position: relative;
+  overflow: hidden; /* clip watermark to the combined content area */
+  width: 100%;
+}
+
+.watermark {
+  position: absolute;
+  pointer-events: none;
+  color: #000;
+  opacity: 0.06;
+  font-weight: 800;
+  letter-spacing: 4px;
+  white-space: nowrap;
+  user-select: none;
+  z-index: 10; /* bring watermark above cards/content within the wrapper */
+  -webkit-print-color-adjust: exact; /* ensure color in some PDF renderers */
+  print-color-adjust: exact; /* standard property for compatibility */
+}
+
+.watermark-diagonal {
+  /* Start from bottom-left and go to top-right; large so it spans section */
+  left: -10%;
+  bottom: -8%;
+  transform: rotate(-45deg);
+  font-size: 84px;
+  transform-origin: center;
+}
+
+.watermark-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 120px; /* match PD section visual scale */
+  transform-origin: center;
+  max-width: 90%;
+  text-align: center;
+}
+
+/* Ensure section content appears above watermark */
+.pdf-section-content {
+  position: relative;
+  z-index: 1; /* keep content stacking context, watermark z-index is higher to overlay */
+}
+
+/* Risk Color Classes for PDF */
+.text-risk-very-low { color: #16a34a !important; }
+.text-risk-low { color: #16a34a !important; } /* In UI, Low is also green usually */
+.text-risk-medium { color: #f59e0b !important; }
+.text-risk-high { color: #f97316 !important; }
+.text-risk-very-high { color: #ef4444 !important; }
+
+/* PD Score Breakdown Box */
+.pdf-pd-breakdown-container {
+  position: relative;
+  margin: 8px 0 6px 0; /* Reduced from 15px/10px */
+}
+
+.pdf-pd-breakdown-label {
+  position: absolute;
+  top: -6px; /* Adjusted for smaller margin */
+  left: 12px;
+  background-color: white; 
+  padding: 0 6px;
+  font-size: 9px; /* Reduced from 10px */
+  color: #6b7280;
+  z-index: 10;
+}
+
+.pdf-pd-breakdown-box {
+  border: 1px solid #d1d5db;
+  border-radius: 6px; /* Reduced from 8px */
+  padding: 10px 10px 6px 10px; /* Reduced from 15px/12px/10px/12px */
+  background-color: transparent;
+}
+
+.pdf-pd-breakdown-grid {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 20px 0; /* Increased horizontal spacing between columns */
+  margin-left: -20px; /* Offset the first column's spacing */
+}
+
+.pdf-pd-breakdown-col {
+  display: table-cell;
+  width: 20%;
+  vertical-align: top;
+}
+
+.pdf-pd-breakdown-metric-val {
+  font-size: 18px; /* Reduced from 18px */
+  font-weight: bold;
+  color: #4b5563;
+  margin-bottom: 2px;
+}
+
+.pdf-pd-breakdown-metric-label {
+  font-size: 9px; /* Reduced from 10px */
+  color: #6b7280;
+}
+
+/* Ensure background color for label matches the PD section background */
+.bg-green-50 .pdf-pd-breakdown-label { background-color: #f0fdf4; }
+.bg-blue-50 .pdf-pd-breakdown-label { background-color: #eff6ff; }
+.bg-yellow-50 .pdf-pd-breakdown-label { background-color: #fefce8; }
+.bg-orange-50 .pdf-pd-breakdown-label { background-color: #fff7ed; }
+.bg-red-50 .pdf-pd-breakdown-label { background-color: #fef2f2; }
+.bg-gray-50 .pdf-pd-breakdown-label { background-color: #f9fafb; }
+
+/* Small adjustments for print scaling */
+@media print {
+  .watermark-diagonal { font-size: 120px; opacity: 0.04; }
+  .watermark-center { font-size: 140px; opacity: 0.04; }
+}
+
+/* Probability of Default Section - Minimal outer spacing, padding within content */
+.pdf-template .pdf-section.pdf-watermarked {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.pdf-template .pdf-section.pdf-watermarked .pdf-section-header {
+  margin-bottom: 2px !important;
+  padding-bottom: 2px !important;
+}

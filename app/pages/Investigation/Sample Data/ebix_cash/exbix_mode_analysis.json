@@ -1,0 +1,386 @@
+{
+    "SUCCESS": {
+        "pivot": {
+            "lifetime_metrics": [
+                {
+                    "paymentmode": "UPI",
+                    "amount_sum": 4766449,
+                    "amount_count": 185
+                },
+                {
+                    "paymentmode": "NET_BANKING",
+                    "amount_sum": 1595154,
+                    "amount_count": 22
+                },
+                {
+                    "paymentmode": "DEBIT_CARD",
+                    "amount_sum": 1010008,
+                    "amount_count": 13
+                },
+                {
+                    "paymentmode": "CREDIT_CARD",
+                    "amount_sum": 73479,
+                    "amount_count": 3
+                },
+                {
+                    "paymentmode": "UPI_CREDIT_CARD",
+                    "amount_sum": 11880,
+                    "amount_count": 1
+                },
+                {
+                    "paymentmode": "WALLET",
+                    "amount_sum": 22050,
+                    "amount_count": 1
+                }
+            ],
+            "past_30d_metrics": [
+                {
+                    "paymentmode": "UPI",
+                    "amount_sum": 2768788,
+                    "amount_count": 90
+                },
+                {
+                    "paymentmode": "NET_BANKING",
+                    "amount_sum": 864009,
+                    "amount_count": 13
+                },
+                {
+                    "paymentmode": "DEBIT_CARD",
+                    "amount_sum": 327257,
+                    "amount_count": 5
+                },
+                {
+                    "paymentmode": "CREDIT_CARD",
+                    "amount_sum": 73479,
+                    "amount_count": 3
+                },
+                {
+                    "paymentmode": "UPI_CREDIT_CARD",
+                    "amount_sum": 11880,
+                    "amount_count": 1
+                },
+                {
+                    "paymentmode": "WALLET",
+                    "amount_sum": 22050,
+                    "amount_count": 1
+                }
+            ],
+            "past_7d_metrics": [
+                {
+                    "paymentmode": "UPI",
+                    "amount_sum": 496271,
+                    "amount_count": 14
+                },
+                {
+                    "paymentmode": "NET_BANKING",
+                    "amount_sum": 199710,
+                    "amount_count": 3
+                },
+                {
+                    "paymentmode": "WALLET",
+                    "amount_sum": 22050,
+                    "amount_count": 1
+                }
+            ],
+            "past_1d_metrics": [
+                {
+                    "paymentmode": "UPI",
+                    "amount_sum": 111898,
+                    "amount_count": 4
+                },
+                {
+                    "paymentmode": "NET_BANKING",
+                    "amount_sum": 20575,
+                    "amount_count": 1
+                }
+            ]
+        },
+        "red_flags": {
+            "lifetime_metrics_red_flags": [
+                {
+                    "code": "TA004",
+                    "reasoning": "UPI transactions account for 185 out of 225 total transactions, which is more than 50%. This is historically significant and may indicate a pattern of preference for UPI Collect in Financial Services, Forex, Money Transfer, or similar LOBs.",
+                    "triggered": true
+                }
+            ],
+            "past_30d_metrics_red_flags": [
+                {
+                    "code": "TA004",
+                    "reasoning": "UPI transactions account for 90 out of 113 total transactions in the past 30 days, which is more than 50%. This indicates a continued high usage of UPI Collect mode recently.",
+                    "triggered": true
+                }
+            ],
+            "past_7d_metrics_red_flags": [
+                {
+                    "code": "TA004",
+                    "reasoning": "UPI transactions account for 14 out of 18 total transactions in the past 7 days, which is more than 50%. The pattern of high UPI usage persists in the recent week.",
+                    "triggered": true
+                }
+            ],
+            "past_1d_metrics_red_flags": [
+                {
+                    "code": "TA004",
+                    "reasoning": "UPI transactions account for 4 out of 5 total transactions in the past 1 day, which is more than 50%. The high UPI usage is also observed in the most recent day.",
+                    "triggered": true
+                }
+            ],
+            "summary": "Across all timeframes, UPI is the dominant payment mode, consistently accounting for a majority of transactions. Other modes like Net Banking, Debit Card, and Wallet are used much less frequently. This pattern suggests a strong preference or operational reliance on UPI for transactions in the given business category."
+        }
+    },
+    "FAILED": {
+        "pivot": {
+            "lifetime_metrics": [
+                {
+                    "paymentmode": "DEBIT_CARD",
+                    "amount_sum": 2492980,
+                    "amount_count": 30
+                },
+                {
+                    "paymentmode": "UPI",
+                    "amount_sum": 1347834,
+                    "amount_count": 30
+                },
+                {
+                    "paymentmode": "NET_BANKING",
+                    "amount_sum": 2199412,
+                    "amount_count": 25
+                },
+                {
+                    "paymentmode": "CREDIT_CARD",
+                    "amount_sum": 238065,
+                    "amount_count": 8
+                },
+                {
+                    "paymentmode": "WALLET",
+                    "amount_sum": 1457,
+                    "amount_count": 2
+                }
+            ],
+            "past_30d_metrics": [
+                {
+                    "paymentmode": "NET_BANKING",
+                    "amount_sum": 1167059,
+                    "amount_count": 11
+                },
+                {
+                    "paymentmode": "UPI",
+                    "amount_sum": 661763,
+                    "amount_count": 11
+                },
+                {
+                    "paymentmode": "DEBIT_CARD",
+                    "amount_sum": 690170,
+                    "amount_count": 9
+                },
+                {
+                    "paymentmode": "CREDIT_CARD",
+                    "amount_sum": 69744,
+                    "amount_count": 4
+                }
+            ],
+            "past_7d_metrics": [
+                {
+                    "paymentmode": "NET_BANKING",
+                    "amount_sum": 661309,
+                    "amount_count": 5
+                },
+                {
+                    "paymentmode": "DEBIT_CARD",
+                    "amount_sum": 64920,
+                    "amount_count": 3
+                },
+                {
+                    "paymentmode": "UPI",
+                    "amount_sum": 45946,
+                    "amount_count": 2
+                }
+            ],
+            "past_1d_metrics": [
+                {
+                    "paymentmode": "DEBIT_CARD",
+                    "amount_sum": 54172,
+                    "amount_count": 2
+                },
+                {
+                    "paymentmode": "UPI",
+                    "amount_sum": 45946,
+                    "amount_count": 2
+                },
+                {
+                    "paymentmode": "NET_BANKING",
+                    "amount_sum": 58289,
+                    "amount_count": 1
+                }
+            ]
+        },
+        "red_flags": {
+            "lifetime_metrics_red_flags": [
+                {
+                    "code": "TA004",
+                    "reasoning": "UPI transactions account for 30 out of 95 total transactions, which is less than half. There is no indication of more than 50% UPI Collect transactions historically.",
+                    "triggered": false
+                }
+            ],
+            "past_30d_metrics_red_flags": [
+                {
+                    "code": "TA004",
+                    "reasoning": "UPI transactions account for 11 out of 35 total transactions in the past 30 days, which is less than half. No recent spike in UPI Collect transactions detected.",
+                    "triggered": false
+                }
+            ],
+            "past_7d_metrics_red_flags": [
+                {
+                    "code": "TA004",
+                    "reasoning": "UPI transactions account for 2 out of 10 total transactions in the past 7 days, which is significantly less than half. No suspicious pattern detected.",
+                    "triggered": false
+                }
+            ],
+            "past_1d_metrics_red_flags": [
+                {
+                    "code": "TA004",
+                    "reasoning": "UPI transactions account for 2 out of 5 total transactions in the past 1 day, which is less than half. No red flag triggered.",
+                    "triggered": false
+                }
+            ],
+            "summary": "The pivot table shows a diversified usage of payment modes across all time periods, with no single mode, including UPI, dominating transaction counts. Debit card, net banking, and UPI are all used frequently, indicating a balanced payment behavior."
+        }
+    },
+    "ALL": {
+        "pivot": {
+            "lifetime_metrics": [
+                {
+                    "paymentmode": "UPI",
+                    "amount_sum": 6114283,
+                    "amount_count": 215
+                },
+                {
+                    "paymentmode": "NET_BANKING",
+                    "amount_sum": 3794566,
+                    "amount_count": 47
+                },
+                {
+                    "paymentmode": "DEBIT_CARD",
+                    "amount_sum": 3502988,
+                    "amount_count": 43
+                },
+                {
+                    "paymentmode": "CREDIT_CARD",
+                    "amount_sum": 311544,
+                    "amount_count": 11
+                },
+                {
+                    "paymentmode": "WALLET",
+                    "amount_sum": 23507,
+                    "amount_count": 3
+                },
+                {
+                    "paymentmode": "UPI_CREDIT_CARD",
+                    "amount_sum": 11880,
+                    "amount_count": 1
+                }
+            ],
+            "past_30d_metrics": [
+                {
+                    "paymentmode": "UPI",
+                    "amount_sum": 3430551,
+                    "amount_count": 101
+                },
+                {
+                    "paymentmode": "NET_BANKING",
+                    "amount_sum": 2031068,
+                    "amount_count": 24
+                },
+                {
+                    "paymentmode": "DEBIT_CARD",
+                    "amount_sum": 1017427,
+                    "amount_count": 14
+                },
+                {
+                    "paymentmode": "CREDIT_CARD",
+                    "amount_sum": 143223,
+                    "amount_count": 7
+                },
+                {
+                    "paymentmode": "UPI_CREDIT_CARD",
+                    "amount_sum": 11880,
+                    "amount_count": 1
+                },
+                {
+                    "paymentmode": "WALLET",
+                    "amount_sum": 22050,
+                    "amount_count": 1
+                }
+            ],
+            "past_7d_metrics": [
+                {
+                    "paymentmode": "UPI",
+                    "amount_sum": 542217,
+                    "amount_count": 16
+                },
+                {
+                    "paymentmode": "NET_BANKING",
+                    "amount_sum": 861019,
+                    "amount_count": 8
+                },
+                {
+                    "paymentmode": "DEBIT_CARD",
+                    "amount_sum": 64920,
+                    "amount_count": 3
+                },
+                {
+                    "paymentmode": "WALLET",
+                    "amount_sum": 22050,
+                    "amount_count": 1
+                }
+            ],
+            "past_1d_metrics": [
+                {
+                    "paymentmode": "UPI",
+                    "amount_sum": 157844,
+                    "amount_count": 6
+                },
+                {
+                    "paymentmode": "DEBIT_CARD",
+                    "amount_sum": 54172,
+                    "amount_count": 2
+                },
+                {
+                    "paymentmode": "NET_BANKING",
+                    "amount_sum": 78864,
+                    "amount_count": 2
+                }
+            ]
+        },
+        "red_flags": {
+            "lifetime_metrics_red_flags": [
+                {
+                    "code": "TA004",
+                    "reasoning": "UPI transactions account for 215 out of 320 total transactions, which is more than 50%. This indicates a significant reliance on UPI mode historically.",
+                    "triggered": true
+                }
+            ],
+            "past_30d_metrics_red_flags": [
+                {
+                    "code": "TA004",
+                    "reasoning": "UPI transactions account for 101 out of 148 total transactions in the past 30 days, which is more than 50%. This shows continued high usage of UPI mode recently.",
+                    "triggered": true
+                }
+            ],
+            "past_7d_metrics_red_flags": [
+                {
+                    "code": "TA004",
+                    "reasoning": "UPI transactions account for 16 out of 28 total transactions in the past 7 days, which is more than 50%. This indicates a recent high usage of UPI mode.",
+                    "triggered": true
+                }
+            ],
+            "past_1d_metrics_red_flags": [
+                {
+                    "code": "TA004",
+                    "reasoning": "UPI transactions account for 6 out of 10 total transactions in the past 1 day, which is more than 50%. This shows a recent spike in UPI usage.",
+                    "triggered": true
+                }
+            ],
+            "summary": "Across all timeframes, UPI is the dominant payment mode, consistently accounting for more than half of the total transaction count. Other modes like Net Banking, Debit Card, and Credit Card are used less frequently. This pattern suggests a strong preference or operational reliance on UPI for transactions in the given business category."
+        }
+    }
+}

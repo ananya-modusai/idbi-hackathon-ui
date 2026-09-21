@@ -1,0 +1,331 @@
+{
+  "context": {
+    "mid": "bc86cd3d-1338-4fea-b443-f4a8a25a3df1",
+    "start_url": "https://www.tarc.in/",
+    "probe_data_sample": true
+  },
+  "observed": {
+    "pan": [
+      {
+        "value": "AAOCA7650B",
+        "source": "probe"
+      }
+    ],
+    "gstn": [
+      {
+        "value": "07AAOCA7650B2ZP",
+        "source": "payu"
+      }
+    ]
+  },
+  "GSTN_list": [
+    "07AAOCA7650B2ZP",
+    "06AAOCA7650B2ZR",
+    "07AAOCA7650B1ZQ",
+    "06AAOCA7650B1ZS"
+  ],
+  "gstn_records": [
+    {
+      "raw": {
+        "enrichment_details": {
+          "online_provider": {
+            "details": {
+              "gstin": {
+                "value": "07AAOCA7650B2ZP"
+              },
+              "status": {
+                "value": "Active"
+              },
+              "legal_name": {
+                "value": "TARC LIMITED"
+              },
+              "trade_name": {
+                "value": ""
+              },
+              "constitution": {
+                "value": "Public Limited Company"
+              },
+              "tax_payer_type": {
+                "value": "Regular"
+              },
+              "primary_address": {
+                "value": ""
+              },
+              "registration_date": {
+                "value": "2020-09-19T00:00:00+05:30"
+              },
+              "state_jurisdiction": {
+                "value": "Ward 100"
+              },
+              "central_jurisdiction": {
+                "value": ""
+              }
+            }
+          }
+        }
+      },
+      "gstin": "07AAOCA7650B2ZP",
+      "details": {
+        "pan": "AAOCA7650B",
+        "status": "Active",
+        "registration_date": "2020-09-19T00:00:00+05:30"
+      },
+      "discovery": {
+        "paths": [
+          {
+            "type": "gstn",
+            "value": "07AAOCA7650B2ZP",
+            "source": "payu"
+          },
+          {
+            "type": "pan",
+            "value": "AAOCA7650B",
+            "source": "payu"
+          },
+          {
+            "type": "pan",
+            "value": "AAOCA7650B",
+            "source": "probe"
+          }
+        ]
+      },
+      "hsn_details": [
+        {
+          "sdes": "Construction services of single dwelling or multi dwelling or multi-storied residential buildings",
+          "saccd": "995411"
+        },
+        {
+          "sdes": "Room or unit accommodation services provided by Hotels, Inn, Guest House, Club and the like",
+          "saccd": "996311"
+        },
+        {
+          "sdes": "Rental or leasing services involving own or leased residential property",
+          "saccd": "997211"
+        },
+        {
+          "sdes": "Rental or leasing services involving own or leased non-residential property",
+          "saccd": "997212"
+        },
+        {
+          "sdes": "Construction services of commercial buildings such as office buildings, exhibition and marriage halls, malls, hotels, restaurants, airports, rail or road terminals, parking garages, petrol and service stations, theatres and other similar buildings",
+          "saccd": "995414"
+        }
+      ],
+      "pan_lookup_items": [
+        {
+          "gstin": "07AAOCA7650B2ZP",
+          "state": "DELHI",
+          "auth_status": "Active"
+        }
+      ]
+    },
+    {
+      "raw": {
+        "enrichment_details": {
+          "online_provider": {
+            "details": {
+              "gstin": {
+                "value": "07AAOCA7650B1ZQ"
+              },
+              "status": {
+                "value": "Active"
+              },
+              "legal_name": {
+                "value": "TARC LIMITED"
+              },
+              "trade_name": {
+                "value": ""
+              },
+              "constitution": {
+                "value": "Public Limited Company"
+              },
+              "tax_payer_type": {
+                "value": "Input Service Distributor (ISD)"
+              },
+              "primary_address": {
+                "value": ""
+              },
+              "registration_date": {
+                "value": "2020-08-25T00:00:00+05:30"
+              },
+              "state_jurisdiction": {
+                "value": "Ward 100"
+              },
+              "central_jurisdiction": {
+                "value": ""
+              }
+            }
+          }
+        }
+      },
+      "gstin": "07AAOCA7650B1ZQ",
+      "details": {
+        "pan": "AAOCA7650B",
+        "status": "Active",
+        "registration_date": "2020-08-25T00:00:00+05:30"
+      },
+      "discovery": {
+        "paths": [
+          {
+            "type": "pan",
+            "value": "AAOCA7650B",
+            "source": "probe"
+          }
+        ]
+      },
+      "hsn_details": [
+        {
+          "sdes": "Construction services of single dwelling or multi dwelling or multi-storied residential buildings",
+          "saccd": "995411"
+        },
+        {
+          "sdes": "Room or unit accommodation services provided by Hotels, Inn, Guest House, Club and the like",
+          "saccd": "996311"
+        },
+        {
+          "sdes": "Rental or leasing services involving own or leased residential property",
+          "saccd": "997211"
+        },
+        {
+          "sdes": "Rental or leasing services involving own or leased non-residential property",
+          "saccd": "997212"
+        },
+        {
+          "sdes": "Construction services of commercial buildings such as office buildings, exhibition and marriage halls, malls, hotels, restaurants, airports, rail or road terminals, parking garages, petrol and service stations, theatres and other similar buildings",
+          "saccd": "995414"
+        }
+      ],
+      "pan_lookup_items": [
+        {
+          "gstin": "07AAOCA7650B1ZQ",
+          "state": "DELHI",
+          "auth_status": "Active"
+        }
+      ]
+    },
+    {
+      "raw": {
+        "enrichment_details": {
+          "online_provider": {
+            "details": {
+              "status": {
+                "value": "Active"
+              },
+              "legal_name": {
+                "value": "TARC LIMITED"
+              },
+              "trade_name": {
+                "value": null
+              },
+              "registration_date": {
+                "value": "2023-08-18"
+              }
+            }
+          }
+        }
+      },
+      "gstin": "06AAOCA7650B2ZR",
+      "details": {
+        "pan": "AAOCA7650B",
+        "status": "Active",
+        "legal_name": "TARC LIMITED",
+        "trade_name": null,
+        "registration_date": "2023-08-18"
+      },
+      "discovery": {
+        "paths": [
+          {
+            "type": "pan",
+            "value": "AAOCA7650B",
+            "source": "probe"
+          }
+        ]
+      },
+      "hsn_details": [
+        {
+          "sdes": "Construction services of single dwelling or multi dwelling or multi-storied residential buildings",
+          "saccd": "995411"
+        },
+        {
+          "sdes": "Construction services of commercial buildings such as office buildings, exhibition and marriage halls, malls, hotels, restaurants, airports, rail or road terminals, parking garages, petrol and service stations, theatres and other similar buildings",
+          "saccd": "995414"
+        }
+      ],
+      "pan_lookup_items": [
+        {
+          "gstin": "06AAOCA7650B2ZR",
+          "state": "HARYANA",
+          "auth_status": "Active"
+        }
+      ]
+    },
+    {
+      "raw": {
+        "enrichment_details": {
+          "online_provider": {
+            "details": {
+              "status": {
+                "value": "Active"
+              },
+              "legal_name": {
+                "value": "TARC LIMITED"
+              },
+              "trade_name": {
+                "value": "TARC LIMITED"
+              },
+              "registration_date": {
+                "value": "2020-08-25"
+              }
+            }
+          }
+        }
+      },
+      "gstin": "06AAOCA7650B1ZS",
+      "details": {
+        "pan": "AAOCA7650B",
+        "status": "Active",
+        "legal_name": "TARC LIMITED",
+        "trade_name": "TARC LIMITED",
+        "registration_date": "2020-08-25"
+      },
+      "discovery": {
+        "paths": [
+          {
+            "type": "pan",
+            "value": "AAOCA7650B",
+            "source": "probe"
+          }
+        ]
+      },
+      "hsn_details": [
+        {
+          "sdes": "Construction services of single dwelling or multi dwelling or multi-storied residential buildings",
+          "saccd": "995411"
+        },
+        {
+          "sdes": "Room or unit accommodation services provided by Hotels, Inn, Guest House, Club and the like",
+          "saccd": "996311"
+        },
+        {
+          "sdes": "Rental or leasing services involving own or leased non-residential property",
+          "saccd": "997212"
+        },
+        {
+          "sdes": "Maintenance and repair services of fabricated metal products, except machinery and equipment",
+          "saccd": "998711"
+        },
+        {
+          "sdes": "Rental or leasing services involving own or leased residential property",
+          "saccd": "997211"
+        }
+      ],
+      "pan_lookup_items": [
+        {
+          "gstin": "06AAOCA7650B1ZS",
+          "state": "HARYANA",
+          "auth_status": "Active"
+        }
+      ]
+    }
+  ]
+}

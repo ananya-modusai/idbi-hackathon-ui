@@ -1,0 +1,3019 @@
+{
+  "asOf": "2026-09-19",
+  "notice": "Demo data. Financial-health assessments, recent cash flow, bureau observations and workflow history include synthetic enrichment.",
+  "customer": {
+    "id": "990000029",
+    "name": "Vandana Singh",
+    "classification": "Individual",
+    "relationship": "Existing Customer",
+    "location": "Kila Raipur, Punjab",
+    "relationshipManager": "Ananya Rao",
+    "financialHealth": {
+      "score": 81,
+      "band": "Good"
+    },
+    "contacts": {
+      "mobile": "+91 98765 24029",
+      "email": "vandana.singh@example.com",
+      "reference": "Rajesh Singh · Spouse · +91 98765 84210"
+    },
+    "about": [
+      "Self-employed business owner operating Vandana Enterprises; IDBI relationship since Aug 2018.",
+      "Reported borrowing of ₹36.75L is currently performing with no reported overdue.",
+      "Cash flows improved recently, supporting review of the active working-capital enquiry."
+    ],
+    "snapshot": [
+      {
+        "id": "occupation",
+        "label": "Occupation",
+        "value": "Self-employed",
+        "secondary": null
+      },
+      {
+        "id": "organisation",
+        "label": "Organisation",
+        "value": "Vandana Enterprises",
+        "secondary": null
+      },
+      {
+        "id": "income",
+        "label": "Primary Income Source",
+        "value": "Business income",
+        "secondary": null
+      },
+      {
+        "id": "bureau",
+        "label": "Credit Bureau",
+        "value": "CIBIL · 766",
+        "secondary": "Reported 16 Sep 2026"
+      },
+      {
+        "id": "personal",
+        "label": "Personal Details",
+        "value": "Age: 54 · Gender: Female",
+        "secondary": null
+      },
+      {
+        "id": "residency",
+        "label": "Residency",
+        "value": "Resident Indian",
+        "secondary": "India"
+      },
+      {
+        "id": "since",
+        "label": "Customer Since",
+        "value": "28 Aug 2018",
+        "secondary": "8 years with IDBI"
+      },
+      {
+        "id": "kyc",
+        "label": "KYC Status",
+        "value": "Verified",
+        "secondary": "Updated 12 Jun 2026"
+      }
+    ],
+    "relationshipSummary": [
+      {
+        "label": "Customer Since",
+        "value": "28 Aug 2018",
+        "secondary": "8 years"
+      },
+      {
+        "label": "Accounts & Deposits",
+        "value": "4 active",
+        "secondary": "₹2.69L held with IDBI"
+      },
+      {
+        "label": "Loans & Facilities",
+        "value": "₹36.75L outstanding",
+        "secondary": "₹62.11L aggregate limit"
+      },
+      {
+        "label": "Credit Cards",
+        "value": "None recorded",
+        "secondary": "External cards unavailable"
+      }
+    ],
+    "accounts": [
+      {
+        "product": "Savings Account · ••••0291",
+        "value": "₹36,200",
+        "opened": "28 Aug 2018",
+        "status": "Active"
+      },
+      {
+        "product": "Current Account · ••••0292",
+        "value": "₹1,12,457",
+        "opened": "28 Aug 2018",
+        "status": "Active"
+      },
+      {
+        "product": "Term Deposit · ••••0293",
+        "value": "₹72,607",
+        "opened": "28 Aug 2018",
+        "status": "Active"
+      },
+      {
+        "product": "Salary Account · ••••0294",
+        "value": "₹47,424",
+        "opened": "28 Aug 2018",
+        "status": "Active"
+      }
+    ],
+    "loans": [
+      {
+        "facility": "Credit facilities · Details unavailable",
+        "outstanding": "₹36.75L",
+        "limit": "₹62.11L aggregate",
+        "repayment": "₹71,422 monthly",
+        "timeline": [
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown"
+        ],
+        "conduct": "0 DPD · ₹0 overdue"
+      }
+    ],
+    "cibilTrend": [
+      {
+        "date": "2023-10-16",
+        "score": 690,
+        "note": "Home loan seasoning; limited credit mix."
+      },
+      {
+        "date": "2023-11-16",
+        "score": 690,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2023-12-16",
+        "score": 697,
+        "note": "Card balance cleared in full."
+      },
+      {
+        "date": "2024-01-16",
+        "score": 697,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2024-02-16",
+        "score": 697,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2024-03-16",
+        "score": 712,
+        "note": "Twelve on-time EMIs; utilisation down."
+      },
+      {
+        "date": "2024-04-16",
+        "score": 712,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2024-05-16",
+        "score": 733,
+        "note": "Older card ages into the file; mix improves."
+      },
+      {
+        "date": "2024-06-16",
+        "score": 733,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2024-07-16",
+        "score": 701,
+        "note": "Working-capital draw; utilisation crossed 70%."
+      },
+      {
+        "date": "2024-08-16",
+        "score": 668,
+        "note": "Payment missed — 30 days past due reported."
+      },
+      {
+        "date": "2024-09-16",
+        "score": 654,
+        "note": "Delinquency reported a second cycle."
+      },
+      {
+        "date": "2024-10-16",
+        "score": 654,
+        "note": "Overdue cleared; no score movement yet."
+      },
+      {
+        "date": "2024-11-16",
+        "score": 661,
+        "note": "First clean cycle after the default."
+      },
+      {
+        "date": "2024-12-16",
+        "score": 661,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2025-01-16",
+        "score": 672,
+        "note": "Utilisation back under 50%."
+      },
+      {
+        "date": "2025-02-16",
+        "score": 672,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2025-03-16",
+        "score": 672,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2025-04-16",
+        "score": 668,
+        "note": "New loan enquiry; small dip."
+      },
+      {
+        "date": "2025-05-16",
+        "score": 683,
+        "note": "Six clean cycles recorded."
+      },
+      {
+        "date": "2025-06-16",
+        "score": 683,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2025-07-16",
+        "score": 697,
+        "note": "Delinquency ageing; utilisation low."
+      },
+      {
+        "date": "2025-08-16",
+        "score": 697,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2025-09-16",
+        "score": 711,
+        "note": "Twelve clean cycles since the default."
+      },
+      {
+        "date": "2025-10-16",
+        "score": 711,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2025-11-16",
+        "score": 711,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2025-12-16",
+        "score": 724,
+        "note": "Festive spend absorbed without a spike."
+      },
+      {
+        "date": "2026-01-16",
+        "score": 724,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2026-02-16",
+        "score": 724,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2026-03-16",
+        "score": 741,
+        "note": "Delinquency now 18 months old."
+      },
+      {
+        "date": "2026-04-16",
+        "score": 741,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2026-05-16",
+        "score": 741,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2026-06-16",
+        "score": 757,
+        "note": "Two years of clean conduct."
+      },
+      {
+        "date": "2026-07-16",
+        "score": 757,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2026-08-16",
+        "score": 757,
+        "note": "No change reported this cycle."
+      },
+      {
+        "date": "2026-09-16",
+        "score": 766,
+        "note": "Current: consistent repayment, low utilisation."
+      }
+    ],
+    "needsAttention": [
+      {
+        "title": "Working-capital enquiry",
+        "status": "Enquired · 18 Sep 2026"
+      }
+    ],
+    "opportunities": [
+      {
+        "id": "working-capital",
+        "priority": "High",
+        "disposition": "Pursue",
+        "title": "Working-capital requirement",
+        "tags": [
+          "Customer Enquiry",
+          "High Intent"
+        ],
+        "trigger": "Customer enquired about working capital on 18 Sep.",
+        "whyNow": "Monthly cash surplus has recovered and reported repayments are current.",
+        "blocker": "GST performance and external borrowing exposure are not yet validated.",
+        "nextAction": "Complete pre-check before the 22 Sep · 11:30 AM follow-up.",
+        "primaryAction": "Run pre-check",
+        "secondaryAction": "Learn more",
+        "subtitle": "Strengthen business liquidity",
+        "fit": "High fit",
+        "icon": "Coins",
+        "stats": [
+          {
+            "label": "Available limit",
+            "value": "₹5L – ₹25L",
+            "icon": "TrendingUp"
+          },
+          {
+            "label": "Interest rate (est)",
+            "value": "12% – 16% p.a.",
+            "icon": "Percent"
+          },
+          {
+            "label": "Tenure",
+            "value": "3 – 12 months",
+            "icon": "CalendarDays"
+          }
+        ]
+      },
+      {
+        "id": "credit-card",
+        "priority": "Medium",
+        "disposition": "Nurture",
+        "title": "Credit-card cross-sell",
+        "tags": [
+          "Cross-sell",
+          "Income Increase"
+        ],
+        "trigger": "Recognised income improved and reported repayment behaviour remains current.",
+        "nextAction": "Check eligibility and available IDBI card offers.",
+        "primaryAction": "Check eligibility",
+        "subtitle": "Higher limit business card",
+        "fit": "Good fit",
+        "icon": "CreditCard",
+        "stats": [
+          {
+            "label": "Current limit",
+            "value": "₹1.2L",
+            "icon": "WalletCards"
+          },
+          {
+            "label": "Potential limit",
+            "value": "₹2L – ₹5L",
+            "icon": "MoveUpRight"
+          },
+          {
+            "label": "Interest rate (est)",
+            "value": "2.5% – 3.5% p.m.",
+            "icon": "Percent"
+          }
+        ]
+      },
+      {
+        "id": "investment",
+        "priority": "Medium",
+        "disposition": "Nurture",
+        "title": "Investment opportunity",
+        "tags": [
+          "Surplus Funds",
+          "Relationship Deepening"
+        ],
+        "trigger": "The customer has recurring monthly surplus and ₹10.90L of tracked assets outside IDBI.",
+        "nextAction": "Understand investment horizon, liquidity needs and risk preference.",
+        "primaryAction": "View opportunity",
+        "subtitle": "Automate surplus funds",
+        "fit": "Nurture",
+        "icon": "BarChart3",
+        "stats": [
+          {
+            "label": "Expected returns",
+            "value": "5% – 7% p.a.",
+            "icon": "Percent"
+          },
+          {
+            "label": "Min. amount",
+            "value": "₹10,000",
+            "icon": "Layers"
+          },
+          {
+            "label": "Lock-in",
+            "value": "None",
+            "icon": "Clock"
+          }
+        ]
+      }
+    ],
+    "healthHistory": [
+      {
+        "month": "Oct",
+        "score": 69,
+        "explanation": "Seasonal dip in receipts; buffers thinner.",
+        "year": 2025
+      },
+      {
+        "month": "Nov",
+        "score": 73,
+        "explanation": "Receipts recovered ahead of the festive season.",
+        "year": 2025
+      },
+      {
+        "month": "Dec",
+        "score": 78,
+        "explanation": "Strong festive inflows rebuilt reserves.",
+        "year": 2025
+      },
+      {
+        "month": "Jan",
+        "score": 80,
+        "explanation": "Surplus sustained; repayments current.",
+        "year": 2026
+      },
+      {
+        "month": "Feb",
+        "score": 75,
+        "explanation": "Large supplier payment reduced headroom.",
+        "year": 2026
+      },
+      {
+        "month": "Mar",
+        "score": 66,
+        "explanation": "Receivables slipped; surplus compressed.",
+        "year": 2026
+      },
+      {
+        "month": "Apr",
+        "score": 74,
+        "explanation": "Improved income consistency supported financial health.",
+        "year": 2026
+      },
+      {
+        "month": "May",
+        "score": 79,
+        "explanation": "Stronger net business income improved headroom and reserves.",
+        "year": 2026
+      },
+      {
+        "month": "Jun",
+        "score": 76,
+        "explanation": "A temporary fall in net business income reduced headroom.",
+        "year": 2026
+      },
+      {
+        "month": "Jul",
+        "score": 70,
+        "explanation": "Lower income persisted; repayments remained current.",
+        "year": 2026
+      },
+      {
+        "month": "Aug",
+        "score": 77,
+        "explanation": "Income recovered and reserves began rebuilding.",
+        "year": 2026
+      },
+      {
+        "month": "Sep",
+        "score": 81,
+        "explanation": "Inflows stabilised and reserves strengthened further.",
+        "year": 2026
+      }
+    ],
+    "healthDrivers": [
+      {
+        "name": "Cash Flow Strength",
+        "score": 83,
+        "band": "Strong"
+      },
+      {
+        "name": "Debt Sustainability",
+        "score": 85,
+        "band": "Strong"
+      },
+      {
+        "name": "Financial Resilience",
+        "score": 73,
+        "band": "Stable"
+      }
+    ]
+  },
+  "financialPosition": {
+    "scopeOptions": [
+      "Combined view · 5 accounts",
+      "IDBI Bank · 2 accounts",
+      "Other banks · 3 accounts"
+    ],
+    "periodOptions": [
+      "Last 3 months",
+      "Last 6 months",
+      "Last 12 months"
+    ],
+    "cashflowInsight": "Recognised income recovered after July and now exceeds core spending and debt repayments. The six-month average surplus is ₹1.23L; one AA account has partial history.",
+    "cashflowMetrics": [
+      {
+        "label": "Primary Income Credits",
+        "value": "Business receipts",
+        "secondary": "₹4.73L average / month"
+      },
+      {
+        "label": "Recognised Income",
+        "value": "₹4.88L",
+        "secondary": "Average / month"
+      },
+      {
+        "label": "Core Spending",
+        "value": "₹2.77L",
+        "secondary": "Average / month"
+      },
+      {
+        "label": "Monthly Investments",
+        "value": "₹25,000",
+        "secondary": "Regular contributions"
+      },
+      {
+        "label": "Monthly Surplus",
+        "value": "₹1.23L",
+        "secondary": "After debt repayments"
+      }
+    ],
+    "cashflowMonths": [
+      {
+        "month": "Apr",
+        "income": 4.5,
+        "spending": 3.7,
+        "surplus": 0.8
+      },
+      {
+        "month": "May",
+        "income": 5.25,
+        "spending": 3.8,
+        "surplus": 1.45
+      },
+      {
+        "month": "Jun",
+        "income": 4.7,
+        "spending": 3.9,
+        "surplus": 0.8
+      },
+      {
+        "month": "Jul",
+        "income": 3.9,
+        "spending": 4.0,
+        "surplus": -0.1
+      },
+      {
+        "month": "Aug",
+        "income": 5.0,
+        "spending": 3.5,
+        "surplus": 1.5
+      },
+      {
+        "month": "Sep",
+        "income": 5.95,
+        "spending": 3.0,
+        "surplus": 2.95
+      }
+    ],
+    "cashflowBreakdown": [
+      {
+        "group": "Income",
+        "apr": "₹4.50L",
+        "may": "₹5.25L",
+        "jun": "₹4.70L",
+        "jul": "₹3.90L",
+        "aug": "₹5.00L",
+        "sep": "₹5.95L",
+        "mom": "+19.0%"
+      },
+      {
+        "group": "Spending",
+        "apr": "−₹2.57L",
+        "may": "−₹2.67L",
+        "jun": "−₹2.77L",
+        "jul": "−₹2.87L",
+        "aug": "−₹2.37L",
+        "sep": "−₹1.87L",
+        "mom": "−21.1%"
+      },
+      {
+        "group": "Transfers",
+        "apr": "−₹0.20L",
+        "may": "−₹0.20L",
+        "jun": "−₹0.20L",
+        "jul": "−₹0.20L",
+        "aug": "−₹0.20L",
+        "sep": "−₹0.20L",
+        "mom": "No change"
+      },
+      {
+        "group": "Credit Activity",
+        "apr": "−₹0.88L",
+        "may": "−₹0.88L",
+        "jun": "−₹0.88L",
+        "jul": "−₹0.88L",
+        "aug": "−₹0.88L",
+        "sep": "−₹0.88L",
+        "mom": "No change"
+      },
+      {
+        "group": "Savings & Protection",
+        "apr": "−₹0.25L",
+        "may": "−₹0.25L",
+        "jun": "−₹0.25L",
+        "jul": "−₹0.25L",
+        "aug": "−₹0.25L",
+        "sep": "−₹0.25L",
+        "mom": "No change"
+      }
+    ],
+    "associations": [
+      {
+        "organisation": "Vandana Enterprises",
+        "role": "Owner",
+        "from": "Aug 2018",
+        "to": "—",
+        "status": "Active",
+        "source": "Business profile",
+        "verified": "19 Sep 2026"
+      },
+      {
+        "organisation": "Punjab Textiles Pvt Ltd",
+        "role": "Employee",
+        "from": "Jul 2011",
+        "to": "Jun 2018",
+        "status": "Ended",
+        "source": "EPFO employment record",
+        "verified": "16 Sep 2026"
+      }
+    ],
+    "capacity": [
+      {
+        "label": "Recognised Income",
+        "value": "₹4.88L"
+      },
+      {
+        "label": "Non-debt Core Expenses",
+        "value": "₹2.77L"
+      },
+      {
+        "label": "Debt Repayments",
+        "value": "₹0.88L"
+      },
+      {
+        "label": "Monthly Surplus",
+        "value": "₹1.23L"
+      }
+    ],
+    "loanSummary": "1 aggregate IDBI relationship · ₹36.75L outstanding · ₹62.11L aggregate limit · 59.2% utilised · 0 DPD",
+    "loans": [
+      {
+        "facility": "Credit facilities · Details unavailable",
+        "lender": "IDBI Bank · Core banking",
+        "outstanding": "₹36.75L",
+        "limit": "₹62.11L",
+        "monthlyDue": "₹0.88L",
+        "tenure": "Unavailable",
+        "conduct": "0 DPD · ₹0 overdue"
+      }
+    ],
+    "savingsInsight": "56.6% of tracked financial assets are held in bank balances and term deposits, while 29.1% is market-linked. The ₹7.80L current-account balance supports business operations and is excluded from investible-surplus assumptions.",
+    "savingsMetrics": [
+      {
+        "label": "Tracked Financial Assets",
+        "value": "₹25.10L"
+      },
+      {
+        "label": "Held with IDBI",
+        "value": "₹14.20L · 56.6%"
+      },
+      {
+        "label": "Market-linked Investments",
+        "value": "₹7.30L · 29.1%"
+      },
+      {
+        "label": "Monthly Investments",
+        "value": "₹25,000"
+      }
+    ],
+    "allocation": [
+      {
+        "name": "Bank balances",
+        "value": 10.2,
+        "percent": 40.6,
+        "idbi": "₹10.20L",
+        "other": "—",
+        "color": "#2563eb"
+      },
+      {
+        "name": "Term deposits",
+        "value": 4.0,
+        "percent": 15.9,
+        "idbi": "₹4.00L",
+        "other": "—",
+        "color": "#60a5fa"
+      },
+      {
+        "name": "Mutual funds",
+        "value": 5.2,
+        "percent": 20.7,
+        "idbi": "—",
+        "other": "₹5.20L",
+        "color": "#8b5cf6"
+      },
+      {
+        "name": "Stocks",
+        "value": 2.1,
+        "percent": 8.4,
+        "idbi": "—",
+        "other": "₹2.10L",
+        "color": "#f59e0b"
+      },
+      {
+        "name": "Long-term savings · PPF",
+        "value": 3.6,
+        "percent": 14.3,
+        "idbi": "—",
+        "other": "₹3.60L",
+        "color": "#10b981"
+      }
+    ],
+    "holdings": [
+      {
+        "account": "Savings account · 1029",
+        "institution": "IDBI Bank",
+        "value": "₹2.40L"
+      },
+      {
+        "account": "Current account · 7821",
+        "institution": "IDBI Bank",
+        "value": "₹7.80L"
+      },
+      {
+        "account": "Fixed deposit · 4118",
+        "institution": "IDBI Bank",
+        "value": "₹4.00L"
+      },
+      {
+        "account": "Mutual funds · Folio 6634",
+        "institution": "Axis Mutual Fund",
+        "value": "₹5.20L"
+      },
+      {
+        "account": "Stocks · 6 scrips",
+        "institution": "NSDL Demat",
+        "value": "₹2.10L"
+      },
+      {
+        "account": "PPF · 8842",
+        "institution": "India Post",
+        "value": "₹3.60L"
+      }
+    ],
+    "holdingDetails": [
+      {
+        "category": "Bank balances",
+        "holdings": [
+          {
+            "holding": "Savings account",
+            "institution": "IDBI Bank",
+            "reference": "Account · 1029",
+            "value": 2.4
+          },
+          {
+            "holding": "Current account",
+            "institution": "IDBI Bank",
+            "reference": "Account · 7821",
+            "value": 7.8
+          }
+        ]
+      },
+      {
+        "category": "Term deposits",
+        "holdings": [
+          {
+            "holding": "Fixed deposit",
+            "institution": "IDBI Bank",
+            "reference": "Deposit · 4118",
+            "value": 4.0
+          }
+        ]
+      },
+      {
+        "category": "Mutual funds",
+        "holdings": [
+          {
+            "holding": "Axis Bluechip Fund",
+            "institution": "Axis Mutual Fund",
+            "reference": "Folio · 6634",
+            "value": 3.1
+          },
+          {
+            "holding": "Axis Balanced Advantage Fund",
+            "institution": "Axis Mutual Fund",
+            "reference": "Folio · 6634",
+            "value": 2.1
+          }
+        ]
+      },
+      {
+        "category": "Stocks",
+        "holdings": [
+          {
+            "holding": "Reliance Industries",
+            "institution": "NSDL Demat",
+            "reference": "INE002A01018",
+            "value": 0.52
+          },
+          {
+            "holding": "HDFC Bank",
+            "institution": "NSDL Demat",
+            "reference": "INE040A01034",
+            "value": 0.46
+          },
+          {
+            "holding": "Infosys",
+            "institution": "NSDL Demat",
+            "reference": "INE009A01021",
+            "value": 0.35
+          },
+          {
+            "holding": "TCS",
+            "institution": "NSDL Demat",
+            "reference": "INE467B01029",
+            "value": 0.31
+          },
+          {
+            "holding": "ITC",
+            "institution": "NSDL Demat",
+            "reference": "INE154A01025",
+            "value": 0.26
+          },
+          {
+            "holding": "Larsen & Toubro",
+            "institution": "NSDL Demat",
+            "reference": "INE018A01030",
+            "value": 0.2
+          }
+        ]
+      },
+      {
+        "category": "Long-term savings · PPF",
+        "holdings": [
+          {
+            "holding": "Public Provident Fund",
+            "institution": "India Post",
+            "reference": "Account · 8842",
+            "value": 3.6
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "asset": "VE-PL-001",
+        "type": "Commercial property",
+        "owner": "Vandana Singh",
+        "location": "Kila Raipur, PB",
+        "value": "₹45L–₹55L",
+        "status": "Active charge",
+        "holder": "IDBI Bank",
+        "secured": "₹28.50L"
+      },
+      {
+        "asset": "VE-VH-002",
+        "type": "Commercial vehicle",
+        "owner": "Vandana Enterprises",
+        "location": "Ludhiana, PB",
+        "value": "₹7L–₹9L",
+        "status": "Active charge",
+        "holder": "HDFC Bank",
+        "secured": "₹5.25L"
+      }
+    ],
+    "charges": {
+      "open": [
+        {
+          "id": "CERSAI-VE-1042",
+          "holder": "IDBI Bank",
+          "amount": "₹28.50L",
+          "created": "4 Sep 2018",
+          "event": "Modified · 18 Aug 2026",
+          "rate": "10.25%",
+          "security": "Commercial property, receivables and book debts"
+        },
+        {
+          "id": "CERSAI-VE-2198",
+          "holder": "HDFC Bank",
+          "amount": "₹5.25L",
+          "created": "12 Jan 2026",
+          "event": "Created · 12 Jan 2026",
+          "rate": "9.10%",
+          "security": "Commercial vehicle"
+        }
+      ],
+      "satisfied": [
+        {
+          "id": "CERSAI-VE-0841",
+          "holder": "Bank of Baroda",
+          "amount": "₹6.00L",
+          "created": "22 May 2019",
+          "event": "Satisfied · 14 Dec 2023",
+          "rate": "—",
+          "security": "Business equipment"
+        }
+      ]
+    }
+  },
+  "relationshipFeed": {
+    "highlights": [
+      {
+        "label": "Open Matters",
+        "value": "2",
+        "filter": "open"
+      },
+      {
+        "label": "Awaiting Customer",
+        "value": "1",
+        "filter": "awaiting"
+      },
+      {
+        "label": "Next Follow-up",
+        "value": "22 Sep · 11:30 AM",
+        "filter": "open"
+      },
+      {
+        "label": "Last Interaction",
+        "value": "18 Sep · Branch meeting",
+        "filter": "all"
+      }
+    ],
+    "threads": [
+      {
+        "id": "MAT-WC-1048",
+        "title": "Working-capital requirement",
+        "type": "Sales",
+        "status": "Open",
+        "owner": "Ananya Rao",
+        "summary": "Pre-check is conditional; GST filing and cash-flow validation are required before the 22 Sep follow-up.",
+        "currentState": "Pre-check conditional",
+        "nextAction": "Discuss amount and collect GST filing · 22 Sep 2026 · 11:30 AM",
+        "open": true,
+        "events": [
+          {
+            "date": "19 Sep 2026 · 10:15 AM",
+            "type": "Pre-check",
+            "summary": "Conditional; GST filings and cash-flow validation required."
+          },
+          {
+            "date": "18 Sep",
+            "type": "Branch meeting",
+            "summary": "Customer discussed seasonal inventory funding.",
+            "outcomes": [
+              "Opportunity created",
+              "Follow-up scheduled",
+              "Confirmation SMS delivered"
+            ]
+          },
+          {
+            "date": "18 Sep",
+            "type": "Product enquiry",
+            "summary": "Customer asked to discuss a working-capital requirement."
+          }
+        ]
+      },
+      {
+        "id": "MAT-ADR-2071",
+        "title": "Address update",
+        "type": "Service",
+        "status": "Awaiting Customer",
+        "owner": "Service Desk",
+        "summary": "Current address proof is awaited from the customer.",
+        "currentState": "Current address proof requested",
+        "nextAction": "Address proof required",
+        "open": true,
+        "events": [
+          {
+            "date": "17 Sep 2026 · 4:20 PM",
+            "type": "Service update",
+            "summary": "Customer asked to provide current address proof."
+          },
+          {
+            "date": "7 Sep",
+            "type": "Ticket created",
+            "summary": "Address-change request received."
+          }
+        ]
+      },
+      {
+        "id": "MAT-CC-7824",
+        "title": "Business Credit Card",
+        "type": "Application",
+        "status": "Declined",
+        "owner": "Cards",
+        "summary": "Application declined on 4 Jul 2026; run a pre-check before any future application.",
+        "currentState": "Declined on 4 Jul 2026",
+        "nextAction": "Pre-check before any future application",
+        "open": false,
+        "events": [
+          {
+            "date": "4 Jul 2026 · 2:30 PM",
+            "type": "Decision",
+            "summary": "Recent obligations exceeded the card-policy threshold."
+          },
+          {
+            "date": "28 Jun",
+            "type": "Application submitted",
+            "summary": "Business Credit Card application received."
+          }
+        ]
+      },
+      {
+        "id": "MAT-CMP-4421",
+        "title": "Card debit dispute",
+        "type": "Complaint",
+        "status": "Resolved",
+        "owner": "Service Desk",
+        "summary": "Debit dispute resolved; the customer was notified and the ticket was closed.",
+        "currentState": "Customer notified; ticket closed",
+        "nextAction": "No action",
+        "open": false,
+        "events": [
+          {
+            "date": "25 Mar 2026 · 11:05 AM",
+            "type": "Resolution",
+            "summary": "Customer notified; ticket closed."
+          },
+          {
+            "date": "23 Mar",
+            "type": "Complaint logged",
+            "summary": "Card debit disputed by customer."
+          }
+        ]
+      },
+      {
+        "id": "MAT-CVL-3411",
+        "title": "Commercial Vehicle Loan",
+        "type": "Application",
+        "status": "Approved and Disbursed",
+        "owner": "SME Credit",
+        "summary": "Facility disbursed on 16 Jan; repayments are currently reported as current.",
+        "currentState": "Repayments currently reported as current",
+        "nextAction": "No action",
+        "open": false,
+        "events": [
+          {
+            "date": "16 Jan 2026 · 3:45 PM",
+            "type": "Disbursal",
+            "summary": "Facility disbursed; repayments currently reported as current."
+          },
+          {
+            "date": "12 Jan",
+            "type": "Application submitted",
+            "summary": "Commercial Vehicle Loan application received."
+          }
+        ]
+      },
+      {
+        "id": "MAT-GENERAL",
+        "title": "General Relationship",
+        "type": "General Relationship",
+        "status": "Active",
+        "owner": "Ananya Rao",
+        "summary": "Relationship active with no open action; the latest review found no reported repayment issue.",
+        "currentState": "No open action",
+        "nextAction": "—",
+        "open": false,
+        "events": [
+          {
+            "date": "1 Aug 2026 · 12:10 PM",
+            "type": "Phone",
+            "summary": "Reviewed the temporary decline in business receipts; no repayment issue reported."
+          }
+        ]
+      }
+    ]
+  },
+  "metrics": {
+    "months": [
+      "Oct",
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep"
+    ],
+    "capacity": [
+      {
+        "id": "income",
+        "label": "Recognised Monthly Receipts",
+        "value": "₹4.88L",
+        "secondary": "78th percentile among comparable self-employed customers",
+        "definition": "Average monthly self-employed operating receipts recognised from the customer’s accounts. Own-account transfers, loan disbursals, refunds and unverified credits are excluded."
+      },
+      {
+        "id": "surplus",
+        "label": "Post-commitment Cash Remaining",
+        "value": "₹1.23L",
+        "secondary": "25% of recognised receipts",
+        "definition": "Average money remaining after operating outflows, regular expenses and verified debt payments have been deducted from recognised receipts."
+      },
+      {
+        "id": "debt",
+        "label": "Verified Debt Outstanding",
+        "value": "₹36.75L",
+        "secondary": "₹0 currently overdue",
+        "definition": "Total outstanding amount from operating and personal borrowing facilities visible in the available verified records."
+      },
+      {
+        "id": "savings",
+        "label": "Accessible Financial Reserves",
+        "value": "₹6.40L",
+        "secondary": "Covers 1.8 months of commitments",
+        "definition": "Savings and deposits available as a financial reserve. The ₹7.80L operating current-account balance is shown in Financial Position but is not automatically treated as personal savings or a freely available reserve."
+      }
+    ],
+    "groups": [
+      {
+        "id": "cash-flow",
+        "label": "Cash Flow Strength",
+        "metrics": [
+          {
+            "code": "CF01",
+            "id": "recognised-receipts",
+            "label": "Recognised self-employed receipts",
+            "type": "Income",
+            "definition": "Monthly business credits accepted as operating receipts after transfers, financing inflows, refunds and unresolved credits are excluded.",
+            "calculation": "Sum eligible business receipts for each month.",
+            "benchmark": "Comparable cohort and prior period",
+            "benchmarkDefinition": "Interpret the absolute amount against this customer’s prior comparable period and an approved self-employed cohort.",
+            "format": "currency-lakh",
+            "direction": "higher",
+            "values": [
+              4.62,
+              4.78,
+              4.95,
+              4.86,
+              4.72,
+              4.91,
+              4.54,
+              5.12,
+              4.69,
+              4.03,
+              5.25,
+              5.63
+            ],
+            "assessment": "Average recognised receipts are ₹4.88L across the latest six months and recovered after July.",
+            "evidence": "IDBI and covered bank-account transactions · 12 completed months",
+            "unit": "₹ lakh"
+          },
+          {
+            "code": "CF02",
+            "id": "receipt-growth",
+            "label": "Self-employed receipt growth",
+            "type": "Income",
+            "definition": "Change in recognised receipts versus the relevant prior comparable period.",
+            "calculation": "(Current comparable receipts − prior comparable receipts) ÷ prior comparable receipts.",
+            "benchmark": "0% or higher",
+            "benchmarkDefinition": "Positive growth is the configured directional benchmark; seasonal businesses use the same-season baseline.",
+            "format": "percent",
+            "direction": "higher",
+            "values": [
+              8,
+              9,
+              10,
+              12,
+              8,
+              11,
+              5,
+              9,
+              3,
+              -12,
+              7,
+              14
+            ],
+            "assessment": "Receipt growth turned negative in July and recovered in August and September.",
+            "evidence": "Recognised monthly receipt series · customer baseline",
+            "threshold": 0,
+            "unit": "%"
+          },
+          {
+            "code": "CF03",
+            "id": "receipt-continuity",
+            "label": "Expected receipt periods met",
+            "type": "Continuity",
+            "definition": "Whether recognised business receipts were observed in each expected earning period.",
+            "calculation": "Eligible periods with recognised receipts ÷ expected earning periods.",
+            "benchmark": "At least 5 of 6 months",
+            "benchmarkDefinition": "Receipts should be visible in at least five of the latest six expected months.",
+            "format": "text",
+            "direction": "positive",
+            "values": [
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes"
+            ],
+            "assessment": "Business receipts were visible in all six recent months.",
+            "evidence": "Recognised monthly receipt series · expected monthly cadence",
+            "unit": "Status"
+          },
+          {
+            "code": "CF04",
+            "id": "receipt-variation",
+            "label": "Self-employed receipt variation",
+            "type": "Stability",
+            "definition": "Variation of recurring business receipts around their recent average.",
+            "calculation": "Robust variation across comparable monthly recognised receipts.",
+            "benchmark": "25% or less",
+            "benchmarkDefinition": "Variation at or below 25% is the configured demo benchmark.",
+            "format": "percent",
+            "direction": "lower",
+            "values": [
+              18,
+              16,
+              15,
+              13,
+              12,
+              14,
+              12,
+              14,
+              13,
+              22,
+              18,
+              14
+            ],
+            "assessment": "Variation remained within the benchmark despite the July reduction.",
+            "evidence": "Recognised monthly receipt series · 12 completed months",
+            "threshold": 25,
+            "unit": "%"
+          },
+          {
+            "code": "CF05",
+            "id": "payer-concentration",
+            "label": "Largest payer share",
+            "type": "Concentration",
+            "definition": "Share of recognised receipts attributable to the largest identifiable payer.",
+            "calculation": "Largest verified payer receipts ÷ total recognised receipts.",
+            "benchmark": "40% or less",
+            "benchmarkDefinition": "Lower payer concentration reduces reliance on one counterparty; the threshold requires segment calibration.",
+            "format": "percent",
+            "direction": "lower",
+            "values": [
+              34,
+              35,
+              33,
+              36,
+              32,
+              34,
+              35,
+              33,
+              36,
+              39,
+              37,
+              35
+            ],
+            "assessment": "The largest identified payer represents 35% of recent receipts.",
+            "evidence": "Counterparty-resolved business credits · partial payer identification",
+            "threshold": 40,
+            "unit": "%"
+          },
+          {
+            "code": "CF06",
+            "id": "operating-expense-ratio",
+            "label": "Operating expense ratio",
+            "type": "Expenses",
+            "definition": "Verified operating outflows as a share of recognised business receipts.",
+            "calculation": "Verified business operating outflows ÷ recognised business receipts.",
+            "benchmark": "60% or less",
+            "benchmarkDefinition": "The configured demo benchmark expects operating outflows to remain at or below 60% of recognised receipts.",
+            "format": "percent",
+            "direction": "lower",
+            "values": [
+              54,
+              53,
+              55,
+              56,
+              52,
+              54,
+              56,
+              51,
+              58,
+              65,
+              49,
+              45
+            ],
+            "assessment": "Operating expenses exceeded the benchmark in July and subsequently improved.",
+            "evidence": "Classified business debits · transfers and debt payments excluded",
+            "threshold": 60,
+            "unit": "%"
+          },
+          {
+            "code": "CF07",
+            "id": "discretionary-share",
+            "label": "Discretionary spending share",
+            "type": "Expenses",
+            "definition": "Flexible household spending as a share of classified household spending.",
+            "calculation": "Discretionary spending ÷ total classified household spending.",
+            "benchmark": "Customer baseline",
+            "benchmarkDefinition": "This metric is interpreted against the customer’s own pattern and is not an adverse judgement.",
+            "format": "percent",
+            "direction": "lower",
+            "values": [
+              17,
+              16,
+              18,
+              19,
+              17,
+              18,
+              18,
+              17,
+              19,
+              15,
+              16,
+              17
+            ],
+            "assessment": "Discretionary spending remained broadly consistent with the customer’s recent pattern.",
+            "evidence": "Classified household debits · classification confidence shown in details",
+            "unit": "%"
+          },
+          {
+            "code": "CF08",
+            "id": "expense-change",
+            "label": "Total expense change",
+            "type": "Expenses",
+            "definition": "Change in classified operating and household expenses versus the prior comparable window.",
+            "calculation": "(Current comparable expenses − prior comparable expenses) ÷ prior comparable expenses.",
+            "benchmark": "5% or less increase",
+            "benchmarkDefinition": "An increase of 5% or less is the configured demo benchmark; verified exceptional expenses are separated.",
+            "format": "percent",
+            "direction": "lower",
+            "values": [
+              2,
+              3,
+              1,
+              4,
+              0,
+              2,
+              3,
+              1,
+              6,
+              14,
+              -4,
+              -2
+            ],
+            "assessment": "Expenses increased materially in July and reduced in the following two months.",
+            "evidence": "Classified operating and household debits · comparable windows",
+            "threshold": 5,
+            "unit": "%"
+          },
+          {
+            "code": "CF09",
+            "id": "pre-debt-cash",
+            "label": "Cash remaining before debt",
+            "type": "Surplus",
+            "definition": "Recognised receipts remaining after verified operating and recurring non-debt outflows.",
+            "calculation": "Recognised receipts − operating expenses − recurring household non-debt expenses.",
+            "benchmark": "₹1.10L or more",
+            "benchmarkDefinition": "The configured amount benchmark is based on the demo customer profile and requires bank calibration.",
+            "format": "currency-lakh",
+            "direction": "higher",
+            "values": [
+              1.56,
+              1.68,
+              1.61,
+              1.54,
+              1.72,
+              1.66,
+              1.42,
+              1.78,
+              1.53,
+              0.79,
+              1.95,
+              2.11
+            ],
+            "assessment": "Cash available before debt fell below the benchmark in July and recovered strongly.",
+            "evidence": "Recognised receipts and classified non-debt outflows",
+            "threshold": 1.1,
+            "unit": "₹ lakh"
+          },
+          {
+            "code": "CF10",
+            "id": "post-commitment-margin",
+            "label": "Post-commitment surplus margin",
+            "type": "Surplus",
+            "definition": "Share of recognised receipts remaining after operating outflows, regular expenses and verified debt payments.",
+            "calculation": "Cash remaining after commitments ÷ recognised receipts.",
+            "benchmark": "20% or more",
+            "benchmarkDefinition": "Retaining at least 20% after commitments is the configured demo benchmark.",
+            "format": "percent",
+            "direction": "higher",
+            "values": [
+              24,
+              26,
+              22,
+              21,
+              25,
+              23,
+              18,
+              28,
+              17,
+              -3,
+              30,
+              50
+            ],
+            "assessment": "The surplus margin recovered after falling below the benchmark in July.",
+            "evidence": "Recognised receipts · classified expenses · verified debt payments",
+            "threshold": 20,
+            "unit": "%"
+          },
+          {
+            "code": "CF11",
+            "id": "positive-surplus",
+            "label": "Positive-surplus month",
+            "type": "Surplus",
+            "definition": "Whether the monthly post-commitment cash position was non-negative.",
+            "calculation": "Recognised receipts minus operating expenses, household expenses and verified debt payments.",
+            "benchmark": "At least 5 of 6 months",
+            "benchmarkDefinition": "At least five positive-surplus months in the latest six is the configured benchmark.",
+            "format": "text",
+            "direction": "positive",
+            "values": [
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Yes",
+              "No",
+              "Yes",
+              "Yes"
+            ],
+            "assessment": "Five of the latest six months had positive cash remaining after commitments.",
+            "evidence": "Monthly post-commitment cash series",
+            "unit": "Status"
+          },
+          {
+            "code": "CF12",
+            "id": "essential-returns",
+            "label": "Essential-payment returns",
+            "type": "Payment stability",
+            "definition": "Count of verified essential non-debt payments returned for insufficient funds.",
+            "calculation": "Count eligible returned essential payments by month.",
+            "benchmark": "0 returns",
+            "benchmarkDefinition": "No verified essential-payment return is the configured benchmark.",
+            "format": "number",
+            "direction": "lower",
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "assessment": "One essential-payment return was recorded during the July cash-flow reduction.",
+            "evidence": "Return reason and classified essential-payment records",
+            "threshold": 0,
+            "unit": "Count"
+          }
+        ]
+      },
+      {
+        "id": "debt",
+        "label": "Debt Sustainability",
+        "metrics": [
+          {
+            "code": "DB01",
+            "id": "debt-outstanding",
+            "label": "Verified debt outstanding",
+            "type": "Exposure",
+            "definition": "Current outstanding across deduplicated covered loan and revolving facilities.",
+            "calculation": "Sum current outstanding across canonical covered facilities.",
+            "benchmark": "Customer baseline",
+            "benchmarkDefinition": "Outstanding is interpreted with income, purpose, repayment and limit information.",
+            "format": "currency-lakh",
+            "direction": "lower",
+            "values": [
+              38.5,
+              38.34,
+              38.18,
+              38.01,
+              37.84,
+              37.66,
+              37.49,
+              37.32,
+              37.14,
+              36.98,
+              36.86,
+              36.75
+            ],
+            "assessment": "Verified outstanding reduced gradually during the assessed period.",
+            "evidence": "IDBI facilities and covered external obligations · deduplicated",
+            "unit": "₹ lakh"
+          },
+          {
+            "code": "DB02",
+            "id": "monthly-debt-service",
+            "label": "Monthly debt payments",
+            "type": "Burden",
+            "definition": "Verified monthly loan, card and other debt payments due.",
+            "calculation": "Sum monthly contractual debt payments across covered facilities.",
+            "benchmark": "Customer baseline",
+            "benchmarkDefinition": "The absolute payment is interpreted through repayment share and debt-service coverage.",
+            "format": "currency-lakh",
+            "direction": "lower",
+            "values": [
+              0.88,
+              0.88,
+              0.88,
+              0.88,
+              0.88,
+              0.88,
+              0.88,
+              0.88,
+              0.88,
+              0.88,
+              0.88,
+              0.88
+            ],
+            "assessment": "Recorded monthly debt payments remained stable at approximately ₹88,000.",
+            "evidence": "Covered facility schedules and observed payments",
+            "unit": "₹ lakh"
+          },
+          {
+            "code": "DB03",
+            "id": "repayment-share",
+            "label": "Debt repayment share",
+            "type": "Burden",
+            "definition": "Verified monthly debt payments divided by recognised receipts.",
+            "calculation": "Monthly verified debt service ÷ recognised receipts.",
+            "benchmark": "40% or less",
+            "benchmarkDefinition": "Debt payments at or below 40% of recognised receipts are the configured demo benchmark.",
+            "format": "percent",
+            "direction": "lower",
+            "values": [
+              19,
+              18,
+              20,
+              19,
+              18,
+              20,
+              20,
+              17,
+              19,
+              23,
+              18,
+              15
+            ],
+            "assessment": "Debt payments remain below the configured share-of-receipts benchmark.",
+            "evidence": "Recognised receipts · covered monthly debt service",
+            "threshold": 40,
+            "unit": "%"
+          },
+          {
+            "code": "DB04",
+            "id": "debt-service-coverage",
+            "label": "Debt service coverage",
+            "type": "Affordability",
+            "definition": "Cash available before debt divided by verified monthly debt payments due.",
+            "calculation": "Pre-debt cash remaining ÷ monthly debt service.",
+            "benchmark": "1.25× or more",
+            "benchmarkDefinition": "At least ₹1.25 available for every ₹1 due is the configured benchmark.",
+            "format": "multiple",
+            "direction": "higher",
+            "values": [
+              2.1,
+              2.3,
+              2.0,
+              2.1,
+              2.3,
+              2.0,
+              1.9,
+              2.6,
+              1.9,
+              0.9,
+              2.7,
+              4.4
+            ],
+            "assessment": "Coverage fell below the benchmark in July and recovered strongly.",
+            "evidence": "Pre-debt cash series · covered monthly debt service",
+            "threshold": 1.25,
+            "unit": "×"
+          },
+          {
+            "code": "DB05",
+            "id": "maximum-dpd",
+            "label": "Maximum days past due",
+            "type": "Conduct",
+            "definition": "Highest verified days past due among covered facilities during the month.",
+            "calculation": "Maximum verified DPD across eligible facility cycles.",
+            "benchmark": "0 DPD",
+            "benchmarkDefinition": "Zero days past due is the contractual benchmark.",
+            "format": "number",
+            "direction": "lower",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              0
+            ],
+            "assessment": "The current position is 0 DPD; earlier monthly due-versus-paid history is unavailable.",
+            "evidence": "Current facility status · historical cycles incomplete",
+            "threshold": 0,
+            "unit": "Days"
+          },
+          {
+            "code": "DB06",
+            "id": "overdue-amount",
+            "label": "Current overdue amount",
+            "type": "Conduct",
+            "definition": "Verified unresolved overdue amount across covered facilities.",
+            "calculation": "Sum unresolved overdue balances across covered facilities.",
+            "benchmark": "₹0 overdue",
+            "benchmarkDefinition": "No unresolved overdue amount is the contractual benchmark.",
+            "format": "currency-lakh",
+            "direction": "lower",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              0
+            ],
+            "assessment": "No current overdue amount is reported in the available records.",
+            "evidence": "Current covered facility status",
+            "threshold": 0,
+            "unit": "₹ lakh"
+          },
+          {
+            "code": "DB07",
+            "id": "revolving-utilisation",
+            "label": "Revolving and working-capital utilisation",
+            "type": "Utilisation",
+            "definition": "Verified revolving outstanding divided by the corresponding sanctioned limits.",
+            "calculation": "Total covered revolving outstanding ÷ total covered revolving limit.",
+            "benchmark": "70% or less",
+            "benchmarkDefinition": "Utilisation at or below 70% is the configured demo benchmark.",
+            "format": "percent",
+            "direction": "lower",
+            "values": [
+              62,
+              62,
+              61,
+              61,
+              60,
+              60,
+              60,
+              59,
+              60,
+              61,
+              60,
+              59
+            ],
+            "assessment": "Aggregate utilisation is material but remains within the configured benchmark.",
+            "evidence": "Covered revolving facilities · facility purpose partly unresolved",
+            "threshold": 70,
+            "unit": "%"
+          },
+          {
+            "code": "DB08",
+            "id": "debt-burden-change",
+            "label": "Debt burden change",
+            "type": "Trend",
+            "definition": "Change in debt-payment-to-receipt ratio versus the prior comparable period.",
+            "calculation": "Current repayment share minus prior comparable repayment share.",
+            "benchmark": "0 percentage points or lower",
+            "benchmarkDefinition": "A stable or reducing burden is the configured directional benchmark.",
+            "format": "percent",
+            "direction": "lower",
+            "values": [
+              1,
+              0,
+              1,
+              0,
+              -1,
+              0,
+              0,
+              -1,
+              1,
+              4,
+              -2,
+              -3
+            ],
+            "assessment": "The repayment burden reduced as receipts recovered in August and September.",
+            "evidence": "Repayment share series · customer baseline",
+            "threshold": 0,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "id": "resilience",
+        "label": "Financial Resilience",
+        "metrics": [
+          {
+            "code": "FR01",
+            "id": "accessible-reserves",
+            "label": "Accessible financial reserves",
+            "type": "Reserves",
+            "definition": "Verified cash, eligible deposits and accessible investments after operating, pledged and locked funds are excluded.",
+            "calculation": "Sum eligible accessible balances after approved exclusions and haircuts.",
+            "benchmark": "Comparable cohort and customer baseline",
+            "benchmarkDefinition": "Interpret the absolute amount against commitments and an approved comparable cohort.",
+            "format": "currency-lakh",
+            "direction": "higher",
+            "values": [
+              5.72,
+              5.88,
+              6.02,
+              5.94,
+              5.81,
+              5.96,
+              5.88,
+              6.18,
+              6.04,
+              5.42,
+              5.91,
+              6.4
+            ],
+            "assessment": "Accessible reserves recovered to ₹6.40L after the July drawdown.",
+            "evidence": "Covered balances and investments · ₹7.80L operating balance excluded",
+            "unit": "₹ lakh"
+          },
+          {
+            "code": "FR02",
+            "id": "reserve-coverage",
+            "label": "Reserve coverage",
+            "type": "Reserves",
+            "definition": "Months of regular commitments covered by accessible financial reserves.",
+            "calculation": "Accessible reserves ÷ average monthly core expenses and debt payments.",
+            "benchmark": "3 months or more",
+            "benchmarkDefinition": "Three months of covered commitments is the configured demo benchmark.",
+            "format": "number",
+            "direction": "higher",
+            "values": [
+              1.4,
+              1.5,
+              1.6,
+              1.5,
+              1.4,
+              1.5,
+              1.5,
+              1.7,
+              1.6,
+              1.4,
+              1.6,
+              1.8
+            ],
+            "assessment": "Reserve coverage improved to 1.8 months but remains below the benchmark.",
+            "evidence": "Accessible reserves · regular expenses · covered debt payments",
+            "threshold": 3,
+            "unit": "Months"
+          },
+          {
+            "code": "FR03",
+            "id": "monthly-savings",
+            "label": "Average monthly savings retained",
+            "type": "Savings",
+            "definition": "Cash retained after recognised receipts, regular expenses and debt payments, excluding own-account transfers.",
+            "calculation": "Recognised receipts − classified expenses − verified debt payments − net investment redemptions.",
+            "benchmark": "₹0.49L or more",
+            "benchmarkDefinition": "The amount corresponds to the configured 10% savings-rate benchmark for this demo profile.",
+            "format": "currency-lakh",
+            "direction": "higher",
+            "values": [
+              0.24,
+              0.25,
+              0.27,
+              0.25,
+              0.26,
+              0.26,
+              0.25,
+              0.24,
+              0.25,
+              0.26,
+              0.26,
+              0.24
+            ],
+            "assessment": "Average savings retained remains below the configured amount benchmark.",
+            "evidence": "Reconciled monthly cash-flow series",
+            "threshold": 0.49,
+            "unit": "₹ lakh"
+          },
+          {
+            "code": "FR04",
+            "id": "savings-rate",
+            "label": "Savings retained rate",
+            "type": "Savings",
+            "definition": "Average savings retained as a share of recognised receipts.",
+            "calculation": "Monthly savings retained ÷ recognised receipts.",
+            "benchmark": "10% or more",
+            "benchmarkDefinition": "A 10% retained-savings rate is the configured demo benchmark.",
+            "format": "percent",
+            "direction": "higher",
+            "values": [
+              5.2,
+              5.0,
+              5.4,
+              5.1,
+              5.5,
+              5.3,
+              5.6,
+              4.8,
+              5.3,
+              6.4,
+              5.0,
+              4.2
+            ],
+            "assessment": "The savings-retained rate remains below the configured benchmark.",
+            "evidence": "Recognised receipts and reconciled retained savings",
+            "threshold": 10,
+            "unit": "%"
+          },
+          {
+            "code": "FR05",
+            "id": "monthly-investments",
+            "label": "Monthly investment contributions",
+            "type": "Investments",
+            "definition": "Verified recurring contributions to deposits, mutual funds, pension or other eligible investments.",
+            "calculation": "Sum verified investment contributions net of reversals.",
+            "benchmark": "₹0.25L or more",
+            "benchmarkDefinition": "₹25,000 per month is the configured demo benchmark for this customer profile.",
+            "format": "currency-lakh",
+            "direction": "higher",
+            "values": [
+              0.22,
+              0.24,
+              0.25,
+              0.24,
+              0.26,
+              0.25,
+              0.27,
+              0.23,
+              0.25,
+              0.28,
+              0.26,
+              0.25
+            ],
+            "assessment": "Regular investment contributions continued through the assessed period.",
+            "evidence": "Covered investment and deposit contribution records",
+            "threshold": 0.25,
+            "unit": "₹ lakh"
+          },
+          {
+            "code": "FR06",
+            "id": "investment-change",
+            "label": "Investment contribution change",
+            "type": "Investments",
+            "definition": "Change in verified investment contributions versus the prior comparable period.",
+            "calculation": "(Current contributions − prior comparable contributions) ÷ prior comparable contributions.",
+            "benchmark": "0% or higher",
+            "benchmarkDefinition": "Stable or increasing contributions meet the directional demo benchmark.",
+            "format": "percent",
+            "direction": "higher",
+            "values": [
+              0,
+              4,
+              5,
+              -4,
+              8,
+              -4,
+              8,
+              -15,
+              9,
+              12,
+              -7,
+              -4
+            ],
+            "assessment": "Contributions remained regular but reduced slightly in September.",
+            "evidence": "Monthly verified contribution series",
+            "threshold": 0,
+            "unit": "%"
+          },
+          {
+            "code": "FR07",
+            "id": "reserves-vs-high",
+            "label": "Reserves compared with recent high",
+            "type": "Recovery",
+            "definition": "Current accessible reserves divided by the highest balance in the latest six months.",
+            "calculation": "Current accessible reserves ÷ six-month peak accessible reserves.",
+            "benchmark": "80% or more",
+            "benchmarkDefinition": "Maintaining at least 80% of the recent reserve high is the configured benchmark.",
+            "format": "percent",
+            "direction": "higher",
+            "values": [
+              82,
+              85,
+              88,
+              86,
+              84,
+              85,
+              88,
+              95,
+              90,
+              73,
+              80,
+              84
+            ],
+            "assessment": "Reserves recovered above the benchmark after the July decline.",
+            "evidence": "Monthly accessible reserve series",
+            "threshold": 80,
+            "unit": "%"
+          },
+          {
+            "code": "FR08",
+            "id": "reserve-recovery",
+            "label": "Reserve recovery after drawdown",
+            "type": "Recovery",
+            "definition": "Amount recovered since the latest trough as a share of the preceding reserve decline.",
+            "calculation": "Recovery from trough ÷ preceding peak-to-trough drawdown, capped at 100%.",
+            "benchmark": "75% or more",
+            "benchmarkDefinition": "Recovering at least 75% of the latest drawdown is the configured demo benchmark.",
+            "format": "percent",
+            "direction": "higher",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              0,
+              49,
+              84
+            ],
+            "assessment": "The July drawdown has recovered by approximately 84%.",
+            "evidence": "Monthly accessible reserve series",
+            "threshold": 75,
+            "unit": "%"
+          },
+          {
+            "code": "FR09",
+            "id": "operating-liquidity",
+            "label": "Operating-account liquidity",
+            "type": "Operating resilience",
+            "definition": "Eligible cash available for business operations after financing proceeds and restricted balances are excluded.",
+            "calculation": "Eligible operating-account balance after approved exclusions.",
+            "benchmark": "Operating requirement to be confirmed",
+            "benchmarkDefinition": "A benchmark cannot be assigned until the customer’s minimum operating requirement is confirmed.",
+            "format": "currency-lakh",
+            "direction": "higher",
+            "values": [
+              7.22,
+              7.38,
+              7.54,
+              7.63,
+              7.48,
+              7.57,
+              7.41,
+              7.68,
+              7.52,
+              7.11,
+              7.46,
+              7.8
+            ],
+            "assessment": "Operating liquidity is visible but is not treated as personal savings.",
+            "evidence": "Business current account · operating requirement pending",
+            "unit": "₹ lakh"
+          },
+          {
+            "code": "FR10",
+            "id": "low-balance-days",
+            "label": "Low operating-balance days",
+            "type": "Operating resilience",
+            "definition": "Days the eligible operating balance fell below the provisional business requirement.",
+            "calculation": "Count days below the approved or provisional operating-liquidity requirement.",
+            "benchmark": "0 days",
+            "benchmarkDefinition": "No days below the operating requirement is the configured benchmark once the requirement is confirmed.",
+            "format": "number",
+            "direction": "lower",
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              4,
+              1,
+              0
+            ],
+            "assessment": "No low operating-balance day was observed in September; the operating requirement remains provisional.",
+            "evidence": "Daily operating balance series · provisional requirement",
+            "threshold": 0,
+            "unit": "Days"
+          }
+        ]
+      }
+    ],
+    "benchmarkNote": "Colours compare each value with the stated benchmark. All thresholds and values are simulated demonstration settings; production use requires approved bank policy, cohort calibration and source-coverage controls.",
+    "notApplicableGroups": [
+      {
+        "id": "salary",
+        "label": "Salaried Income",
+        "metrics": [
+          {
+            "code": "SAL01",
+            "id": "salary-amount",
+            "label": "Recognised monthly salary",
+            "type": "Income",
+            "unit": "₹ lakh",
+            "definition": "Verified employer salary credits after reversals, transfers and reimbursements are excluded.",
+            "calculation": "Sum verified salary credits in the month.",
+            "benchmark": "Customer and salaried cohort",
+            "benchmarkDefinition": "Compare with prior salary and an approved occupation and geography cohort.",
+            "format": "currency-lakh",
+            "direction": "higher",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because no verified salaried-income profile is used for this customer.",
+            "evidence": "Applicable when recurring employer salary is verified."
+          },
+          {
+            "code": "SAL02",
+            "id": "salary-growth",
+            "label": "Salary growth",
+            "type": "Income",
+            "unit": "%",
+            "definition": "Change in fixed salary versus the prior comparable period.",
+            "calculation": "(Current fixed salary − prior fixed salary) ÷ prior fixed salary.",
+            "benchmark": "0% or higher",
+            "benchmarkDefinition": "A non-negative direction is shown for demo; cohort calibration is required.",
+            "format": "percent",
+            "direction": "higher",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because no verified salaried-income profile is used for this customer.",
+            "evidence": "Applicable when recurring employer salary is verified.",
+            "threshold": 0
+          },
+          {
+            "code": "SAL03",
+            "id": "salary-continuity",
+            "label": "Salary receipt continuity",
+            "type": "Continuity",
+            "unit": "Status",
+            "definition": "Whether salary arrived within the expected monthly salary window.",
+            "calculation": "Expected salary months received on time ÷ expected salary months.",
+            "benchmark": "At least 5 of 6 months",
+            "benchmarkDefinition": "Requires an approved salary-window tolerance.",
+            "format": "text",
+            "direction": "positive",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because no verified salaried-income profile is used for this customer.",
+            "evidence": "Applicable when recurring employer salary is verified."
+          },
+          {
+            "code": "SAL04",
+            "id": "variable-pay-share",
+            "label": "Variable-pay share",
+            "type": "Income mix",
+            "unit": "%",
+            "definition": "Share of recognised employment income from bonus, commission or other variable pay.",
+            "calculation": "Verified variable pay ÷ total verified employment income.",
+            "benchmark": "Profile context",
+            "benchmarkDefinition": "Used to interpret income predictability; it is not inherently adverse.",
+            "format": "percent",
+            "direction": "lower",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because no verified employment-income mix is available.",
+            "evidence": "Applicable to salaried customers with variable compensation."
+          }
+        ]
+      },
+      {
+        "id": "retirement",
+        "label": "Pension & Retirement",
+        "metrics": [
+          {
+            "code": "RET01",
+            "id": "pension-amount",
+            "label": "Recognised monthly pension or annuity",
+            "type": "Income",
+            "unit": "₹ lakh",
+            "definition": "Verified recurring pension or annuity receipts.",
+            "calculation": "Sum verified pension and annuity credits in the month.",
+            "benchmark": "Customer baseline",
+            "benchmarkDefinition": "Compared with prior receipts and documented entitlement.",
+            "format": "currency-lakh",
+            "direction": "higher",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because no verified pension or annuity source is used.",
+            "evidence": "Applicable when pension or annuity is a material recurring resource."
+          },
+          {
+            "code": "RET02",
+            "id": "pension-expense-coverage",
+            "label": "Pension-to-expense coverage",
+            "type": "Coverage",
+            "unit": "×",
+            "definition": "Recurring pension and annuity income relative to essential monthly expenses.",
+            "calculation": "Verified pension and annuity receipts ÷ essential expenses.",
+            "benchmark": "1.0× or more",
+            "benchmarkDefinition": "Recurring pension should cover essential expenses without regular asset liquidation.",
+            "format": "multiple",
+            "direction": "higher",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because no verified pension or annuity source is used.",
+            "evidence": "Applicable when pension or annuity is a material recurring resource.",
+            "threshold": 1
+          },
+          {
+            "code": "RET03",
+            "id": "planned-withdrawal-rate",
+            "label": "Planned reserve withdrawal rate",
+            "type": "Resilience",
+            "unit": "%",
+            "definition": "Annualised planned withdrawals as a share of eligible retirement reserves.",
+            "calculation": "Annualised planned withdrawals ÷ eligible retirement reserves.",
+            "benchmark": "Approved retirement policy",
+            "benchmarkDefinition": "Requires age, horizon and product-specific policy calibration.",
+            "format": "percent",
+            "direction": "lower",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because planned retirement drawdown is outside this customer’s scope.",
+            "evidence": "Applicable when regular living expenses are funded from retirement assets."
+          }
+        ]
+      },
+      {
+        "id": "nri",
+        "label": "NRI & Foreign Income",
+        "metrics": [
+          {
+            "code": "NRI01",
+            "id": "foreign-income",
+            "label": "Recognised foreign income",
+            "type": "Income",
+            "unit": "₹ lakh",
+            "definition": "Verified foreign-currency income translated using the approved monthly FX rate.",
+            "calculation": "Eligible foreign income × approved period FX rate.",
+            "benchmark": "Customer and NRI cohort",
+            "benchmarkDefinition": "Assessed against comparable-currency history and an approved NRI cohort.",
+            "format": "currency-lakh",
+            "direction": "higher",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because the customer is not assessed under an NRI or multi-currency profile.",
+            "evidence": "Applicable when material income is denominated in foreign currency."
+          },
+          {
+            "code": "NRI02",
+            "id": "fx-adjusted-income-change",
+            "label": "FX-adjusted income change",
+            "type": "Income stability",
+            "unit": "%",
+            "definition": "Change in foreign income after holding currency conversion on a comparable basis.",
+            "calculation": "Change in constant-currency eligible foreign income.",
+            "benchmark": "0% or higher",
+            "benchmarkDefinition": "Separates underlying income change from exchange-rate movement.",
+            "format": "percent",
+            "direction": "higher",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because no material foreign-currency income is verified.",
+            "evidence": "Applicable when material income is denominated in foreign currency.",
+            "threshold": 0
+          },
+          {
+            "code": "NRI03",
+            "id": "remittance-coverage",
+            "label": "Domestic commitment coverage from remittances",
+            "type": "Coverage",
+            "unit": "×",
+            "definition": "Verified remittances available for India commitments relative to those commitments.",
+            "calculation": "Eligible India-bound remittances ÷ verified domestic commitments.",
+            "benchmark": "1.25× or more",
+            "benchmarkDefinition": "Requires approved treatment of remittance timing and retained overseas funds.",
+            "format": "multiple",
+            "direction": "higher",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because no recurring foreign-to-India remittance pattern is verified.",
+            "evidence": "Applicable when foreign remittances fund domestic needs or obligations.",
+            "threshold": 1.25
+          }
+        ]
+      },
+      {
+        "id": "dependent",
+        "label": "Minor & Dependent",
+        "metrics": [
+          {
+            "code": "MIN01",
+            "id": "guardian-funding-continuity",
+            "label": "Guardian funding continuity",
+            "type": "Support",
+            "unit": "Status",
+            "definition": "Whether verified guardian funding arrived in each expected period.",
+            "calculation": "Expected guardian-funding periods received ÷ expected periods.",
+            "benchmark": "All expected periods",
+            "benchmarkDefinition": "Requires a verified guardian and documented funding expectation.",
+            "format": "text",
+            "direction": "positive",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because this customer is assessed as an adult with independent resources.",
+            "evidence": "Applicable to a minor or financially dependent customer."
+          },
+          {
+            "code": "MIN02",
+            "id": "protected-savings-balance",
+            "label": "Protected savings balance",
+            "type": "Resilience",
+            "unit": "₹ lakh",
+            "definition": "Verified savings legally or operationally designated for the dependent.",
+            "calculation": "Sum eligible protected savings after ownership and access checks.",
+            "benchmark": "Goal and age context",
+            "benchmarkDefinition": "Compared with documented purpose, time horizon and approved policy.",
+            "format": "currency-lakh",
+            "direction": "higher",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because dependent or guardian-funded assessment does not apply.",
+            "evidence": "Applicable to a minor or financially dependent customer."
+          }
+        ]
+      },
+      {
+        "id": "seasonal",
+        "label": "Seasonal & Agricultural Income",
+        "metrics": [
+          {
+            "code": "SEA01",
+            "id": "same-season-growth",
+            "label": "Same-season receipt growth",
+            "type": "Income",
+            "unit": "%",
+            "definition": "Change in recognised seasonal receipts versus the same verified season in the prior cycle.",
+            "calculation": "(Current-season receipts − prior same-season receipts) ÷ prior same-season receipts.",
+            "benchmark": "0% or higher",
+            "benchmarkDefinition": "Uses the customer’s verified earning cycle rather than month-on-month comparison.",
+            "format": "percent",
+            "direction": "higher",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because no verified seasonal or agricultural earning cycle is supplied.",
+            "evidence": "Applicable where income follows a crop or other non-monthly cycle.",
+            "threshold": 0
+          },
+          {
+            "code": "SEA02",
+            "id": "off-season-buffer",
+            "label": "Off-season commitment coverage",
+            "type": "Resilience",
+            "unit": "Months",
+            "definition": "Months of regular commitments covered during the verified low-income season.",
+            "calculation": "Eligible off-season reserves ÷ average monthly off-season commitments.",
+            "benchmark": "Full verified off-season",
+            "benchmarkDefinition": "Coverage should span the customer’s verified low-income season.",
+            "format": "number",
+            "direction": "higher",
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "assessment": "Excluded because no verified seasonal or agricultural earning cycle is supplied.",
+            "evidence": "Applicable where income follows a crop or other non-monthly cycle."
+          }
+        ]
+      }
+    ]
+  },
+  "financialHealthDetail": {
+    "summary": [
+      {
+        "label": "Overall position",
+        "text": "Vandana’s finances are currently in a good position, with a Financial Health Score of 81 out of 100."
+      },
+      {
+        "label": "Income position",
+        "text": "Self-employed receipts were visible throughout the assessed period and remain sufficient relative to operating outflows and regular commitments. Cash remaining recovered strongly in August and September."
+      },
+      {
+        "label": "Debt position",
+        "text": "Monthly repayments are affordable relative to recognised receipts and available cash flow. No overdue amount is currently reported in the available records."
+      },
+      {
+        "label": "Savings position",
+        "text": "Accessible financial reserves provide approximately 1.8 months of cover, below the three-month benchmark. The operating current-account balance is not treated as personal savings."
+      },
+      {
+        "label": "RM takeaway",
+        "text": "Continue the working-capital conversation. Confirm the customer’s complete external borrowing position and how much current-account cash must remain available for business operations before initiating a pre-check."
+      }
+    ],
+    "score": 81,
+    "band": "Good",
+    "pillars": [
+      {
+        "id": "cash-flow",
+        "label": "Cash Flow Strength",
+        "shortLabel": "Cash Flow",
+        "score": 83,
+        "weight": 30,
+        "points": 24.9,
+        "band": "Strong"
+      },
+      {
+        "id": "debt",
+        "label": "Debt Sustainability",
+        "shortLabel": "Debt",
+        "score": 85,
+        "weight": 40,
+        "points": 34.0,
+        "band": "Strong"
+      },
+      {
+        "id": "resilience",
+        "label": "Financial Resilience",
+        "shortLabel": "Resilience",
+        "score": 73,
+        "weight": 30,
+        "points": 21.9,
+        "band": "Stable"
+      }
+    ],
+    "calculationSummary": "For this individual, self-employed customer, the score combines recognised operating receipts, household and operating outflows, verified debt, and accessible personal reserves. Operating-account funds are assessed separately and are not automatically treated as personal savings.",
+    "groups": [
+      {
+        "id": "cash-flow",
+        "label": "Cash Flow Strength",
+        "drivers": [
+          {
+            "code": "CFS01",
+            "name": "Income & Receipt Reliability",
+            "role": "Score driver",
+            "score": 86,
+            "band": "Strong",
+            "facts": "₹4.88L average receipts · 6/6 expected months · 14% variation · largest payer 35%",
+            "assessment": "Recognised self-employed receipts are consistent, reasonably diversified and strong for the assessed customer profile.",
+            "definition": "Combines receipt scale, continuity, variation and payer concentration into one view of income reliability.",
+            "evaluation": "Receipt amount is interpreted against the customer’s history and comparable self-employed customers. Continuity, variation and payer concentration then test whether that income is dependable.",
+            "components": [
+              {
+                "metric": "CF01",
+                "label": "Recognised self-employed receipts",
+                "value": "₹4.88L",
+                "benchmark": "Customer history and comparable cohort",
+                "status": "Strong"
+              },
+              {
+                "metric": "CF03",
+                "label": "Expected receipt periods met",
+                "value": "6 of 6",
+                "benchmark": "At least 5 of 6",
+                "status": "Strong"
+              },
+              {
+                "metric": "CF04",
+                "label": "Receipt variation",
+                "value": "14%",
+                "benchmark": "25% or less",
+                "status": "Strong"
+              },
+              {
+                "metric": "CF05",
+                "label": "Largest payer share",
+                "value": "35%",
+                "benchmark": "40% or less",
+                "status": "Stable"
+              }
+            ],
+            "evidence": "Covered bank-account transactions for 12 completed months. Own-account transfers, loan disbursals, refunds and unresolved credits are excluded."
+          },
+          {
+            "code": "CFS02",
+            "name": "Expense & Operating Load",
+            "role": "Score driver",
+            "score": 76,
+            "band": "Stable",
+            "facts": "45% operating expense ratio · 17% discretionary share · expenses down 2% · 0 recent payment returns",
+            "assessment": "Regular operating and household outflows remain manageable. The July increase has reduced and no recent essential-payment return is visible.",
+            "definition": "Combines operating costs, household spending, expense movement and essential-payment failures into one view of recurring outflow pressure.",
+            "evaluation": "Operating and household expenses are classified separately, then assessed as ratios and trends so a high absolute spend is not judged without reference to receipts.",
+            "components": [
+              {
+                "metric": "CF06",
+                "label": "Operating expense ratio",
+                "value": "45%",
+                "benchmark": "60% or less",
+                "status": "Strong"
+              },
+              {
+                "metric": "CF07",
+                "label": "Discretionary spending share",
+                "value": "17%",
+                "benchmark": "Customer baseline",
+                "status": "Stable"
+              },
+              {
+                "metric": "CF08",
+                "label": "Total expense change",
+                "value": "−2%",
+                "benchmark": "5% or less increase",
+                "status": "Strong"
+              },
+              {
+                "metric": "CF12",
+                "label": "Essential-payment returns",
+                "value": "0",
+                "benchmark": "No recent returns",
+                "status": "Strong"
+              }
+            ],
+            "evidence": "Classified operating and household debits across covered accounts. Transfers and debt payments are separated before assessment."
+          },
+          {
+            "code": "CFS03",
+            "name": "Cash Remaining & Recovery",
+            "role": "Score driver",
+            "score": 82,
+            "band": "Strong",
+            "facts": "₹2.11L before debt in Sep · 50% post-commitment margin · positive in 5/6 months · recovered after July",
+            "assessment": "The customer usually retains meaningful cash after regular commitments, and the temporary July reduction recovered in August and September.",
+            "definition": "Combines cash remaining before debt, post-commitment surplus and recovery after a weak month into one view of monthly financial capacity.",
+            "evaluation": "Both the rupee amount and the share of receipts are considered. Positive-surplus frequency prevents one strong month from masking a weak pattern.",
+            "components": [
+              {
+                "metric": "CF09",
+                "label": "Cash remaining before debt",
+                "value": "₹2.11L",
+                "benchmark": "₹1.10L or more",
+                "status": "Strong"
+              },
+              {
+                "metric": "CF10",
+                "label": "Post-commitment surplus margin",
+                "value": "50%",
+                "benchmark": "20% or more",
+                "status": "Strong"
+              },
+              {
+                "metric": "CF11",
+                "label": "Positive-surplus month",
+                "value": "5 of 6",
+                "benchmark": "At least 5 of 6",
+                "status": "Strong"
+              }
+            ],
+            "evidence": "Recognised receipts less classified operating, household and verified debt commitments. July was the only weak month in the recent six-month window."
+          }
+        ]
+      },
+      {
+        "id": "debt",
+        "label": "Debt Sustainability",
+        "drivers": [
+          {
+            "code": "DBS01",
+            "name": "Debt Burden & Affordability",
+            "role": "Score driver",
+            "score": 87,
+            "band": "Strong",
+            "facts": "₹36.75L outstanding · ₹88,000 monthly payments · 15% repayment share · 4.4× Sep coverage",
+            "assessment": "Verified debt payments are currently affordable relative to recognised receipts and cash remaining before debt.",
+            "definition": "Combines debt outstanding, scheduled payments, repayment share and debt-service coverage into one affordability view.",
+            "evaluation": "The assessment considers the size of debt together with actual repayment demand and available cash. A large loan is not treated as weak when repayment capacity is strong.",
+            "components": [
+              {
+                "metric": "DB01",
+                "label": "Verified debt outstanding",
+                "value": "₹36.75L",
+                "benchmark": "Context only",
+                "status": "Stable"
+              },
+              {
+                "metric": "DB02",
+                "label": "Monthly debt payments",
+                "value": "₹88,000",
+                "benchmark": "Context only",
+                "status": "Stable"
+              },
+              {
+                "metric": "DB03",
+                "label": "Debt repayment share",
+                "value": "15%",
+                "benchmark": "30% or less",
+                "status": "Strong"
+              },
+              {
+                "metric": "DB04",
+                "label": "Debt service coverage",
+                "value": "4.4×",
+                "benchmark": "1.25× or more",
+                "status": "Strong"
+              }
+            ],
+            "evidence": "IDBI facility balances, reported limits and covered-account repayment debits. Complete external-lender coverage is pending."
+          },
+          {
+            "code": "DBS02",
+            "name": "Repayment Conduct",
+            "role": "Score driver",
+            "score": 78,
+            "band": "Stable",
+            "facts": "0 current DPD · ₹0 currently overdue · complete historical due-versus-paid cycles unavailable",
+            "assessment": "No current repayment stress is reported. The conclusion remains qualified because full historical payment-cycle evidence is not available.",
+            "definition": "Combines current delinquency, overdue amount and available payment-cycle history into one view of repayment behaviour.",
+            "evaluation": "Current status is considered alongside historical due-versus-paid evidence. Missing history cannot be interpreted as good conduct.",
+            "components": [
+              {
+                "metric": "DB05",
+                "label": "Maximum days past due",
+                "value": "0 DPD",
+                "benchmark": "0 DPD",
+                "status": "Strong"
+              },
+              {
+                "metric": "DB06",
+                "label": "Current overdue amount",
+                "value": "₹0",
+                "benchmark": "₹0",
+                "status": "Strong"
+              }
+            ],
+            "evidence": "Current facility status is covered. Full historical due dates, paid dates and payment-return cycles are incomplete."
+          },
+          {
+            "code": "DBS03",
+            "name": "Revolving & Working-Capital Use",
+            "role": "Score driver",
+            "score": 76,
+            "band": "Stable",
+            "facts": "59% utilisation · debt burden down 3 percentage points · no verified new obligation",
+            "assessment": "Working-capital use is material but remains within reported limits, and the repayment burden has not increased in the recent period.",
+            "definition": "Combines revolving utilisation, burden direction and new borrowing into one view of reliance on working-capital debt.",
+            "evaluation": "Utilisation is assessed against sanctioned limits and its direction over time. Persistent high use or increasing debt would weaken the result.",
+            "components": [
+              {
+                "metric": "DB07",
+                "label": "Revolving and working-capital utilisation",
+                "value": "59%",
+                "benchmark": "75% or less",
+                "status": "Stable"
+              },
+              {
+                "metric": "DB08",
+                "label": "Debt burden change",
+                "value": "−3 pp",
+                "benchmark": "Stable or reducing",
+                "status": "Strong"
+              }
+            ],
+            "evidence": "Aggregate IDBI limits and balances. Facility-level purpose and any external revolving exposure require confirmation."
+          }
+        ]
+      },
+      {
+        "id": "resilience",
+        "label": "Financial Resilience",
+        "drivers": [
+          {
+            "code": "FRS01",
+            "name": "Accessible Reserve Strength",
+            "role": "Score driver",
+            "score": 68,
+            "band": "Stable",
+            "facts": "₹6.40L accessible reserves · covers 1.8 months · benchmark 3 months",
+            "assessment": "Accessible personal reserves are positive but below the configured three-month benchmark. The ₹7.80L operating-account balance is assessed separately.",
+            "definition": "Combines the absolute reserve amount and the number of months of regular commitments it can cover.",
+            "evaluation": "Both absolute wealth and coverage are considered. Operating funds, pledged deposits and unavailable assets are excluded from accessible personal reserves.",
+            "components": [
+              {
+                "metric": "FR01",
+                "label": "Accessible financial reserves",
+                "value": "₹6.40L",
+                "benchmark": "Profile and portfolio context",
+                "status": "Stable"
+              },
+              {
+                "metric": "FR02",
+                "label": "Reserve coverage",
+                "value": "1.8 months",
+                "benchmark": "3 months or more",
+                "status": "Review"
+              }
+            ],
+            "evidence": "Verified savings and deposits after exclusions. Current-account operating balance is not automatically treated as personal savings."
+          },
+          {
+            "code": "FRS02",
+            "name": "Savings & Investment Progress",
+            "role": "Score driver",
+            "score": 74,
+            "band": "Stable",
+            "facts": "₹24,000 monthly savings retained · 4.2% rate · ₹25,000 investment contributions · contributions down 4%",
+            "assessment": "The customer continues to retain savings and invest, although the rate remains below the configured profile benchmark.",
+            "definition": "Combines retained monthly savings, savings rate and verified investment contributions into one view of asset-building progress.",
+            "evaluation": "The assessment uses both rupee amounts and rates so customers with strong absolute saving are recognised without ignoring commitment-adjusted capacity.",
+            "components": [
+              {
+                "metric": "FR03",
+                "label": "Average monthly savings retained",
+                "value": "₹24,000",
+                "benchmark": "₹49,000 or more",
+                "status": "Review"
+              },
+              {
+                "metric": "FR04",
+                "label": "Savings retained rate",
+                "value": "4.2%",
+                "benchmark": "10% or more",
+                "status": "Review"
+              },
+              {
+                "metric": "FR05",
+                "label": "Monthly investment contributions",
+                "value": "₹25,000",
+                "benchmark": "₹25,000 or more",
+                "status": "Strong"
+              },
+              {
+                "metric": "FR06",
+                "label": "Investment contribution change",
+                "value": "−4%",
+                "benchmark": "Stable or increasing",
+                "status": "Stable"
+              }
+            ],
+            "evidence": "Covered account transfers to recognised savings and investment destinations after internal-transfer deduplication."
+          },
+          {
+            "code": "FRS03",
+            "name": "Reserve Stability & Operating Resilience",
+            "role": "Score driver",
+            "score": 77,
+            "band": "Stable",
+            "facts": "84% of recent reserve high · 84% drawdown recovery · ₹7.80L operating liquidity · 0 low-balance days",
+            "assessment": "Personal reserves have partly recovered after the July drawdown, while the operating account currently retains liquidity. The minimum operating requirement still needs confirmation.",
+            "definition": "Combines reserve drawdown and recovery with operating-account liquidity, without counting operating funds as personal savings.",
+            "evaluation": "Drawdown and recovery are treated as one event. Operating liquidity is reviewed separately to avoid double counting the same money across personal resilience and operating needs.",
+            "components": [
+              {
+                "metric": "FR07",
+                "label": "Reserves compared with recent high",
+                "value": "84%",
+                "benchmark": "90% or more",
+                "status": "Review"
+              },
+              {
+                "metric": "FR08",
+                "label": "Reserve recovery after drawdown",
+                "value": "84%",
+                "benchmark": "80% or more",
+                "status": "Stable"
+              },
+              {
+                "metric": "FR09",
+                "label": "Operating-account liquidity",
+                "value": "₹7.80L",
+                "benchmark": "Profile context",
+                "status": "Stable"
+              },
+              {
+                "metric": "FR10",
+                "label": "Low operating-balance days",
+                "value": "0",
+                "benchmark": "5 days or fewer",
+                "status": "Strong"
+              }
+            ],
+            "evidence": "Monthly accessible-reserve balances and the identified operating current account. Required operating cash has not yet been confirmed by the customer."
+          }
+        ]
+      }
+    ],
+    "notApplicableDrivers": [
+      {
+        "code": "SAL01",
+        "name": "Salary Receipt Pattern",
+        "role": "Profile rule",
+        "band": "Not applicable",
+        "facts": "No verified salaried-income profile for this assessment",
+        "assessment": "Salary amount, salary-date consistency and variable-pay measures are not used.",
+        "definition": "Applicable when the customer has a verified recurring salary source.",
+        "evaluation": "Applicable when the customer has a verified recurring salary source.",
+        "components": [],
+        "evidence": "No verified salaried-income profile for this assessment"
+      },
+      {
+        "code": "RET01",
+        "name": "Pension and Annuity Pattern",
+        "role": "Profile rule",
+        "band": "Not applicable",
+        "facts": "No verified pension or annuity source",
+        "assessment": "Pension continuity and pension-to-expense coverage are not used.",
+        "definition": "Applicable when pension or annuity is a material recurring resource.",
+        "evaluation": "Applicable when pension or annuity is a material recurring resource.",
+        "components": [],
+        "evidence": "No verified pension or annuity source"
+      },
+      {
+        "code": "RET02",
+        "name": "Planned Retirement Drawdown",
+        "role": "Profile rule",
+        "band": "Not applicable",
+        "facts": "No approved retirement or planned-drawdown assessment scope",
+        "assessment": "Retirement runway and planned withdrawal sustainability are not used.",
+        "definition": "Applicable when regular living expenses are intentionally funded from retirement assets or systematic withdrawals.",
+        "evaluation": "Applicable when regular living expenses are intentionally funded from retirement assets or systematic withdrawals.",
+        "components": [],
+        "evidence": "No approved retirement or planned-drawdown assessment scope"
+      },
+      {
+        "code": "NRI01",
+        "name": "Foreign Income and FX Treatment",
+        "role": "Profile rule",
+        "band": "Not applicable",
+        "facts": "Customer is not assessed under an NRI or multi-currency profile",
+        "assessment": "FX-adjusted income and reserve-change measures are not used.",
+        "definition": "Applicable when material income, obligations or reserves are denominated in a foreign currency.",
+        "evaluation": "Applicable when material income, obligations or reserves are denominated in a foreign currency.",
+        "components": [],
+        "evidence": "Customer is not assessed under an NRI or multi-currency profile"
+      },
+      {
+        "code": "NRI02",
+        "name": "Remittance Cadence",
+        "role": "Profile rule",
+        "band": "Not applicable",
+        "facts": "No verified recurring foreign-to-India remittance pattern",
+        "assessment": "Remittance continuity and domestic commitment coverage from remittances are not used.",
+        "definition": "Applicable when the customer regularly remits foreign resources to meet domestic needs or obligations.",
+        "evaluation": "Applicable when the customer regularly remits foreign resources to meet domestic needs or obligations.",
+        "components": [],
+        "evidence": "No verified recurring foreign-to-India remittance pattern"
+      },
+      {
+        "code": "MIN01",
+        "name": "Guardian-Funded or Dependent Scope",
+        "role": "Profile rule",
+        "band": "Not applicable",
+        "facts": "Customer is assessed as an adult with independent business resources",
+        "assessment": "Guardian-funding continuity and protected dependent savings are not used.",
+        "definition": "Applicable to a minor or dependent customer under an approved guardian or household assessment scope.",
+        "evaluation": "Applicable to a minor or dependent customer under an approved guardian or household assessment scope.",
+        "components": [],
+        "evidence": "Customer is assessed as an adult with independent business resources"
+      },
+      {
+        "code": "SEA01",
+        "name": "Agricultural or Seasonal Cycle",
+        "role": "Profile rule",
+        "band": "Not applicable",
+        "facts": "No verified agricultural or defined seasonal earning cycle supplied",
+        "assessment": "Same-season receipt and off-season coverage measures are not used.",
+        "definition": "Applicable where income follows a verified crop, seasonal business or other non-monthly operating cycle.",
+        "evaluation": "Applicable where income follows a verified crop, seasonal business or other non-monthly operating cycle.",
+        "components": [],
+        "evidence": "No verified agricultural or defined seasonal earning cycle supplied"
+      }
+    ]
+  }
+}

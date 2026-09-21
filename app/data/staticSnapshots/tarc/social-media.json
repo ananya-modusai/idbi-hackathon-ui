@@ -1,0 +1,38 @@
+[
+  {
+    "platform": "facebook",
+    "name": "Facebook",
+    "status": "Active",
+    "url": "https://www.facebook.com/officialtarcindia/",
+    "verified": false,
+    "followers": 47516,
+    "bio": "TARC, we are passionate about creating beautiful homes, harmonious workspaces and lifestyle hubs.",
+    "category": "Real Estate Developer"
+  },
+  {
+    "platform": "linkedin",
+    "name": "LinkedIn",
+    "status": "Active",
+    "url": "https://www.linkedin.com/company/tarc-india/",
+    "verified": true,
+    "followers": 40438,
+    "bio": "Nearly four decades ago, Anil Sarin started a journey that placed the customer\u2019s needs and aspirations at the heart of his work.\nThe business started out as a construction and contracting company and evolved to become one of the largest real estate development companies and land bank holders in the New Delhi Metropolitan Area. The strong work ethics and the trust earned during this journey became the bedrock for higher growth.\n\nOur commitment to the vision of leading with quality along with a strong understanding of the real estate industry has played a pivotal role in charting out a clear roadmap for the growth of TARC. It has also set a strong foundation for us to adapt, innovate and scale.\n\nThe philosophy of staying focused on our core strengths in the key market of New Delhi has enabled us to curate a distinctive and diversified land bank in the National Capital Region of India.\n\nOur entrepreneurial spirit along with a strong people orientation has resulted in a leadership team and a corporate culture which is unique, empowered, trusted and our core competency today.\n\nThrough these years of consistent growth, we have been able to consolidate strategic land parcels and establish a distinct positioning by remaining dedicated to high quality projects in New Delhi. We have led through our core competencies and by creating our own unique integrated development framework. It is here that we have acquired and built strong domain capabilities in land acquisition along with conceptualizing, designing and completing projects across different verticals.\n\nWe have expanded our presence in New Delhi through key developments across different verticals like residential, offices, hospitality and retail projects. A vibrant market with evolving lifestyles in urban India, provides us with a huge opportunity to create and curate future-ready developments. "
+  },
+  {
+    "platform": "instagram",
+    "name": "Instagram",
+    "status": "Active",
+    "url": "https://www.instagram.com/tarcindia/",
+    "verified": true,
+    "followers": 22196,
+    "posts": 783,
+    "following": 6,
+    "bio": "\"TARC\", Inspired by India\nDriven by Indian inspirations, we craft spaces that elevate the essence of living."
+  },
+  {
+    "platform": "youtube",
+    "name": "YouTube",
+    "status": "Not Found",
+    "url": "https://www.youtube.com/@tarcindia/videos"
+  }
+]

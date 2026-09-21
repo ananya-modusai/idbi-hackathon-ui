@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "message": "MCA peers retrieved",
+  "data": {
+    "current_company": {
+      "cin": "L70100DL2016PLC390526",
+      "legalName": "TARC LIMITED",
+      "city": "New Delhi",
+      "revenue": 136833000
+    },
+    "peers": [
+      {
+        "cin": "U70100DL2011PTC219839",
+        "city": "NEW DELHI",
+        "revenue": 136896616,
+        "legalName": "IVORY BUILDTECH PRIVATE LIMITED"
+      },
+      {
+        "cin": "U72100MH2014PTC260261",
+        "city": "THANE",
+        "revenue": 136851053,
+        "legalName": "SHREEJI VENTURES REALTY PRIVATE LIMITED"
+      },
+      {
+        "cin": "U70100UP2013PTC058936",
+        "city": "LUCKNOW",
+        "revenue": 136817080,
+        "legalName": "AMRIT PLANNERS PRIVATE LIMITED"
+      },
+      {
+        "cin": "U29304PN2023PTC226080",
+        "city": "PUNE",
+        "revenue": 136797801,
+        "legalName": "HEM ENGINEERING SOLUTIONS PRIVATE LIMITED"
+      }
+    ]
+  }
+}

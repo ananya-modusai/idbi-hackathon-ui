@@ -1,0 +1,2899 @@
+{
+  "company_name": "TARC LIMITED",
+  "people": [
+    {
+      "name": "AMAR SARIN",
+      "role": "Managing Director",
+      "din": "00015937",
+      "appointmentDate": "29 Aug, 2018",
+      "status": "Current",
+      "cessationDate": null,
+      "type": "Promoter",
+      "otherDirectorshipsCount": 111,
+      "businessInterestsCount": 0,
+      "otherDirectorships": [
+        {
+          "company": "LUSH BUILDMART PRIVATE LIMITED",
+          "cin": "U70200DL2017PTC320913",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "19 Jul, 2017"
+        },
+        {
+          "company": "PHD CHAMBER OF COMMERCE AND INDUSTRY",
+          "cin": "U74899DL1951NPL001947",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "7 Jul, 1951"
+        },
+        {
+          "company": "TARC EQUESTRIAN CENTRE PRIVATE LIMITED",
+          "cin": "U52605DL2017PTC318192",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "25 May, 2017"
+        },
+        {
+          "company": "ANANT RAJ AGENCIES PRIVATE LIMITED",
+          "cin": "U74899HR1979PTC065952",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "13 Aug, 1979"
+        },
+        {
+          "company": "NOVEL BUILDCON PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162499",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "ROCKFIELD BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC138539",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "ANANT RAJ POWER LIMITED",
+          "cin": "U40104HR2009PLC039537",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "24 Sep, 2009"
+        },
+        {
+          "company": "ANANT RAJ ESTATES PRIVATE LIMITED",
+          "cin": "U70109DL2006PTC154229",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "22 Sep, 2006"
+        },
+        {
+          "company": "TARC PROJECTS LIMITED",
+          "cin": "U70109DL2006PLC154354",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "27 Sep, 2006"
+        },
+        {
+          "company": "ROCKFIELD HOMES PRIVATE LIMITED",
+          "cin": "U45400GJ2008PTC168463",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "20 Feb, 2008"
+        },
+        {
+          "company": "CCC REALTY PRIVATE LIMITED",
+          "cin": "U45400GJ2007PTC167902",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Apr, 2007"
+        },
+        {
+          "company": "SKIPPER TRAVELS INTERNATIONAL PRIVATE LIMITED",
+          "cin": "U52291DL1971PTC005557",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "9 Mar, 1971"
+        },
+        {
+          "company": "BLOSSOM BUILDTECH PRIVATE LIMITED",
+          "cin": "U45300MH2007PTC423886",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "VIBRANT BUILDMART PRIVATE LIMITED",
+          "cin": "U45400MH2007PTC423888",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "GREEN VIEW BUILDWELL LIMITED",
+          "cin": "U45400DL2007PLC162496",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "HIGH LAND MEADOWS LIMITED",
+          "cin": "U74899DL1988PLC030381",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "20 Jan, 1988"
+        },
+        {
+          "company": "ELEVATOR PROPERTIES LIMITED",
+          "cin": "U45400DL2007PLC162486",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "FABULOUS BUILDERS LIMITED",
+          "cin": "U45300DL2007PLC162493",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "PAPILLON BUILDCON LIMITED",
+          "cin": "U45201DL2005PLC138538",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "RISING REALTY LIMITED",
+          "cin": "U45200DL2006PLC155123",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "31 Oct, 2006"
+        },
+        {
+          "company": "KRISHNA BUILDTECH LIMITED",
+          "cin": "U45200DL2006PLC156808",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "20 Dec, 2006"
+        },
+        {
+          "company": "CAPITAL BUILDCON LIMITED",
+          "cin": "U45200DL2006PLC156694",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "18 Dec, 2006"
+        },
+        {
+          "company": "WEST LAND BUILDCON LIMITED",
+          "cin": "U00500DL2005PLC138536",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "MOON SHINE ENTERTAINMENT LIMITED",
+          "cin": "U74899DL1976PLC008372",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "21 Oct, 1976"
+        },
+        {
+          "company": "PARK LAND CONSTRUCTION AND EQUIPMENTS LIMITED",
+          "cin": "U70109DL2006PLC153096",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "5 Sep, 2006"
+        },
+        {
+          "company": "TARC INFRASTRUCTURE LIMITED",
+          "cin": "U70109DL2006PLC154536",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "29 Sep, 2006"
+        },
+        {
+          "company": "TARC GREEN RETREAT LIMITED",
+          "cin": "U55101DL1995PLC265094",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "15 Sep, 1995"
+        },
+        {
+          "company": "GADGET BUILDERS LIMITED",
+          "cin": "U45400DL2007PLC162495",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "ELEVATOR PROMOTERS LIMITED",
+          "cin": "U45400DL2007PLC162492",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "KALINGA REALTORS LIMITED",
+          "cin": "U45400DL2007PLC162497",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "GREATWAYS BUILDTECH LIMITED",
+          "cin": "U45201DL2005PLC138540",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "MONARCH BUILDTECH LIMITED",
+          "cin": "U45201DL2005PLC138543",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "TOWNSEND CONSTRUCTION AND EQUIPMENTS LIMITED",
+          "cin": "U45200DL2006PLC155087",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Oct, 2006"
+        },
+        {
+          "company": "ECHO BUILDTECH LIMITED",
+          "cin": "U00500DL2005PLC138541",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "GRAND BUILDTECH LIMITED",
+          "cin": "U00500DL2005PLC138544",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "ARE ENTERTAINMENT LIMITED",
+          "cin": "U45100DL2009PLC187987",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "26 Feb, 2009"
+        },
+        {
+          "company": "JINDPUR INDUSTRIAL PARK PRIVATE LIMITED",
+          "cin": "U55101DL2005PTC141922",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "19 Oct, 2005"
+        },
+        {
+          "company": "KNOWLEDGE HUB DIGISRV PRIVATE LIMITED",
+          "cin": "U93000DL2007PTC164819",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "15 Jun, 2007"
+        },
+        {
+          "company": "ANAS BUILDTECH PRIVATE LIMITED",
+          "cin": "U70109DL2017PTC320042",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Jun, 2017"
+        },
+        {
+          "company": "HEMKUNT BUILDTECH PRIVATE LIMITED.",
+          "cin": "U45200MH2007PTC262740",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "2 Jan, 2007"
+        },
+        {
+          "company": "ANANT RAJ LIMITED",
+          "cin": "L45400HR1985PLC021622",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Jul, 1985"
+        },
+        {
+          "company": "SAND STORM BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC138535",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "H B P ESTATES PRIVATE LIMITED",
+          "cin": "U70101DL2005PTC141390",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "3 Oct, 2005"
+        },
+        {
+          "company": "ROMANO PROJECTS PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC165640",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "9 Jul, 2007"
+        },
+        {
+          "company": "ROMANO ESTATES PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC165638",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "9 Jul, 2007"
+        },
+        {
+          "company": "ROMANO INFRASTRUCTURE PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC165639",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "9 Jul, 2007"
+        },
+        {
+          "company": "ROSEVIEW PROPERTIES PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162509",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "ROSEVIEW BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC138532",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "ROLLING CONSTRUCTION PRIVATE LIMITED",
+          "cin": "U45200DL2006PTC154847",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "18 Oct, 2006"
+        },
+        {
+          "company": "ROSE REALTY PRIVATE LIMITED",
+          "cin": "U45200DL2007PTC161168",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "28 Mar, 2007"
+        },
+        {
+          "company": "ROSELAND BUILDTECH PRIVATE LIMITED",
+          "cin": "U00500DL2005PTC138537",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "REDSEA REALTY PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC164822",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "15 Jun, 2007"
+        },
+        {
+          "company": "HEMKUNT PROMOTERS PRIVATE LIMITED",
+          "cin": "U70101DL1996PTC077517",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "25 Mar, 1996"
+        },
+        {
+          "company": "HAMARA REALTY PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC161907",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Apr, 2007"
+        },
+        {
+          "company": "PARK VIEW PROMOTERS PRIVATE LIMITED",
+          "cin": "U70101DL1996PTC075998",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "2 Feb, 1996"
+        },
+        {
+          "company": "NORTH SOUTH PROPERTIES PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC161941",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "12 Apr, 2007"
+        },
+        {
+          "company": "NOVEL HOUSING PRIVATE LIMITED",
+          "cin": "U45300DL2007PTC162494",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "NOVEL BUILDMART PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162502",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "ORIENTAL BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC138534",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "ONE STAR REALTY PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC164826",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "15 Jun, 2007"
+        },
+        {
+          "company": "OLYMPIA BUILDTECH PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC164258",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "1 Jun, 2007"
+        },
+        {
+          "company": "GREENWOOD PROPERTIES PRIVATE LIMITED",
+          "cin": "U74899DL1995PTC068595",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "16 May, 1995"
+        },
+        {
+          "company": "GRAND PARK ESTATES PVT LTD",
+          "cin": "U74899DL1989PTC035008",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "10 Feb, 1989"
+        },
+        {
+          "company": "RIANA QUBE PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC164818",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "15 Jun, 2007"
+        },
+        {
+          "company": "GREEN VALLEY BUILDERS PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162506",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "GREEN WAY PROMOTERS PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162508",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "GREENLINE BUILDCON PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC138542",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "GREENLINE PROMOTERS PRIVATE LIMITED",
+          "cin": "U45201DL2004PTC128311",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "13 Aug, 2004"
+        },
+        {
+          "company": "FOUR CONSTRUCTION PRIVATE LIMITED",
+          "cin": "U45200DL2006PTC153157",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "6 Sep, 2006"
+        },
+        {
+          "company": "GLAZE PROPERTIES PRIVATE LIMITED",
+          "cin": "U45200DL2007PTC161190",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "28 Mar, 2007"
+        },
+        {
+          "company": "GRANDPARK BUILDTECH PRIVATE LIMITED.",
+          "cin": "U45200DL2006PTC156725",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "19 Dec, 2006"
+        },
+        {
+          "company": "GGG REALTY PRIVATE LIMITED",
+          "cin": "U70109DL2007PTC164840",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "15 Jun, 2007"
+        },
+        {
+          "company": "EQUINOX PROPERTIES PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162520",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "DELHI MOTELS PRIVATE LIMITED",
+          "cin": "U74899DL1995PTC069017",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "25 May, 1995"
+        },
+        {
+          "company": "ELEGENT ESTATES PVT LTD",
+          "cin": "U74899DL1989PTC034636",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jan, 1989"
+        },
+        {
+          "company": "ELEVATOR BUILDERS PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162500",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "ELEVATOR REALTORS PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162511",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "ELEVATOR BUILDTECH PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162488",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "EEE REALTY PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC164827",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "15 Jun, 2007"
+        },
+        {
+          "company": "ANANT RAJ HOUSING LIMITED",
+          "cin": "U70200DL2010PLC206567",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "3 Aug, 2010"
+        },
+        {
+          "company": "ANANT RAJ MEADOWS PRIVATE LIMITED",
+          "cin": "U70109DL2006PTC154351",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "26 Sep, 2006"
+        },
+        {
+          "company": "ANANT RAJ CONS. & DEVELOPMENT PRIVATE LIMITED",
+          "cin": "U70102DL2007PTC165844",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "13 Jul, 2007"
+        },
+        {
+          "company": "ASSOCIATED BUILDTECH PRIVATE LIMITED.",
+          "cin": "U45208DL2007PTC160806",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "20 Mar, 2007"
+        },
+        {
+          "company": "AAKASHGANGA REALTY PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC164815",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "15 Jun, 2007"
+        },
+        {
+          "company": "AAA REALTY PRIVATE LIMITED",
+          "cin": "U45200DL2006PTC153475",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "9 Sep, 2006"
+        },
+        {
+          "company": "ADVANCE BUILDCON PRIVATE LIMITED.",
+          "cin": "U45200DL2007PTC161105",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "26 Mar, 2007"
+        },
+        {
+          "company": "CENTURY PROMOTERS PRIVATE LIMITED",
+          "cin": "U74899DL1995PTC067408",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "17 Apr, 1995"
+        },
+        {
+          "company": "PIONEER PROMOTERS PRIVATE LIMITED",
+          "cin": "U74899DL1994PTC063138",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "2 Dec, 1994"
+        },
+        {
+          "company": "A-PLUS ESTATES PRIVATE LIMITED",
+          "cin": "U70109DL2006PTC154546",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "29 Sep, 2006"
+        },
+        {
+          "company": "A.K. DWELLERS PRIVATE LIMITED",
+          "cin": "U70101DL2005PTC140938",
+          "type": "COMPANY",
+          "status": "Converted to LLP",
+          "incorporationDate": "20 Sep, 2005"
+        },
+        {
+          "company": "MOMENTS RETAIL SERVICES PRIVATE LIMITED",
+          "cin": "U52100DL2010PTC205349",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "6 Jul, 2010"
+        },
+        {
+          "company": "JASMINE BUILDWELL PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC164254",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "1 Jun, 2007"
+        },
+        {
+          "company": "MAYUR BUILDCON PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC164257",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "1 Jun, 2007"
+        },
+        {
+          "company": "KALINGA BUILDTECH PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162507",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "PEGASUS MINERALS AND METALLOYS PRIVATE LIMITED",
+          "cin": "U13100DL2005PTC140847",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "16 Sep, 2005"
+        },
+        {
+          "company": "SUBURBAN FARMS PRIVATE LIMITED",
+          "cin": "U74899DL1988PTC031632",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "10 May, 1988"
+        },
+        {
+          "company": "SPIRITUAL DEVELOPERS PRIVATE LIMITED",
+          "cin": "U74999DL2005PTC133825",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "10 Mar, 2005"
+        },
+        {
+          "company": "SOVEREIGN BUILDWELL PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162514",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "SPRING VIEW DEVELOPERS PRIVATE LIMITED",
+          "cin": "U45200DL2006PTC155033",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "27 Oct, 2006"
+        },
+        {
+          "company": "SILVERTOWN INN AND RESORTS PRIVATE LIMITED",
+          "cin": "U55101DL2003PTC121419",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "22 Jul, 2003"
+        },
+        {
+          "company": "WHITE DIAMOND CONSTRUCTION AND EQUIPMENTS PRIVATE LIMITED",
+          "cin": "U70109DL2006PTC153097",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "5 Sep, 2006"
+        },
+        {
+          "company": "TWO STAR REALTY PRIVATE LIMITED",
+          "cin": "U70109DL2007PTC164811",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "15 Jun, 2007"
+        },
+        {
+          "company": "TUMHARE LIYE REALTY PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC164906",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "19 Jun, 2007"
+        },
+        {
+          "company": "TWENTY FIRST DEVELOPERS PRIVATE LIMITED",
+          "cin": "U45200DL2006PTC155059",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Oct, 2006"
+        },
+        {
+          "company": "TOWNSEND PROMOTERS PRIVATE LIMITED",
+          "cin": "U70109DL2006PTC154657",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "6 Oct, 2006"
+        },
+        {
+          "company": "TRICOLOR HOTELS LIMITED",
+          "cin": "U55101DL2005PLC134104",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "17 Mar, 2005"
+        },
+        {
+          "company": "GAGAN PROMOTERS LLP",
+          "cin": "AAC-2120",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "25 Mar, 2014"
+        },
+        {
+          "company": "ASYLUM ESTATE LLP",
+          "cin": "AAB-9933",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "9 Jan, 2014"
+        },
+        {
+          "company": "DEEP PROMOTERS LLP",
+          "cin": "AAC-0676",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "10 Feb, 2014"
+        },
+        {
+          "company": "PAGODA DEVELOPER LLP",
+          "cin": "AAC-0231",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "22 Jan, 2014"
+        },
+        {
+          "company": "ACQUAINTED REALTORS LLP",
+          "cin": "AAB-9932",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "9 Jan, 2014"
+        }
+      ],
+      "businessInterests": [],
+      "flags": null
+    },
+    {
+      "name": "ANIL SARIN",
+      "role": "Director",
+      "din": "00016152",
+      "appointmentDate": "1 Sep, 2016",
+      "status": "Current",
+      "cessationDate": null,
+      "type": "Promoter",
+      "otherDirectorshipsCount": 36,
+      "businessInterestsCount": 1,
+      "otherDirectorships": [
+        {
+          "company": "TARC ESTATES PRIVATE LIMITED",
+          "cin": "U70109DL2021PTC377851",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "3 Mar, 2021"
+        },
+        {
+          "company": "ANANT RAJ AGENCIES PRIVATE LIMITED",
+          "cin": "U74899HR1979PTC065952",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "13 Aug, 1979"
+        },
+        {
+          "company": "ANANT RAJ EXPORTS PRIVATE LIMITED",
+          "cin": "U74899DL1992PTC050346",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "17 Sep, 1992"
+        },
+        {
+          "company": "GRAND MEADOWS LIMITED",
+          "cin": "U45201DL1996PLC084163",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "31 Dec, 1996"
+        },
+        {
+          "company": "MAYUR BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2004PTC128518",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "23 Aug, 2004"
+        },
+        {
+          "company": "SUNRISE BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2004PTC128519",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "23 Aug, 2004"
+        },
+        {
+          "company": "PAGODA DEVELOPER PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC134094",
+          "type": "COMPANY",
+          "status": "Converted to LLP",
+          "incorporationDate": "16 Mar, 2005"
+        },
+        {
+          "company": "GAGAN PROMOTERS PRIVATE LIMITED",
+          "cin": "U45201DL2004PTC128312",
+          "type": "COMPANY",
+          "status": "Converted to LLP AAC-2120",
+          "incorporationDate": "13 Aug, 2004"
+        },
+        {
+          "company": "DEEP PROMOTERS PRIVATE LIMITED",
+          "cin": "U45201DL2004PTC128309",
+          "type": "COMPANY",
+          "status": "Converted to LLP",
+          "incorporationDate": "13 Aug, 2004"
+        },
+        {
+          "company": "CONSORTIUM HOLDINGS PRIVATE LIMITED",
+          "cin": "U74899DL1985PTC022081",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "20 Sep, 1985"
+        },
+        {
+          "company": "CARNATION PROMOTERS PRIVATE LIMITED",
+          "cin": "U45201DL2004PTC128313",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "13 Aug, 2004"
+        },
+        {
+          "company": "ASYLUM ESTATE PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC134096",
+          "type": "COMPANY",
+          "status": "Converted to LLP AAB-9933",
+          "incorporationDate": "16 Mar, 2005"
+        },
+        {
+          "company": "ANANT RAJ FARMS PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC134522",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Mar, 2005"
+        },
+        {
+          "company": "ACQUAINTED REALTORS PRIVATE LIMITED",
+          "cin": "U70101DL2005PTC133823",
+          "type": "COMPANY",
+          "status": "Converted to LLP",
+          "incorporationDate": "10 Mar, 2005"
+        },
+        {
+          "company": "NURTURE PROJECTS PRIVATE LIMITED",
+          "cin": "U67100DL2005PTC133824",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "10 Mar, 2005"
+        },
+        {
+          "company": "GREEN VIEW BUILDWELL LIMITED",
+          "cin": "U45400DL2007PLC162496",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "ELEVATOR PROPERTIES LIMITED",
+          "cin": "U45400DL2007PLC162486",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "KALINGA REALTORS LIMITED",
+          "cin": "U45400DL2007PLC162497",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "WHIZ INVESTMENTS PRIVATE LIMITED",
+          "cin": "U67100DL2005PTC133826",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "10 Mar, 2005"
+        },
+        {
+          "company": "RAPID ESTATES PRIVATE LIMITED",
+          "cin": "U27202MH1986PTC346833",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "29 Dec, 1986"
+        },
+        {
+          "company": "ANANT RAJ LIMITED",
+          "cin": "L45400HR1985PLC021622",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Jul, 1985"
+        },
+        {
+          "company": "ROSEVIEW PROPERTIES PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162509",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "ROSEVIEW PROMOTERS PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC137034",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "1 Jun, 2005"
+        },
+        {
+          "company": "RAPID REALTORS PRIVATE LIMITED",
+          "cin": "U74899DL1986PTC026512",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "29 Dec, 1986"
+        },
+        {
+          "company": "PARK LAND DEVELOPERS PRIVATE LIMITED",
+          "cin": "U74899DL1989PTC037872",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "29 Sep, 1989"
+        },
+        {
+          "company": "ORIENTAL MEADOWS LIMITED",
+          "cin": "U70200DL1997PLC084195",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "2 Jan, 1997"
+        },
+        {
+          "company": "PASUPATI ALUMINIUM LIMITED",
+          "cin": "U27203HR1989PLC030508",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "16 Mar, 1989"
+        },
+        {
+          "company": "GREEN VALLEY BUILDERS PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162506",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "GREEN WAY PROMOTERS PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162508",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "PELIKAN ESTATES PRIVATE LIMITED",
+          "cin": "U74899DL1988PTC030400",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "2 Nov, 1988"
+        },
+        {
+          "company": "A.K. DWELLERS PRIVATE LIMITED",
+          "cin": "U70101DL2005PTC140938",
+          "type": "COMPANY",
+          "status": "Converted to LLP",
+          "incorporationDate": "20 Sep, 2005"
+        },
+        {
+          "company": "PEGASUS MINERALS AND METALLOYS PRIVATE LIMITED",
+          "cin": "U13100DL2005PTC140847",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "16 Sep, 2005"
+        },
+        {
+          "company": "SPIRITUAL DEVELOPERS PRIVATE LIMITED",
+          "cin": "U74999DL2005PTC133825",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "10 Mar, 2005"
+        },
+        {
+          "company": "GAGAN PROMOTERS LLP",
+          "cin": "AAC-2120",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "25 Mar, 2014"
+        },
+        {
+          "company": "ASYLUM ESTATE LLP",
+          "cin": "AAB-9933",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "9 Jan, 2014"
+        },
+        {
+          "company": "DEEP PROMOTERS LLP",
+          "cin": "AAC-0676",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "10 Feb, 2014"
+        }
+      ],
+      "businessInterests": [
+        {
+          "legalName": "ANIL SARIN",
+          "businessNames": "-",
+          "status": "Active"
+        }
+      ],
+      "flags": null
+    },
+    {
+      "name": "AMBARISH CHATTERJEE",
+      "role": "Director",
+      "din": "00653680",
+      "appointmentDate": "10 Nov, 2016",
+      "status": "Current",
+      "cessationDate": null,
+      "type": "Director",
+      "otherDirectorshipsCount": 21,
+      "businessInterestsCount": 1,
+      "otherDirectorships": [
+        {
+          "company": "GRAND BUILDTECH LIMITED",
+          "cin": "U00500DL2005PLC138544",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "LANDMARK PROPERTY DEVELOPMENT COMPANY LIMITED",
+          "cin": "L13100DL1976PLC188942",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "28 Dec, 1976"
+        },
+        {
+          "company": "CONVERTERTEC ENERGY SOLUTIONS INDIA PRIVATE LIMITED",
+          "cin": "U31900PN2021FTC197407",
+          "type": "COMPANY",
+          "status": "Dissolved under section 59(8)",
+          "incorporationDate": "1 Jan, 2021"
+        },
+        {
+          "company": "GHI ENERGY PRIVATE LIMITED",
+          "cin": "U40109TN2010PTC076296",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Jun, 2010"
+        },
+        {
+          "company": "PALM TECH INDIA LTD",
+          "cin": "U01119AP1993PLC015579",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "6 Apr, 1993"
+        },
+        {
+          "company": "OMEGA HOTELS PRIVATE LIMITED",
+          "cin": "U55101UP1987PTC125335",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "17 Nov, 1987"
+        },
+        {
+          "company": "SUCCESS CAPITAL PRIVATE LIMITED",
+          "cin": "U74900DL1984PTC017936",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "16 Oct, 1984"
+        },
+        {
+          "company": "DEORA CAPITAL PRIVATE LIMITED",
+          "cin": "U74999DL2018PTC331487",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "23 Mar, 2018"
+        },
+        {
+          "company": "ANANT RAJ LIMITED",
+          "cin": "L45400HR1985PLC021622",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Jul, 1985"
+        },
+        {
+          "company": "RAAS CONSULTING PRIVATE LIMITED",
+          "cin": "U74899DL1990PTC042243",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "3 Dec, 1990"
+        },
+        {
+          "company": "KW PUBLISHERS PRIVATE LIMITED",
+          "cin": "U22222DL2007PTC162185",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "17 Apr, 2007"
+        },
+        {
+          "company": "INDIAN PROCHEM SOLUTIONS PRIVATE LIMITED",
+          "cin": "U74210PN2006PTC133904",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "14 Mar, 2006"
+        },
+        {
+          "company": "INTEGRATED CAPITAL SERVICES LIMITED",
+          "cin": "L74899DL1993PLC051981",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "3 Feb, 1993"
+        },
+        {
+          "company": "GREEN INFRA PROFILES PRIVATE LIMITED",
+          "cin": "U74999DL2009PTC191762",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "1 Jul, 2009"
+        },
+        {
+          "company": "GREENWAY ADVISORS PRIVATE LIMITED",
+          "cin": "U74140DL2010PTC208955",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Sep, 2010"
+        },
+        {
+          "company": "FRESHLY FARMED AND FROZEN FOODS PRIVATE LIMITED",
+          "cin": "U15400PN2008PTC132033",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "16 May, 2008"
+        },
+        {
+          "company": "ANC CONTRACTING INDIA PRIVATE LIMITED",
+          "cin": "U45204DL2011PTC216554",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "25 Mar, 2011"
+        },
+        {
+          "company": "JAI MATA GLASS LIMITED",
+          "cin": "L26101HP1981PLC004430",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "27 Feb, 1981"
+        },
+        {
+          "company": "SHRI BHOLANATH CARPETS LIMITED",
+          "cin": "L17226UP1973PLC003746",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "21 Jul, 1973"
+        },
+        {
+          "company": "SAATVIK REALITY PRIVATE LIMITED",
+          "cin": "U70109MH2010PTC200183",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "17 Feb, 2010"
+        },
+        {
+          "company": "THOMAS BENNETT SCHMIDLIN FACADE PRIVATE LIMITED",
+          "cin": "U45400DL2011PTC216827",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "31 Mar, 2011"
+        }
+      ],
+      "businessInterests": [
+        {
+          "legalName": "AMBARISH CHATTERJEE",
+          "businessNames": "-",
+          "status": "Active"
+        }
+      ],
+      "flags": null
+    },
+    {
+      "name": "MIYAR RAMANATH NAYAK",
+      "role": "Director",
+      "din": "03352749",
+      "appointmentDate": "21 Jan, 2021",
+      "status": "Current",
+      "cessationDate": null,
+      "type": "Director",
+      "otherDirectorshipsCount": 7,
+      "businessInterestsCount": 0,
+      "otherDirectorships": [
+        {
+          "company": "NISKHA FINANCE PRIVATE LIMITED",
+          "cin": "U65999KA2019PTC123773",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "25 Apr, 2019"
+        },
+        {
+          "company": "VERNEKAR JEWEL PALACE PRIVATE LIMITED",
+          "cin": "U28100KA2017PTC104326",
+          "type": "COMPANY",
+          "status": "Converted to LLP",
+          "incorporationDate": "3 Jul, 2017"
+        },
+        {
+          "company": "PC JEWELLER LIMITED",
+          "cin": "L36911DL2005PLC134929",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "13 Apr, 2005"
+        },
+        {
+          "company": "ASREC (INDIA) LIMITED",
+          "cin": "U67100MH2003GOI143291",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "25 Nov, 2003"
+        },
+        {
+          "company": "ASIAN STAR COMPANY LIMITED",
+          "cin": "L36910MH1995PLC086017",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "2 Mar, 1995"
+        },
+        {
+          "company": "ALLBANK FINANCE LTD",
+          "cin": "U67120WB1951GOI020023",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "29 Sep, 1951"
+        },
+        {
+          "company": "UNIVERSAL SOMPO GENERAL INSURANCE COMPANY LIMITED",
+          "cin": "U66010MH2007PLC166770",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "5 Jan, 2007"
+        }
+      ],
+      "businessInterests": [],
+      "flags": null
+    },
+    {
+      "name": "MUSKAAN SARIN",
+      "role": "Director",
+      "din": "01871183",
+      "appointmentDate": "29 Sep, 2021",
+      "status": "Current",
+      "cessationDate": null,
+      "type": "Director",
+      "otherDirectorshipsCount": 5,
+      "businessInterestsCount": 0,
+      "otherDirectorships": [
+        {
+          "company": "ANIKA INTERNATIONAL PRIVATE LIMITED",
+          "cin": "U51100DL1977PTC008682",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "27 Jul, 1977"
+        },
+        {
+          "company": "TWA ONLINE SERVICES PRIVATE LIMITED",
+          "cin": "U52100DL2015PTC288778",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "22 Dec, 2015"
+        },
+        {
+          "company": "ANANT RAJ AGENCIES PRIVATE LIMITED",
+          "cin": "U74899HR1979PTC065952",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "13 Aug, 1979"
+        },
+        {
+          "company": "INDIA RECYPA PRIVATE LIMITED.",
+          "cin": "U52399DL2007PTC399442",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "20 Dec, 2007"
+        },
+        {
+          "company": "ANIKA HOSPITALITY PRIVATE LIMITED",
+          "cin": "U92100DL2015PTC288179",
+          "type": "COMPANY",
+          "status": "Under process of striking off",
+          "incorporationDate": "7 Dec, 2015"
+        }
+      ],
+      "businessInterests": [],
+      "flags": null
+    },
+    {
+      "name": "BINDU ACHARYA",
+      "role": "Director",
+      "din": "07223003",
+      "appointmentDate": "13 Feb, 2023",
+      "status": "Current",
+      "cessationDate": null,
+      "type": "Director",
+      "otherDirectorshipsCount": 4,
+      "businessInterestsCount": 0,
+      "otherDirectorships": [
+        {
+          "company": "ECHO BUILDTECH LIMITED",
+          "cin": "U00500DL2005PLC138541",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "TARC PROJECTS LIMITED",
+          "cin": "U70109DL2006PLC154354",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "27 Sep, 2006"
+        },
+        {
+          "company": "RAJASTHAN ANTIBIOTICS LTD",
+          "cin": "U24231DL1986PLC023616",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "17 Mar, 1986"
+        },
+        {
+          "company": "MILLENNIUM CITY EXPRESSWAYS PRIVATE LIMITED",
+          "cin": "U45204DL2014PTC266306",
+          "type": "COMPANY",
+          "status": "Under CIRP",
+          "incorporationDate": "13 Mar, 2014"
+        }
+      ],
+      "businessInterests": [],
+      "flags": null
+    },
+    {
+      "name": "JYOTI GHOSH",
+      "role": "Director",
+      "din": "08217481",
+      "appointmentDate": "13 Feb, 2023",
+      "status": "Current",
+      "cessationDate": null,
+      "type": "Director",
+      "otherDirectorshipsCount": 3,
+      "businessInterestsCount": 0,
+      "otherDirectorships": [
+        {
+          "company": "LSI ENGINEERING & CONSULTANTS LIMITED",
+          "cin": "U74120WB2010PLC150300",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "9 Jun, 2010"
+        },
+        {
+          "company": "LSI FINANCIAL SERVICES PRIVATE LIMITED",
+          "cin": "U65999WB1997PTC082841",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "6 Feb, 1997"
+        },
+        {
+          "company": "MCLEOD RUSSEL INDIA LIMITED",
+          "cin": "L51109WB1998PLC087076",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "5 May, 1998"
+        }
+      ],
+      "businessInterests": [],
+      "flags": null
+    },
+    {
+      "name": "NITIN KUMAR GOEL",
+      "role": "CFO",
+      "din": null,
+      "appointmentDate": "11 Aug, 2022",
+      "status": "Current",
+      "cessationDate": null,
+      "type": "KMP",
+      "otherDirectorshipsCount": 0,
+      "businessInterestsCount": 0,
+      "otherDirectorships": [],
+      "businessInterests": [],
+      "flags": null
+    },
+    {
+      "name": "AMIT NARAYAN",
+      "role": "Company Secretary",
+      "din": null,
+      "appointmentDate": "28 Aug, 2020",
+      "status": "Current",
+      "cessationDate": null,
+      "type": "KMP",
+      "otherDirectorshipsCount": 0,
+      "businessInterestsCount": 0,
+      "otherDirectorships": [],
+      "businessInterests": [],
+      "flags": null
+    },
+    {
+      "name": "AMIT SARIN",
+      "role": "Director",
+      "din": "00015837",
+      "appointmentDate": "9 Sep, 2016",
+      "status": "Former",
+      "cessationDate": "28 Dec, 2020",
+      "type": "Director",
+      "otherDirectorshipsCount": 107,
+      "businessInterestsCount": 0,
+      "otherDirectorships": [
+        {
+          "company": "ASHOK CLOUD LIMITED",
+          "cin": "U72900HR2021PLC150494",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Oct, 2021"
+        },
+        {
+          "company": "ASHOK CLOUD LIMITED",
+          "cin": "U72900DL2021PLC388083",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Oct, 2021"
+        },
+        {
+          "company": "ANANT RAJ CLOUD PRIVATE LIMITED",
+          "cin": "U72200HR2021PTC148510",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "18 Feb, 2021"
+        },
+        {
+          "company": "ANANT RAJ LIMITED",
+          "cin": "L45400HR1985PLC021622",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Jul, 1985"
+        },
+        {
+          "company": "ANANT RAJ GREEN ENERGY PRIVATE LIMITED",
+          "cin": "U40300DL2022PTC407554",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "29 Nov, 2022"
+        },
+        {
+          "company": "ARE ENTERTAINMENT LIMITED",
+          "cin": "U45100DL2009PLC187987",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "26 Feb, 2009"
+        },
+        {
+          "company": "ECHO PROPERTIES PRIVATE LIMITED",
+          "cin": "U90000DL1989PTC036398",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "25 May, 1989"
+        },
+        {
+          "company": "ANANT RAJ AGENCIES PRIVATE LIMITED",
+          "cin": "U74899HR1979PTC065952",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "13 Aug, 1979"
+        },
+        {
+          "company": "PAPILLON ESTATES LIMITED",
+          "cin": "U74899DL1997PLC084862",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "3 Feb, 1997"
+        },
+        {
+          "company": "JASMINE PROMOTERS PRIVATE LIMITED",
+          "cin": "U74899DL1996PTC076072",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "6 Feb, 1996"
+        },
+        {
+          "company": "PARKLAND PROMOTERS PRIVATE LIMITED",
+          "cin": "U74899DL1996PTC077532",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "25 Mar, 1996"
+        },
+        {
+          "company": "NORTHLAND ESTATES PVT LTD",
+          "cin": "U74899DL1995PTC067407",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "17 Apr, 1995"
+        },
+        {
+          "company": "B T ESTATES PRIVATE LIMITED",
+          "cin": "U74899DL1994PTC059214",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "24 May, 1994"
+        },
+        {
+          "company": "ANANT RAJ EXPORTS PRIVATE LIMITED",
+          "cin": "U74899DL1992PTC050346",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "17 Sep, 1992"
+        },
+        {
+          "company": "VICTOR PROMOTERS PRIVATE LIMITED",
+          "cin": "U70101DL1996PTC075505",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "15 Jan, 1996"
+        },
+        {
+          "company": "SPRINGDALES ESTATES PRIVATE LIMITED",
+          "cin": "U70101DL1996PTC075995",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "2 Feb, 1996"
+        },
+        {
+          "company": "GREEN WOOD PROMOTERS PRIVATE LIMITED",
+          "cin": "U70101DL1996PTC076398",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "16 Feb, 1996"
+        },
+        {
+          "company": "KALINGA MEADOWS LIMITED",
+          "cin": "U45203DL1997PLC084199",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "2 Jan, 1997"
+        },
+        {
+          "company": "GRAND MEADOWS LIMITED",
+          "cin": "U45201DL1996PLC084163",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "31 Dec, 1996"
+        },
+        {
+          "company": "ROCKFIELD BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC138539",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "WEST LAND BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC137039",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "1 Jun, 2005"
+        },
+        {
+          "company": "ELEGANT BBUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2004PTC128525",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "23 Aug, 2004"
+        },
+        {
+          "company": "MAYUR BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2004PTC128518",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "23 Aug, 2004"
+        },
+        {
+          "company": "ROSEVIEW ESTATES PRIVATE LIMITED",
+          "cin": "U45201DL2004PTC128310",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "13 Aug, 2004"
+        },
+        {
+          "company": "SUNRISE BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2004PTC128519",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "23 Aug, 2004"
+        },
+        {
+          "company": "ROLLING CONSTRUCTION PRIVATE LIMITED",
+          "cin": "U45200DL2006PTC154847",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "18 Oct, 2006"
+        },
+        {
+          "company": "REDSEA REALTY PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC164822",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "15 Jun, 2007"
+        },
+        {
+          "company": "PASUPATI ALUMINIUM LIMITED",
+          "cin": "U27203HR1989PLC030508",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "16 Mar, 1989"
+        },
+        {
+          "company": "ANANT RAJ POWER LIMITED",
+          "cin": "U40104HR2009PLC039537",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "24 Sep, 2009"
+        },
+        {
+          "company": "AAKASHGANGA REALTY PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC164815",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "15 Jun, 2007"
+        },
+        {
+          "company": "WOODLAND PROMOTERS PRIVATE LIMITED",
+          "cin": "U74899DL1994PTC063098",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "1 Dec, 1994"
+        },
+        {
+          "company": "ORIENTAL PROMOTERS LIMITED",
+          "cin": "U74899DL1994PLC061219",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "2 Sep, 1994"
+        },
+        {
+          "company": "HIGH LAND MEADOWS LIMITED",
+          "cin": "U74899DL1988PLC030381",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "20 Jan, 1988"
+        },
+        {
+          "company": "PAPILLON BUILDTECH LIMITED",
+          "cin": "U45201DL2005PLC137371",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "8 Jun, 2005"
+        },
+        {
+          "company": "PAPILLON BUILDCON LIMITED",
+          "cin": "U45201DL2005PLC138538",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "CARNATION BUILDTECH LIMITED",
+          "cin": "U45201DL2005PLC136845",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 May, 2005"
+        },
+        {
+          "company": "RISING REALTY LIMITED",
+          "cin": "U45200DL2006PLC155123",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "31 Oct, 2006"
+        },
+        {
+          "company": "WEST LAND BUILDCON LIMITED",
+          "cin": "U00500DL2005PLC138536",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "MOON SHINE ENTERTAINMENT LIMITED",
+          "cin": "U74899DL1976PLC008372",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "21 Oct, 1976"
+        },
+        {
+          "company": "PARK LAND CONSTRUCTION AND EQUIPMENTS LIMITED",
+          "cin": "U70109DL2006PLC153096",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "5 Sep, 2006"
+        },
+        {
+          "company": "TARC GREEN RETREAT LIMITED",
+          "cin": "U55101DL1995PLC265094",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "15 Sep, 1995"
+        },
+        {
+          "company": "GREATWAYS BUILDTECH LIMITED",
+          "cin": "U45201DL2005PLC138540",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "GAGAN BUILDTECH LIMITED",
+          "cin": "U45201DL2005PLC137035",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "1 Jun, 2005"
+        },
+        {
+          "company": "CAPITAL BUILDTECH LIMITED",
+          "cin": "U45201DL2004PLC128520",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "23 Aug, 2004"
+        },
+        {
+          "company": "MONARCH BUILDTECH LIMITED",
+          "cin": "U45201DL2005PLC138543",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "TOWNSEND CONSTRUCTION AND EQUIPMENTS LIMITED",
+          "cin": "U45200DL2006PLC155087",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Oct, 2006"
+        },
+        {
+          "company": "ECHO BUILDTECH LIMITED",
+          "cin": "U00500DL2005PLC138541",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "GRAND BUILDTECH LIMITED",
+          "cin": "U00500DL2005PLC138544",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "JINDPUR INDUSTRIAL PARK PRIVATE LIMITED",
+          "cin": "U55101DL2005PTC141922",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "19 Oct, 2005"
+        },
+        {
+          "company": "COOL MONEY CAFE PRIVATE LIMITED",
+          "cin": "U67200DL2018PTC340128",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "5 Oct, 2018"
+        },
+        {
+          "company": "RIANA FINVEST PRIVATE LIMITED",
+          "cin": "U65929UP2017PTC096155",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "22 Aug, 2017"
+        },
+        {
+          "company": "DEEP BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC137402",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "9 Jun, 2005"
+        },
+        {
+          "company": "GREATWAY ESTATES PRIVATE LIMITED",
+          "cin": "U45201DL1997PTC084173",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "1 Jan, 1997"
+        },
+        {
+          "company": "TOWNTOP BUILDTECH PRIVATE LIMITED",
+          "cin": "U70200HR2012PTC047332",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "4 Oct, 2012"
+        },
+        {
+          "company": "AR LOGIN 4 EDU PRIVATE LIMITED",
+          "cin": "U80903HR2013PTC050132",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "21 Aug, 2013"
+        },
+        {
+          "company": "SAND STORM BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC138535",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "ROCK FIELD DEVELOPERS PRIVATE LIMITED",
+          "cin": "U74899DL1989PTC036399",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "25 May, 1989"
+        },
+        {
+          "company": "ROSEVIEW PROMOTERS PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC137034",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "1 Jun, 2005"
+        },
+        {
+          "company": "ROSEVIEW BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC138532",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "ROSELAND BUILDTECH PRIVATE LIMITED",
+          "cin": "U00500DL2005PTC138537",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "LUCKY MEADOWS PRIVATE LTD.",
+          "cin": "U74899DL1989PTC034901",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "2 Feb, 1989"
+        },
+        {
+          "company": "HEMKUNT PROMOTERS PRIVATE LIMITED",
+          "cin": "U70101DL1996PTC077517",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "25 Mar, 1996"
+        },
+        {
+          "company": "PARK LAND DEVELOPERS PRIVATE LIMITED",
+          "cin": "U74899DL1989PTC037872",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "29 Sep, 1989"
+        },
+        {
+          "company": "ORIENTAL MEADOWS LIMITED",
+          "cin": "U70200DL1997PLC084195",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "2 Jan, 1997"
+        },
+        {
+          "company": "PARK VIEW PROMOTERS PRIVATE LIMITED",
+          "cin": "U70101DL1996PTC075998",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "2 Feb, 1996"
+        },
+        {
+          "company": "ORIENTAL BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC138534",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "OLYMPIA BUILDERS PRIVATE LIMITED",
+          "cin": "U74899DL1981PTC011229",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "6 Jan, 1981"
+        },
+        {
+          "company": "GOODLUCK BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC136844",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 May, 2005"
+        },
+        {
+          "company": "GOODWILL ESTATE PRIVATE LIMITED",
+          "cin": "U74899DL1988PTC032707",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "8 Aug, 1988"
+        },
+        {
+          "company": "GOODWILL MEADOWS LIMITED",
+          "cin": "U70200DL1997PLC084198",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "2 Jan, 1997"
+        },
+        {
+          "company": "GREENWOOD PROPERTIES PRIVATE LIMITED",
+          "cin": "U74899DL1995PTC068595",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "16 May, 1995"
+        },
+        {
+          "company": "GRAND PARK ESTATES PVT LTD",
+          "cin": "U74899DL1989PTC035008",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "10 Feb, 1989"
+        },
+        {
+          "company": "GREENLINE BUILDCON PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC138542",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "FOUR CONSTRUCTION PRIVATE LIMITED",
+          "cin": "U45200DL2006PTC153157",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "6 Sep, 2006"
+        },
+        {
+          "company": "GARDEN VIEW MEADOWS PRIVATE LIMITED",
+          "cin": "U45201DL2002PTC114082",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "1 Feb, 2002"
+        },
+        {
+          "company": "DELHI MOTELS PRIVATE LIMITED",
+          "cin": "U74899DL1995PTC069017",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "25 May, 1995"
+        },
+        {
+          "company": "EMPIRE PROMOTERS PRIVATE LIMITED",
+          "cin": "U74899DL1994PTC061628",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "20 Sep, 1994"
+        },
+        {
+          "company": "ELEGENT ESTATES PVT LTD",
+          "cin": "U74899DL1989PTC034636",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jan, 1989"
+        },
+        {
+          "company": "ELEGANT BUILDCON PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC136851",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 May, 2005"
+        },
+        {
+          "company": "CONSORTIUM ESTATES LIMITED",
+          "cin": "U74899DL1997PLC084197",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "2 Jan, 1997"
+        },
+        {
+          "company": "CARNATION PROMOTERS PRIVATE LIMITED",
+          "cin": "U45201DL2004PTC128313",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "13 Aug, 2004"
+        },
+        {
+          "company": "BLUE DIAMOND ESTATES PRIVATE LIMITED",
+          "cin": "U74899DL1989PTC035715",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "31 Mar, 1989"
+        },
+        {
+          "company": "AAA REALTY PRIVATE LIMITED",
+          "cin": "U45200DL2006PTC153475",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "9 Sep, 2006"
+        },
+        {
+          "company": "MONARCH ESTATES PRIVATE LIMITED",
+          "cin": "U74899DL1989PTC035061",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "16 Feb, 1989"
+        },
+        {
+          "company": "CENTURY PROMOTERS PRIVATE LIMITED",
+          "cin": "U74899DL1995PTC067408",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "17 Apr, 1995"
+        },
+        {
+          "company": "PIONEER PROMOTERS PRIVATE LIMITED",
+          "cin": "U74899DL1994PTC063138",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "2 Dec, 1994"
+        },
+        {
+          "company": "TARC PROJECTS LIMITED",
+          "cin": "U70109DL2006PLC154354",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "27 Sep, 2006"
+        },
+        {
+          "company": "SUBURBAN FARMS PRIVATE LIMITED",
+          "cin": "U74899DL1988PTC031632",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "10 May, 1988"
+        },
+        {
+          "company": "SPRINGVIEW PROMOTERS PRIVATE LIMITED",
+          "cin": "U74899DL1996PTC076091",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "6 Feb, 1996"
+        },
+        {
+          "company": "SPRINGVIEW PROPERTIES PRIVATE LIMITED",
+          "cin": "U74899DL1989PTC036103",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "3 May, 1989"
+        },
+        {
+          "company": "SPRING VIEW DEVELOPERS PRIVATE LIMITED",
+          "cin": "U45200DL2006PTC155033",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "27 Oct, 2006"
+        },
+        {
+          "company": "SAFFRON VIEW PROPERTIES PRIVATE LTD",
+          "cin": "U74899DL1989PTC035067",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "16 Feb, 1989"
+        },
+        {
+          "company": "WHITE DIAMOND CONSTRUCTION AND EQUIPMENTS PRIVATE LIMITED",
+          "cin": "U70109DL2006PTC153097",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "5 Sep, 2006"
+        },
+        {
+          "company": "TWENTY FIRST DEVELOPERS PRIVATE LIMITED",
+          "cin": "U45200DL2006PTC155059",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Oct, 2006"
+        },
+        {
+          "company": "TOWN END PROPERTIES PRIVATE LIMITED",
+          "cin": "U74899DL1989PTC035948",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "20 Apr, 1989"
+        },
+        {
+          "company": "TOWNSEND PROMOTERS PRIVATE LIMITED",
+          "cin": "U70109DL2006PTC154657",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "6 Oct, 2006"
+        },
+        {
+          "company": "TRICOLOR HOTELS LIMITED",
+          "cin": "U55101DL2005PLC134104",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "17 Mar, 2005"
+        },
+        {
+          "company": "DASHBHUJA DEVELOPERS LLP",
+          "cin": "ACN-2739",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "1 Apr, 2025"
+        },
+        {
+          "company": "ACHHLA REAL ESTATE LLP",
+          "cin": "ACN-2672",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "1 Apr, 2025"
+        },
+        {
+          "company": "ANANTBHUMI ESTATE LLP",
+          "cin": "ACN-9040",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "25 Apr, 2025"
+        },
+        {
+          "company": "SHRI ASHOK SARIN ANANT RAJ LLP",
+          "cin": "AAZ-4892",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "16 Nov, 2021"
+        },
+        {
+          "company": "AVARNA PROJECTS LLP",
+          "cin": "AAP-6767",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "19 Jun, 2019"
+        },
+        {
+          "company": "GAGAN PROMOTERS LLP",
+          "cin": "AAC-2120",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "25 Mar, 2014"
+        },
+        {
+          "company": "DEEP PROMOTERS LLP",
+          "cin": "AAC-0676",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "10 Feb, 2014"
+        },
+        {
+          "company": "PAGODA DEVELOPER LLP",
+          "cin": "AAC-0231",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "22 Jan, 2014"
+        },
+        {
+          "company": "ASYLUM ESTATE LLP",
+          "cin": "AAB-9933",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "9 Jan, 2014"
+        },
+        {
+          "company": "ACQUAINTED REALTORS LLP",
+          "cin": "AAB-9932",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "9 Jan, 2014"
+        }
+      ],
+      "businessInterests": [],
+      "flags": null
+    },
+    {
+      "name": "SH ASHOK SARIN",
+      "role": "Managing Director",
+      "din": "00016199",
+      "appointmentDate": "5 Dec, 2016",
+      "status": "Former",
+      "cessationDate": "28 Dec, 2020",
+      "type": "Director",
+      "otherDirectorshipsCount": 18,
+      "businessInterestsCount": 1,
+      "otherDirectorships": [
+        {
+          "company": "ANANT RAJ AGENCIES PRIVATE LIMITED",
+          "cin": "U74899HR1979PTC065952",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "13 Aug, 1979"
+        },
+        {
+          "company": "ANANT RAJ EXPORTS PRIVATE LIMITED",
+          "cin": "U74899DL1992PTC050346",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "17 Sep, 1992"
+        },
+        {
+          "company": "ELEVATOR PROMOTERS LIMITED",
+          "cin": "U45400DL2007PLC162492",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "TOWNSEND CONSTRUCTION AND EQUIPMENTS LIMITED",
+          "cin": "U45200DL2006PLC155087",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Oct, 2006"
+        },
+        {
+          "company": "ECHO BUILDTECH LIMITED",
+          "cin": "U00500DL2005PLC138541",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "ANANT RAJ LIMITED",
+          "cin": "L45400HR1985PLC021622",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Jul, 1985"
+        },
+        {
+          "company": "SAND STORM BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC138535",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "ROSEVIEW BUILDTECH PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC138532",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        },
+        {
+          "company": "ROLLING CONSTRUCTION PRIVATE LIMITED",
+          "cin": "U45200DL2006PTC154847",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "18 Oct, 2006"
+        },
+        {
+          "company": "PASUPATI ALUMINIUM LIMITED",
+          "cin": "U27203HR1989PLC030508",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "16 Mar, 1989"
+        },
+        {
+          "company": "GRANDPARK BUILDTECH PRIVATE LIMITED.",
+          "cin": "U45200DL2006PTC156725",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "19 Dec, 2006"
+        },
+        {
+          "company": "CONSORTIUM HOLDINGS PRIVATE LIMITED",
+          "cin": "U74899DL1985PTC022081",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "20 Sep, 1985"
+        },
+        {
+          "company": "ANANT RAJ CONS. & DEVELOPMENT PRIVATE LIMITED",
+          "cin": "U70102DL2007PTC165844",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "13 Jul, 2007"
+        },
+        {
+          "company": "ANANT RAJ FARMS PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC134522",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Mar, 2005"
+        },
+        {
+          "company": "SPRING VIEW DEVELOPERS PRIVATE LIMITED",
+          "cin": "U45200DL2006PTC155033",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "27 Oct, 2006"
+        },
+        {
+          "company": "SILVERTOWN INN AND RESORTS PRIVATE LIMITED",
+          "cin": "U55101DL2003PTC121419",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "22 Jul, 2003"
+        },
+        {
+          "company": "WHITE DIAMOND CONSTRUCTION AND EQUIPMENTS PRIVATE LIMITED",
+          "cin": "U70109DL2006PTC153097",
+          "type": "COMPANY",
+          "status": "Strike Off",
+          "incorporationDate": "5 Sep, 2006"
+        },
+        {
+          "company": "TWENTY FIRST DEVELOPERS PRIVATE LIMITED",
+          "cin": "U45200DL2006PTC155059",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Oct, 2006"
+        }
+      ],
+      "businessInterests": [
+        {
+          "legalName": "ASHOK SARIN",
+          "businessNames": "-",
+          "status": "Inactive"
+        }
+      ],
+      "flags": "Deactivated due to non-filing of DIR-3 KYC"
+    },
+    {
+      "name": "MANEESH GUPTA",
+      "role": "Director",
+      "din": "00129254",
+      "appointmentDate": "10 Nov, 2016",
+      "status": "Former",
+      "cessationDate": "21 Jan, 2021",
+      "type": "Director",
+      "otherDirectorshipsCount": 17,
+      "businessInterestsCount": 1,
+      "otherDirectorships": [
+        {
+          "company": "CLASSIC FILAMENTS LIMITED",
+          "cin": "L24320GJ1990PLC013667",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 1990"
+        },
+        {
+          "company": "KK AGRO GREEN REVOLUTION PRIVATE LIMITED",
+          "cin": "U51909DL2006PTC152286",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "22 Aug, 2006"
+        },
+        {
+          "company": "MLK FINANCIAL MANAGEMENT PRIVATE LIMITED",
+          "cin": "U74900DL2009PTC194531",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "22 Sep, 2009"
+        },
+        {
+          "company": "SHRI AMBA PRASAD CHEMICALS PRIVATE LIMITED",
+          "cin": "U74899DL1983PTC016200",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "22 Jul, 1983"
+        },
+        {
+          "company": "KK MAINTENANCE SERVICES PRIVATE LIMITED",
+          "cin": "U93091DL2006PTC152460",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "25 Aug, 2006"
+        },
+        {
+          "company": "BGRE ENTERPRISE EXCELLENCE CENTRE PRIVATE LIMITED",
+          "cin": "U70200HR2026PTC146839",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "19 Jun, 2026"
+        },
+        {
+          "company": "DISANTU PROPERTIES PRIVATE LIMITED",
+          "cin": "U70109PB2023PTC057624",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "5 Jan, 2023"
+        },
+        {
+          "company": "BROOKPROP PROPERTY MANAGEMENT SERVICES PRIVATE LIMITED",
+          "cin": "U70109DL2022PTC398862",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 May, 2022"
+        },
+        {
+          "company": "ANANT RAJ LIMITED",
+          "cin": "L45400HR1985PLC021622",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Jul, 1985"
+        },
+        {
+          "company": "HUMAN EMPOWERMENT FOUNDATION",
+          "cin": "U80301DL2012NPL241558",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "4 Sep, 2012"
+        },
+        {
+          "company": "INTEGRATED CAPITAL SERVICES LIMITED",
+          "cin": "L74899DL1993PLC051981",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "3 Feb, 1993"
+        },
+        {
+          "company": "FRESHLY FARMED AND FROZEN FOODS PRIVATE LIMITED",
+          "cin": "U15400PN2008PTC132033",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "16 May, 2008"
+        },
+        {
+          "company": "DIGITAL HAWK SECURITY PRIVATE LIMITED",
+          "cin": "U74920DL2009PTC196192",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "19 Nov, 2009"
+        },
+        {
+          "company": "RSDR REALTY PRIVATE LIMITED",
+          "cin": "U70100DL2008PTC176621",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "10 Apr, 2008"
+        },
+        {
+          "company": "ANANT RAJ CONS. & DEVELOPMENT PRIVATE LIMITED",
+          "cin": "U70102DL2007PTC165844",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "13 Jul, 2007"
+        },
+        {
+          "company": "JAI MATA GLASS LIMITED",
+          "cin": "L26101HP1981PLC004430",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "27 Feb, 1981"
+        },
+        {
+          "company": "SOVEREIGN BUILDWELL PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162514",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        }
+      ],
+      "businessInterests": [
+        {
+          "legalName": "MANEESH GUPTA",
+          "businessNames": "-",
+          "status": "Active"
+        }
+      ],
+      "flags": null
+    },
+    {
+      "name": "SHARDA SARIN",
+      "role": "Director",
+      "din": "00016135",
+      "appointmentDate": "1 Sep, 2016",
+      "status": "Former",
+      "cessationDate": "10 Nov, 2016",
+      "type": "Director",
+      "otherDirectorshipsCount": 17,
+      "businessInterestsCount": 0,
+      "otherDirectorships": [
+        {
+          "company": "ANANT RAJ AGENCIES PRIVATE LIMITED",
+          "cin": "U74899HR1979PTC065952",
+          "type": "COMPANY",
+          "status": "Amalgamated",
+          "incorporationDate": "13 Aug, 1979"
+        },
+        {
+          "company": "SS AAMOUAGE TRADING PRIVATE LIMITED",
+          "cin": "U52100DL2007PTC167178",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "20 Aug, 2007"
+        },
+        {
+          "company": "BLOSSOM BUILDTECH PRIVATE LIMITED",
+          "cin": "U45300MH2007PTC423886",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "VIBRANT BUILDMART PRIVATE LIMITED",
+          "cin": "U45400MH2007PTC423888",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "GREEN VIEW BUILDWELL LIMITED",
+          "cin": "U45400DL2007PLC162496",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "FABULOUS BUILDERS LIMITED",
+          "cin": "U45300DL2007PLC162493",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "GADGET BUILDERS LIMITED",
+          "cin": "U45400DL2007PLC162495",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "ROSEVIEW PROPERTIES PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162509",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "NOVEL HOUSING PRIVATE LIMITED",
+          "cin": "U45300DL2007PTC162494",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "NOVEL BUILDMART PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162502",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "GREEN VALLEY BUILDERS PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162506",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "EQUINOX PROPERTIES PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162520",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "ELEVATOR BUILDERS PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162500",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "ELEVATOR BUILDTECH PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162488",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "KALINGA BUILDTECH PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162507",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "SOVEREIGN BUILDWELL PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC162514",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Apr, 2007"
+        },
+        {
+          "company": "SAFFRON VIEW PROPERTIES PRIVATE LTD",
+          "cin": "U74899DL1989PTC035067",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "16 Feb, 1989"
+        }
+      ],
+      "businessInterests": [],
+      "flags": null
+    },
+    {
+      "name": "BRAJINDAR MOHAN SINGH",
+      "role": "Director",
+      "din": "02143830",
+      "appointmentDate": "10 Nov, 2016",
+      "status": "Former",
+      "cessationDate": "10 Feb, 2021",
+      "type": "Director",
+      "otherDirectorshipsCount": 11,
+      "businessInterestsCount": 1,
+      "otherDirectorships": [
+        {
+          "company": "BOUTONNIERE HOSPITALITY PRIVATE LIMITED",
+          "cin": "U55101HR2009PTC057252",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Sep, 2009"
+        },
+        {
+          "company": "REVENT METALCAST LIMITED",
+          "cin": "U65921HR1983PLC033789",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "2 Dec, 1983"
+        },
+        {
+          "company": "KAFILA FORGE PRIVATE LIMITED",
+          "cin": "U27109DL1990PTC039427",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "6 Mar, 1990"
+        },
+        {
+          "company": "ROLLATAINERS LIMITED",
+          "cin": "L21014HR1968PLC004844",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "25 Feb, 1968"
+        },
+        {
+          "company": "ANANT RAJ LIMITED",
+          "cin": "L45400HR1985PLC021622",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Jul, 1985"
+        },
+        {
+          "company": "METRO TYRES LIMITED",
+          "cin": "U25112DL1974PLC246378",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "18 Jan, 1974"
+        },
+        {
+          "company": "ROSE REALTY PRIVATE LIMITED",
+          "cin": "U45200DL2007PTC161168",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "28 Mar, 2007"
+        },
+        {
+          "company": "SECURITAS ELECTRONIC SECURITY INDIA PRIVATE LIMITED",
+          "cin": "U74920DL2005PTC132868",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "10 Feb, 2005"
+        },
+        {
+          "company": "HAMARA REALTY PRIVATE LIMITED",
+          "cin": "U45400DL2007PTC161907",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Apr, 2007"
+        },
+        {
+          "company": "BARISTA COFFEE COMPANY LIMITED",
+          "cin": "U15492DL1999PLC101732",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "28 Sep, 1999"
+        },
+        {
+          "company": "SIYAN HOTELS PRIVATE LIMITED.",
+          "cin": "U55101DL2006PTC147850",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "21 Mar, 2006"
+        }
+      ],
+      "businessInterests": [
+        {
+          "legalName": "BRAJINDAR MOHAN SINGH",
+          "businessNames": "-",
+          "status": "Inactive"
+        }
+      ],
+      "flags": "Deactivated"
+    },
+    {
+      "name": "PRIYA SINGH AGGARWAL",
+      "role": "Director",
+      "din": "00535042",
+      "appointmentDate": "10 Nov, 2016",
+      "status": "Former",
+      "cessationDate": "20 Mar, 2018",
+      "type": "Director",
+      "otherDirectorshipsCount": 8,
+      "businessInterestsCount": 0,
+      "otherDirectorships": [
+        {
+          "company": "RUNNER MARKETING PRIVATE LIMITED",
+          "cin": "U65100MH1996PTC440097",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "24 Dec, 1996"
+        },
+        {
+          "company": "VIBGYOR INVESTORS & DEVELOPERS PVT LTD",
+          "cin": "U99999MH1993PTC441560",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "1 Apr, 1993"
+        },
+        {
+          "company": "MARUDHAR VYAPAAR PVT LTD",
+          "cin": "U51109MH1996PTC440096",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "8 Mar, 1996"
+        },
+        {
+          "company": "INMATCH.COM INTERNET VENTURES PRIVATE LIMITED",
+          "cin": "U72900MH2000PTC123840",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "25 Jan, 2000"
+        },
+        {
+          "company": "DISCOVERY FINANCIAL SERVICES PRIVATE LIMITED",
+          "cin": "U67120MH1995PTC092919",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "20 Sep, 1995"
+        },
+        {
+          "company": "ANANT RAJ LIMITED",
+          "cin": "L45400HR1985PLC021622",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Jul, 1985"
+        },
+        {
+          "company": "VALUE ONE UP DISTRIBUTION PRIVATE LIMITED",
+          "cin": "U65991TN2006PTC061770",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "19 Dec, 2006"
+        },
+        {
+          "company": "GINGER ENTERPRISES LLP",
+          "cin": "AAL-7081",
+          "type": "LLP",
+          "status": "Active",
+          "incorporationDate": "14 Jan, 2018"
+        }
+      ],
+      "businessInterests": [],
+      "flags": null
+    },
+    {
+      "name": "SUSHMAA CHHABRA",
+      "role": "Director",
+      "din": "01727941",
+      "appointmentDate": "29 Aug, 2018",
+      "status": "Former",
+      "cessationDate": "13 Feb, 2023",
+      "type": "Director",
+      "otherDirectorshipsCount": 4,
+      "businessInterestsCount": 0,
+      "otherDirectorships": [
+        {
+          "company": "ANANT RAJ LIMITED",
+          "cin": "L45400HR1985PLC021622",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Jul, 1985"
+        },
+        {
+          "company": "RAAS CONSULTING PRIVATE LIMITED",
+          "cin": "U74899DL1990PTC042243",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "3 Dec, 1990"
+        },
+        {
+          "company": "INTEGRATED CAPITAL SERVICES LIMITED",
+          "cin": "L74899DL1993PLC051981",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "3 Feb, 1993"
+        },
+        {
+          "company": "GREENLINE BUILDCON PRIVATE LIMITED",
+          "cin": "U45201DL2005PTC138542",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "11 Jul, 2005"
+        }
+      ],
+      "businessInterests": [],
+      "flags": null
+    },
+    {
+      "name": "CHANDA SACHDEV",
+      "role": "Director",
+      "din": "00133217",
+      "appointmentDate": "29 Aug, 2018",
+      "status": "Former",
+      "cessationDate": "23 Sep, 2020",
+      "type": "Director",
+      "otherDirectorshipsCount": 2,
+      "businessInterestsCount": 0,
+      "otherDirectorships": [
+        {
+          "company": "ANANT RAJ LIMITED",
+          "cin": "L45400HR1985PLC021622",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "30 Jul, 1985"
+        },
+        {
+          "company": "RUNNING PROPERTIES PRIVATE LIMITED",
+          "cin": "U70109DL2006PTC152845",
+          "type": "COMPANY",
+          "status": "Active",
+          "incorporationDate": "31 Aug, 2006"
+        }
+      ],
+      "businessInterests": [],
+      "flags": "Deactivated due to non-filing of DIR-3 KYC"
+    },
+    {
+      "name": "AARTI ARORA",
+      "role": "CFO(KMP)",
+      "din": null,
+      "appointmentDate": "28 Aug, 2020",
+      "status": "Former",
+      "cessationDate": "10 Aug, 2022",
+      "type": "KMP",
+      "otherDirectorshipsCount": 0,
+      "businessInterestsCount": 0,
+      "otherDirectorships": [],
+      "businessInterests": [],
+      "flags": null
+    }
+  ]
+}

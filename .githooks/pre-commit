@@ -1,0 +1,38 @@
+#!/bin/sh
+#
+# Pre-commit hook to run npm run build before committing
+# This ensures the project builds successfully before any commit
+# This hook applies to all users committing to this repository
+
+# Redirect output to stderr
+exec 1>&2
+
+echo "Running pre-commit build check..."
+
+# Check if we're in a git repository
+if ! git rev-parse --git-dir > /dev/null 2>&1; then
+    echo "Error: Not in a git repository"
+    exit 1
+fi
+
+# Check if package.json exists
+if [ ! -f "package.json" ]; then
+    echo "Error: package.json not found. Are you in the correct directory?"
+    exit 1
+fi
+
+# Check if node_modules exists
+if [ ! -d "node_modules" ]; then
+    echo "Error: node_modules not found. Please run 'npm install' first."
+    exit 1
+fi
+
+# Run npm run build
+echo "Building project..."
+if npm run build; then
+    echo "Build successful! Proceeding with commit..."
+    exit 0
+else
+    echo "Build failed! Please fix the build errors before committing."
+    exit 1
+fi

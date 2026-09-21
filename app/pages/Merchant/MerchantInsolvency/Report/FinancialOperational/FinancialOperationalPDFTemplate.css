@@ -1,0 +1,659 @@
+/* PDF Financial Operational Template Styles - Optimized for A4 Horizontal */
+.pdf-financial-template {
+  width: 100%;
+  max-width: 1122px; /* A4 horizontal width at 96 DPI */
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  font-size: 11px;
+  line-height: 1.3;
+  color: #333;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+.pdf-header {
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.pdf-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pdf-title-section {
+  flex: 1;
+}
+
+.pdf-main-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2563eb;
+  margin: 0 0 8px 0;
+}
+
+.pdf-subtitle-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pdf-industry-tag {
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: 500;
+  border: 1px solid;
+}
+
+.pdf-industry-tag.high-risk {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+.pdf-industry-tag.medium-risk {
+  background-color: #fffbeb;
+  color: #d97706;
+  border-color: #fed7aa;
+}
+
+.pdf-industry-tag.low-risk {
+  background-color: #f0fdf4;
+  color: #16a34a;
+  border-color: #bbf7d0;
+}
+
+.pdf-industry-tag.default-risk {
+  background-color: #f0f9ff;
+  color: #0891b2;
+  border-color: #bae6fd;
+}
+
+.pdf-cin {
+  font-size: 10px;
+  color: #6b7280;
+}
+
+.pdf-report-info {
+  text-align: right;
+}
+
+.pdf-report-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0 0 4px 0;
+}
+
+.pdf-report-date {
+  font-size: 10px;
+  color: #6b7280;
+  margin: 0 0 2px 0;
+}
+
+.pdf-report-period {
+  font-size: 10px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Section Styles */
+.pdf-section {
+  margin-top: 4px;
+  margin-bottom: 25px;
+  break-inside: avoid;
+}
+
+.pdf-section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1px !important;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #e5e7eb;
+  justify-content: flex-start; /* ensure left alignment */
+}
+
+.pdf-section-icon {
+  width: 14px;
+  height: 14px;
+  color: #2563eb;
+}
+
+.pdf-section-title {
+  font-size: 10px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0;
+  text-align: left; /* ensure left alignment */
+}
+
+.pdf-section-content {
+  padding-left: 22px;
+}
+
+/* Financial Metrics Grid */
+.pdf-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.pdf-metric-card {
+  padding: 0 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: #f9fafb;
+}
+
+.pdf-metric-label {
+  font-size: 10px;
+  color: #6b7280;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.pdf-metric-value {
+  font-size: 13px;
+  font-weight: bold;
+  color: #1f2937;
+  text-align: left !important;
+}
+
+/* Charts Grid */
+.pdf-charts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.pdf-chart-container {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: #f9fafb;
+  min-height: 200px;
+}
+
+.pdf-chart-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0 0 12px 0;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 8px !important;
+}
+
+.pdf-chart-data {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 150px;
+  justify-content: space-between;
+}
+
+.pdf-chart-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  position: relative;
+}
+
+.pdf-chart-year {
+  font-size: 10px;
+  color: #6b7280;
+  font-weight: 500;
+  min-width: 40px;
+  text-align: left;
+}
+
+.pdf-chart-value {
+  font-size: 10px;
+  color: #1f2937;
+  font-weight: bold;
+  min-width: 80px;
+  text-align: right;
+}
+
+.pdf-chart-bar {
+  flex: 1;
+  height: 16px;
+  background-color: #3b82f6;
+  border-radius: 2px;
+  margin: 0 8px;
+  position: relative;
+  min-width: 20px;
+}
+
+.pdf-chart-bar.revenue {
+  background-color: #10b981;
+}
+
+.pdf-chart-bar.profit {
+  background-color: #3b82f6;
+}
+
+.pdf-chart-bar.cashflow {
+  background-color: #8b5cf6;
+}
+
+/* Chart bar animations for visual appeal */
+.pdf-chart-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
+  border-radius: 2px;
+  width: 100%;
+}
+
+/* Financial Statement Table */
+.pdf-statement-container {
+  overflow: visible;
+  margin-top: 8px;
+}
+
+/* Prevent statement tables from being split across pages when possible */
+/* .pdf-statement-container,
+.pdf-statement-table {
+  page-break-inside: avoid;
+  break-inside: avoid;
+} */
+
+/* Compact variant for long statement tables (used for Income Statement) */
+.pdf-statement-table--compact {
+  /* slightly increased so dense income statement remains legible in PDFs */
+  font-size: 9px;
+}
+
+/* Watermark styles (match OverviewPDFTemplate) */
+.pdf-watermarked-group {
+  position: relative;
+  overflow: hidden;
+}
+
+.watermark {
+  position: absolute;
+  pointer-events: none;
+  color: #000;
+  opacity: 0.06;
+  font-weight: 800;
+  letter-spacing: 4px;
+  white-space: nowrap;
+  user-select: none;
+  z-index: 10; /* overlay content */
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.watermark-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 120px;
+  transform-origin: center;
+  max-width: 90%;
+  text-align: center;
+}
+
+.pdf-statement-table-wrapper {
+  position: relative;
+  /* Allow the table to break across pages and let the browser repeat thead
+     when printing/PDFing. `overflow: hidden` prevents proper page-break
+     behavior in many engines, so use visible here. The watermark is
+     positioned absolutely so it will still be clipped by the wrapper but
+     won't interfere with table pagination. */
+  overflow: visible; /* allow headers to repeat on page breaks */
+}
+
+.pdf-statement-table--compact th,
+.pdf-statement-table--compact td {
+  /* increase vertical padding for better row height in compact tables
+     to match the metrics cards/table spacing */
+  padding: 12px 8px;
+}
+
+.pdf-statement-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* slightly larger for readability in exported PDFs */
+  font-size: 11px;
+}
+
+.pdf-statement-table th {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 4px 6px;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Ensure table headers/footers are treated as table header/footer groups
+   so most browser-to-pdf engines will repeat them on page breaks. Also make
+   sure tbody is a row group so rows flow across pages. */
+.pdf-statement-table thead {
+  display: table-header-group;
+}
+.pdf-statement-table tfoot {
+  display: table-footer-group;
+}
+.pdf-statement-table tbody {
+  display: table-row-group;
+}
+
+/* Allow page breaks inside tables where needed */
+.pdf-statement-table, .pdf-statement-table tbody, .pdf-statement-table tr {
+  page-break-inside: auto;
+  break-inside: auto;
+}
+
+.pdf-statement-header {
+  width: 35%;
+  min-width: 200px;
+}
+
+.pdf-year-header {
+  text-align: center;
+  width: auto;
+}
+
+.pdf-statement-table td {
+  border: 1px solid #e2e8f0;
+  /* increase vertical padding to raise row height and improve readability
+     and make it consistent with metrics table spacing */
+  padding: 14px 8px;
+  vertical-align: middle;
+  line-height: 1.45;
+}
+
+/* Ensure table rows have a consistent minimum height across engines */
+.pdf-statement-table tr {
+  /* min-height helps when some engines collapse rows; padding is primary */
+  min-height: 44px;
+}
+
+.pdf-statement-row:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.pdf-statement-label {
+  font-weight: 500;
+}
+
+.pdf-statement-label.pdf-indented {
+  padding-left: 20px;
+}
+
+.pdf-statement-value {
+  text-align: right;
+  font-weight: 500;
+}
+
+.pdf-total-row {
+  font-weight: bold;
+  background-color: #f1f5f9 !important;
+}
+
+.pdf-subtotal-row {
+  font-weight: 600;
+  background-color: #f8fafc !important;
+}
+
+.pdf-section-divider td {
+  background-color: #e2e8f0 !important;
+  font-weight: bold;
+  color: #374151;
+  text-align: left;
+  padding: 12px 8px;
+}
+
+.pdf-section-divider td.pdf-subsection {
+  background-color: #f1f5f9 !important;
+  padding-left: 6px;
+  font-weight: 600;
+}
+
+.pdf-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* No Data Message */
+.pdf-no-data {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Red Flags Styles (matching OverviewPDFTemplate) */
+.pdf-red-flags-section {
+  margin: 12px 0;
+  background-color: #f9f7f0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.pdf-red-flags-content {
+  padding: 8px;
+}
+
+.pdf-red-flags-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pdf-red-flags-table td,
+.pdf-red-flags-table th {
+  vertical-align: middle !important;
+}
+
+.pdf-red-flag-row {
+  border-bottom: 1px solid rgba(229, 231, 235, 0.3);
+}
+
+.pdf-red-flag-row:last-child {
+  border-bottom: none;
+}
+
+.pdf-red-flag-severity {
+  padding: 8px;
+  width: 80px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.pdf-red-flag-description {
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.pdf-red-flag-category {
+  padding: 8px;
+  width: auto;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.pdf-severity-text {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.pdf-severity-text.red { color: #dc2626; }
+.pdf-severity-text.orange { color: #ea580c; }
+.pdf-severity-text.yellow { color: #ca8a04; }
+.pdf-severity-text.gray { color: #6b7280; }
+
+.pdf-category-text {
+  font-size: 11px;
+  font-weight: 500;
+  color: #2563eb;
+}
+
+/* Footer */
+.pdf-footer {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  color: #6b7280;
+  font-size: 9px;
+}
+
+.pdf-footer p {
+  margin: 3px 0;
+}
+
+/* Force page break helper */
+.pdf-page-break {
+  page-break-before: always;
+  break-before: page;
+}
+
+/* Keep the Income Statement table together on a single page when possible */
+.pdf-income-statement,
+.pdf-income-statement .pdf-statement-table-wrapper,
+.pdf-income-statement .pdf-statement-table,
+.pdf-income-statement .pdf-statement-table tbody,
+.pdf-income-statement .pdf-statement-table tr {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Ensure the Income Statement header repeats but the rows don't split */
+.pdf-income-statement .pdf-statement-table thead {
+  display: table-header-group;
+}
+
+/* Print-specific styles */
+@media print {
+  .pdf-financial-template {
+    padding: 15px;
+    font-size: 10px;
+  }
+  
+  .pdf-main-title {
+    font-size: 18px;
+  }
+  
+  .pdf-report-title {
+    font-size: 10px;
+  }
+  
+  .pdf-section-title {
+    font-size: 12px;
+  }
+  
+  .pdf-section {
+    margin-bottom: 10px;
+  }
+  
+  .pdf-statement-table {
+    /* print: slightly larger for clarity when rendered to PDF */
+    font-size: 10px;
+  }
+  
+  .pdf-statement-table th,
+  .pdf-statement-table td {
+    /* keep print padding slightly reduced but still roomy for readability */
+    padding: 8px 6px;
+  }
+
+  /* Further tighten compact income statement for print but match row height */
+  .pdf-statement-table--compact {
+    font-size: 9px;
+  }
+
+  .pdf-statement-table--compact th,
+  .pdf-statement-table--compact td {
+    padding: 6px 8px;
+  }
+
+  /* Strong print overrides to ensure repeating headers and visible overflow
+     across different rendering engines (Chrome/Puppeteer/Headless). */
+  .pdf-statement-table thead {
+    display: table-header-group !important;
+  }
+  .pdf-statement-table tfoot {
+    display: table-footer-group !important;
+  }
+  .pdf-statement-table tbody {
+    display: table-row-group !important;
+  }
+
+  /* Make sure wrappers don't clip the table or hide headers when printing */
+  .pdf-statement-table-wrapper,
+  .pdf-statement-container,
+  .pdf-section-content,
+  .pdf-watermarked-group {
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Avoid forcing no-break on sections; allow natural breaking so headers can repeat */
+  .pdf-section {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+  
+  .pdf-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Keep three charts in a single row for print/PDF output */
+  .pdf-charts-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Ensure forced page breaks still apply for PDF/print (keep explicit breaks where used) */
+  .pdf-financial-template .pdf-page-break {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pdf-financial-template {
+    padding: 15px;
+  }
+  
+  .pdf-header-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .pdf-report-info {
+    text-align: left;
+  }
+  
+  .pdf-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pdf-charts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pdf-statement-container {
+    overflow-x: auto;
+  }
+}

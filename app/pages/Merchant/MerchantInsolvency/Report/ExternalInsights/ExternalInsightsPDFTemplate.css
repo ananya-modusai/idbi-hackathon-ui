@@ -1,0 +1,542 @@
+/* PDF External Insights Template Styles - Optimized for A4 Horizontal */
+.pdf-external-insights-template {
+  width: 100%;
+  max-width: 1122px; /* A4 horizontal width at 96 DPI */
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  font-size: 11px;
+  line-height: 1.3;
+  color: #333;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+.pdf-header {
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.pdf-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pdf-title-section {
+  flex: 1;
+}
+
+.pdf-main-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2563eb;
+  margin: 0 0 8px 0;
+}
+
+.pdf-subtitle-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pdf-industry-tag {
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.pdf-industry-tag.high-risk {
+  color: #dc2626;
+}
+
+.pdf-industry-tag.medium-risk {
+  color: #d97706;
+}
+
+.pdf-industry-tag.low-risk {
+  color: #16a34a;
+}
+
+.pdf-industry-tag.default-risk {
+  color: #0891b2;
+}
+
+.pdf-cin {
+  font-size: 10px;
+  color: #6b7280;
+}
+
+.pdf-report-info {
+  text-align: right;
+}
+
+.pdf-report-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0 0 4px 0;
+}
+
+.pdf-report-date {
+  font-size: 10px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Section Styles */
+.pdf-section {
+  margin-bottom: 25px;
+  break-inside: avoid;
+}
+
+/* Per-page container for external insights - forces exactly one printed page per container
+   (we render groups of 4 insights into these containers). */
+.pdf-insights-page {
+  /* keep the whole page container together and force a page break after it */
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -webkit-page-break-inside: avoid;
+  padding-bottom: 6px;
+}
+
+/* Keep a section header and its first insight together */
+.pdf-section-inline {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -webkit-page-break-inside: avoid;
+}
+
+/* Keep the section header and first insight together to avoid orphaned headers */
+.pdf-section-group {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -webkit-page-break-inside: avoid;
+}
+
+.pdf-insights-first {
+  /* prevent the first insight from being separated from the header */
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.pdf-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.pdf-section-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0;
+}
+
+.pdf-red-flags-count {
+  font-size: 10px;
+  color: #dc2626;
+  font-weight: 600;
+  background-color: #fef2f2;
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid #fecaca;
+}
+
+.pdf-section-content {
+  padding-left: 0px;
+}
+
+/* Summary Grid Styles */
+.pdf-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.pdf-summary-item {
+  padding: 12px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.pdf-summary-label {
+  font-size: 9px;
+  color: #6b7280;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.pdf-summary-value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+/* Red Flags Section Styles */
+.pdf-red-flags-section {
+  margin-bottom: 20px;
+  background-color: #f9fafb;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.pdf-red-flags-table-container {
+  overflow: visible;
+}
+
+.pdf-red-flags-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.pdf-red-flags-table tbody tr {
+  border: none;
+}
+
+.pdf-red-flag-row {
+  border: none;
+}
+
+.pdf-red-flag-row td {
+  border: none;
+  padding: 4px 8px;
+  vertical-align: top;
+  line-height: 1.4;
+}
+
+.pdf-red-flag-severity-cell {
+  width: 80px;
+  text-align: left;
+  padding-right: 12px;
+}
+
+.pdf-red-flag-severity-text {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pdf-red-flag-severity-text.severity-severe {
+  color: #991b1b;
+}
+
+.pdf-red-flag-severity-text.severity-high {
+  color: #c2410c;
+}
+
+.pdf-red-flag-severity-text.severity-medium {
+  color: #a16207;
+}
+
+.pdf-red-flag-severity-text.severity-low {
+  color: #4b5563;
+}
+
+.pdf-red-flag-description-cell {
+  flex: 1;
+  color: #374151;
+  font-size: 10px;
+  line-height: 1.4;
+  padding-right: 12px;
+}
+
+.pdf-red-flag-category-cell {
+  width: 100px;
+  text-align: right;
+}
+
+.pdf-red-flag-category-text {
+  font-size: 10px;
+  font-weight: 500;
+  color: #2563eb;
+}
+
+/* Insights Section Styles */
+.pdf-insights-section {
+  margin-bottom: 16px;
+}
+
+.pdf-insights-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.pdf-insights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pdf-insight-item {
+  margin-bottom: 14px;
+  padding: 10px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  break-inside: avoid;
+  /* Prevent an insight card from being split across printed pages */
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -webkit-page-break-inside: avoid;
+}
+
+.pdf-insight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.pdf-insight-title {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 14px;
+  line-height: 1.8;
+  flex: 1;
+  margin-right: 12px;
+}
+
+.pdf-insight-filename {
+  font-size: 9px;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.pdf-insight-meta {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 2px;
+  flex-shrink: 0;
+  padding-left: 4px;
+}
+
+.pdf-insight-date {
+  font-size: 9px;
+  color: #6b7280;
+  font-weight: 500;
+  padding-right: 2px;
+}
+
+.pdf-insight-severity,
+.pdf-insight-risk {
+  font-size: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pdf-insight-severity.severity-severe,
+.pdf-insight-risk.severity-severe {
+  color: #991b1b;
+}
+
+.pdf-insight-severity.severity-high,
+.pdf-insight-risk.severity-high {
+  color: #c2410c;
+}
+
+.pdf-insight-severity.severity-medium,
+.pdf-insight-risk.severity-medium {
+  color: #a16207;
+}
+
+.pdf-insight-severity.severity-low,
+.pdf-insight-risk.severity-low {
+  color: #4b5563;
+}
+
+.pdf-insight-page {
+  font-size: 8px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.pdf-insight-content {
+  margin-top: 6px;
+}
+
+.pdf-insight-summary {
+  font-size: 10px;
+  color: #374151;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.pdf-insight-quote {
+  font-size: 9px;
+  color: #6b7280;
+  font-style: italic;
+  background-color: #f3f4f6;
+  padding: 4px 6px;
+  border-radius: 3px;
+  margin-bottom: 6px;
+  border-left: 2px solid #d1d5db;
+}
+
+.pdf-insight-sources {
+  font-size: 8px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.pdf-sources-label {
+  font-weight: 500;
+}
+
+.pdf-source-item {
+  color: #2563eb;
+}
+
+.pdf-source-separator {
+  color: #9ca3af;
+}
+
+/* No Data Message */
+.pdf-no-data {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  padding: 40px 20px;
+  margin: 0;
+  font-size: 12px;
+}
+
+/* Print-specific styles */
+@media print {
+  .pdf-external-insights-template {
+    padding: 15px;
+    font-size: 10px;
+  }
+  
+  .pdf-main-title {
+    font-size: 18px;
+  }
+  
+  .pdf-report-title {
+    font-size: 14px;
+  }
+  
+  .pdf-section-title {
+    font-size: 12px;
+  }
+  
+  .pdf-section {
+    margin-bottom: 20px;
+  }
+
+  /* Ensure per-page containers break correctly when printing */
+  .pdf-insights-page {
+    /* keep container together and force a break after it */
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    -webkit-page-break-inside: avoid;
+    page-break-after: always;
+    -webkit-page-break-after: always;
+    break-after: page;
+  }
+
+  /* Avoid adding an extra blank trailing page */
+  .pdf-insights-page:last-child {
+    page-break-after: auto;
+  }
+  
+  .pdf-insight-item {
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+  
+  .pdf-red-flag-item {
+    margin-bottom: 6px;
+    padding: 6px;
+  }
+  
+  .pdf-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pdf-external-insights-template {
+    padding: 15px;
+  }
+  
+  .pdf-header-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .pdf-report-info {
+    text-align: left;
+  }
+  
+  .pdf-summary-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pdf-insight-header {
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .pdf-insight-meta {
+    align-items: flex-start;
+  }
+  
+  .pdf-red-flag-layout {
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .pdf-red-flag-badges {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 8px;
+  }
+}
+
+/* Watermark styles (match other PDF templates) */
+.pdf-page-watermark-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.watermark {
+  position: absolute;
+  pointer-events: none;
+  color: #000;
+  opacity: 0.06;
+  font-weight: 800;
+  letter-spacing: 4px;
+  white-space: nowrap;
+  user-select: none;
+  z-index: 10; /* overlay content */
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.watermark-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 120px;
+  transform-origin: center;
+  max-width: 90%;
+  text-align: center;
+}

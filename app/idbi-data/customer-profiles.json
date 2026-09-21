@@ -1,0 +1,118 @@
+{
+  "asOf": "2026-09-19",
+  "notice": "Demo profile. Synthetic enrichment and financial-health assessments are not validated model outputs.",
+  "profiles": {
+    "990000029": {
+      "customerId": "990000029",
+      "entityType": "INDIVIDUAL",
+      "relationshipStatus": "EXISTING_CUSTOMER",
+      "classification": "Individual",
+      "location": "Kila Raipur, Punjab",
+      "relationshipOwner": "Ananya Rao",
+      "about": {
+        "label": "AI-generated summary",
+        "bullets": [
+          {
+            "parts": [
+              { "text": "Self-employed business owner", "strong": true },
+              { "text": " operating Vandana Enterprises in Kila Raipur, with an IDBI relationship dating to August 2018." }
+            ],
+            "evidenceIds": ["SRC-IDENTITY", "SRC-RELATIONSHIP", "SYN-ORGANISATION"]
+          },
+          {
+            "parts": [
+              { "text": "Maintains savings, current-account and fixed-deposit relationships. " },
+              { "text": "Reported credit outstanding is ₹36.75L", "strong": true },
+              { "text": ", with no overdue reported in the supplied records." }
+            ],
+            "evidenceIds": ["SRC-HOLDINGS", "SRC-LIMITS", "SRC-CONDUCT"]
+          },
+          {
+            "parts": [
+              { "text": "Business income and reserves recovered after a mid-year dip. " },
+              { "text": "Enquired about working capital on 18 September.", "strong": true }
+            ],
+            "evidenceIds": ["SYN-ASSESSMENT-HISTORY", "REQ-WC-1048"]
+          }
+        ]
+      },
+      "snapshot": [
+        { "id": "occupation", "label": "Occupation", "value": "Self-employed", "secondary": null, "sourceId": "SRC-IDENTITY", "observedAt": "2026-09-19", "provenance": "SOURCE" },
+        { "id": "organisation", "label": "Organisation", "value": "Vandana Enterprises", "secondary": null, "sourceId": "SYN-ORGANISATION", "observedAt": "2026-09-19", "provenance": "SYNTHETIC" },
+        { "id": "income", "label": "Primary Income Source", "value": "Business income", "secondary": null, "sourceId": "SYN-PROFILE", "observedAt": "2026-09-19", "provenance": "SYNTHETIC" },
+        { "id": "bureau", "label": "Credit Bureau", "value": "CIBIL · 766", "secondary": "Reported 16 Sep 2026", "sourceId": "SYN-CIBIL", "observedAt": "2026-09-16", "provenance": "SYNTHETIC" },
+        { "id": "personal", "label": "Personal Details", "value": "Age: 54 · Gender: Female", "secondary": null, "sourceId": "SRC-IDENTITY", "observedAt": "2026-09-19", "provenance": "DERIVED" },
+        { "id": "residency", "label": "Residency", "value": "Resident Indian", "secondary": "India", "sourceId": "SYN-PROFILE", "observedAt": "2026-09-19", "provenance": "SYNTHETIC" },
+        { "id": "since", "label": "Customer Since", "value": "28 Aug 2018", "secondary": "8 years with IDBI", "sourceId": "SRC-HOLDINGS", "observedAt": "2026-09-19", "provenance": "DERIVED" },
+        { "id": "kyc", "label": "KYC Status", "value": "Verified", "secondary": "Updated 12 Jun 2026", "sourceId": "SYN-KYC", "observedAt": "2026-06-12", "provenance": "SYNTHETIC" }
+      ],
+      "attentionItems": [
+        { "id": "ATTN-WC-1048", "itemType": "ENQUIRY", "label": "Working-capital enquiry", "status": "Enquired", "eventDate": "2026-09-18", "targetRecordId": "REQ-WC-1048" }
+      ],
+      "conversationSuggestion": {
+        "id": "SUG-WC-1048",
+        "objective": "Upsell",
+        "topic": "Business funding review",
+        "leadIns": [
+          "What amount and timing would support the working-capital requirement you mentioned?",
+          "Is the requirement linked to stock purchases, customer payments or another business expense?",
+          "How does your funding requirement change during your busiest months?"
+        ],
+        "requestId": "REQ-WC-1048",
+        "rationaleEvidenceIds": ["REQ-WC-1048", "SRC-CONDUCT", "SYN-ASSESSMENT-HISTORY"]
+      },
+      "financialHealth": {
+        "assessmentId": "FH-990000029-20260919",
+        "assessedAt": "2026-09-19",
+        "modelVersion": "DEMO-FH-1.0",
+        "assessmentBasis": "DEMO_CUSTOMER_PROFILE",
+        "score": 81,
+        "healthBand": "Good",
+        "comparisonAssessmentId": "FH-990000029-20260630",
+        "comparisonLabel": "since June",
+        "summary": "Inflows and reserves have recovered from the mid-year dip; repayments remain current.",
+        "drivers": [
+          { "id": "cash_flow", "name": "Cash Flow Strength", "index": 83, "band": "Strong", "description": "Assesses income consistency and headroom after non-debt spending." },
+          { "id": "debt", "name": "Debt Sustainability", "index": 85, "band": "Strong", "description": "Assesses borrowing affordability and repayment consistency." },
+          { "id": "resilience", "name": "Financial Resilience", "index": 73, "band": "Stable", "description": "Assesses accessible reserves and preparedness for longer-term needs." }
+        ],
+        "history": [
+          { "date": "2025-10-31", "score": 70, "cashFlow": 70, "debt": 74, "resilience": 65, "explanation": "Baseline assessment; limited reserve coverage." },
+          { "date": "2025-11-30", "score": 72, "cashFlow": 74, "debt": 75, "resilience": 66, "explanation": "More consistent inflows improved cash flow." },
+          { "date": "2025-12-31", "score": 71, "cashFlow": 71, "debt": 75, "resilience": 66, "explanation": "Seasonal spending reduced headroom." },
+          { "date": "2026-01-31", "score": 73, "cashFlow": 74, "debt": 77, "resilience": 67, "explanation": "Headroom improved and commitments became more manageable." },
+          { "date": "2026-02-28", "score": 72, "cashFlow": 71, "debt": 77, "resilience": 66, "explanation": "Higher essential outflows reduced headroom and reserve coverage." },
+          { "date": "2026-03-31", "score": 73, "cashFlow": 74, "debt": 77, "resilience": 67, "explanation": "Inflows recovered and reserves began rebuilding." },
+          { "date": "2026-04-30", "score": 74, "cashFlow": 75, "debt": 79, "resilience": 66, "explanation": "Improved income consistency supported financial health." },
+          { "date": "2026-05-31", "score": 79, "cashFlow": 83, "debt": 82, "resilience": 71, "explanation": "Stronger net business income improved headroom and reserves." },
+          { "date": "2026-06-30", "score": 76, "cashFlow": 77, "debt": 82, "resilience": 67, "explanation": "A temporary fall in net business income reduced headroom and reserves." },
+          { "date": "2026-07-31", "score": 70, "cashFlow": 65, "debt": 82, "resilience": 59, "explanation": "Lower income persisted; savings supported essential commitments. Repayments remained current." },
+          { "date": "2026-08-31", "score": 77, "cashFlow": 76, "debt": 85, "resilience": 67, "explanation": "Income recovered, easing the repayment burden and rebuilding reserves." },
+          { "date": "2026-09-19", "score": 81, "cashFlow": 83, "debt": 85, "resilience": 73, "explanation": "Inflows stabilised and reserves strengthened further." }
+        ]
+      },
+      "benchmark": {
+        "scopeId": "RM-ANANYA-PORTFOLIO",
+        "asOf": "2026-09-19",
+        "modelVersion": "DEMO-FH-1.0",
+        "cohorts": [
+          { "id": "PORTFOLIO", "label": "My portfolio", "sentenceLabel": "assessed customers", "eligibleCount": 1000, "lowerCount": 820, "tiedCount": 40, "aboveCount": 140 },
+          { "id": "SELF_EMPLOYED", "label": "Self-employed customers", "sentenceLabel": "assessed self-employed customers", "eligibleCount": 200, "lowerCount": 148, "tiedCount": 12, "aboveCount": 40 }
+        ]
+      },
+      "sources": [
+        { "id": "SRC-IDENTITY", "title": "Customer identity", "detail": "Name, customer ID, date of birth, gender and self-employed classification.", "source": "456_CustomerSummary", "observedAt": "2026-09-19", "provenance": "SOURCE" },
+        { "id": "SRC-RELATIONSHIP", "title": "Relationship start", "detail": "Earliest supplied account-opening date is used for the demo relationship tenure.", "source": "Account holdings", "observedAt": "2018-08-28", "provenance": "DERIVED" },
+        { "id": "SRC-HOLDINGS", "title": "Product relationships", "detail": "Savings, current-account and fixed-deposit product groups are recorded.", "source": "456_AllAccounts", "observedAt": "2026-09-19", "provenance": "SOURCE" },
+        { "id": "SRC-LIMITS", "title": "Reported credit outstanding", "detail": "Reported outstanding amount is ₹36.75L.", "source": "442_CustLimits", "observedAt": "2026-09-19", "provenance": "SOURCE" },
+        { "id": "SRC-CONDUCT", "title": "Reported conduct", "detail": "No overdue amount is reported in the supplied conduct records.", "source": "402/404 conduct records", "observedAt": "2026-09-19", "provenance": "SOURCE" },
+        { "id": "REQ-WC-1048", "title": "Working-capital enquiry", "detail": "Initial funding-needs discussion requested.", "source": "Demo request history", "observedAt": "2026-09-18", "provenance": "SYNTHETIC" },
+        { "id": "SYN-ORGANISATION", "title": "Organisation", "detail": "Vandana Enterprises is demo enrichment for the customer workspace.", "source": "Demo profile fixture", "observedAt": "2026-09-19", "provenance": "SYNTHETIC" },
+        { "id": "SYN-PROFILE", "title": "Profile enrichment", "detail": "Income source and residency are supplied as demo profile attributes.", "source": "Demo profile fixture", "observedAt": "2026-09-19", "provenance": "SYNTHETIC" },
+        { "id": "SYN-CIBIL", "title": "Credit bureau result", "detail": "CIBIL score and report date are synthetic demo values.", "source": "Demo profile fixture", "observedAt": "2026-09-16", "provenance": "SYNTHETIC" },
+        { "id": "SYN-KYC", "title": "KYC status", "detail": "Verification status and update date are synthetic demo values.", "source": "Demo profile fixture", "observedAt": "2026-06-12", "provenance": "SYNTHETIC" },
+        { "id": "SYN-ASSESSMENT-HISTORY", "title": "Financial-health history", "detail": "Score history and driver indices are synthetic demo assessments using one demo version.", "source": "Demo financial-health fixture", "observedAt": "2026-09-19", "provenance": "SYNTHETIC" }
+      ]
+    }
+  }
+}

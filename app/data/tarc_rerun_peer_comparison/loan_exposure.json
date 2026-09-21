@@ -1,0 +1,472 @@
+{
+  "company_name": "TARC LIMITED",
+  "asOf": "31 Mar, 2025",
+  "companyWide": {
+    "longTermBorrowingsCr": 2.55,
+    "shortTermBorrowingsCr": 1172.99,
+    "totalOutstandingBorrowingsCr": 1175.54,
+    "annualFinanceCostsCr": 101.19,
+    "avgMonthlyFinanceCostCr": 8.432
+  },
+  "loans": [
+    {
+      "lender": "INDIABULLS HOUSING FINANCE LIMITED (now SAMMAAN CAPITAL LIMITED)",
+      "status": "Closed",
+      "startDate": "11 May, 2022",
+      "product": "Secured Term Loan",
+      "securedAmountCr": 334.0,
+      "interestRate": null,
+      "termsOfPayment": null,
+      "assetsCount": 1,
+      "satisfiedCount": 1,
+      "notSatisfiedCount": 0,
+      "timeline": [
+        {
+          "date": "11 May, 2022",
+          "status": "Satisfaction",
+          "chargeId": 100479767.0
+        },
+        {
+          "date": "9 Sep, 2021",
+          "status": "Creation",
+          "chargeId": 100479767.0
+        }
+      ],
+      "charges": [
+        {
+          "chargeId": 100479767.0,
+          "status": "Satisfied",
+          "amountCr": 334.0,
+          "events": [
+            {
+              "date": "11 May, 2022",
+              "status": "Satisfaction",
+              "amount": 334.0,
+              "propertyType": "-"
+            },
+            {
+              "date": "9 Sep, 2021",
+              "status": "Creation",
+              "amount": 334.0,
+              "propertyType": "Others (as per Pledge/Charge Agreement attached)"
+            }
+          ],
+          "instrumentDescription": null,
+          "interestRate": null,
+          "termsOfPayment": null,
+          "propertyParticulars": null,
+          "extentAndOperation": null,
+          "otherTerms": null,
+          "filingDate": null
+        }
+      ]
+    },
+    {
+      "lender": "HERO FINCORP LIMITED",
+      "status": "Closed",
+      "startDate": "13 May, 2022",
+      "product": "Secured Term Loan",
+      "securedAmountCr": 250.0,
+      "interestRate": null,
+      "termsOfPayment": null,
+      "assetsCount": 1,
+      "satisfiedCount": 1,
+      "notSatisfiedCount": 0,
+      "timeline": [
+        {
+          "date": "13 May, 2022",
+          "status": "Satisfaction",
+          "chargeId": 100523708.0
+        },
+        {
+          "date": "24 Dec, 2021",
+          "status": "Creation",
+          "chargeId": 100523708.0
+        }
+      ],
+      "charges": [
+        {
+          "chargeId": 100523708.0,
+          "status": "Satisfied",
+          "amountCr": 250.0,
+          "events": [
+            {
+              "date": "13 May, 2022",
+              "status": "Satisfaction",
+              "amount": 250.0,
+              "propertyType": "-"
+            },
+            {
+              "date": "24 Dec, 2021",
+              "status": "Creation",
+              "amount": 250.0,
+              "propertyType": "Immovable property or any interest there in"
+            }
+          ],
+          "instrumentDescription": null,
+          "interestRate": null,
+          "termsOfPayment": null,
+          "propertyParticulars": null,
+          "extentAndOperation": null,
+          "otherTerms": null,
+          "filingDate": null
+        }
+      ]
+    },
+    {
+      "lender": "BANK OF BARODA",
+      "status": "Active",
+      "startDate": "13 Oct, 2022",
+      "product": "Secured Term Loan",
+      "securedAmountCr": 1.8,
+      "interestRate": "8.55%",
+      "termsOfPayment": "Repayable in 84 EMI of Rs.142755/- each.",
+      "assetsCount": 2,
+      "satisfiedCount": 0,
+      "notSatisfiedCount": 2,
+      "timeline": [
+        {
+          "date": "13 Oct, 2022",
+          "status": "Creation",
+          "chargeId": 100620589.0
+        },
+        {
+          "date": "21 Oct, 2022",
+          "status": "Creation",
+          "chargeId": 100620588.0
+        }
+      ],
+      "charges": [
+        {
+          "chargeId": 100620589.0,
+          "status": "Open",
+          "amountCr": 0.9,
+          "events": [
+            {
+              "date": "13 Oct, 2022",
+              "status": "Creation",
+              "amount": 0.9,
+              "propertyType": "Movable property - Motor Vehicle (Hypothecation)"
+            }
+          ],
+          "instrumentDescription": "Instrument of Hypothecation of Vehicle",
+          "interestRate": "8.55%",
+          "termsOfPayment": "Repayable in 84 EMI of Rs.142755/- each.",
+          "propertyParticulars": "Hypothecation of Vehicle Toyota Vellfire (Four Wheeler)",
+          "extentAndOperation": 100.0,
+          "otherTerms": null,
+          "filingDate": "27 Oct, 2022"
+        },
+        {
+          "chargeId": 100620588.0,
+          "status": "Open",
+          "amountCr": 0.9,
+          "events": [
+            {
+              "date": "21 Oct, 2022",
+              "status": "Creation",
+              "amount": 0.9,
+              "propertyType": "Movable property - Motor Vehicle (Hypothecation)"
+            }
+          ],
+          "instrumentDescription": "Instrument of Hypothecation of Vehicle",
+          "interestRate": "8.55%",
+          "termsOfPayment": "Repayable in 84 EMI of Rs.142755/- each.",
+          "propertyParticulars": "Hypothecation of Vehicle New Toyota Vellfire (Four Wheeler)",
+          "extentAndOperation": "100%",
+          "otherTerms": null,
+          "filingDate": "27 Oct, 2022"
+        }
+      ]
+    },
+    {
+      "lender": "CATALYST TRUSTEESHIP LIMITED",
+      "status": "Active",
+      "startDate": "19 Nov, 2025",
+      "product": "Secured Term Loan",
+      "securedAmountCr": 3676.0,
+      "interestRate": "6%",
+      "termsOfPayment": "as per amended and restated debenture trust deed dated 20-03-2025 and executed transaction documents",
+      "assetsCount": 5,
+      "satisfiedCount": 2,
+      "notSatisfiedCount": 3,
+      "timeline": [
+        {
+          "date": "19 Nov, 2025",
+          "status": "Modification",
+          "chargeId": 101080145.0
+        },
+        {
+          "date": "21 Mar, 2025",
+          "status": "Creation",
+          "chargeId": 101080145.0
+        },
+        {
+          "date": "21 Mar, 2025",
+          "status": "Creation",
+          "chargeId": 101077479.0
+        },
+        {
+          "date": "23 Oct, 2024",
+          "status": "Creation",
+          "chargeId": 101014126.0
+        },
+        {
+          "date": "28 Apr, 2022",
+          "status": "Creation",
+          "chargeId": 100572099.0
+        },
+        {
+          "date": "28 Sep, 2023",
+          "status": "Creation",
+          "chargeId": 100794533.0
+        },
+        {
+          "date": "30 Apr, 2022",
+          "status": "Modification",
+          "chargeId": 100572099.0
+        },
+        {
+          "date": "9 Apr, 2025",
+          "status": "Satisfaction",
+          "chargeId": 100794533.0
+        },
+        {
+          "date": "9 Apr, 2025",
+          "status": "Satisfaction",
+          "chargeId": 100572099.0
+        }
+      ],
+      "charges": [
+        {
+          "chargeId": 101080145.0,
+          "status": "Open",
+          "amountCr": 409.0,
+          "events": [
+            {
+              "date": "19 Nov, 2025",
+              "status": "Modification",
+              "amount": 409.0,
+              "propertyType": "Immovable property or any interest therein - Others"
+            },
+            {
+              "date": "21 Mar, 2025",
+              "status": "Creation",
+              "amount": 409.0,
+              "propertyType": "Immovable property or any interest therein - Others, Movable property - Inventory (incl. Receivables), Movable property - Others, Intangible - Goodwill, Intangible - Others, Book debts, Others (as detailed in the attached DOH, SPA and MOEs)"
+            }
+          ],
+          "instrumentDescription": "Memorandum of entry dated 19 November 2025 executed by Catalyst Trusteeship Limited.",
+          "interestRate": null,
+          "termsOfPayment": null,
+          "propertyParticulars": "First ranking pari passu charge created over land admeasuring, in aggregate, 36 Bighas 16 Biswas (approx. 7.66 acres) comprised in Khasra Nos. 1132 (4-16) 1133(4-16), 1136 (4-16), 1137 (4-16), 1142 (4-8), 1143 (4-8), 1144 (4-8), 1145 (4-8) along with the structures proposed to be developed thereon situated in village Punjab Khor, New Delhi as detailed in the memorandum of entry dated 19 November 2025.",
+          "extentAndOperation": null,
+          "otherTerms": null,
+          "filingDate": "5 Dec, 2025"
+        },
+        {
+          "chargeId": 101077479.0,
+          "status": "Open",
+          "amountCr": 426.0,
+          "events": [
+            {
+              "date": "21 Mar, 2025",
+              "status": "Creation",
+              "amount": 426.0,
+              "propertyType": "Immovable property or any interest therein - Others, Movable property - Inventory (incl. Receivables), Movable property - Others, Intangible - Goodwill, Intangible - Others, Book debts, Others (as detailed in the attached DOH, SPA and MOE)"
+            }
+          ],
+          "instrumentDescription": "Deed of hypothecation dated 21-03-2025 (DOH), share pledge agreement dated 21-03-2025 (SPA) and memorandum of entry dated 11-04-2025 (MOE)",
+          "interestRate": "6%",
+          "termsOfPayment": "as per amended and restated debenture trust deed dated 20-03-2025 and executed transaction documents",
+          "propertyParticulars": "first ranking pari passu charge created over (i) pledged shares as detailed under the SPA, (ii) mortgaged property as detailed under the MOEs, and (iii) hypothecated property as detailed under the DOH. The charge ranks pari passu with the security created to secure the debentures issued by Fabulous Builders Limited, Grand Buildtech Limited and TARC Green Retreat Limited in accordance with the debenture trust deed dated 20-03-2025 (as amended from time to time) and other transaction documents.",
+          "extentAndOperation": "first ranking pari passu charge created over (i) pledged shares as detailed under the SPA, (ii) mortgaged property as detailed under the MOEs, and (iii) hypothecated property as detailed under the DOH. The charge ranks pari passu with the security created to secure the debentures issued by Fabulous Builders Limited, Grand Buildtech Limited and TARC Green Retreat Limited in accordance with the debenture trust deed dated 20-03-2025 (as amended from time to time) and other transaction documents.",
+          "otherTerms": "as per amended and restated debenture trust deed dated 20-03-2025 and executed transaction documents",
+          "filingDate": "16 Apr, 2025"
+        },
+        {
+          "chargeId": 101014126.0,
+          "status": "Open",
+          "amountCr": 1250.0,
+          "events": [
+            {
+              "date": "23 Oct, 2024",
+              "status": "Creation",
+              "amount": 1250.0,
+              "propertyType": "Movable property - Others, Others ((i) Pledged Securities (as defined in SPAs) owned and held by the Company in TARC Projects Limited (\"TPL\") and Echo Buildtech Limited (\"EBL\"); (ii)Hypothecated Properties (as defined in DOH) owned by the Company which includes identified escrow accounts opened and maintained by the Company in relation to Kailasa Escrow Accounts (as defined in DOH) and Tripundra Escrow Accounts (as defined in DOH) and monies lying to the credit thereof.)"
+            }
+          ],
+          "instrumentDescription": "Unattested share pledge agreements dated 23.10.2024 (\"SPAs\") along with powers of attorney dated 23.10.2024 and unattested deed of hypothecation dated 28.11.2024 (\"DOH\") along with power of attorney dated 28.11.2024, each executed by inter alia the Company in favour of Catalyst Trusteeship Limited (\"Common Security Trustee\").",
+          "interestRate": "12.75%",
+          "termsOfPayment": "As per facility agreements and debenture trust deeds dated September 29, 2024",
+          "propertyParticulars": "First ranking exclusive charge created by the Company in favour of the Common Security Trustee over: (i) Pledged Securities (as defined in SPAs) owned and held by the Company in EBL and TPL, the details of which are more particularly set out under the SPAs; (ii) Hypothecated Properties (as defined in DOH) owned by the Company which includes identified escrow accounts opened and maintained by the Company in relation to Kailasa Escrow Accounts (as defined in DOH) and Tripundra Escrow Accounts (as defined in DOH) and monies lying to the credit thereof, the details of which are more particularly set out under the DOH; and such charge is being shared on pari passu basis inter se the Lenders (as defined in DOH).",
+          "extentAndOperation": "First ranking exclusive charge created by the Company in favour of the Common Security Trustee over: (i) Pledged Securities (as defined in SPAs) owned and held by the Company in EBL and TPL, the details of which are more particularly set out under the SPAs; (ii) Hypothecated Properties (as defined in DOH) owned by the Company which includes identified escrow accounts opened and maintained by the Company in relation to Kailasa Escrow Accounts (as defined in DOH) and Tripundra Escrow Accounts (as defined in DOH) and monies lying to the credit thereof, the details of which are more particularly set out under the DOH; and such charge is being shared on pari passu basis inter se the Lenders (as defined in DOH).",
+          "otherTerms": null,
+          "filingDate": "13 Dec, 2024"
+        },
+        {
+          "chargeId": 100794533.0,
+          "status": "Satisfied",
+          "amountCr": 191.0,
+          "events": [
+            {
+              "date": "28 Sep, 2023",
+              "status": "Creation",
+              "amount": 191.0,
+              "propertyType": "Immovable property or any interest therein - Others, Movable property - Inventory (incl. Receivables), Movable property - Others, Intangible - Goodwill, Intangible - Others, Book debts, Others (as detailed in the attached DOH, SPA and MOEs)"
+            },
+            {
+              "date": "9 Apr, 2025",
+              "status": "Satisfaction",
+              "amount": 191.0,
+              "propertyType": "-"
+            }
+          ],
+          "instrumentDescription": null,
+          "interestRate": null,
+          "termsOfPayment": null,
+          "propertyParticulars": null,
+          "extentAndOperation": null,
+          "otherTerms": null,
+          "filingDate": null
+        },
+        {
+          "chargeId": 100572099.0,
+          "status": "Satisfied",
+          "amountCr": 1400.0,
+          "events": [
+            {
+              "date": "28 Apr, 2022",
+              "status": "Creation",
+              "amount": 1400.0,
+              "propertyType": "Book debts, Movable property (not being pledge), Floating charge, Others (as detailed in the attached DOH & SPA)"
+            },
+            {
+              "date": "30 Apr, 2022",
+              "status": "Modification",
+              "amount": 1400.0,
+              "propertyType": "Immovable property or any interest there in, Movable property (not being pledge), Floating charge, Others (as detailed in the attached MoEs.)"
+            },
+            {
+              "date": "9 Apr, 2025",
+              "status": "Satisfaction",
+              "amount": 1400.0,
+              "propertyType": "-"
+            }
+          ],
+          "instrumentDescription": null,
+          "interestRate": null,
+          "termsOfPayment": null,
+          "propertyParticulars": null,
+          "extentAndOperation": null,
+          "otherTerms": null,
+          "filingDate": null
+        }
+      ]
+    },
+    {
+      "lender": "AXIS BANK LIMITED",
+      "status": "Active",
+      "startDate": "20 May, 2023",
+      "product": "Secured Term Loan",
+      "securedAmountCr": 3.0,
+      "interestRate": "9.65%",
+      "termsOfPayment": "60 EMI @632257",
+      "assetsCount": 1,
+      "satisfiedCount": 0,
+      "notSatisfiedCount": 1,
+      "timeline": [
+        {
+          "date": "20 May, 2023",
+          "status": "Creation",
+          "chargeId": 100755546.0
+        }
+      ],
+      "charges": [
+        {
+          "chargeId": 100755546.0,
+          "status": "Open",
+          "amountCr": 3.0,
+          "events": [
+            {
+              "date": "20 May, 2023",
+              "status": "Creation",
+              "amount": 3.0,
+              "propertyType": "Movable property - Motor Vehicle (Hypothecation)"
+            }
+          ],
+          "instrumentDescription": "Loan Cum Hypothecation Agreement dated-20-05-2023",
+          "interestRate": "9.65%",
+          "termsOfPayment": "60 EMI @632257",
+          "propertyParticulars": "1 Unit of LAND ROVER RANGE ROVER 4X4 CTR",
+          "extentAndOperation": "As per sanction terms",
+          "otherTerms": null,
+          "filingDate": "21 Jun, 2023"
+        }
+      ]
+    },
+    {
+      "lender": "YES BANK LIMITED",
+      "status": "Closed",
+      "startDate": "24 Feb, 2022",
+      "product": "Secured Term Loan",
+      "securedAmountCr": 245.46,
+      "interestRate": null,
+      "termsOfPayment": null,
+      "assetsCount": 1,
+      "satisfiedCount": 1,
+      "notSatisfiedCount": 0,
+      "timeline": [
+        {
+          "date": "24 Feb, 2022",
+          "status": "Modification",
+          "chargeId": 100410339.0
+        },
+        {
+          "date": "30 Apr, 2022",
+          "status": "Satisfaction",
+          "chargeId": 100410339.0
+        },
+        {
+          "date": "31 Oct, 2020",
+          "status": "Creation",
+          "chargeId": 100410339.0
+        }
+      ],
+      "charges": [
+        {
+          "chargeId": 100410339.0,
+          "status": "Satisfied",
+          "amountCr": 245.46,
+          "events": [
+            {
+              "date": "24 Feb, 2022",
+              "status": "Modification",
+              "amount": 290.46,
+              "propertyType": "Immovable property or any interest there in, Book debts, Floating charge"
+            },
+            {
+              "date": "30 Apr, 2022",
+              "status": "Satisfaction",
+              "amount": 290.46,
+              "propertyType": "-"
+            },
+            {
+              "date": "31 Oct, 2020",
+              "status": "Creation",
+              "amount": 245.46,
+              "propertyType": "-"
+            }
+          ],
+          "instrumentDescription": null,
+          "interestRate": null,
+          "termsOfPayment": null,
+          "propertyParticulars": null,
+          "extentAndOperation": null,
+          "otherTerms": null,
+          "filingDate": null
+        }
+      ]
+    }
+  ]
+}

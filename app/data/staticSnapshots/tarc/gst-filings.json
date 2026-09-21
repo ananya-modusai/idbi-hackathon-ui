@@ -1,0 +1,1762 @@
+[
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Jul 2026",
+  "sortKey": "2026-07",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Aug, 2026",
+  "filedOn": "20 Aug, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Jul 2026",
+  "sortKey": "2026-07",
+  "returnType": "GSTR1",
+  "dueDate": "11 Aug, 2026",
+  "filedOn": "7 Aug, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Jul 2026",
+  "sortKey": "2026-07",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "18 Aug, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Jul 2026",
+  "sortKey": "2026-07",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Aug, 2026",
+  "filedOn": "20 Aug, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Jul 2026",
+  "sortKey": "2026-07",
+  "returnType": "GSTR1",
+  "dueDate": "11 Aug, 2026",
+  "filedOn": "11 Aug, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Jul 2026",
+  "sortKey": "2026-07",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Aug, 2026",
+  "filedOn": "19 Aug, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Jul 2026",
+  "sortKey": "2026-07",
+  "returnType": "GSTR1",
+  "dueDate": "11 Aug, 2026",
+  "filedOn": "7 Aug, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Jun 2026",
+  "sortKey": "2026-06",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jul, 2026",
+  "filedOn": "20 Jul, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Jun 2026",
+  "sortKey": "2026-06",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jul, 2026",
+  "filedOn": "10 Jul, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Jun 2026",
+  "sortKey": "2026-06",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "18 Jul, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Jun 2026",
+  "sortKey": "2026-06",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jul, 2026",
+  "filedOn": "21 Jul, 2026",
+  "status": "1 day late",
+  "onTime": false
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Jun 2026",
+  "sortKey": "2026-06",
+  "returnType": "GSTR1A",
+  "dueDate": "-",
+  "filedOn": "20 Jul, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Jun 2026",
+  "sortKey": "2026-06",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jul, 2026",
+  "filedOn": "10 Jul, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Jun 2026",
+  "sortKey": "2026-06",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jul, 2026",
+  "filedOn": "18 Jul, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Jun 2026",
+  "sortKey": "2026-06",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jul, 2026",
+  "filedOn": "10 Jul, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "May 2026",
+  "sortKey": "2026-05",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jun, 2026",
+  "filedOn": "18 Jun, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "May 2026",
+  "sortKey": "2026-05",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jun, 2026",
+  "filedOn": "9 Jun, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "May 2026",
+  "sortKey": "2026-05",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "15 Jun, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "May 2026",
+  "sortKey": "2026-05",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jun, 2026",
+  "filedOn": "18 Jun, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "May 2026",
+  "sortKey": "2026-05",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jun, 2026",
+  "filedOn": "9 Jun, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "May 2026",
+  "sortKey": "2026-05",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jun, 2026",
+  "filedOn": "15 Jun, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "May 2026",
+  "sortKey": "2026-05",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jun, 2026",
+  "filedOn": "8 Jun, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Apr 2026",
+  "sortKey": "2026-04",
+  "returnType": "GSTR3B",
+  "dueDate": "20 May, 2026",
+  "filedOn": "20 May, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Apr 2026",
+  "sortKey": "2026-04",
+  "returnType": "GSTR1",
+  "dueDate": "11 May, 2026",
+  "filedOn": "7 May, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Apr 2026",
+  "sortKey": "2026-04",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "20 May, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Apr 2026",
+  "sortKey": "2026-04",
+  "returnType": "GSTR3B",
+  "dueDate": "20 May, 2026",
+  "filedOn": "20 May, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Apr 2026",
+  "sortKey": "2026-04",
+  "returnType": "GSTR1",
+  "dueDate": "11 May, 2026",
+  "filedOn": "11 May, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Apr 2026",
+  "sortKey": "2026-04",
+  "returnType": "GSTR3B",
+  "dueDate": "20 May, 2026",
+  "filedOn": "20 May, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Apr 2026",
+  "sortKey": "2026-04",
+  "returnType": "GSTR1",
+  "dueDate": "11 May, 2026",
+  "filedOn": "7 May, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Mar 2026",
+  "sortKey": "2026-03",
+  "returnType": "GSTR3B",
+  "dueDate": "21 Apr, 2026",
+  "filedOn": "25 Apr, 2026",
+  "status": "4 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Mar 2026",
+  "sortKey": "2026-03",
+  "returnType": "GSTR1",
+  "dueDate": "11 Apr, 2026",
+  "filedOn": "10 Apr, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Mar 2026",
+  "sortKey": "2026-03",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "15 Apr, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Mar 2026",
+  "sortKey": "2026-03",
+  "returnType": "GSTR3B",
+  "dueDate": "21 Apr, 2026",
+  "filedOn": "20 Apr, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Mar 2026",
+  "sortKey": "2026-03",
+  "returnType": "GSTR1",
+  "dueDate": "11 Apr, 2026",
+  "filedOn": "11 Apr, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Mar 2026",
+  "sortKey": "2026-03",
+  "returnType": "GSTR3B",
+  "dueDate": "21 Apr, 2026",
+  "filedOn": "17 Apr, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Mar 2026",
+  "sortKey": "2026-03",
+  "returnType": "GSTR1",
+  "dueDate": "11 Apr, 2026",
+  "filedOn": "10 Apr, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Feb 2026",
+  "sortKey": "2026-02",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Mar, 2026",
+  "filedOn": "20 Mar, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Feb 2026",
+  "sortKey": "2026-02",
+  "returnType": "GSTR1",
+  "dueDate": "11 Mar, 2026",
+  "filedOn": "10 Mar, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Feb 2026",
+  "sortKey": "2026-02",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "19 Mar, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Feb 2026",
+  "sortKey": "2026-02",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Mar, 2026",
+  "filedOn": "20 Mar, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Feb 2026",
+  "sortKey": "2026-02",
+  "returnType": "GSTR1",
+  "dueDate": "11 Mar, 2026",
+  "filedOn": "11 Mar, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Feb 2026",
+  "sortKey": "2026-02",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Mar, 2026",
+  "filedOn": "20 Mar, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Feb 2026",
+  "sortKey": "2026-02",
+  "returnType": "GSTR1",
+  "dueDate": "11 Mar, 2026",
+  "filedOn": "10 Mar, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Jan 2026",
+  "sortKey": "2026-01",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Feb, 2026",
+  "filedOn": "20 Feb, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Jan 2026",
+  "sortKey": "2026-01",
+  "returnType": "GSTR1",
+  "dueDate": "11 Feb, 2026",
+  "filedOn": "3 Feb, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Jan 2026",
+  "sortKey": "2026-01",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "17 Feb, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Jan 2026",
+  "sortKey": "2026-01",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Feb, 2026",
+  "filedOn": "20 Feb, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Jan 2026",
+  "sortKey": "2026-01",
+  "returnType": "GSTR1",
+  "dueDate": "11 Feb, 2026",
+  "filedOn": "11 Feb, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Jan 2026",
+  "sortKey": "2026-01",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Feb, 2026",
+  "filedOn": "17 Feb, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Jan 2026",
+  "sortKey": "2026-01",
+  "returnType": "GSTR1",
+  "dueDate": "11 Feb, 2026",
+  "filedOn": "3 Feb, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Dec 2025",
+  "sortKey": "2025-12",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jan, 2026",
+  "filedOn": "20 Jan, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Dec 2025",
+  "sortKey": "2025-12",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jan, 2026",
+  "filedOn": "9 Jan, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Dec 2025",
+  "sortKey": "2025-12",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "17 Jan, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Dec 2025",
+  "sortKey": "2025-12",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jan, 2026",
+  "filedOn": "20 Jan, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Dec 2025",
+  "sortKey": "2025-12",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jan, 2026",
+  "filedOn": "9 Jan, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Dec 2025",
+  "sortKey": "2025-12",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jan, 2026",
+  "filedOn": "19 Jan, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Dec 2025",
+  "sortKey": "2025-12",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jan, 2026",
+  "filedOn": "9 Jan, 2026",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Nov 2025",
+  "sortKey": "2025-11",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Dec, 2025",
+  "filedOn": "18 Dec, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Nov 2025",
+  "sortKey": "2025-11",
+  "returnType": "GSTR1",
+  "dueDate": "11 Dec, 2025",
+  "filedOn": "4 Dec, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Nov 2025",
+  "sortKey": "2025-11",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "15 Dec, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Nov 2025",
+  "sortKey": "2025-11",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Dec, 2025",
+  "filedOn": "18 Dec, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Nov 2025",
+  "sortKey": "2025-11",
+  "returnType": "GSTR1",
+  "dueDate": "11 Dec, 2025",
+  "filedOn": "8 Dec, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Nov 2025",
+  "sortKey": "2025-11",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Dec, 2025",
+  "filedOn": "18 Dec, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Nov 2025",
+  "sortKey": "2025-11",
+  "returnType": "GSTR1",
+  "dueDate": "11 Dec, 2025",
+  "filedOn": "4 Dec, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Oct 2025",
+  "sortKey": "2025-10",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Nov, 2025",
+  "filedOn": "19 Nov, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Oct 2025",
+  "sortKey": "2025-10",
+  "returnType": "GSTR1",
+  "dueDate": "11 Nov, 2025",
+  "filedOn": "10 Nov, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Oct 2025",
+  "sortKey": "2025-10",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "14 Nov, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Oct 2025",
+  "sortKey": "2025-10",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Nov, 2025",
+  "filedOn": "21 Nov, 2025",
+  "status": "1 day late",
+  "onTime": false
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Oct 2025",
+  "sortKey": "2025-10",
+  "returnType": "GSTR1",
+  "dueDate": "11 Nov, 2025",
+  "filedOn": "10 Nov, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Oct 2025",
+  "sortKey": "2025-10",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Nov, 2025",
+  "filedOn": "18 Nov, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Oct 2025",
+  "sortKey": "2025-10",
+  "returnType": "GSTR1",
+  "dueDate": "11 Nov, 2025",
+  "filedOn": "6 Nov, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Sep 2025",
+  "sortKey": "2025-09",
+  "returnType": "GSTR3B",
+  "dueDate": "25 Oct, 2025",
+  "filedOn": "18 Oct, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Sep 2025",
+  "sortKey": "2025-09",
+  "returnType": "GSTR1",
+  "dueDate": "11 Oct, 2025",
+  "filedOn": "8 Oct, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Sep 2025",
+  "sortKey": "2025-09",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "16 Oct, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Sep 2025",
+  "sortKey": "2025-09",
+  "returnType": "GSTR3B",
+  "dueDate": "25 Oct, 2025",
+  "filedOn": "27 Oct, 2025",
+  "status": "2 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Sep 2025",
+  "sortKey": "2025-09",
+  "returnType": "GSTR1",
+  "dueDate": "11 Oct, 2025",
+  "filedOn": "10 Oct, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Sep 2025",
+  "sortKey": "2025-09",
+  "returnType": "GSTR3B",
+  "dueDate": "25 Oct, 2025",
+  "filedOn": "15 Oct, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Sep 2025",
+  "sortKey": "2025-09",
+  "returnType": "GSTR1",
+  "dueDate": "11 Oct, 2025",
+  "filedOn": "9 Oct, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Aug 2025",
+  "sortKey": "2025-08",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Sep, 2025",
+  "filedOn": "20 Sep, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Aug 2025",
+  "sortKey": "2025-08",
+  "returnType": "GSTR1",
+  "dueDate": "11 Sep, 2025",
+  "filedOn": "8 Sep, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Aug 2025",
+  "sortKey": "2025-08",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "17 Sep, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Aug 2025",
+  "sortKey": "2025-08",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Sep, 2025",
+  "filedOn": "20 Sep, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Aug 2025",
+  "sortKey": "2025-08",
+  "returnType": "GSTR1",
+  "dueDate": "11 Sep, 2025",
+  "filedOn": "11 Sep, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Aug 2025",
+  "sortKey": "2025-08",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Sep, 2025",
+  "filedOn": "20 Sep, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Aug 2025",
+  "sortKey": "2025-08",
+  "returnType": "GSTR1",
+  "dueDate": "11 Sep, 2025",
+  "filedOn": "8 Sep, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Jul 2025",
+  "sortKey": "2025-07",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Aug, 2025",
+  "filedOn": "20 Aug, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Jul 2025",
+  "sortKey": "2025-07",
+  "returnType": "GSTR1",
+  "dueDate": "11 Aug, 2025",
+  "filedOn": "6 Aug, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Jul 2025",
+  "sortKey": "2025-07",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "19 Aug, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Jul 2025",
+  "sortKey": "2025-07",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Aug, 2025",
+  "filedOn": "20 Aug, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Jul 2025",
+  "sortKey": "2025-07",
+  "returnType": "GSTR1",
+  "dueDate": "11 Aug, 2025",
+  "filedOn": "8 Aug, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Jul 2025",
+  "sortKey": "2025-07",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Aug, 2025",
+  "filedOn": "18 Aug, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Jul 2025",
+  "sortKey": "2025-07",
+  "returnType": "GSTR1",
+  "dueDate": "11 Aug, 2025",
+  "filedOn": "6 Aug, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Jun 2025",
+  "sortKey": "2025-06",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jul, 2025",
+  "filedOn": "25 Jul, 2025",
+  "status": "5 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Jun 2025",
+  "sortKey": "2025-06",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jul, 2025",
+  "filedOn": "7 Jul, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Jun 2025",
+  "sortKey": "2025-06",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "14 Jul, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Jun 2025",
+  "sortKey": "2025-06",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jul, 2025",
+  "filedOn": "21 Jul, 2025",
+  "status": "1 day late",
+  "onTime": false
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Jun 2025",
+  "sortKey": "2025-06",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jul, 2025",
+  "filedOn": "11 Jul, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Jun 2025",
+  "sortKey": "2025-06",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jul, 2025",
+  "filedOn": "18 Jul, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Jun 2025",
+  "sortKey": "2025-06",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jul, 2025",
+  "filedOn": "7 Jul, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "May 2025",
+  "sortKey": "2025-05",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jun, 2025",
+  "filedOn": "19 Jun, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "May 2025",
+  "sortKey": "2025-05",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jun, 2025",
+  "filedOn": "7 Jun, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "May 2025",
+  "sortKey": "2025-05",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "17 Jun, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "May 2025",
+  "sortKey": "2025-05",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jun, 2025",
+  "filedOn": "20 Jun, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "May 2025",
+  "sortKey": "2025-05",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jun, 2025",
+  "filedOn": "11 Jun, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "May 2025",
+  "sortKey": "2025-05",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Jun, 2025",
+  "filedOn": "19 Jun, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "May 2025",
+  "sortKey": "2025-05",
+  "returnType": "GSTR1",
+  "dueDate": "11 Jun, 2025",
+  "filedOn": "7 Jun, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Apr 2025",
+  "sortKey": "2025-04",
+  "returnType": "GSTR3B",
+  "dueDate": "20 May, 2025",
+  "filedOn": "26 May, 2025",
+  "status": "6 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Apr 2025",
+  "sortKey": "2025-04",
+  "returnType": "GSTR1",
+  "dueDate": "11 May, 2025",
+  "filedOn": "9 May, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Apr 2025",
+  "sortKey": "2025-04",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "29 May, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Apr 2025",
+  "sortKey": "2025-04",
+  "returnType": "GSTR3B",
+  "dueDate": "20 May, 2025",
+  "filedOn": "4 Jun, 2025",
+  "status": "15 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Apr 2025",
+  "sortKey": "2025-04",
+  "returnType": "GSTR1",
+  "dueDate": "11 May, 2025",
+  "filedOn": "9 May, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Apr 2025",
+  "sortKey": "2025-04",
+  "returnType": "GSTR3B",
+  "dueDate": "20 May, 2025",
+  "filedOn": "26 May, 2025",
+  "status": "6 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Apr 2025",
+  "sortKey": "2025-04",
+  "returnType": "GSTR1",
+  "dueDate": "11 May, 2025",
+  "filedOn": "8 May, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Mar 2025",
+  "sortKey": "2025-03",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Apr, 2025",
+  "filedOn": "24 Apr, 2025",
+  "status": "4 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Mar 2025",
+  "sortKey": "2025-03",
+  "returnType": "GSTR1",
+  "dueDate": "11 Apr, 2025",
+  "filedOn": "11 Apr, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Mar 2025",
+  "sortKey": "2025-03",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "22 Apr, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Mar 2025",
+  "sortKey": "2025-03",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Apr, 2025",
+  "filedOn": "21 Apr, 2025",
+  "status": "1 day late",
+  "onTime": false
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Mar 2025",
+  "sortKey": "2025-03",
+  "returnType": "GSTR1",
+  "dueDate": "11 Apr, 2025",
+  "filedOn": "11 Apr, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Mar 2025",
+  "sortKey": "2025-03",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Apr, 2025",
+  "filedOn": "23 Apr, 2025",
+  "status": "3 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Mar 2025",
+  "sortKey": "2025-03",
+  "returnType": "GSTR1",
+  "dueDate": "11 Apr, 2025",
+  "filedOn": "22 Apr, 2025",
+  "status": "11 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Feb 2025",
+  "sortKey": "2025-02",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Mar, 2025",
+  "filedOn": "24 Mar, 2025",
+  "status": "4 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Feb 2025",
+  "sortKey": "2025-02",
+  "returnType": "GSTR1",
+  "dueDate": "11 Mar, 2025",
+  "filedOn": "10 Mar, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Feb 2025",
+  "sortKey": "2025-02",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "25 Mar, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Feb 2025",
+  "sortKey": "2025-02",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Mar, 2025",
+  "filedOn": "26 Mar, 2025",
+  "status": "6 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Feb 2025",
+  "sortKey": "2025-02",
+  "returnType": "GSTR1",
+  "dueDate": "11 Mar, 2025",
+  "filedOn": "11 Mar, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Feb 2025",
+  "sortKey": "2025-02",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Mar, 2025",
+  "filedOn": "24 Mar, 2025",
+  "status": "4 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Feb 2025",
+  "sortKey": "2025-02",
+  "returnType": "GSTR1",
+  "dueDate": "11 Mar, 2025",
+  "filedOn": "10 Mar, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Jan 2025",
+  "sortKey": "2025-01",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Feb, 2025",
+  "filedOn": "20 Feb, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Jan 2025",
+  "sortKey": "2025-01",
+  "returnType": "GSTR1",
+  "dueDate": "11 Feb, 2025",
+  "filedOn": "10 Feb, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Jan 2025",
+  "sortKey": "2025-01",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "20 Feb, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Jan 2025",
+  "sortKey": "2025-01",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Feb, 2025",
+  "filedOn": "20 Feb, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Jan 2025",
+  "sortKey": "2025-01",
+  "returnType": "GSTR1",
+  "dueDate": "11 Feb, 2025",
+  "filedOn": "11 Feb, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Jan 2025",
+  "sortKey": "2025-01",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Feb, 2025",
+  "filedOn": "20 Feb, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Jan 2025",
+  "sortKey": "2025-01",
+  "returnType": "GSTR1",
+  "dueDate": "11 Feb, 2025",
+  "filedOn": "10 Feb, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Dec 2024",
+  "sortKey": "2024-12",
+  "returnType": "GSTR3B",
+  "dueDate": "22 Jan, 2025",
+  "filedOn": "21 Jan, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Dec 2024",
+  "sortKey": "2024-12",
+  "returnType": "GSTR1",
+  "dueDate": "13 Jan, 2025",
+  "filedOn": "8 Jan, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Dec 2024",
+  "sortKey": "2024-12",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "20 Jan, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Dec 2024",
+  "sortKey": "2024-12",
+  "returnType": "GSTR3B",
+  "dueDate": "22 Jan, 2025",
+  "filedOn": "21 Jan, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Dec 2024",
+  "sortKey": "2024-12",
+  "returnType": "GSTR1",
+  "dueDate": "13 Jan, 2025",
+  "filedOn": "13 Jan, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Dec 2024",
+  "sortKey": "2024-12",
+  "returnType": "GSTR3B",
+  "dueDate": "22 Jan, 2025",
+  "filedOn": "21 Jan, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Dec 2024",
+  "sortKey": "2024-12",
+  "returnType": "GSTR1",
+  "dueDate": "13 Jan, 2025",
+  "filedOn": "10 Jan, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Nov 2024",
+  "sortKey": "2024-11",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Dec, 2024",
+  "filedOn": "20 Dec, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Nov 2024",
+  "sortKey": "2024-11",
+  "returnType": "GSTR1",
+  "dueDate": "11 Dec, 2024",
+  "filedOn": "3 Dec, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Nov 2024",
+  "sortKey": "2024-11",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "17 Dec, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Nov 2024",
+  "sortKey": "2024-11",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Dec, 2024",
+  "filedOn": "20 Dec, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Nov 2024",
+  "sortKey": "2024-11",
+  "returnType": "GSTR1A",
+  "dueDate": "-",
+  "filedOn": "12 Dec, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Nov 2024",
+  "sortKey": "2024-11",
+  "returnType": "GSTR1",
+  "dueDate": "11 Dec, 2024",
+  "filedOn": "11 Dec, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Nov 2024",
+  "sortKey": "2024-11",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Dec, 2024",
+  "filedOn": "20 Dec, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Nov 2024",
+  "sortKey": "2024-11",
+  "returnType": "GSTR1",
+  "dueDate": "11 Dec, 2024",
+  "filedOn": "4 Dec, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Oct 2024",
+  "sortKey": "2024-10",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Nov, 2024",
+  "filedOn": "19 Nov, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Oct 2024",
+  "sortKey": "2024-10",
+  "returnType": "GSTR1",
+  "dueDate": "11 Nov, 2024",
+  "filedOn": "6 Nov, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Oct 2024",
+  "sortKey": "2024-10",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "18 Nov, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Oct 2024",
+  "sortKey": "2024-10",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Nov, 2024",
+  "filedOn": "19 Nov, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Oct 2024",
+  "sortKey": "2024-10",
+  "returnType": "GSTR1",
+  "dueDate": "11 Nov, 2024",
+  "filedOn": "11 Nov, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Oct 2024",
+  "sortKey": "2024-10",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Nov, 2024",
+  "filedOn": "18 Nov, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Oct 2024",
+  "sortKey": "2024-10",
+  "returnType": "GSTR1",
+  "dueDate": "11 Nov, 2024",
+  "filedOn": "6 Nov, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Sep 2024",
+  "sortKey": "2024-09",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Oct, 2024",
+  "filedOn": "19 Oct, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Sep 2024",
+  "sortKey": "2024-09",
+  "returnType": "GSTR1",
+  "dueDate": "11 Oct, 2024",
+  "filedOn": "16 Oct, 2024",
+  "status": "5 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Sep 2024",
+  "sortKey": "2024-09",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "21 Oct, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Sep 2024",
+  "sortKey": "2024-09",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Oct, 2024",
+  "filedOn": "19 Oct, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Sep 2024",
+  "sortKey": "2024-09",
+  "returnType": "GSTR1",
+  "dueDate": "11 Oct, 2024",
+  "filedOn": "11 Oct, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Sep 2024",
+  "sortKey": "2024-09",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Oct, 2024",
+  "filedOn": "19 Oct, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Sep 2024",
+  "sortKey": "2024-09",
+  "returnType": "GSTR1",
+  "dueDate": "11 Oct, 2024",
+  "filedOn": "16 Oct, 2024",
+  "status": "5 days late",
+  "onTime": false
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Aug 2024",
+  "sortKey": "2024-08",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Sep, 2024",
+  "filedOn": "19 Sep, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Aug 2024",
+  "sortKey": "2024-08",
+  "returnType": "GSTR1",
+  "dueDate": "11 Sep, 2024",
+  "filedOn": "10 Sep, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B1ZQ",
+  "period": "Aug 2024",
+  "sortKey": "2024-08",
+  "returnType": "GSTR6",
+  "dueDate": "-",
+  "filedOn": "19 Sep, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Aug 2024",
+  "sortKey": "2024-08",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Sep, 2024",
+  "filedOn": "19 Sep, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Aug 2024",
+  "sortKey": "2024-08",
+  "returnType": "GSTR1",
+  "dueDate": "11 Sep, 2024",
+  "filedOn": "6 Sep, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Aug 2024",
+  "sortKey": "2024-08",
+  "returnType": "GSTR3B",
+  "dueDate": "20 Sep, 2024",
+  "filedOn": "19 Sep, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Aug 2024",
+  "sortKey": "2024-08",
+  "returnType": "GSTR1",
+  "dueDate": "11 Sep, 2024",
+  "filedOn": "9 Sep, 2024",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Annual",
+  "sortKey": "",
+  "returnType": "GSTR9",
+  "dueDate": "-",
+  "filedOn": "29 Dec, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "07AAOCA7650B2ZP",
+  "period": "Annual",
+  "sortKey": "",
+  "returnType": "GSTR9C",
+  "dueDate": "-",
+  "filedOn": "29 Dec, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Annual",
+  "sortKey": "",
+  "returnType": "GSTR9",
+  "dueDate": "-",
+  "filedOn": "29 Dec, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B2ZR",
+  "period": "Annual",
+  "sortKey": "",
+  "returnType": "GSTR9C",
+  "dueDate": "-",
+  "filedOn": "29 Dec, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Annual",
+  "sortKey": "",
+  "returnType": "GSTR9",
+  "dueDate": "-",
+  "filedOn": "29 Dec, 2025",
+  "status": "On time",
+  "onTime": true
+ },
+ {
+  "gstin": "06AAOCA7650B1ZS",
+  "period": "Annual",
+  "sortKey": "",
+  "returnType": "GSTR9C",
+  "dueDate": "-",
+  "filedOn": "29 Dec, 2025",
+  "status": "On time",
+  "onTime": true
+ }
+]

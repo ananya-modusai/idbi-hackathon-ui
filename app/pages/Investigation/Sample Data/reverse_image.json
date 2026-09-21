@@ -1,0 +1,239 @@
+[
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/sweetpeach-main-logo1742296165.png",
+      "width": 6341,
+      "height": 4501,
+      "matches": []
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/111742296586.jpg",
+      "width": 1080,
+      "height": 1320,
+      "matches": []
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/221742296586.jpg",
+      "width": 1080,
+      "height": 1320,
+      "matches": []
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/21671100188.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": []
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/artboard-11671102084.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": []
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/31671105507.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": [
+        {
+          "url": "https://thestarbuy.in/product/striped-flat-front-casual-trouser",
+          "source": "thestarbuy.in",
+          "title": "Thestarbuy - Thestarbuy",
+          "brand_found": "thestarbuy",
+          "similarity_pct": 100.0,
+          "status": "Product Copy Risk",
+          "reason": "Same image found, brand mismatch"
+        }
+      ]
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/21671171013.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": [
+        {
+          "url": "https://wearins.in/product/women-dress",
+          "source": "wearins.in",
+          "title": "Wearins - wearins",
+          "brand_found": "wearins",
+          "similarity_pct": 99.2,
+          "status": "Product Copy Risk",
+          "reason": "Same image found, brand mismatch"
+        },
+        {
+          "url": "https://purplelook.in/product?count=&sort=&pr=&pr_min=&pr_max=&s=&q=&cat=46&subcat=&attr=&rt=&t=&page=1",
+          "source": "purplelook.in",
+          "title": "Purplelook - Purplelook",
+          "brand_found": "purplelook",
+          "similarity_pct": 99.2,
+          "status": "Product Copy Risk",
+          "reason": "Same image found, brand mismatch"
+        }
+      ]
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/21671177263.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": []
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/21671183002.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": [
+        {
+          "url": "https://favpicks.in/product/women-pink-printed-round-neck-pure-cotton-t-shirt",
+          "source": "favpicks.in",
+          "title": "Favpicks - Favpicks",
+          "brand_found": "favpicks",
+          "similarity_pct": 98.4,
+          "status": "Product Copy Risk",
+          "reason": "Same image found, brand mismatch"
+        },
+        {
+          "url": "https://favpicks.in/product/pink---black-snakeskin-print-top",
+          "source": "favpicks.in",
+          "title": "Favpicks - Favpicks",
+          "brand_found": "favpicks",
+          "similarity_pct": 100.0,
+          "status": "Product Copy Risk",
+          "reason": "Same image found, brand mismatch"
+        }
+      ]
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/artboard-11671084607.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": [
+        {
+          "url": "https://purplelook.in/product/women-s-organza-printed---jari-sequence-work-semi-stitched-lehenga-choli",
+          "source": "purplelook.in",
+          "title": "Purplelook - Purplelook",
+          "brand_found": "purplelook",
+          "similarity_pct": 99.2,
+          "status": "Product Copy Risk",
+          "reason": "Same image found, brand mismatch"
+        }
+      ]
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/artboard-11671084387.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": [
+        {
+          "url": "https://purplelook.in/product/bell-sleeved-embellished-maxi-dress",
+          "source": "purplelook.in",
+          "title": "Purplelook - Purplelook",
+          "brand_found": "purplelook",
+          "similarity_pct": 97.7,
+          "status": "Product Copy Risk",
+          "reason": "Same image found, brand mismatch"
+        },
+        {
+          "url": "https://pearlwears.in/product/bell-sleeved-gathered-maxi-dress",
+          "source": "pearlwears.in",
+          "title": "Pearlwears - Pearlwears",
+          "brand_found": "pearlwears",
+          "similarity_pct": 98.4,
+          "status": "Product Copy Risk",
+          "reason": "Same image found, brand mismatch"
+        }
+      ]
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/artboard-11671085050.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": []
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/221742296564.png",
+      "width": 577,
+      "height": 649,
+      "matches": []
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/111742296564.jpg",
+      "width": 1238,
+      "height": 648,
+      "matches": []
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/vertical-banner1742296312.jpg",
+      "width": 700,
+      "height": 1614,
+      "matches": []
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/11671177883.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": []
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/11671177150.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": [
+        {
+          "url": "https://favpicks.in/product/men-hooded-sweatshirt-36297",
+          "source": "favpicks.in",
+          "title": "Favpicks - Favpicks",
+          "brand_found": "favpicks",
+          "similarity_pct": 100.0,
+          "status": "Product Copy Risk",
+          "reason": "Same image found, brand mismatch"
+        }
+      ]
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/11671176766.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": []
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/31671176643.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": []
+    },
+    {
+      "total_scanned": 20,
+      "source_image": "https://sweetpeach.in/assets/uploads/media-uploader/11671176391.jpg",
+      "width": 1080,
+      "height": 1080,
+      "matches": [
+        {
+          "url": "https://favpicks.in/product/mens-grey-printed-notched-lapel-blazer",
+          "source": "favpicks.in",
+          "title": "Favpicks - Favpicks",
+          "brand_found": "favpicks",
+          "similarity_pct": 99.2,
+          "status": "Product Copy Risk",
+          "reason": "Same image found, brand mismatch"
+        }
+      ]
+    }
+  ]

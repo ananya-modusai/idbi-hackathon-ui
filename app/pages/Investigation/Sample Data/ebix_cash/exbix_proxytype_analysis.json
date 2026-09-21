@@ -1,0 +1,195 @@
+{
+    "SUCCESS": {
+        "pivot": {
+            "lifetime_metrics": [
+                {
+                    "proxytype": "VPN",
+                    "count": 4
+                },
+                {
+                    "proxytype": "DCH",
+                    "count": 3
+                },
+                {
+                    "proxytype": "PUB",
+                    "count": 1
+                }
+            ],
+            "past_30d_metrics": [
+                {
+                    "proxytype": "VPN",
+                    "count": 2
+                },
+                {
+                    "proxytype": "DCH",
+                    "count": 1
+                },
+                {
+                    "proxytype": "PUB",
+                    "count": 1
+                }
+            ],
+            "past_7d_metrics": [
+                {
+                    "proxytype": "PUB",
+                    "count": 1
+                }
+            ],
+            "past_1d_metrics": []
+        },
+        "red_flags": {
+            "lifetime_metrics_red_flags": [
+                {
+                    "code": "TA005",
+                    "reasoning": "Out of a total of 8 transactions, 4 are via VPN, which is exactly 50%. This does not exceed the required proportion for triggering the red flag.",
+                    "triggered": false
+                }
+            ],
+            "past_30d_metrics_red_flags": [
+                {
+                    "code": "TA005",
+                    "reasoning": "Out of a total of 4 transactions, 2 are via VPN, which is exactly 50%. This does not exceed the required proportion for triggering the red flag.",
+                    "triggered": false
+                }
+            ],
+            "past_7d_metrics_red_flags": [
+                {
+                    "code": "TA005",
+                    "reasoning": "There is only 1 transaction in the past 7 days, and it is not via VPN. No suspicious VPN activity detected.",
+                    "triggered": false
+                }
+            ],
+            "past_1d_metrics_red_flags": [
+                {
+                    "code": "TA005",
+                    "reasoning": "There are no transactions in the past 1 day, so no VPN activity is present.",
+                    "triggered": false
+                }
+            ],
+            "summary": "The pivot table shows that VPN and DCH proxy types are present in both lifetime and past 30 days, with VPN usage at exactly half of the total transactions in those periods. No VPN transactions are observed in the past 7 or 1 day. The majority of transactions are split between VPN and DCH, with minimal public proxy usage."
+        }
+    },
+    "FAILED": {
+        "pivot": {
+            "lifetime_metrics": [
+                {
+                    "proxytype": "DCH",
+                    "count": 2
+                },
+                {
+                    "proxytype": "VPN",
+                    "count": 2
+                }
+            ],
+            "past_30d_metrics": [
+                {
+                    "proxytype": "DCH",
+                    "count": 1
+                }
+            ],
+            "past_7d_metrics": [],
+            "past_1d_metrics": []
+        },
+        "red_flags": {
+            "lifetime_metrics_red_flags": [
+                {
+                    "code": "TA005",
+                    "reasoning": "In the lifetime metrics, there are 2 VPN transactions out of a total of 4 transactions (2 DCH + 2 VPN), which is 50%. This does not exceed the required proportion for triggering the red flag.",
+                    "triggered": false
+                }
+            ],
+            "past_30d_metrics_red_flags": [
+                {
+                    "code": "TA005",
+                    "reasoning": "In the past 30 days, there is only 1 transaction and it is DCH, with no VPN transactions present.",
+                    "triggered": false
+                }
+            ],
+            "past_7d_metrics_red_flags": [
+                {
+                    "code": "TA005",
+                    "reasoning": "There are no transactions in the past 7 days, so no VPN activity is detected.",
+                    "triggered": false
+                }
+            ],
+            "past_1d_metrics_red_flags": [
+                {
+                    "code": "TA005",
+                    "reasoning": "There are no transactions in the past 1 day, so no VPN activity is detected.",
+                    "triggered": false
+                }
+            ],
+            "summary": "The pivot table shows a small number of transactions, with both DCH and VPN proxy types present in the lifetime metrics. No VPN transactions are observed in the recent 30, 7, or 1 day periods. The overall pattern does not indicate a spike or dominance of VPN usage."
+        }
+    },
+    "ALL": {
+        "pivot": {
+            "lifetime_metrics": [
+                {
+                    "proxytype": "VPN",
+                    "count": 6
+                },
+                {
+                    "proxytype": "DCH",
+                    "count": 5
+                },
+                {
+                    "proxytype": "PUB",
+                    "count": 1
+                }
+            ],
+            "past_30d_metrics": [
+                {
+                    "proxytype": "DCH",
+                    "count": 2
+                },
+                {
+                    "proxytype": "VPN",
+                    "count": 2
+                },
+                {
+                    "proxytype": "PUB",
+                    "count": 1
+                }
+            ],
+            "past_7d_metrics": [
+                {
+                    "proxytype": "PUB",
+                    "count": 1
+                }
+            ],
+            "past_1d_metrics": []
+        },
+        "red_flags": {
+            "lifetime_metrics_red_flags": [
+                {
+                    "code": "TA005",
+                    "reasoning": "Out of a total of 12 transactions, 6 were made using VPN, which is exactly 50%. Since the red flag is for more than 50%, this is not triggered.",
+                    "triggered": false
+                }
+            ],
+            "past_30d_metrics_red_flags": [
+                {
+                    "code": "TA005",
+                    "reasoning": "Out of a total of 5 transactions in the past 30 days, 2 were made using VPN, which is 40%. This does not meet the criteria for the red flag.",
+                    "triggered": false
+                }
+            ],
+            "past_7d_metrics_red_flags": [
+                {
+                    "code": "TA005",
+                    "reasoning": "There is only 1 transaction in the past 7 days and it was not made using VPN. Therefore, the red flag is not triggered.",
+                    "triggered": false
+                }
+            ],
+            "past_1d_metrics_red_flags": [
+                {
+                    "code": "TA005",
+                    "reasoning": "There are no transactions in the past 1 day, so the red flag is not applicable.",
+                    "triggered": false
+                }
+            ],
+            "summary": "The pivot table shows that VPN and DCH proxies are used frequently in the lifetime metrics, with VPN and DCH counts being close. In the past 30 days, VPN and DCH usage is lower and more balanced, and in the past 7 days, only public proxies were used. No single proxy type dominates recent activity."
+        }
+    }
+}

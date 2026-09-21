@@ -1,0 +1,49 @@
+{
+  "success": true,
+  "message": "Peer identification retrieved",
+  "data": [
+    {
+      "name": "TARC LIMITED",
+      "revenue": 132.96,
+      "assets": 4548.28,
+      "type": "current_company",
+      "unit": "crore",
+      "industry_code": "IN020501001",
+      "industry": "Realty",
+      "sector": "Realty",
+      "macro_economic_sector": "Consumer Discretionary",
+      "reasoning": "TARC Limited derives its revenue from the development and sale of residential and commercial real estate projects in the National Capital Region (Delhi/Gurugram) \u2014 e.g. TARC Ishva, TARC Kailasa, TARC Tripundra, TARC Maceo \u2014 together with rental income from investment properties. Since the primary operating segment (sale of constructed residential/commercial property) contributes materially more than 50% of consolidated revenue, the issuer is classified under the NSE Basic Industry 'Residential, Commercial Projects' (exact_code: IN020501001) within Sector 'Realty' / Macro Economic Sector 'Consumer Discretionary'.\n\nThe similar code 'Real Estate related services' (INO20501002) was considered because TARC also earns incidental rental/lease income from investment properties, but this was not selected as the exact classification because leasing/services income is not the dominant revenue driver \u2014 construction and sale of developed property is.",
+      "industry_codes": [
+        "IN020501001",
+        "INO20501002"
+      ],
+      "probe_xls_url": null
+    },
+    {
+      "name": "MODI'S NAVNIRMAN LIMITED",
+      "revenue": 133.31,
+      "assets": 172.9,
+      "type": "sales_closest",
+      "unit": "crore",
+      "industry_code": "IN020501001",
+      "industry": "Realty",
+      "sector": "Realty",
+      "macro_economic_sector": "Consumer Discretionary",
+      "explanation": "Selected as the sales-closest listed peer: FY2025 net sales of Rs.133.31 Cr is within Rs.0.35 Cr of TARC's Rs.132.96 Cr, and the company is a residential/commercial real-estate developer (premium residential and redevelopment projects in Mumbai suburbs), matching TARC's basic industry classification exactly.",
+      "probe_xls_url": null
+    },
+    {
+      "name": "SURATWWALA BUSINESS GROUP LIMITED",
+      "revenue": 105.49,
+      "assets": 215.65,
+      "type": "assets_closest",
+      "unit": "crore",
+      "industry_code": "IN020501001",
+      "industry": "Realty",
+      "sector": "Realty",
+      "macro_economic_sector": "Consumer Discretionary",
+      "explanation": "Selected as an assets/sales-closest listed peer within the same NSE basic industry: a Pune-based residential/commercial real estate developer with FY2025 net sales of Rs.105.49 Cr and total assets of Rs.215.65 Cr, the closest total-asset match among screened same-industry listed peers.",
+      "probe_xls_url": null
+    }
+  ]
+}

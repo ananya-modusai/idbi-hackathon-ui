@@ -1,0 +1,67 @@
+[
+  {
+    "localPath": "/images/tarc/website-snapshots/snapshot-1.png",
+    "sourceUrl": "https://www.tarc.in/",
+    "step": "DOMAIN_INFO"
+  },
+  {
+    "localPath": "/images/tarc/website-snapshots/snapshot-2.png",
+    "sourceUrl": "https://www.tarc.in/",
+    "step": "DOMAIN_INFO"
+  },
+  {
+    "localPath": "/images/tarc/website-snapshots/snapshot-4.png",
+    "sourceUrl": "https://www.tarc.in/careers",
+    "step": "NAVIGATION_FLOW"
+  },
+  {
+    "localPath": "/images/tarc/website-snapshots/snapshot-5.png",
+    "sourceUrl": "https://www.tarc.in/corporate-governance",
+    "step": "NAVIGATION_FLOW"
+  },
+  {
+    "localPath": "/images/tarc/website-snapshots/snapshot-6.png",
+    "sourceUrl": "https://www.tarc.in/contact-us",
+    "step": "NAVIGATION_FLOW"
+  },
+  {
+    "localPath": "/images/tarc/website-snapshots/snapshot-7.png",
+    "sourceUrl": "https://www.tarc.in/about",
+    "step": "NAVIGATION_FLOW"
+  },
+  {
+    "localPath": "/images/tarc/website-snapshots/snapshot-8.png",
+    "sourceUrl": "https://www.tarc.in/leadership",
+    "step": "NAVIGATION_FLOW"
+  },
+  {
+    "localPath": "/images/tarc/website-snapshots/snapshot-9.png",
+    "sourceUrl": "https://www.tarc.in/projects",
+    "step": "NAVIGATION_FLOW"
+  },
+  {
+    "localPath": "/images/tarc/website-snapshots/snapshot-10.png",
+    "sourceUrl": "https://tarc.in/tarc-ishva/",
+    "step": "NAVIGATION_FLOW"
+  },
+  {
+    "localPath": "/images/tarc/website-snapshots/snapshot-11.png",
+    "sourceUrl": "https://tarc.in/tarc-kailasa/",
+    "step": "NAVIGATION_FLOW"
+  },
+  {
+    "localPath": "/images/tarc/website-snapshots/snapshot-12.png",
+    "sourceUrl": "https://www.tarc.in/sustainability",
+    "step": "NAVIGATION_FLOW"
+  },
+  {
+    "localPath": "/images/tarc/website-snapshots/snapshot-13.png",
+    "sourceUrl": "https://www.tarc.in/media",
+    "step": "NAVIGATION_FLOW"
+  },
+  {
+    "localPath": "/images/tarc/website-snapshots/snapshot-14.png",
+    "sourceUrl": "https://www.tarc.in/blogs",
+    "step": "NAVIGATION_FLOW"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "lob": "Contracted Services",
+  "mcc_code": "1520",
+  "reasoning": "TARC Limited is a real estate developer engaged in the construction and sale of luxury residential properties. This aligns directly with the MCC for general contractors specializing in residential and commercial development.",
+  "sub_category": "Luxury Residential Real Estate Developer",
+  "industry_group": "",
+  "mcc_description": "General Contractors - Residential and Commercial",
+  "confidence_score": 0.95,
+  "business_category": "Real Estate Development",
+  "manual_review_reason": null,
+  "manual_review_required": true
+}

@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "message": "Industry identification retrieved",
+  "data": {
+    "company_name": "TARC LIMITED",
+    "industry_identification": "TARC Limited derives its revenue from the development and sale of residential and commercial real estate projects in the National Capital Region (Delhi/Gurugram) \u2014 e.g. TARC Ishva, TARC Kailasa, TARC Tripundra, TARC Maceo \u2014 together with rental income from investment properties. Since the primary operating segment (sale of constructed residential/commercial property) contributes materially more than 50% of consolidated revenue, the issuer is classified under the NSE Basic Industry 'Residential, Commercial Projects' (exact_code: IN020501001) within Sector 'Realty' / Macro Economic Sector 'Consumer Discretionary'.\n\nThe similar code 'Real Estate related services' (INO20501002) was considered because TARC also earns incidental rental/lease income from investment properties, but this was not selected as the exact classification because leasing/services income is not the dominant revenue driver \u2014 construction and sale of developed property is."
+  }
+}

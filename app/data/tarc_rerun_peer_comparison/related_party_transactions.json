@@ -1,0 +1,205 @@
+{
+  "success": true,
+  "message": "Related party transactions fetched by year",
+  "data": {
+    "years": [
+      "2025",
+      "2024",
+      "2023",
+      "2022",
+      "2021"
+    ],
+    "by_year": [
+      {
+        "year": "2025",
+        "companies": [
+          {
+            "cin": "L70100DL2016PLC390526",
+            "kind": "current_company",
+            "display_name": "TARC LIMITED",
+            "merchant_id": "d4efc32f-9fcc-4cfc-8e60-eff421acf83d",
+            "rpt": {
+              "Expense": 8052155000.0,
+              "Revenue": 5221591000.0,
+              "Others": 5626885000.0
+            }
+          },
+          {
+            "cin": "U45203MH2022PLC377939",
+            "kind": "sales_closest",
+            "display_name": "MODI'S NAVNIRMAN LIMITED",
+            "merchant_id": "ccc307d1-44da-4536-b6b6-b9a953e1aafc",
+            "rpt": {
+              "Expense": 0.0,
+              "Revenue": 16735000.0,
+              "Others": 0.0
+            }
+          },
+          {
+            "cin": "L45200PN2008PLC131361",
+            "kind": "assets_closest",
+            "display_name": "SURATWWALA BUSINESS GROUP LIMITED",
+            "merchant_id": "64565baf-c7b0-43b8-b6a2-a228c5138221",
+            "rpt": {
+              "Expense": 0.0,
+              "Revenue": 0.0,
+              "Others": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "year": "2024",
+        "companies": [
+          {
+            "cin": "L70100DL2016PLC390526",
+            "kind": "current_company",
+            "display_name": "TARC LIMITED",
+            "merchant_id": "d4efc32f-9fcc-4cfc-8e60-eff421acf83d",
+            "rpt": {
+              "Expense": 18985000.0,
+              "Revenue": 1150062000.0,
+              "Others": 2616330000.0
+            }
+          },
+          {
+            "cin": "U45203MH2022PLC377939",
+            "kind": "sales_closest",
+            "display_name": "MODI'S NAVNIRMAN LIMITED",
+            "merchant_id": "ccc307d1-44da-4536-b6b6-b9a953e1aafc",
+            "rpt": {
+              "Expense": 126314000.0,
+              "Revenue": 0.0,
+              "Others": 0.0
+            }
+          },
+          {
+            "cin": "L45200PN2008PLC131361",
+            "kind": "assets_closest",
+            "display_name": "SURATWWALA BUSINESS GROUP LIMITED",
+            "merchant_id": "64565baf-c7b0-43b8-b6a2-a228c5138221",
+            "rpt": {
+              "Expense": 0.0,
+              "Revenue": 0.0,
+              "Others": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "year": "2023",
+        "companies": [
+          {
+            "cin": "L70100DL2016PLC390526",
+            "kind": "current_company",
+            "display_name": "TARC LIMITED",
+            "merchant_id": "d4efc32f-9fcc-4cfc-8e60-eff421acf83d",
+            "rpt": {
+              "Expense": 0.0,
+              "Revenue": 0.0,
+              "Others": 0.0
+            }
+          },
+          {
+            "cin": "U45203MH2022PLC377939",
+            "kind": "sales_closest",
+            "display_name": "MODI'S NAVNIRMAN LIMITED",
+            "merchant_id": "ccc307d1-44da-4536-b6b6-b9a953e1aafc",
+            "rpt": {
+              "Expense": 0.0,
+              "Revenue": 13400000.0,
+              "Others": 0.0
+            }
+          },
+          {
+            "cin": "L45200PN2008PLC131361",
+            "kind": "assets_closest",
+            "display_name": "SURATWWALA BUSINESS GROUP LIMITED",
+            "merchant_id": "64565baf-c7b0-43b8-b6a2-a228c5138221",
+            "rpt": {
+              "Expense": 476861000.0,
+              "Revenue": 0.0,
+              "Others": 2723000.0
+            }
+          }
+        ]
+      },
+      {
+        "year": "2022",
+        "companies": [
+          {
+            "cin": "L70100DL2016PLC390526",
+            "kind": "current_company",
+            "display_name": "TARC LIMITED",
+            "merchant_id": "d4efc32f-9fcc-4cfc-8e60-eff421acf83d",
+            "rpt": {
+              "Expense": 39992000.0,
+              "Revenue": 2268704000.0,
+              "Others": 1772738000.0
+            }
+          },
+          {
+            "cin": "U45203MH2022PLC377939",
+            "kind": "sales_closest",
+            "display_name": "MODI'S NAVNIRMAN LIMITED",
+            "merchant_id": "ccc307d1-44da-4536-b6b6-b9a953e1aafc",
+            "rpt": {
+              "Expense": 0.0,
+              "Revenue": 0.0,
+              "Others": 0.0
+            }
+          },
+          {
+            "cin": "L45200PN2008PLC131361",
+            "kind": "assets_closest",
+            "display_name": "SURATWWALA BUSINESS GROUP LIMITED",
+            "merchant_id": "64565baf-c7b0-43b8-b6a2-a228c5138221",
+            "rpt": {
+              "Expense": 135681080.0,
+              "Revenue": 13982185.0,
+              "Others": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "year": "2021",
+        "companies": [
+          {
+            "cin": "L70100DL2016PLC390526",
+            "kind": "current_company",
+            "display_name": "TARC LIMITED",
+            "merchant_id": "d4efc32f-9fcc-4cfc-8e60-eff421acf83d",
+            "rpt": {
+              "Expense": 1541000.0,
+              "Revenue": 113711000.0,
+              "Others": 5300957161.0
+            }
+          },
+          {
+            "cin": "U45203MH2022PLC377939",
+            "kind": "sales_closest",
+            "display_name": "MODI'S NAVNIRMAN LIMITED",
+            "merchant_id": "ccc307d1-44da-4536-b6b6-b9a953e1aafc",
+            "rpt": {
+              "Expense": 0.0,
+              "Revenue": 0.0,
+              "Others": 0.0
+            }
+          },
+          {
+            "cin": "L45200PN2008PLC131361",
+            "kind": "assets_closest",
+            "display_name": "SURATWWALA BUSINESS GROUP LIMITED",
+            "merchant_id": "64565baf-c7b0-43b8-b6a2-a228c5138221",
+            "rpt": {
+              "Expense": 75532876.0,
+              "Revenue": 0.0,
+              "Others": 0.0
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

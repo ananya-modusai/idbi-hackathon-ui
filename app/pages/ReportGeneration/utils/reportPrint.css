@@ -1,0 +1,74 @@
+@media print {
+  .print-document {
+    font-family: Arial, sans-serif !important;
+    padding: 30mm 20mm !important;
+    max-width: 210mm !important;
+    margin: 0 auto !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  .print-header {
+    text-align: center !important;
+    margin-bottom: 20mm !important;
+  }
+
+  .print-title {
+    font-size: 16pt !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    margin-bottom: 5mm !important;
+  }
+
+  .print-reference-info {
+    margin-bottom: 10mm !important;
+  }
+
+  .print-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 5mm !important;
+  }
+
+  .print-section {
+    margin-bottom: 10mm !important;
+    page-break-inside: avoid !important;
+  }
+
+  .print-section h2 {
+    font-size: 12pt !important;
+    font-weight: bold !important;
+    margin-bottom: 5mm !important;
+  }
+
+  .print-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-bottom: 5mm !important;
+  }
+
+  .print-table th,
+  .print-table td {
+    border: 1pt solid black !important;
+    padding: 2mm 3mm !important;
+    font-size: 10pt !important;
+  }
+
+  /* Hide all non-print elements */
+  .no-print {
+    display: none !important;
+  }
+
+  .print-transaction-section,
+  .print-payout-section {
+    margin-top: 10mm !important;
+    page-break-inside: avoid !important;
+  }
+
+  .print-transaction-table,
+  .print-payout-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-bottom: 5mm !important;
+  }
+} 

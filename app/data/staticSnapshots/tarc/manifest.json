@@ -1,0 +1,95 @@
+[
+  {
+    "method": "GET",
+    "urlPattern": "/api/v1/watchlist/{organizationId}",
+    "paramsUsed": null,
+    "snapshotFile": "watchlist.json",
+    "usedBy": ["MerchantWatchlistTab (new Overview tab)"]
+  },
+  {
+    "method": "GET",
+    "urlPattern": "/api/v1/users/merchants",
+    "paramsUsed": { "skip": 0, "limit": 500 },
+    "snapshotFile": "merchants-list.json",
+    "usedBy": ["merchantIdStore.fetchMerchantIdList (used across all 5 tabs to resolve activeMerchant)"]
+  },
+  {
+    "method": "GET",
+    "urlPattern": "/api/v1/merchants/{merchantId}/industry-risk-segment",
+    "paramsUsed": null,
+    "snapshotFile": "industry-risk-segment.json",
+    "usedBy": ["InsolvencyFinancialOperationalTab", "InsolvencyMetricsTab", "InsolvencyExternalInsightsTab", "InsolvencyRedFlagsTab"]
+  },
+  {
+    "method": "GET",
+    "urlPattern": "/api/v1/merchants/{merchantId}/financial-metrics",
+    "paramsUsed": { "version_no": null },
+    "snapshotFile": "financial-metrics.json",
+    "usedBy": ["InsolvencyFinancialOperationalTab"]
+  },
+  {
+    "method": "GET",
+    "urlPattern": "/api/v1/metrics/display-metrics-by-year",
+    "paramsUsed": { "merchant_id": "{merchantId}" },
+    "snapshotFile": "display-metrics-by-year.json",
+    "usedBy": ["InsolvencyMetricsTab (Ratio Analysis)"]
+  },
+  {
+    "method": "POST",
+    "urlPattern": "/api/v1/credit-insolvency/getExternalData",
+    "paramsUsed": { "body": { "merchant_id": "{merchantId}", "product": "insolvency", "date": "optional, YYYY-MM-DD" } },
+    "snapshotFile": "external-data.json",
+    "usedBy": ["InsolvencyExternalInsightsTab"],
+    "note": "Snapshotted without a date param (component normally passes selectedDate from InsolvencyPageHeader's version picker). If the static wiring needs a specific date/version, re-fetch with that date."
+  },
+  {
+    "method": "GET",
+    "urlPattern": "/api/v1/credit-insolvency/{merchantId}/getAuditDisclosures",
+    "paramsUsed": null,
+    "snapshotFile": "audit-disclosures.json",
+    "usedBy": ["InsolvencyExternalInsightsTab"]
+  },
+  {
+    "method": "GET",
+    "urlPattern": "/api/v1/credit-insolvency/{merchantId}/getAnnualReportInsights",
+    "paramsUsed": null,
+    "snapshotFile": "annual-report-insights.json",
+    "usedBy": ["InsolvencyExternalInsightsTab"],
+    "note": "Response is genuinely empty (data: []) for TARC — not an error."
+  },
+  {
+    "method": "GET",
+    "urlPattern": "/api/v1/credit-insolvency/{merchantId}/versions",
+    "paramsUsed": null,
+    "snapshotFile": "versions.json",
+    "usedBy": ["InsolvencyPageHeader (date/version selector, shared by Financial & Operational, External Insights, Red Flags tabs)"]
+  },
+  {
+    "method": "GET",
+    "urlPattern": "/api/v1/merchant-red-flags/merchant/{merchantId}",
+    "paramsUsed": { "version_no": null },
+    "snapshotFile": "red-flags.json",
+    "usedBy": ["InsolvencyRedFlagsTab"]
+  },
+  {
+    "method": "GET",
+    "urlPattern": "/api/v1/credit-insolvency/{merchantId}/getCompanyMetrics",
+    "paramsUsed": null,
+    "snapshotFile": "company-metrics.json",
+    "usedBy": ["InsolvencyOverviewTab (Overview tab, per-merchant)"]
+  },
+  {
+    "method": "GET",
+    "urlPattern": "/api/v1/credit-insolvency/{merchantId}/aboutTheCompany",
+    "paramsUsed": null,
+    "snapshotFile": "about-the-company.json",
+    "usedBy": ["InsolvencyOverviewTab (Overview tab, per-merchant)"]
+  },
+  {
+    "method": "GET",
+    "urlPattern": "/api/v1/credit-insolvency/{merchantId}/financialsTable",
+    "paramsUsed": { "version_no": null },
+    "snapshotFile": "financials-table.json",
+    "usedBy": ["InsolvencyOverviewTab (Overview tab, per-merchant)"]
+  }
+]

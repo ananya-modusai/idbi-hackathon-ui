@@ -1,0 +1,616 @@
+{
+    "SUCCESS": {
+        "pivot": {
+            "lifetime_metrics": [
+                {
+                    "cityname": "Bengaluru",
+                    "amount_sum": 389663,
+                    "amount_count": 11
+                },
+                {
+                    "cityname": "Dubai",
+                    "amount_sum": 340440,
+                    "amount_count": 10
+                },
+                {
+                    "cityname": "Mumbai",
+                    "amount_sum": 341360,
+                    "amount_count": 9
+                },
+                {
+                    "cityname": "Kolkata",
+                    "amount_sum": 212106,
+                    "amount_count": 8
+                },
+                {
+                    "cityname": "London",
+                    "amount_sum": 176981,
+                    "amount_count": 6
+                },
+                {
+                    "cityname": "Thane",
+                    "amount_sum": 96070,
+                    "amount_count": 5
+                },
+                {
+                    "cityname": "Ahmedabad",
+                    "amount_sum": 45611,
+                    "amount_count": 4
+                },
+                {
+                    "cityname": "Pune",
+                    "amount_sum": 151223,
+                    "amount_count": 4
+                },
+                {
+                    "cityname": "Boston",
+                    "amount_sum": 96236,
+                    "amount_count": 4
+                },
+                {
+                    "cityname": "Gurgaon",
+                    "amount_sum": 189691,
+                    "amount_count": 4
+                }
+            ],
+            "past_30d_metrics": [
+                {
+                    "cityname": "Dubai",
+                    "amount_sum": 328977,
+                    "amount_count": 7
+                },
+                {
+                    "cityname": "Mumbai",
+                    "amount_sum": 299995,
+                    "amount_count": 6
+                },
+                {
+                    "cityname": "Bengaluru",
+                    "amount_sum": 276964,
+                    "amount_count": 5
+                },
+                {
+                    "cityname": "Pune",
+                    "amount_sum": 151223,
+                    "amount_count": 4
+                },
+                {
+                    "cityname": "Chennai",
+                    "amount_sum": 103770,
+                    "amount_count": 3
+                },
+                {
+                    "cityname": "Boston",
+                    "amount_sum": 88975,
+                    "amount_count": 3
+                },
+                {
+                    "cityname": "Thane",
+                    "amount_sum": 74346,
+                    "amount_count": 3
+                },
+                {
+                    "cityname": "Dusseldorf",
+                    "amount_sum": 61728,
+                    "amount_count": 2
+                },
+                {
+                    "cityname": "Hosur",
+                    "amount_sum": 64058,
+                    "amount_count": 2
+                },
+                {
+                    "cityname": "Chinchvad",
+                    "amount_sum": 123685,
+                    "amount_count": 2
+                }
+            ],
+            "past_7d_metrics": [
+                {
+                    "cityname": "Ahmedabad",
+                    "amount_sum": 35944,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Azadpur",
+                    "amount_sum": 22973,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Visakhapatnam",
+                    "amount_sum": 20575,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Thiruvananthapuram",
+                    "amount_sum": 10918,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Tbilisi",
+                    "amount_sum": 54274,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Rancho Santa Margarita",
+                    "amount_sum": 44935,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Kuah",
+                    "amount_sum": 50596,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Hong Kong",
+                    "amount_sum": 150755,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Gurgaon",
+                    "amount_sum": 98434,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Gondia",
+                    "amount_sum": 28380,
+                    "amount_count": 1
+                }
+            ],
+            "past_1d_metrics": [
+                {
+                    "cityname": "Ahmedabad",
+                    "amount_sum": 35944,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Azadpur",
+                    "amount_sum": 22973,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Boston",
+                    "amount_sum": 8046,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Rancho Santa Margarita",
+                    "amount_sum": 44935,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Visakhapatnam",
+                    "amount_sum": 20575,
+                    "amount_count": 1
+                }
+            ]
+        },
+        "red_flags": {
+            "lifetime_metrics_red_flags": [
+                {
+                    "code": "TA008",
+                    "reasoning": "Transactions are observed in cities such as Dubai, London, and Boston, which are outside the primary country of operation for most Indian financial services. These locations are often considered higher risk for cross-border financial activity, especially in the context of Forex, Money Transfer, and related services.",
+                    "triggered": true
+                }
+            ],
+            "past_30d_metrics_red_flags": [
+                {
+                    "code": "TA008",
+                    "reasoning": "Significant transaction activity is present in Dubai, Boston, and Dusseldorf, which are international cities and may be considered risky geographies for financial services, Forex, and money transfer businesses.",
+                    "triggered": true
+                }
+            ],
+            "past_7d_metrics_red_flags": [
+                {
+                    "code": "TA008",
+                    "reasoning": "Transactions are recorded in Tbilisi, Kuah, Hong Kong, and Rancho Santa Margarita, which are international cities and can be considered risky geographies for the financial services line of business.",
+                    "triggered": true
+                }
+            ],
+            "past_1d_metrics_red_flags": [
+                {
+                    "code": "TA008",
+                    "reasoning": "Recent transactions include Boston and Rancho Santa Margarita, which are international cities and may be considered risky geographies for financial services and money transfer businesses.",
+                    "triggered": true
+                }
+            ],
+            "summary": "The pivot table shows a mix of domestic (Indian) and international cities with significant transaction volumes. There is a consistent presence of high-value transactions in international locations across all time periods, indicating cross-border activity typical for Forex and money transfer services."
+        }
+    },
+    "FAILED": {
+        "pivot": {
+            "lifetime_metrics": [
+                {
+                    "cityname": "Bengaluru",
+                    "amount_sum": 1187951,
+                    "amount_count": 17
+                },
+                {
+                    "cityname": "Mumbai",
+                    "amount_sum": 497201,
+                    "amount_count": 5
+                },
+                {
+                    "cityname": "Hong Kong",
+                    "amount_sum": 413971,
+                    "amount_count": 5
+                },
+                {
+                    "cityname": "Huddersfield",
+                    "amount_sum": 131164,
+                    "amount_count": 4
+                },
+                {
+                    "cityname": "Dublin",
+                    "amount_sum": 8448,
+                    "amount_count": 4
+                },
+                {
+                    "cityname": "Mohali",
+                    "amount_sum": 326550,
+                    "amount_count": 3
+                },
+                {
+                    "cityname": "Birmingham",
+                    "amount_sum": 14313,
+                    "amount_count": 3
+                },
+                {
+                    "cityname": "Bournemouth",
+                    "amount_sum": 421545,
+                    "amount_count": 3
+                },
+                {
+                    "cityname": "Zaventem",
+                    "amount_sum": 6495,
+                    "amount_count": 2
+                },
+                {
+                    "cityname": "Dubai",
+                    "amount_sum": 8484,
+                    "amount_count": 2
+                }
+            ],
+            "past_30d_metrics": [
+                {
+                    "cityname": "Hong Kong",
+                    "amount_sum": 413971,
+                    "amount_count": 5
+                },
+                {
+                    "cityname": "Huddersfield",
+                    "amount_sum": 131164,
+                    "amount_count": 4
+                },
+                {
+                    "cityname": "Bengaluru",
+                    "amount_sum": 314028,
+                    "amount_count": 4
+                },
+                {
+                    "cityname": "Mumbai",
+                    "amount_sum": 322763,
+                    "amount_count": 2
+                },
+                {
+                    "cityname": "Mangalore",
+                    "amount_sum": 301510,
+                    "amount_count": 2
+                },
+                {
+                    "cityname": "Abu Dhabi",
+                    "amount_sum": 25952,
+                    "amount_count": 2
+                },
+                {
+                    "cityname": "Zaventem",
+                    "amount_sum": 6495,
+                    "amount_count": 2
+                },
+                {
+                    "cityname": "Azadpur",
+                    "amount_sum": 45946,
+                    "amount_count": 2
+                },
+                {
+                    "cityname": "Dublin",
+                    "amount_sum": 3813,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Dover",
+                    "amount_sum": 45698,
+                    "amount_count": 1
+                }
+            ],
+            "past_7d_metrics": [
+                {
+                    "cityname": "Hong Kong",
+                    "amount_sum": 413971,
+                    "amount_count": 5
+                },
+                {
+                    "cityname": "Azadpur",
+                    "amount_sum": 45946,
+                    "amount_count": 2
+                },
+                {
+                    "cityname": "Mangalore",
+                    "amount_sum": 301510,
+                    "amount_count": 2
+                },
+                {
+                    "cityname": "Milan",
+                    "amount_sum": 10748,
+                    "amount_count": 1
+                }
+            ],
+            "past_1d_metrics": [
+                {
+                    "cityname": "Hong Kong",
+                    "amount_sum": 112461,
+                    "amount_count": 3
+                },
+                {
+                    "cityname": "Azadpur",
+                    "amount_sum": 45946,
+                    "amount_count": 2
+                }
+            ]
+        },
+        "red_flags": {
+            "lifetime_metrics_red_flags": [
+                {
+                    "code": "TA008",
+                    "reasoning": "Transactions are observed in cities such as Hong Kong, Dubai, Zaventem, Dublin, Birmingham, Bournemouth, and Huddersfield, which are outside the typical domestic geography for Indian financial services, forex, and money transfer businesses. These locations are considered higher risk due to their international nature and potential for cross-border money movement.",
+                    "triggered": true
+                }
+            ],
+            "past_30d_metrics_red_flags": [
+                {
+                    "code": "TA008",
+                    "reasoning": "Significant transaction activity is present in Hong Kong, Abu Dhabi, Zaventem, Dublin, and Dover, which are international cities and may be considered risky geographies for the given line of business.",
+                    "triggered": true
+                }
+            ],
+            "past_7d_metrics_red_flags": [
+                {
+                    "code": "TA008",
+                    "reasoning": "Transactions are recorded in Hong Kong and Milan, both of which are international cities and may be considered risky geographies for financial services and money transfer businesses.",
+                    "triggered": true
+                }
+            ],
+            "past_1d_metrics_red_flags": [
+                {
+                    "code": "TA008",
+                    "reasoning": "Recent transactions are observed in Hong Kong, which is an international city and may be considered a risky geography for the line of business.",
+                    "triggered": true
+                }
+            ],
+            "summary": "The pivot table shows transaction activity across both Indian and multiple international cities, with notable sums in Hong Kong, Mangalore, Abu Dhabi, Milan, and others. This indicates a pattern of cross-border or international transactions, which is significant for financial services and money transfer businesses."
+        }
+    },
+    "ALL": {
+        "pivot": {
+            "lifetime_metrics": [
+                {
+                    "cityname": "Bengaluru",
+                    "amount_sum": 1577614,
+                    "amount_count": 28
+                },
+                {
+                    "cityname": "Mumbai",
+                    "amount_sum": 838561,
+                    "amount_count": 14
+                },
+                {
+                    "cityname": "Dubai",
+                    "amount_sum": 348924,
+                    "amount_count": 12
+                },
+                {
+                    "cityname": "Kolkata",
+                    "amount_sum": 289934,
+                    "amount_count": 9
+                },
+                {
+                    "cityname": "Dublin",
+                    "amount_sum": 53900,
+                    "amount_count": 8
+                },
+                {
+                    "cityname": "London",
+                    "amount_sum": 181006,
+                    "amount_count": 7
+                },
+                {
+                    "cityname": "Birmingham",
+                    "amount_sum": 25533,
+                    "amount_count": 6
+                },
+                {
+                    "cityname": "Hong Kong",
+                    "amount_sum": 564726,
+                    "amount_count": 6
+                },
+                {
+                    "cityname": "Ahmedabad",
+                    "amount_sum": 100386,
+                    "amount_count": 5
+                },
+                {
+                    "cityname": "Thane",
+                    "amount_sum": 96070,
+                    "amount_count": 5
+                }
+            ],
+            "past_30d_metrics": [
+                {
+                    "cityname": "Bengaluru",
+                    "amount_sum": 590992,
+                    "amount_count": 9
+                },
+                {
+                    "cityname": "Mumbai",
+                    "amount_sum": 622758,
+                    "amount_count": 8
+                },
+                {
+                    "cityname": "Dubai",
+                    "amount_sum": 328977,
+                    "amount_count": 7
+                },
+                {
+                    "cityname": "Hong Kong",
+                    "amount_sum": 564726,
+                    "amount_count": 6
+                },
+                {
+                    "cityname": "Pune",
+                    "amount_sum": 151223,
+                    "amount_count": 4
+                },
+                {
+                    "cityname": "Huddersfield",
+                    "amount_sum": 131164,
+                    "amount_count": 4
+                },
+                {
+                    "cityname": "Abu Dhabi",
+                    "amount_sum": 38928,
+                    "amount_count": 3
+                },
+                {
+                    "cityname": "Dublin",
+                    "amount_sum": 18642,
+                    "amount_count": 3
+                },
+                {
+                    "cityname": "Chennai",
+                    "amount_sum": 103770,
+                    "amount_count": 3
+                },
+                {
+                    "cityname": "Boston",
+                    "amount_sum": 88975,
+                    "amount_count": 3
+                }
+            ],
+            "past_7d_metrics": [
+                {
+                    "cityname": "Hong Kong",
+                    "amount_sum": 564726,
+                    "amount_count": 6
+                },
+                {
+                    "cityname": "Azadpur",
+                    "amount_sum": 68919,
+                    "amount_count": 3
+                },
+                {
+                    "cityname": "Mangalore",
+                    "amount_sum": 301510,
+                    "amount_count": 2
+                },
+                {
+                    "cityname": "Ahmedabad",
+                    "amount_sum": 35944,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Visakhapatnam",
+                    "amount_sum": 20575,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Thiruvananthapuram",
+                    "amount_sum": 10918,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Tbilisi",
+                    "amount_sum": 54274,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Rancho Santa Margarita",
+                    "amount_sum": 44935,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Milan",
+                    "amount_sum": 10748,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Kuah",
+                    "amount_sum": 50596,
+                    "amount_count": 1
+                }
+            ],
+            "past_1d_metrics": [
+                {
+                    "cityname": "Azadpur",
+                    "amount_sum": 68919,
+                    "amount_count": 3
+                },
+                {
+                    "cityname": "Hong Kong",
+                    "amount_sum": 112461,
+                    "amount_count": 3
+                },
+                {
+                    "cityname": "Ahmedabad",
+                    "amount_sum": 35944,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Boston",
+                    "amount_sum": 8046,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Rancho Santa Margarita",
+                    "amount_sum": 44935,
+                    "amount_count": 1
+                },
+                {
+                    "cityname": "Visakhapatnam",
+                    "amount_sum": 20575,
+                    "amount_count": 1
+                }
+            ]
+        },
+        "red_flags": {
+            "lifetime_metrics_red_flags": [
+                {
+                    "code": "TA008",
+                    "reasoning": "Transactions are observed from cities such as Dubai, Dublin, London, Birmingham, and Hong Kong, which are outside the primary operating geography for Indian financial services and money transfer businesses. These cities are considered higher risk due to their international nature and potential for cross-border money movement.",
+                    "triggered": true
+                }
+            ],
+            "past_30d_metrics_red_flags": [
+                {
+                    "code": "TA008",
+                    "reasoning": "Recent transactions include cities like Dubai, Hong Kong, Huddersfield, Abu Dhabi, Dublin, Boston, which are outside India and are considered riskier geographies for financial services and money transfer businesses.",
+                    "triggered": true
+                }
+            ],
+            "past_7d_metrics_red_flags": [
+                {
+                    "code": "TA008",
+                    "reasoning": "Transactions in the past 7 days include Hong Kong, Tbilisi, Rancho Santa Margarita, Milan, and Kuah, which are international cities and present higher risk for financial services and money transfer businesses.",
+                    "triggered": true
+                }
+            ],
+            "past_1d_metrics_red_flags": [
+                {
+                    "code": "TA008",
+                    "reasoning": "Transactions in the past 1 day include Hong Kong, Boston, and Rancho Santa Margarita, which are international cities and considered higher risk for financial services and money transfer businesses.",
+                    "triggered": true
+                }
+            ],
+            "summary": "The pivot table shows a mix of domestic Indian cities and several international cities such as Dubai, Hong Kong, Dublin, London, Boston, and others, with significant transaction volumes and counts. This pattern indicates active cross-border transactions, which is notable for financial services and money transfer businesses."
+        }
+    }
+}

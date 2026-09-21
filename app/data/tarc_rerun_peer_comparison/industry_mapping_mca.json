@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "message": "Industry mapping (MCA) retrieved",
+  "data": {
+    "company_name": "TARC LIMITED",
+    "mappings": [
+      {
+        "industry": "Real Estate",
+        "segments": [
+          "Builders and Developers"
+        ]
+      }
+    ]
+  }
+}

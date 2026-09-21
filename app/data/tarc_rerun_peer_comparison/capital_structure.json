@@ -1,0 +1,99 @@
+{
+  "company_name": "TARC LIMITED",
+  "asOf": "31 Mar, 2025",
+  "summary": {
+    "authorisedCapitalCr": 85.0,
+    "paidUpCapitalCr": 59.02,
+    "promoterHoldingPct": 65.12,
+    "publicHoldingPct": 34.89,
+    "numShareholders": 62161,
+    "totalEquitySharesMn": 295.1,
+    "totalEquityShares": 295096335
+  },
+  "shareholders": [
+    {
+      "name": "ANIL SARIN",
+      "category": "Promoter",
+      "numberOfShares": 98792591.0,
+      "shareholdingPct": 33.48,
+      "asOfDate": "31 Mar, 2025"
+    },
+    {
+      "name": "AMAR SARIN",
+      "category": "Promoter",
+      "numberOfShares": 92746631.0,
+      "shareholdingPct": 31.43,
+      "asOfDate": "31 Mar, 2025"
+    },
+    {
+      "name": "MUSKAAN SARIN",
+      "category": "Director",
+      "numberOfShares": 618500.0,
+      "shareholdingPct": 0.21,
+      "asOfDate": "31 Mar, 2025"
+    },
+    {
+      "name": "MIYAR RAMANATH NAYAK",
+      "category": "Director",
+      "numberOfShares": 7000.0,
+      "shareholdingPct": 0.0,
+      "asOfDate": "31 Mar, 2025"
+    },
+    {
+      "name": "AMIT NARAYAN",
+      "category": "Director",
+      "numberOfShares": 250.0,
+      "shareholdingPct": 0.0,
+      "asOfDate": "31 Mar, 2025"
+    }
+  ],
+  "promoterBreakdown": [
+    {
+      "category": "(i) Indian",
+      "numberOfShares": 192157722.0,
+      "percentage": 65.12
+    }
+  ],
+  "publicBreakdown": [
+    {
+      "category": "(i) Indian",
+      "numberOfShares": 61037543.0,
+      "percentage": 20.68
+    },
+    {
+      "category": "(ii) Non-resident Indian (others)",
+      "numberOfShares": 7875102.0,
+      "percentage": 2.67
+    },
+    {
+      "category": "3. Insurance companies",
+      "numberOfShares": 706993.0,
+      "percentage": 0.24
+    },
+    {
+      "category": "5. Financial institutions",
+      "numberOfShares": 1225150.0,
+      "percentage": 0.42
+    },
+    {
+      "category": "6. Foreign institutional investors",
+      "numberOfShares": 7237258.0,
+      "percentage": 2.45
+    },
+    {
+      "category": "7. Mutual Funds",
+      "numberOfShares": 12475382.0,
+      "percentage": 4.23
+    },
+    {
+      "category": "9. Body corporate (not mentioned above)",
+      "numberOfShares": 9731844.0,
+      "percentage": 3.3
+    },
+    {
+      "category": "10. Others",
+      "numberOfShares": 2648341.0,
+      "percentage": 0.9
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "seo_analysis": {
+    "seo_domain_count": 4,
+    "seo_links_count": 7,
+    "seo_backlinks": 7,
+    "seo_backlinks_percentage": 63.64,
+    "seo_triggered": true,
+    "seo_overall_triggered": "Yes",
+    "seo_reasoning": "Both conditions for triggering SEO manipulation are met. First, there are 7 domains identified as having SEO/backlink-selling/PBN intent, which is greater than the minimum threshold of 2 domains. Second, these domains account for 63.64% of the total backlinks, which is well above the required 30% threshold. Some of the matched domains include 'analyticshaven.top' (matched by TLD '.top'), 'domaindexer.com' (matched by keyword 'index'), and '8coint.com' (matched by keyword 'coin'). This high concentration of backlinks from domains with SEO-manipulation signals strongly suggests an attempt to manipulate search rankings. Therefore, the trigger is set to Yes.",
+    "seo_matches": [
+      {
+        "domain": "analyticshaven.top",
+        "match": ".top"
+      },
+      {
+        "domain": "optimizeflow.top",
+        "match": ".top"
+      },
+      {
+        "domain": "blogsphere.top",
+        "match": ".top"
+      },
+      {
+        "domain": "dailymusings.top",
+        "match": ".top"
+      },
+      {
+        "domain": "drjack.world",
+        "match": ".world"
+      },
+      {
+        "domain": "domaindexer.com",
+        "match": "index"
+      },
+      {
+        "domain": "8coint.com",
+        "match": "coin"
+      }
+    ],
+    "seo_manipulation_links": [
+      {
+        "Domain": "analyticshaven.top",
+        "Domain ascore": 5,
+        "category": null,
+        "Backlinks": 1,
+        "IP Address": "195.20.19.178",
+        "First seen": "12h ago",
+        "Last seen": "12h ago",
+        "status": "new",
+        "link_type": "nofollow",
+        "_seo_match": ".top"
+      },
+      {
+        "Domain": "optimizeflow.top",
+        "Domain ascore": 5,
+        "category": null,
+        "Backlinks": 1,
+        "IP Address": "195.20.19.178",
+        "First seen": "5d ago",
+        "Last seen": "5d ago",
+        "status": "new",
+        "link_type": "nofollow",
+        "_seo_match": ".top"
+      },
+      {
+        "Domain": "blogsphere.top",
+        "Domain ascore": 5,
+        "category": null,
+        "Backlinks": 1,
+        "IP Address": "195.20.19.178",
+        "First seen": "6d ago",
+        "Last seen": "6d ago",
+        "status": "new",
+        "link_type": "nofollow",
+        "_seo_match": ".top"
+      },
+      {
+        "Domain": "dailymusings.top",
+        "Domain ascore": 5,
+        "category": null,
+        "Backlinks": 1,
+        "IP Address": "195.20.19.178",
+        "First seen": "12d ago",
+        "Last seen": "12d ago",
+        "status": "new",
+        "link_type": "nofollow",
+        "_seo_match": ".top"
+      },
+      {
+        "Domain": "drjack.world",
+        "Domain ascore": 25,
+        "category": "Online Services",
+        "Backlinks": 1,
+        "IP Address": "195.20.19.178",
+        "First seen": "Jan 19, 2026",
+        "Last seen": "Jan 19, 2026",
+        "status": null,
+        "link_type": "nofollow",
+        "_seo_match": ".world"
+      },
+      {
+        "Domain": "domaindexer.com",
+        "Domain ascore": 6,
+        "category": null,
+        "Backlinks": 1,
+        "IP Address": "104.21.42.170",
+        "First seen": "Dec 7, 2025",
+        "Last seen": "Feb 27, 2026",
+        "status": null,
+        "link_type": "nofollow",
+        "_seo_match": "index"
+      },
+      {
+        "Domain": "8coint.com",
+        "Domain ascore": 4,
+        "category": null,
+        "Backlinks": 1,
+        "IP Address": "104.21.83.176",
+        "First seen": "Dec 3, 2025",
+        "Last seen": "4d ago",
+        "status": null,
+        "link_type": "nofollow",
+        "_seo_match": "coin"
+      }
+    ]
+  },
+  "risky_content_analysis": {
+    "risky_content_domain_count": 0,
+    "risky_links_count": 0,
+    "risky_links_backlinks": 0,
+    "risky_content_backlinks_percentage": 0.0,
+    "risky_recent_domains": 0,
+    "risky_triggered": "No",
+    "risky_overall_triggered": "No",
+    "risky_reasoning": "The analysis shows that there are 0 unique risky domains and 0 backlinks from risky domains, which means 0.0% of the total backlinks are from risky domains. This is well below the 20% threshold required for the first condition. Additionally, since there are no risky domains, the second condition (at least 2 risky domains seen in the last 90 days) is also not met. Therefore, neither of the required conditions are satisfied. No domains from the risky content list were matched in the backlink profile.",
+    "risk_links": [],
+    "risky_matches": []
+  },
+  "low_credibility_analysis": {
+    "low_credibility_domain_count": 0,
+    "low_credibility_links_count": 0,
+    "low_credibility_backlinks": 0,
+    "low_credibility_backlinks_percentage": 0.0,
+    "low_credibility_avg_domain_authority": 0.0,
+    "low_credibility_triggered": "No",
+    "low_credibility_overall_triggered": "No",
+    "low_credibility_reasoning": "The backlink profile does not meet the trigger conditions. There are no backlinks from low-credibility domains using spammy TLDs such as '.info', '.pro', '.me', '.biz', '.ru', '.cn', '.tk', '.gq', '.cf', or '.ml'. The low credibility domains list is empty, with 0 unique domains and 0 backlinks, resulting in 0.0% of total backlinks coming from such sources. Additionally, the average domain authority score for these domains is 0.0, indicating no data. Since neither of the two required conditions are met\u2014there are no low-credibility backlinks and thus not \u226550% of total backlinks from such domains\u2014the trigger is not activated.",
+    "low_credibility_domains": []
+  },
+  "high_authority_analysis": {
+    "high_authority_domains_count": 0,
+    "high_authority_triggered": "No",
+    "high_authority_overall_triggered": "No",
+    "high_authority_reasoning": "After analyzing the backlink profile, there are no domains with a Domain ascore of 70 or higher present in the backlink list. According to the criteria, a domain is considered high authority only if its Domain ascore is 70 or above. Since the high authority domains list is empty and the unique count is 0, there are no signals from high authority domains. Therefore, the trigger is set to 'No' because none of the backlinks come from high authority sources.",
+    "high_authority_domains": []
+  },
+  "overall_analysis": {
+    "overall_trigger": "Yes",
+    "overall_reasoning": "The overall trigger is set to Yes because the 'seo_triggered' condition is True. This means that, even though the backlink is not from a high authority source and there are no signs of risky content or low credibility, the backlink appears to be created primarily for SEO purposes. In simple terms, the backlink looks like it was made just to improve search engine rankings rather than being a natural or editorial link. According to the logic, if any of the SEO, risky content, or low credibility signals are present (and high authority is not), the trigger is activated. Therefore, the backlink profile is flagged due to SEO-driven characteristics."
+  },
+  "data": [
+    {
+      "Domain": "analyticshaven.top",
+      "Domain ascore": 5,
+      "category": null,
+      "Backlinks": 1,
+      "IP Address": "195.20.19.178",
+      "First seen": "12h ago",
+      "Last seen": "12h ago",
+      "status": "new",
+      "link_type": "nofollow",
+      "_seo_match": ".top"
+    },
+    {
+      "Domain": "optimizeflow.top",
+      "Domain ascore": 5,
+      "category": null,
+      "Backlinks": 1,
+      "IP Address": "195.20.19.178",
+      "First seen": "5d ago",
+      "Last seen": "5d ago",
+      "status": "new",
+      "link_type": "nofollow",
+      "_seo_match": ".top"
+    },
+    {
+      "Domain": "blogsphere.top",
+      "Domain ascore": 5,
+      "category": null,
+      "Backlinks": 1,
+      "IP Address": "195.20.19.178",
+      "First seen": "6d ago",
+      "Last seen": "6d ago",
+      "status": "new",
+      "link_type": "nofollow",
+      "_seo_match": ".top"
+    },
+    {
+      "Domain": "dailymusings.top",
+      "Domain ascore": 5,
+      "category": null,
+      "Backlinks": 1,
+      "IP Address": "195.20.19.178",
+      "First seen": "12d ago",
+      "Last seen": "12d ago",
+      "status": "new",
+      "link_type": "nofollow",
+      "_seo_match": ".top"
+    },
+    {
+      "Domain": "screenshots.wiki",
+      "Domain ascore": 5,
+      "category": null,
+      "Backlinks": 1,
+      "IP Address": "195.20.19.178",
+      "First seen": "Mar 11, 2026",
+      "Last seen": "Mar 11, 2026",
+      "status": null,
+      "link_type": "nofollow"
+    },
+    {
+      "Domain": "urls-shortener.eu",
+      "Domain ascore": 5,
+      "category": null,
+      "Backlinks": 2,
+      "IP Address": "195.20.19.178",
+      "First seen": "Feb 5, 2026",
+      "Last seen": "Mar 11, 2026",
+      "status": null,
+      "link_type": "nofollow"
+    },
+    {
+      "Domain": "drjack.world",
+      "Domain ascore": 25,
+      "category": "Online Services",
+      "Backlinks": 1,
+      "IP Address": "195.20.19.178",
+      "First seen": "Jan 19, 2026",
+      "Last seen": "Jan 19, 2026",
+      "status": null,
+      "link_type": "nofollow",
+      "_seo_match": ".world"
+    },
+    {
+      "Domain": "domaindexer.com",
+      "Domain ascore": 6,
+      "category": null,
+      "Backlinks": 1,
+      "IP Address": "104.21.42.170",
+      "First seen": "Dec 7, 2025",
+      "Last seen": "Feb 27, 2026",
+      "status": null,
+      "link_type": "nofollow",
+      "_seo_match": "index"
+    },
+    {
+      "Domain": "toplikevideo.com",
+      "Domain ascore": 2,
+      "category": null,
+      "Backlinks": 1,
+      "IP Address": "172.67.142.172",
+      "First seen": "Dec 5, 2025",
+      "Last seen": "10d ago",
+      "status": null,
+      "link_type": "nofollow"
+    },
+    {
+      "Domain": "8coint.com",
+      "Domain ascore": 4,
+      "category": null,
+      "Backlinks": 1,
+      "IP Address": "104.21.83.176",
+      "First seen": "Dec 3, 2025",
+      "Last seen": "4d ago",
+      "status": null,
+      "link_type": "nofollow",
+      "_seo_match": "coin"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+    "ALL": {
+        "pivot": {
+            "lifetime_metrics": [
+                {
+                    "txstatus": "SUCCESS",
+                    "count": 225
+                },
+                {
+                    "txstatus": "FAILED",
+                    "count": 95
+                }
+            ],
+            "past_30d_metrics": [
+                {
+                    "txstatus": "SUCCESS",
+                    "count": 113
+                },
+                {
+                    "txstatus": "FAILED",
+                    "count": 35
+                }
+            ],
+            "past_7d_metrics": [
+                {
+                    "txstatus": "SUCCESS",
+                    "count": 18
+                },
+                {
+                    "txstatus": "FAILED",
+                    "count": 10
+                }
+            ],
+            "past_1d_metrics": [
+                {
+                    "txstatus": "FAILED",
+                    "count": 5
+                },
+                {
+                    "txstatus": "SUCCESS",
+                    "count": 5
+                }
+            ]
+        },
+        "red_flags": {
+            "lifetime_metrics_red_flags": [
+                {
+                    "code": "TA007",
+                    "reasoning": "The proportion of failed transactions is 95 out of 320 total, which is approximately 29.7%. This is significantly high for Financial Services and related categories, indicating a potential issue.",
+                    "triggered": true
+                }
+            ],
+            "past_30d_metrics_red_flags": [
+                {
+                    "code": "TA007",
+                    "reasoning": "The failed transactions are 35 out of 148 total, which is about 23.6%. This is a high failure rate for the business category and may indicate recent operational or fraud-related issues.",
+                    "triggered": true
+                }
+            ],
+            "past_7d_metrics_red_flags": [
+                {
+                    "code": "TA007",
+                    "reasoning": "There are 10 failed out of 28 total transactions, which is 35.7%. This is a very high failure rate for Financial Services and related businesses, suggesting a recent spike in failed transactions.",
+                    "triggered": true
+                }
+            ],
+            "past_1d_metrics_red_flags": [
+                {
+                    "code": "TA007",
+                    "reasoning": "There are 5 failed out of 10 total transactions, which is 50%. This is an extremely high failure rate for this business category and indicates a significant recent issue.",
+                    "triggered": true
+                }
+            ],
+            "summary": "The pivot table shows a consistently high proportion of failed transactions across all time periods, with the failure rate increasing in recent days. This pattern is concerning for Financial Services and related businesses, as it may indicate operational issues or potential fraud."
+        }
+    }
+}
