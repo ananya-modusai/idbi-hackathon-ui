@@ -5,9 +5,10 @@ import { IdbiShell } from "./IdbiShell";
 import { CustomersScreen } from "./CustomersScreen";
 import { CustomerWorkspace, WorkspaceCustomer } from "./CustomerWorkspace";
 import { SelectCustomerState } from "./SelectCustomerState";
+import { SalesAlertsScreen } from "./SalesAlertsScreen";
 import { useIdbiActiveContextStore } from "./ActiveContext/store";
 
-type Section = "Workspace" | "Customer";
+type Section = "Workspace" | "Customer" | "Sales & Alerts";
 
 export const IdbiApp: FC = () => {
   const [section, setSection] = useState<Section>("Workspace");
@@ -24,13 +25,13 @@ export const IdbiApp: FC = () => {
   };
 
   const navigate = (label: string) => {
-    if (label === "Workspace" || label === "Customer") setSection(label as Section);
+    if (label === "Workspace" || label === "Customer" || label === "Sales & Alerts") setSection(label as Section);
   };
 
   const breadcrumb =
     section === "Customer"
       ? ["Relationship Management", "Customer", ...(customer ? [customer.name] : [])]
-      : ["Relationship Management", "Workspace"];
+      : ["Relationship Management", section];
 
   return (
     <IdbiShell
@@ -39,7 +40,9 @@ export const IdbiApp: FC = () => {
       onNavigate={navigate}
       onSelectCustomer={(c) => openCustomer(c as WorkspaceCustomer)}
     >
-      {section === "Workspace" ? (
+      {section === "Sales & Alerts" ? (
+        <SalesAlertsScreen onGoToCustomers={() => setSection("Workspace")} />
+      ) : section === "Workspace" ? (
         <CustomersScreen onOpenCustomer={(c) => openCustomer(c as WorkspaceCustomer)} />
       ) : customer ? (
         <CustomerWorkspace customer={customer} onBack={() => setSection("Workspace")} />

@@ -13,7 +13,7 @@ import {
 const OPP_ICONS: Record<string, React.ElementType> = {
   Coins, CreditCard, BarChart3, TrendingUp, Percent, CalendarDays, WalletCards, MoveUpRight, Layers, Clock,
   // Insurance recommendations use the same card, so their icons live here too.
-  HeartPulse, Stethoscope, Car, Store, ShieldAlert, ShieldCheck,
+  HeartPulse, Stethoscope, Car, Store, ShieldAlert, ShieldCheck, Landmark,
 };
 
 /**
@@ -22,7 +22,7 @@ const OPP_ICONS: Record<string, React.ElementType> = {
  */
 // Only these two surface as cards — the other gaps stay in the fixture and can be
 // switched back on by adding their id here.
-const INSURANCE_ON_CARDS = ["life", "property"];
+const INSURANCE_ON_CARDS: string[] = [];
 
 const INSURANCE_CARDS = probes.insurance.groups
   .filter(group => INSURANCE_ON_CARDS.includes(group.id))
@@ -98,10 +98,21 @@ function HealthDot({ cx = 0, cy = 0, payload }: { cx?: number; cy?: number; payl
 // Score → band, so the number/label take the band colour (green/blue/amber/red), the
 // same "colour changes with the signal" language as the PD analysis component.
 const bandText = (score: number) => (score >= 75 ? "text-emerald-700" : score >= 60 ? "text-blue-700" : score >= 40 ? "text-amber-700" : "text-rose-700");
+/** Badge tone for the fit / review label on an opportunity card. */
+const fitTone = (fit: string) =>
+  fit === "High Potential" || fit === "High fit" ? "emerald" as const
+    : fit === "Stress Check" ? "rose" as const
+    : fit === "Review Due" ? "amber" as const
+    : fit === "Good fit" ? "blue" as const
+    : "violet" as const;
+
 const bandPill = (score: number) => (score >= 75 ? "emerald" : score >= 60 ? "blue" : score >= 40 ? "amber" : "rose") as "emerald" | "blue" | "amber" | "rose";
 
 export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgent }: { onOpenActivity?: () => void; onOpenFinancial?: () => void; onOpenAgent?: (prompt?: string) => void }) {
   const customer = data.customer;
+  // The reference header renders flags in severity buckets; the fixture keeps one list.
+  const insightsBy = (severity: string) =>
+    ((customer as any).insights ?? []).filter((insight: any) => insight.severity === severity);
   const [healthPeriod, setHealthPeriod] = React.useState("6M");
   const [idbiView, setIdbiView] = React.useState("Accounts & Products");
   const [cibilRange, setCibilRange] = React.useState("12");
@@ -159,19 +170,20 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
         <SectionHeader
           icon={MessageSquareText}
           title="Recommended Opportunities"
+          allowCollapse
+          positiveFlags={insightsBy("good")}
+          negativeFlags={insightsBy("high")}
+          mildNegativeFlags={insightsBy("medium")}
+          neutralFlags={insightsBy("low")}
+          flagTypeOrderList={["negative", "mildNegative", "neutral", "positive"]}
+          flagSummaryLabel="Insights"
           action={
-            <div className="flex shrink-0 flex-wrap items-center gap-3">
-              <Select value={oppScope} onValueChange={setOppScope}>
-                <SelectTrigger className="h-8 w-[200px] bg-white text-xs"><SelectValue /></SelectTrigger>
-                <SelectContent position="popper">
-                  <SelectItem value="personalised">Personalised for you</SelectItem>
-                  <SelectItem value="all">All product families</SelectItem>
-                </SelectContent>
-              </Select>
-              <button type="button" onClick={onOpenActivity} className="inline-flex items-center gap-1 whitespace-nowrap text-sm font-medium text-blue-600 hover:underline">
-                View all opportunities <ArrowRight className="size-3.5" />
-              </button>
-            </div>
+            <ActionButton
+              variant="default"
+              onClick={() => onOpenAgent?.("Run an eligibility check for Vandana Singh across working capital, a term loan and shop insurance, and tell me which one to lead with.")}
+            >
+              Check eligibility <ChevronRight />
+            </ActionButton>
           }
         />
         {/* Card layout follows img #165: icon + title + subtitle, fit badge top-right,
@@ -192,12 +204,14 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
                       {(opportunity as any).subtitle && <p className="mt-0.5 text-xs text-slate-500">{(opportunity as any).subtitle}</p>}
                     </div>
                   </div>
-                  {fit && <StatusPill tone={fit === "High fit" ? "emerald" : fit === "Good fit" ? "blue" : "violet"}>{fit}</StatusPill>}
+                  {fit && <StatusPill tone={fitTone(fit)}>{fit}</StatusPill>}
                 </div>
 
-                <div className="mt-3 flex flex-wrap gap-1.5">
-                  {opportunity.tags.map((tag: string) => <StatusPill key={tag} tone="blue">{tag}</StatusPill>)}
-                </div>
+                {opportunity.tags?.length > 0 && (
+                  <div className="mt-3 flex flex-wrap gap-1.5">
+                    {opportunity.tags.map((tag: string) => <StatusPill key={tag} tone="blue">{tag}</StatusPill>)}
+                  </div>
+                )}
 
                 {stats.length > 0 && (
                   <dl className="mt-3 grid grid-cols-3 divide-x divide-slate-200 rounded-lg border border-slate-200 bg-slate-50/60">
@@ -207,9 +221,9 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
                         <div key={stat.label} className="min-w-0 px-3 py-2.5">
                           <div className="flex items-center gap-1.5">
                             <StatIcon className="size-2.5 shrink-0 text-slate-400" />
-                            <dt className="truncate text-[0.72vw] leading-4 text-slate-500">{stat.label}</dt>
+                            <dt className="text-xs leading-4 text-slate-500">{stat.label}</dt>
                           </div>
-                          <dd className="mt-1 whitespace-nowrap truncate text-[0.82vw] font-semibold text-slate-900">{stat.value}</dd>
+                          <dd className="mt-1 text-sm font-semibold leading-5 text-slate-900">{stat.value}</dd>
                         </div>
                       );
                     })}
@@ -220,14 +234,14 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
                   <div className="flex gap-2.5">
                     <CircleCheck className="mt-0.5 size-4 shrink-0 text-emerald-600" />
                     <div className="min-w-0">
-                      <p className="text-sm font-semibold text-slate-900">Why now</p>
+                      <p className="text-sm font-semibold text-slate-900">Trigger</p>
                       <p className="mt-0.5 text-xs leading-5 text-slate-600">{(opportunity as any).whyNow ?? opportunity.trigger}</p>
                     </div>
                   </div>
                   <div className="flex gap-2.5 border-t border-slate-100 pt-3">
                     <ListChecks className="mt-0.5 size-4 shrink-0 text-slate-400" />
                     <div className="min-w-0">
-                      <p className="text-sm font-semibold text-slate-900">{(opportunity as any).blocker ? "What you need to do" : "Next step"}</p>
+                      <p className="text-sm font-semibold text-slate-900">RM action</p>
                       <p className="mt-0.5 text-xs leading-5 text-slate-600">{(opportunity as any).blocker ?? opportunity.nextAction}</p>
                     </div>
                   </div>

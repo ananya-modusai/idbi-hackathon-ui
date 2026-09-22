@@ -7,6 +7,7 @@
       "name": "Vandana Singh",
       "mobile": "98••• ••214",
       "profile": "Self-employed",
+      "category": "Business",
       "location": "Kila Raipur, PB",
       "lead_priority": "High",
       "relationship": "Existing",
@@ -91,6 +92,7 @@
       "name": "Ritu Joshi",
       "mobile": "97••• ••508",
       "profile": "Individual",
+      "category": "Individual",
       "location": "Barat, HP",
       "lead_priority": "High",
       "relationship": "Existing",
@@ -183,6 +185,7 @@
       "name": "Sandeep Yadav",
       "mobile": "99••• ••371",
       "profile": "NRI",
+      "category": "Individual",
       "location": "Jammu, J&K",
       "lead_priority": "Medium",
       "relationship": "Existing",
@@ -267,6 +270,7 @@
       "name": "Meera Shah",
       "mobile": "96••• ••742",
       "profile": "Senior citizen",
+      "category": "Individual",
       "location": "Indore, MP",
       "lead_priority": "High",
       "relationship": "Existing",
@@ -341,10 +345,11 @@
       "name": "Aarav Mehta",
       "mobile": "95••• ••166",
       "profile": "Salaried · NTC",
+      "category": "Individual",
       "location": "Bengaluru, KA",
       "lead_priority": "High",
       "relationship": "Prospect · NTB",
-      "tier": "Bronze",
+      "tier": "Untiered",
       "relationship_owner": "Rohan Das",
       "products": [],
       "requests": [
@@ -405,6 +410,7 @@
       "name": "Neeraj Kapoor",
       "mobile": "94••• ••829",
       "profile": "Salaried",
+      "category": "Individual",
       "location": "Pune, MH",
       "lead_priority": "Low",
       "relationship": "Existing",
@@ -473,6 +479,7 @@
       "name": "Pooja Verma",
       "mobile": "93••• ••455",
       "profile": "Self-employed",
+      "category": "Business",
       "location": "Jaipur, RJ",
       "lead_priority": "Low",
       "relationship": "Existing",
@@ -535,6 +542,470 @@
         "Additional-credit outreach should remain paused"
       ],
       "demo_order": 7
+    },
+    {
+      "customer_id": "990000142",
+      "name": "Harpreet Kaur Gill",
+      "mobile": "98••• ••771",
+      "profile": "Self-employed",
+      "category": "Business",
+      "location": "Ludhiana, PB",
+      "lead_priority": "High",
+      "relationship": "Existing",
+      "tier": "Platinum",
+      "relationship_owner": "Ananya Rao",
+      "products": [
+        {
+          "type": "Current Account",
+          "account": "•••• 4410",
+          "balance": "₹8.42L",
+          "status": "Active"
+        },
+        {
+          "type": "Cash Credit",
+          "account": "•••• 4411",
+          "balance": "₹52.00L limit",
+          "status": "Active"
+        },
+        {
+          "type": "Savings",
+          "account": "•••• 4412",
+          "balance": "₹2.15L",
+          "status": "Active"
+        }
+      ],
+      "requests": [
+        {
+          "id": "REQ-EPC-3301",
+          "product": "Export Packing Credit",
+          "stage": "Under review",
+          "date": "2026-09-17",
+          "details": "Pre-shipment limit enhancement filed against confirmed export orders.",
+          "linked_opportunity": true
+        }
+      ],
+      "health": {
+        "score": 84,
+        "band": "Good",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "Export receipts consistent across four quarters",
+          "Cash-credit utilisation at 61%",
+          "No overdue reported"
+        ],
+        "sources": [
+          "Customer summary",
+          "Account holdings",
+          "Reported conduct"
+        ]
+      },
+      "signals": [
+        {
+          "label": "Export orders rising",
+          "evidence": "Inward remittances up 34% year on year against confirmed orders.",
+          "source": "Remittance records",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "Forex exposure unhedged",
+          "evidence": "No forward contracts booked despite USD receivables.",
+          "source": "Treasury records",
+          "date": "2026-09-19"
+        }
+      ],
+      "opportunity": {
+        "title": "Forex hedging and export finance",
+        "reason": "Unhedged USD receivables against a rising order book",
+        "objective": "Upsell",
+        "rationale": "Export receipts have grown steadily while no forward cover is booked, leaving margins exposed.",
+        "next_action": "Review the order book and propose forward cover alongside the packing-credit enhancement.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Export order book expanding",
+        "Unhedged currency exposure",
+        "Limit enhancement in progress"
+      ],
+      "demo_order": 8
+    },
+    {
+      "customer_id": "990000158",
+      "name": "Manish Aggarwal",
+      "mobile": "99••• ••204",
+      "profile": "Salaried",
+      "category": "Individual",
+      "location": "Chandigarh, CH",
+      "lead_priority": "High",
+      "relationship": "Existing",
+      "tier": "Gold",
+      "relationship_owner": "Ananya Rao",
+      "products": [
+        {
+          "type": "Salary Account",
+          "account": "•••• 6620",
+          "balance": "₹3.18L",
+          "status": "Active"
+        },
+        {
+          "type": "Home Loan",
+          "account": "•••• 6621",
+          "balance": "₹41.20L outstanding",
+          "status": "Active"
+        }
+      ],
+      "requests": [
+        {
+          "id": "REQ-HL-2277",
+          "product": "Home Loan Top-up",
+          "stage": "Documents pending",
+          "date": "2026-09-15",
+          "details": "Top-up request raised; latest salary slips and property valuation awaited.",
+          "linked_opportunity": true
+        }
+      ],
+      "health": {
+        "score": 71,
+        "band": "Fair",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "Salary credit regular for 38 months",
+          "EMI-to-income ratio at 46%",
+          "No card or loan overdue"
+        ],
+        "sources": [
+          "Customer summary",
+          "Account holdings",
+          "Reported conduct"
+        ]
+      },
+      "signals": [
+        {
+          "label": "Renovation intent",
+          "evidence": "Top-up request cites interior work on the financed property.",
+          "source": "Request notes",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "No property insurance",
+          "evidence": "Home loan is running without a property or loan-cover policy.",
+          "source": "Policy records",
+          "date": "2026-09-19"
+        }
+      ],
+      "opportunity": {
+        "title": "Top-up with loan protection",
+        "reason": "₹41.20L outstanding with no loan cover in place",
+        "objective": "Cross-sell",
+        "rationale": "A top-up raises the exposure on a single earner with no credit-life or property cover attached.",
+        "next_action": "Collect pending documents and quote loan protection alongside the top-up.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Top-up request in progress",
+        "High EMI-to-income ratio",
+        "No loan protection on file"
+      ],
+      "demo_order": 9
+    },
+    {
+      "customer_id": "DEMO-P002",
+      "name": "Simran Sethi",
+      "mobile": "70••• ••913",
+      "profile": "Salaried · NTC",
+      "category": "Individual",
+      "location": "Zirakpur, PB",
+      "lead_priority": "High",
+      "relationship": "Prospect · NTB",
+      "tier": "Untiered",
+      "relationship_owner": "Ananya Rao",
+      "products": [],
+      "requests": [
+        {
+          "id": "REQ-SA-4420",
+          "product": "Salary Account",
+          "stage": "Enquired",
+          "date": "2026-09-18",
+          "details": "Employer is onboarding payroll with IDBI; individual account not yet opened.",
+          "linked_opportunity": true
+        }
+      ],
+      "health": {
+        "score": 68,
+        "band": "Fair",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "New to credit, no bureau history",
+          "Employer payroll relationship in progress",
+          "No obligations recorded"
+        ],
+        "sources": [
+          "Customer summary",
+          "Account holdings",
+          "Reported conduct"
+        ]
+      },
+      "signals": [
+        {
+          "label": "Employer payroll mandate",
+          "evidence": "Her employer's payroll is moving to IDBI this quarter.",
+          "source": "Corporate records",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "First banking relationship",
+          "evidence": "No existing accounts or credit lines on record.",
+          "source": "Bureau",
+          "date": "2026-09-19"
+        }
+      ],
+      "opportunity": {
+        "title": "Salary account onboarding",
+        "reason": "Employer payroll mandate makes this a low-friction acquisition",
+        "objective": "Acquisition",
+        "rationale": "Payroll onboarding gives a natural opening before another bank approaches her.",
+        "next_action": "Complete KYC at the employer onboarding desk and open the salary account.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Employer payroll onboarding",
+        "New to bank",
+        "No competing relationship"
+      ],
+      "demo_order": 10
+    },
+    {
+      "customer_id": "990000177",
+      "name": "Baljeet Singh Randhawa",
+      "mobile": "98••• ••336",
+      "profile": "Self-employed",
+      "category": "Business",
+      "location": "Jalandhar, PB",
+      "lead_priority": "Medium",
+      "relationship": "Existing",
+      "tier": "Silver",
+      "relationship_owner": "Ananya Rao",
+      "products": [
+        {
+          "type": "Current Account",
+          "account": "•••• 8801",
+          "balance": "₹1.92L",
+          "status": "Active"
+        },
+        {
+          "type": "Cash Credit",
+          "account": "•••• 8802",
+          "balance": "₹18.00L limit",
+          "status": "Due for renewal"
+        }
+      ],
+      "requests": [
+        {
+          "id": "REQ-CC-5512",
+          "product": "Cash Credit Renewal",
+          "stage": "Due",
+          "date": "2026-09-10",
+          "details": "Annual renewal falls due on 31 Oct; stock statements for two months are outstanding.",
+          "linked_opportunity": false
+        }
+      ],
+      "health": {
+        "score": 63,
+        "band": "Fair",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "Utilisation at 88% for five months",
+          "Two stock statements overdue",
+          "Repayments current"
+        ],
+        "sources": [
+          "Customer summary",
+          "Account holdings",
+          "Reported conduct"
+        ]
+      },
+      "signals": [
+        {
+          "label": "Limit under strain",
+          "evidence": "Cash credit has run above 85% for five consecutive months.",
+          "source": "Account conduct",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "Documentation lagging",
+          "evidence": "Stock statements for July and August are not on file.",
+          "source": "Credit administration",
+          "date": "2026-09-19"
+        }
+      ],
+      "opportunity": {
+        "title": "Renewal with limit review",
+        "reason": "Sustained high utilisation ahead of the October renewal",
+        "objective": "Retention",
+        "rationale": "Utilisation at this level usually means the limit is undersized, not that conduct is poor.",
+        "next_action": "Collect the outstanding stock statements and assess the limit at renewal.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Renewal due 31 Oct",
+        "Utilisation above 85%",
+        "Documents outstanding"
+      ],
+      "demo_order": 11
+    },
+    {
+      "customer_id": "990000193",
+      "name": "Kavita Malhotra",
+      "mobile": "94••• ••058",
+      "profile": "Senior citizen",
+      "category": "Individual",
+      "location": "Amritsar, PB",
+      "lead_priority": "Low",
+      "relationship": "Existing",
+      "tier": "Gold",
+      "relationship_owner": "Ananya Rao",
+      "products": [
+        {
+          "type": "Savings",
+          "account": "•••• 2270",
+          "balance": "₹2.46L",
+          "status": "Active"
+        },
+        {
+          "type": "FD",
+          "account": "•••• 2271",
+          "balance": "₹14.50L",
+          "status": "Matures 04 Nov"
+        },
+        {
+          "type": "FD",
+          "account": "•••• 2272",
+          "balance": "₹6.00L",
+          "status": "Active"
+        }
+      ],
+      "requests": [],
+      "health": {
+        "score": 82,
+        "band": "Good",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "Deposit relationship of eleven years",
+          "No borrowing recorded",
+          "Regular pension credit"
+        ],
+        "sources": [
+          "Customer summary",
+          "Account holdings",
+          "Reported conduct"
+        ]
+      },
+      "signals": [
+        {
+          "label": "Large maturity approaching",
+          "evidence": "₹14.50L fixed deposit matures on 04 Nov 2026.",
+          "source": "Deposit records",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "Rate-sensitive saver",
+          "evidence": "Previous maturities were renewed within three days each time.",
+          "source": "Account conduct",
+          "date": "2026-09-19"
+        }
+      ],
+      "opportunity": {
+        "title": "Maturity renewal conversation",
+        "reason": "₹14.50L matures in 46 days with no instruction on file",
+        "objective": "Retention",
+        "rationale": "Deposits of this size are the most common point of attrition to a competitor's rate.",
+        "next_action": "Call before 25 Oct with a renewal rate and the senior-citizen scheme comparison.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Large deposit maturing",
+        "No standing instruction",
+        "Long-standing relationship"
+      ],
+      "demo_order": 12
+    },
+    {
+      "customer_id": "990000208",
+      "name": "Rohit Bansal",
+      "mobile": "96••• ••447",
+      "profile": "Salaried",
+      "category": "Individual",
+      "location": "Mohali, PB",
+      "lead_priority": "Medium",
+      "relationship": "Existing",
+      "tier": "Bronze",
+      "relationship_owner": "Ananya Rao",
+      "products": [
+        {
+          "type": "Salary Account",
+          "account": "•••• 5590",
+          "balance": "₹0.42L",
+          "status": "Active"
+        },
+        {
+          "type": "Personal Loan",
+          "account": "•••• 5591",
+          "balance": "₹4.80L outstanding",
+          "status": "Active"
+        }
+      ],
+      "requests": [
+        {
+          "id": "REQ-PL-6604",
+          "product": "Personal Loan",
+          "stage": "Applied",
+          "date": "2026-09-14",
+          "details": "Second personal loan applied for while the first is still running.",
+          "linked_opportunity": true
+        }
+      ],
+      "health": {
+        "score": 58,
+        "band": "Poor",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "Two card accounts above 80% utilised",
+          "Balance falls below ₹5,000 before salary date",
+          "One late payment in the last six months"
+        ],
+        "sources": [
+          "Customer summary",
+          "Account holdings",
+          "Reported conduct"
+        ]
+      },
+      "signals": [
+        {
+          "label": "Borrowing to service borrowing",
+          "evidence": "A second personal loan applied for while the first has 26 months to run.",
+          "source": "Bureau",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "Thin month-end balance",
+          "evidence": "Account balance drops under ₹5,000 in the week before salary credit.",
+          "source": "Account conduct",
+          "date": "2026-09-19"
+        }
+      ],
+      "opportunity": {
+        "title": "Consolidation before more borrowing",
+        "reason": "A second loan on top of high card utilisation would stretch him further",
+        "objective": "Retention",
+        "rationale": "Consolidating the cards at a lower rate helps more than adding a second instalment.",
+        "next_action": "Review total obligations and propose consolidation instead of a fresh loan.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Second loan applied while first runs",
+        "Card utilisation above 80%",
+        "One recent late payment"
+      ],
+      "demo_order": 13
     }
   ]
 }

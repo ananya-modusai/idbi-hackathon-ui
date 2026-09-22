@@ -31,8 +31,19 @@ import { LucideIcon } from "lucide-react";
  * right-side view toggle are the same ones the rest of the app uses — the Debt Analysis
  * section in insolvency is the model.
  */
+/** The flag shape the reference header renders in its collapsible list. */
+export interface SectionFlag {
+  id: string;
+  description: string;
+  isPositive: boolean;
+  category: string;
+  severity?: "severe" | "high" | "medium" | "low" | "neutral" | "good" | "veryGood";
+}
+
 export function SectionHeader({
   icon, title, action, titleMeta, toggleOptions, selectedToggleOption, onToggleOptionChange,
+  positiveFlags = [], negativeFlags = [], neutralFlags, mildPositiveFlags, mildNegativeFlags,
+  allowCollapse = false, flagTypeOrderList, flagSummaryLabel,
 }: {
   icon: React.ElementType;
   title: string;
@@ -41,6 +52,17 @@ export function SectionHeader({
   toggleOptions?: string[];
   selectedToggleOption?: string;
   onToggleOptionChange?: (option: string) => void;
+  // Flags render as the reference header's own collapsible strip — the same one the
+  // insolvency Financial Metrics section uses.
+  positiveFlags?: SectionFlag[];
+  negativeFlags?: SectionFlag[];
+  neutralFlags?: SectionFlag[];
+  mildPositiveFlags?: SectionFlag[];
+  mildNegativeFlags?: SectionFlag[];
+  allowCollapse?: boolean;
+  flagTypeOrderList?: string[];
+  /** One green chip reading "<count> <label>" instead of the per-severity counts. */
+  flagSummaryLabel?: string;
 }) {
   return (
     // mb-4 lives here, not on each section body: everything that follows a header
@@ -51,9 +73,14 @@ export function SectionHeader({
       icon={icon as LucideIcon}
       iconColorClass="text-blue-700"
       titleColorClass="text-blue-700"
-      positiveFlags={[]}
-      negativeFlags={[]}
-      allowCollapse={false}
+      positiveFlags={positiveFlags as any}
+      negativeFlags={negativeFlags as any}
+      neutralFlags={neutralFlags as any}
+      mildPositiveFlags={mildPositiveFlags as any}
+      mildNegativeFlags={mildNegativeFlags as any}
+      flagTypeOrderList={flagTypeOrderList as any}
+      allowCollapse={allowCollapse}
+      flagSummaryLabel={flagSummaryLabel}
       titleRightElement={titleMeta}
       toggleOptions={toggleOptions}
       selectedToggleOption={selectedToggleOption}

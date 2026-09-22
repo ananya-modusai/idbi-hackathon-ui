@@ -335,105 +335,96 @@
     "opportunities": [
       {
         "id": "working-capital",
-        "priority": "High",
-        "disposition": "Pursue",
-        "title": "Working capital loan",
-        "tags": [
-          "Customer Enquiry",
-          "High Intent"
-        ],
-        "trigger": "Customer enquired about working capital on 18 Sep.",
-        "whyNow": "Monthly cash surplus has recovered and reported repayments are current.",
-        "blocker": "GST performance and external borrowing exposure are not yet validated.",
-        "nextAction": "Complete pre-check before the 22 Sep · 11:30 AM follow-up.",
-        "primaryAction": "Run pre-check",
-        "secondaryAction": "Learn more",
-        "subtitle": "Cash to buy stock and pay suppliers",
-        "fit": "High fit",
         "icon": "Coins",
+        "title": "Working Capital",
+        "subtitle": "Assess short-term liquidity requirement",
+        "fit": "Stress Check",
+        "tags": [],
         "stats": [
           {
-            "label": "Available limit",
-            "value": "₹5L – ₹25L",
+            "label": "Current CC Limit",
+            "value": "₹25L",
+            "icon": "Coins"
+          },
+          {
+            "label": "Utilisation",
+            "value": "78%",
+            "icon": "Percent"
+          },
+          {
+            "label": "Context",
+            "value": "Assam flood",
+            "icon": "Clock"
+          }
+        ],
+        "whyNow": "Flood-related business disruption may create short-term liquidity pressure.",
+        "nextAction": "Check cash-flow stress and assess need for a CC increase or bridge loan.",
+        "trigger": "Flood-related business disruption may create short-term liquidity pressure.",
+        "primaryAction": "Review CC Need",
+        "secondaryAction": null,
+        "prompt": "Assess Vandana Singh's short-term liquidity: CC limit ₹25L at 78% utilisation, with Assam flood disruption. Advise on a CC increase or bridge loan."
+      },
+      {
+        "id": "term-loan",
+        "icon": "Landmark",
+        "title": "Term Loan",
+        "subtitle": "Review potential capex funding need",
+        "fit": "High Potential",
+        "tags": [],
+        "stats": [
+          {
+            "label": "Financial Health",
+            "value": "Strong",
             "icon": "TrendingUp"
           },
           {
-            "label": "Interest rate (est)",
-            "value": "12% – 16% p.a.",
-            "icon": "Percent"
+            "label": "Portfolio Rank",
+            "value": "Top 10%",
+            "icon": "BarChart3"
           },
           {
-            "label": "Tenure",
-            "value": "3 – 12 months",
-            "icon": "CalendarDays"
+            "label": "Business Type",
+            "value": "Capital intensive",
+            "icon": "Layers"
           }
-        ]
+        ],
+        "whyNow": "Strong financial profile with likely capex or expansion requirement.",
+        "nextAction": "Check for machinery purchase, expansion, or other medium-term funding need.",
+        "trigger": "Strong financial profile with likely capex or expansion requirement.",
+        "primaryAction": "Discuss Term Loan",
+        "secondaryAction": null,
+        "prompt": "Vandana Singh ranks in the top 10% on financial health and runs a capital-intensive business. Assess a term loan for machinery or expansion."
       },
       {
-        "id": "credit-card",
-        "priority": "Medium",
-        "disposition": "Nurture",
-        "title": "Credit card",
-        "tags": [
-          "Cross-sell",
-          "Income Increase"
-        ],
-        "trigger": "Recognised income improved and reported repayment behaviour remains current.",
-        "nextAction": "Check eligibility and available IDBI card offers.",
-        "primaryAction": "Check eligibility",
-        "subtitle": "She has no card with us",
-        "fit": "Good fit",
-        "icon": "CreditCard",
+        "id": "shop-insurance",
+        "icon": "ShieldCheck",
+        "title": "Shop Insurance",
+        "subtitle": "Check whether current cover is adequate",
+        "fit": "Review Due",
+        "tags": [],
         "stats": [
           {
-            "label": "Current limit",
-            "value": "₹1.2L",
-            "icon": "WalletCards"
+            "label": "Current Cover",
+            "value": "₹18L",
+            "icon": "ShieldCheck"
           },
           {
-            "label": "Potential limit",
-            "value": "₹2L – ₹5L",
-            "icon": "MoveUpRight"
-          },
-          {
-            "label": "Interest rate (est)",
-            "value": "2.5% – 3.5% p.m.",
-            "icon": "Percent"
-          }
-        ]
-      },
-      {
-        "id": "investment",
-        "priority": "Medium",
-        "disposition": "Nurture",
-        "title": "Investment plan",
-        "tags": [
-          "Surplus Funds",
-          "Relationship Deepening"
-        ],
-        "trigger": "The customer has recurring monthly surplus and ₹10.90L of tracked assets outside IDBI.",
-        "nextAction": "Understand investment horizon, liquidity needs and risk preference.",
-        "primaryAction": "View opportunity",
-        "subtitle": "Idle money can earn more",
-        "fit": "Nurture",
-        "icon": "BarChart3",
-        "stats": [
-          {
-            "label": "Expected returns",
-            "value": "5% – 7% p.a.",
-            "icon": "Percent"
-          },
-          {
-            "label": "Min. amount",
-            "value": "₹10,000",
+            "label": "Stock / Assets",
+            "value": "₹31L",
             "icon": "Layers"
           },
           {
-            "label": "Lock-in",
-            "value": "None",
-            "icon": "Clock"
+            "label": "Renewal",
+            "value": "62 days",
+            "icon": "CalendarDays"
           }
-        ]
+        ],
+        "whyNow": "Current stock and asset value appear higher than the insured amount.",
+        "nextAction": "Validate latest values and review the sum insured.",
+        "trigger": "Current stock and asset value appear higher than the insured amount.",
+        "primaryAction": "Review Coverage",
+        "secondaryAction": null,
+        "prompt": "Show Vandana Singh how the average clause would apply to a ₹10L fire loss on her ₹18L shop policy when actual stock is ₹31L, and what raising the sum insured to ₹32L would cost."
       }
     ],
     "healthHistory": [
@@ -525,6 +516,36 @@
         "name": "Financial Resilience",
         "score": 73,
         "band": "Stable"
+      }
+    ],
+    "insights": [
+      {
+        "id": "ins-potential",
+        "severity": "good",
+        "isPositive": true,
+        "category": "Term Loan",
+        "description": "Strong Profile. Customer ranks in the top 10% of the portfolio on financial health; suitable for a proactive term-loan discussion."
+      },
+      {
+        "id": "ins-stress",
+        "severity": "high",
+        "isPositive": false,
+        "category": "Working Capital",
+        "description": "Assam Flood Impact. Assam floods may disrupt business cash flows; review whether a CC limit increase or short-term bridge funding is required."
+      },
+      {
+        "id": "ins-life",
+        "severity": "low",
+        "isPositive": false,
+        "category": "Family / Savings",
+        "description": "Family Update. Daughter recently added to insurance cover; discuss Sukanya Samriddhi Yojana as an eligible long-term child savings option with tax benefits."
+      },
+      {
+        "id": "ins-cover",
+        "severity": "medium",
+        "isPositive": false,
+        "category": "Shop Insurance",
+        "description": "Coverage Review. Current stock / asset levels may be higher than existing shop-insurance cover."
       }
     ]
   },

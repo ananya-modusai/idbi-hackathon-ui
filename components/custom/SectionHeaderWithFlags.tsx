@@ -69,9 +69,13 @@ interface SectionHeaderWithFlagsProps {
   titleRightElement?: ReactNode;
   // Optional element to render at the far right of the header (after flags)
   rightElement?: ReactNode;
+  // When set, the per-severity counts collapse into one green chip reading
+  // "<total> <flagSummaryLabel>" — used where the severities are not the point.
+  flagSummaryLabel?: string;
 }
 
 export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
+  flagSummaryLabel,
   positiveFlags = [],
   negativeFlags = [],
   neutralFlags = [],
@@ -224,7 +228,20 @@ export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
           )}
         </div>
         <div className="flex items-center gap-2 ml-auto flex-shrink-0">
-          {flagTypeOrderList.map(flagType => {
+          {flagSummaryLabel ? (() => {
+            const total = extremeNegativeFlags.length + negativeFlags.length + mildNegativeFlags.length
+              + neutralFlags.length + mildPositiveFlags.length + positiveFlags.length;
+            return total > 0 ? (
+              <BubbleTag
+                text={flagSummaryLabel}
+                color="green"
+                hasOutsideIcon={true}
+                hasInsideNumber={true}
+                number={total}
+                icon={<CheckCircle className="h-3.5 w-3.5" />}
+              />
+            ) : null;
+          })() : flagTypeOrderList.map(flagType => {
             const flagConfig = {
                extremeNegative: { flags: extremeNegativeFlags, label: "Severe", color: "red" as ColorScheme, icon: <XCircle className="h-3.5 w-3.5" /> },
                negative: { flags: negativeFlags, label: "High", color: "orange" as ColorScheme, icon: <XCircle className="h-3.5 w-3.5" /> },
@@ -394,6 +411,8 @@ export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
                                   flag.severity === 'good' ? "green" :
                                   flag.severity === 'veryGood' ? "green" : "gray"
                                 }
+                                /* One width for every severity, so the column lines up. */
+                                fixedWidth="w-[86px]"
                               />
                             </div>
                           </td>

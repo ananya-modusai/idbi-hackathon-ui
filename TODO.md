@@ -229,3 +229,18 @@ Mapping to components we ALREADY have (no dumping of their markup):
       with a prefilled prompt and gets a generated answer back.
 - [x] M8. Organic, realistic fixture data for all of the above — user will review.
 - [x] M9. Tier chips: make every chip the same width.
+
+## Round N — my-customers data + agent-driven filtering (NOT STARTED)
+- [ ] N1. My Customers tab shows only the five rows in image #242 (Vandana, Ritu,
+      Harpreet, Manish, Simran).
+- [ ] N2. Manish Aggarwal health score → 23, band moves from Fair to Bad/Poor; update
+      every derived field (drivers, signals, opportunity, priority reasons, chip colour).
+- [ ] N3. Harpreet Kaur Gill → relationship "Prospect · NTB"; update tier, products,
+      requests, opportunity and reasons so the record stays consistent.
+- [ ] N4. Show "-" instead of "Untiered" in the Tier column.
+- [ ] N5. Add the Modus Agent button to both Workspace tabs, right-aligned on the same
+      row as the search input.
+- [ ] N6. Demo-only agent filtering: the agent's new-chat starter prompts get a fourth
+      option on these two tabs — a filter request. Clicking it plays a working trail,
+      generates a response, and actually applies the filter to the customers table.
+      Use the data already visible in the UI.

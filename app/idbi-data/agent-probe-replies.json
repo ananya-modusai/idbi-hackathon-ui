@@ -366,5 +366,62 @@
       ]
     },
     "reply": "**She borrowed ₹64,000 on a card at 16%. That is the expensive way.**\n\n| | Card EMI (now) | IDBI overdraft |\n| --- | --- | --- |\n| Rate | 16% p.a. | 11.5% p.a. |\n| Interest over 9 months | ₹4,320 | ₹2,760 |\n| Charged on | Full amount, all 9 months | Only what she uses, only while used |\n| Effect on her card | Blocks ₹64,000 of limit | None |\n\n**Saving: ₹1,560 on this one purchase** — and more on the next, because an overdraft charges only for the days the money is out.\n\n**The bigger read:** a business owner converting a ₹64,000 purchase to EMIs is short of working capital that month, not making a financing choice. Her card is at 71%, the receivable cycle has gone to 75 days, and there is already a working-capital enquiry open on her file. This is the third piece of the same picture."
+  },
+  {
+    "label": "Assess Vandana Singh's short-term liquidity: CC limit ₹25L at 78% utilisation, with Assam flood disruption. Advise on a CC increase or bridge loan.",
+    "trail": {
+      "label": "Checked the liquidity position",
+      "runningLabel": "Checking the liquidity position",
+      "steps": [
+        {
+          "text": "Read the cash-credit account — ₹25L limit, 78% drawn"
+        },
+        {
+          "text": "Compared the last three months of utilisation"
+        },
+        {
+          "text": "Checked the flood advisory against her supply region"
+        }
+      ]
+    },
+    "reply": "**Headroom left: ₹5.5L. That is about three weeks of her normal outflow.**\n\n| | Now |\n| --- | --- |\n| Sanctioned limit | ₹25.00L |\n| Drawn | ₹19.50L (78%) |\n| Headroom | ₹5.50L |\n| Monthly outflow | ₹7.80L average |\n\n**What the flood changes.** Supply disruption pushes two things at once: suppliers ask for cash up front, and OEM payments slow down. Her cycle was already 75 days. Another three weeks of delay puts her at the limit by the second half of October.\n\n**The two options**\n\n| | CC enhancement | Bridge loan |\n| --- | --- | --- |\n| Size | ₹25L → ₹35L | ₹8–10L |\n| Tenor | Revolving, annual review | 6 months |\n| Cost | Interest on what she draws | Full interest from day one |\n| Time to sanction | 2–3 weeks | 5–7 days |\n\n**Recommendation:** start the enhancement now and keep the bridge as the fallback if the flood disrupts collections before it is sanctioned. An enhancement costs her nothing until she draws on it.\n\n**To collect:** last two stock statements, GST returns for Q2, and a note on which suppliers are in the affected districts."
+  },
+  {
+    "label": "Vandana Singh ranks in the top 10% on financial health and runs a capital-intensive business. Assess a term loan for machinery or expansion.",
+    "trail": {
+      "label": "Assessed term-loan capacity",
+      "runningLabel": "Assessing term-loan capacity",
+      "steps": [
+        {
+          "text": "Read the health score and portfolio rank"
+        },
+        {
+          "text": "Modelled repayment capacity against existing EMIs"
+        },
+        {
+          "text": "Checked the asset profile for security"
+        }
+      ]
+    },
+    "reply": "**Indicative capacity: ₹35–45L over 5 to 7 years.**\n\n| Input | Reading |\n| --- | --- |\n| Financial health | 81/100 — top 10% of the book |\n| Existing EMI | ₹71,422 a month |\n| Surplus after EMIs | ₹1.23L a month average |\n| Additional EMI supportable | ₹60–75K |\n\n**Why now rather than later.** Capacity doubles from October and a CNC line already went in without our funding. Capital-intensive businesses buy in steps — the next machine is usually within two quarters of the last one, and that is the conversation to be in before a competitor is.\n\n**What to ask her**\n\n- What is the next piece of equipment on the plan, and when?\n- Was the CNC line bought outright or financed elsewhere?\n- Is the expansion in the existing unit or a second site?\n\n**Refinancing the CNC line** is the easier opening: the asset exists, it is valued, and it releases cash she has already spent. Lead with that and the expansion loan follows naturally."
+  },
+  {
+    "label": "Run an eligibility check for Vandana Singh across working capital, a term loan and shop insurance, and tell me which one to lead with.",
+    "trail": {
+      "label": "Ran the eligibility check",
+      "runningLabel": "Running the eligibility check",
+      "steps": [
+        {
+          "text": "Screened working capital against the cash-credit conduct"
+        },
+        {
+          "text": "Modelled term-loan capacity against existing EMIs"
+        },
+        {
+          "text": "Compared the shop policy against declared stock"
+        }
+      ]
+    },
+    "reply": "**All three clear the screen. They are not equally urgent.**\n\n| Opportunity | Eligible | Indicative | Blocked on |\n| --- | --- | --- | --- |\n| Working capital | ✅ | ₹25L → ₹35L | Two stock statements, Q2 GST |\n| Term loan | ✅ | ₹35–45L | Nothing — needs a conversation |\n| Shop insurance | ✅ | Cover ₹18L → ₹32L | Latest stock valuation |\n\n**Lead with working capital.** It is the live request on her file, the flood makes it time-sensitive, and the headroom left is about three weeks of outflow. Everything else can wait a fortnight; this cannot.\n\n**Close with insurance in the same call.** It takes two minutes, it costs ₹5,100 a year, and the under-insurance is on the same stock she is about to borrow against. Raising it before the limit goes up is the honest sequence.\n\n**Book the term loan separately.** It is a planning conversation, not a fix, and it lands better when she is not worried about October."
   }
 ]

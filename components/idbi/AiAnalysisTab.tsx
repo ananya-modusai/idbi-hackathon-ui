@@ -345,14 +345,13 @@ export function AiAnalysisTab() {
                   <TableHead className="w-[42%] py-2">Insight</TableHead>
                   <TableHead className="py-2 text-right">Score</TableHead>
                   <TableHead className="py-2">Status</TableHead>
-                  <TableHead className="w-10 py-2"> </TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {groups.map(group => (
                   <React.Fragment key={group.id}>
                     <TableRow className="bg-slate-50 hover:bg-slate-50">
-                      <TableCell colSpan={5} className="sticky left-0 bg-slate-50 py-1.5 font-semibold">
+                      <TableCell colSpan={4} className="sticky left-0 bg-slate-50 py-1.5 font-semibold">
                         <span className="inline-flex items-center gap-2">
                           {(() => { const GIcon = GROUP_ICONS[group.id] ?? ListChecks; return <GIcon className="size-3.5 text-blue-600" />; })()}
                           {group.label} <span className="font-medium text-slate-400">({group.drivers.length})</span>
@@ -370,7 +369,6 @@ export function AiAnalysisTab() {
                         <TableCell className="py-3 text-slate-600">{driver.assessment}</TableCell>
                         <TableCell className="py-3 text-right font-medium tabular-nums text-slate-800">{typeof driver.score === "number" ? driver.score : "—"}</TableCell>
                         <TableCell className="py-3"><StatusPill tone={bandTone(driver.band) as any}>{driver.band}</StatusPill></TableCell>
-                        <TableCell className="py-3"><ChevronRight className="size-4 text-slate-400" /></TableCell>
                       </TableRow>
                     ))}
                   </React.Fragment>

@@ -14,6 +14,8 @@ import {
 import { KeyMetrics } from "@/components/custom/KeyMetrics";
 import { CustomTableView, Column } from "@/components/custom/CustomTableView";
 import { BubbleTag } from "@/components/custom/BubbleTag";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Toast } from "@/components/idbi/workspace-ui";
 import CustomListFilter, {
   PrimaryFilterGroup,
   SecondaryFilterGroup,
@@ -25,6 +27,9 @@ import screenData from "@/app/idbi-data/customer-screen-1.json";
 type Customer = (typeof screenData.customers)[number];
 
 const MY_RM = "Ananya Rao";
+const UNASSIGNED = "Unassigned";
+/** The relationship managers a customer can be assigned to. */
+const RM_ROSTER = ["Ananya Rao", "Kabir Mehta", "Priya Nair", "Rohan Das", UNASSIGNED];
 const PRIORITY_RANK: Record<string, number> = { High: 0, Medium: 1, Low: 2 };
 
 const priorityColor = (p: string) =>
@@ -37,9 +42,17 @@ const priorityLabel = (p: string) => `${PRIORITY_RANK_LABEL[p] ?? "P3"} · ${p}`
 const healthColor = (band: string) =>
   band === "Good" ? "green" : band === "Poor" ? "red" : "yellow";
 
+/** Business or Individual — what kind of customer this is. */
+const categoryColor = (category: string) => (category === "Business" ? "indigo" : "teal");
+
 /** Relationship tier, coloured to its metal: Platinum · Gold · Silver · Bronze. */
 const tierColor = (tier: string) =>
-  tier === "Platinum" ? "platinum" : tier === "Gold" ? "gold" : tier === "Silver" ? "silver" : "bronze";
+  tier === "Platinum" ? "platinum"
+    : tier === "Gold" ? "gold"
+    : tier === "Silver" ? "silver"
+    : tier === "Bronze" ? "bronze"
+    // A prospect has not earned a tier yet — plain grey, not a metal.
+    : "gray";
 
 type Scope = "my" | "team";
 
@@ -52,8 +65,28 @@ export const CustomersScreen: FC<{
   const [searchQuery, setSearchQuery] = useState("");
   const [prioritySelected, setPrioritySelected] = useState<string[]>([]);
   const [sortSelected, setSortSelected] = useState<string[]>(["priority"]);
+  // Who each customer is assigned to. `saved` is what is on file; `draft` is what the
+  // RM has changed on screen but not committed — any difference turns on edit mode.
+  const [savedAssignees, setSavedAssignees] = useState<Record<string, string>>({});
+  const [draftAssignees, setDraftAssignees] = useState<Record<string, string>>({});
+  const [toast, setToast] = useState<string | null>(null);
 
   const all = screenData.customers as Customer[];
+
+  // Seed both maps from the file the first time the list renders.
+  const baseline = useMemo(
+    () => Object.fromEntries(all.map(c => [c.customer_id, c.relationship_owner])) as Record<string, string>,
+    [all]
+  );
+  const assigned = (id: string) => draftAssignees[id] ?? savedAssignees[id] ?? baseline[id] ?? UNASSIGNED;
+  const dirtyIds = Object.keys(draftAssignees).filter(id => draftAssignees[id] !== (savedAssignees[id] ?? baseline[id]));
+  const isEditing = dirtyIds.length > 0;
+
+  const saveAssignees = () => {
+    setSavedAssignees(prev => ({ ...prev, ...draftAssignees }));
+    setDraftAssignees({});
+    setToast(`${dirtyIds.length} customer${dirtyIds.length === 1 ? "" : "s"} reassigned`);
+  };
   const myCount = all.filter((c) => c.relationship_owner === MY_RM).length;
 
   const priorityOptions = useMemo(
@@ -207,7 +240,8 @@ export const CustomersScreen: FC<{
     {
       key: "name",
       header: "Customer",
-      width: "16%",
+      width: "14%",
+      minWidth: "190px",
       render: (v: string, row: Record<string, any>) => (
         <div className="flex min-w-0 items-start justify-between gap-2">
           <div className="min-w-0">
@@ -249,29 +283,47 @@ export const CustomersScreen: FC<{
         </div>
       ),
     },
-    { key: "location", header: "Location", width: "10%" },
+    {
+      key: "category",
+      header: "Category",
+      width: "10%",
+      minWidth: "124px",
+      render: (v: string) => <BubbleTag text={v} color={categoryColor(v)} withBorder={true} fixedWidth="w-[88px]" />,
+    },
+    { key: "location", header: "Location", width: "9%", minWidth: "128px" },
     {
       key: "relationship",
       header: "Relationship",
-      width: "11%",
+      width: "10%",
+      minWidth: "128px",
       render: (v: string) => <BubbleTag text={v} color="gray" withBorder={true} />,
     },
     {
       key: "tier",
       header: "Tier",
-      width: "8%",
+      width: "9%",
+      minWidth: "118px",
       render: (v: string) => <BubbleTag text={v} color={tierColor(v)} withBorder={true} fixedWidth="w-[88px]" />,
+    },
+    {
+      key: "health",
+      header: "Financial Health",
+      width: "11%",
+      minWidth: "142px",
+      render: (h: any) => <BubbleTag text={`${h.score}/100 · ${h.band}`} color={healthColor(h.band)} withBorder={true} />,
     },
     {
       key: "requests",
       header: "Requests & Applications",
-      width: "14%",
+      width: "11%",
+      minWidth: "142px",
       render: (reqs: any[]) => {
         if (!reqs?.length) return <span className="text-gray-400">—</span>;
         const first = reqs[0];
         return (
           <div className="min-w-0">
-            <span className="text-gray-800">{first.product} · {first.stage}</span>
+            <span className="block text-gray-800">{first.product}</span>
+            <span className="block text-gray-800">{first.stage}</span>
             <span className="mt-0.5 block text-xs text-gray-500">
               {first.date}
               {reqs.length > 1 ? ` · +${reqs.length - 1} more` : ""}
@@ -281,25 +333,44 @@ export const CustomersScreen: FC<{
       },
     },
     {
-      key: "health",
-      header: "Financial Health",
-      width: "10%",
-      render: (h: any) => <BubbleTag text={`${h.score}/100 · ${h.band}`} color={healthColor(h.band)} withBorder={true} />,
-    },
-    {
       key: "opportunity",
       header: "AI Recommendation",
-      width: "20%",
+      width: "18%",
+      minWidth: "250px",
       render: (o: any) => (
         <div className="min-w-0">
-          <span className="font-semibold text-blue-600">{o.title}</span>
-          <span className="mt-0.5 block text-xs text-gray-500">{o.reason}</span>
-          <span className="mt-1 inline-block">
+          <span className="mb-1 inline-block">
             <BubbleTag text={o.objective} color="blue" withBorder={true} />
           </span>
+          <span className="block font-semibold text-blue-600">{o.title}</span>
+          <span className="mt-0.5 block text-xs text-gray-500">{o.reason}</span>
         </div>
       ),
     },
+    // Team view only: who the customer belongs to, editable in place.
+    ...(scope === "team"
+      ? [{
+          key: "assignee",
+          header: "Relationship Manager",
+          width: "11%",
+          minWidth: "148px",
+          render: (_v: any, row: Record<string, any>) => (
+            <div onClick={e => e.stopPropagation()}>
+              <Select
+                value={assigned(row.customer_id)}
+                onValueChange={value => setDraftAssignees(prev => ({ ...prev, [row.customer_id]: value }))}
+              >
+                <SelectTrigger className="h-9 w-full border-transparent bg-gray-100 text-sm text-gray-800 shadow-none hover:bg-gray-200 focus:ring-0">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent position="popper">
+                  {RM_ROSTER.map(rm => <SelectItem key={rm} value={rm}>{rm}</SelectItem>)}
+                </SelectContent>
+              </Select>
+            </div>
+          ),
+        } as Column]
+      : []),
   ];
 
   const TABS: { id: Scope; label: string; count: number }[] = [
@@ -309,6 +380,8 @@ export const CustomersScreen: FC<{
 
   return (
     <div className="flex min-h-0 min-w-0 flex-1 flex-col">
+      <Toast message={toast} onDone={() => setToast(null)} />
+
       {/* Tab bar — pinned to the very top of the content card (cam-ui pattern). */}
       <div className="flex shrink-0 border-b border-gray-200">
         {TABS.map((t) => (
@@ -335,6 +408,20 @@ export const CustomersScreen: FC<{
           <div className="flex min-w-0 items-center gap-2">
             <LayoutGrid className="h-5 w-5 flex-shrink-0 text-blue-700" />
             <span className="truncate text-lg font-semibold text-blue-700">Workspace</span>
+            {/* Reassigning a customer turns on edit mode; nothing is committed until Save. */}
+            {isEditing && (
+              <span className="ml-auto flex shrink-0 items-center gap-2">
+                <span className="text-xs text-gray-500">
+                  {dirtyIds.length} unsaved change{dirtyIds.length === 1 ? "" : "s"}
+                </span>
+                <Button variant="outline" className="h-9 border-gray-300 px-3 font-semibold text-gray-600" onClick={() => setDraftAssignees({})}>
+                  Cancel
+                </Button>
+                <Button className="h-9 bg-blue-600 px-3 font-semibold text-white hover:bg-blue-700" onClick={saveAssignees}>
+                  Save
+                </Button>
+              </span>
+            )}
           </div>
           <p className="mt-1 text-sm text-gray-500">
             Review customer priorities, open requests and AI recommendations across your book.
@@ -361,7 +448,17 @@ export const CustomersScreen: FC<{
         </div>
 
         <div className="min-w-0 overflow-x-auto">
-          <CustomTableView columns={columns} data={rows} className="w-full" initialRowLimit={10} onRowClick={(row) => onOpenCustomer?.(row)} />
+          {/* The table is laid out wider than the card so the columns get real room:
+              it scrolls sideways while Lead Priority and Customer ID stay pinned.
+              CustomTableView renders the table at width:100% with a fixed layout, so
+              the floor has to be set on the table element itself. */}
+          <CustomTableView
+            columns={columns}
+            data={rows}
+            className={cn("w-full", scope === "team" ? "[&_table]:min-w-[1650px]" : "[&_table]:min-w-[1500px]")}
+            initialRowLimit={10}
+            onRowClick={(row) => onOpenCustomer?.(row)}
+          />
         </div>
       </div>
     </div>

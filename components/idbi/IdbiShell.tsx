@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { FC, ReactNode } from "react";
-import { LayoutGrid, Users, UserRound, Activity, Bell, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
+import { LayoutGrid, Users, UserRound, Activity, Bell, BellRing, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import {
@@ -41,6 +41,8 @@ const SIDEBAR_GROUPS: SidebarGroupDef[] = [
       { label: "Workspace", icon: LayoutGrid },
       // The Customer space — one customer's workspace, opened from the list.
       { label: "Customer", icon: UserRound },
+      // Book-level view of the opportunity probes that the Customer space shows per customer.
+      { label: "Sales & Alerts", icon: BellRing },
       { label: "Team & Performance", icon: Activity },
     ],
   },
