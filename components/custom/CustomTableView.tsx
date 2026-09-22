@@ -91,6 +91,8 @@ interface CustomTableViewProps {
   onRowClick?: (row: Record<string, any>) => void;
   // Custom row className
   rowClassName?: string;
+  /** Per-row classes — lets a screen mark individual rows as unavailable. */
+  getRowClassName?: (row: Record<string, any>) => string;
   // Optional ref from parent to trigger CSV download programmatically.
   downloadCsvRef?: React.MutableRefObject<(() => void) | null>;
   exportRef?: React.MutableRefObject<(() => void) | null>;
@@ -187,6 +189,7 @@ export const CustomTableView: FC<CustomTableViewProps> = ({
   onRowClick,
   // Custom row className
   rowClassName,
+  getRowClassName,
   titleRightContent,
   titleIcon,
   hoverBgColor,
@@ -967,6 +970,8 @@ export const CustomTableView: FC<CustomTableViewProps> = ({
                           key={rowIndex}
                           className={`group transition-colors duration-150 ease-in-out ${getRowBackgroundClass()} ${
                             rowClassName || ""
+                          } ${
+                            getRowClassName && !isTotalRow ? getRowClassName(row) : ""
                           } ${
                             onRowClick && !isTotalRow ? "cursor-pointer" : ""
                           }`}

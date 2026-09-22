@@ -35,7 +35,7 @@ const PRIORITY_RANK: Record<string, number> = { High: 0, Medium: 1, Low: 2 };
 
 // Only these two have a workspace authored behind them; the rest are list-only for
 // now, so opening them would show someone else's file.
-const OPENABLE_CUSTOMERS = ["990000029", "990000142"];
+const OPENABLE_CUSTOMERS = ["990000029"];
 
 const priorityColor = (p: string) =>
   p === "High" ? "red" : p === "Medium" ? "yellow" : "gray";
@@ -652,6 +652,9 @@ export const CustomersScreen: FC<{
             className={cn("w-full", scope === "team" ? "[&_table]:min-w-[1640px]" : "[&_table]:min-w-[1500px]")}
             initialRowLimit={10}
             onRowClick={(row) => { if (OPENABLE_CUSTOMERS.includes(row.customer_id)) onOpenCustomer?.(row); }}
+            getRowClassName={(row) =>
+              OPENABLE_CUSTOMERS.includes(row.customer_id) ? "" : "opacity-55 grayscale-[.35] !cursor-not-allowed [&_*]:!cursor-not-allowed"
+            }
           />
         </div>
       </div>

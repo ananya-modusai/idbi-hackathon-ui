@@ -482,6 +482,10 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
 
       {/* Composer */}
       <div className="shrink-0 px-4 pb-4 pt-2">
+        {/* Sets expectations before the RM types: the answers are prepared, not live. */}
+        <p className="mb-2 px-1 text-center text-[11px] leading-4 text-gray-400">
+          Responses are curated for this walkthrough and illustrate intended behaviour rather than live model output.
+        </p>
         {attachError && <p className="mb-2 text-xs text-red-600">{attachError}</p>}
         <div className="rounded-3xl border border-gray-200 bg-white shadow-md focus-within:border-blue-300 focus-within:ring-1 focus-within:ring-blue-200">
           {attachments.length > 0 && (
