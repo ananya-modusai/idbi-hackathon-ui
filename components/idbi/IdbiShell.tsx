@@ -18,6 +18,7 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { UserProfileFooter } from "@/components/custom/UserProfileFooter";
+import { ActiveContext } from "./ActiveContext/ActiveContext";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["800"] });
 
@@ -35,9 +36,10 @@ const SIDEBAR_GROUPS: SidebarGroupDef[] = [
   {
     label: "Relationship Management",
     items: [
-      { label: "My Workspace", icon: LayoutGrid },
-      { label: "Customers", icon: Users },
-      // The Customer space — one customer's 3-tab workspace, opened from the list.
+      // The customer book. Carries the My Workspace icon now that the separate
+      // My Workspace section is gone.
+      { label: "Workspace", icon: LayoutGrid },
+      // The Customer space — one customer's workspace, opened from the list.
       { label: "Customer", icon: UserRound },
       { label: "Team & Performance", icon: Activity },
     ],
@@ -109,6 +111,8 @@ interface IdbiShellProps {
   active?: string;
   breadcrumb?: string[];
   onNavigate?: (label: string) => void;
+  /** Picking a customer from the topbar active-context palette opens their workspace. */
+  onSelectCustomer?: (customer: any) => void;
   children: ReactNode;
 }
 
@@ -117,9 +121,10 @@ interface IdbiShellProps {
  * scroll region, so side panels (Modus Agent) stay fixed while the main column scrolls.
  */
 export const IdbiShell: FC<IdbiShellProps> = ({
-  active = "Customers",
-  breadcrumb = ["Relationship Management", "Customers"],
+  active = "Workspace",
+  breadcrumb = ["Relationship Management", "Workspace"],
   onNavigate,
+  onSelectCustomer,
   children,
 }) => {
   return (
@@ -137,8 +142,14 @@ export const IdbiShell: FC<IdbiShellProps> = ({
                 </span>
               ))}
             </nav>
-            <div className="flex items-center gap-4">
-              <span className="rounded-md border border-gray-200 px-2.5 py-1 text-xs text-gray-500">Demo data · 19 Sep 2026</span>
+            <div className="flex shrink-0 items-center gap-4">
+              {/* Active context — cam's topbar widget: what the workspace is pointed at
+                  right now, and a palette to point it somewhere else. */}
+              <ActiveContext
+                activeGroup={SIDEBAR_GROUPS[0].label}
+                activeItem={active}
+                onSelectCustomer={onSelectCustomer}
+              />
               <Bell className="h-5 w-5 text-gray-400" />
             </div>
           </header>

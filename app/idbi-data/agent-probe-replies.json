@@ -1,0 +1,313 @@
+[
+  {
+    "label": "Quote a ₹1.25Cr term life top-up for Vandana Singh, age 54, non-smoker, self-employed, and show how it sits against her existing ₹33L cover and ₹36.75L of borrowing.",
+    "trail": {
+      "label": "Priced the term top-up",
+      "runningLabel": "Pricing the term top-up",
+      "steps": [
+        {
+          "text": "Read existing life cover — ₹33.00L across 2 policies"
+        },
+        {
+          "text": "Pulled reported borrowing — ₹36.75L, no credit-life attached"
+        },
+        {
+          "text": "Ran the IDBI Federal age-54 non-smoker rate card"
+        }
+      ]
+    },
+    "reply": "**Indicative quote: ₹1.25Cr pure term, 15-year policy term.**\n\n| Item | Figure |\n| --- | --- |\n| Sum assured | ₹1.25Cr |\n| Annual premium | ₹31,480 |\n| Monthly equivalent | ₹2,625 |\n| Medical | Tele-underwriting + lipid profile |\n\n**Where it leaves her**\n\n- Cover today is **₹33.00L** against business income of ₹23.4L — about **1.4×**, where the working benchmark is 10×.\n- Of the **₹36.75L** outstanding, **nothing** carries credit-life. If she were not there tomorrow, that debt lands on the business and on Rajesh.\n- Top-up takes total cover to **₹1.58Cr**, or roughly **6.8×** income, and puts the borrowing fully behind cover.\n\n**Worth saying on the call:** the ₹42,180 she pays LIC each year buys only ₹8L of cover because it is an endowment. The ₹31,480 term premium buys ₹1.25Cr. Do not ask her to cancel the LIC policy — just show the two numbers side by side."
+  },
+  {
+    "label": "Explain a ₹10L critical-illness rider for Vandana Singh against her existing ₹5L family floater and ₹10L top-up, in plain language, with the premium and what it pays out.",
+    "trail": {
+      "label": "Compared the health stack",
+      "runningLabel": "Comparing the health stack",
+      "steps": [
+        {
+          "text": "Read the Star Health floater and Niva Bupa top-up"
+        },
+        {
+          "text": "Checked the deductible structure"
+        },
+        {
+          "text": "Priced the CI rider at her age band"
+        }
+      ]
+    },
+    "reply": "**What she has now**\n\n| Policy | Pays | Catch |\n| --- | --- | --- |\n| Star Health floater, ₹5L | Hospital bills, 4 members | Shared — one admission can use it all |\n| Niva Bupa top-up, ₹10L | Only above ₹5L in a year | Does not trigger on small claims |\n\n**What it does not pay for**\n\nBoth are *reimbursement* policies: they pay the hospital, against bills. Neither pays for the six months afterwards when she cannot run the unit — no income replacement, no EMI cover, nothing for treatment taken at home.\n\n**Critical illness rider — ₹10L at ₹11,800 a year**\n\n- Pays the **full ₹10L as a lump sum on diagnosis**, not against bills.\n- Covers 22 listed conditions including cardiac, stroke and cancer.\n- She can spend it on anything — EMIs, staff wages, a second opinion abroad.\n\n**The line that lands:** the floater pays the hospital. This pays *her*."
+  },
+  {
+    "label": "Prepare a motor renewal quote for Vandana Singh's PB-10 ••4417 with the 45% no-claim bonus carried over, bundled with her shop fire policy, and show the saving against her current ₹21,300 premium.",
+    "trail": {
+      "label": "Built the bundled renewal",
+      "runningLabel": "Building the bundled renewal",
+      "steps": [
+        {
+          "text": "Read the ICICI Lombard policy — IDV ₹12.40L, renews 19 Nov 2026"
+        },
+        {
+          "text": "Confirmed 4 claim-free years — NCB 45%, portable"
+        },
+        {
+          "text": "Applied the multi-policy bundle discount"
+        }
+      ]
+    },
+    "reply": "**Renewal quote — due 19 Nov 2026, 62 days out.**\n\n| Component | Current (ICICI Lombard) | IDBI bundled |\n| --- | --- | --- |\n| Own damage | ₹13,900 | ₹12,050 |\n| Third party (regulated) | ₹7,400 | ₹7,400 |\n| NCB applied | 45% | 45% (carried over) |\n| Bundle discount | — | −₹1,100 |\n| **Total** | **₹21,300** | **₹18,750** |\n\n**Saving: ₹2,550 a year**, about 12%.\n\n**Two things to get right**\n\n1. The no-claim bonus is hers, not the insurer's — it ports across on a signed NCB certificate. Say that explicitly; most customers assume they lose it.\n2. Start it now. Inside 30 days of expiry it becomes a rush, and a lapse resets the 45% to zero."
+  },
+  {
+    "label": "Show Vandana Singh how the average clause would apply to a ₹10L fire loss on her ₹18L shop policy when actual stock is ₹31L, and what raising the sum insured to ₹32L would cost.",
+    "trail": {
+      "label": "Worked the average clause",
+      "runningLabel": "Working the average clause",
+      "steps": [
+        {
+          "text": "Read the Bharti AXA policy — sum insured ₹18.00L, declared Mar 2026"
+        },
+        {
+          "text": "Pulled average stock from GST returns — ₹31L"
+        },
+        {
+          "text": "Repriced at a ₹32L sum insured"
+        }
+      ]
+    },
+    "reply": "**The arithmetic she needs to see.**\n\nThe policy covers ₹18L. Actual stock and fixtures are ₹31L. So she is insured for **58%** of what she owns, and the average clause says the insurer pays that same 58% of any claim — not just the claims above ₹18L.\n\n| Fire loss | She expects | Insurer actually pays | Out of her pocket |\n| --- | --- | --- | --- |\n| ₹5.00L | ₹5.00L | ₹2.90L | ₹2.10L |\n| ₹10.00L | ₹10.00L | ₹5.80L | ₹4.20L |\n| ₹18.00L | ₹18.00L | ₹10.44L | ₹7.56L |\n\n**The fix**\n\n| | Now | Revised |\n| --- | --- | --- |\n| Sum insured | ₹18.00L | ₹32.00L |\n| Annual premium | ₹7,640 | ₹12,740 |\n\n**₹5,100 more a year** — ₹425 a month — to stop a ₹10L fire from costing her ₹4.2L of her own money. This is not a sale, it is a correction: she is already paying for cover she cannot fully collect on."
+  },
+  {
+    "label": "Explain why a ₹50L personal accident policy with disability income benefit matters for Vandana Singh as a sole proprietor servicing ₹36.75L of borrowing, and quote the premium.",
+    "trail": {
+      "label": "Assessed the income-protection gap",
+      "runningLabel": "Assessing the income-protection gap",
+      "steps": [
+        {
+          "text": "Confirmed sole-proprietor structure — no key-person cover"
+        },
+        {
+          "text": "Read the EMI obligation — ₹71,422 a month"
+        },
+        {
+          "text": "Priced a ₹50L PA policy with TTD benefit"
+        }
+      ]
+    },
+    "reply": "**She is the business.** Vandana Enterprises is a proprietorship: no partner, no key-person cover, no one else who can sign. If she cannot work for six months, the ₹71,422 EMI does not pause.\n\n**What the current stack does on a serious accident**\n\n- Health policies pay the hospital. ✅\n- Life cover pays only on death. ❌ nothing for disability.\n- Nothing at all replaces income. ❌\n\n**₹50L personal accident — ₹6,200 a year**\n\n| Benefit | Pays |\n| --- | --- |\n| Accidental death | ₹50L |\n| Permanent total disablement | ₹50L |\n| Temporary total disablement | ₹25,000 a week, up to 104 weeks |\n| Hospital cash | ₹2,500 a day |\n\nThe weekly benefit alone covers **₹1.08L a month** — more than the EMI.\n\n**₹517 a month is the cheapest cover on her file relative to what it protects.** If she says yes to one thing today, make it this one."
+  },
+  {
+    "label": "Work out an ESOP funding facility for Vandana Singh: 4,800 Helix Logistics options at a ₹42 strike, ₹18.4L perquisite tax, listing expected in the December quarter. Show the facility size, tenor and exit route.",
+    "trail": {
+      "label": "Structured the ESOP facility",
+      "runningLabel": "Structuring the ESOP facility",
+      "steps": [
+        {
+          "text": "Read the holding — 4,800 vested, strike ₹42, exercise cost ₹2.02L"
+        },
+        {
+          "text": "Priced the perquisite at slab on the ₹1,180 fair value"
+        },
+        {
+          "text": "Checked the DRHP timeline and lock-in position"
+        }
+      ]
+    },
+    "reply": "**Facility: ₹20.50L, 9 months, repaid out of listing proceeds.**\n\n| Item | Amount |\n| --- | --- |\n| Exercise cost (4,800 × ₹42) | ₹2.02L |\n| Perquisite tax at exercise | ₹18.40L |\n| **Funding required** | **₹20.42L** |\n| Facility sanctioned | ₹20.50L |\n| Rate | 10.5% p.a., interest serviced monthly |\n| Security | Lien on the demat holding |\n\n**Why she needs it.** The perquisite tax is due at *exercise*, not at sale — the spread between the ₹42 strike and the ₹1,180 fair value is treated as salary. She owes ₹18.4L in cash on shares she cannot sell yet. Without funding, the only way to pay it is to not exercise at all, or to sell into the listing at whatever price the first day gives her.\n\n**The exit.** Options at ₹42, indicative value ₹1,275 at the mid band — **₹61.2L** against a ₹20.5L facility. Even a listing 40% below the band clears it comfortably.\n\n**Timing.** Listing is expected in the December quarter and the exercise window closes before it. This needs to start now, not after the price band is announced."
+  },
+  {
+    "label": "Explain what Vandana Singh needs to open a 3-in-1 IDBI demat and trading account before her Helix Logistics options are allotted, and how long it takes.",
+    "trail": {
+      "label": "Checked demat onboarding",
+      "runningLabel": "Checking demat onboarding",
+      "steps": [
+        {
+          "text": "Confirmed no demat account on the customer record"
+        },
+        {
+          "text": "Read KYC status — verified 12 Jun 2026"
+        },
+        {
+          "text": "Checked allotment prerequisites"
+        }
+      ]
+    },
+    "reply": "**She has no demat account with us, and allotment needs one.**\n\n**What is already done**\n\n- KYC verified 12 Jun 2026 ✅\n- PAN, Aadhaar and bank proof on file ✅\n- Savings account ••••0291 for the 3-in-1 link ✅\n\n**What is still needed**\n\n| Step | Who | Time |\n| --- | --- | --- |\n| Demat + trading application | Customer, e-signed | 15 minutes |\n| In-person verification | Video KYC | Same day |\n| Nomination | Customer | With the form |\n| CDSL activation | Automatic | 2 working days |\n\n**Realistically 3 working days end to end**, and the exercise window closes before listing. There is no reason to wait for the price band — the account can sit open and empty at no cost.\n\n**One thing to flag:** the 3-in-1 link means the listing proceeds land in her IDBI savings account rather than at a broker, which is also how we keep the ₹59.2L conversation."
+  },
+  {
+    "label": "Draft a plan for deploying a ₹59.2L post-listing inflow for Vandana Singh, age 54, self-employed, covering capital-gains treatment, liquid parking and a staggered allocation.",
+    "trail": {
+      "label": "Drafted the deployment plan",
+      "runningLabel": "Drafting the deployment plan",
+      "steps": [
+        {
+          "text": "Sized the net inflow after tax and facility repayment"
+        },
+        {
+          "text": "Read her risk profile — age 54, business income, ₹36.75L borrowing"
+        },
+        {
+          "text": "Checked capital-gains treatment on listed equity"
+        }
+      ]
+    },
+    "reply": "**Net position after the dust settles**\n\n| Item | Amount |\n| --- | --- |\n| Gross value at ₹1,275 | ₹61.20L |\n| Less exercise cost | −₹2.02L |\n| Less ESOP facility repayment | −₹20.50L |\n| **Free cash** | **≈ ₹38.70L** |\n\nThe ₹18.4L perquisite is already settled at exercise. What remains is capital gains on anything the price moves *after* allotment — long term at 12.5% beyond ₹1.25L if she holds 12 months past listing, short term at 20% if she sells earlier.\n\n**Staged plan**\n\n| Stage | Amount | Where | Why |\n| --- | --- | --- | --- |\n| Park, day 1 | ₹38.70L | Liquid fund / sweep FD | Decide with a clear head, not on listing day |\n| Month 1 | ₹12.00L | Prepay the highest-rate facility | Cuts the ₹71,422 EMI |\n| Month 1–6 | ₹15.00L | STP into a balanced allocation | Averages in rather than timing |\n| Retain | ₹11.70L | Business contingency | Capacity doubles in October |\n\n**Say this out loud:** a liquidity event this size moves to a competitor within weeks of credit, usually to whoever asked first. Book the conversation before listing, not after."
+  },
+  {
+    "label": "Add Vandana Singh's 600 vested Saanvi Analytics options at a ₹340 last valuation to her net-worth view and explain why it is illiquid.",
+    "trail": {
+      "label": "Recorded the advisory grant",
+      "runningLabel": "Recording the advisory grant",
+      "steps": [
+        {
+          "text": "Read the grant — 1,200 options, 600 vested, strike ₹110"
+        },
+        {
+          "text": "Checked for any secondary market or live event"
+        }
+      ]
+    },
+    "reply": "**Recorded: ₹2.04L notional** (600 × ₹340 last valuation), exercise cost ₹66,000, net notional ₹1.38L.\n\n**Why it is not money yet**\n\n- Saanvi Analytics is a seed-stage private company — no listing, no buyback, no secondary market.\n- The ₹340 comes from a **Nov 2025 seed extension**, which is a negotiated round price, not a traded one.\n- Advisory grants usually carry transfer restrictions that need board consent.\n\n**What it changes:** nothing to sell, but it belongs on the net-worth statement, and it is a reason not to lock up *all* of the Helix proceeds — she already carries one illiquid position."
+  },
+  {
+    "label": "Vandana Singh has two external credit-card enquiries in the last 90 days and no IDBI card. Check her pre-approved card eligibility and draft what I should say when I call her.",
+    "trail": {
+      "label": "Checked card eligibility",
+      "runningLabel": "Checking card eligibility",
+      "steps": [
+        {
+          "text": "Read the soft bureau pull — 2 card enquiries, no new account"
+        },
+        {
+          "text": "Ran the internal pre-approval model on 8 years of banking"
+        },
+        {
+          "text": "Compared against likely external offers"
+        }
+      ]
+    },
+    "reply": "**Pre-approved: ₹4.25L, no fresh bureau pull needed.**\n\n| Basis | Reading |\n| --- | --- |\n| Relationship | 8 years, 4 accounts |\n| Average balance | ₹2.69L |\n| Repayment conduct | 0 DPD on ₹36.75L |\n| Bureau | 766, +76 in 18 months |\n| Likely external offer | ₹2.0L–₹2.5L on income proof |\n\nHDFC on 22 Aug and Axis on 05 Sep will both underwrite her as a *self-employed applicant with one card* — thin file, income documents, ₹2L-ish. We underwrite her as an eight-year customer. That is the whole argument.\n\n**What to say**\n\n> \"Vandana ji, you've been with us eight years and we've never put a card in front of you — that's on us. I've had a limit pre-approved against your banking history, not a fresh credit check, so it doesn't touch your score. It's ₹4.25L, and it reviews upward at six months. If you're already looking at cards elsewhere, at least let me show you this one first.\"\n\n**Call this week.** Neither enquiry has converted yet; once one does, this becomes a balance-transfer conversation instead of a new-card one."
+  },
+  {
+    "label": "Model a balance transfer of ₹1.78L from Vandana Singh's SBI Card onto an IDBI card at 0.99% for 6 months, and show the interest saved and the effect on her utilisation ratio.",
+    "trail": {
+      "label": "Modelled the balance transfer",
+      "runningLabel": "Modelling the balance transfer",
+      "steps": [
+        {
+          "text": "Read the external card — ₹1.78L on a ₹2.50L limit"
+        },
+        {
+          "text": "Applied the revolve rate against the BT rate"
+        },
+        {
+          "text": "Recomputed utilisation on the combined limit"
+        }
+      ]
+    },
+    "reply": "**Transfer ₹1.78L at 0.99% for 6 months.**\n\n| | Stays on SBI Card | Moves to IDBI |\n| --- | --- | --- |\n| Rate | ~3.4% p.m. (40.8% p.a.) | 0.99% p.m. |\n| Interest over 6 months | ₹36,300 | ₹10,570 |\n| Processing fee | — | ₹1,780 (1%) |\n| **Net cost** | **₹36,300** | **₹12,350** |\n\n**Saving: ₹23,950 over six months.**\n\n**Effect on utilisation**\n\n| | Now | After |\n| --- | --- | --- |\n| Total limit | ₹2.50L | ₹6.75L |\n| Drawn | ₹1.78L | ₹1.78L |\n| Utilisation | **71%** | **26%** |\n\nAnything under 30% stops dragging the score. The bureau should reflect it within two reporting cycles.\n\n**The honest framing:** she is running a personal card at 71% to buy business stock, which is what people do when the working-capital limit is tight. The balance transfer treats the symptom; the working-capital enhancement already open on her file treats the cause. Do both, in that order."
+  },
+  {
+    "label": "Draft what I should say to Vandana Singh about the ₹4.25L pre-approved card limit and the ₹6.00L review after six months of clean conduct.",
+    "trail": {
+      "label": "Drafted the limit pitch",
+      "runningLabel": "Drafting the limit pitch",
+      "steps": [
+        {
+          "text": "Read the pre-approval and the six-month step-up"
+        },
+        {
+          "text": "Checked what the external offers are likely to be"
+        }
+      ]
+    },
+    "reply": "**Keep it to three sentences at the point of sale.**\n\n> \"The limit is ₹4.25L to start — that's set against your banking with us, not a credit check. Run it cleanly for six months and it reviews to around ₹6L automatically; you don't have to apply again. Compare that with whatever HDFC or Axis have quoted you on income documents alone.\"\n\n**Why the step-up matters more than the number**\n\nA customer holding three offers picks the one that tells them where it goes next. ₹4.25L against ₹2.5L elsewhere wins on the day; **₹4.25L → ₹6.00L** wins the relationship.\n\n**Do not promise it.** \"Reviews to around ₹6L on clean conduct\" is accurate. \"You'll get ₹6L\" is not, and she will remember which one you said."
+  },
+  {
+    "label": "Explain in plain language how Vandana Singh's CIBIL score moved from 690 to 766 and why a thin card file is holding it under 770.",
+    "trail": {
+      "label": "Read the bureau history",
+      "runningLabel": "Reading the bureau history",
+      "steps": [
+        {
+          "text": "Pulled 36 months of score movement"
+        },
+        {
+          "text": "Split the contribution by account type"
+        }
+      ]
+    },
+    "reply": "**The shape of the last three years**\n\n| When | Score | What happened |\n| --- | --- | --- |\n| Mar 2025 | 690 | Stretched quarter, high card utilisation |\n| Late 2024 | 654 | The dip — two months of tight cash flow |\n| Mar 2026 | 733 | Business stabilised, loan record clean |\n| Sep 2026 | **766** | 24 months with zero late payments |\n\n**What is carrying it:** the loan repayment record. ₹36.75L serviced with 0 DPD is the single strongest thing on her file.\n\n**What is holding it back:** one credit card since 2019. Bureaus want to see revolving credit handled well over time, and one card is a thin sample — which is why the score has stalled just under 770 even though everything else is clean. The 71% utilisation on that one card does not help either.\n\n**What a second card would do:** used lightly and paid in full, it widens the revolving file and typically adds **10–15 points over three to four cycles**. Say it as a reason, never as a promise — bureau scoring is not something we control."
+  },
+  {
+    "label": "Vandana Singh posted that Vandana Enterprises has been empanelled as a Tier-2 auto OEM supplier and doubles capacity from October. Assess what this means for her working-capital enquiry and what facilities to put in front of her.",
+    "trail": {
+      "label": "Assessed the OEM signal",
+      "runningLabel": "Assessing the OEM signal",
+      "steps": [
+        {
+          "text": "Read the LinkedIn post of 11 Sep 2026"
+        },
+        {
+          "text": "Cross-checked against the open working-capital enquiry"
+        },
+        {
+          "text": "Sized the cycle at doubled capacity"
+        }
+      ]
+    },
+    "reply": "**This changes the working-capital enquiry from a judgement call to a documented one.**\n\nThe enquiry logged on 18 Sep was sitting on \"cash flows improved recently\". An OEM empanelment is better than that: it is a named counterparty, a contracted rate and a receivable we can lend against.\n\n**What doubling capacity from October actually costs her**\n\n| Need | Timing | Size |\n| --- | --- | --- |\n| Raw material float | October | ₹14–18L |\n| Receivable gap at 75-day cycles | November | ₹9–11L |\n| Machinery already installed | Done | ₹18–24L (financed elsewhere) |\n\n**Facilities to put in front of her, in order**\n\n1. **Working-capital enhancement** — the live request. The order book supports a larger number than the original ask.\n2. **Invoice discounting against OEM receivables** — prices better than an overdraft and needs no fresh collateral, because an OEM is a strong obligor.\n3. **Machinery refinance** — the CNC line went in outside IDBI. Refinancing it releases cash she has already spent.\n\n**What to collect:** the empanelment letter and the first two OEM purchase orders. Those two documents move this from a social-media signal to a credit file.\n\n**Caution:** this is a public post, not a disclosure. Do not quote it back to her verbatim on the call — ask about the expansion and let her tell you."
+  },
+  {
+    "label": "Vandana Singh installed a new CNC line in September 2026 that was not financed through IDBI. Assess the refinance and asset-insurance opportunity, and tie it to the ₹13L under-declaration on her shop policy.",
+    "trail": {
+      "label": "Traced the asset",
+      "runningLabel": "Tracing the asset",
+      "steps": [
+        {
+          "text": "Read the Instagram post of 03 Sep 2026"
+        },
+        {
+          "text": "Checked IDBI accounts for an outflow of matching size"
+        },
+        {
+          "text": "Compared against the shop policy sum insured"
+        }
+      ]
+    },
+    "reply": "**Two findings, and they compound.**\n\n**1. The asset was financed outside IDBI.** A CNC line of this class runs **₹18–24L**. Nothing of that size left her IDBI accounts in the last twelve months, so it came from a competitor facility, a supplier credit line, or reserves. Any of the three is worth asking about — if it was reserves, she has just drained her buffer right before doubling capacity.\n\n**2. The asset is almost certainly uninsured.** Her shop policy covers ₹18L of stock and fixtures, declared in **March 2026** — six months before this machine existed. The policy was already short by ₹13L on stock alone.\n\n| | Declared | Actual |\n| --- | --- | --- |\n| Stock | ₹18.00L | ₹31.00L |\n| CNC line | — | ₹18–24L |\n| **Sum insured needed** | **₹18.00L** | **₹49–55L** |\n\nAt a claim the average clause would pay roughly **33 paise in the rupee**.\n\n**What to do**\n\n- **Equipment refinance** — release ₹15–20L against an asset she has already paid for, at a secured rate.\n- **Machinery breakdown cover** — a CNC line needs its own policy; fire cover does not pay for a spindle failure.\n- **Sum insured revision** — to ₹32L for stock, plus the machine separately.\n\n**The opener:** \"I saw the new line went in — congratulations. Is it on the shop policy yet?\" That question is worth more than any pitch."
+  },
+  {
+    "label": "Vandana Singh publicly said OEM payment cycles have stretched to 75 days. Size the receivables gap for Vandana Enterprises and compare invoice discounting against an overdraft enhancement.",
+    "trail": {
+      "label": "Sized the receivables gap",
+      "runningLabel": "Sizing the receivables gap",
+      "steps": [
+        {
+          "text": "Read the X post of 27 Aug 2026"
+        },
+        {
+          "text": "Modelled the cycle at 45 days against 75 days"
+        },
+        {
+          "text": "Priced discounting against an overdraft"
+        }
+      ]
+    },
+    "reply": "**She has stated the problem publicly and unprompted — that is as close to a disclosure as a social signal gets.**\n\n**Sizing it**\n\n| | At 45 days | At 75 days |\n| --- | --- | --- |\n| Monthly turnover | ₹14.5L | ₹14.5L |\n| Receivables locked | ₹21.8L | ₹36.3L |\n| **Extra cash tied up** | — | **≈ ₹14.5L** |\n\nAt doubled capacity from October that gap moves toward **₹25–29L**. This is why the personal card is at 71%.\n\n**The two ways to fund it**\n\n| | Invoice discounting | Overdraft enhancement |\n| --- | --- | --- |\n| Security | The OEM receivable itself | Fresh collateral or higher charge |\n| Rate | 9.5–11% p.a. | 12–16% p.a. |\n| Sizing | Scales with invoices raised | Fixed until the next review |\n| Underwriting | On the OEM's credit | On her balance sheet |\n| Setup | Needs OEM acknowledgement | Faster, she already has the limit |\n\n**Recommendation:** discounting, with the overdraft enhancement as the bridge while TReDS onboarding completes. She is financing an auto OEM's working capital at her own cost — the facility should price off *their* credit, not hers.\n\n**Do not open with the tweet.** Ask how the payment cycles have been this quarter."
+  },
+  {
+    "label": "Vandana Singh is speaking at the Ludhiana MSME Summit on women-led manufacturing and access to credit. Suggest how to use this as a relationship and referral touchpoint.",
+    "trail": {
+      "label": "Read the relationship signal",
+      "runningLabel": "Reading the relationship signal",
+      "steps": [
+        {
+          "text": "Read the LinkedIn post of 18 Aug 2026"
+        },
+        {
+          "text": "Checked the bank's presence at the summit"
+        }
+      ]
+    },
+    "reply": "**No product here. A relationship move, which is worth doing anyway.**\n\nShe is speaking on **access to credit** — at a summit IDBI sponsors — and she banks with us. That is either a very good story or a slightly awkward one, depending on whether her working-capital enquiry is still sitting open on the day.\n\n**Three things, in order**\n\n1. **Close the working-capital enquiry before the summit.** If she talks about access to credit having just had a good experience with us, that is worth more than a stall.\n2. **Turn up.** A relationship manager in the audience who congratulates her afterwards is remembered for years. This costs an afternoon.\n3. **Ask for the referral, once, afterwards.** She will be standing in a room of Punjab MSME founders — exactly the book we want — and she will have just been handed a platform. Ask then, not before.\n\n**One more:** she has been with us eight years, holds ₹2.69L in balances and is about to come into a ₹59.2L liquidity event. A priority-banking invitation timed to the summit reads as recognition rather than a sale."
+  }
+]

@@ -1,7 +1,7 @@
 "use client";
 
 import { FC, useMemo, useState } from "react";
-import { CalendarClock, ContactRound, MessageSquareText, MoreHorizontal, Users } from "lucide-react";
+import { CalendarClock, ContactRound, LayoutGrid, MessageSquareText, MoreHorizontal, Users } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -36,6 +36,10 @@ const priorityLabel = (p: string) => `${PRIORITY_RANK_LABEL[p] ?? "P3"} · ${p}`
 
 const healthColor = (band: string) =>
   band === "Good" ? "green" : band === "Poor" ? "red" : "yellow";
+
+/** Relationship tier, coloured to its metal: Platinum · Gold · Silver · Bronze. */
+const tierColor = (tier: string) =>
+  tier === "Platinum" ? "platinum" : tier === "Gold" ? "gold" : tier === "Silver" ? "silver" : "bronze";
 
 type Scope = "my" | "team";
 
@@ -249,8 +253,14 @@ export const CustomersScreen: FC<{
     {
       key: "relationship",
       header: "Relationship",
-      width: "8%",
+      width: "11%",
       render: (v: string) => <BubbleTag text={v} color="gray" withBorder={true} />,
+    },
+    {
+      key: "tier",
+      header: "Tier",
+      width: "8%",
+      render: (v: string) => <BubbleTag text={v} color={tierColor(v)} withBorder={true} fixedWidth="w-[88px]" />,
     },
     {
       key: "requests",
@@ -323,8 +333,8 @@ export const CustomersScreen: FC<{
             subtext sitting below the title and ABOVE the underline. */}
         <div className="w-full border-b border-gray-200 py-2">
           <div className="flex min-w-0 items-center gap-2">
-            <Users className="h-5 w-5 flex-shrink-0 text-blue-700" />
-            <span className="truncate text-lg font-semibold text-blue-700">Customers</span>
+            <LayoutGrid className="h-5 w-5 flex-shrink-0 text-blue-700" />
+            <span className="truncate text-lg font-semibold text-blue-700">Workspace</span>
           </div>
           <p className="mt-1 text-sm text-gray-500">
             Review customer priorities, open requests and AI recommendations across your book.

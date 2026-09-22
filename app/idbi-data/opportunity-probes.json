@@ -1,0 +1,677 @@
+{
+  "asOf": "2026-09-19",
+  "customer": "Vandana Singh",
+  "insurance": {
+    "source": "IRDAI policy registry · IDBI Federal Life records · customer declaration (12 Jun 2026)",
+    "summary": {
+      "policiesHeld": 6,
+      "totalCover": "₹78.40L",
+      "annualPremium": "₹1,23,630",
+      "gapsFound": 4,
+      "nextRenewal": "19 Nov 2026"
+    },
+    "groups": [
+      {
+        "id": "life",
+        "label": "Life & Term",
+        "icon": "HeartPulse",
+        "totalCover": "₹33.00L",
+        "annualPremium": "₹56,440",
+        "policies": [
+          {
+            "name": "Termsurance Classic",
+            "number": "TL ••••4471",
+            "insurer": "IDBI Federal Life",
+            "plan": "Pure term · 30 yr",
+            "cover": "₹25.00L",
+            "premium": "₹14,260 / yr",
+            "renews": "14 Mar 2027",
+            "status": "Active",
+            "held": "Held with IDBI"
+          },
+          {
+            "name": "Jeevan Anand (915)",
+            "number": "LIC ••••8802",
+            "insurer": "LIC of India",
+            "plan": "Endowment · maturity 2033",
+            "cover": "₹8.00L",
+            "premium": "₹42,180 / yr",
+            "renews": "28 Jul 2027",
+            "status": "Active",
+            "held": "External"
+          }
+        ],
+        "recommendation": {
+          "headline": "Term cover is 1.4× annual income against a 10× benchmark",
+          "detail": "Declared business income is ₹23.4L a year and reported borrowing is ₹36.75L, of which none is covered by a credit-life policy. A ₹1.25Cr pure-term top-up at age 54, non-smoker, costs about ₹31,500 a year — ₹2,625 a month debited from the current account.",
+          "product": "IDBI Federal Termsurance Classic — top-up",
+          "value": "₹1.25Cr cover",
+          "action": "Quote term top-up",
+          "prompt": "Quote a ₹1.25Cr term life top-up for Vandana Singh, age 54, non-smoker, self-employed, and show how it sits against her existing ₹33L cover and ₹36.75L of borrowing."
+        },
+        "card": {
+          "title": "Term cover top-up",
+          "subtitle": "Close a ₹1.25Cr protection gap",
+          "fit": "High fit",
+          "tags": [
+            "Insurance",
+            "Life & Term",
+            "Under-covered"
+          ],
+          "stats": [
+            {
+              "label": "Cover today",
+              "value": "₹33.00L",
+              "icon": "ShieldCheck"
+            },
+            {
+              "label": "Recommended",
+              "value": "₹1.25Cr",
+              "icon": "TrendingUp"
+            },
+            {
+              "label": "Premium (est)",
+              "value": "₹31,480 / yr",
+              "icon": "Coins"
+            }
+          ],
+          "whyNow": "Cover is 1.4× income against a 10× benchmark, and none of the ₹36.75L borrowing carries credit-life.",
+          "nextStep": "Confirm non-smoker status and book tele-underwriting; the rate rises at her next age band."
+        }
+      },
+      {
+        "id": "health",
+        "label": "Health & Medical",
+        "icon": "Stethoscope",
+        "totalCover": "₹15.00L",
+        "annualPremium": "₹38,250",
+        "policies": [
+          {
+            "name": "Family Health Optima",
+            "number": "SH ••••2290",
+            "insurer": "Star Health",
+            "plan": "Family floater · 4 members",
+            "cover": "₹5.00L",
+            "premium": "₹28,400 / yr",
+            "renews": "02 Feb 2027",
+            "status": "Active",
+            "held": "External"
+          },
+          {
+            "name": "ReAssure Super Top-up",
+            "number": "NB ••••7715",
+            "insurer": "Niva Bupa",
+            "plan": "Top-up · ₹5L deductible",
+            "cover": "₹10.00L",
+            "premium": "₹9,850 / yr",
+            "renews": "02 Feb 2027",
+            "status": "Active",
+            "held": "External"
+          }
+        ],
+        "recommendation": {
+          "headline": "No critical-illness cover behind a ₹5L base floater",
+          "detail": "The base floater is ₹5L for four members in the Ludhiana cluster, where the average cardiac-procedure claim now settles at ₹4.2L — one event would exhaust the floater for the whole family for that year. A ₹10L critical-illness rider pays a lump sum on diagnosis and costs ₹11,800 a year at her age band.",
+          "product": "Critical Illness rider · ₹10L",
+          "value": "₹11,800 / yr",
+          "action": "Explain CI cover",
+          "prompt": "Explain a ₹10L critical-illness rider for Vandana Singh against her existing ₹5L family floater and ₹10L top-up, in plain language, with the premium and what it pays out."
+        },
+        "card": {
+          "title": "Critical illness rider",
+          "subtitle": "Lump sum behind a ₹5L family floater",
+          "fit": "High fit",
+          "tags": [
+            "Insurance",
+            "Health",
+            "Rider"
+          ],
+          "stats": [
+            {
+              "label": "Base floater",
+              "value": "₹5.00L",
+              "icon": "ShieldCheck"
+            },
+            {
+              "label": "Rider cover",
+              "value": "₹10.00L",
+              "icon": "HeartPulse"
+            },
+            {
+              "label": "Premium (est)",
+              "value": "₹11,800 / yr",
+              "icon": "Coins"
+            }
+          ],
+          "whyNow": "One cardiac admission averages ₹4.2L in the Ludhiana cluster and would exhaust the floater for all four members.",
+          "nextStep": "Attach the rider at the 02 Feb renewal — mid-term addition needs fresh underwriting."
+        }
+      },
+      {
+        "id": "motor",
+        "label": "Motor",
+        "icon": "Car",
+        "totalCover": "₹12.40L",
+        "annualPremium": "₹21,300",
+        "policies": [
+          {
+            "name": "Private Car Package",
+            "number": "IL ••••4417",
+            "insurer": "ICICI Lombard",
+            "plan": "Comprehensive · PB-10 ••4417",
+            "cover": "₹12.40L IDV",
+            "premium": "₹21,300 / yr",
+            "renews": "19 Nov 2026",
+            "status": "Renews in 62 days",
+            "held": "External"
+          }
+        ],
+        "recommendation": {
+          "headline": "Renewal falls due in 62 days and sits outside IDBI",
+          "detail": "No claim has been made in four years, so the no-claim bonus stands at 45% and transfers to a new insurer without loss. Moving the renewal across and bundling it with the shop policy saves roughly 12% on the combined premium and brings the debit onto the current account.",
+          "product": "Motor renewal · bundled",
+          "value": "Saves ~₹2,550",
+          "action": "Start renewal quote",
+          "prompt": "Prepare a motor renewal quote for Vandana Singh's PB-10 ••4417 with the 45% no-claim bonus carried over, bundled with her shop fire policy, and show the saving against her current ₹21,300 premium."
+        },
+        "card": {
+          "title": "Motor renewal · bundled",
+          "subtitle": "Move the renewal on to IDBI",
+          "fit": "Good fit",
+          "tags": [
+            "Insurance",
+            "Motor",
+            "Renewal due"
+          ],
+          "stats": [
+            {
+              "label": "Renews in",
+              "value": "62 days",
+              "icon": "CalendarDays"
+            },
+            {
+              "label": "No-claim bonus",
+              "value": "45%",
+              "icon": "Percent"
+            },
+            {
+              "label": "Saving",
+              "value": "₹2,550 / yr",
+              "icon": "Coins"
+            }
+          ],
+          "whyNow": "Four claim-free years and a portable 45% no-claim bonus, on a policy that renews outside IDBI on 19 Nov.",
+          "nextStep": "Request the NCB certificate from ICICI Lombard and quote bundled with the shop policy."
+        }
+      },
+      {
+        "id": "property",
+        "label": "Shop & Property",
+        "icon": "Store",
+        "totalCover": "₹18.00L",
+        "annualPremium": "₹7,640",
+        "policies": [
+          {
+            "name": "Bharat Laghu Udyam Suraksha",
+            "number": "BA ••••1103",
+            "insurer": "Bharti AXA",
+            "plan": "Fire & allied perils · stock and fixtures",
+            "cover": "₹18.00L",
+            "premium": "₹7,640 / yr",
+            "renews": "31 Mar 2027",
+            "status": "Active",
+            "held": "External"
+          }
+        ],
+        "recommendation": {
+          "headline": "Stock is under-declared by about ₹13L",
+          "detail": "The sum insured was declared at ₹18L in March 2026. GST returns filed since then show average stock at hand of ₹31L. At a claim the insurer would apply the average clause and settle only 58 paise in the rupee — a ₹10L fire loss would pay ₹5.8L. Raising the sum insured to ₹32L costs ₹5,100 more a year.",
+          "product": "Sum insured revision · ₹32L",
+          "value": "+₹5,100 / yr",
+          "action": "Flag under-insurance",
+          "prompt": "Show Vandana Singh how the average clause would apply to a ₹10L fire loss on her ₹18L shop policy when actual stock is ₹31L, and what raising the sum insured to ₹32L would cost."
+        },
+        "card": {
+          "title": "Shop sum insured revision",
+          "subtitle": "₹13L of stock is uninsured",
+          "fit": "High fit",
+          "tags": [
+            "Insurance",
+            "Property",
+            "Under-insured"
+          ],
+          "stats": [
+            {
+              "label": "Declared",
+              "value": "₹18.00L",
+              "icon": "Store"
+            },
+            {
+              "label": "Actual stock",
+              "value": "₹31.00L",
+              "icon": "Layers"
+            },
+            {
+              "label": "Cost to fix",
+              "value": "+₹5,100 / yr",
+              "icon": "Coins"
+            }
+          ],
+          "whyNow": "The average clause would settle a ₹10L fire loss at ₹5.8L — she is paying for cover she cannot fully collect.",
+          "nextStep": "Take the latest GST stock statement and file a sum-insured endorsement at ₹32L."
+        }
+      },
+      {
+        "id": "accident",
+        "label": "Personal Accident & Income Protection",
+        "icon": "ShieldAlert",
+        "totalCover": "Not held",
+        "annualPremium": "—",
+        "policies": [],
+        "recommendation": {
+          "headline": "No personal-accident or income-protection cover on record",
+          "detail": "She is a sole proprietor: the business income and the EMIs on ₹36.75L both depend on her being able to work. A ₹50L personal-accident policy with a temporary-total-disablement benefit costs ₹6,200 a year — the single cheapest cover on this page relative to what it protects.",
+          "product": "Personal Accident · ₹50L",
+          "value": "₹6,200 / yr",
+          "action": "Add PA cover",
+          "prompt": "Explain why a ₹50L personal accident policy with disability income benefit matters for Vandana Singh as a sole proprietor servicing ₹36.75L of borrowing, and quote the premium."
+        },
+        "card": {
+          "title": "Personal accident cover",
+          "subtitle": "No income protection on record",
+          "fit": "High fit",
+          "tags": [
+            "Insurance",
+            "Not held",
+            "Sole proprietor"
+          ],
+          "stats": [
+            {
+              "label": "Cover",
+              "value": "₹50.00L",
+              "icon": "ShieldAlert"
+            },
+            {
+              "label": "Weekly benefit",
+              "value": "₹25,000",
+              "icon": "WalletCards"
+            },
+            {
+              "label": "Premium (est)",
+              "value": "₹6,200 / yr",
+              "icon": "Coins"
+            }
+          ],
+          "whyNow": "A sole proprietor servicing a ₹71,422 monthly EMI with nothing that pays out on disability.",
+          "nextStep": "Single-page proposal, no medicals at this sum insured — can be issued the same day."
+        }
+      }
+    ]
+  },
+  "esop": {
+    "source": "Customer declaration · MCA filings · SEBI DRHP registry · secondary-market price feed",
+    "summary": {
+      "employers": 2,
+      "vestedUnexercised": "5,400 options",
+      "indicativeValue": "₹63.2L",
+      "liveEvents": 1
+    },
+    "holdings": [
+      {
+        "id": "helix",
+        "company": "Helix Logistics Technologies Ltd",
+        "role": "Head of Operations · Jun 2009 – Jul 2018",
+        "status": "IPO filed",
+        "statusTone": "emerald",
+        "headline": "4,800 vested options · indicative ₹61.2L on listing",
+        "facts": [
+          {
+            "label": "Options granted",
+            "value": "12,000",
+            "secondary": "3 grants, 2011–2016"
+          },
+          {
+            "label": "Vested & unexercised",
+            "value": "4,800",
+            "secondary": "Exercise window open"
+          },
+          {
+            "label": "Strike price",
+            "value": "₹42.00",
+            "secondary": "Exercise cost ₹2.02L"
+          },
+          {
+            "label": "Indicative value",
+            "value": "₹61.2L",
+            "secondary": "At ₹1,275 mid band"
+          }
+        ],
+        "news": [
+          {
+            "date": "04 Sep 2026",
+            "source": "SEBI filing",
+            "headline": "Helix Logistics files DRHP for a ₹1,450 Cr IPO",
+            "detail": "Fresh issue of ₹900 Cr and an offer for sale of ₹550 Cr. Indicative price band of ₹1,240–1,310 reported by two merchant bankers; listing expected in the December quarter."
+          },
+          {
+            "date": "22 Aug 2026",
+            "source": "Secondary market",
+            "headline": "Unlisted shares trading at ₹1,180 in the grey market",
+            "detail": "Up from ₹840 six months ago. Employee sell-side liquidity has been thin since the company restricted transfers ahead of the filing."
+          }
+        ],
+        "detail": "She holds 4,800 vested but unexercised options from her years at Helix, at a strike of ₹42. Exercising costs ₹2.02L. At the mid point of the reported band those shares are worth about ₹61.2L, a gain of ₹59.2L. Tax lands in two places: the spread at exercise is taxed as a perquisite at slab — roughly ₹18.4L — and anything gained after listing is capital gains. The perquisite is due whether or not she sells, which is exactly the cash-flow problem an ESOP funding facility exists to solve.",
+        "opportunities": [
+          {
+            "title": "ESOP funding facility",
+            "value": "₹20.5L",
+            "why": "Covers the ₹2.02L exercise cost and the ₹18.4L perquisite tax so she does not have to sell into the listing to pay the tax bill.",
+            "action": "Check ESOP funding",
+            "prompt": "Work out an ESOP funding facility for Vandana Singh: 4,800 Helix Logistics options at a ₹42 strike, ₹18.4L perquisite tax, listing expected in the December quarter. Show the facility size, tenor and exit route."
+          },
+          {
+            "title": "3-in-1 demat and trading account",
+            "value": "Pre-listing",
+            "why": "Allotment needs a demat account in her name before the exercise window closes. She does not hold one with IDBI today.",
+            "action": "Open demat",
+            "prompt": "Explain what Vandana Singh needs to open a 3-in-1 IDBI demat and trading account before her Helix Logistics options are allotted, and how long it takes."
+          },
+          {
+            "title": "Post-listing wealth mandate",
+            "value": "₹59.2L inflow",
+            "why": "A liquidity event of this size usually moves to a competitor within weeks of credit. Booking the conversation now is the difference between a deposit and a mandate.",
+            "action": "Plan the proceeds",
+            "prompt": "Draft a plan for deploying a ₹59.2L post-listing inflow for Vandana Singh, age 54, self-employed, covering capital-gains treatment, liquid parking and a staggered allocation."
+          }
+        ]
+      },
+      {
+        "id": "saanvi",
+        "company": "Saanvi Analytics Pvt Ltd",
+        "role": "Advisory board · Apr 2021 – present",
+        "status": "Early stage",
+        "statusTone": "slate",
+        "headline": "1,200 options · 600 vested · no live event",
+        "facts": [
+          {
+            "label": "Options granted",
+            "value": "1,200",
+            "secondary": "Advisory grant, 2021"
+          },
+          {
+            "label": "Vested & unexercised",
+            "value": "600",
+            "secondary": "4-year schedule"
+          },
+          {
+            "label": "Strike price",
+            "value": "₹110.00",
+            "secondary": "Exercise cost ₹66,000"
+          },
+          {
+            "label": "Last valuation",
+            "value": "₹340",
+            "secondary": "Seed extension, Nov 2025"
+          }
+        ],
+        "news": [],
+        "detail": "A small advisory grant with no liquidity event in sight and no secondary market. Worth recording because it sits on her net-worth statement and affects how much of the Helix proceeds she can afford to lock up, but there is nothing to sell against it today.",
+        "opportunities": [
+          {
+            "title": "Record in net-worth statement",
+            "value": "₹2.04L notional",
+            "why": "Keeps the wealth profile complete ahead of the Helix conversation. No action needed from the customer.",
+            "action": "Note on file",
+            "prompt": "Add Vandana Singh's 600 vested Saanvi Analytics options at a ₹340 last valuation to her net-worth view and explain why it is illiquid."
+          }
+        ]
+      }
+    ]
+  },
+  "credit": {
+    "source": "Soft bureau pull · CIBIL TransUnion, 16 Sep 2026 · no score impact",
+    "summary": {
+      "score": "766",
+      "scoreMove": "+76 in 18 months",
+      "enquiries90d": 2,
+      "externalCards": 1,
+      "preApproved": "₹4.25L"
+    },
+    "signals": [
+      {
+        "id": "enquiries",
+        "title": "Two credit-card enquiries at other banks in 90 days",
+        "icon": "Search",
+        "tone": "amber",
+        "urgency": "Act this week",
+        "tags": [
+          "Bureau enquiry",
+          "Cross-sell",
+          "Act now"
+        ],
+        "headline": "HDFC Bank on 22 Aug, Axis Bank on 05 Sep",
+        "facts": [
+          {
+            "label": "Enquiries, 90 days",
+            "value": "2",
+            "secondary": "Both card products"
+          },
+          {
+            "label": "Approved elsewhere",
+            "value": "None yet",
+            "secondary": "No new account on bureau"
+          },
+          {
+            "label": "IDBI card held",
+            "value": "None",
+            "secondary": "8-year relationship"
+          }
+        ],
+        "detail": "She is shopping for a credit card right now and has not come to us, which is the honest read of two card enquiries in three weeks at two private banks. Neither has converted yet — the bureau shows no new card account — so the window is open. She has banked with IDBI for eight years and holds four accounts, and we have never put a card in front of her.",
+        "opportunity": "Pre-approved IDBI card at ₹4.25L, above what either enquiry is likely to sanction on income proof alone, issued against internal banking history rather than a fresh bureau pull.",
+        "action": "Check card eligibility",
+        "prompt": "Vandana Singh has two external credit-card enquiries in the last 90 days and no IDBI card. Check her pre-approved card eligibility and draft what I should say when I call her."
+      },
+      {
+        "id": "utilisation",
+        "title": "External card running at 71% utilisation",
+        "icon": "CreditCard",
+        "tone": "amber",
+        "urgency": "This month",
+        "tags": [
+          "Utilisation",
+          "Balance transfer"
+        ],
+        "headline": "₹1.78L drawn on a ₹2.50L limit, never late",
+        "facts": [
+          {
+            "label": "Limit",
+            "value": "₹2.50L",
+            "secondary": "SBI Card, opened 2019"
+          },
+          {
+            "label": "Current outstanding",
+            "value": "₹1.78L",
+            "secondary": "71% utilised"
+          },
+          {
+            "label": "Payment record",
+            "value": "0 late",
+            "secondary": "24 months clean"
+          }
+        ],
+        "detail": "Utilisation above 30% drags a bureau score even when every payment is on time, and hers has been sitting in the 60–75% band for five months. That is a business owner using a personal card for stock purchases because the working-capital limit is tight — the same story as the working-capital enquiry already open on her file.",
+        "opportunity": "A balance transfer onto an IDBI card at 0.99% for 6 months clears ₹1.78L of revolving interest, and the higher limit drops her utilisation ratio to about 42%, which the bureau will read as an improvement within two cycles.",
+        "action": "Model balance transfer",
+        "prompt": "Model a balance transfer of ₹1.78L from Vandana Singh's SBI Card onto an IDBI card at 0.99% for 6 months, and show the interest saved and the effect on her utilisation ratio."
+      },
+      {
+        "id": "limit",
+        "title": "Limit increase supported on banking conduct",
+        "icon": "TrendingUp",
+        "tone": "emerald",
+        "urgency": "When the card is live",
+        "tags": [
+          "Pre-approved",
+          "Limit review"
+        ],
+        "headline": "₹4.25L pre-approved, ₹6.00L on 6 months of conduct",
+        "facts": [
+          {
+            "label": "Pre-approved now",
+            "value": "₹4.25L",
+            "secondary": "Internal model"
+          },
+          {
+            "label": "At 6 months",
+            "value": "₹6.00L",
+            "secondary": "On clean conduct"
+          },
+          {
+            "label": "Average balance",
+            "value": "₹2.69L",
+            "secondary": "Across 4 accounts"
+          }
+        ],
+        "detail": "The pre-approved figure is built from eight years of banking history, an average balance of ₹2.69L and a clean repayment record on ₹36.75L of borrowing — not from the thin card file the bureau sees. Once the card has run six clean cycles the limit review is automatic and lands near ₹6.00L.",
+        "opportunity": "Say the six-month step-up out loud at the point of sale. A customer choosing between three offers picks the one that tells them where it goes next.",
+        "action": "Draft the pitch",
+        "prompt": "Draft what I should say to Vandana Singh about the ₹4.25L pre-approved card limit and the ₹6.00L review after six months of clean conduct."
+      },
+      {
+        "id": "thinfile",
+        "title": "Score up 76 points, but the card file is thin",
+        "icon": "Activity",
+        "tone": "blue",
+        "urgency": "Context",
+        "tags": [
+          "Bureau context",
+          "Score"
+        ],
+        "headline": "690 in Mar 2025 → 766 today, on one card",
+        "facts": [
+          {
+            "label": "Score today",
+            "value": "766",
+            "secondary": "CIBIL, 16 Sep 2026"
+          },
+          {
+            "label": "18-month move",
+            "value": "+76",
+            "secondary": "From 690"
+          },
+          {
+            "label": "Card accounts",
+            "value": "1",
+            "secondary": "Since 2019"
+          }
+        ],
+        "detail": "The score recovered from a 654 dip in late 2024 after a stretched quarter, and has climbed steadily since the business stabilised. It is being carried almost entirely by the loan repayment record — one card since 2019 is a thin revolving file, which is why the score has stalled just under 770 despite everything else being clean.",
+        "opportunity": "A second card, used lightly and paid in full, widens the revolving file and typically adds 10–15 points over three to four cycles. Worth mentioning only as a reason, never as a promise.",
+        "action": "Explain the score",
+        "prompt": "Explain in plain language how Vandana Singh's CIBIL score moved from 690 to 766 and why a thin card file is holding it under 770."
+      }
+    ]
+  },
+  "social": {
+    "source": "Public-profile probe · LinkedIn, Instagram, X · consent on file, 12 Jun 2026",
+    "summary": {
+      "profilesMatched": 3,
+      "postsReviewed": 47,
+      "signalsFound": 4,
+      "window": "Last 45 days"
+    },
+    "posts": [
+      {
+        "id": "oem",
+        "platform": "LinkedIn",
+        "handle": "Vandana Singh · Founder, Vandana Enterprises",
+        "date": "11 Sep 2026",
+        "confidence": "High",
+        "matched": "Verified · name, location and business match",
+        "text": "Eight years ago this was a two-machine unit. Today Vandana Enterprises has been empanelled as a Tier-2 supplier to a leading auto OEM, and our Kila Raipur unit doubles capacity from October. To every supplier who said a woman-run shop could not hold tolerance — thank you for the motivation.",
+        "engagement": {
+          "reactions": 412,
+          "comments": 38,
+          "reposts": 9
+        },
+        "signal": "Capacity expansion with a committed OEM order book",
+        "opportunity": "An OEM empanelment is a receivable you can lend against. Doubling capacity from October means machinery spend now and a working-capital gap by November, which is the enquiry already sitting open on her file. The order book converts that from a judgement call into a documented one.",
+        "products": [
+          "Working capital enhancement",
+          "Machinery term loan",
+          "Invoice discounting"
+        ],
+        "action": "Know more",
+        "prompt": "Vandana Singh posted that Vandana Enterprises has been empanelled as a Tier-2 auto OEM supplier and doubles capacity from October. Assess what this means for her working-capital enquiry and what facilities to put in front of her."
+      },
+      {
+        "id": "cnc",
+        "platform": "Instagram",
+        "handle": "@vandana.enterprises",
+        "date": "03 Sep 2026",
+        "confidence": "High",
+        "matched": "Business handle linked from the LinkedIn profile",
+        "text": "New CNC line is in. Took eleven months of planning and one very long night of installation. Kila Raipur unit, September 2026.",
+        "engagement": {
+          "likes": 1284,
+          "comments": 63
+        },
+        "media": "Four photographs of a newly installed CNC line on the shop floor",
+        "signal": "Capital asset acquired, financed outside IDBI",
+        "opportunity": "A CNC line of this class runs ₹18–24L and nothing of that size moved through her IDBI accounts, so it was financed elsewhere or paid from reserves. Either way the asset is new, probably uninsured, and her shop policy is already under-declared by ₹13L. This is the concrete example that makes the under-insurance conversation land.",
+        "products": [
+          "Machinery insurance",
+          "Sum insured revision",
+          "Equipment refinance"
+        ],
+        "action": "Know more",
+        "prompt": "Vandana Singh installed a new CNC line in September 2026 that was not financed through IDBI. Assess the refinance and asset-insurance opportunity, and tie it to the ₹13L under-declaration on her shop policy."
+      },
+      {
+        "id": "payments",
+        "platform": "X",
+        "handle": "@vandana_singh",
+        "date": "27 Aug 2026",
+        "confidence": "Medium",
+        "matched": "Handle matches registered mobile; profile is partially private",
+        "text": "OEM payment cycles have stretched to 75 days. Every MSME founder I know is quietly financing someone else's working capital and calling it growth.",
+        "engagement": {
+          "likes": 96,
+          "reposts": 21,
+          "replies": 14
+        },
+        "signal": "Receivables stretching — stated publicly, unprompted",
+        "opportunity": "She has said the quiet part out loud: the receivable cycle has gone from roughly 45 days to 75. That is a ₹9–11L hole in her cycle at current turnover and it will widen when capacity doubles in October. Invoice discounting against OEM receivables prices better than an overdraft and does not need fresh collateral.",
+        "products": [
+          "Invoice discounting",
+          "TReDS onboarding",
+          "Overdraft review"
+        ],
+        "action": "Know more",
+        "prompt": "Vandana Singh publicly said OEM payment cycles have stretched to 75 days. Size the receivables gap for Vandana Enterprises and compare invoice discounting against an overdraft enhancement."
+      },
+      {
+        "id": "summit",
+        "platform": "LinkedIn",
+        "handle": "Vandana Singh · Founder, Vandana Enterprises",
+        "date": "18 Aug 2026",
+        "confidence": "Medium",
+        "matched": "Verified · same profile",
+        "text": "Speaking at the Ludhiana MSME Summit next month on women-led manufacturing and access to credit. If you are building in Punjab, come say hello.",
+        "engagement": {
+          "reactions": 203,
+          "comments": 17
+        },
+        "signal": "Visible in the regional MSME network",
+        "opportunity": "Not a product signal — a relationship one. She is speaking on access to credit at a summit we sponsor, and she banks with us. A referral conversation costs nothing and she is standing in front of exactly the customers we want.",
+        "products": [
+          "Referral conversation",
+          "Priority banking invite"
+        ],
+        "action": "Know more",
+        "prompt": "Vandana Singh is speaking at the Ludhiana MSME Summit on women-led manufacturing and access to credit. Suggest how to use this as a relationship and referral touchpoint."
+      }
+    ]
+  }
+}

@@ -6,12 +6,35 @@ import {
   ClipboardCheck, CreditCard, Globe2, Landmark, Mail, MessageSquareText, MinusCircle, MoveUpRight,
   Gauge, Phone, ShieldAlert, ShieldCheck, TrendingDown, TrendingUp, UserRound, UsersRound,
   ArrowRight, BarChart3, ChevronRight, CircleCheck, Clock, Coins, Info, Layers, ListChecks, Percent, WalletCards,
+  Car, HeartPulse, Stethoscope, Store,
 } from "lucide-react";
 
 /** Icons referenced by name from the opportunity fixtures. */
 const OPP_ICONS: Record<string, React.ElementType> = {
   Coins, CreditCard, BarChart3, TrendingUp, Percent, CalendarDays, WalletCards, MoveUpRight, Layers, Clock,
+  // Insurance recommendations use the same card, so their icons live here too.
+  HeartPulse, Stethoscope, Car, Store, ShieldAlert, ShieldCheck,
 };
+
+/**
+ * Insurance gaps, shaped exactly like an opportunity so they render as the same card in
+ * the same grid. `prompt` is what the primary button hands to the agent.
+ */
+const INSURANCE_CARDS = probes.insurance.groups.map(group => ({
+  id: `insurance-${group.id}`,
+  icon: group.icon,
+  title: group.card.title,
+  subtitle: group.card.subtitle,
+  fit: group.card.fit,
+  tags: group.card.tags,
+  stats: group.card.stats,
+  whyNow: group.card.whyNow,
+  nextAction: group.card.nextStep,
+  trigger: group.card.whyNow,
+  primaryAction: group.recommendation.action,
+  secondaryAction: null as string | null,
+  prompt: group.recommendation.prompt,
+}));
 import { Bar, BarChart, CartesianGrid, Cell, Line, LineChart, ReferenceArea, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 import data from "@/app/idbi-data/vandana-workspace.json";
@@ -24,16 +47,21 @@ import {
   ActionButton, CompactTable, DataUnavailable, InfoTip, MetricCard, MetricGrid, RepaymentStrip, SectionHeader, StatusPill, TableHead, Td, Th,
 } from "@/components/idbi/workspace-ui";
 import { BandLegend, CIBIL_BANDS, GradientScoreLine, ScoreGauge, GaugeBand } from "@/components/idbi/ScoreVisuals";
+import probes from "@/app/idbi-data/opportunity-probes.json";
 
 /** Financial-health bands (0–100), mirroring the CIBIL band language. */
 const HEALTH_BANDS: GaugeBand[] = [
   { from: 0, to: 40, color: "#dc2626", label: "Stressed" },
   { from: 40, to: 60, color: "#d97706", label: "Vulnerable" },
   { from: 60, to: 75, color: "#eab308", label: "Stable" },
-  { from: 75, to: 90, color: "#4ade80", label: "Good" },
-  { from: 90, to: 100, color: "#16a34a", label: "Excellent" },
+  { from: 75, to: 85, color: "#4ade80", label: "Good" },
+  { from: 85, to: 100, color: "#16a34a", label: "Excellent" },
 ];
 
+
+/** Relationship tier, coloured to its metal: Platinum · Gold · Silver · Bronze. */
+const tierTone = (tier: string) =>
+  tier === "Platinum" ? "platinum" as const : tier === "Gold" ? "gold" as const : tier === "Silver" ? "silver" as const : "bronze" as const;
 
 const healthBandLabel = (score: number) => (HEALTH_BANDS.find(b => score >= b.from && score <= b.to) ?? HEALTH_BANDS[0]).label;
 
@@ -144,7 +172,7 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
             tag chips, a 3-up stat strip, then Why now / Next step and the actions.
             Cards wrap, so a longer list simply flows onto more rows. */}
         <div className="grid gap-4 lg:grid-cols-2 xl:grid-cols-3">
-          {customer.opportunities.map(opportunity => {
+          {[...customer.opportunities, ...INSURANCE_CARDS].map((opportunity: any) => {
             const OppIcon = (OPP_ICONS[(opportunity as any).icon] ?? MessageSquareText) as React.ElementType;
             const fit = (opportunity as any).fit as string | undefined;
             const stats = ((opportunity as any).stats ?? []) as Array<{ label: string; value: string; icon?: string }>;
@@ -162,7 +190,7 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
                 </div>
 
                 <div className="mt-3 flex flex-wrap gap-1.5">
-                  {opportunity.tags.map(tag => <StatusPill key={tag} tone="blue">{tag}</StatusPill>)}
+                  {opportunity.tags.map((tag: string) => <StatusPill key={tag} tone="blue">{tag}</StatusPill>)}
                 </div>
 
                 {stats.length > 0 && (
@@ -202,7 +230,9 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
                 <div className="mt-4 flex flex-wrap gap-2 pt-1">
                   <ActionButton
                     variant="default"
-                    onClick={() => opportunity.id === "working-capital"
+                    onClick={() => (opportunity as any).prompt
+                      ? onOpenAgent?.((opportunity as any).prompt)
+                      : opportunity.id === "working-capital"
                       ? onOpenAgent?.("Run a working-capital pre-check for Vandana Singh using the available customer and financial context.")
                       : opportunity.id === "investment" ? onOpenFinancial?.()
                       : onOpenAgent?.("Check credit-card eligibility and available IDBI offers for Vandana Singh.")}
@@ -246,13 +276,14 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
         <div className="mt-4">
           {idbiView === "Accounts & Products" && (
             <CompactTable minWidth={680}>
-              <colgroup><col style={{ width: "30%" }} /><col style={{ width: "15%" }} /><col style={{ width: "21%" }} /><col style={{ width: "17%" }} /><col style={{ width: "17%" }} /></colgroup>
-              <TableHead><Th>Product</Th><Th>Account No</Th><Th center>Balance / Deposit Value</Th><Th center>Opened</Th><Th center>Status</Th></TableHead>
+              <colgroup><col style={{ width: "26%" }} /><col style={{ width: "12%" }} /><col style={{ width: "13%" }} /><col style={{ width: "19%" }} /><col style={{ width: "15%" }} /><col style={{ width: "15%" }} /></colgroup>
+              <TableHead><Th>Product</Th><Th center>Tier</Th><Th>Account No</Th><Th center>Balance / Deposit Value</Th><Th center>Opened</Th><Th center>Status</Th></TableHead>
               <tbody>{customer.accounts.map(row => {
                 const [product, account] = row.product.split(" · ");
                 return (
                   <tr key={row.product}>
                     <Td className="font-medium text-slate-900">{product}</Td>
+                    <Td center><StatusPill tone={tierTone(customer.tier)} fixedWidth="w-[88px]">{customer.tier}</StatusPill></Td>
                     <Td className="tabular-nums">{account}</Td>
                     <Td center className="font-semibold text-slate-900">{row.value}</Td>
                     <Td center>{row.opened}</Td>
@@ -263,7 +294,7 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
             </CompactTable>
           )}
           {idbiView === "Loans & Credits" && (
-            <CompactTable minWidth={900}><TableHead><Th>Loan / Facility</Th><Th right>Outstanding</Th><Th right>Sanctioned Amount / Limit</Th><Th>Repayment</Th><Th>12-cycle Repayment</Th><Th>Status / Conduct</Th></TableHead><tbody>{customer.loans.map(row => <tr key={row.facility}><Td className="font-medium text-slate-900">{row.facility}</Td><Td right className="font-semibold">{row.outstanding}</Td><Td right>{row.limit}</Td><Td>{row.repayment}</Td><Td><RepaymentStrip values={row.timeline} /></Td><Td><StatusPill tone="emerald">{row.conduct}</StatusPill></Td></tr>)}</tbody></CompactTable>
+            <CompactTable minWidth={1000}><TableHead><Th>Loan / Facility</Th><Th center>Tier</Th><Th right>Outstanding</Th><Th right>Sanctioned Amount / Limit</Th><Th>Repayment</Th><Th>12-cycle Repayment</Th><Th>Status / Conduct</Th></TableHead><tbody>{customer.loans.map(row => <tr key={row.facility}><Td className="font-medium text-slate-900">{row.facility}</Td><Td center><StatusPill tone={tierTone(customer.tier)} fixedWidth="w-[88px]">{customer.tier}</StatusPill></Td><Td right className="font-semibold">{row.outstanding}</Td><Td right>{row.limit}</Td><Td>{row.repayment}</Td><Td><RepaymentStrip values={row.timeline} /></Td><Td><StatusPill tone="emerald">{row.conduct}</StatusPill></Td></tr>)}</tbody></CompactTable>
           )}
           {idbiView === "Credit Cards" && (
             <DataUnavailable

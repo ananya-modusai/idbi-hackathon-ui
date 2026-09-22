@@ -9,6 +9,7 @@ import { FinancialPositionTab } from "./FinancialPositionTab";
 import { RequestsActivityTab } from "./RequestsActivityTab";
 import { AiAnalysisTab } from "./AiAnalysisTab";
 import { MetricsTab } from "./MetricsTab";
+import { AlertsTab } from "./AlertsTab";
 import { ModusAgentPanel } from "./ModusAgentPanel";
 
 export interface WorkspaceCustomer {
@@ -27,6 +28,8 @@ const TABS = [
   { id: "analysis", label: "AI Analysis" },
   { id: "financial", label: "Financial Position" },
   { id: "metrics", label: "Metrics" },
+  // Opportunities found by probing sources the customer never filled in on a form.
+  { id: "alerts", label: "Alerts" },
 ] as const;
 
 type TabId = (typeof TABS)[number]["id"];
@@ -114,6 +117,7 @@ export const CustomerWorkspace: FC<{ customer: WorkspaceCustomer; onBack: () => 
             {tab === "analysis" && <AiAnalysisTab />}
             {tab === "financial" && <FinancialPositionTab onOpenAgent={openAgent} />}
             {tab === "metrics" && <MetricsTab />}
+            {tab === "alerts" && <AlertsTab onOpenAgent={openAgent} />}
           </div>
         </div>
       </div>

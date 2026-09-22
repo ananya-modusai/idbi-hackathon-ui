@@ -227,6 +227,34 @@ export const colorSchemes = {
     hover: 'hover:bg-stone-50',
     border: 'border-stone-700'
   },
+
+  // Metal schemes for the relationship tier chips — each is the metal it names, a
+  // brushed gradient rather than a flat fill so gold reads as gold and silver as
+  // silver. Only background/text/border differ; chip geometry is BubbleTag's.
+  platinum: {
+    background: 'bg-[linear-gradient(135deg,#f4f9ff_0%,#cfdff0_42%,#eef5fd_66%,#b6cde4_100%)]',
+    text: 'text-[#3c566e]',
+    hover: 'hover:brightness-[0.97]',
+    border: 'border-[#8fa8bd]'
+  },
+  gold: {
+    background: 'bg-[linear-gradient(135deg,#fdf6d6_0%,#eed684_42%,#fbf2c9_66%,#dbb143_100%)]',
+    text: 'text-[#7a5a12]',
+    hover: 'hover:brightness-[0.97]',
+    border: 'border-[#c49c2e]'
+  },
+  silver: {
+    background: 'bg-[linear-gradient(135deg,#fbfcfd_0%,#dde1e5_42%,#f4f6f8_66%,#bfc7ce_100%)]',
+    text: 'text-[#59626b]',
+    hover: 'hover:brightness-[0.97]',
+    border: 'border-[#a6aeb6]'
+  },
+  bronze: {
+    background: 'bg-[linear-gradient(135deg,#fbeade_0%,#e3b489_42%,#f7e1cf_66%,#c27c3c_100%)]',
+    text: 'text-[#7a4a1e]',
+    hover: 'hover:brightness-[0.97]',
+    border: 'border-[#b0742d]'
+  },
 } as const;
 
 export type ColorScheme = keyof typeof colorSchemes;

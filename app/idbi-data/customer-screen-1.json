@@ -10,22 +10,80 @@
       "location": "Kila Raipur, PB",
       "lead_priority": "High",
       "relationship": "Existing",
+      "tier": "Platinum",
       "relationship_owner": "Ananya Rao",
       "products": [
-        {"type": "Current Account", "account": "•••• 4821", "balance": "₹7.42L", "status": "Active"},
-        {"type": "FD", "account": "•••• 0936", "balance": "₹4.50L", "status": "Active"},
-        {"type": "Savings", "account": "•••• 6714", "balance": "₹1.16L", "status": "Active"}
+        {
+          "type": "Current Account",
+          "account": "•••• 4821",
+          "balance": "₹7.42L",
+          "status": "Active"
+        },
+        {
+          "type": "FD",
+          "account": "•••• 0936",
+          "balance": "₹4.50L",
+          "status": "Active"
+        },
+        {
+          "type": "Savings",
+          "account": "•••• 6714",
+          "balance": "₹1.16L",
+          "status": "Active"
+        }
       ],
       "requests": [
-        {"id": "REQ-WC-1048", "product": "Working Capital", "stage": "Enquired", "date": "2026-09-18", "details": "Initial funding-needs discussion requested.", "linked_opportunity": true}
+        {
+          "id": "REQ-WC-1048",
+          "product": "Working Capital",
+          "stage": "Enquired",
+          "date": "2026-09-18",
+          "details": "Initial funding-needs discussion requested.",
+          "linked_opportunity": true
+        }
       ],
-      "health": {"score": 81, "band": "Good", "assessment_date": "2026-09-19", "drivers": ["Reported no overdue", "Regular repayment conduct", "Facility utilisation requires review"], "sources": ["Customer summary", "Account holdings", "Reported conduct"]},
+      "health": {
+        "score": 81,
+        "band": "Good",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "Reported no overdue",
+          "Regular repayment conduct",
+          "Facility utilisation requires review"
+        ],
+        "sources": [
+          "Customer summary",
+          "Account holdings",
+          "Reported conduct"
+        ]
+      },
       "signals": [
-        {"label": "Growing business", "evidence": "Current funding enquiry indicates an active business need.", "source": "Demo enrichment", "date": "2026-09-18"},
-        {"label": "Regular repayments", "evidence": "Reported conduct shows no overdue amount.", "source": "Reported conduct", "date": "2026-09-19"}
+        {
+          "label": "Growing business",
+          "evidence": "Current funding enquiry indicates an active business need.",
+          "source": "Demo enrichment",
+          "date": "2026-09-18"
+        },
+        {
+          "label": "Regular repayments",
+          "evidence": "Reported conduct shows no overdue amount.",
+          "source": "Reported conduct",
+          "date": "2026-09-19"
+        }
       ],
-      "opportunity": {"title": "Business funding review", "reason": "Assess funding needs and facility utilisation", "objective": "Upsell", "rationale": "A current funding enquiry and reported regular repayment conduct support a structured needs conversation.", "next_action": "Discuss current funding needs, review cash flow and obligations, and arrange a specialist discussion where appropriate.", "created": false},
-      "priority_reasons": ["Active working-capital enquiry", "Opportunity is timely", "Existing lending relationship"],
+      "opportunity": {
+        "title": "Business funding review",
+        "reason": "Assess funding needs and facility utilisation",
+        "objective": "Upsell",
+        "rationale": "A current funding enquiry and reported regular repayment conduct support a structured needs conversation.",
+        "next_action": "Discuss current funding needs, review cash flow and obligations, and arrange a specialist discussion where appropriate.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Active working-capital enquiry",
+        "Opportunity is timely",
+        "Existing lending relationship"
+      ],
       "demo_order": 1
     },
     {
@@ -36,23 +94,88 @@
       "location": "Barat, HP",
       "lead_priority": "High",
       "relationship": "Existing",
+      "tier": "Gold",
       "relationship_owner": "Ananya Rao",
       "products": [
-        {"type": "Savings", "account": "•••• 1182", "balance": "₹1.84L", "status": "Active"},
-        {"type": "FD", "account": "•••• 9033", "balance": "₹1.60L", "status": "Active"},
-        {"type": "Current Account", "account": "•••• 7740", "balance": "₹0.60L", "status": "Active"}
+        {
+          "type": "Savings",
+          "account": "•••• 1182",
+          "balance": "₹1.84L",
+          "status": "Active"
+        },
+        {
+          "type": "FD",
+          "account": "•••• 9033",
+          "balance": "₹1.60L",
+          "status": "Active"
+        },
+        {
+          "type": "Current Account",
+          "account": "•••• 7740",
+          "balance": "₹0.60L",
+          "status": "Active"
+        }
       ],
       "requests": [
-        {"id": "REQ-CC-2184", "product": "Credit Card", "stage": "Applied", "date": "2026-09-16", "details": "Application is recorded and awaiting the next stage.", "linked_opportunity": false},
-        {"id": "Details unavailable", "product": "Additional request", "stage": "Details unavailable", "date": null, "details": "The supplied demo record indicates one additional request but does not specify its product or stage.", "linked_opportunity": false}
+        {
+          "id": "REQ-CC-2184",
+          "product": "Credit Card",
+          "stage": "Applied",
+          "date": "2026-09-16",
+          "details": "Application is recorded and awaiting the next stage.",
+          "linked_opportunity": false
+        },
+        {
+          "id": "Details unavailable",
+          "product": "Additional request",
+          "stage": "Details unavailable",
+          "date": null,
+          "details": "The supplied demo record indicates one additional request but does not specify its product or stage.",
+          "linked_opportunity": false
+        }
       ],
-      "health": {"score": 79, "band": "Good", "assessment_date": "2026-09-19", "drivers": ["Multiple active product holdings", "Recorded balances total ₹4.04L", "Outstanding obligations require consideration"], "sources": ["Customer summary", "Account balances", "Reported limits"]},
+      "health": {
+        "score": 79,
+        "band": "Good",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "Multiple active product holdings",
+          "Recorded balances total ₹4.04L",
+          "Outstanding obligations require consideration"
+        ],
+        "sources": [
+          "Customer summary",
+          "Account balances",
+          "Reported limits"
+        ]
+      },
       "signals": [
-        {"label": "Potential surplus", "evidence": "Recorded balances support a needs discussion after obligations and liquidity are understood.", "source": "Demo enrichment", "date": "2026-09-19"},
-        {"label": "Multiple product holdings", "evidence": "Savings, fixed-deposit and current-account relationships are recorded.", "source": "Account holdings", "date": "2026-09-19"}
+        {
+          "label": "Potential surplus",
+          "evidence": "Recorded balances support a needs discussion after obligations and liquidity are understood.",
+          "source": "Demo enrichment",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "Multiple product holdings",
+          "evidence": "Savings, fixed-deposit and current-account relationships are recorded.",
+          "source": "Account holdings",
+          "date": "2026-09-19"
+        }
       ],
-      "opportunity": {"title": "Investment needs discussion", "reason": "Assess surplus after obligations and liquidity needs", "objective": "Cross-sell", "rationale": "Recorded balances and multiple holdings warrant a needs-led investment conversation after liabilities are considered.", "next_action": "Confirm goals, liquidity needs and obligations before discussing suitable investment options.", "created": false},
-      "priority_reasons": ["Potential investable surplus", "Multiple product holdings", "Recent application activity"],
+      "opportunity": {
+        "title": "Investment needs discussion",
+        "reason": "Assess surplus after obligations and liquidity needs",
+        "objective": "Cross-sell",
+        "rationale": "Recorded balances and multiple holdings warrant a needs-led investment conversation after liabilities are considered.",
+        "next_action": "Confirm goals, liquidity needs and obligations before discussing suitable investment options.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Potential investable surplus",
+        "Multiple product holdings",
+        "Recent application activity"
+      ],
       "demo_order": 2
     },
     {
@@ -63,22 +186,80 @@
       "location": "Jammu, J&K",
       "lead_priority": "Medium",
       "relationship": "Existing",
+      "tier": "Platinum",
       "relationship_owner": "Kabir Mehta",
       "products": [
-        {"type": "Savings", "account": "•••• 6442", "balance": "₹2.14L", "status": "Interpretation required"},
-        {"type": "FD", "account": "•••• 2319", "balance": "₹5.20L", "status": "Active"},
-        {"type": "Current Account", "account": "•••• 8051", "balance": "₹0.86L", "status": "Active"}
+        {
+          "type": "Savings",
+          "account": "•••• 6442",
+          "balance": "₹2.14L",
+          "status": "Interpretation required"
+        },
+        {
+          "type": "FD",
+          "account": "•••• 2319",
+          "balance": "₹5.20L",
+          "status": "Active"
+        },
+        {
+          "type": "Current Account",
+          "account": "•••• 8051",
+          "balance": "₹0.86L",
+          "status": "Active"
+        }
       ],
       "requests": [
-        {"id": "REQ-HL-1026", "product": "Home Loan", "stage": "Enquired", "date": "2026-09-12", "details": "Existing enquiry available for a reactivation conversation.", "linked_opportunity": true}
+        {
+          "id": "REQ-HL-1026",
+          "product": "Home Loan",
+          "stage": "Enquired",
+          "date": "2026-09-12",
+          "details": "Existing enquiry available for a reactivation conversation.",
+          "linked_opportunity": true
+        }
       ],
-      "health": {"score": 75, "band": "Good", "assessment_date": "2026-09-19", "drivers": ["Long-standing relationship", "Active deposit holdings", "One account status needs interpretation"], "sources": ["Customer summary", "Account holdings", "Account status"]},
+      "health": {
+        "score": 75,
+        "band": "Good",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "Long-standing relationship",
+          "Active deposit holdings",
+          "One account status needs interpretation"
+        ],
+        "sources": [
+          "Customer summary",
+          "Account holdings",
+          "Account status"
+        ]
+      },
       "signals": [
-        {"label": "Reduced engagement", "evidence": "Synthetic recent engagement history indicates reduced contact.", "source": "Demo enrichment", "date": "2026-09-19"},
-        {"label": "Long-standing relationship", "evidence": "Relationship has been recorded since 2006.", "source": "Customer summary", "date": "2026-09-19"}
+        {
+          "label": "Reduced engagement",
+          "evidence": "Synthetic recent engagement history indicates reduced contact.",
+          "source": "Demo enrichment",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "Long-standing relationship",
+          "evidence": "Relationship has been recorded since 2006.",
+          "source": "Customer summary",
+          "date": "2026-09-19"
+        }
       ],
-      "opportunity": {"title": "Home-loan needs discussion", "reason": "Reconnect through the existing enquiry", "objective": "Reactivation", "rationale": "The open enquiry provides a relevant reason to reconnect with a long-standing NRI customer.", "next_action": "Confirm the current requirement and preferred contact time, then reopen the needs discussion.", "created": false},
-      "priority_reasons": ["Existing home-loan enquiry", "Reduced recent engagement", "Long-standing relationship"],
+      "opportunity": {
+        "title": "Home-loan needs discussion",
+        "reason": "Reconnect through the existing enquiry",
+        "objective": "Reactivation",
+        "rationale": "The open enquiry provides a relevant reason to reconnect with a long-standing NRI customer.",
+        "next_action": "Confirm the current requirement and preferred contact time, then reopen the needs discussion.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Existing home-loan enquiry",
+        "Reduced recent engagement",
+        "Long-standing relationship"
+      ],
       "demo_order": 3
     },
     {
@@ -89,20 +270,70 @@
       "location": "Indore, MP",
       "lead_priority": "High",
       "relationship": "Existing",
+      "tier": "Silver",
       "relationship_owner": "Priya Nair",
       "products": [
-        {"type": "Savings", "account": "•••• 3508", "balance": "₹2.35L", "status": "Active"},
-        {"type": "FD", "account": "•••• 6652", "balance": "₹8.00L", "status": "Matures in 12 days"},
-        {"type": "RD", "account": "•••• 1427", "balance": "₹1.20L", "status": "Active"}
+        {
+          "type": "Savings",
+          "account": "•••• 3508",
+          "balance": "₹2.35L",
+          "status": "Active"
+        },
+        {
+          "type": "FD",
+          "account": "•••• 6652",
+          "balance": "₹8.00L",
+          "status": "Matures in 12 days"
+        },
+        {
+          "type": "RD",
+          "account": "•••• 1427",
+          "balance": "₹1.20L",
+          "status": "Active"
+        }
       ],
       "requests": [],
-      "health": {"score": 78, "band": "Good", "assessment_date": "2026-09-19", "drivers": ["Regular pension credit", "Stable deposit relationship", "No current request recorded"], "sources": ["Synthetic demo profile", "Demo enrichment"]},
+      "health": {
+        "score": 78,
+        "band": "Good",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "Regular pension credit",
+          "Stable deposit relationship",
+          "No current request recorded"
+        ],
+        "sources": [
+          "Synthetic demo profile",
+          "Demo enrichment"
+        ]
+      },
       "signals": [
-        {"label": "Upcoming maturity", "evidence": "A synthetic ₹8L deposit maturity is due in 12 days.", "source": "Demo enrichment", "date": "2026-09-19"},
-        {"label": "Regular pension", "evidence": "Regular pension credits are included in the demo profile.", "source": "Demo enrichment", "date": "2026-09-19"}
+        {
+          "label": "Upcoming maturity",
+          "evidence": "A synthetic ₹8L deposit maturity is due in 12 days.",
+          "source": "Demo enrichment",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "Regular pension",
+          "evidence": "Regular pension credits are included in the demo profile.",
+          "source": "Demo enrichment",
+          "date": "2026-09-19"
+        }
       ],
-      "opportunity": {"title": "Deposit renewal discussion", "reason": "₹8L matures in 12 days", "objective": "Retention", "rationale": "The upcoming maturity creates a timely retention conversation.", "next_action": "Discuss maturity instructions, liquidity needs and suitable renewal choices.", "created": false},
-      "priority_reasons": ["Maturity is within 12 days", "Retention conversation is time-sensitive", "Regular pension relationship"],
+      "opportunity": {
+        "title": "Deposit renewal discussion",
+        "reason": "₹8L matures in 12 days",
+        "objective": "Retention",
+        "rationale": "The upcoming maturity creates a timely retention conversation.",
+        "next_action": "Discuss maturity instructions, liquidity needs and suitable renewal choices.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Maturity is within 12 days",
+        "Retention conversation is time-sensitive",
+        "Regular pension relationship"
+      ],
       "demo_order": 4
     },
     {
@@ -113,18 +344,60 @@
       "location": "Bengaluru, KA",
       "lead_priority": "High",
       "relationship": "Prospect · NTB",
+      "tier": "Bronze",
       "relationship_owner": "Rohan Das",
       "products": [],
       "requests": [
-        {"id": "REQ-SA-1109", "product": "Salary Account", "stage": "Enquired", "date": "2026-09-18", "details": "Prospect has expressed interest in salary-account onboarding.", "linked_opportunity": true}
+        {
+          "id": "REQ-SA-1109",
+          "product": "Salary Account",
+          "stage": "Enquired",
+          "date": "2026-09-18",
+          "details": "Prospect has expressed interest in salary-account onboarding.",
+          "linked_opportunity": true
+        }
       ],
-      "health": {"score": 72, "band": "Good", "assessment_date": "2026-09-19", "drivers": ["New employment signal", "Expressed product interest", "Limited internal relationship history"], "sources": ["Synthetic prospect profile", "Demo enrichment"]},
+      "health": {
+        "score": 72,
+        "band": "Good",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "New employment signal",
+          "Expressed product interest",
+          "Limited internal relationship history"
+        ],
+        "sources": [
+          "Synthetic prospect profile",
+          "Demo enrichment"
+        ]
+      },
       "signals": [
-        {"label": "New employment", "evidence": "New employment is included in the synthetic prospect profile.", "source": "Demo enrichment", "date": "2026-09-18"},
-        {"label": "Expressed interest", "evidence": "Salary-account enquiry recorded on 18 Sep 2026.", "source": "Request history", "date": "2026-09-18"}
+        {
+          "label": "New employment",
+          "evidence": "New employment is included in the synthetic prospect profile.",
+          "source": "Demo enrichment",
+          "date": "2026-09-18"
+        },
+        {
+          "label": "Expressed interest",
+          "evidence": "Salary-account enquiry recorded on 18 Sep 2026.",
+          "source": "Request history",
+          "date": "2026-09-18"
+        }
       ],
-      "opportunity": {"title": "Salary-account onboarding", "reason": "Progress the existing enquiry", "objective": "Acquisition", "rationale": "The prospect has an active salary-account enquiry and a current employment trigger.", "next_action": "Confirm onboarding requirements and progress the recorded enquiry.", "created": false},
-      "priority_reasons": ["Active salary-account enquiry", "New-employment trigger", "NTB acquisition opportunity"],
+      "opportunity": {
+        "title": "Salary-account onboarding",
+        "reason": "Progress the existing enquiry",
+        "objective": "Acquisition",
+        "rationale": "The prospect has an active salary-account enquiry and a current employment trigger.",
+        "next_action": "Confirm onboarding requirements and progress the recorded enquiry.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Active salary-account enquiry",
+        "New-employment trigger",
+        "NTB acquisition opportunity"
+      ],
       "demo_order": 5
     },
     {
@@ -135,19 +408,64 @@
       "location": "Pune, MH",
       "lead_priority": "Low",
       "relationship": "Existing",
+      "tier": "Silver",
       "relationship_owner": "Priya Nair",
       "products": [
-        {"type": "Savings", "account": "•••• 2294", "balance": "₹3.42L", "status": "Active"},
-        {"type": "FD", "account": "•••• 0185", "balance": "₹2.10L", "status": "Active"}
+        {
+          "type": "Savings",
+          "account": "•••• 2294",
+          "balance": "₹3.42L",
+          "status": "Active"
+        },
+        {
+          "type": "FD",
+          "account": "•••• 0185",
+          "balance": "₹2.10L",
+          "status": "Active"
+        }
       ],
       "requests": [],
-      "health": {"score": 83, "band": "Good", "assessment_date": "2026-09-19", "drivers": ["Stable deposit relationship", "No immediate need identified", "Recently contacted"], "sources": ["Synthetic demo profile", "Demo enrichment"]},
+      "health": {
+        "score": 83,
+        "band": "Good",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "Stable deposit relationship",
+          "No immediate need identified",
+          "Recently contacted"
+        ],
+        "sources": [
+          "Synthetic demo profile",
+          "Demo enrichment"
+        ]
+      },
       "signals": [
-        {"label": "No immediate need", "evidence": "Customer requested that the conversation be revisited in three months.", "source": "Demo interaction history", "date": "2026-09-10"},
-        {"label": "Recently contacted", "evidence": "A recent conversation is included in the demo history.", "source": "Demo interaction history", "date": "2026-09-10"}
+        {
+          "label": "No immediate need",
+          "evidence": "Customer requested that the conversation be revisited in three months.",
+          "source": "Demo interaction history",
+          "date": "2026-09-10"
+        },
+        {
+          "label": "Recently contacted",
+          "evidence": "A recent conversation is included in the demo history.",
+          "source": "Demo interaction history",
+          "date": "2026-09-10"
+        }
       ],
-      "opportunity": {"title": "Future savings review", "reason": "Customer requested a discussion in three months", "objective": "Cross-sell", "rationale": "The need is relevant but the customer has explicitly requested later contact.", "next_action": "Respect the requested timing and schedule a review in three months.", "created": false},
-      "priority_reasons": ["Customer requested later contact", "No immediate sales need", "Recently contacted"],
+      "opportunity": {
+        "title": "Future savings review",
+        "reason": "Customer requested a discussion in three months",
+        "objective": "Cross-sell",
+        "rationale": "The need is relevant but the customer has explicitly requested later contact.",
+        "next_action": "Respect the requested timing and schedule a review in three months.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Customer requested later contact",
+        "No immediate sales need",
+        "Recently contacted"
+      ],
       "demo_order": 6
     },
     {
@@ -158,19 +476,64 @@
       "location": "Jaipur, RJ",
       "lead_priority": "Low",
       "relationship": "Existing",
+      "tier": "Bronze",
       "relationship_owner": "Kabir Mehta",
       "products": [
-        {"type": "Current Account", "account": "•••• 4190", "balance": "₹0.74L", "status": "Active"},
-        {"type": "Business Loan", "account": "•••• 7521", "balance": "₹9.80L outstanding", "status": "Needs attention"}
+        {
+          "type": "Current Account",
+          "account": "•••• 4190",
+          "balance": "₹0.74L",
+          "status": "Active"
+        },
+        {
+          "type": "Business Loan",
+          "account": "•••• 7521",
+          "balance": "₹9.80L outstanding",
+          "status": "Needs attention"
+        }
       ],
       "requests": [],
-      "health": {"score": 32, "band": "Poor", "assessment_date": "2026-09-19", "drivers": ["Declining inflows", "Missed repayments", "Servicing support takes precedence over sales outreach"], "sources": ["Synthetic demo profile", "Demo enrichment"]},
+      "health": {
+        "score": 32,
+        "band": "Poor",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "Declining inflows",
+          "Missed repayments",
+          "Servicing support takes precedence over sales outreach"
+        ],
+        "sources": [
+          "Synthetic demo profile",
+          "Demo enrichment"
+        ]
+      },
       "signals": [
-        {"label": "Declining inflows", "evidence": "A declining-inflow pattern is included in the synthetic scenario.", "source": "Demo enrichment", "date": "2026-09-19"},
-        {"label": "Missed repayments", "evidence": "Missed repayments are included in the synthetic scenario.", "source": "Demo enrichment", "date": "2026-09-19"}
+        {
+          "label": "Declining inflows",
+          "evidence": "A declining-inflow pattern is included in the synthetic scenario.",
+          "source": "Demo enrichment",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "Missed repayments",
+          "evidence": "Missed repayments are included in the synthetic scenario.",
+          "source": "Demo enrichment",
+          "date": "2026-09-19"
+        }
       ],
-      "opportunity": {"title": "Repayment support discussion", "reason": "Refer to servicing; pause additional-credit outreach", "objective": "Retention", "rationale": "Customer support and repayment servicing should take precedence over sales activity.", "next_action": "Arrange a servicing conversation and pause additional-credit outreach.", "created": false},
-      "priority_reasons": ["Sales priority is low", "Servicing urgency is high", "Additional-credit outreach should remain paused"],
+      "opportunity": {
+        "title": "Repayment support discussion",
+        "reason": "Refer to servicing; pause additional-credit outreach",
+        "objective": "Retention",
+        "rationale": "Customer support and repayment servicing should take precedence over sales activity.",
+        "next_action": "Arrange a servicing conversation and pause additional-credit outreach.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Sales priority is low",
+        "Servicing urgency is high",
+        "Additional-credit outreach should remain paused"
+      ],
       "demo_order": 7
     }
   ]

@@ -119,6 +119,12 @@ const PILL_COLOR = {
   amber: "yellow",
   rose: "red",
   violet: "purple",
+  orange: "orange",
+  // Relationship tiers, each chip the metal it names.
+  platinum: "platinum",
+  gold: "gold",
+  silver: "silver",
+  bronze: "bronze",
 } as const;
 
 const flatten = (node: React.ReactNode): string =>
@@ -132,11 +138,13 @@ const flatten = (node: React.ReactNode): string =>
     )
     .join("");
 
-export function StatusPill({ children, tone = "slate" }: { children: React.ReactNode; tone?: keyof typeof PILL_COLOR }) {
+export function StatusPill({ children, tone = "slate", fixedWidth }: { children: React.ReactNode; tone?: keyof typeof PILL_COLOR; fixedWidth?: string }) {
   // inline-flex + mr keeps a gap when several chips sit next to each other.
+  // fixedWidth is BubbleTag's own prop — used by the tier chips so Gold and Platinum
+  // are the same width down the column.
   return (
     <span className="mr-2 inline-flex last:mr-0">
-      <BubbleTag text={flatten(children)} color={PILL_COLOR[tone]} withBorder={true} />
+      <BubbleTag text={flatten(children)} color={PILL_COLOR[tone]} withBorder={true} fixedWidth={fixedWidth} />
     </span>
   );
 }

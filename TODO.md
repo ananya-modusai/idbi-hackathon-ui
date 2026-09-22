@@ -186,3 +186,46 @@ Mapping to components we ALREADY have (no dumping of their markup):
 - [x] K3. Build AI Analysis tab from our components
 - [x] K4. Build Metrics tab from our components
 - [x] K5. Wire both tabs + new tab order into CustomerWorkspace
+
+## Round L — topbar + band scale
+- [x] L1. Topbar: replace the "Demo data · 19 Sep 2026" chip with cam's ActiveContext widget
+      (ported to components/idbi/ActiveContext — own store, customer context, searchable
+      palette of the whole customer book; selecting one opens that customer's workspace).
+- [x] L2. Health band scale: Excellent starts at 85 (Good is now 75–85), both in
+      CustomerProfileTab and AiAnalysisTab.
+- [x] L3. Tier column (Platinum / Gold / Silver / Bronze) as a BubbleTag chip in all three
+      tables: Customers list, and both Customer Profile tables (Accounts & Products,
+      Loans & Credits). Named "Tier" rather than "Category". Colours: Platinum purple,
+      Gold yellow, Silver gray, Bronze orange (new `orange` tone added to StatusPill).
+- [x] L4. Tier chips coloured as the actual metals — four `platinum`/`gold`/`silver`/
+      `bronze` schemes added to CustomColorScheme (brushed linear-gradient background,
+      metal-toned text and border). Still the same BubbleTag, so chip geometry is
+      unchanged site-wide.
+
+## Round M — Workspace rename, Alerts tab, opportunity probes
+- [x] M1. Rename the Customers screen/table to **Workspace**, using the same icon as the
+      My Workspace sidebar item (LayoutGrid). Update section header + breadcrumbs.
+- [x] M2. Remove the **My Workspace** sidebar section (explicitly asked).
+- [x] M3. New tab in the Customer section named **Alerts** (was going to be "Recommended
+      Opportunities"; renamed on the user's instruction). Purpose: every selling
+      opportunity found by probing the customer across different data sources.
+- [x] M4. **Recommended Insurance** — does NOT go in Alerts. Goes into the existing
+      "Recommended Opportunities" section on the Customer Profile tab ("it suites there
+      better"). Show what we can sell given what they already hold.
+      Design: if a customer can hold several policies of one type → grouped-row table
+      like "Assessment Drivers & Flags". Otherwise → collapsible tiles like the
+      insolvency-ui "Financial & Operational" tab, first section "Financial Metrics":
+      compact tile when collapsed, easy-to-read prose when expanded.
+- [x] M5. **ESOP** section in Alerts — what ESOPs the customer holds (current/former
+      employer), plus that company's news (e.g. IPO announced) and the opportunity that
+      creates. Same collapsible form.
+- [x] M6. **Credit card / limit** section in Alerts — card enquiry and limit-increase
+      opportunities knowable from a soft credit-report pull. Think it through properly.
+- [x] M7. **Social media probe** section in Alerts — LinkedIn / Instagram / X posts
+      (promotion, funding raised, etc). Reference: insolvency-ui "External Intelligence"
+      tab, last section (Social Media Presence) — BUT improvise the card design, don't
+      copy it. Show: snapshot of the actual post, how it creates an opportunity, and a
+      "Know more" button (same as Recommended Opportunities) that opens the Modus Agent
+      with a prefilled prompt and gets a generated answer back.
+- [x] M8. Organic, realistic fixture data for all of the above — user will review.
+- [x] M9. Tier chips: make every chip the same width.

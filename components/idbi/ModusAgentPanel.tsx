@@ -31,6 +31,8 @@ interface Turn {
   attachments?: Array<{ name: string; sizeLabel: string }>;
 }
 
+import probeReplies from "@/app/idbi-data/agent-probe-replies.json";
+
 interface Suggestion { label: string; reply: string; trail: Trail }
 
 interface ModusAgentPanelProps {
@@ -259,7 +261,10 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
   }, [pending]);
 
   const ask = (text: string, files?: Array<{ name: string; sizeLabel: string }>) => {
-    const match = [...suggestions, ...seeded].find(s => s.label === text);
+    // Probe replies are keyed by the exact prompt the Alerts tab and the insurance
+    // recommendations hand over, so a "Know more" lands on a worked answer rather than
+    // the generic fallback.
+    const match = [...suggestions, ...seeded, ...(probeReplies as Suggestion[])].find(s => s.label === text);
     play(
       text,
       match?.reply ??

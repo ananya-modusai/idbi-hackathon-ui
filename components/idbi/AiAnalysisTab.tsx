@@ -51,8 +51,8 @@ const HEALTH_BANDS: GaugeBand[] = [
   { from: 0, to: 40, color: "#dc2626", label: "Stressed" },
   { from: 40, to: 60, color: "#d97706", label: "Vulnerable" },
   { from: 60, to: 75, color: "#eab308", label: "Stable" },
-  { from: 75, to: 90, color: "#4ade80", label: "Good" },
-  { from: 90, to: 100, color: "#16a34a", label: "Excellent" },
+  { from: 75, to: 85, color: "#4ade80", label: "Good" },
+  { from: 85, to: 100, color: "#16a34a", label: "Excellent" },
 ];
 const DRIVER_COLORS = ["#1e4e8c", "#3b82f6", "#93c5fd"];
 const healthPanelBg = (score: number) => (score >= 75 ? "bg-green-50" : score >= 60 ? "bg-blue-50" : score >= 40 ? "bg-amber-50" : "bg-red-50");
