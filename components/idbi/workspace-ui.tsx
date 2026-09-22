@@ -181,6 +181,13 @@ export const tierColor = (tier: string) =>
     // A prospect has not earned a tier yet — plain grey, not a metal.
     : "gray";
 
+/** What the model says to do with this customer. */
+export const decisionColor = (decision: string) =>
+  decision === "Prioritise" ? "green"
+    : decision === "Nurture" ? "blue"
+    : decision === "Review" ? "yellow"
+    : "red";
+
 /** Business or Individual — what kind of customer this is. */
 export const categoryColor = (category: string) => (category === "Business" ? "indigo" : "teal");
 

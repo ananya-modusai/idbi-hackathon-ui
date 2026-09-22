@@ -58,6 +58,7 @@
           "Reported conduct"
         ]
       },
+      "ai_decision": "Prioritise",
       "signals": [
         {
           "label": "Growing business",
@@ -86,6 +87,73 @@
         "Existing lending relationship"
       ],
       "demo_order": 1
+    },
+    {
+      "customer_id": "990000142",
+      "name": "Harpreet Kaur Gill",
+      "mobile": "98••• ••771",
+      "profile": "Self-employed",
+      "category": "Business",
+      "location": "Ludhiana, PB",
+      "lead_priority": "Low",
+      "relationship": "Prospect · NTB",
+      "tier": "Untiered",
+      "relationship_owner": "Ananya Rao",
+      "products": [],
+      "requests": [
+        {
+          "id": "REQ-EPC-3301",
+          "product": "Export Packing Credit",
+          "stage": "Enquired",
+          "date": "2026-09-17",
+          "details": "Enquired about pre-shipment finance against confirmed export orders; banks elsewhere today.",
+          "linked_opportunity": true
+        }
+      ],
+      "health": {
+        "score": 84,
+        "band": "Good",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "Bureau record clean across four years",
+          "Export receipts consistent at the current bank",
+          "No IDBI relationship to assess internally"
+        ],
+        "sources": [
+          "Bureau",
+          "Customer declaration",
+          "Export documentation"
+        ]
+      },
+      "ai_decision": "Prioritise",
+      "signals": [
+        {
+          "label": "Banks elsewhere",
+          "evidence": "Cash credit and current account are held with a private bank; no IDBI relationship on record.",
+          "source": "Customer declaration",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "Export orders rising",
+          "evidence": "Confirmed USD orders up 34% year on year, with no forward cover booked.",
+          "source": "Export documentation",
+          "date": "2026-09-19"
+        }
+      ],
+      "opportunity": {
+        "title": "Export finance onboarding",
+        "reason": "Rising order book with no IDBI relationship yet",
+        "objective": "Pursue",
+        "rationale": "Pre-shipment finance is the opening; the current account and forex flows follow the limit.",
+        "next_action": "Collect the order book and bank statements, and quote packing credit with forward cover.",
+        "created": false
+      },
+      "priority_reasons": [
+        "New to bank with a live enquiry",
+        "Export order book expanding",
+        "Unhedged currency exposure"
+      ],
+      "demo_order": 2
     },
     {
       "customer_id": "990000100",
@@ -151,6 +219,7 @@
           "Reported limits"
         ]
       },
+      "ai_decision": "Prioritise",
       "signals": [
         {
           "label": "Potential surplus",
@@ -178,7 +247,154 @@
         "Multiple product holdings",
         "Recent application activity"
       ],
-      "demo_order": 2
+      "demo_order": 3
+    },
+    {
+      "customer_id": "990000158",
+      "name": "Manish Aggarwal",
+      "mobile": "99••• ••204",
+      "profile": "Salaried",
+      "category": "Individual",
+      "location": "Chandigarh, CH",
+      "lead_priority": "High",
+      "relationship": "Existing",
+      "tier": "Bronze",
+      "relationship_owner": "Ananya Rao",
+      "products": [
+        {
+          "type": "Salary Account",
+          "account": "•••• 6620",
+          "balance": "₹3.18L",
+          "status": "Active"
+        },
+        {
+          "type": "Home Loan",
+          "account": "•••• 6621",
+          "balance": "₹41.20L outstanding",
+          "status": "Active"
+        }
+      ],
+      "requests": [
+        {
+          "id": "REQ-HL-2277",
+          "product": "Home Loan Top-up",
+          "stage": "On hold",
+          "date": "2026-09-15",
+          "details": "Top-up put on hold pending a conduct review; the account has missed three EMIs.",
+          "linked_opportunity": false
+        }
+      ],
+      "health": {
+        "score": 23,
+        "band": "Poor",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "Three missed EMIs in the last six months",
+          "EMI-to-income ratio at 78%",
+          "Salary credit irregular since June"
+        ],
+        "sources": [
+          "Customer summary",
+          "Account conduct",
+          "Bureau"
+        ]
+      },
+      "ai_decision": "Reject",
+      "signals": [
+        {
+          "label": "Repayment stress",
+          "evidence": "Three EMIs missed since April; the June and August instalments cleared late.",
+          "source": "Account conduct",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "Income interruption",
+          "evidence": "Salary credit has been irregular since June and twice fell short of the EMI.",
+          "source": "Account statements",
+          "date": "2026-09-19"
+        }
+      ],
+      "opportunity": {
+        "title": "Restructure and servicing review",
+        "reason": "Three missed EMIs and a 78% EMI-to-income ratio",
+        "objective": "Reject",
+        "rationale": "A top-up on this conduct would deepen the stress. The account needs a repayment plan, not more credit.",
+        "next_action": "Call to understand the income interruption and assess tenor extension or a restructure.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Three missed EMIs in six months",
+        "EMI-to-income ratio at 78%",
+        "Top-up request on hold"
+      ],
+      "demo_order": 4
+    },
+    {
+      "customer_id": "DEMO-P002",
+      "name": "Simran Sethi",
+      "mobile": "70••• ••913",
+      "profile": "Salaried · NTC",
+      "category": "Individual",
+      "location": "Zirakpur, PB",
+      "lead_priority": "High",
+      "relationship": "Prospect · NTB",
+      "tier": "Untiered",
+      "relationship_owner": "Ananya Rao",
+      "products": [],
+      "requests": [
+        {
+          "id": "REQ-SA-4420",
+          "product": "Salary Account",
+          "stage": "Enquired",
+          "date": "2026-09-18",
+          "details": "Employer is onboarding payroll with IDBI; individual account not yet opened.",
+          "linked_opportunity": true
+        }
+      ],
+      "health": {
+        "score": 68,
+        "band": "Fair",
+        "assessment_date": "2026-09-19",
+        "drivers": [
+          "New to credit, no bureau history",
+          "Employer payroll relationship in progress",
+          "No obligations recorded"
+        ],
+        "sources": [
+          "Customer summary",
+          "Account holdings",
+          "Reported conduct"
+        ]
+      },
+      "ai_decision": "Review",
+      "signals": [
+        {
+          "label": "Employer payroll mandate",
+          "evidence": "Her employer's payroll is moving to IDBI this quarter.",
+          "source": "Corporate records",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "First banking relationship",
+          "evidence": "No existing accounts or credit lines on record.",
+          "source": "Bureau",
+          "date": "2026-09-19"
+        }
+      ],
+      "opportunity": {
+        "title": "Salary account onboarding",
+        "reason": "Employer payroll mandate makes this a low-friction acquisition",
+        "objective": "Pursue",
+        "rationale": "Payroll onboarding gives a natural opening before another bank approaches her.",
+        "next_action": "Complete KYC at the employer onboarding desk and open the salary account.",
+        "created": false
+      },
+      "priority_reasons": [
+        "Employer payroll onboarding",
+        "New to bank",
+        "No competing relationship"
+      ],
+      "demo_order": 5
     },
     {
       "customer_id": "990000034",
@@ -236,6 +452,7 @@
           "Account status"
         ]
       },
+      "ai_decision": "Nurture",
       "signals": [
         {
           "label": "Reduced engagement",
@@ -263,7 +480,7 @@
         "Reduced recent engagement",
         "Long-standing relationship"
       ],
-      "demo_order": 3
+      "demo_order": 6
     },
     {
       "customer_id": "DEMO-C001",
@@ -311,6 +528,7 @@
           "Demo enrichment"
         ]
       },
+      "ai_decision": "Nurture",
       "signals": [
         {
           "label": "Upcoming maturity",
@@ -338,7 +556,7 @@
         "Retention conversation is time-sensitive",
         "Regular pension relationship"
       ],
-      "demo_order": 4
+      "demo_order": 7
     },
     {
       "customer_id": "DEMO-P001",
@@ -376,6 +594,7 @@
           "Demo enrichment"
         ]
       },
+      "ai_decision": "Nurture",
       "signals": [
         {
           "label": "New employment",
@@ -403,7 +622,7 @@
         "New-employment trigger",
         "NTB acquisition opportunity"
       ],
-      "demo_order": 5
+      "demo_order": 8
     },
     {
       "customer_id": "DEMO-C002",
@@ -445,6 +664,7 @@
           "Demo enrichment"
         ]
       },
+      "ai_decision": "Nurture",
       "signals": [
         {
           "label": "No immediate need",
@@ -472,7 +692,7 @@
         "No immediate sales need",
         "Recently contacted"
       ],
-      "demo_order": 6
+      "demo_order": 9
     },
     {
       "customer_id": "DEMO-C003",
@@ -514,6 +734,7 @@
           "Demo enrichment"
         ]
       },
+      "ai_decision": "Reject",
       "signals": [
         {
           "label": "Declining inflows",
@@ -540,217 +761,6 @@
         "Sales priority is low",
         "Servicing urgency is high",
         "Additional-credit outreach should remain paused"
-      ],
-      "demo_order": 7
-    },
-    {
-      "customer_id": "990000142",
-      "name": "Harpreet Kaur Gill",
-      "mobile": "98••• ••771",
-      "profile": "Self-employed",
-      "category": "Business",
-      "location": "Ludhiana, PB",
-      "lead_priority": "High",
-      "relationship": "Prospect · NTB",
-      "tier": "Untiered",
-      "relationship_owner": "Ananya Rao",
-      "products": [],
-      "requests": [
-        {
-          "id": "REQ-EPC-3301",
-          "product": "Export Packing Credit",
-          "stage": "Enquired",
-          "date": "2026-09-17",
-          "details": "Enquired about pre-shipment finance against confirmed export orders; banks elsewhere today.",
-          "linked_opportunity": true
-        }
-      ],
-      "health": {
-        "score": 84,
-        "band": "Good",
-        "assessment_date": "2026-09-19",
-        "drivers": [
-          "Bureau record clean across four years",
-          "Export receipts consistent at the current bank",
-          "No IDBI relationship to assess internally"
-        ],
-        "sources": [
-          "Bureau",
-          "Customer declaration",
-          "Export documentation"
-        ]
-      },
-      "signals": [
-        {
-          "label": "Banks elsewhere",
-          "evidence": "Cash credit and current account are held with a private bank; no IDBI relationship on record.",
-          "source": "Customer declaration",
-          "date": "2026-09-19"
-        },
-        {
-          "label": "Export orders rising",
-          "evidence": "Confirmed USD orders up 34% year on year, with no forward cover booked.",
-          "source": "Export documentation",
-          "date": "2026-09-19"
-        }
-      ],
-      "opportunity": {
-        "title": "Export finance onboarding",
-        "reason": "Rising order book with no IDBI relationship yet",
-        "objective": "Pursue",
-        "rationale": "Pre-shipment finance is the opening; the current account and forex flows follow the limit.",
-        "next_action": "Collect the order book and bank statements, and quote packing credit with forward cover.",
-        "created": false
-      },
-      "priority_reasons": [
-        "New to bank with a live enquiry",
-        "Export order book expanding",
-        "Unhedged currency exposure"
-      ],
-      "demo_order": 8
-    },
-    {
-      "customer_id": "990000158",
-      "name": "Manish Aggarwal",
-      "mobile": "99••• ••204",
-      "profile": "Salaried",
-      "category": "Individual",
-      "location": "Chandigarh, CH",
-      "lead_priority": "High",
-      "relationship": "Existing",
-      "tier": "Bronze",
-      "relationship_owner": "Ananya Rao",
-      "products": [
-        {
-          "type": "Salary Account",
-          "account": "•••• 6620",
-          "balance": "₹3.18L",
-          "status": "Active"
-        },
-        {
-          "type": "Home Loan",
-          "account": "•••• 6621",
-          "balance": "₹41.20L outstanding",
-          "status": "Active"
-        }
-      ],
-      "requests": [
-        {
-          "id": "REQ-HL-2277",
-          "product": "Home Loan Top-up",
-          "stage": "On hold",
-          "date": "2026-09-15",
-          "details": "Top-up put on hold pending a conduct review; the account has missed three EMIs.",
-          "linked_opportunity": false
-        }
-      ],
-      "health": {
-        "score": 23,
-        "band": "Poor",
-        "assessment_date": "2026-09-19",
-        "drivers": [
-          "Three missed EMIs in the last six months",
-          "EMI-to-income ratio at 78%",
-          "Salary credit irregular since June"
-        ],
-        "sources": [
-          "Customer summary",
-          "Account conduct",
-          "Bureau"
-        ]
-      },
-      "signals": [
-        {
-          "label": "Repayment stress",
-          "evidence": "Three EMIs missed since April; the June and August instalments cleared late.",
-          "source": "Account conduct",
-          "date": "2026-09-19"
-        },
-        {
-          "label": "Income interruption",
-          "evidence": "Salary credit has been irregular since June and twice fell short of the EMI.",
-          "source": "Account statements",
-          "date": "2026-09-19"
-        }
-      ],
-      "opportunity": {
-        "title": "Restructure and servicing review",
-        "reason": "Three missed EMIs and a 78% EMI-to-income ratio",
-        "objective": "Reject",
-        "rationale": "A top-up on this conduct would deepen the stress. The account needs a repayment plan, not more credit.",
-        "next_action": "Call to understand the income interruption and assess tenor extension or a restructure.",
-        "created": false
-      },
-      "priority_reasons": [
-        "Three missed EMIs in six months",
-        "EMI-to-income ratio at 78%",
-        "Top-up request on hold"
-      ],
-      "demo_order": 9
-    },
-    {
-      "customer_id": "DEMO-P002",
-      "name": "Simran Sethi",
-      "mobile": "70••• ••913",
-      "profile": "Salaried · NTC",
-      "category": "Individual",
-      "location": "Zirakpur, PB",
-      "lead_priority": "High",
-      "relationship": "Prospect · NTB",
-      "tier": "Untiered",
-      "relationship_owner": "Ananya Rao",
-      "products": [],
-      "requests": [
-        {
-          "id": "REQ-SA-4420",
-          "product": "Salary Account",
-          "stage": "Enquired",
-          "date": "2026-09-18",
-          "details": "Employer is onboarding payroll with IDBI; individual account not yet opened.",
-          "linked_opportunity": true
-        }
-      ],
-      "health": {
-        "score": 68,
-        "band": "Fair",
-        "assessment_date": "2026-09-19",
-        "drivers": [
-          "New to credit, no bureau history",
-          "Employer payroll relationship in progress",
-          "No obligations recorded"
-        ],
-        "sources": [
-          "Customer summary",
-          "Account holdings",
-          "Reported conduct"
-        ]
-      },
-      "signals": [
-        {
-          "label": "Employer payroll mandate",
-          "evidence": "Her employer's payroll is moving to IDBI this quarter.",
-          "source": "Corporate records",
-          "date": "2026-09-19"
-        },
-        {
-          "label": "First banking relationship",
-          "evidence": "No existing accounts or credit lines on record.",
-          "source": "Bureau",
-          "date": "2026-09-19"
-        }
-      ],
-      "opportunity": {
-        "title": "Salary account onboarding",
-        "reason": "Employer payroll mandate makes this a low-friction acquisition",
-        "objective": "Pursue",
-        "rationale": "Payroll onboarding gives a natural opening before another bank approaches her.",
-        "next_action": "Complete KYC at the employer onboarding desk and open the salary account.",
-        "created": false
-      },
-      "priority_reasons": [
-        "Employer payroll onboarding",
-        "New to bank",
-        "No competing relationship"
       ],
       "demo_order": 10
     },
@@ -804,6 +814,7 @@
           "Reported conduct"
         ]
       },
+      "ai_decision": "Review",
       "signals": [
         {
           "label": "Limit under strain",
@@ -880,6 +891,7 @@
           "Reported conduct"
         ]
       },
+      "ai_decision": "Nurture",
       "signals": [
         {
           "label": "Large maturity approaching",
@@ -959,6 +971,7 @@
           "Reported conduct"
         ]
       },
+      "ai_decision": "Review",
       "signals": [
         {
           "label": "Borrowing to service borrowing",

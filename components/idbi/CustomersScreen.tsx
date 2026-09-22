@@ -15,7 +15,7 @@ import { KeyMetrics } from "@/components/custom/KeyMetrics";
 import { CustomTableView, Column } from "@/components/custom/CustomTableView";
 import { BubbleTag } from "@/components/custom/BubbleTag";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Toast, categoryColor, tierColor } from "@/components/idbi/workspace-ui";
+import { Toast, categoryColor, decisionColor, tierColor } from "@/components/idbi/workspace-ui";
 import { ModusAgentPanel } from "@/components/idbi/ModusAgentPanel";
 import CustomListFilter, {
   PrimaryFilterGroup,
@@ -39,10 +39,6 @@ const priorityColor = (p: string) =>
 /** Lead priority is shown ranked: P1 · High, P2 · Medium, P3 · Low. */
 const PRIORITY_RANK_LABEL: Record<string, string> = { High: "P1", Medium: "P2", Low: "P3" };
 const priorityLabel = (p: string) => `${PRIORITY_RANK_LABEL[p] ?? "P3"} · ${p}`;
-
-/** What to do with the opportunity: act, keep warm, or leave it. */
-const verdictColor = (verdict: string) =>
-  verdict === "Pursue" ? "green" : verdict === "Reject" ? "red" : "blue";
 
 const healthColor = (band: string) =>
   band === "Good" ? "green" : band === "Poor" ? "red" : "yellow";
@@ -302,7 +298,10 @@ export const CustomersScreen: FC<{
 
     const key = sortSelected[0] ?? "priority";
     const sorted = [...list];
-    if (key === "priority")
+    // Default is the curated demo order, so the book reads the way the walkthrough
+    // needs it. Priority ranking only applies when it is picked explicitly.
+    if (key === "priority") sorted.sort((a, b) => a.demo_order - b.demo_order);
+    else if (key === "lead-priority")
       sorted.sort((a, b) => (PRIORITY_RANK[a.lead_priority] ?? 9) - (PRIORITY_RANK[b.lead_priority] ?? 9) || a.demo_order - b.demo_order);
     else if (key === "health") sorted.sort((a, b) => b.health.score - a.health.score);
     else sorted.sort((a, b) => a.name.localeCompare(b.name));
@@ -455,7 +454,7 @@ export const CustomersScreen: FC<{
       minWidth: "118px",
       render: (v: string) =>
         v === "Untiered"
-          ? <span className="text-gray-400">-</span>
+          ? <span className="block w-[88px] text-center text-gray-400">-</span>
           : <BubbleTag text={v} color={tierColor(v)} withBorder={true} fixedWidth="w-[88px]" />,
     },
     {
@@ -466,15 +465,19 @@ export const CustomersScreen: FC<{
       render: (h: any) => <BubbleTag text={`${h.score}/100 · ${h.band}`} color={healthColor(h.band)} withBorder={true} />,
     },
     {
+      key: "ai_decision",
+      header: "AI Decision",
+      width: "11%",
+      minWidth: "136px",
+      render: (v: string) => <BubbleTag text={v} color={decisionColor(v)} withBorder={true} fixedWidth="w-[96px]" />,
+    },
+    {
       key: "opportunity",
       header: "AI Recommendation",
       width: "18%",
       minWidth: "250px",
       render: (o: any) => (
         <div className="min-w-0">
-          <span className="mb-1 inline-block">
-            <BubbleTag text={o.objective} color={verdictColor(o.objective)} withBorder={true} fixedWidth="w-[84px]" />
-          </span>
           <span className="block font-semibold text-blue-600">{o.title}</span>
           <span className="mt-0.5 block text-xs text-gray-500">{o.reason}</span>
         </div>
@@ -589,7 +592,7 @@ export const CustomersScreen: FC<{
           <CustomTableView
             columns={columns}
             data={rows}
-            className={cn("w-full", scope === "team" ? "[&_table]:min-w-[1500px]" : "[&_table]:min-w-[1360px]")}
+            className={cn("w-full", scope === "team" ? "[&_table]:min-w-[1640px]" : "[&_table]:min-w-[1500px]")}
             initialRowLimit={10}
             onRowClick={(row) => onOpenCustomer?.(row)}
           />

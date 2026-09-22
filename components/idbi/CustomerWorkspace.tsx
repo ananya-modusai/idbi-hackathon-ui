@@ -4,6 +4,7 @@ import { FC, useState } from "react";
 import { ArrowLeft, Sparkles, Copy } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { BubbleTag } from "@/components/custom/BubbleTag";
+import { decisionColor } from "@/components/idbi/workspace-ui";
 import { CustomerProfileTab } from "./CustomerProfileTab";
 import { FinancialPositionTab } from "./FinancialPositionTab";
 import { RequestsActivityTab } from "./RequestsActivityTab";
@@ -84,10 +85,17 @@ export const CustomerWorkspace: FC<{ customer: WorkspaceCustomer; onBack: () => 
                   </span>
                   <BubbleTag text={customer.profile} color="grayTextWhiteBg" withBorder={true} />
                   <BubbleTag
-                    text={`Financial Health: ${customer.health.score} · ${customer.health.band}`}
+                    text={`Financial Health: ${customer.health.score}/100`}
                     color={customer.health.band === "Good" ? "green" : customer.health.band === "Poor" ? "red" : "yellow"}
                     withBorder={true}
                   />
+                  {(customer as any).ai_decision && (
+                    <BubbleTag
+                      text={(customer as any).ai_decision}
+                      color={decisionColor((customer as any).ai_decision)}
+                      withBorder={true}
+                    />
+                  )}
                 </div>
                 <p className="mt-0.5 text-xs text-gray-500">{customer.location} · RM: Ananya Rao</p>
               </div>
