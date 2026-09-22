@@ -76,10 +76,13 @@ interface SectionHeaderWithFlagsProps {
   // When set, the per-severity counts collapse into one green chip reading
   // "<total> <flagSummaryLabel>" — used where the severities are not the point.
   flagSummaryLabel?: string;
+  // Where the summary chip sits: out on the right (default) or beside the title.
+  flagSummaryPosition?: 'right' | 'title';
 }
 
 export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
   flagSummaryLabel,
+  flagSummaryPosition = 'right',
   flagRowLayout = 'severity',
   positiveFlags = [],
   negativeFlags = [],
@@ -205,6 +208,19 @@ export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
   const visibleFlags = isContentExpanded ? allFlags : allFlags.slice(0, initialRowLimit);
   const hasMoreRows = allFlags.length > initialRowLimit;
 
+  const summaryFlagTotal = extremeNegativeFlags.length + negativeFlags.length + mildNegativeFlags.length
+    + neutralFlags.length + mildPositiveFlags.length + positiveFlags.length;
+  const summaryChip = flagSummaryLabel && summaryFlagTotal > 0 ? (
+    <BubbleTag
+      text={flagSummaryLabel}
+      color="green"
+      hasOutsideIcon={true}
+      hasInsideNumber={true}
+      number={summaryFlagTotal}
+      icon={<CheckCircle className="h-3.5 w-3.5" />}
+    />
+  ) : null;
+
   return (
     <div className="w-full overflow-hidden transition-all duration-200">
       <div 
@@ -214,6 +230,9 @@ export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
         <div className="flex items-center gap-2 min-w-0">
           {Icon && <Icon className={cn("h-5 w-5 flex-shrink-0", iconColorClass)} />}
           <span className={cn("text-lg font-semibold truncate", titleColorClass)}>{title}</span>
+          {flagSummaryPosition === 'title' && summaryChip && (
+            <span className="ml-1 flex items-center" onClick={(e) => e.stopPropagation()}>{summaryChip}</span>
+          )}
           {titleRightElement ? (
             <span className="ml-3 flex items-center" onClick={(e) => e.stopPropagation()}>
               {titleRightElement}
@@ -233,20 +252,7 @@ export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
           )}
         </div>
         <div className="flex items-center gap-2 ml-auto flex-shrink-0">
-          {flagSummaryLabel ? (() => {
-            const total = extremeNegativeFlags.length + negativeFlags.length + mildNegativeFlags.length
-              + neutralFlags.length + mildPositiveFlags.length + positiveFlags.length;
-            return total > 0 ? (
-              <BubbleTag
-                text={flagSummaryLabel}
-                color="green"
-                hasOutsideIcon={true}
-                hasInsideNumber={true}
-                number={total}
-                icon={<CheckCircle className="h-3.5 w-3.5" />}
-              />
-            ) : null;
-          })() : flagTypeOrderList.map(flagType => {
+          {flagSummaryLabel ? (flagSummaryPosition === 'right' ? summaryChip : null) : flagTypeOrderList.map(flagType => {
             const flagConfig = {
                extremeNegative: { flags: extremeNegativeFlags, label: "Severe", color: "red" as ColorScheme, icon: <XCircle className="h-3.5 w-3.5" /> },
                negative: { flags: negativeFlags, label: "High", color: "orange" as ColorScheme, icon: <XCircle className="h-3.5 w-3.5" /> },

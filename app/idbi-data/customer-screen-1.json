@@ -75,7 +75,7 @@
       "opportunity": {
         "title": "Business funding review",
         "reason": "Assess funding needs and facility utilisation",
-        "objective": "Upsell",
+        "objective": "Pursue",
         "rationale": "A current funding enquiry and reported regular repayment conduct support a structured needs conversation.",
         "next_action": "Discuss current funding needs, review cash flow and obligations, and arrange a specialist discussion where appropriate.",
         "created": false
@@ -168,7 +168,7 @@
       "opportunity": {
         "title": "Investment needs discussion",
         "reason": "Assess surplus after obligations and liquidity needs",
-        "objective": "Cross-sell",
+        "objective": "Pursue",
         "rationale": "Recorded balances and multiple holdings warrant a needs-led investment conversation after liabilities are considered.",
         "next_action": "Confirm goals, liquidity needs and obligations before discussing suitable investment options.",
         "created": false
@@ -253,7 +253,7 @@
       "opportunity": {
         "title": "Home-loan needs discussion",
         "reason": "Reconnect through the existing enquiry",
-        "objective": "Reactivation",
+        "objective": "Nurture",
         "rationale": "The open enquiry provides a relevant reason to reconnect with a long-standing NRI customer.",
         "next_action": "Confirm the current requirement and preferred contact time, then reopen the needs discussion.",
         "created": false
@@ -328,7 +328,7 @@
       "opportunity": {
         "title": "Deposit renewal discussion",
         "reason": "₹8L matures in 12 days",
-        "objective": "Retention",
+        "objective": "Nurture",
         "rationale": "The upcoming maturity creates a timely retention conversation.",
         "next_action": "Discuss maturity instructions, liquidity needs and suitable renewal choices.",
         "created": false
@@ -393,7 +393,7 @@
       "opportunity": {
         "title": "Salary-account onboarding",
         "reason": "Progress the existing enquiry",
-        "objective": "Acquisition",
+        "objective": "Pursue",
         "rationale": "The prospect has an active salary-account enquiry and a current employment trigger.",
         "next_action": "Confirm onboarding requirements and progress the recorded enquiry.",
         "created": false
@@ -462,7 +462,7 @@
       "opportunity": {
         "title": "Future savings review",
         "reason": "Customer requested a discussion in three months",
-        "objective": "Cross-sell",
+        "objective": "Nurture",
         "rationale": "The need is relevant but the customer has explicitly requested later contact.",
         "next_action": "Respect the requested timing and schedule a review in three months.",
         "created": false
@@ -531,7 +531,7 @@
       "opportunity": {
         "title": "Repayment support discussion",
         "reason": "Refer to servicing; pause additional-credit outreach",
-        "objective": "Retention",
+        "objective": "Reject",
         "rationale": "Customer support and repayment servicing should take precedence over sales activity.",
         "next_action": "Arrange a servicing conversation and pause additional-credit outreach.",
         "created": false
@@ -597,7 +597,7 @@
       "opportunity": {
         "title": "Export finance onboarding",
         "reason": "Rising order book with no IDBI relationship yet",
-        "objective": "Acquisition",
+        "objective": "Pursue",
         "rationale": "Pre-shipment finance is the opening; the current account and forex flows follow the limit.",
         "next_action": "Collect the order book and bank statements, and quote packing credit with forward cover.",
         "created": false
@@ -676,7 +676,7 @@
       "opportunity": {
         "title": "Restructure and servicing review",
         "reason": "Three missed EMIs and a 78% EMI-to-income ratio",
-        "objective": "Retention",
+        "objective": "Reject",
         "rationale": "A top-up on this conduct would deepen the stress. The account needs a repayment plan, not more credit.",
         "next_action": "Call to understand the income interruption and assess tenor extension or a restructure.",
         "created": false
@@ -742,7 +742,7 @@
       "opportunity": {
         "title": "Salary account onboarding",
         "reason": "Employer payroll mandate makes this a low-friction acquisition",
-        "objective": "Acquisition",
+        "objective": "Pursue",
         "rationale": "Payroll onboarding gives a natural opening before another bank approaches her.",
         "next_action": "Complete KYC at the employer onboarding desk and open the salary account.",
         "created": false
@@ -821,7 +821,7 @@
       "opportunity": {
         "title": "Renewal with limit review",
         "reason": "Sustained high utilisation ahead of the October renewal",
-        "objective": "Retention",
+        "objective": "Nurture",
         "rationale": "Utilisation at this level usually means the limit is undersized, not that conduct is poor.",
         "next_action": "Collect the outstanding stock statements and assess the limit at renewal.",
         "created": false
@@ -897,7 +897,7 @@
       "opportunity": {
         "title": "Maturity renewal conversation",
         "reason": "₹14.50L matures in 46 days with no instruction on file",
-        "objective": "Retention",
+        "objective": "Nurture",
         "rationale": "Deposits of this size are the most common point of attrition to a competitor's rate.",
         "next_action": "Call before 25 Oct with a renewal rate and the senior-citizen scheme comparison.",
         "created": false
@@ -976,7 +976,7 @@
       "opportunity": {
         "title": "Consolidation before more borrowing",
         "reason": "A second loan on top of high card utilisation would stretch him further",
-        "objective": "Retention",
+        "objective": "Reject",
         "rationale": "Consolidating the cards at a lower rate helps more than adding a second instalment.",
         "next_action": "Review total obligations and propose consolidation instead of a fresh loan.",
         "created": false

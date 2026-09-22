@@ -44,7 +44,7 @@ export interface SectionFlag {
 export function SectionHeader({
   icon, title, action, titleMeta, toggleOptions, selectedToggleOption, onToggleOptionChange,
   positiveFlags = [], negativeFlags = [], neutralFlags, mildPositiveFlags, mildNegativeFlags,
-  allowCollapse = false, flagTypeOrderList, flagSummaryLabel, flagRowLayout,
+  allowCollapse = false, flagTypeOrderList, flagSummaryLabel, flagSummaryPosition, flagRowLayout,
 }: {
   icon: React.ElementType;
   title: string;
@@ -64,6 +64,8 @@ export function SectionHeader({
   flagTypeOrderList?: string[];
   /** One green chip reading "<count> <label>" instead of the per-severity counts. */
   flagSummaryLabel?: string;
+  /** Where the summary chip sits: "right" (default) or beside the title. */
+  flagSummaryPosition?: "right" | "title";
   /** "category" leads each flag row with the category chip and drops the severity chip. */
   flagRowLayout?: "severity" | "category";
 }) {
@@ -84,6 +86,7 @@ export function SectionHeader({
       flagTypeOrderList={flagTypeOrderList as any}
       allowCollapse={allowCollapse}
       flagSummaryLabel={flagSummaryLabel}
+      flagSummaryPosition={flagSummaryPosition}
       flagRowLayout={flagRowLayout}
       titleRightElement={titleMeta}
       toggleOptions={toggleOptions}

@@ -46,6 +46,7 @@ import { Bar, BarChart, CartesianGrid, Cell, Line, LineChart, ReferenceArea, Res
 import data from "@/app/idbi-data/vandana-workspace.json";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
+import { BubbleTag } from "@/components/custom/BubbleTag";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -178,8 +179,9 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
           mildNegativeFlags={insightsBy("medium")}
           neutralFlags={insightsBy("low")}
           flagTypeOrderList={["negative", "mildNegative", "neutral", "positive"]}
-          flagSummaryLabel="Insights"
           flagRowLayout="category"
+          flagSummaryLabel="Insights"
+          flagSummaryPosition="title"
           action={
             <ActionButton
               variant="default"

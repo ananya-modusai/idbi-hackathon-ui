@@ -40,6 +40,10 @@ const priorityColor = (p: string) =>
 const PRIORITY_RANK_LABEL: Record<string, string> = { High: "P1", Medium: "P2", Low: "P3" };
 const priorityLabel = (p: string) => `${PRIORITY_RANK_LABEL[p] ?? "P3"} · ${p}`;
 
+/** What to do with the opportunity: act, keep warm, or leave it. */
+const verdictColor = (verdict: string) =>
+  verdict === "Pursue" ? "green" : verdict === "Reject" ? "red" : "blue";
+
 const healthColor = (band: string) =>
   band === "Good" ? "green" : band === "Poor" ? "red" : "yellow";
 
@@ -469,7 +473,7 @@ export const CustomersScreen: FC<{
       render: (o: any) => (
         <div className="min-w-0">
           <span className="mb-1 inline-block">
-            <BubbleTag text={o.objective} color="blue" withBorder={true} />
+            <BubbleTag text={o.objective} color={verdictColor(o.objective)} withBorder={true} fixedWidth="w-[84px]" />
           </span>
           <span className="block font-semibold text-blue-600">{o.title}</span>
           <span className="mt-0.5 block text-xs text-gray-500">{o.reason}</span>
