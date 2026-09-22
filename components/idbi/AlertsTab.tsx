@@ -346,11 +346,12 @@ export const AlertsTab: React.FC<{ onOpenAgent?: (prompt?: string) => void }> = 
                     every card in the grid stays the same height. */}
                 <div className="flex flex-1 flex-col justify-between gap-3 p-4">
                   <div>
-                    <p className="flex items-center gap-2 text-xs text-slate-500">
-                      <MessageSquareQuote className="size-3.5 shrink-0 text-slate-400" />
-                      Posted {post.timeAgo} ago · {post.date}
-                    </p>
-                    <p className="mt-1.5 text-sm leading-6 text-slate-700">{post.summary}</p>
+                    <div className="flex items-center gap-2">
+                      <MessageSquareQuote className="size-3.5 text-blue-600" />
+                      <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Post summary</p>
+                    </div>
+                    <p className="mt-1 text-sm font-semibold text-slate-900">Posted {post.timeAgo} ago · {post.date}</p>
+                    <p className="mt-1.5 text-xs leading-5 text-slate-600">{post.summary}</p>
 
                     <div className="mt-3.5 border-t border-slate-100 pt-3">
                       <div className="flex items-center gap-2">

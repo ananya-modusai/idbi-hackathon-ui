@@ -337,7 +337,7 @@
         "id": "working-capital",
         "priority": "High",
         "disposition": "Pursue",
-        "title": "Working-capital requirement",
+        "title": "Working capital loan",
         "tags": [
           "Customer Enquiry",
           "High Intent"
@@ -348,7 +348,7 @@
         "nextAction": "Complete pre-check before the 22 Sep · 11:30 AM follow-up.",
         "primaryAction": "Run pre-check",
         "secondaryAction": "Learn more",
-        "subtitle": "Strengthen business liquidity",
+        "subtitle": "Cash to buy stock and pay suppliers",
         "fit": "High fit",
         "icon": "Coins",
         "stats": [
@@ -373,7 +373,7 @@
         "id": "credit-card",
         "priority": "Medium",
         "disposition": "Nurture",
-        "title": "Credit-card cross-sell",
+        "title": "Credit card",
         "tags": [
           "Cross-sell",
           "Income Increase"
@@ -381,7 +381,7 @@
         "trigger": "Recognised income improved and reported repayment behaviour remains current.",
         "nextAction": "Check eligibility and available IDBI card offers.",
         "primaryAction": "Check eligibility",
-        "subtitle": "Higher limit business card",
+        "subtitle": "She has no card with us",
         "fit": "Good fit",
         "icon": "CreditCard",
         "stats": [
@@ -406,7 +406,7 @@
         "id": "investment",
         "priority": "Medium",
         "disposition": "Nurture",
-        "title": "Investment opportunity",
+        "title": "Investment plan",
         "tags": [
           "Surplus Funds",
           "Relationship Deepening"
@@ -414,7 +414,7 @@
         "trigger": "The customer has recurring monthly surplus and ₹10.90L of tracked assets outside IDBI.",
         "nextAction": "Understand investment horizon, liquidity needs and risk preference.",
         "primaryAction": "View opportunity",
-        "subtitle": "Automate surplus funds",
+        "subtitle": "Idle money can earn more",
         "fit": "Nurture",
         "icon": "BarChart3",
         "stats": [

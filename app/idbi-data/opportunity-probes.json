@@ -50,8 +50,8 @@
           "prompt": "Quote a ₹1.25Cr term life top-up for Vandana Singh, age 54, non-smoker, self-employed, and show how it sits against her existing ₹33L cover and ₹36.75L of borrowing."
         },
         "card": {
-          "title": "Term cover top-up",
-          "subtitle": "Close a ₹1.25Cr protection gap",
+          "title": "More life cover",
+          "subtitle": "Her cover is too small for her loans",
           "fit": "High fit",
           "tags": [
             "Insurance",
@@ -118,8 +118,8 @@
           "prompt": "Explain a ₹10L critical-illness rider for Vandana Singh against her existing ₹5L family floater and ₹10L top-up, in plain language, with the premium and what it pays out."
         },
         "card": {
-          "title": "Critical illness rider",
-          "subtitle": "Lump sum behind a ₹5L family floater",
+          "title": "Critical illness cover",
+          "subtitle": "Pays a lump sum if she falls seriously ill",
           "fit": "High fit",
           "tags": [
             "Insurance",
@@ -175,8 +175,8 @@
           "prompt": "Prepare a motor renewal quote for Vandana Singh's PB-10 ••4417 with the 45% no-claim bonus carried over, bundled with her shop fire policy, and show the saving against her current ₹21,300 premium."
         },
         "card": {
-          "title": "Motor renewal · bundled",
-          "subtitle": "Move the renewal on to IDBI",
+          "title": "Car insurance renewal",
+          "subtitle": "Due in 62 days, and not with us",
           "fit": "Good fit",
           "tags": [
             "Insurance",
@@ -232,8 +232,8 @@
           "prompt": "Show Vandana Singh how the average clause would apply to a ₹10L fire loss on her ₹18L shop policy when actual stock is ₹31L, and what raising the sum insured to ₹32L would cost."
         },
         "card": {
-          "title": "Shop sum insured revision",
-          "subtitle": "₹13L of stock is uninsured",
+          "title": "Higher shop insurance",
+          "subtitle": "₹13L of her stock is not covered",
           "fit": "High fit",
           "tags": [
             "Insurance",
@@ -277,8 +277,8 @@
           "prompt": "Explain why a ₹50L personal accident policy with disability income benefit matters for Vandana Singh as a sole proprietor servicing ₹36.75L of borrowing, and quote the premium."
         },
         "card": {
-          "title": "Personal accident cover",
-          "subtitle": "No income protection on record",
+          "title": "Accident cover",
+          "subtitle": "She has none, and the EMIs do not stop",
           "fit": "High fit",
           "tags": [
             "Insurance",
