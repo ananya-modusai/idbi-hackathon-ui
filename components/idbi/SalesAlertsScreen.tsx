@@ -13,7 +13,7 @@ import { ActionButton, StatusPill, categoryColor, tierColor } from "@/components
 import { BubbleTag } from "@/components/custom/BubbleTag";
 import alertData from "@/app/idbi-data/sales-alerts.json";
 
-const TABS = [{ id: "alerts", label: "Sales Alerts" }] as const;
+const TABS = [{ id: "alerts", label: "Opportunity Signals" }] as const;
 type TabId = (typeof TABS)[number]["id"];
 
 /** Each kind of alert keeps its own chip tone, as the delivery has it. */
