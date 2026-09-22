@@ -2,12 +2,16 @@
 
 import * as React from "react";
 import {
-  Activity, ChevronDown, ChevronRight, CircleCheck, CreditCard, Instagram, Landmark, Lightbulb,
-  Linkedin, ListChecks, Newspaper, Search, Share2, Sparkles, TrendingUp, Twitter,
+  Activity, CalendarClock, CalendarDays, ChevronDown, ChevronRight, CircleCheck, CreditCard,
+  FileSearch, Heart, ImageIcon, Info, Instagram, Landmark, Lightbulb, Linkedin, ListChecks,
+  ExternalLink, Eye, MessageCircle, MessageSquareQuote, Newspaper, Repeat2, Search, Share2,
+  Sparkles, ThumbsUp, TrendingUp,
 } from "lucide-react";
 import probes from "@/app/idbi-data/opportunity-probes.json";
 import { cn } from "@/lib/utils";
 import { ActionButton, InsightBox, SectionHeader, StatusPill } from "@/components/idbi/workspace-ui";
+import { SocialPostBody } from "@/components/idbi/SocialPost";
+import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 
 /**
  * A collapsible tile: the compact summary is always visible, the reasoning opens under
@@ -84,17 +88,42 @@ const OpportunityRow: React.FC<{
   </div>
 );
 
+/** The post-2023 X mark — lucide still ships the old bird, which is the wrong logo. */
+const XMark = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden className={className}>
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644Z" />
+  </svg>
+);
+
+/** Money-story step colours: what she pays, what she gets, what it costs, what we lend. */
+const STORY_TONE: Record<string, string> = {
+  slate: "border-slate-200 bg-slate-50 text-slate-700",
+  emerald: "border-emerald-200 bg-emerald-50 text-emerald-800",
+  rose: "border-rose-200 bg-rose-50 text-rose-800",
+  blue: "border-blue-200 bg-blue-50 text-blue-800",
+};
+
 const PLATFORM_ICONS: Record<string, React.ElementType> = {
   LinkedIn: Linkedin,
   Instagram: Instagram,
-  X: Twitter,
+  X: XMark,
 };
 
-const PLATFORM_TINT: Record<string, string> = {
-  LinkedIn: "bg-[#0a66c2] text-white",
-  Instagram: "bg-[linear-gradient(135deg,#f9ce34,#ee2a7b_55%,#6228d7)] text-white",
-  X: "bg-slate-900 text-white",
+/** Brand chrome per platform — the badge fill and the tint behind the post header. */
+const PLATFORM_STYLE: Record<string, { badge: string; name: string; header: string }> = {
+  LinkedIn: { badge: "bg-[#0a66c2] text-white", name: "text-[#0a66c2]", header: "bg-[#0a66c2]/5" },
+  Instagram: { badge: "bg-[linear-gradient(135deg,#f9ce34,#ee2a7b_55%,#6228d7)] text-white", name: "text-[#c13584]", header: "bg-[#c13584]/5" },
+  X: { badge: "bg-black text-white", name: "text-slate-900", header: "bg-slate-900/5" },
 };
+
+/** What each platform calls its counters, and the icon it puts next to them. */
+const ENGAGEMENT_ICONS: Record<string, React.ElementType> = {
+  reactions: ThumbsUp, likes: Heart, comments: MessageCircle, replies: MessageCircle,
+  reposts: Repeat2,
+};
+
+const initialsOf = (name: string) =>
+  name.replace(/^@/, "").split(/[\s.]+/).filter(Boolean).slice(0, 2).map(part => part[0]?.toUpperCase()).join("");
 
 /**
  * Alerts — every selling opportunity found by probing the customer across sources they
@@ -103,6 +132,8 @@ const PLATFORM_TINT: Record<string, string> = {
  */
 export const AlertsTab: React.FC<{ onOpenAgent?: (prompt?: string) => void }> = ({ onOpenAgent }) => {
   const { esop, credit, social } = probes;
+  const [openPost, setOpenPost] = React.useState<string | null>(null);
+  const shownPost = social.posts.find(post => post.id === openPost) ?? null;
 
   return (
     <div className="space-y-8 px-6 pb-16 pt-5">
@@ -114,11 +145,11 @@ export const AlertsTab: React.FC<{ onOpenAgent?: (prompt?: string) => void }> = 
           titleMeta={<StatusPill tone="blue">{esop.summary.liveEvents} live event</StatusPill>}
         />
         <InsightBox
-          headline={`${esop.summary.vestedUnexercised} vested and unexercised across ${esop.summary.employers} employers, indicatively worth ${esop.summary.indicativeValue}.`}
+          headline="She owns shares in two companies she worked for. One is going public."
           bullets={[
-            "Helix Logistics filed its DRHP on 04 Sep 2026, which turns a dormant holding into a dated, taxable cash event.",
-            "The perquisite tax falls due at exercise whether or not she sells — that is the cash-flow problem to solve.",
-            "This is the largest single opportunity on the customer, and it has a deadline attached.",
+            "Those shares are worth about ₹63.2L.",
+            "To get them she must pay ₹18.4L in tax first — money she does not have lying around.",
+            "That is the opening: lend her the cash now, keep the ₹59.2L when it lands.",
           ]}
         />
 
@@ -138,22 +169,34 @@ export const AlertsTab: React.FC<{ onOpenAgent?: (prompt?: string) => void }> = 
                 </>
               }
             >
-              <p className="max-w-5xl text-sm leading-6 text-slate-700">{holding.detail}</p>
+              {holding.story.length > 0 && (
+                <div className="mb-4 flex flex-wrap items-stretch gap-2">
+                  {holding.story.map((step, index) => (
+                    <React.Fragment key={step.label}>
+                      {index > 0 && <ChevronRight className="mt-5 size-4 shrink-0 text-slate-300" />}
+                      <div className={cn("min-w-[9.5rem] flex-1 rounded-lg border px-3 py-2.5", STORY_TONE[step.tone] ?? STORY_TONE.slate)}>
+                        <p className="text-xs font-medium">{step.label}</p>
+                        <p className="mt-0.5 text-xl font-bold leading-none">{step.value}</p>
+                        <p className="mt-1 text-xs opacity-80">{step.note}</p>
+                      </div>
+                    </React.Fragment>
+                  ))}
+                </div>
+              )}
+
+              <p className="max-w-3xl text-sm leading-6 text-slate-700">{holding.detail}</p>
 
               {holding.news.length > 0 && (
                 <div className="mt-4">
                   <p className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-slate-500">
                     <Newspaper className="size-3.5" /> Company news
                   </p>
-                  <div className="mt-2 space-y-2">
+                  <div className="mt-2 space-y-1.5">
                     {holding.news.map(item => (
-                      <div key={item.headline} className="rounded-lg border border-slate-200 bg-white px-3 py-2.5">
-                        <div className="flex flex-wrap items-center gap-2">
-                          <span className="text-sm font-semibold text-slate-900">{item.headline}</span>
-                          <StatusPill tone="slate">{item.source}</StatusPill>
-                          <span className="text-xs text-slate-400">{item.date}</span>
-                        </div>
-                        <p className="mt-1 text-xs leading-5 text-slate-600">{item.detail}</p>
+                      <div key={item.headline} className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 rounded-lg border border-slate-200 bg-white px-3 py-2">
+                        <span className="text-sm font-semibold text-slate-900">{item.headline}</span>
+                        <span className="text-xs text-slate-600">{item.detail}</span>
+                        <span className="ml-auto shrink-0 text-xs text-slate-400">{item.date}</span>
                       </div>
                     ))}
                   </div>
@@ -186,14 +229,13 @@ export const AlertsTab: React.FC<{ onOpenAgent?: (prompt?: string) => void }> = 
         <SectionHeader
           icon={CreditCard}
           title="Credit Card & Limit Signals"
-          titleMeta={<StatusPill tone="amber">Soft pull · no score impact</StatusPill>}
         />
         <InsightBox
-          headline={`Bureau score ${credit.summary.score} (${credit.summary.scoreMove}), ${credit.summary.enquiries90d} card enquiries at other banks in 90 days, and still no IDBI card after eight years.`}
+          headline="Other banks are offering her a credit card. We never have."
           bullets={[
-            `Neither enquiry has converted — the bureau shows no new card account, so the window is still open.`,
-            `Pre-approved limit is ${credit.summary.preApproved}, built from internal banking history rather than a fresh pull.`,
-            `A soft pull was used throughout; her score is unaffected by this check.`,
+            `Her credit score is ${credit.summary.score} — good, and ${credit.summary.scoreMove}.`,
+            `${credit.summary.enquiries90d} card checks were run on her in the last 90 days. None has ended in a card yet.`,
+            `We can approve ${credit.summary.preApproved} today. Call her before they do.`,
           ]}
         />
 
@@ -201,15 +243,21 @@ export const AlertsTab: React.FC<{ onOpenAgent?: (prompt?: string) => void }> = 
             badge top-right, tag chips, a 3-up stat strip, then Why now / Next step. */}
         <div className="mt-4 grid gap-4 lg:grid-cols-2 xl:grid-cols-3">
           {credit.signals.map(signal => {
-            const SIcon = ({ Search, CreditCard, TrendingUp, Activity } as Record<string, React.ElementType>)[signal.icon] ?? Activity;
+            const SIcon = ({ Search, CreditCard, TrendingUp, Activity, FileSearch, CalendarClock } as Record<string, React.ElementType>)[signal.icon] ?? Activity;
             return (
               <article key={signal.id} className="flex flex-col justify-between rounded-lg border border-slate-200 bg-white p-4 shadow-[0_1px_2px_rgba(15,23,42,.03)]">
+                {/* The incident itself: what happened, where it was seen, and when. */}
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex min-w-0 items-start gap-3">
                     <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-blue-50 text-blue-600"><SIcon className="size-5" /></span>
                     <div className="min-w-0">
                       <h3 className="text-base font-semibold tracking-tight text-slate-950">{signal.title}</h3>
-                      <p className="mt-0.5 text-xs text-slate-500">{signal.headline}</p>
+                      <p className="mt-1 flex flex-wrap items-center gap-x-1.5 text-xs text-slate-500">
+                        <CalendarDays className="size-3.5 shrink-0 text-slate-400" />
+                        <span className="font-medium text-slate-700">{signal.when}</span>
+                        <span className="text-slate-300">·</span>
+                        <span>{signal.where}</span>
+                      </p>
                     </div>
                   </div>
                   <StatusPill tone={signal.tone as any}>{signal.urgency}</StatusPill>
@@ -231,17 +279,17 @@ export const AlertsTab: React.FC<{ onOpenAgent?: (prompt?: string) => void }> = 
 
                 <div className="mt-3 space-y-3 border-t border-slate-100 pt-3">
                   <div className="flex gap-2.5">
-                    <CircleCheck className="mt-0.5 size-4 shrink-0 text-emerald-600" />
+                    <Info className="mt-0.5 size-4 shrink-0 text-blue-600" />
                     <div className="min-w-0">
-                      <p className="text-sm font-semibold text-slate-900">Why now</p>
-                      <p className="mt-0.5 text-xs leading-5 text-slate-600">{signal.detail}</p>
+                      <p className="text-sm font-semibold text-slate-900">What this means</p>
+                      <p className="mt-0.5 text-xs leading-5 text-slate-600">{signal.happened}</p>
                     </div>
                   </div>
                   <div className="flex gap-2.5 border-t border-slate-100 pt-3">
                     <ListChecks className="mt-0.5 size-4 shrink-0 text-slate-400" />
                     <div className="min-w-0">
-                      <p className="text-sm font-semibold text-slate-900">Next step</p>
-                      <p className="mt-0.5 text-xs leading-5 text-slate-600">{signal.opportunity}</p>
+                      <p className="text-sm font-semibold text-slate-900">What we should do</p>
+                      <p className="mt-0.5 text-xs leading-5 text-slate-600">{signal.move}</p>
                     </div>
                   </div>
                 </div>
@@ -255,7 +303,6 @@ export const AlertsTab: React.FC<{ onOpenAgent?: (prompt?: string) => void }> = 
             );
           })}
         </div>
-        <p className="mt-2 text-xs text-slate-500">Source: {credit.source}</p>
       </section>
 
       {/* --------------------------------------------------- Social media probe ---- */}
@@ -277,58 +324,53 @@ export const AlertsTab: React.FC<{ onOpenAgent?: (prompt?: string) => void }> = 
         <div className="mt-4 grid gap-4 xl:grid-cols-2">
           {social.posts.map(post => {
             const PIcon = PLATFORM_ICONS[post.platform] ?? Share2;
+            const style = PLATFORM_STYLE[post.platform] ?? { badge: "bg-slate-100 text-slate-600", name: "text-slate-900", header: "bg-slate-50" };
+            const isInstagram = post.platform === "Instagram";
             return (
-              <article key={post.id} className="flex flex-col rounded-lg border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,.03)]">
-                {/* Post snapshot — what was actually posted, rendered as the post. */}
-                <div className="border-b border-slate-100 p-4">
-                  <div className="flex items-start gap-3">
-                    <span className={cn("grid size-9 shrink-0 place-items-center rounded-full", PLATFORM_TINT[post.platform] ?? "bg-slate-100 text-slate-600")}>
-                      <PIcon className="size-4" />
+              <article key={post.id} className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,.03)]">
+                {/* Platform strip — says which network this came off, in its own colour. */}
+                <div className={cn("flex items-center justify-between gap-2 border-b border-slate-100 px-4 py-2", style.header)}>
+                  <span className="flex items-center gap-2">
+                    <span className={cn("grid size-5 shrink-0 place-items-center rounded", style.badge)}>
+                      <PIcon className="size-3" />
                     </span>
-                    <div className="min-w-0 flex-1">
-                      <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                        <span className="truncate text-sm font-semibold text-slate-900">{post.handle}</span>
-                        <span className="text-xs text-slate-400">· {post.date}</span>
-                      </div>
-                      <p className="mt-0.5 text-xs text-slate-500">{post.matched}</p>
-                    </div>
+                    <span className={cn("text-xs font-semibold", style.name)}>{post.platform}</span>
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <StatusPill tone="slate">{post.matched}</StatusPill>
                     <StatusPill tone={post.confidence === "High" ? "emerald" : "amber"}>{post.confidence}</StatusPill>
-                  </div>
-
-                  <blockquote className="mt-3 border-l-2 border-slate-200 pl-3 text-sm leading-6 text-slate-700">
-                    {post.text}
-                  </blockquote>
-
-                  {"media" in post && post.media && (
-                    <p className="mt-2 text-xs italic text-slate-500">{post.media}</p>
-                  )}
-
-                  <div className="mt-2.5 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500">
-                    {Object.entries(post.engagement).map(([key, value]) => (
-                      <span key={key}>
-                        <span className="font-semibold text-slate-700">{value as number}</span>{" "}
-                        {key}
-                      </span>
-                    ))}
-                  </div>
+                  </span>
                 </div>
 
-                {/* What it is worth to us. */}
+                {/* A summary of the post — the post itself opens in the side panel, so
+                    every card in the grid stays the same height. */}
                 <div className="flex flex-1 flex-col justify-between gap-3 p-4">
                   <div>
-                    <div className="flex items-center gap-2">
-                      <Sparkles className="size-3.5 text-blue-600" />
-                      <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Signal</p>
-                    </div>
-                    <p className="mt-1 text-sm font-semibold text-slate-900">{post.signal}</p>
-                    <p className="mt-1.5 text-xs leading-5 text-slate-600">{post.opportunity}</p>
-                    <div className="mt-2.5 flex flex-wrap gap-1.5">
-                      {post.products.map(product => <StatusPill key={product} tone="blue">{product}</StatusPill>)}
+                    <p className="flex items-center gap-2 text-xs text-slate-500">
+                      <MessageSquareQuote className="size-3.5 shrink-0 text-slate-400" />
+                      Posted {post.timeAgo} ago · {post.date}
+                    </p>
+                    <p className="mt-1.5 text-sm leading-6 text-slate-700">{post.summary}</p>
+
+                    <div className="mt-3.5 border-t border-slate-100 pt-3">
+                      <div className="flex items-center gap-2">
+                        <Sparkles className="size-3.5 text-blue-600" />
+                        <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Signal</p>
+                      </div>
+                      <p className="mt-1 text-sm font-semibold text-slate-900">{post.signal}</p>
+                      <p className="mt-1.5 text-xs leading-5 text-slate-600">{post.opportunity}</p>
+                      <div className="mt-2.5 flex flex-wrap gap-1.5">
+                        {post.products.map(product => <StatusPill key={product} tone="blue">{product}</StatusPill>)}
+                      </div>
                     </div>
                   </div>
-                  <div>
+
+                  <div className="flex flex-wrap gap-2">
                     <ActionButton variant="default" onClick={() => onOpenAgent?.(post.prompt)}>
                       {post.action}
+                    </ActionButton>
+                    <ActionButton variant="outline" onClick={() => setOpenPost(post.id)}>
+                      <Eye /> See post
                     </ActionButton>
                   </div>
                 </div>
@@ -336,8 +378,68 @@ export const AlertsTab: React.FC<{ onOpenAgent?: (prompt?: string) => void }> = 
             );
           })}
         </div>
-        <p className="mt-2 text-xs text-slate-500">Source: {social.source}</p>
       </section>
+
+      {/* The full post, on the side — with the way out to the real thing. */}
+      <Sheet open={Boolean(shownPost)} onOpenChange={open => { if (!open) setOpenPost(null); }}>
+        <SheetContent side="right" className="w-[min(520px,94vw)] gap-0 overflow-y-auto border-l border-slate-200 bg-slate-50 p-0 sm:max-w-[520px]">
+          <SheetTitle className="sr-only">{shownPost?.signal}</SheetTitle>
+          {shownPost && (
+            <>
+              <div className="sticky top-0 z-10 flex items-center gap-2 border-b border-slate-200 bg-white px-4 py-3">
+                <span className={cn("grid size-6 shrink-0 place-items-center rounded", (PLATFORM_STYLE[shownPost.platform] ?? PLATFORM_STYLE.LinkedIn).badge)}>
+                  {(() => { const I = PLATFORM_ICONS[shownPost.platform] ?? Share2; return <I className="size-3.5" />; })()}
+                </span>
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-slate-900">{shownPost.platform} post</p>
+                  <p className="text-xs text-slate-500">Captured {shownPost.date}</p>
+                </div>
+                <span className="ml-auto"><StatusPill tone={shownPost.confidence === "High" ? "emerald" : "amber"}>{shownPost.confidence}</StatusPill></span>
+              </div>
+
+              <div className="p-4">
+                <SocialPostBody
+                  platform={shownPost.platform}
+                  author={shownPost.author}
+                  handle={shownPost.authorHandle}
+                  meta={shownPost.authorMeta}
+                  timeAgo={shownPost.timeAgo}
+                  text={shownPost.text}
+                  engagement={shownPost.engagement as unknown as Record<string, number>}
+                />
+
+                <a
+                  href={shownPost.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-3 inline-flex items-center gap-1.5 rounded-md border border-slate-300 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"
+                >
+                  <ExternalLink className="size-3.5" /> Open on {shownPost.platform}
+                </a>
+
+                <div className="mt-4 rounded-lg border border-slate-200 bg-white p-3.5">
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="size-3.5 text-blue-600" />
+                    <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Signal</p>
+                  </div>
+                  <p className="mt-1 text-sm font-semibold text-slate-900">{shownPost.signal}</p>
+                  <p className="mt-1.5 text-xs leading-5 text-slate-600">{shownPost.opportunity}</p>
+                  <div className="mt-2.5 flex flex-wrap gap-1.5">
+                    {shownPost.products.map(product => <StatusPill key={product} tone="blue">{product}</StatusPill>)}
+                  </div>
+                  <div className="mt-3">
+                    <ActionButton variant="default" onClick={() => { setOpenPost(null); onOpenAgent?.(shownPost.prompt); }}>
+                      {shownPost.action}
+                    </ActionButton>
+                  </div>
+                </div>
+
+                <p className="mt-3 text-xs text-slate-500">{shownPost.matched}</p>
+              </div>
+            </>
+          )}
+        </SheetContent>
+      </Sheet>
     </div>
   );
 };

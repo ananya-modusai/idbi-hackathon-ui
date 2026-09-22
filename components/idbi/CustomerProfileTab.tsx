@@ -20,7 +20,13 @@ const OPP_ICONS: Record<string, React.ElementType> = {
  * Insurance gaps, shaped exactly like an opportunity so they render as the same card in
  * the same grid. `prompt` is what the primary button hands to the agent.
  */
-const INSURANCE_CARDS = probes.insurance.groups.map(group => ({
+// Only these two surface as cards — the other gaps stay in the fixture and can be
+// switched back on by adding their id here.
+const INSURANCE_ON_CARDS = ["life", "property"];
+
+const INSURANCE_CARDS = probes.insurance.groups
+  .filter(group => INSURANCE_ON_CARDS.includes(group.id))
+  .map(group => ({
   id: `insurance-${group.id}`,
   icon: group.icon,
   title: group.card.title,
@@ -33,8 +39,8 @@ const INSURANCE_CARDS = probes.insurance.groups.map(group => ({
   trigger: group.card.whyNow,
   primaryAction: group.recommendation.action,
   secondaryAction: null as string | null,
-  prompt: group.recommendation.prompt,
-}));
+    prompt: group.recommendation.prompt,
+  }));
 import { Bar, BarChart, CartesianGrid, Cell, Line, LineChart, ReferenceArea, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 import data from "@/app/idbi-data/vandana-workspace.json";
@@ -276,14 +282,13 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
         <div className="mt-4">
           {idbiView === "Accounts & Products" && (
             <CompactTable minWidth={680}>
-              <colgroup><col style={{ width: "26%" }} /><col style={{ width: "12%" }} /><col style={{ width: "13%" }} /><col style={{ width: "19%" }} /><col style={{ width: "15%" }} /><col style={{ width: "15%" }} /></colgroup>
-              <TableHead><Th>Product</Th><Th center>Tier</Th><Th>Account No</Th><Th center>Balance / Deposit Value</Th><Th center>Opened</Th><Th center>Status</Th></TableHead>
+              <colgroup><col style={{ width: "30%" }} /><col style={{ width: "15%" }} /><col style={{ width: "21%" }} /><col style={{ width: "17%" }} /><col style={{ width: "17%" }} /></colgroup>
+              <TableHead><Th>Product</Th><Th>Account No</Th><Th center>Balance / Deposit Value</Th><Th center>Opened</Th><Th center>Status</Th></TableHead>
               <tbody>{customer.accounts.map(row => {
                 const [product, account] = row.product.split(" · ");
                 return (
                   <tr key={row.product}>
                     <Td className="font-medium text-slate-900">{product}</Td>
-                    <Td center><StatusPill tone={tierTone(customer.tier)} fixedWidth="w-[88px]">{customer.tier}</StatusPill></Td>
                     <Td className="tabular-nums">{account}</Td>
                     <Td center className="font-semibold text-slate-900">{row.value}</Td>
                     <Td center>{row.opened}</Td>
@@ -294,7 +299,7 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
             </CompactTable>
           )}
           {idbiView === "Loans & Credits" && (
-            <CompactTable minWidth={1000}><TableHead><Th>Loan / Facility</Th><Th center>Tier</Th><Th right>Outstanding</Th><Th right>Sanctioned Amount / Limit</Th><Th>Repayment</Th><Th>12-cycle Repayment</Th><Th>Status / Conduct</Th></TableHead><tbody>{customer.loans.map(row => <tr key={row.facility}><Td className="font-medium text-slate-900">{row.facility}</Td><Td center><StatusPill tone={tierTone(customer.tier)} fixedWidth="w-[88px]">{customer.tier}</StatusPill></Td><Td right className="font-semibold">{row.outstanding}</Td><Td right>{row.limit}</Td><Td>{row.repayment}</Td><Td><RepaymentStrip values={row.timeline} /></Td><Td><StatusPill tone="emerald">{row.conduct}</StatusPill></Td></tr>)}</tbody></CompactTable>
+            <CompactTable minWidth={900}><TableHead><Th>Loan / Facility</Th><Th right>Outstanding</Th><Th right>Sanctioned Amount / Limit</Th><Th>Repayment</Th><Th>12-cycle Repayment</Th><Th>Status / Conduct</Th></TableHead><tbody>{customer.loans.map(row => <tr key={row.facility}><Td className="font-medium text-slate-900">{row.facility}</Td><Td right className="font-semibold">{row.outstanding}</Td><Td right>{row.limit}</Td><Td>{row.repayment}</Td><Td><RepaymentStrip values={row.timeline} /></Td><Td><StatusPill tone="emerald">{row.conduct}</StatusPill></Td></tr>)}</tbody></CompactTable>
           )}
           {idbiView === "Credit Cards" && (
             <DataUnavailable

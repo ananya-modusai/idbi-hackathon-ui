@@ -312,7 +312,7 @@
     "source": "Customer declaration · MCA filings · SEBI DRHP registry · secondary-market price feed",
     "summary": {
       "employers": 2,
-      "vestedUnexercised": "5,400 options",
+      "vestedUnexercised": "5,400 shares",
       "indicativeValue": "₹63.2L",
       "liveEvents": 1
     },
@@ -323,65 +323,91 @@
         "role": "Head of Operations · Jun 2009 – Jul 2018",
         "status": "IPO filed",
         "statusTone": "emerald",
-        "headline": "4,800 vested options · indicative ₹61.2L on listing",
+        "headline": "She can buy 4,800 shares cheap. They are worth ₹61.2L.",
         "facts": [
           {
-            "label": "Options granted",
-            "value": "12,000",
-            "secondary": "3 grants, 2011–2016"
-          },
-          {
-            "label": "Vested & unexercised",
+            "label": "Shares she can buy",
             "value": "4,800",
-            "secondary": "Exercise window open"
+            "secondary": "Already earned"
           },
           {
-            "label": "Strike price",
-            "value": "₹42.00",
-            "secondary": "Exercise cost ₹2.02L"
+            "label": "Price she pays",
+            "value": "₹42",
+            "secondary": "Fixed years ago"
           },
           {
-            "label": "Indicative value",
+            "label": "Price today",
+            "value": "₹1,275",
+            "secondary": "Expected at listing"
+          },
+          {
+            "label": "What they are worth",
             "value": "₹61.2L",
-            "secondary": "At ₹1,275 mid band"
+            "secondary": "4,800 × ₹1,275"
           }
         ],
         "news": [
           {
             "date": "04 Sep 2026",
             "source": "SEBI filing",
-            "headline": "Helix Logistics files DRHP for a ₹1,450 Cr IPO",
-            "detail": "Fresh issue of ₹900 Cr and an offer for sale of ₹550 Cr. Indicative price band of ₹1,240–1,310 reported by two merchant bankers; listing expected in the December quarter."
+            "headline": "Helix Logistics is going public",
+            "detail": "₹1,450 Cr IPO. Listing expected by December."
           },
           {
             "date": "22 Aug 2026",
-            "source": "Secondary market",
-            "headline": "Unlisted shares trading at ₹1,180 in the grey market",
-            "detail": "Up from ₹840 six months ago. Employee sell-side liquidity has been thin since the company restricted transfers ahead of the filing."
+            "source": "Market price",
+            "headline": "Shares now trade at ₹1,180",
+            "detail": "Up from ₹840 six months ago."
           }
         ],
-        "detail": "She holds 4,800 vested but unexercised options from her years at Helix, at a strike of ₹42. Exercising costs ₹2.02L. At the mid point of the reported band those shares are worth about ₹61.2L, a gain of ₹59.2L. Tax lands in two places: the spread at exercise is taxed as a perquisite at slab — roughly ₹18.4L — and anything gained after listing is capital gains. The perquisite is due whether or not she sells, which is exactly the cash-flow problem an ESOP funding facility exists to solve.",
+        "detail": "She earned these shares while working at Helix. The catch: the tax is due the day she buys them, not the day she sells. So she needs ₹20.4L in cash before the listing — that is what we lend.",
         "opportunities": [
           {
-            "title": "ESOP funding facility",
+            "title": "ESOP funding",
             "value": "₹20.5L",
-            "why": "Covers the ₹2.02L exercise cost and the ₹18.4L perquisite tax so she does not have to sell into the listing to pay the tax bill.",
+            "why": "We lend the ₹20.4L she needs. She repays from the listing.",
             "action": "Check ESOP funding",
             "prompt": "Work out an ESOP funding facility for Vandana Singh: 4,800 Helix Logistics options at a ₹42 strike, ₹18.4L perquisite tax, listing expected in the December quarter. Show the facility size, tenor and exit route."
           },
           {
-            "title": "3-in-1 demat and trading account",
-            "value": "Pre-listing",
-            "why": "Allotment needs a demat account in her name before the exercise window closes. She does not hold one with IDBI today.",
+            "title": "Demat account",
+            "value": "3 days",
+            "why": "Shares cannot be issued without one. She has none with us.",
             "action": "Open demat",
             "prompt": "Explain what Vandana Singh needs to open a 3-in-1 IDBI demat and trading account before her Helix Logistics options are allotted, and how long it takes."
           },
           {
-            "title": "Post-listing wealth mandate",
-            "value": "₹59.2L inflow",
-            "why": "A liquidity event of this size usually moves to a competitor within weeks of credit. Booking the conversation now is the difference between a deposit and a mandate.",
+            "title": "Invest the proceeds",
+            "value": "₹59.2L",
+            "why": "Money this size leaves for another bank if we do not ask first.",
             "action": "Plan the proceeds",
             "prompt": "Draft a plan for deploying a ₹59.2L post-listing inflow for Vandana Singh, age 54, self-employed, covering capital-gains treatment, liquid parking and a staggered allocation."
+          }
+        ],
+        "story": [
+          {
+            "label": "She pays",
+            "value": "₹2.02L",
+            "note": "to buy the shares",
+            "tone": "slate"
+          },
+          {
+            "label": "She gets",
+            "value": "₹61.2L",
+            "note": "worth of shares",
+            "tone": "emerald"
+          },
+          {
+            "label": "Tax due at once",
+            "value": "₹18.4L",
+            "note": "even if she sells nothing",
+            "tone": "rose"
+          },
+          {
+            "label": "Cash she needs now",
+            "value": "₹20.4L",
+            "note": "this is our opening",
+            "tone": "blue"
           }
         ]
       },
@@ -391,40 +417,41 @@
         "role": "Advisory board · Apr 2021 – present",
         "status": "Early stage",
         "statusTone": "slate",
-        "headline": "1,200 options · 600 vested · no live event",
+        "headline": "600 shares in a small company. Nothing to do yet.",
         "facts": [
           {
-            "label": "Options granted",
-            "value": "1,200",
-            "secondary": "Advisory grant, 2021"
-          },
-          {
-            "label": "Vested & unexercised",
+            "label": "Shares she can buy",
             "value": "600",
-            "secondary": "4-year schedule"
+            "secondary": "Advisory grant"
           },
           {
-            "label": "Strike price",
-            "value": "₹110.00",
-            "secondary": "Exercise cost ₹66,000"
+            "label": "Price she pays",
+            "value": "₹110",
+            "secondary": "Costs ₹66,000"
           },
           {
-            "label": "Last valuation",
+            "label": "Price today",
             "value": "₹340",
-            "secondary": "Seed extension, Nov 2025"
+            "secondary": "Last valued Nov 2025"
+          },
+          {
+            "label": "What they are worth",
+            "value": "₹2.04L",
+            "secondary": "On paper only"
           }
         ],
         "news": [],
-        "detail": "A small advisory grant with no liquidity event in sight and no secondary market. Worth recording because it sits on her net-worth statement and affects how much of the Helix proceeds she can afford to lock up, but there is nothing to sell against it today.",
+        "detail": "This company is not listed and there is no buyer for the shares, so the ₹2.04L is on paper only. Worth noting on her file, nothing to sell today.",
         "opportunities": [
           {
-            "title": "Record in net-worth statement",
-            "value": "₹2.04L notional",
-            "why": "Keeps the wealth profile complete ahead of the Helix conversation. No action needed from the customer.",
+            "title": "Note on file",
+            "value": "₹2.04L",
+            "why": "Counts towards her wealth. No action needed from her.",
             "action": "Note on file",
             "prompt": "Add Vandana Singh's 600 vested Saanvi Analytics options at a ₹340 last valuation to her net-worth view and explain why it is illiquid."
           }
-        ]
+        ],
+        "story": []
       }
     ]
   },
@@ -433,48 +460,157 @@
     "summary": {
       "score": "766",
       "scoreMove": "+76 in 18 months",
-      "enquiries90d": 2,
+      "incidents90d": 6,
+      "enquiries90d": 3,
       "externalCards": 1,
       "preApproved": "₹4.25L"
     },
     "signals": [
       {
-        "id": "enquiries",
-        "title": "Two credit-card enquiries at other banks in 90 days",
+        "id": "aggregator",
+        "title": "She compared credit cards on Paisabazaar",
+        "when": "22 Aug 2026",
+        "where": "Soft enquiry logged by HDFC Bank",
         "icon": "Search",
         "tone": "amber",
         "urgency": "Act this week",
         "tags": [
-          "Bureau enquiry",
-          "Cross-sell",
-          "Act now"
+          "Card enquiry",
+          "Aggregator",
+          "Not converted"
         ],
-        "headline": "HDFC Bank on 22 Aug, Axis Bank on 05 Sep",
         "facts": [
           {
-            "label": "Enquiries, 90 days",
-            "value": "2",
-            "secondary": "Both card products"
+            "label": "Where",
+            "value": "Paisabazaar",
+            "secondary": "Comparison site"
           },
           {
-            "label": "Approved elsewhere",
-            "value": "None yet",
-            "secondary": "No new account on bureau"
+            "label": "Type of check",
+            "value": "Soft",
+            "secondary": "Score not affected"
           },
           {
-            "label": "IDBI card held",
-            "value": "None",
-            "secondary": "8-year relationship"
+            "label": "Outcome",
+            "value": "No card issued",
+            "secondary": "28 days ago"
           }
         ],
-        "detail": "She is shopping for a credit card right now and has not come to us, which is the honest read of two card enquiries in three weeks at two private banks. Neither has converted yet — the bureau shows no new card account — so the window is open. She has banked with IDBI for eight years and holds four accounts, and we have never put a card in front of her.",
-        "opportunity": "Pre-approved IDBI card at ₹4.25L, above what either enquiry is likely to sanction on income proof alone, issued against internal banking history rather than a fresh bureau pull.",
+        "happened": "She went to a comparison website and looked at credit cards from other banks. HDFC ran a light background check on her the same day, but nothing came of it.",
+        "move": "She is card-shopping and did not think of us. Call her with the ₹4.25L pre-approved card before one of those banks calls first.",
         "action": "Check card eligibility",
         "prompt": "Vandana Singh has two external credit-card enquiries in the last 90 days and no IDBI card. Check her pre-approved card eligibility and draft what I should say when I call her."
       },
       {
+        "id": "axis",
+        "title": "Axis Bank ran a full credit check on her",
+        "when": "05 Sep 2026",
+        "where": "Hard enquiry on the CIBIL report",
+        "icon": "FileSearch",
+        "tone": "rose",
+        "urgency": "Act now",
+        "tags": [
+          "Card enquiry",
+          "Hard pull",
+          "Decision pending"
+        ],
+        "facts": [
+          {
+            "label": "Bank",
+            "value": "Axis Bank",
+            "secondary": "Card application"
+          },
+          {
+            "label": "Type of check",
+            "value": "Hard",
+            "secondary": "Shows on her report"
+          },
+          {
+            "label": "Status",
+            "value": "Still open",
+            "secondary": "14 days ago"
+          }
+        ],
+        "happened": "A hard check means she actually applied, not just browsed. Axis has not issued the card yet, so the decision is still sitting with them.",
+        "move": "This is the last week to get in front of her. Once Axis issues a card, she stops looking and we wait years for the next chance.",
+        "action": "Draft the counter-offer",
+        "prompt": "Axis Bank ran a hard credit-card enquiry on Vandana Singh on 05 Sep 2026 and has not issued yet. Draft a counter-offer and the call script I should use this week."
+      },
+      {
+        "id": "limitraise",
+        "title": "SBI Card raised her limit to ₹2.50L",
+        "when": "12 Aug 2026",
+        "where": "Reported by the card issuer",
+        "icon": "TrendingUp",
+        "tone": "amber",
+        "urgency": "This month",
+        "tags": [
+          "Limit increase",
+          "Competitor move",
+          "Appetite"
+        ],
+        "facts": [
+          {
+            "label": "Old limit",
+            "value": "₹2.00L",
+            "secondary": "Since 2019"
+          },
+          {
+            "label": "New limit",
+            "value": "₹2.50L",
+            "secondary": "Raised 12 Aug"
+          },
+          {
+            "label": "Increase",
+            "value": "+25%",
+            "secondary": "Unprompted"
+          }
+        ],
+        "happened": "Her existing card company gave her a bigger limit on their own, without her asking. Banks only do that for customers they want to keep and lend more to.",
+        "move": "A competitor is deepening this relationship while we hold four of her accounts and no card. Our ₹4.25L pre-approval beats their new limit by ₹1.75L.",
+        "action": "Compare the limits",
+        "prompt": "SBI Card raised Vandana Singh's limit from ₹2.00L to ₹2.50L unprompted on 12 Aug 2026. Explain what that signals and how our ₹4.25L pre-approval compares."
+      },
+      {
+        "id": "emi",
+        "title": "She turned a ₹64,000 purchase into EMIs",
+        "when": "28 Aug 2026",
+        "where": "SBI Card statement",
+        "icon": "CalendarClock",
+        "tone": "amber",
+        "urgency": "This month",
+        "tags": [
+          "EMI conversion",
+          "Cash tight",
+          "Expensive"
+        ],
+        "facts": [
+          {
+            "label": "Amount",
+            "value": "₹64,000",
+            "secondary": "Single purchase"
+          },
+          {
+            "label": "Spread over",
+            "value": "9 months",
+            "secondary": "₹7,600 a month"
+          },
+          {
+            "label": "Interest",
+            "value": "16% p.a.",
+            "secondary": "₹4,320 total"
+          }
+        ],
+        "happened": "She bought something for ₹64,000 and chose to pay it back in instalments instead of in one go. People do that when cash is tight that month.",
+        "move": "She is paying 16% for ₹64,000 while running a business with a working-capital enquiry open. Our overdraft costs less and does not sit on a card.",
+        "action": "Show the cheaper option",
+        "prompt": "Vandana Singh converted a ₹64,000 card purchase to a 9-month EMI at 16% p.a. Compare that against an IDBI overdraft and show what she would save."
+      },
+      {
         "id": "utilisation",
-        "title": "External card running at 71% utilisation",
+        "title": "Her card crossed 70% of its limit",
+        "when": "03 Sep 2026",
+        "where": "Monthly bureau update",
         "icon": "CreditCard",
         "tone": "amber",
         "urgency": "This month",
@@ -482,92 +618,59 @@
           "Utilisation",
           "Balance transfer"
         ],
-        "headline": "₹1.78L drawn on a ₹2.50L limit, never late",
         "facts": [
           {
             "label": "Limit",
             "value": "₹2.50L",
-            "secondary": "SBI Card, opened 2019"
+            "secondary": "SBI Card"
           },
           {
-            "label": "Current outstanding",
+            "label": "Owed",
             "value": "₹1.78L",
-            "secondary": "71% utilised"
+            "secondary": "71% used"
           },
           {
-            "label": "Payment record",
+            "label": "Payments",
             "value": "0 late",
             "secondary": "24 months clean"
           }
         ],
-        "detail": "Utilisation above 30% drags a bureau score even when every payment is on time, and hers has been sitting in the 60–75% band for five months. That is a business owner using a personal card for stock purchases because the working-capital limit is tight — the same story as the working-capital enquiry already open on her file.",
-        "opportunity": "A balance transfer onto an IDBI card at 0.99% for 6 months clears ₹1.78L of revolving interest, and the higher limit drops her utilisation ratio to about 42%, which the bureau will read as an improvement within two cycles.",
+        "happened": "She is using most of her card limit every month and paying it off on time. Using this much of a card pulls a credit score down even when nothing goes wrong.",
+        "move": "Move the ₹1.78L on to our card at 0.99% for six months. Her usage drops to 26% and the score stops being dragged.",
         "action": "Model balance transfer",
         "prompt": "Model a balance transfer of ₹1.78L from Vandana Singh's SBI Card onto an IDBI card at 0.99% for 6 months, and show the interest saved and the effect on her utilisation ratio."
       },
       {
-        "id": "limit",
-        "title": "Limit increase supported on banking conduct",
-        "icon": "TrendingUp",
-        "tone": "emerald",
-        "urgency": "When the card is live",
-        "tags": [
-          "Pre-approved",
-          "Limit review"
-        ],
-        "headline": "₹4.25L pre-approved, ₹6.00L on 6 months of conduct",
-        "facts": [
-          {
-            "label": "Pre-approved now",
-            "value": "₹4.25L",
-            "secondary": "Internal model"
-          },
-          {
-            "label": "At 6 months",
-            "value": "₹6.00L",
-            "secondary": "On clean conduct"
-          },
-          {
-            "label": "Average balance",
-            "value": "₹2.69L",
-            "secondary": "Across 4 accounts"
-          }
-        ],
-        "detail": "The pre-approved figure is built from eight years of banking history, an average balance of ₹2.69L and a clean repayment record on ₹36.75L of borrowing — not from the thin card file the bureau sees. Once the card has run six clean cycles the limit review is automatic and lands near ₹6.00L.",
-        "opportunity": "Say the six-month step-up out loud at the point of sale. A customer choosing between three offers picks the one that tells them where it goes next.",
-        "action": "Draft the pitch",
-        "prompt": "Draft what I should say to Vandana Singh about the ₹4.25L pre-approved card limit and the ₹6.00L review after six months of clean conduct."
-      },
-      {
-        "id": "thinfile",
-        "title": "Score up 76 points, but the card file is thin",
+        "id": "score",
+        "title": "Her credit score updated to 766",
+        "when": "16 Sep 2026",
+        "where": "CIBIL quarterly refresh",
         "icon": "Activity",
-        "tone": "blue",
+        "tone": "emerald",
         "urgency": "Context",
         "tags": [
-          "Bureau context",
-          "Score"
+          "Score update",
+          "Good news"
         ],
-        "headline": "690 in Mar 2025 → 766 today, on one card",
         "facts": [
           {
-            "label": "Score today",
+            "label": "Score now",
             "value": "766",
-            "secondary": "CIBIL, 16 Sep 2026"
+            "secondary": "Out of 900"
           },
           {
-            "label": "18-month move",
-            "value": "+76",
-            "secondary": "From 690"
+            "label": "18 months ago",
+            "value": "690",
+            "secondary": "+76 points"
           },
           {
-            "label": "Card accounts",
+            "label": "Cards held",
             "value": "1",
             "secondary": "Since 2019"
           }
         ],
-        "detail": "The score recovered from a 654 dip in late 2024 after a stretched quarter, and has climbed steadily since the business stabilised. It is being carried almost entirely by the loan repayment record — one card since 2019 is a thin revolving file, which is why the score has stalled just under 770 despite everything else being clean.",
-        "opportunity": "A second card, used lightly and paid in full, widens the revolving file and typically adds 10–15 points over three to four cycles. Worth mentioning only as a reason, never as a promise.",
+        "happened": "Her score has climbed steadily since the business steadied, carried almost entirely by her loan repayments. One card since 2019 is a thin history, which is why it has stalled just under 770.",
+        "move": "Good news is a reason to call. A second card used lightly widens that history and usually adds 10–15 points over a few months.",
         "action": "Explain the score",
         "prompt": "Explain in plain language how Vandana Singh's CIBIL score moved from 690 to 766 and why a thin card file is holding it under 770."
       }
@@ -586,6 +689,10 @@
         "id": "oem",
         "platform": "LinkedIn",
         "handle": "Vandana Singh · Founder, Vandana Enterprises",
+        "author": "Vandana Singh",
+        "authorHandle": "vandana-singh-enterprises",
+        "authorMeta": "Founder, Vandana Enterprises · Kila Raipur, Punjab",
+        "timeAgo": "1w",
         "date": "11 Sep 2026",
         "confidence": "High",
         "matched": "Verified · name, location and business match",
@@ -603,12 +710,18 @@
           "Invoice discounting"
         ],
         "action": "Know more",
-        "prompt": "Vandana Singh posted that Vandana Enterprises has been empanelled as a Tier-2 auto OEM supplier and doubles capacity from October. Assess what this means for her working-capital enquiry and what facilities to put in front of her."
+        "prompt": "Vandana Singh posted that Vandana Enterprises has been empanelled as a Tier-2 auto OEM supplier and doubles capacity from October. Assess what this means for her working-capital enquiry and what facilities to put in front of her.",
+        "summary": "She announced that Vandana Enterprises is now a Tier-2 supplier to a large auto maker, and that the Kila Raipur unit doubles capacity from October.",
+        "url": "https://www.linkedin.com/posts/vandana-singh-enterprises_oem-empanelment-activity-7112"
       },
       {
         "id": "cnc",
         "platform": "Instagram",
         "handle": "@vandana.enterprises",
+        "author": "vandana.enterprises",
+        "authorHandle": "@vandana.enterprises",
+        "authorMeta": "Kila Raipur, Punjab",
+        "timeAgo": "2w",
         "date": "03 Sep 2026",
         "confidence": "High",
         "matched": "Business handle linked from the LinkedIn profile",
@@ -626,12 +739,18 @@
           "Equipment refinance"
         ],
         "action": "Know more",
-        "prompt": "Vandana Singh installed a new CNC line in September 2026 that was not financed through IDBI. Assess the refinance and asset-insurance opportunity, and tie it to the ₹13L under-declaration on her shop policy."
+        "prompt": "Vandana Singh installed a new CNC line in September 2026 that was not financed through IDBI. Assess the refinance and asset-insurance opportunity, and tie it to the ₹13L under-declaration on her shop policy.",
+        "summary": "She posted about a new CNC line being installed at the Kila Raipur unit in September, after eleven months of planning.",
+        "url": "https://www.instagram.com/p/C8nKq2rVandana"
       },
       {
         "id": "payments",
         "platform": "X",
         "handle": "@vandana_singh",
+        "author": "Vandana Singh",
+        "authorHandle": "@vandana_singh",
+        "authorMeta": "Founder, Vandana Enterprises",
+        "timeAgo": "3w",
         "date": "27 Aug 2026",
         "confidence": "Medium",
         "matched": "Handle matches registered mobile; profile is partially private",
@@ -649,12 +768,18 @@
           "Overdraft review"
         ],
         "action": "Know more",
-        "prompt": "Vandana Singh publicly said OEM payment cycles have stretched to 75 days. Size the receivables gap for Vandana Enterprises and compare invoice discounting against an overdraft enhancement."
+        "prompt": "Vandana Singh publicly said OEM payment cycles have stretched to 75 days. Size the receivables gap for Vandana Enterprises and compare invoice discounting against an overdraft enhancement.",
+        "summary": "She complained publicly that OEM payment cycles have stretched to 75 days and that MSME founders are financing someone else's working capital.",
+        "url": "https://x.com/vandana_singh/status/1829440172553"
       },
       {
         "id": "summit",
         "platform": "LinkedIn",
         "handle": "Vandana Singh · Founder, Vandana Enterprises",
+        "author": "Vandana Singh",
+        "authorHandle": "vandana-singh-enterprises",
+        "authorMeta": "Founder, Vandana Enterprises · Kila Raipur, Punjab",
+        "timeAgo": "1mo",
         "date": "18 Aug 2026",
         "confidence": "Medium",
         "matched": "Verified · same profile",
@@ -670,7 +795,9 @@
           "Priority banking invite"
         ],
         "action": "Know more",
-        "prompt": "Vandana Singh is speaking at the Ludhiana MSME Summit on women-led manufacturing and access to credit. Suggest how to use this as a relationship and referral touchpoint."
+        "prompt": "Vandana Singh is speaking at the Ludhiana MSME Summit on women-led manufacturing and access to credit. Suggest how to use this as a relationship and referral touchpoint.",
+        "summary": "She announced she is speaking at the Ludhiana MSME Summit on women-led manufacturing and access to credit.",
+        "url": "https://www.linkedin.com/posts/vandana-singh-enterprises_msme-summit-activity-7108"
       }
     ]
   }
