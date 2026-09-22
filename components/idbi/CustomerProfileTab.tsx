@@ -179,6 +179,7 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
           neutralFlags={insightsBy("low")}
           flagTypeOrderList={["negative", "mildNegative", "neutral", "positive"]}
           flagSummaryLabel="Insights"
+          flagRowLayout="category"
           action={
             <ActionButton
               variant="default"

@@ -2,14 +2,14 @@
 
 import * as React from "react";
 import {
-  Activity, ArrowDownLeft, ArrowDownToLine, ArrowLeftRight, ArrowUpRight, BadgeIndianRupee, Banknote, BriefcaseBusiness, Building2, ChevronRight, CircleCheck, Coins, CreditCard, FileSpreadsheet, FileText, HandCoins, Landmark, PiggyBank, TrendingUp, UsersRound, WalletCards,
+  Activity, ArrowDownLeft, ArrowDownToLine, ArrowLeftRight, ArrowUpRight, BadgeIndianRupee, Banknote, BarChart3, BriefcaseBusiness, Building2, ChevronRight, CircleCheck, Coins, CreditCard, FileSpreadsheet, FileText, HandCoins, Landmark, Leaf, PiggyBank, TrendingUp, UsersRound, WalletCards,
 } from "lucide-react";
 
 import data from "@/app/idbi-data/vandana-workspace.json";
 import { cn } from "@/lib/utils";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import {
-  ActionButton, CompactTable, DataUnavailable, InsightBox, MetricGrid, SectionHeader,
+  ActionButton, CompactTable, DataUnavailable, InsightBox, MetricGrid, RepaymentStrip, SectionHeader,
   StatusPill, TableHead, Td, Th,
 } from "@/components/idbi/workspace-ui";
 import { Visualization } from "@/components/custom/visualization";
@@ -60,12 +60,21 @@ function FinancialSection({
   );
 }
 
+/** Icons for the allocation rows, named from the fixture. */
+const ALLOCATION_ICONS: Record<string, React.ElementType> = {
+  Landmark, FileText, TrendingUp, BarChart3, Leaf,
+};
+
 const closingBalances = [1.92, 2.10, 2.28, 2.16, 2.62, 3.10];
 const bounces = [0, 0, 0, 1, 0, 0];
 
 export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: string) => void }) {
   const fp = data.financialPosition;
   const [scope, setScope] = React.useState(fp.scopeOptions[0]);
+  const [loanStatus, setLoanStatus] = React.useState<string[]>(["All"]);
+  const [loanPortfolio, setLoanPortfolio] = React.useState<string[]>(["All"]);
+  const [loanLender, setLoanLender] = React.useState<string[]>([]);
+  const [loanProduct, setLoanProduct] = React.useState<string[]>([]);
   // Picking a single account rescales the bank-flow figures by that account's share,
   // so the numbers on screen always belong to the selection.
   const activeScope = (fp.accountScopes as any[]).find(s => s.label === scope) ?? fp.accountScopes[0];
@@ -134,6 +143,63 @@ export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: 
   }), [primaryFilterGroup]);
 
   const { filterState, setFilterState } = useFilterState(filterGroups);
+
+  const borrowingFilterGroups = React.useMemo(() => ({
+    primary: [
+      {
+        id: "loanStatus",
+        label: "Status",
+        type: "togglebuttons" as const,
+        options: ["All", "Active", "Inactive"].map(o => ({ value: o, label: o })),
+        selectedValues: loanStatus,
+        onFilterChange: (vals: string[]) => setLoanStatus(vals.length ? [vals[vals.length - 1]] : ["All"]),
+        singleSelect: true,
+        showLabel: true,
+      },
+      {
+        id: "loanPortfolio",
+        label: "Portfolio",
+        type: "togglebuttons" as const,
+        options: ["All", "Yes", "No"].map(o => ({ value: o, label: o })),
+        selectedValues: loanPortfolio,
+        onFilterChange: (vals: string[]) => setLoanPortfolio(vals.length ? [vals[vals.length - 1]] : ["All"]),
+        singleSelect: true,
+        showLabel: true,
+      },
+      {
+        id: "loanLender",
+        label: "Lender",
+        type: "multiselect" as const,
+        options: Array.from(new Set(fp.borrowings.map((b: any) => b.lender))).map(l => ({ value: l as string, label: l as string })),
+        selectedValues: loanLender,
+        onFilterChange: (vals: string[]) => setLoanLender(vals),
+        showAllOption: true,
+        showLabel: true,
+        width: "230px",
+      },
+      {
+        id: "loanProduct",
+        label: "Product",
+        type: "multiselect" as const,
+        options: Array.from(new Set(fp.borrowings.map((b: any) => b.product))).map(l => ({ value: l as string, label: l as string })),
+        selectedValues: loanProduct,
+        onFilterChange: (vals: string[]) => setLoanProduct(vals),
+        showAllOption: true,
+        showLabel: true,
+        width: "250px",
+      },
+    ] as PrimaryFilterGroup[],
+    secondary: [] as SecondaryFilterGroup[],
+    tertiary: [] as TertiaryFilterGroup[],
+  }), [loanStatus, loanPortfolio, loanLender, loanProduct]);
+  const { filterState: borrowingFilterState, setFilterState: setBorrowingFilterState } = useFilterState(borrowingFilterGroups);
+
+  const borrowings = React.useMemo(() => fp.borrowings.filter((row: any) => (
+    (loanStatus[0] === "All" || row.status === loanStatus[0]) &&
+    (loanPortfolio[0] === "All" || row.portfolio === loanPortfolio[0]) &&
+    (!loanLender.length || loanLender.includes(row.lender)) &&
+    (!loanProduct.length || loanProduct.includes(row.product))
+  )), [loanStatus, loanPortfolio, loanLender, loanProduct]);
 
   return (
     <div className="space-y-10">
@@ -242,7 +308,6 @@ export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: 
       </FinancialSection>
 
       <FinancialSection icon={UsersRound} title="Employment & Establishment Health">
-        <p className="mb-2 text-sm font-semibold text-slate-900">Headcount &amp; Salary Delay Trend</p>
         <Visualization
           type="combo"
           data={fp.employmentTrend}
@@ -292,9 +357,46 @@ export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: 
           { label: "Monthly Debt Repayments", value: "₹0.88L", icon: BadgeIndianRupee, tone: "emerald" as const },
         ]} />
         <div className="mt-4">
-          <InsightBox headline="Reported debt conduct is current, but external coverage is incomplete." bullets={[<>Reported repayments show 0 DPD and ₹0 overdue.</>, <>Run a pre-check before discussing additional credit because external loan and card exposure is incomplete.</>]} />
+          <CustomListFilter
+            filterGroups={borrowingFilterGroups}
+            filterState={borrowingFilterState}
+            setFilterState={setBorrowingFilterState}
+            showFilterToggle={false}
+          />
         </div>
-        <div className="mt-4"><CompactTable minWidth={980}><TableHead><Th>Loan / Facility</Th><Th>Lender / Source</Th><Th right>Outstanding</Th><Th right>Sanctioned Amount / Limit</Th><Th right>Monthly Due</Th><Th>Remaining Tenure</Th><Th>Conduct</Th></TableHead><tbody>{fp.loans.map(row => <tr key={row.facility}><Td className="font-semibold text-slate-900">{row.facility}</Td><Td>{row.lender}</Td><Td right className="font-semibold">{row.outstanding}</Td><Td right>{row.limit}</Td><Td right>{row.monthlyDue}</Td><Td>{row.tenure}</Td><Td><StatusPill tone="emerald">{row.conduct}</StatusPill></Td></tr>)}</tbody></CompactTable></div>
+
+        <div className="mt-4">
+          <CompactTable minWidth={1500}>
+            <TableHead>
+              <Th center>Status</Th><Th center>Portfolio</Th><Th>Start Date</Th><Th>Lender</Th><Th>Product</Th>
+              <Th right>Secured Amount</Th><Th right>Outstanding Loan Amount</Th><Th right>Util. / EMI</Th>
+              <Th right>Interest %</Th><Th>Repayment Timeline</Th><Th>Collateral</Th>
+            </TableHead>
+            <tbody>
+              {borrowings.map((row: any) => (
+                <tr key={row.id}>
+                  <Td center><StatusPill tone={row.status === "Active" ? "emerald" : "rose"}>{row.status}</StatusPill></Td>
+                  <Td center><StatusPill tone={row.portfolio === "Yes" ? "blue" : "slate"}>{row.portfolio}</StatusPill></Td>
+                  <Td className="tabular-nums">{row.startDate}</Td>
+                  <Td className="font-semibold text-slate-900">{row.lender}</Td>
+                  <Td>{row.product}</Td>
+                  <Td right className="tabular-nums">{row.secured}</Td>
+                  <Td right className="tabular-nums">{row.outstanding}</Td>
+                  <Td right className={cn("font-semibold tabular-nums", row.utilisationAlert ? "text-rose-600" : "text-slate-800")}>{row.utilisation}</Td>
+                  <Td right className="tabular-nums">{row.interest}</Td>
+                  <Td>{row.timeline.length ? <RepaymentStrip values={row.timeline} /> : <span className="text-slate-400">—</span>}</Td>
+                  <Td>
+                    <span className="block text-xs text-slate-700">{row.collateral.assets} {row.collateral.assets === 1 ? "Asset" : "Assets"}</span>
+                    <span className="block text-xs text-slate-500">{row.collateral.satisfied} Satisfied</span>
+                    {row.collateral.notSatisfied > 0 && (
+                      <span className="block text-xs text-slate-500">{row.collateral.notSatisfied} Not Satisfied</span>
+                    )}
+                  </Td>
+                </tr>
+              ))}
+            </tbody>
+          </CompactTable>
+        </div>
         {/* <div className="mt-4">
           <DataUnavailable
             icon={CreditCard}
@@ -309,19 +411,45 @@ export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: 
 
       <FinancialSection icon={PiggyBank} title="Savings & Investments">
         <MetricGrid metrics={fp.savingsMetrics.map((item, index) => ({ label: item.label, value: item.value, icon: savingsIcons[index], tone: index === 2 ? "violet" as const : index === 3 ? "emerald" as const : "blue" as const }))} />
-        <div className="mt-4">
-          <InsightBox headline="Tracked assets remain weighted towards balances and deposits." bullets={[<>56.6% of tracked assets are in balances and deposits; 29.1% is market-linked.</>, <>The ₹7.80L current-account balance supports operations and is excluded from investible surplus.</>]} />
-        </div>
         {/* Asset Allocation — hidden for now, intentionally kept in place.
         <div className="mt-4 rounded-lg border border-slate-200 bg-white p-4"><div className="mb-3 flex items-center justify-between gap-3"><h3 className="text-sm font-semibold text-slate-900">Asset Allocation</h3><StatusPill tone="blue">IDBI ₹14.20L · 56.6%</StatusPill></div><div className="flex h-5 overflow-hidden rounded-full bg-slate-100" aria-label="Asset allocation">{fp.allocation.map(item => <div key={item.name} title={`${item.name}: ${item.percent}%`} style={{ width: `${item.percent}%`, backgroundColor: item.color }} />)}</div><div className="mt-3 flex flex-wrap gap-x-4 gap-y-2">{fp.allocation.map(item => <span key={item.name} className="inline-flex items-center gap-1.5 text-[11px] text-slate-600"><i className="size-2 rounded-full" style={{ backgroundColor: item.color }} />{item.name} · {item.percent}%</span>)}</div></div>
         */}
-        <div className="mt-3"><CompactTable minWidth={820}><TableHead><Th>Allocation</Th><Th right>Value</Th><Th right>% of Tracked Assets</Th><Th right>With IDBI</Th><Th right>Other Institutions</Th><Th right>Details</Th></TableHead><tbody>{fp.allocation.map(item => <tr key={item.name}><Td className="font-semibold text-slate-900">{item.name}</Td><Td right>₹{item.value.toFixed(2)}L</Td><Td right>{item.percent}%</Td><Td right>{item.idbi}</Td><Td right>{item.other}</Td><Td right className="whitespace-nowrap"><ActionButton variant="ghost" className="ml-auto" onClick={() => setSelectedHolding(fp.holdingDetails.find(group => group.category === item.name) ?? null)}>View <ChevronRight /></ActionButton></Td></tr>)}</tbody></CompactTable></div>
+        <div className="mt-3">
+          <CompactTable minWidth={1060}>
+            <TableHead>
+              <Th>Allocation</Th><Th right>Value</Th><Th right>% of Tracked Assets</Th>
+              <Th right>Held with IDBI</Th><Th right>Held Elsewhere</Th><Th>Current Position</Th><Th right>Details</Th>
+            </TableHead>
+            <tbody>
+              {fp.allocation.map((item: any) => {
+                const AIcon = ALLOCATION_ICONS[item.icon] ?? Landmark;
+                return (
+                  <tr key={item.name}>
+                    <Td>
+                      <span className="flex items-center gap-2.5">
+                        <span className="grid size-7 shrink-0 place-items-center rounded-md bg-blue-50 text-blue-600"><AIcon className="size-3.5" /></span>
+                        <span className="font-semibold text-slate-900">{item.name}</span>
+                      </span>
+                    </Td>
+                    <Td right className="tabular-nums">₹{item.value.toFixed(2)}L</Td>
+                    <Td right className="tabular-nums">{item.percent}%</Td>
+                    <Td right className="tabular-nums">{item.idbi}</Td>
+                    <Td right className="tabular-nums">{item.other}</Td>
+                    <Td className="text-slate-600">{item.position}</Td>
+                    <Td right className="whitespace-nowrap">
+                      <ActionButton variant="ghost" className="ml-auto" onClick={() => setSelectedHolding(fp.holdingDetails.find(group => group.category === item.name) ?? null)}>View <ChevronRight /></ActionButton>
+                    </Td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </CompactTable>
+        </div>
       </FinancialSection>
 
       <FinancialSection icon={Building2} title="Assets & Collateral" titleMeta={<><StatusPill tone="amber">2 open charges</StatusPill><StatusPill tone="slate">Latest activity 18 Aug 2026</StatusPill></>} toggleOptions={[`Assets (${fp.assets.length})`, `Open (${fp.charges.open.length})`, `Satisfied (${fp.charges.satisfied.length})`]}
         selectedToggleOption={assetView === "assets" ? `Assets (${fp.assets.length})` : assetView === "open" ? `Open (${fp.charges.open.length})` : `Satisfied (${fp.charges.satisfied.length})`}
         onToggleOptionChange={(o) => { setAssetView(o.startsWith("Assets") ? "assets" : o.startsWith("Open") ? "open" : "satisfied"); setExpandedCharge(null); }}>
-        <InsightBox headline="Recorded collateral is already encumbered." bullets={[<>Both recorded assets carry active charges and should not be treated as freely available collateral.</>, <>Registered charge amounts may differ from current outstanding.</>]} />
         <div className="mt-3">{assetView === "assets" ? <CompactTable minWidth={980}><TableHead><Th>Asset</Th><Th>Type</Th><Th>Owner</Th><Th>Location</Th><Th>Value Band</Th><Th>Security Status</Th><Th>Charge Holder</Th><Th right>Secured Amount</Th></TableHead><tbody>{fp.assets.map(row => <tr key={row.asset}><Td className="font-semibold text-blue-700">{row.asset}</Td><Td>{row.type}</Td><Td>{row.owner}</Td><Td>{row.location}</Td><Td>{row.value}</Td><Td><StatusPill tone="amber">{row.status}</StatusPill></Td><Td>{row.holder}</Td><Td right className="font-semibold">{row.secured}</Td></tr>)}</tbody></CompactTable> : <CompactTable minWidth={940}><TableHead><Th>Charge ID</Th><Th>Charge Holder</Th><Th right>Registered Charge</Th><Th>Created</Th><Th>Latest Event</Th><Th right>Interest Rate</Th><Th right>Details</Th></TableHead><tbody>{charges.map(charge => <React.Fragment key={charge.id}><tr><Td className="font-semibold text-blue-700">{charge.id}</Td><Td>{charge.holder}</Td><Td right className="font-semibold">{charge.amount}</Td><Td>{charge.created}</Td><Td>{charge.event}</Td><Td right>{charge.rate}</Td><Td right><button type="button" onClick={() => setExpandedCharge(value => value === charge.id ? null : charge.id)} className="inline-flex items-center gap-1 font-semibold text-blue-700 hover:underline">View <ChevronRight className={cn("size-3.5 transition-transform", expandedCharge === charge.id && "rotate-90")} /></button></Td></tr>{expandedCharge === charge.id && <tr><td colSpan={7} className="border-b border-slate-100 bg-slate-50 px-4 py-3 text-xs text-slate-700"><strong className="mr-2 text-slate-900">Security:</strong>{charge.security}</td></tr>}</React.Fragment>)}</tbody></CompactTable>}</div>
       </FinancialSection>
 

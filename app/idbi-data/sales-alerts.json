@@ -1,0 +1,99 @@
+{
+  "asOf": "2026-09-19",
+  "periods": ["Last 7 days", "Last 30 days", "Last 90 days"],
+  "alerts": [
+    {
+      "id": "assam-floods",
+      "type": "Market Event",
+      "title": "Assam floods may create short-term funding needs",
+      "detail": "Businesses in affected districts with active working-capital facilities or rising utilisation may face temporary liquidity pressure.",
+      "audience": "18 relevant customers",
+      "tags": ["Business accounts", "Assam", "Active WC relationship"],
+      "action": "Take Action",
+      "prompt": "Assam floods may disrupt working capital for 18 customers with active facilities in the affected districts. Draft the outreach plan and tell me who to call first."
+    },
+    {
+      "id": "zepto-ipo",
+      "type": "Market Event",
+      "title": "Zepto IPO creates funding and investment conversations",
+      "detail": "Employees with salary relationships, investible surplus or funding eligibility may have an upcoming IPO-related requirement.",
+      "audience": "12 relevant customers",
+      "tags": ["Zepto employees", "Salary relationship"],
+      "action": "Take Action",
+      "prompt": "The Zepto IPO affects 12 customers who hold salary relationships with us. Assess the ESOP funding and investment opportunities and draft the approach."
+    },
+    {
+      "id": "gold-prices",
+      "type": "Market Event",
+      "title": "Gold prices have risen sharply — review jewellery merchants",
+      "detail": "Higher inventory value may increase working-capital requirements and insurance exposure for selected merchants.",
+      "audience": "9 relevant customers",
+      "tags": ["Jewellery merchants", "Business customers"],
+      "action": "Take Action",
+      "prompt": "Gold prices have risen sharply. Assess what that means for our 9 jewellery merchants' working-capital limits and stock insurance cover."
+    },
+    {
+      "id": "vandana-dependent",
+      "type": "Customer Event",
+      "title": "Vandana Singh added her daughter to the family health cover",
+      "detail": "A new dependent creates a relevant point to discuss long-term child savings and family protection planning.",
+      "customer": { "name": "Vandana Singh", "cid": "CID 990000029", "relationship": "Existing", "tier": "Platinum", "category": "Business", "location": "Kila Raipur, PB" },
+      "action": "Take Action",
+      "prompt": "Vandana Singh has added her daughter to the family health cover. Draft the child-savings and family protection conversation, including Sukanya Samriddhi eligibility."
+    },
+    {
+      "id": "rohan-property",
+      "type": "Customer Event",
+      "title": "Rohan Kapoor recently purchased a residential property",
+      "detail": "Property ownership creates a natural point to review home protection, loan requirements and adequacy of existing life cover.",
+      "customer": { "name": "Rohan Kapoor", "cid": "CID 990003218", "relationship": "Existing", "tier": "Gold", "category": "Individual", "location": "Gurugram, HR" },
+      "action": "Take Action",
+      "prompt": "Rohan Kapoor has bought a residential property. Assess home loan, property insurance and life cover adequacy, and draft the call."
+    },
+    {
+      "id": "meera-retirement",
+      "type": "Customer Event",
+      "title": "Meera Sethi is approaching retirement",
+      "detail": "Upcoming retirement may shift priorities from accumulation towards income planning, liquidity and capital preservation.",
+      "customer": { "name": "Meera Sethi", "cid": "CID 990005441", "relationship": "Existing", "tier": "Platinum", "category": "Individual", "location": "Chandigarh, CH" },
+      "action": "Take Action",
+      "prompt": "Meera Sethi is approaching retirement. Draft an income-planning conversation covering annuities, SCSS and capital preservation."
+    },
+    {
+      "id": "arjun-promotion",
+      "type": "Career Event",
+      "title": "Arjun Mehta promoted to VP at Orion Technologies",
+      "detail": "The promotion was found on LinkedIn. The role change may indicate higher income and evolving card, investment and protection needs.",
+      "customer": { "name": "Arjun Mehta", "cid": "CID 990003812", "relationship": "Existing", "tier": "Platinum", "category": "Individual", "location": "Bengaluru, KA" },
+      "action": "Take Action",
+      "prompt": "Arjun Mehta was promoted to VP at Orion Technologies. Assess the card limit, investment and protection opportunities the income change creates."
+    },
+    {
+      "id": "nisha-employer",
+      "type": "Career Event",
+      "title": "Nisha Verma joined a new employer as Director – Finance",
+      "detail": "A recent LinkedIn job update indicates a senior move; review salary relationship, card limits and investment requirements.",
+      "customer": { "name": "Nisha Verma", "cid": "CID 990006731", "relationship": "Existing", "tier": "Gold", "category": "Individual", "location": "Mumbai, MH" },
+      "action": "Take Action",
+      "prompt": "Nisha Verma has joined a new employer as Director – Finance. Assess the salary-account, card limit and investment opportunities and draft the outreach."
+    },
+    {
+      "id": "amit-esop",
+      "type": "Career Event",
+      "title": "Amit Khanna received ESOP liquidity following a company buyback",
+      "detail": "The liquidity event may create investible surplus and tax-planning requirements beyond the customer's current relationship.",
+      "customer": { "name": "Amit Khanna", "cid": "CID 990004105", "relationship": "Existing", "tier": "Platinum", "category": "Individual", "location": "Pune, MH" },
+      "action": "Take Action",
+      "prompt": "Amit Khanna has received ESOP liquidity from a company buyback. Plan the deployment of the proceeds and the capital-gains treatment."
+    },
+    {
+      "id": "baljeet-cc",
+      "type": "Account Signal",
+      "title": "Baljeet Singh Randhawa is nearing CC renewal with high utilisation",
+      "detail": "Utilisation has remained elevated ahead of renewal, creating a timely opportunity to review the sanctioned limit and expected business requirement.",
+      "customer": { "name": "Baljeet Singh Randhawa", "cid": "CID 990000177", "relationship": "Existing", "tier": "Silver", "category": "Business", "location": "Jalandhar, PB" },
+      "action": "Take Action",
+      "prompt": "Baljeet Singh Randhawa's cash credit renews on 31 Oct with utilisation above 85%. Assess the limit at renewal and what to collect first."
+    }
+  ]
+}

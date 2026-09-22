@@ -43,7 +43,7 @@ export interface SectionFlag {
 export function SectionHeader({
   icon, title, action, titleMeta, toggleOptions, selectedToggleOption, onToggleOptionChange,
   positiveFlags = [], negativeFlags = [], neutralFlags, mildPositiveFlags, mildNegativeFlags,
-  allowCollapse = false, flagTypeOrderList, flagSummaryLabel,
+  allowCollapse = false, flagTypeOrderList, flagSummaryLabel, flagRowLayout,
 }: {
   icon: React.ElementType;
   title: string;
@@ -63,6 +63,8 @@ export function SectionHeader({
   flagTypeOrderList?: string[];
   /** One green chip reading "<count> <label>" instead of the per-severity counts. */
   flagSummaryLabel?: string;
+  /** "category" leads each flag row with the category chip and drops the severity chip. */
+  flagRowLayout?: "severity" | "category";
 }) {
   return (
     // mb-4 lives here, not on each section body: everything that follows a header
@@ -81,6 +83,7 @@ export function SectionHeader({
       flagTypeOrderList={flagTypeOrderList as any}
       allowCollapse={allowCollapse}
       flagSummaryLabel={flagSummaryLabel}
+      flagRowLayout={flagRowLayout}
       titleRightElement={titleMeta}
       toggleOptions={toggleOptions}
       selectedToggleOption={selectedToggleOption}
@@ -256,7 +259,19 @@ export function Td({ children, right = false, center = false, className }: { chi
 export function RepaymentStrip({ values }: { values: string[] }) {
   return (
     <div className="flex items-center gap-1" aria-label="12-cycle repayment history">
-      {values.map((value, index) => <span key={index} title={value === "current" ? "On time" : value === "late" ? "Late" : "Data unavailable"} className={cn("h-4 w-2.5 rounded-[2px]", value === "current" ? "bg-emerald-500" : value === "late" ? "bg-amber-400" : "bg-slate-200")} />)}
+      {values.map((value, index) => (
+        <span
+          key={index}
+          title={value === "current" ? "On time" : value === "late" ? "Late" : value === "missed" ? "Missed" : "Data unavailable"}
+          className={cn(
+            "h-4 w-2.5 rounded-[2px]",
+            value === "current" ? "bg-emerald-500"
+              : value === "late" ? "bg-amber-400"
+              : value === "missed" ? "bg-rose-500"
+              : "bg-slate-200"
+          )}
+        />
+      ))}
     </div>
   );
 }

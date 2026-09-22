@@ -69,6 +69,9 @@ interface SectionHeaderWithFlagsProps {
   titleRightElement?: ReactNode;
   // Optional element to render at the far right of the header (after flags)
   rightElement?: ReactNode;
+  // "category" puts the category chip at the head of each row and drops the severity
+  // chip; "severity" (the default) keeps severity left and category right.
+  flagRowLayout?: 'severity' | 'category';
   // When set, the per-severity counts collapse into one green chip reading
   // "<total> <flagSummaryLabel>" — used where the severities are not the point.
   flagSummaryLabel?: string;
@@ -76,6 +79,7 @@ interface SectionHeaderWithFlagsProps {
 
 export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
   flagSummaryLabel,
+  flagRowLayout = 'severity',
   positiveFlags = [],
   negativeFlags = [],
   neutralFlags = [],
@@ -394,6 +398,9 @@ export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
                         <tr key={`${flag.id}-${index}`} className="border-b border-gray-200/30 last:border-b-0">
                           <td className="py-2 px-2 align-middle w-fit whitespace-nowrap">
                             <div className="flex justify-end">
+                              {flagRowLayout === 'category' ? (
+                                <BubbleTag text={flag.category} color="blue" fixedWidth="w-[132px]" />
+                              ) : (
                               <BubbleTag
                                 text={
                                   flag.severity === 'severe' ? "Severe" :
@@ -414,6 +421,7 @@ export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
                                 /* One width for every severity, so the column lines up. */
                                 fixedWidth="w-[86px]"
                               />
+                              )}
                             </div>
                           </td>
                           <td className="py-2 px-3 text-left text-sm text-gray-600 max-w-0 w-full">
@@ -421,16 +429,18 @@ export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
                               {renderDescription(flag.description)}
                             </div>
                           </td>
-                          <td className="py-2 px-2 align-middle w-fit whitespace-nowrap">
-                            <div className="flex justify-end">
-                              <BubbleTag
-                                text={flag.category}
-                                color="blue"
-                                /* one width for every category chip, so the column lines up */
-                                fixedWidth="w-[132px]"
-                              />
-                            </div>
-                          </td>
+                          {flagRowLayout === 'severity' && (
+                            <td className="py-2 px-2 align-middle w-fit whitespace-nowrap">
+                              <div className="flex justify-end">
+                                <BubbleTag
+                                  text={flag.category}
+                                  color="blue"
+                                  /* one width for every category chip, so the column lines up */
+                                  fixedWidth="w-[132px]"
+                                />
+                              </div>
+                            </td>
+                          )}
                         </tr>
                       ))}
                     </tbody>

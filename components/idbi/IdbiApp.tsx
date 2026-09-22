@@ -8,7 +8,7 @@ import { SelectCustomerState } from "./SelectCustomerState";
 import { SalesAlertsScreen } from "./SalesAlertsScreen";
 import { useIdbiActiveContextStore } from "./ActiveContext/store";
 
-type Section = "Workspace" | "Customer" | "Sales & Alerts";
+type Section = "Workspace" | "Customer" | "Opportunity Signals";
 
 export const IdbiApp: FC = () => {
   const [section, setSection] = useState<Section>("Workspace");
@@ -25,7 +25,7 @@ export const IdbiApp: FC = () => {
   };
 
   const navigate = (label: string) => {
-    if (label === "Workspace" || label === "Customer" || label === "Sales & Alerts") setSection(label as Section);
+    if (label === "Workspace" || label === "Customer" || label === "Opportunity Signals") setSection(label as Section);
   };
 
   const breadcrumb =
@@ -40,7 +40,7 @@ export const IdbiApp: FC = () => {
       onNavigate={navigate}
       onSelectCustomer={(c) => openCustomer(c as WorkspaceCustomer)}
     >
-      {section === "Sales & Alerts" ? (
+      {section === "Opportunity Signals" ? (
         <SalesAlertsScreen onGoToCustomers={() => setSection("Workspace")} />
       ) : section === "Workspace" ? (
         <CustomersScreen onOpenCustomer={(c) => openCustomer(c as WorkspaceCustomer)} />

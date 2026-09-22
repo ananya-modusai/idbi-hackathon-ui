@@ -816,7 +816,9 @@
         "percent": 40.6,
         "idbi": "₹10.20L",
         "other": "—",
-        "color": "#2563eb"
+        "color": "#2563eb",
+        "position": "Operating balances primarily with IDBI",
+        "icon": "Landmark"
       },
       {
         "name": "Term deposits",
@@ -824,7 +826,9 @@
         "percent": 15.9,
         "idbi": "₹4.00L",
         "other": "—",
-        "color": "#60a5fa"
+        "color": "#60a5fa",
+        "position": "Deposit relationship currently with IDBI",
+        "icon": "FileText"
       },
       {
         "name": "Mutual funds",
@@ -832,7 +836,9 @@
         "percent": 20.7,
         "idbi": "—",
         "other": "₹5.20L",
-        "color": "#8b5cf6"
+        "color": "#8b5cf6",
+        "position": "Market-linked holdings held outside IDBI",
+        "icon": "TrendingUp"
       },
       {
         "name": "Stocks",
@@ -840,7 +846,9 @@
         "percent": 8.4,
         "idbi": "—",
         "other": "₹2.10L",
-        "color": "#f59e0b"
+        "color": "#f59e0b",
+        "position": "Equity exposure held outside IDBI",
+        "icon": "BarChart3"
       },
       {
         "name": "Long-term savings · PPF",
@@ -848,7 +856,9 @@
         "percent": 14.3,
         "idbi": "—",
         "other": "₹3.60L",
-        "color": "#10b981"
+        "color": "#10b981",
+        "position": "Long-term tax-saving holdings outside IDBI",
+        "icon": "Leaf"
       }
     ],
     "holdings": [
@@ -1311,6 +1321,78 @@
         "label": "Punjab & Sind Bank · Savings ••••2261",
         "share": 0.05,
         "group": "other"
+      }
+    ],
+    "borrowings": [
+      {
+        "id": "hdfc-term",
+        "status": "Active",
+        "portfolio": "Yes",
+        "startDate": "10-04-2023",
+        "lender": "IDBI Bank",
+        "product": "Term Loan",
+        "secured": "₹50,00,000",
+        "outstanding": "₹34,50,000",
+        "utilisation": "91%",
+        "utilisationAlert": true,
+        "interest": "9.5%",
+        "timeline": [
+          "current",
+          "current",
+          "late",
+          "current",
+          "late",
+          "current",
+          "current",
+          "current",
+          "current",
+          "current",
+          "missed",
+          "unknown"
+        ],
+        "collateral": {
+          "assets": 8,
+          "satisfied": 4,
+          "notSatisfied": 2
+        }
+      },
+      {
+        "id": "icici-wc",
+        "status": "Active",
+        "portfolio": "No",
+        "startDate": "15-01-2024",
+        "lender": "ICICI Bank",
+        "product": "Working Capital",
+        "secured": "₹20,00,000",
+        "outstanding": "₹18,20,000",
+        "utilisation": "₹6.1 L",
+        "utilisationAlert": false,
+        "interest": "10.25%",
+        "timeline": [],
+        "collateral": {
+          "assets": 2,
+          "satisfied": 2,
+          "notSatisfied": 0
+        }
+      },
+      {
+        "id": "axis-business",
+        "status": "Inactive",
+        "portfolio": "No",
+        "startDate": "22-08-2021",
+        "lender": "Axis Bank",
+        "product": "Business Loan",
+        "secured": "₹15,00,000",
+        "outstanding": "₹0",
+        "utilisation": "₹1.2 L",
+        "utilisationAlert": false,
+        "interest": "11.0%",
+        "timeline": [],
+        "collateral": {
+          "assets": 1,
+          "satisfied": 1,
+          "notSatisfied": 0
+        }
       }
     ]
   },
