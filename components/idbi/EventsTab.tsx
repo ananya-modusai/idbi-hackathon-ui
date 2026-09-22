@@ -2,8 +2,8 @@
 
 import * as React from "react";
 import { CalendarClock } from "lucide-react";
-import data from "@/app/idbi-data/vandana-workspace.json";
-import { SectionHeader, StatusPill } from "@/components/idbi/workspace-ui";
+import { useWorkspaceData } from "@/components/idbi/workspaceData";
+import { DataUnavailable, SectionHeader, StatusPill } from "@/components/idbi/workspace-ui";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 /** Each kind of event keeps its own chip tone, as the delivery has it. */
@@ -20,6 +20,7 @@ const TYPE_TONE: Record<string, "emerald" | "blue" | "amber" | "violet"> = {
  * them. One row per event, dated on the left.
  */
 export function EventsTab() {
+  const data = useWorkspaceData();
   const customer = data.customer as any;
   const events = (customer.events ?? []) as Array<{
     date: string; ago: string; type: string; title: string; detail: string; tags: string[];
@@ -63,7 +64,13 @@ export function EventsTab() {
       </div>
 
       {shown.length === 0 && (
-        <p className="py-12 text-center text-sm text-slate-500">No events of this type on record.</p>
+        <DataUnavailable
+          icon={CalendarClock}
+          headline={events.length === 0
+            ? `No events recorded for ${customer.name} yet.`
+            : "No events of this type in the selected filter."}
+          required="activity on an IDBI account, a career update, or a market event touching this customer"
+        />
       )}
     </div>
   );

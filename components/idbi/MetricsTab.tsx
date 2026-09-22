@@ -7,11 +7,11 @@
 // CompactTable for the grid itself (first column frozen, latest month highlighted).
 
 import * as React from "react";
-import { BadgeIndianRupee, BarChart3, CalendarRange, Coins, PiggyBank, ShieldCheck, TrendingUp, Wallet } from "lucide-react";
+import { BadgeIndianRupee, BarChart3, CalendarDays, CalendarRange, Coins, PiggyBank, ShieldCheck, TrendingUp, Wallet } from "lucide-react";
 
-import data from "@/app/idbi-data/vandana-workspace.json";
+import { useWorkspaceData } from "@/components/idbi/workspaceData";
 import { cn } from "@/lib/utils";
-import { InfoTip, MetricGrid, SectionHeader, SegmentedToggle } from "@/components/idbi/workspace-ui";
+import { DataUnavailable, InfoTip, MetricGrid, SectionHeader, SegmentedToggle } from "@/components/idbi/workspace-ui";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import CustomListFilter, {
   PrimaryFilterGroup, SecondaryFilterGroup, TertiaryFilterGroup, useFilterState,
@@ -107,7 +107,10 @@ const valueTone = (metric: Metric, value: number | string | null) => {
 };
 
 export function MetricsTab() {
-  const metrics = data.metrics as any;
+  const data = useWorkspaceData();
+  // A customer assessed at onboarding has no metric history with us yet.
+  const metrics = (data.metrics ?? { capacity: [], groups: [], notApplicableGroups: [], months: [], benchmarkNote: "" }) as any;
+  const hasMetrics = Boolean(data.metrics);
   const applicableGroups = metrics.groups as MetricGroup[];
   const naGroups = (metrics.notApplicableGroups ?? []) as MetricGroup[];
 
@@ -147,6 +150,19 @@ export function MetricsTab() {
     primary: [] as PrimaryFilterGroup[], secondary: [] as SecondaryFilterGroup[], tertiary: tertiaryFilterGroups,
   }), [tertiaryFilterGroups]);
   const { filterState, setFilterState } = useFilterState(filterGroups);
+
+  if (!hasMetrics) {
+    return (
+      <div className="px-6 pb-16 pt-5">
+        <SectionHeader icon={BadgeIndianRupee} title="Metric Trends" />
+        <DataUnavailable
+          icon={CalendarDays}
+          headline={`No metric history is available for ${data.customer.name} yet.`}
+          required="at least one completed month of transactions on an IDBI account"
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-10">

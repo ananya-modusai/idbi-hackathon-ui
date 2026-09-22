@@ -33,6 +33,10 @@ const UNASSIGNED = "Unassigned";
 const RM_ROSTER = ["Ananya Rao", "Kabir Mehta", "Priya Nair", "Rohan Das", UNASSIGNED];
 const PRIORITY_RANK: Record<string, number> = { High: 0, Medium: 1, Low: 2 };
 
+// Only these two have a workspace authored behind them; the rest are list-only for
+// now, so opening them would show someone else's file.
+const OPENABLE_CUSTOMERS = ["990000029", "990000142"];
+
 const priorityColor = (p: string) =>
   p === "High" ? "red" : p === "Medium" ? "yellow" : "gray";
 
@@ -294,7 +298,15 @@ export const CustomersScreen: FC<{
       );
     }
     if (agentFilter?.id === "needs-attention") list = list.filter(c => c.health.score < 70);
-    if (agentFilter?.id === "prospects") list = list.filter(c => c.relationship.startsWith("Prospect"));
+    if (agentFilter?.id === "prospects")
+      list = list.filter(c => c.relationship.startsWith("Prospect") && c.lead_priority === "High");
+
+    // An agent filter carries its own ordering — the reply describes that order, so it
+    // must win over the curated default.
+    if (agentFilter?.id === "prospects")
+      return [...list].sort((a, b) => (PRIORITY_RANK[a.lead_priority] ?? 9) - (PRIORITY_RANK[b.lead_priority] ?? 9) || a.demo_order - b.demo_order);
+    if (agentFilter?.id === "needs-attention")
+      return [...list].sort((a, b) => a.health.score - b.health.score);
 
     const key = sortSelected[0] ?? "priority";
     const sorted = [...list];
@@ -324,50 +336,75 @@ export const CustomersScreen: FC<{
   const attentionCount = scopedRows.filter(c => c.health.score < 70).length;
   const prospectCount = scopedRows.filter(c => c.relationship.startsWith("Prospect")).length;
 
+  const prospects = scopedRows
+    .filter(c => c.relationship.startsWith("Prospect"))
+    .sort((a, b) => (PRIORITY_RANK[a.lead_priority] ?? 9) - (PRIORITY_RANK[b.lead_priority] ?? 9));
+  // "Highest-priority" means P1 — a P3 prospect does not belong in that answer.
+  const topProspects = prospects.filter(c => c.lead_priority === "High");
+  const otherProspects = prospects.filter(c => c.lead_priority !== "High");
+  const attention = scopedRows.filter(c => c.health.score < 70).sort((a, b) => a.health.score - b.health.score);
+
   const agentStarters = [
     {
-      label: "Filter my book to customers who need attention",
+      label: "Show my highest-priority prospects",
+      action: "prospects",
+      trail: {
+        label: "Ranked the prospects",
+        runningLabel: "Ranking the prospects",
+        steps: [
+          { text: `Read ${scopedRows.length} customers in this view` },
+          { text: `Split prospects from existing relationships — ${prospects.length} prospects` },
+          { text: `Kept the P1 leads — ${topProspects.length} match` },
+        ],
+      },
+      reply: `**${topProspects.length} of ${scopedRows.length} in this view ${topProspects.length === 1 ? "is a" : "are"} P1 prospect${topProspects.length === 1 ? "" : "s"}.** The table is filtered to ${topProspects.length === 1 ? "it" : "them"}.\n\n${topProspects
+        .map(c => `- **${c.name}** — ${c.opportunity.title}: ${c.opportunity.reason}.`)
+        .join("\n")}\n\n${otherProspects.length
+        ? `Left out: ${otherProspects.map(c => `**${c.name}** (${PRIORITY_RANK_LABEL[c.lead_priority] ?? "P3"} · ${c.lead_priority})`).join(", ")} — ${otherProspects.length === 1 ? "a prospect, but not one to lead the day with" : "prospects, but not ones to lead the day with"}.\n\n`
+        : ""}Clear the **Agent** chip in the filter row to see the full book again.`,
+    },
+    {
+      label: "Which customers need attention?",
       action: "needs-attention",
       trail: {
-        label: "Filtered the customer book",
-        runningLabel: "Filtering the customer book",
+        label: "Checked financial health",
+        runningLabel: "Checking financial health",
         steps: [
           { text: `Read ${scopedRows.length} customers in this view` },
           { text: "Checked the financial-health band on each" },
-          { text: `Applied filter — health below 70 · ${attentionCount} match` },
+          { text: `Applied filter — health below 70 · ${attention.length} match` },
         ],
       },
-      reply: `**${attentionCount} of ${scopedRows.length} customers are below a financial-health score of 70.** The table is filtered to them.\n\n${scopedRows
-        .filter(c => c.health.score < 70)
-        .sort((a, b) => a.health.score - b.health.score)
+      reply: `**${attention.length} of ${scopedRows.length} customers sit below a financial-health score of 70.** The table is filtered to them.\n\n${attention
         .map(c => `- **${c.name}** — ${c.health.score}/100 (${c.health.band}). ${c.health.drivers[0]}.`)
         .join("\n")}\n\nClear the **Agent** chip in the filter row to see the full book again.`,
     },
-    {
-      label: "Show only the prospects in my book",
-      action: "prospects",
-      trail: {
-        label: "Filtered the customer book",
-        runningLabel: "Filtering the customer book",
-        steps: [
-          { text: `Read ${scopedRows.length} customers in this view` },
-          { text: "Split existing relationships from prospects" },
-          { text: `Applied filter — Prospect · NTB · ${prospectCount} match` },
-        ],
-      },
-      reply: `**${prospectCount} of ${scopedRows.length} are prospects rather than existing customers.** The table is filtered to them.\n\n${scopedRows
-        .filter(c => c.relationship.startsWith("Prospect"))
-        .map(c => `- **${c.name}** — ${c.opportunity.title}. ${c.opportunity.reason}.`)
-        .join("\n")}\n\nNeither holds a product with us yet, so both are acquisition conversations.`,
-    },
   ];
+
+  const byDecision = (d: string) => scopedRows.filter(c => c.ai_decision === d);
+  const openRequests = scopedRows.reduce((n, c) => n + c.requests.length, 0);
+
+  agentStarters.push({
+    label: "Summarise my book today",
+    action: "",
+    trail: {
+      label: "Read the customer book",
+      runningLabel: "Reading the customer book",
+      steps: [
+        { text: `Read ${scopedRows.length} customers in this view` },
+        { text: `Counted ${openRequests} open requests and applications` },
+        { text: "Grouped them by the recommended decision" },
+      ],
+    },
+    reply: `**${scopedRows.length} customers, ${openRequests} open requests.** Here is where they sit today.\n\n| Decision | Customers | Who |\n| --- | --- | --- |\n| Prioritise | ${byDecision("Prioritise").length} | ${byDecision("Prioritise").map(c => c.name).join(", ") || "—"} |\n| Review | ${byDecision("Review").length} | ${byDecision("Review").map(c => c.name).join(", ") || "—"} |\n| Nurture | ${byDecision("Nurture").length} | ${byDecision("Nurture").map(c => c.name).join(", ") || "—"} |\n| Reject | ${byDecision("Reject").length} | ${byDecision("Reject").map(c => c.name).join(", ") || "—"} |\n\n**Start with ${(byDecision("Prioritise")[0] ?? scopedRows[0])?.name}** — ${(byDecision("Prioritise")[0] ?? scopedRows[0])?.opportunity.title}: ${(byDecision("Prioritise")[0] ?? scopedRows[0])?.opportunity.reason}.\n\n${prospects.length} of the ${scopedRows.length} are prospects rather than existing customers, so acquisition is the larger half of this book.`,
+  });
 
   const applyAgentFilter = (action: string) => {
     const applied =
       action === "needs-attention"
-        ? { id: action, label: "Health below 70", search: "Financial health below 70" }
+        ? { id: action, label: "Health below 70" }
         : action === "prospects"
-        ? { id: action, label: "Prospects only", search: "Relationship is Prospect · NTB" }
+        ? { id: action, label: "P1 prospects" }
         : null;
     if (!applied) return;
     setAgentFilter({ id: applied.id, label: applied.label });
@@ -594,7 +631,7 @@ export const CustomersScreen: FC<{
             data={rows}
             className={cn("w-full", scope === "team" ? "[&_table]:min-w-[1640px]" : "[&_table]:min-w-[1500px]")}
             initialRowLimit={10}
-            onRowClick={(row) => onOpenCustomer?.(row)}
+            onRowClick={(row) => { if (OPENABLE_CUSTOMERS.includes(row.customer_id)) onOpenCustomer?.(row); }}
           />
         </div>
       </div>
@@ -606,7 +643,7 @@ export const CustomersScreen: FC<{
           healthScore={Math.round(scopedRows.reduce((n, c) => n + c.health.score, 0) / Math.max(scopedRows.length, 1))}
           healthBand="Good"
           openMatters={scopedRows.reduce((n, c) => n + c.requests.length, 0)}
-          extraSuggestions={agentStarters}
+          starters={agentStarters}
           onAction={applyAgentFilter}
           onClose={() => setAgentOpen(false)}
         />

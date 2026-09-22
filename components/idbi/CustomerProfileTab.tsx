@@ -43,7 +43,7 @@ const INSURANCE_CARDS = probes.insurance.groups
   }));
 import { Bar, BarChart, CartesianGrid, Cell, Line, LineChart, ReferenceArea, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
-import data from "@/app/idbi-data/vandana-workspace.json";
+import { useWorkspaceData } from "@/components/idbi/workspaceData";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { BubbleTag } from "@/components/custom/BubbleTag";
@@ -110,13 +110,14 @@ const fitTone = (fit: string) =>
 const bandPill = (score: number) => (score >= 75 ? "emerald" : score >= 60 ? "blue" : score >= 40 ? "amber" : "rose") as "emerald" | "blue" | "amber" | "rose";
 
 export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgent }: { onOpenActivity?: () => void; onOpenFinancial?: () => void; onOpenAgent?: (prompt?: string) => void }) {
+  const data = useWorkspaceData();
   const customer = data.customer;
   // The reference header renders flags in severity buckets; the fixture keeps one list.
   const insightsBy = (severity: string) =>
     ((customer as any).insights ?? []).filter((insight: any) => insight.severity === severity);
   const [healthPeriod, setHealthPeriod] = React.useState("6M");
   const [idbiView, setIdbiView] = React.useState("Accounts & Products");
-  const [cibilRange, setCibilRange] = React.useState("12");
+  const [cibilRange, setCibilRange] = React.useState("all");
   const [oppScope, setOppScope] = React.useState("personalised");
 
   const healthPoints = React.useMemo(() => {
@@ -150,8 +151,8 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
       note: p.note,
     }));
   }, [cibilAll, cibilRange]);
-  const latestCibil = cibilAll[cibilAll.length - 1];
-  const cibilDelta = latestCibil.score - (cibilPoints[0]?.score ?? latestCibil.score);
+  const latestCibil = cibilAll[cibilAll.length - 1] ?? null;
+  const cibilDelta = latestCibil ? latestCibil.score - (cibilPoints[0]?.score ?? latestCibil.score) : 0;
   const healthDelta = latestHealth.score - (healthPoints[0]?.score ?? latestHealth.score);
   const healthDeltaFrom = healthPoints[0]?.label ?? "";
   const contacts = [
@@ -289,21 +290,14 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
       </section>
 
       <section>
-        <SectionHeader
-          icon={Landmark}
-          title="Relationship with IDBI"
-          toggleOptions={["Accounts & Products", "Loans & Credits", "Credit Cards"]}
-          selectedToggleOption={idbiView}
-          onToggleOptionChange={setIdbiView}
-        />
+        <SectionHeader icon={Landmark} title="Relationship with IDBI" />
         <MetricGrid metrics={customer.relationshipSummary.map((item: any, index: number) => ({ label: item.label, value: item.value, secondary: item.secondary, icon: [CalendarDays, Landmark, BadgeIndianRupee, CreditCard][index], tone: index === 2 ? "amber" as const : "blue" as const }))} />
-        {/* One table at a time behind the header toggle — no sub-headings over tables. */}
         <div className="mt-4">
-          {idbiView === "Accounts & Products" && (
+          {customer.accounts.length > 0 ? (
             <CompactTable minWidth={680}>
               <colgroup><col style={{ width: "30%" }} /><col style={{ width: "15%" }} /><col style={{ width: "21%" }} /><col style={{ width: "17%" }} /><col style={{ width: "17%" }} /></colgroup>
               <TableHead><Th>Product</Th><Th>Account No</Th><Th center>Balance / Deposit Value</Th><Th center>Opened</Th><Th center>Status</Th></TableHead>
-              <tbody>{customer.accounts.map(row => {
+              <tbody>{customer.accounts.map((row: any) => {
                 const [product, account] = row.product.split(" · ");
                 return (
                   <tr key={row.product}>
@@ -316,15 +310,11 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
                 );
               })}</tbody>
             </CompactTable>
-          )}
-          {idbiView === "Loans & Credits" && (
-            <CompactTable minWidth={900}><TableHead><Th>Loan / Facility</Th><Th right>Outstanding</Th><Th right>Sanctioned Amount / Limit</Th><Th>Repayment</Th><Th>12-cycle Repayment</Th><Th>Status / Conduct</Th></TableHead><tbody>{customer.loans.map(row => <tr key={row.facility}><Td className="font-medium text-slate-900">{row.facility}</Td><Td right className="font-semibold">{row.outstanding}</Td><Td right>{row.limit}</Td><Td>{row.repayment}</Td><Td><RepaymentStrip values={row.timeline} /></Td><Td><StatusPill tone="emerald">{row.conduct}</StatusPill></Td></tr>)}</tbody></CompactTable>
-          )}
-          {idbiView === "Credit Cards" && (
+          ) : (
             <DataUnavailable
-              icon={ShieldAlert}
-              headline="No IDBI credit-card relationship found for this customer."
-              required="IDBI card records, or a bureau report from CIBIL, CRIF High Mark, Experian or Equifax for external cards"
+              icon={Landmark}
+              headline={`${customer.name} does not hold any account or deposit with IDBI yet.`}
+              required="an IDBI savings, current, deposit or salary account — external holdings appear under Financial Position"
             />
           )}
         </div>
@@ -342,6 +332,7 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
             </Select>
           }
         />
+        {latestCibil ? (
         <div className="grid gap-4 rounded-lg border border-slate-200 bg-white p-4 lg:grid-cols-[400px_1fr]">
           <div className="flex items-center gap-4 border-b border-slate-100 pb-4 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-4">
             <div className="min-w-0 flex-1">
@@ -369,6 +360,13 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
             <GradientScoreLine points={cibilPoints} domain={[600, 820]} bands={CIBIL_BANDS} colourRange={[650, 780]} height={216} dropLines />
           </div>
         </div>
+        ) : (
+          <DataUnavailable
+            icon={CreditCard}
+            headline={`No bureau history is available for ${customer.name}.`}
+            required="a CIBIL, CRIF High Mark, Experian or Equifax report — new-to-credit customers have none"
+          />
+        )}
       </section>
 
       <section>
@@ -395,9 +393,14 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
                 <span className={cn("text-4xl font-bold leading-none", bandText(latestHealth.score))}>{latestHealth.score}</span>
                 <StatusPill tone={bandPill(latestHealth.score)}>{healthBandLabel(latestHealth.score)}</StatusPill>
               </div>
-              <p className={cn("mt-1.5 text-sm font-semibold", healthDelta >= 0 ? "text-emerald-600" : "text-rose-600")}>
-                {healthDelta >= 0 ? "↑" : "↓"} {healthDelta >= 0 ? "+" : "−"}{Math.abs(healthDelta)} points since {healthDeltaFrom}
-              </p>
+              {/* A single onboarding reading has nothing to compare against. */}
+              {healthPoints.length > 1 ? (
+                <p className={cn("mt-1.5 text-sm font-semibold", healthDelta >= 0 ? "text-emerald-600" : "text-rose-600")}>
+                  {healthDelta >= 0 ? "↑" : "↓"} {healthDelta >= 0 ? "+" : "−"}{Math.abs(healthDelta)} points since {healthDeltaFrom}
+                </p>
+              ) : (
+                <p className="mt-1.5 text-sm text-slate-500">Single assessment taken at onboarding</p>
+              )}
 
               <div className="mt-4 flex shrink-0 items-center gap-1.5">
                 <p className="text-sm font-semibold text-slate-900">Score Drivers</p>
@@ -421,6 +424,14 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
             </div>
 
             <div className="min-w-0 flex-1">
+              {healthPoints.length < 2 ? (
+                <DataUnavailable
+                  icon={Activity}
+                  headline="Historical data is not available for this chart yet."
+                  required="at least two monthly assessments — this score is a single reading taken at onboarding"
+                />
+              ) : (
+              <>
               <div className="mb-3">
                 <h3 className="text-base font-semibold text-slate-900">Score over time</h3>
                 <p className="mt-0.5 text-xs text-slate-500">
@@ -437,6 +448,8 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
                 dropLines
                 height={230}
               />
+              </>
+              )}
             </div>
           </div>
         </div>

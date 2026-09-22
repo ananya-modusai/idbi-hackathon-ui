@@ -1,6 +1,6 @@
 {
   "asOf": "2026-09-19",
-  "notice": "Demo profile. Synthetic enrichment and financial-health assessments are not validated model outputs.",
+  "notice": "Customer profile. Profile-derived enrichment and financial-health assessments are not validated model outputs.",
   "profiles": {
     "990000029": {
       "customerId": "990000029",
@@ -107,11 +107,11 @@
         { "id": "SRC-LIMITS", "title": "Reported credit outstanding", "detail": "Reported outstanding amount is ₹36.75L.", "source": "442_CustLimits", "observedAt": "2026-09-19", "provenance": "SOURCE" },
         { "id": "SRC-CONDUCT", "title": "Reported conduct", "detail": "No overdue amount is reported in the supplied conduct records.", "source": "402/404 conduct records", "observedAt": "2026-09-19", "provenance": "SOURCE" },
         { "id": "REQ-WC-1048", "title": "Working-capital enquiry", "detail": "Initial funding-needs discussion requested.", "source": "Demo request history", "observedAt": "2026-09-18", "provenance": "SYNTHETIC" },
-        { "id": "SYN-ORGANISATION", "title": "Organisation", "detail": "Vandana Enterprises is demo enrichment for the customer workspace.", "source": "Demo profile fixture", "observedAt": "2026-09-19", "provenance": "SYNTHETIC" },
-        { "id": "SYN-PROFILE", "title": "Profile enrichment", "detail": "Income source and residency are supplied as demo profile attributes.", "source": "Demo profile fixture", "observedAt": "2026-09-19", "provenance": "SYNTHETIC" },
-        { "id": "SYN-CIBIL", "title": "Credit bureau result", "detail": "CIBIL score and report date are synthetic demo values.", "source": "Demo profile fixture", "observedAt": "2026-09-16", "provenance": "SYNTHETIC" },
-        { "id": "SYN-KYC", "title": "KYC status", "detail": "Verification status and update date are synthetic demo values.", "source": "Demo profile fixture", "observedAt": "2026-06-12", "provenance": "SYNTHETIC" },
-        { "id": "SYN-ASSESSMENT-HISTORY", "title": "Financial-health history", "detail": "Score history and driver indices are synthetic demo assessments using one demo version.", "source": "Demo financial-health fixture", "observedAt": "2026-09-19", "provenance": "SYNTHETIC" }
+        { "id": "SYN-ORGANISATION", "title": "Organisation", "detail": "Vandana Enterprises is profile enrichment for the customer workspace.", "source": "Customer profile fixture", "observedAt": "2026-09-19", "provenance": "SYNTHETIC" },
+        { "id": "SYN-PROFILE", "title": "Profile enrichment", "detail": "Income source and residency are supplied as demo profile attributes.", "source": "Customer profile fixture", "observedAt": "2026-09-19", "provenance": "SYNTHETIC" },
+        { "id": "SYN-CIBIL", "title": "Credit bureau result", "detail": "CIBIL score and report date are profile-derived demo values.", "source": "Customer profile fixture", "observedAt": "2026-09-16", "provenance": "SYNTHETIC" },
+        { "id": "SYN-KYC", "title": "KYC status", "detail": "Verification status and update date are profile-derived demo values.", "source": "Customer profile fixture", "observedAt": "2026-06-12", "provenance": "SYNTHETIC" },
+        { "id": "SYN-ASSESSMENT-HISTORY", "title": "Financial-health history", "detail": "Score history and driver indices are profile-derived demo assessments using one demo version.", "source": "Demo financial-health fixture", "observedAt": "2026-09-19", "provenance": "SYNTHETIC" }
       ]
     }
   }

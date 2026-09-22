@@ -5,7 +5,8 @@ import {
   Activity, ArrowDownLeft, ArrowDownToLine, ArrowLeftRight, ArrowUpRight, BadgeIndianRupee, Banknote, BarChart3, BriefcaseBusiness, Building2, ChevronRight, CircleCheck, Coins, CreditCard, FileSpreadsheet, FileText, HandCoins, Landmark, Leaf, PiggyBank, TrendingUp, UsersRound, WalletCards,
 } from "lucide-react";
 
-import data from "@/app/idbi-data/vandana-workspace.json";
+import { useWorkspaceData } from "@/components/idbi/workspaceData";
+import vandanaWorkspace from "@/app/idbi-data/vandana-workspace.json";
 import { cn } from "@/lib/utils";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import {
@@ -22,7 +23,7 @@ import CustomListFilter, {
 
 type AssetView = "assets" | "open" | "satisfied";
 type CashflowView = "monthly" | "breakdown";
-type HoldingDetail = (typeof data.financialPosition.holdingDetails)[number];
+type HoldingDetail = (typeof vandanaWorkspace.financialPosition.holdingDetails)[number];
 
 const holdingDetailCopy: Record<string, { group: string; institution: string; reference: string; value: string }> = {
   "Bank balances": { group: "Accounts", institution: "Bank", reference: "Account reference", value: "Balance" },
@@ -69,6 +70,7 @@ const closingBalances = [1.92, 2.10, 2.28, 2.16, 2.62, 3.10];
 const bounces = [0, 0, 0, 1, 0, 0];
 
 export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: string) => void }) {
+  const data = useWorkspaceData();
   const fp = data.financialPosition;
   const [scope, setScope] = React.useState(fp.scopeOptions[0]);
   const [loanStatus, setLoanStatus] = React.useState<string[]>(["All"]);
@@ -97,7 +99,7 @@ export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: 
   const [assetView, setAssetView] = React.useState<AssetView>("assets");
   const [expandedCharge, setExpandedCharge] = React.useState<string | null>(null);
   const startIndex = period === "Last 3 months" ? 3 : 0;
-  const months = fp.cashflowMonths.slice(startIndex).map((item, index) => ({ ...item, closing: closingBalances[startIndex + index], bounces: bounces[startIndex + index] }));
+  const months = fp.cashflowMonths.slice(startIndex).map((item: any, index) => ({ ...item, closing: item.closing ?? closingBalances[startIndex + index], bounces: item.bounces ?? bounces[startIndex + index] }));
   const partialPeriod = period === "Last 12 months";
   const cashIcons = [ArrowDownLeft, ArrowUpRight, Landmark, ArrowDownToLine, BadgeIndianRupee, Coins, TrendingUp, PiggyBank];
   const savingsIcons = [WalletCards, Landmark, TrendingUp, PiggyBank];
@@ -120,7 +122,7 @@ export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: 
       // Must hold the longest option ("Combined view · 5 accounts") plus its clear button
       // and chevron — the MultiSelect inside won't shrink below its content, so too small a
       // maxWidth overflows onto the next filter's label.
-      maxWidth: "420px",
+      width: "500px",
     },
     {
       id: "period",
@@ -350,12 +352,15 @@ export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: 
       </FinancialSection>
 
       <FinancialSection icon={HandCoins} title="Borrowings & Cards">
-        <MetricGrid metrics={[
-          { label: "Outstanding", value: "₹36.75L", icon: HandCoins },
-          { label: "Sanctioned Amount / Limit", value: "₹62.11L", icon: WalletCards },
-          { label: "Facility Utilisation", value: "59.2%", icon: TrendingUp, tone: "amber" as const },
-          { label: "Monthly Debt Repayments", value: "₹0.88L", icon: BadgeIndianRupee, tone: "emerald" as const },
-        ]} />
+        <MetricGrid
+          metrics={(fp.borrowingMetrics as any[]).map((item, index) => ({
+            label: item.label,
+            value: item.value,
+            secondary: item.secondary,
+            icon: [HandCoins, WalletCards, TrendingUp, BadgeIndianRupee][index] ?? HandCoins,
+            tone: item.tone ?? "blue",
+          }))}
+        />
         <div className="mt-4">
           <CustomListFilter
             filterGroups={borrowingFilterGroups}

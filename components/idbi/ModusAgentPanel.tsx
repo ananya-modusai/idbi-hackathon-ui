@@ -33,7 +33,7 @@ interface Turn {
 
 import probeReplies from "@/app/idbi-data/agent-probe-replies.json";
 
-interface Suggestion { label: string; reply: string; trail: Trail; /** Fired when this starter is asked — used by the workspace filter demo. */ action?: string }
+interface Suggestion { label: string; reply: string; trail: Trail; /** Fired when this starter is asked — applies the matching filter to the list. */ action?: string }
 
 interface ModusAgentPanelProps {
   customerName: string;
@@ -44,6 +44,8 @@ interface ModusAgentPanelProps {
   onClose: () => void;
   /** Extra starters for the screen the panel is opened from. */
   extraSuggestions?: Suggestion[];
+  /** Replaces the built-in starters — used to answer about the customer on screen. */
+  starters?: Suggestion[];
   /** Called with a starter's `action` id once its reply has been played. */
   onAction?: (action: string) => void;
 }
@@ -51,7 +53,7 @@ interface ModusAgentPanelProps {
 const now = () => new Date().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", hour12: false });
 
 export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
-  customerName, healthScore, healthBand, openMatters, seedPrompt, onClose, extraSuggestions = [], onAction,
+  customerName, healthScore, healthBand, openMatters, seedPrompt, onClose, extraSuggestions = [], starters, onAction,
 }) => {
   const first = customerName.split(" ")[0];
 
@@ -72,7 +74,7 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
         { text: "Compared against product screening rules" },
         { text: "Excluded products needing a fresh application" },
       ] },
-      reply: `Against ${first}'s profile and a **${healthScore}/100** health score, these can be pre-checked without a fresh application:\n\n| Product | Basis | Indicative |\n| --- | --- | --- |\n| Premium credit card | Salary + conduct | Pre-approved |\n| Top-up on home loan | Repayment history | Eligible |\n| Overdraft against FD | Existing deposits | Eligible |\n\nNone of these is a commitment — they are screening signals from demo enrichment.`,
+      reply: `Against ${first}'s profile and a **${healthScore}/100** health score, these can be pre-checked without a fresh application:\n\n| Product | Basis | Indicative |\n| --- | --- | --- |\n| Premium credit card | Salary + conduct | Pre-approved |\n| Top-up on home loan | Repayment history | Eligible |\n| Overdraft against FD | Existing deposits | Eligible |\n\nThese are eligibility indications from the customer's own banking and bureau record, not approvals. Confirm documents before making an offer.`,
     },
     {
       label: "How should I prepare for the next call?",
@@ -86,9 +88,10 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
   ];
 
   // Prompts fired by workspace buttons (Run pre-check, Check eligibility, the Credit
-  const suggestions: Suggestion[] = [...extraSuggestions, ...baseSuggestions];
+  // A customer's own starters answer from their file; the built-ins are the fallback.
+  const suggestions: Suggestion[] = [...extraSuggestions, ...(starters?.length ? starters : baseSuggestions)];
 
-  // Cards panel) get their own trail and answer — otherwise a demo lands on the fallback.
+  // Cards panel) get their own trail and answer — otherwise the ask lands on the fallback.
   const seeded: Suggestion[] = [
     {
       label: "Run a working-capital pre-check for Vandana Singh using the available customer and financial context.",
@@ -108,7 +111,7 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
         { text: "Checked card conduct across reported facilities" },
         { text: "Matched against the IDBI card grid" },
       ] },
-      reply: `**${first} pre-qualifies for a premium business card.**\n\n- **Basis:** recognised income of ₹4.88L / month and clean repayment conduct.\n- **Indicative limit:** ₹2L – ₹5L, up from the ₹1.2L currently held elsewhere.\n- **Rate:** 2.5% – 3.5% p.m. on revolve.\n\nNo IDBI card relationship exists today, so this is a new-product conversation rather than an upgrade. Nothing here is an approval — it is a screening signal.`,
+      reply: `**${first} pre-qualifies for a premium business card.**\n\n- **Basis:** recognised income of ₹4.88L / month and clean repayment conduct.\n- **Indicative limit:** ₹2L – ₹5L, up from the ₹1.2L currently held elsewhere.\n- **Rate:** 2.5% – 3.5% p.m. on revolve.\n\nNo IDBI card relationship exists today, so this is a new-product conversation rather than an upgrade. This is an eligibility indication from her banking and bureau record; confirm documents before making the offer.`,
     },
     {
       label: "Which IDBI credit cards can be pre-checked for this customer?",
@@ -223,7 +226,7 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
   const fallbackTrail: Trail = {
     label: "Checked the customer workspace",
     runningLabel: "Checking the customer workspace",
-    steps: [{ text: "Read the customer record" }, { text: "Looked for a matching demo answer" }],
+    steps: [{ text: "Read the customer record" }, { text: "Matched the question against the file" }],
   };
 
   /** Records the request; the playback runs in the effect below. */
@@ -277,7 +280,7 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
     play(
       text,
       match?.reply ??
-        `I've noted that against ${first}'s workspace. In this demo I answer from the seeded records — try one of the starter prompts for a worked example and I'll pull the relevant figures.`,
+        `I've noted that against ${first}'s file. I can answer on financial position, open requests, product fit and eligibility — ask one of those and I'll pull the figures from the record.`,
       match?.trail ?? fallbackTrail,
       files
     );
@@ -396,7 +399,7 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
           <div>
             <p className="text-lg font-medium text-gray-700">How can I help you?</p>
             <p className="mt-1 text-sm text-gray-400">
-              Ask about {first} — financial position, open requests, product fit — using this workspace&rsquo;s demo data.
+              Ask about {customerName} — financial position, open requests, product fit or eligibility.
             </p>
           </div>
           <div className="mt-2 w-full space-y-1.5 text-left">

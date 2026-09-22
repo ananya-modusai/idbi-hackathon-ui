@@ -11,7 +11,7 @@
 import * as React from "react";
 import { ArrowRight, BarChart3, CalendarCheck, ChevronRight, ClipboardCheck, Coins, CreditCard, FileText, Landmark, Lightbulb, LifeBuoy, ListChecks, PiggyBank, Receipt, ShieldCheck, Sparkles, TrendingUp, Wallet } from "lucide-react";
 
-import data from "@/app/idbi-data/vandana-workspace.json";
+import { useWorkspaceData } from "@/components/idbi/workspaceData";
 import { cn } from "@/lib/utils";
 import {
   InfoTip, InsightBox, MetricCard, SectionHeader, SegmentedToggle, StatusPill,
@@ -112,6 +112,7 @@ const bandTone = (band: string) =>
           : "rose";
 
 export function AiAnalysisTab() {
+  const data = useWorkspaceData();
   const assessment = (data.customer as any).borrowerAssessment;
   const [allOpportunities, setAllOpportunities] = React.useState(false);
   const shownOpportunities = allOpportunities ? assessment.opportunities : assessment.opportunities.slice(0, 4);
@@ -200,7 +201,7 @@ export function AiAnalysisTab() {
           <SectionHeader
             icon={Sparkles}
             title="AI Assessment Summary"
-            titleMeta={<StatusPill tone="emerald">{health.band}</StatusPill>}
+           
           />
           {/* Two findings side by side, then the opportunities they produce underneath. */}
           <div className="grid gap-4 lg:grid-cols-2">
@@ -275,8 +276,8 @@ export function AiAnalysisTab() {
             </p>
 
             <p className="mt-4 text-sm leading-6 text-slate-700">
-              In plain terms: <strong className="text-slate-900">{customer.name.split(" ")[0]} manages money well.</strong> Income comfortably covers
-              the EMIs, nothing is overdue, and there is money left over most months.
+              In plain terms: <strong className="text-slate-900">{(customer.healthPlainTerms ?? "").split(". ")[0]}.</strong>{" "}
+              {(customer.healthPlainTerms ?? "").split(". ").slice(1).join(". ")}
             </p>
 
             <div className="mt-1">
@@ -289,9 +290,11 @@ export function AiAnalysisTab() {
               </div>
             </div>
 
-            <div className="mt-4 flex items-start gap-2 rounded-lg border border-white/70 bg-green-100/70 px-3 py-2.5">
-              <Info className="mt-0.5 size-3.5 shrink-0 text-slate-700" />
-              <p className="text-xs leading-5 text-slate-600">Current income supports repayments; reserve cover is the main constraint.</p>
+            {/* Neutral surface — the panel already carries the band colour, and a green
+                note under a stressed score reads as a contradiction. */}
+            <div className="mt-4 flex items-start gap-2 rounded-lg border border-slate-200 bg-white/80 px-3 py-2.5">
+              <Info className="mt-0.5 size-3.5 shrink-0 text-slate-400" />
+              <p className="text-xs leading-5 text-slate-600">{customer.healthNote}</p>
             </div>
           </div>
 
@@ -309,7 +312,7 @@ export function AiAnalysisTab() {
                         <span className={cn("text-sm font-bold tabular-nums", bandText(driver.score))}>{driver.score}</span>
                         <StatusPill tone={driver.score >= 75 ? "emerald" : "blue"}>{driver.band}</StatusPill>
                       </div>
-                      <p className="mt-1 text-xs leading-5 text-slate-600">{DRIVER_BASIS[driver.name]}</p>
+                      <p className="mt-1 text-xs leading-5 text-slate-600">{(customer.healthDriverBasis ?? DRIVER_BASIS)[driver.name]}</p>
                     </div>
                   </div>
                 );

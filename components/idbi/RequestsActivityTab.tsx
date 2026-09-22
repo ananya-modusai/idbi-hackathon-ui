@@ -3,7 +3,7 @@
 import * as React from "react";
 import { CalendarClock, Check, CircleCheck, Eye, FileText, MessageSquareText, Pencil, Plus, Search, TicketCheck, UsersRound } from "lucide-react";
 
-import data from "@/app/idbi-data/vandana-workspace.json";
+import { useWorkspaceData } from "@/components/idbi/workspaceData";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -34,6 +34,7 @@ function statusTone(status: string) {
 }
 
 export function RequestsActivityTab({ requestedAction = null, onActionConsumed }: { requestedAction?: ActionKind | null; onActionConsumed?: () => void }) {
+  const data = useWorkspaceData();
   const [view, setView] = React.useState("allActivity");
   const [type, setType] = React.useState("all");
   const [search, setSearch] = React.useState("");

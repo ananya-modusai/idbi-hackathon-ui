@@ -1,0 +1,3572 @@
+{
+  "990000142": {
+    "asOf": "2026-09-19",
+    "customer": {
+      "id": "990000142",
+      "name": "Harpreet Kaur Gill",
+      "classification": "Individual",
+      "relationship": "Prospect · NTB",
+      "tier": "Untiered",
+      "location": "Ludhiana, Punjab",
+      "relationshipManager": "Ananya Rao",
+      "financialHealth": {
+        "score": 23,
+        "band": "Poor"
+      },
+      "contacts": {
+        "mobile": "+91 98765 33771",
+        "email": "harpreet.gill@example.com",
+        "reference": "Jaspreet Gill · Spouse · +91 98765 33418"
+      },
+      "about": [
+        "Runs Gill Hosiery Works in Ludhiana; enquired about export packing credit on 17 Sep 2026.",
+        "No IDBI relationship today — all banking sits with two other banks.",
+        "AA data shows the cash credit drawn to 96% and GST filings lapsed for two periods."
+      ],
+      "snapshot": [
+        {
+          "id": "occupation",
+          "label": "Occupation",
+          "value": "Self-employed",
+          "secondary": null
+        },
+        {
+          "id": "organisation",
+          "label": "Organisation",
+          "value": "Gill Hosiery Works",
+          "secondary": "Hosiery export"
+        },
+        {
+          "id": "income",
+          "label": "Primary Income Source",
+          "value": "Business income",
+          "secondary": null
+        },
+        {
+          "id": "bureau",
+          "label": "Credit Bureau",
+          "value": "CIBIL · 612",
+          "secondary": "Reported 15 Sep 2026"
+        },
+        {
+          "id": "personal",
+          "label": "Personal Details",
+          "value": "Age: 41 · Gender: Female",
+          "secondary": null
+        },
+        {
+          "id": "residency",
+          "label": "Residency",
+          "value": "Resident Indian",
+          "secondary": "India"
+        },
+        {
+          "id": "since",
+          "label": "Relationship",
+          "value": "Prospect",
+          "secondary": "Enquiry 17 Sep 2026"
+        },
+        {
+          "id": "kyc",
+          "label": "KYC Status",
+          "value": "Not started",
+          "secondary": "Required before onboarding"
+        }
+      ],
+      "relationshipSummary": [
+        {
+          "label": "Relationship",
+          "value": "Prospect · NTB",
+          "secondary": "Onboarding assessment 19 Sep 2026"
+        },
+        {
+          "label": "IDBI Holdings",
+          "value": "None",
+          "secondary": "No account, deposit or card"
+        },
+        {
+          "label": "External Borrowing",
+          "value": "₹27.40L outstanding",
+          "secondary": "₹30.00L limits · AA + bureau"
+        },
+        {
+          "label": "Data Sources",
+          "value": "AA · Bureau · GST",
+          "secondary": "Consent taken 17 Sep 2026"
+        }
+      ],
+      "accounts": [],
+      "loans": [
+        {
+          "facility": "Cash Credit · External",
+          "outstanding": "₹17.30L",
+          "limit": "₹18.00L limit",
+          "repayment": "Interest serviced monthly",
+          "timeline": [
+            "current",
+            "late",
+            "current",
+            "late",
+            "missed",
+            "current",
+            "current",
+            "late",
+            "current",
+            "missed",
+            "current",
+            "current"
+          ],
+          "conduct": "2 cheque returns · 96% utilised"
+        },
+        {
+          "facility": "Machinery Loan · External",
+          "outstanding": "₹10.10L",
+          "limit": "₹12.00L sanctioned",
+          "repayment": "₹38,400 monthly",
+          "timeline": [
+            "current",
+            "current",
+            "late",
+            "current",
+            "current",
+            "late",
+            "current",
+            "current",
+            "current",
+            "late",
+            "current",
+            "current"
+          ],
+          "conduct": "31 DPD once in 12 months"
+        }
+      ],
+      "cibilTrend": [
+        {
+          "date": "2025-10-15",
+          "score": 690,
+          "note": "Limits comfortable; filings current."
+        },
+        {
+          "date": "2025-12-15",
+          "score": 684,
+          "note": "Utilisation began climbing after festive stocking."
+        },
+        {
+          "date": "2026-02-15",
+          "score": 671,
+          "note": "First cheque return recorded."
+        },
+        {
+          "date": "2026-04-15",
+          "score": 652,
+          "note": "Utilisation above 90% for three months."
+        },
+        {
+          "date": "2026-06-15",
+          "score": 631,
+          "note": "Second cheque return; machinery EMI 31 DPD."
+        },
+        {
+          "date": "2026-09-15",
+          "score": 612,
+          "note": "GST filings lapsed for two periods."
+        }
+      ],
+      "needsAttention": true,
+      "opportunities": [
+        {
+          "id": "current-account-only",
+          "icon": "Landmark",
+          "title": "Open a current account first",
+          "subtitle": "Build visible conduct before any limit",
+          "fit": "Good fit",
+          "tags": [],
+          "stats": [
+            {
+              "label": "Monthly inflow",
+              "value": "₹3.94 L",
+              "icon": "BadgeIndianRupee"
+            },
+            {
+              "label": "IDBI share",
+              "value": "0%",
+              "icon": "Layers"
+            },
+            {
+              "label": "Review after",
+              "value": "3 months",
+              "icon": "CalendarDays"
+            }
+          ],
+          "whyNow": "Turnover of ₹47.20L runs entirely through two other banks, so we have no conduct of our own to lend against.",
+          "nextAction": "Onboard the current account and route part of the collections through it for three months.",
+          "trigger": "Turnover of ₹47.20L runs entirely through two other banks.",
+          "primaryAction": "Offer current account",
+          "secondaryAction": null,
+          "prompt": "Harpreet Kaur Gill routes ₹47.20L of turnover through two other banks. Draft the current-account onboarding conversation that builds conduct before any limit."
+        }
+      ],
+      "healthHistory": [
+        {
+          "month": "Sep",
+          "year": 2026,
+          "score": 23,
+          "explanation": "Single onboarding assessment on 19 Sep 2026 from AA and bureau data. No IDBI history exists yet."
+        }
+      ],
+      "healthDrivers": [
+        {
+          "name": "Cash Flow Strength",
+          "score": 38,
+          "band": "Weak"
+        },
+        {
+          "name": "Debt Sustainability",
+          "score": 10,
+          "band": "Weak"
+        },
+        {
+          "name": "Financial Resilience",
+          "score": 18,
+          "band": "Weak"
+        }
+      ],
+      "insights": [
+        {
+          "id": "ins-util",
+          "severity": "high",
+          "isPositive": false,
+          "category": "Working Capital",
+          "description": "Limit Exhausted. Utilisation has stayed above 95% for three consecutive months."
+        },
+        {
+          "id": "ins-gst",
+          "severity": "medium",
+          "isPositive": false,
+          "category": "Compliance",
+          "description": "Filings Lapsed. GSTR-3B has not been filed for two consecutive periods."
+        },
+        {
+          "id": "ins-conduct",
+          "severity": "medium",
+          "isPositive": false,
+          "category": "Conduct",
+          "description": "Late Instalment. One machinery-loan instalment was paid 31 days late."
+        }
+      ],
+      "borrowerAssessment": {
+        "financialPosition": "Assessed at onboarding from Account Aggregator, bureau and GST data; no IDBI history exists. Receipts land every month, but turnover has fallen 11.2% year on year, the external cash credit is drawn to 96%, one instalment was paid 31 days late and the balance floor reached ₹1,140.",
+        "recommendedAction": "Open a current account and route part of the collections through it, so there is conduct of our own to read. Reassess any limit after two clean GST filing cycles and three months of utilisation below 85%.",
+        "opportunities": [
+          {
+            "title": "Current Account",
+            "text": "₹47.20L of turnover runs through two other banks; our own conduct record starts here."
+          },
+          {
+            "title": "Revisit in Two Quarters",
+            "text": "Two clean filing cycles and lower utilisation would make a limit conversation possible."
+          }
+        ]
+      },
+      "events": [],
+      "agentStarters": [
+        {
+          "label": "Summarise the open matters",
+          "trail": {
+            "label": "Checked the relationship feed",
+            "runningLabel": "Checking the relationship feed",
+            "steps": [
+              {
+                "text": "Read the relationship feed — 0 threads"
+              },
+              {
+                "text": "Confirmed no IDBI history exists"
+              },
+              {
+                "text": "Fell back to the onboarding file"
+              }
+            ]
+          },
+          "reply": "**Nothing is open — Harpreet Kaur Gill is not a customer yet.**\n\nThe only thing on file is the **export packing credit enquiry** logged on 17 Sep 2026. There is no account, no card and no prior activity with IDBI.\n\nWhat exists instead is an onboarding assessment built from Account Aggregator, bureau and GST data, and it scores **23/100 (Stressed)**. Receipts land every month; it is utilisation and repayment timing that pull the score down."
+        },
+        {
+          "label": "Which products can be pre-checked?",
+          "trail": {
+            "label": "Screened the onboarding file",
+            "runningLabel": "Screening the onboarding file",
+            "steps": [
+              {
+                "text": "Read AA data — 96% utilisation on the external cash credit"
+              },
+              {
+                "text": "Read bureau — one instalment 31 days late"
+              },
+              {
+                "text": "Read GST — two lapsed filings"
+              }
+            ]
+          },
+          "reply": "**One, and it is not a credit product.**\n\n| Product | Verdict | Why |\n| --- | --- | --- |\n| Export packing credit | **Hold** | External limit drawn to 96% for three months |\n| Any fresh limit | **Hold** | ₹27.40L outstanding against ₹47.20L of turnover |\n| Current account | **Proceed** | No credit risk, and it starts a conduct record |\n\n**Open the current account.** Her ₹47.20L of turnover runs entirely through two other banks, so we have nothing of our own to lend against. Route part of the collections through IDBI for three months, then the limit conversation becomes possible."
+        },
+        {
+          "label": "How should I prepare for the next call?",
+          "trail": {
+            "label": "Prepared the call",
+            "runningLabel": "Preparing the call",
+            "steps": [
+              {
+                "text": "Ranked the findings by severity"
+              },
+              {
+                "text": "Checked what documents would change the answer"
+              }
+            ]
+          },
+          "reply": "**Lead with what you can offer.**\n\n- Open with the **current account** — it is the yes in the conversation, and it costs her nothing.\n- If she raises the packing credit, be specific about what would change it: **two clean GST filing cycles** and **utilisation below 85% for three months**. That is a date, not a refusal.\n- Ask how the last two quarters have gone rather than quoting her own numbers back at her.\n\n**What to collect:** the last two GST challans, six months of statements from the existing banks, and the machinery loan sanction letter."
+        }
+      ],
+      "healthPlainTerms": "Harpreet is finding it hard to keep up. Money comes in every month, but almost all of it is going straight back out to the existing bank.",
+      "healthNote": "Utilisation and repayment timing are the constraint; income arrives reliably.",
+      "healthDriverBasis": {
+        "Cash Flow Strength": "Receipts land reliably every month, but almost nothing is left after operating costs.",
+        "Debt Sustainability": "Cash credit drawn to 96% for three months and one instalment 31 days late.",
+        "Financial Resilience": "₹1.92L of reserves, of which ₹0.60L is lien-marked against the limit."
+      },
+      "priority_reasons": [
+        "Utilisation above 95% elsewhere",
+        "GST filings lapsed",
+        "One instalment 31 days late"
+      ],
+      "signals": [
+        {
+          "label": "Limit exhausted",
+          "evidence": "Cash credit has stayed above 95% drawn for three consecutive months.",
+          "source": "Account Aggregator",
+          "date": "2026-09-19"
+        },
+        {
+          "label": "Filings lapsed",
+          "evidence": "GSTR-3B not filed for the last two periods.",
+          "source": "GST filings",
+          "date": "2026-09-19"
+        }
+      ]
+    },
+    "financialPosition": {
+      "source": "Account Aggregator consent · 17 Sep 2026 · 2 external banks",
+      "scopeOptions": [
+        "Combined view · 3 external accounts",
+        "Punjab National Bank · 2 accounts",
+        "Kotak Mahindra Bank · 1 account"
+      ],
+      "accountScopes": [
+        {
+          "value": "combined",
+          "label": "Combined view · 3 external accounts",
+          "share": 1.0,
+          "group": "all"
+        },
+        {
+          "value": "pnb",
+          "label": "Punjab National Bank · 2 accounts",
+          "share": 0.78,
+          "group": "pnb"
+        },
+        {
+          "value": "kotak",
+          "label": "Kotak Mahindra Bank · 1 account",
+          "share": 0.22,
+          "group": "kotak"
+        }
+      ],
+      "periodOptions": [
+        "Last 3 months",
+        "Last 6 months",
+        "Last 12 months"
+      ],
+      "financialMetrics": [
+        {
+          "label": "Turnover (T12M)",
+          "value": "₹47.20 L",
+          "secondary": "GST-derived · GSTR-3B"
+        },
+        {
+          "label": "Net income (FY24)",
+          "value": "₹6.80 L",
+          "secondary": "ITR-reported · ITR-3"
+        },
+        {
+          "label": "Revenue growth (YoY)",
+          "value": "−11.2%",
+          "secondary": "GST-derived"
+        },
+        {
+          "label": "Avg daily balance",
+          "value": "₹38,400",
+          "secondary": "External · AA"
+        }
+      ],
+      "cashflowMetrics": [
+        {
+          "label": "Total inflow",
+          "value": "₹49.60 L",
+          "secondary": "All credits · 12 months"
+        },
+        {
+          "label": "Total outflow",
+          "value": "₹49.10 L",
+          "secondary": "All debits · 12 months"
+        },
+        {
+          "label": "Avg daily balance",
+          "value": "₹38,400",
+          "secondary": "External · AA"
+        },
+        {
+          "label": "Balance floor",
+          "value": "₹1,140",
+          "secondary": "Lowest day in 12 months"
+        },
+        {
+          "label": "Recognised Income",
+          "value": "₹3.94 L",
+          "secondary": "Average / month"
+        },
+        {
+          "label": "Core Spending",
+          "value": "₹3.36 L",
+          "secondary": "Average / month"
+        },
+        {
+          "label": "Monthly Investments",
+          "value": "Nil",
+          "secondary": "No contributions recorded"
+        },
+        {
+          "label": "Monthly Surplus",
+          "value": "₹0.11 L",
+          "secondary": "After debt repayments"
+        }
+      ],
+      "cashflowMonths": [
+        {
+          "month": "Apr",
+          "income": 4.1,
+          "spending": 3.6,
+          "surplus": 0.5,
+          "closing": 0.52,
+          "bounces": 0
+        },
+        {
+          "month": "May",
+          "income": 3.85,
+          "spending": 3.4,
+          "surplus": 0.45,
+          "closing": 0.44,
+          "bounces": 0
+        },
+        {
+          "month": "Jun",
+          "income": 3.6,
+          "spending": 3.55,
+          "surplus": 0.05,
+          "closing": 0.31,
+          "bounces": 0
+        },
+        {
+          "month": "Jul",
+          "income": 3.2,
+          "spending": 3.45,
+          "surplus": -0.25,
+          "closing": 0.06,
+          "bounces": 1
+        },
+        {
+          "month": "Aug",
+          "income": 4.05,
+          "spending": 3.2,
+          "surplus": 0.85,
+          "closing": 0.48,
+          "bounces": 0
+        },
+        {
+          "month": "Sep",
+          "income": 3.85,
+          "spending": 3.35,
+          "surplus": 0.5,
+          "closing": 0.38,
+          "bounces": 1
+        }
+      ],
+      "cashflowBreakdown": [
+        {
+          "group": "Income",
+          "apr": "₹4.10L",
+          "may": "₹3.85L",
+          "jun": "₹3.60L",
+          "jul": "₹3.20L",
+          "aug": "₹4.05L",
+          "sep": "₹3.85L",
+          "mom": "−4.9%"
+        },
+        {
+          "group": "Spending",
+          "apr": "−₹3.60L",
+          "may": "−₹3.40L",
+          "jun": "−₹3.55L",
+          "jul": "−₹3.45L",
+          "aug": "−₹3.20L",
+          "sep": "−₹3.35L",
+          "mom": "+4.7%"
+        },
+        {
+          "group": "Net",
+          "apr": "₹0.50L",
+          "may": "₹0.45L",
+          "jun": "₹0.05L",
+          "jul": "−₹0.25L",
+          "aug": "₹0.85L",
+          "sep": "₹0.50L",
+          "mom": "−41.2%"
+        }
+      ],
+      "gstTrend": [
+        {
+          "name": "Jul'25",
+          "Turnover": 4.4,
+          "Tax Paid": 0.46,
+          "Value Addition %": 13.8
+        },
+        {
+          "name": "Aug'25",
+          "Turnover": 4.2,
+          "Tax Paid": 0.44,
+          "Value Addition %": 13.2
+        },
+        {
+          "name": "Sep'25",
+          "Turnover": 4.0,
+          "Tax Paid": 0.42,
+          "Value Addition %": 12.6
+        },
+        {
+          "name": "Oct'25",
+          "Turnover": 4.6,
+          "Tax Paid": 0.48,
+          "Value Addition %": 14.1
+        },
+        {
+          "name": "Nov'25",
+          "Turnover": 4.1,
+          "Tax Paid": 0.43,
+          "Value Addition %": 13.0
+        },
+        {
+          "name": "Dec'25",
+          "Turnover": 4.3,
+          "Tax Paid": 0.45,
+          "Value Addition %": 13.4
+        },
+        {
+          "name": "Jan'26",
+          "Turnover": 3.9,
+          "Tax Paid": 0.41,
+          "Value Addition %": 12.2
+        },
+        {
+          "name": "Feb'26",
+          "Turnover": 3.7,
+          "Tax Paid": 0.38,
+          "Value Addition %": 11.8
+        },
+        {
+          "name": "Mar'26",
+          "Turnover": 4.2,
+          "Tax Paid": 0.44,
+          "Value Addition %": 13.1
+        },
+        {
+          "name": "Apr'26",
+          "Turnover": 3.6,
+          "Tax Paid": 0.37,
+          "Value Addition %": 11.4
+        },
+        {
+          "name": "May'26",
+          "Turnover": 3.1,
+          "Tax Paid": 0.32,
+          "Value Addition %": 10.2
+        },
+        {
+          "name": "Jun'26",
+          "Turnover": 3.1,
+          "Tax Paid": 0.32,
+          "Value Addition %": 10.0
+        }
+      ],
+      "gstReturns": [
+        {
+          "period": "Jun 2026",
+          "turnover": "₹3.10 L",
+          "taxPaid": "₹0.32 L",
+          "itc": "₹0.24 L",
+          "filedOn": "Not filed",
+          "status": "Lapsed"
+        },
+        {
+          "period": "May 2026",
+          "turnover": "₹3.10 L",
+          "taxPaid": "₹0.32 L",
+          "itc": "₹0.24 L",
+          "filedOn": "Not filed",
+          "status": "Lapsed"
+        },
+        {
+          "period": "Apr 2026",
+          "turnover": "₹3.60 L",
+          "taxPaid": "₹0.37 L",
+          "itc": "₹0.28 L",
+          "filedOn": "29 May 2026",
+          "status": "9 days late"
+        },
+        {
+          "period": "Mar 2026",
+          "turnover": "₹4.20 L",
+          "taxPaid": "₹0.44 L",
+          "itc": "₹0.33 L",
+          "filedOn": "11 Apr 2026",
+          "status": "On time"
+        }
+      ],
+      "employmentTrend": [
+        {
+          "name": "Jul'25",
+          "Headcount": 24,
+          "Days Delay": 1
+        },
+        {
+          "name": "Aug'25",
+          "Headcount": 24,
+          "Days Delay": 1
+        },
+        {
+          "name": "Sep'25",
+          "Headcount": 23,
+          "Days Delay": 2
+        },
+        {
+          "name": "Oct'25",
+          "Headcount": 23,
+          "Days Delay": 2
+        },
+        {
+          "name": "Nov'25",
+          "Headcount": 22,
+          "Days Delay": 3
+        },
+        {
+          "name": "Dec'25",
+          "Headcount": 22,
+          "Days Delay": 4
+        },
+        {
+          "name": "Jan'26",
+          "Headcount": 21,
+          "Days Delay": 5
+        },
+        {
+          "name": "Feb'26",
+          "Headcount": 20,
+          "Days Delay": 6
+        },
+        {
+          "name": "Mar'26",
+          "Headcount": 20,
+          "Days Delay": 7
+        },
+        {
+          "name": "Apr'26",
+          "Headcount": 19,
+          "Days Delay": 9
+        },
+        {
+          "name": "May'26",
+          "Headcount": 18,
+          "Days Delay": 11
+        },
+        {
+          "name": "Jun'26",
+          "Headcount": 18,
+          "Days Delay": 12
+        }
+      ],
+      "establishments": [
+        {
+          "id": "PBLDH0071244000",
+          "location": "Ludhiana (unit)",
+          "headcount": 18,
+          "lastPaid": "12 Jul 2026",
+          "delay": "+12 days trend",
+          "status": "Active"
+        }
+      ],
+      "associations": [
+        {
+          "organisation": "Gill Hosiery Works",
+          "role": "Proprietor",
+          "from": "Jun 2014",
+          "to": "Present",
+          "status": "Active",
+          "source": "GST · MCA",
+          "verified": "17 Sep 2026"
+        }
+      ],
+      "loans": [
+        {
+          "facility": "Cash Credit · Punjab National Bank",
+          "lender": "Punjab National Bank",
+          "outstanding": "₹17.30L",
+          "limit": "₹18.00L limit",
+          "monthlyDue": "Interest only",
+          "tenure": "Renewal due Dec 2026",
+          "conduct": "96% utilised · 2 returns"
+        },
+        {
+          "facility": "Machinery Loan · Kotak Mahindra Bank",
+          "lender": "Kotak Mahindra Bank",
+          "outstanding": "₹10.10L",
+          "limit": "₹12.00L sanctioned",
+          "monthlyDue": "₹38,400",
+          "tenure": "31 months left",
+          "conduct": "31 DPD once"
+        }
+      ],
+      "borrowings": [
+        {
+          "id": "pnb-cc",
+          "status": "Active",
+          "portfolio": "No",
+          "startDate": "14-12-2022",
+          "lender": "Punjab National Bank",
+          "product": "Cash Credit",
+          "secured": "₹18,00,000",
+          "outstanding": "—",
+          "utilisation": "—",
+          "utilisationAlert": false,
+          "interest": "—",
+          "timeline": [],
+          "collateral": {
+            "assets": 2,
+            "satisfied": 0,
+            "notSatisfied": 2
+          }
+        },
+        {
+          "id": "kotak-ml",
+          "status": "Active",
+          "portfolio": "No",
+          "startDate": "08-03-2024",
+          "lender": "Kotak Mahindra Bank",
+          "product": "Machinery Loan",
+          "secured": "₹12,00,000",
+          "outstanding": "—",
+          "utilisation": "—",
+          "utilisationAlert": false,
+          "interest": "—",
+          "timeline": [],
+          "collateral": {
+            "assets": 1,
+            "satisfied": 0,
+            "notSatisfied": 1
+          }
+        }
+      ],
+      "savingsMetrics": [
+        {
+          "label": "Tracked Financial Assets",
+          "value": "₹1.92L"
+        },
+        {
+          "label": "Held with IDBI",
+          "value": "Nil · 0%"
+        },
+        {
+          "label": "Market-linked Investments",
+          "value": "Nil"
+        },
+        {
+          "label": "Monthly Investments",
+          "value": "Nil"
+        }
+      ],
+      "allocation": [
+        {
+          "name": "Bank balances",
+          "value": 1.32,
+          "percent": 68.8,
+          "idbi": "—",
+          "other": "₹1.32L",
+          "color": "#2563eb",
+          "position": "Operating balances with two external banks",
+          "icon": "Landmark"
+        },
+        {
+          "name": "Term deposits",
+          "value": 0.6,
+          "percent": 31.2,
+          "idbi": "—",
+          "other": "₹0.60L",
+          "color": "#60a5fa",
+          "position": "Single deposit lien-marked against the cash credit",
+          "icon": "FileText"
+        }
+      ],
+      "holdings": [],
+      "holdingDetails": [],
+      "assets": [
+        {
+          "asset": "Hosiery unit · Ludhiana",
+          "type": "Industrial property",
+          "owner": "Harpreet Kaur Gill",
+          "location": "Ludhiana, PB",
+          "value": "₹40–45L",
+          "status": "Charged",
+          "holder": "Punjab National Bank",
+          "secured": "₹18.00L"
+        },
+        {
+          "asset": "Knitting machinery (6 units)",
+          "type": "Plant & machinery",
+          "owner": "Gill Hosiery Works",
+          "location": "Ludhiana, PB",
+          "value": "₹14–16L",
+          "status": "Charged",
+          "holder": "Kotak Mahindra Bank",
+          "secured": "₹12.00L"
+        }
+      ],
+      "charges": {
+        "open": [
+          {
+            "id": "CHG-PNB-4471",
+            "holder": "Punjab National Bank",
+            "amount": "₹18.00L",
+            "created": "14 Dec 2022",
+            "event": "Modification 09 Jan 2026",
+            "rate": "11.75%",
+            "security": "Industrial property and stock"
+          },
+          {
+            "id": "CHG-KMB-8820",
+            "holder": "Kotak Mahindra Bank",
+            "amount": "₹12.00L",
+            "created": "08 Mar 2024",
+            "event": "Creation",
+            "rate": "13.25%",
+            "security": "Knitting machinery, 6 units"
+          }
+        ],
+        "satisfied": []
+      },
+      "capacity": [],
+      "loanSummary": [],
+      "cashflowInsight": [],
+      "borrowingMetrics": [
+        {
+          "label": "Outstanding",
+          "value": "₹27.40L",
+          "secondary": "External · AA + bureau",
+          "tone": "blue"
+        },
+        {
+          "label": "Sanctioned Amount / Limit",
+          "value": "₹30.00L",
+          "secondary": "Across 2 external facilities",
+          "tone": "blue"
+        },
+        {
+          "label": "Facility Utilisation",
+          "value": "96%",
+          "secondary": "Above 95% for 3 months",
+          "tone": "rose"
+        },
+        {
+          "label": "Monthly Debt Repayments",
+          "value": "₹0.55L",
+          "secondary": "₹0 currently overdue",
+          "tone": "amber"
+        }
+      ]
+    },
+    "relationshipFeed": {
+      "highlights": [
+        {
+          "label": "Open Matters",
+          "value": "0",
+          "filter": "open"
+        },
+        {
+          "label": "Awaiting Customer",
+          "value": "0",
+          "filter": "awaiting"
+        },
+        {
+          "label": "Next Follow-up",
+          "value": "Not scheduled",
+          "filter": "all"
+        },
+        {
+          "label": "Last Interaction",
+          "value": "17 Sep · Enquiry",
+          "filter": "all"
+        }
+      ],
+      "threads": []
+    },
+    "metrics": {
+      "months": [
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun"
+      ],
+      "capacity": [
+        {
+          "id": "income",
+          "label": "Monthly Receipts",
+          "value": "₹3.94L",
+          "secondary": "Average across 12 AA months",
+          "definition": "Average monthly business receipts recognised from the two linked external accounts, after transfers, financing inflows and refunds are excluded."
+        },
+        {
+          "id": "surplus",
+          "label": "Cash Remaining",
+          "value": "₹0.25L",
+          "secondary": "Latest month, before debt service",
+          "definition": "Cash left after operating outflows and before debt service, taken from the latest completed month."
+        },
+        {
+          "id": "debt",
+          "label": "Debt Outstanding",
+          "value": "₹27.40L",
+          "secondary": "₹0 currently overdue",
+          "definition": "Verified external borrowing across both lenders, as reported by AA and the bureau."
+        },
+        {
+          "id": "reserves",
+          "label": "Accessible Reserves",
+          "value": "₹1.32L",
+          "secondary": "Covers 0.4 months of commitments",
+          "definition": "Free balances and unencumbered deposits; a further ₹0.60L deposit is lien-marked."
+        }
+      ],
+      "groups": [
+        {
+          "id": "cash-flow",
+          "label": "Cash Flow",
+          "metrics": [
+            {
+              "code": "CF01",
+              "id": "business-receipts",
+              "label": "Monthly Business Receipts",
+              "type": "Income",
+              "unit": "₹ lakh",
+              "definition": "Monthly business credits accepted as operating receipts after transfers, financing inflows and refunds are excluded.",
+              "calculation": "Sum eligible business receipts across both linked accounts each month.",
+              "benchmark": "Cohort / Prior Period",
+              "benchmarkDefinition": "Read against her own prior period and an approved self-employed cohort.",
+              "format": "currency-lakh",
+              "direction": "higher",
+              "values": [
+                4.35,
+                4.2,
+                3.95,
+                4.6,
+                4.05,
+                4.3,
+                3.8,
+                3.7,
+                4.15,
+                4.1,
+                3.85,
+                3.6
+              ],
+              "assessment": "Receipts have landed every month but have drifted down from ₹4.35L to ₹3.60L across the year.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "CF02",
+              "id": "receipt-growth",
+              "label": "Receipt Growth",
+              "type": "Growth",
+              "unit": "%",
+              "definition": "Month-on-month movement in recognised business receipts.",
+              "calculation": "Compare each month with the one before it.",
+              "benchmark": "≥ 0%",
+              "benchmarkDefinition": "Growth at or above zero keeps the trend intact.",
+              "format": "percent",
+              "direction": "higher",
+              "values": [
+                2,
+                -3,
+                -6,
+                16,
+                -12,
+                6,
+                -12,
+                -3,
+                12,
+                -1,
+                -6,
+                -6
+              ],
+              "assessment": "Seven of the last twelve months were negative; the trend is down 11.2% year on year.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "CF03",
+              "id": "receipt-regularity",
+              "label": "Receipt Regularity",
+              "type": "Continuity",
+              "unit": "Status",
+              "definition": "Whether receipts were credited in each expected period.",
+              "calculation": "Count months with at least one qualifying business credit.",
+              "benchmark": "≥ 5 of 6 months",
+              "benchmarkDefinition": "Regular crediting indicates an operating business.",
+              "format": "status",
+              "direction": "higher",
+              "values": [
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes"
+              ],
+              "assessment": "Receipts arrived in all twelve months with no gap — the most reliable part of this file.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "CF04",
+              "id": "receipt-stability",
+              "label": "Receipt Stability",
+              "type": "Stability",
+              "unit": "%",
+              "definition": "Variation in monthly receipts around the twelve-month average.",
+              "calculation": "Coefficient of variation across the period.",
+              "benchmark": "≤ 25%",
+              "benchmarkDefinition": "Lower variation indicates predictable collections.",
+              "format": "percent",
+              "direction": "lower",
+              "values": [
+                12,
+                14,
+                18,
+                21,
+                19,
+                16,
+                20,
+                22,
+                17,
+                15,
+                19,
+                21
+              ],
+              "assessment": "Variation stays inside the 25% benchmark; the issue is the level, not the volatility.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "CF05",
+              "id": "payer-concentration",
+              "label": "Payer Concentration",
+              "type": "Concentration",
+              "unit": "%",
+              "definition": "Share of receipts from the largest single payer.",
+              "calculation": "Largest payer credits ÷ total receipts.",
+              "benchmark": "≤ 40%",
+              "benchmarkDefinition": "Lower concentration reduces reliance on one counterparty.",
+              "format": "percent",
+              "direction": "lower",
+              "values": [
+                46,
+                44,
+                48,
+                51,
+                49,
+                47,
+                52,
+                55,
+                53,
+                50,
+                54,
+                56
+              ],
+              "assessment": "Concentration has climbed to 56% — one buyer now drives more than half the book.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "CF06",
+              "id": "operating-expense-ratio",
+              "label": "Operating Expense Ratio",
+              "type": "Expenses",
+              "unit": "%",
+              "definition": "Operating outflows as a share of recognised receipts.",
+              "calculation": "Operating debits ÷ receipts each month.",
+              "benchmark": "≤ 60%",
+              "benchmarkDefinition": "A lower ratio leaves more room for debt service.",
+              "format": "percent",
+              "direction": "lower",
+              "values": [
+                78,
+                80,
+                84,
+                76,
+                82,
+                79,
+                88,
+                91,
+                84,
+                83,
+                87,
+                93
+              ],
+              "assessment": "Costs now absorb 93% of receipts, up from 78% a year ago.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "CF07",
+              "id": "expense-change",
+              "label": "Expense Change",
+              "type": "Expenses",
+              "unit": "%",
+              "definition": "Month-on-month movement in total outflows.",
+              "calculation": "Compare total debits with the prior month.",
+              "benchmark": "≤ 5% increase",
+              "benchmarkDefinition": "Contained cost growth protects the surplus.",
+              "format": "percent",
+              "direction": "lower",
+              "values": [
+                1,
+                3,
+                5,
+                -4,
+                4,
+                -1,
+                7,
+                4,
+                -5,
+                -1,
+                3,
+                4
+              ],
+              "assessment": "Costs are broadly contained; the squeeze comes from falling receipts rather than rising spend.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "CF08",
+              "id": "cash-before-debt",
+              "label": "Cash Before Debt",
+              "type": "Surplus",
+              "unit": "₹ lakh",
+              "definition": "Cash remaining after operating outflows and before debt service.",
+              "calculation": "Receipts less operating debits each month.",
+              "benchmark": "≥ ₹0.60L",
+              "benchmarkDefinition": "Headroom before debt service is the first buffer.",
+              "format": "currency-lakh",
+              "direction": "higher",
+              "values": [
+                0.96,
+                0.84,
+                0.63,
+                1.1,
+                0.73,
+                0.9,
+                0.46,
+                0.33,
+                0.66,
+                0.7,
+                0.5,
+                0.25
+              ],
+              "assessment": "Headroom fell to ₹0.25L in the latest month, well under the ₹0.60L benchmark.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "CF09",
+              "id": "surplus-after-commitments",
+              "label": "Surplus After Commitments",
+              "type": "Surplus",
+              "unit": "%",
+              "definition": "Surplus remaining after debt service, as a share of receipts.",
+              "calculation": "(Cash before debt − debt service) ÷ receipts.",
+              "benchmark": "≥ 10%",
+              "benchmarkDefinition": "A positive margin funds reserves.",
+              "format": "percent",
+              "direction": "higher",
+              "values": [
+                13,
+                10,
+                6,
+                15,
+                8,
+                12,
+                2,
+                -1,
+                7,
+                8,
+                3,
+                -3
+              ],
+              "assessment": "The margin turned negative twice in the last six months.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "CF10",
+              "id": "positive-cashflow-months",
+              "label": "Positive Cash-flow Months",
+              "type": "Surplus",
+              "unit": "Status",
+              "definition": "Whether the month closed with a positive surplus after commitments.",
+              "calculation": "Flag each month with surplus above zero.",
+              "benchmark": "≥ 5 of 6 months",
+              "benchmarkDefinition": "Consistent positive months indicate a sustainable cycle.",
+              "format": "status",
+              "direction": "higher",
+              "values": [
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "No",
+                "Yes",
+                "Yes",
+                "Yes",
+                "No"
+              ],
+              "assessment": "Ten of twelve months closed positive, but both misses fall in the last five months.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            }
+          ]
+        },
+        {
+          "id": "debt",
+          "label": "Debt",
+          "metrics": [
+            {
+              "code": "DB01",
+              "id": "total-debt",
+              "label": "Total Debt Outstanding",
+              "type": "Exposure",
+              "unit": "₹ lakh",
+              "definition": "Verified external borrowing outstanding across all lenders.",
+              "calculation": "Sum outstanding balances reported by AA and the bureau.",
+              "benchmark": "Cohort / Prior Period",
+              "benchmarkDefinition": "Read against turnover and the prior period.",
+              "format": "currency-lakh",
+              "direction": "lower",
+              "values": [
+                29.4,
+                29.1,
+                28.8,
+                28.5,
+                28.3,
+                28.1,
+                27.9,
+                27.8,
+                27.7,
+                27.6,
+                27.5,
+                27.4
+              ],
+              "assessment": "₹27.40L outstanding against ₹47.20L of annual turnover.",
+              "evidence": "Bureau report · 15 Sep 2026"
+            },
+            {
+              "code": "DB02",
+              "id": "monthly-debt-servicing",
+              "label": "Monthly Debt Servicing",
+              "type": "Affordability",
+              "unit": "₹ lakh",
+              "definition": "Verified monthly debt repayments across all facilities.",
+              "calculation": "Sum instalments and interest debits each month.",
+              "benchmark": "≤ ₹0.55L",
+              "benchmarkDefinition": "Servicing should sit inside the operating surplus.",
+              "format": "currency-lakh",
+              "direction": "lower",
+              "values": [
+                0.55,
+                0.55,
+                0.55,
+                0.55,
+                0.55,
+                0.55,
+                0.55,
+                0.55,
+                0.55,
+                0.55,
+                0.55,
+                0.55
+              ],
+              "assessment": "Servicing is flat at ₹0.55L — ₹0.38L machinery instalment plus cash-credit interest.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "DB03",
+              "id": "debt-repayment-ratio",
+              "label": "Debt Repayment Ratio",
+              "type": "Burden",
+              "unit": "%",
+              "definition": "Debt repayments as a share of recognised receipts.",
+              "calculation": "Debt service ÷ receipts each month.",
+              "benchmark": "≤ 25%",
+              "benchmarkDefinition": "A lower ratio leaves room for operating needs.",
+              "format": "percent",
+              "direction": "lower",
+              "values": [
+                13,
+                13,
+                14,
+                12,
+                14,
+                13,
+                14,
+                15,
+                13,
+                13,
+                14,
+                15
+              ],
+              "assessment": "The ratio itself is inside benchmark; the strain sits in operating costs, not instalment size.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "DB04",
+              "id": "debt-service-coverage",
+              "label": "Debt Service Coverage",
+              "type": "Affordability",
+              "unit": "×",
+              "definition": "Cash before debt divided by debt service.",
+              "calculation": "Cash before debt ÷ total debt service.",
+              "benchmark": "≥ 1.25×",
+              "benchmarkDefinition": "Coverage below 1.0× means the month cannot fund its own repayments.",
+              "format": "ratio",
+              "direction": "higher",
+              "values": [
+                1.75,
+                1.53,
+                1.15,
+                2.0,
+                1.33,
+                1.64,
+                0.84,
+                0.6,
+                1.2,
+                1.27,
+                0.91,
+                0.45
+              ],
+              "assessment": "Coverage fell to 0.45× in the latest month and has been under 1.0× three times.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "DB05",
+              "id": "max-dpd",
+              "label": "Maximum Days Past Due",
+              "type": "Conduct",
+              "unit": "Days",
+              "definition": "Highest days-past-due reported on any facility in the month.",
+              "calculation": "Take the worst DPD across reported facilities.",
+              "benchmark": "0 DPD",
+              "benchmarkDefinition": "Any DPD above zero is a conduct exception.",
+              "format": "number",
+              "direction": "lower",
+              "values": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                31,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "assessment": "One machinery-loan instalment reached 31 DPD; every other month is clean.",
+              "evidence": "Bureau report · 15 Sep 2026"
+            },
+            {
+              "code": "DB06",
+              "id": "current-overdue",
+              "label": "Current Overdue Amount",
+              "type": "Conduct",
+              "unit": "₹ lakh",
+              "definition": "Amount currently overdue across reported facilities.",
+              "calculation": "Sum reported overdue balances at month end.",
+              "benchmark": "₹0 Overdue",
+              "benchmarkDefinition": "Any overdue balance is an exception.",
+              "format": "currency-lakh",
+              "direction": "lower",
+              "values": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.38,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "assessment": "Nothing is overdue today; the single exception was cleared within the month.",
+              "evidence": "Bureau report · 15 Sep 2026"
+            },
+            {
+              "code": "DB07",
+              "id": "revolving-utilisation",
+              "label": "Revolving / WC Utilisation",
+              "type": "Utilisation",
+              "unit": "%",
+              "definition": "Drawn balance as a share of the sanctioned working-capital limit.",
+              "calculation": "Drawn ÷ sanctioned limit at month end.",
+              "benchmark": "≤ 70%",
+              "benchmarkDefinition": "Sustained high utilisation signals a limit that no longer fits the cycle.",
+              "format": "percent",
+              "direction": "lower",
+              "values": [
+                72,
+                75,
+                79,
+                74,
+                81,
+                83,
+                88,
+                92,
+                90,
+                95,
+                96,
+                96
+              ],
+              "assessment": "Utilisation has stayed above 95% for three consecutive months — the single biggest drag on the score.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "DB08",
+              "id": "debt-burden-trend",
+              "label": "Debt Burden Trend",
+              "type": "Trend",
+              "unit": "pp",
+              "definition": "Movement in the debt repayment ratio against the prior period.",
+              "calculation": "Compare the ratio with the preceding month.",
+              "benchmark": "≤ 0 pp",
+              "benchmarkDefinition": "A flat or falling burden is preferred.",
+              "format": "number",
+              "direction": "lower",
+              "values": [
+                0,
+                0,
+                1,
+                -2,
+                2,
+                -1,
+                1,
+                1,
+                -2,
+                0,
+                1,
+                1
+              ],
+              "assessment": "The burden is broadly flat; it is receipts falling rather than debt rising.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            }
+          ]
+        },
+        {
+          "id": "resilience",
+          "label": "Resilience",
+          "metrics": [
+            {
+              "code": "RS01",
+              "id": "accessible-reserves",
+              "label": "Accessible Reserves",
+              "type": "Reserves",
+              "unit": "₹ lakh",
+              "definition": "Balances and deposits that can be drawn without breaking a security interest.",
+              "calculation": "Sum free balances and unencumbered deposits.",
+              "benchmark": "≥ ₹1.10L",
+              "benchmarkDefinition": "Reserves should cover at least three months of commitments.",
+              "format": "currency-lakh",
+              "direction": "higher",
+              "values": [
+                2.1,
+                2.05,
+                1.9,
+                2.2,
+                1.95,
+                2.0,
+                1.7,
+                1.45,
+                1.6,
+                1.55,
+                1.4,
+                1.32
+              ],
+              "assessment": "₹1.32L is free; a further ₹0.60L deposit is lien-marked against the cash credit.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "RS02",
+              "id": "reserve-cover",
+              "label": "Reserve Cover",
+              "type": "Reserves",
+              "unit": "Months",
+              "definition": "Accessible reserves expressed as months of regular commitments.",
+              "calculation": "Reserves ÷ average monthly commitments.",
+              "benchmark": "≥ 3 Months",
+              "benchmarkDefinition": "Three months is the working benchmark.",
+              "format": "number",
+              "direction": "higher",
+              "values": [
+                0.6,
+                0.6,
+                0.5,
+                0.6,
+                0.5,
+                0.6,
+                0.5,
+                0.4,
+                0.4,
+                0.4,
+                0.4,
+                0.4
+              ],
+              "assessment": "Cover has never exceeded 0.6 months against a three-month benchmark.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "RS03",
+              "id": "monthly-savings-retained",
+              "label": "Monthly Savings Retained",
+              "type": "Savings",
+              "unit": "₹ lakh",
+              "definition": "Amount left in accounts at month end after all outflows.",
+              "calculation": "Closing balance less opening balance, floored at zero.",
+              "benchmark": "≥ ₹0.25L",
+              "benchmarkDefinition": "Retention indicates the cycle funds itself.",
+              "format": "currency-lakh",
+              "direction": "higher",
+              "values": [
+                0.18,
+                0.12,
+                0.05,
+                0.24,
+                0.08,
+                0.15,
+                0.02,
+                0.0,
+                0.09,
+                0.11,
+                0.04,
+                0.0
+              ],
+              "assessment": "Nothing was retained in two of the last five months.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "RS04",
+              "id": "savings-retention-rate",
+              "label": "Savings Retention Rate",
+              "type": "Savings",
+              "unit": "%",
+              "definition": "Retained savings as a share of receipts.",
+              "calculation": "Retained amount ÷ receipts each month.",
+              "benchmark": "≥ 10%",
+              "benchmarkDefinition": "A tenth of receipts retained keeps reserves growing.",
+              "format": "percent",
+              "direction": "higher",
+              "values": [
+                4,
+                3,
+                1,
+                5,
+                2,
+                3,
+                1,
+                0,
+                2,
+                3,
+                1,
+                0
+              ],
+              "assessment": "Retention has stayed in low single digits all year.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "RS05",
+              "id": "operating-account-liquidity",
+              "label": "Operating Account Liquidity",
+              "type": "Operating Liquidity",
+              "unit": "₹ lakh",
+              "definition": "Average daily balance held across operating accounts.",
+              "calculation": "Average of daily closing balances in the month.",
+              "benchmark": "Requirement Pending",
+              "benchmarkDefinition": "The operating float this business needs is still to be confirmed.",
+              "format": "currency-lakh",
+              "direction": "higher",
+              "values": [
+                0.62,
+                0.58,
+                0.49,
+                0.66,
+                0.52,
+                0.55,
+                0.41,
+                0.33,
+                0.4,
+                0.38,
+                0.34,
+                0.31
+              ],
+              "assessment": "Average daily balance is ₹38,400 across the year and ₹31,000 in the latest month.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            },
+            {
+              "code": "RS06",
+              "id": "low-balance-days",
+              "label": "Low Balance Days",
+              "type": "Operating Liquidity",
+              "unit": "Days",
+              "definition": "Days in the month with a closing balance below ₹10,000.",
+              "calculation": "Count qualifying days from the statement.",
+              "benchmark": "0 Days",
+              "benchmarkDefinition": "Low-balance days indicate a thin operating float.",
+              "format": "number",
+              "direction": "lower",
+              "values": [
+                2,
+                3,
+                5,
+                1,
+                4,
+                3,
+                7,
+                11,
+                6,
+                6,
+                9,
+                12
+              ],
+              "assessment": "Twelve days in the latest month closed under ₹10,000; the floor was ₹1,140.",
+              "evidence": "Account Aggregator · 2 external banks · 12 completed months"
+            }
+          ]
+        }
+      ],
+      "notApplicableGroups": [
+        {
+          "id": "conduct-visibility",
+          "label": "Payment Conduct (not visible)",
+          "metrics": [
+            {
+              "code": "NA01",
+              "id": "payment-returns",
+              "label": "Payment Returns",
+              "type": "Payment Stability",
+              "unit": "Count",
+              "definition": "Returned or dishonoured essential payments in the month.",
+              "calculation": "Count return entries in the statement narration.",
+              "benchmark": "0 Returns",
+              "benchmarkDefinition": "Any return is an exception.",
+              "format": "number",
+              "direction": "lower",
+              "values": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "assessment": "Return entries are not exposed in the AA feed for these accounts, so this cannot be assessed.",
+              "evidence": "Not available · AA narration does not carry return flags"
+            }
+          ]
+        },
+        {
+          "id": "investments",
+          "label": "Investments (no linked accounts)",
+          "metrics": [
+            {
+              "code": "NA02",
+              "id": "monthly-investment",
+              "label": "Monthly Investment Contribution",
+              "type": "Investments",
+              "unit": "₹ lakh",
+              "definition": "Recurring contributions to investment products.",
+              "calculation": "Sum SIP, RD and similar debits each month.",
+              "benchmark": "≥ ₹0.25L",
+              "benchmarkDefinition": "Regular contributions indicate surplus discipline.",
+              "format": "currency-lakh",
+              "direction": "higher",
+              "values": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "assessment": "No demat, mutual fund or recurring-deposit account was shared under the AA consent.",
+              "evidence": "Not available · no investment account linked"
+            },
+            {
+              "code": "NA03",
+              "id": "investment-trend",
+              "label": "Investment Contribution Trend",
+              "type": "Trend",
+              "unit": "%",
+              "definition": "Movement in contributions against the prior period.",
+              "calculation": "Compare contributions with the preceding month.",
+              "benchmark": "≥ 0%",
+              "benchmarkDefinition": "Rising contributions indicate improving surplus.",
+              "format": "percent",
+              "direction": "higher",
+              "values": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "assessment": "Cannot be computed without a linked investment account.",
+              "evidence": "Not available · no investment account linked"
+            }
+          ]
+        },
+        {
+          "id": "recovery",
+          "label": "Reserve Recovery (insufficient history)",
+          "metrics": [
+            {
+              "code": "NA04",
+              "id": "reserve-vs-peak",
+              "label": "Reserve Level vs Recent Peak",
+              "type": "Recovery",
+              "unit": "%",
+              "definition": "Current reserves against the highest level in the window.",
+              "calculation": "Current reserves ÷ peak reserves.",
+              "benchmark": "≥ 80%",
+              "benchmarkDefinition": "Recovery towards the peak indicates rebuilding.",
+              "format": "percent",
+              "direction": "higher",
+              "values": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "assessment": "Needs a full peak-and-recovery cycle; only twelve months of AA history is available.",
+              "evidence": "Not available · 12 months of history only"
+            },
+            {
+              "code": "NA05",
+              "id": "reserve-recovery",
+              "label": "Reserve Recovery",
+              "type": "Recovery",
+              "unit": "Months",
+              "definition": "Months taken to rebuild reserves after a drawdown.",
+              "calculation": "Measure the gap between trough and recovery.",
+              "benchmark": "≤ 3 Months",
+              "benchmarkDefinition": "Faster rebuilding indicates resilience.",
+              "format": "number",
+              "direction": "lower",
+              "values": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "assessment": "No recovery has occurred inside the available window, so the measure has no value to report.",
+              "evidence": "Not available · no completed recovery in window"
+            }
+          ]
+        }
+      ],
+      "benchmarkNote": "Built entirely from Account Aggregator, bureau and GST data shared under consent on 17 Sep 2026 — Harpreet Kaur Gill holds no IDBI account, so no internal conduct is included. Colours compare each value with the stated benchmark. Thresholds shown are indicative and require approval against bank policy."
+    },
+    "financialHealthDetail": {
+      "score": 23,
+      "band": "Poor",
+      "summary": [
+        {
+          "text": "Assessed at onboarding from AA, bureau and GST data. Receipts arrive reliably every month, but utilisation and repayment timing at the existing banks are what hold the score down."
+        }
+      ],
+      "groups": [
+        {
+          "id": "cash-flow",
+          "label": "Cash Flow Strength",
+          "drivers": [
+            {
+              "code": "CFS01",
+              "id": "cfs01",
+              "name": "Income & Receipt Reliability",
+              "score": 58,
+              "band": "Stable",
+              "assessment": "Receipts of ₹3.60–4.10L have landed every month for twelve months with no gaps.",
+              "applicable": true
+            },
+            {
+              "code": "CFS02",
+              "id": "cfs02",
+              "name": "Expense & Operating Load",
+              "score": 44,
+              "band": "Weak",
+              "assessment": "Operating outflows are controlled but leave almost nothing behind.",
+              "applicable": true
+            },
+            {
+              "code": "CFS03",
+              "id": "cfs03",
+              "name": "Cash Remaining & Recovery",
+              "score": 12,
+              "band": "Weak",
+              "assessment": "The balance floor reached ₹1,140 and surplus turned negative in July.",
+              "applicable": true
+            }
+          ]
+        },
+        {
+          "id": "debt",
+          "label": "Debt Sustainability",
+          "drivers": [
+            {
+              "code": "DBS01",
+              "id": "dbs01",
+              "name": "Debt Burden & Affordability",
+              "score": 16,
+              "band": "Weak",
+              "assessment": "₹27.40L of external borrowing against ₹47.20L of turnover.",
+              "applicable": true
+            },
+            {
+              "code": "DBS02",
+              "id": "dbs02",
+              "name": "Repayment Conduct",
+              "score": 6,
+              "band": "Weak",
+              "assessment": "One instalment paid 31 days late and repayments bunched at month end.",
+              "applicable": true
+            },
+            {
+              "code": "DBS03",
+              "id": "dbs03",
+              "name": "Revolving & Working-Capital Use",
+              "score": 8,
+              "band": "Weak",
+              "assessment": "The cash credit has run above 95% for three consecutive months.",
+              "applicable": true
+            }
+          ]
+        },
+        {
+          "id": "resilience",
+          "label": "Financial Resilience",
+          "drivers": [
+            {
+              "code": "FRS01",
+              "id": "frs01",
+              "name": "Accessible Reserve Strength",
+              "score": 14,
+              "band": "Weak",
+              "assessment": "₹1.92L of tracked assets, of which ₹0.60L is lien-marked.",
+              "applicable": true
+            },
+            {
+              "code": "FRS02",
+              "id": "frs02",
+              "name": "Savings & Investment Behaviour",
+              "score": 22,
+              "band": "Weak",
+              "assessment": "No investment contributions, but nothing is being withdrawn either.",
+              "applicable": true
+            },
+            {
+              "code": "FRS03",
+              "id": "frs03",
+              "name": "Operating Account Liquidity",
+              "score": 18,
+              "band": "Weak",
+              "assessment": "The account turns over daily; the balance is thin rather than dormant.",
+              "applicable": true
+            }
+          ]
+        }
+      ],
+      "notApplicableDrivers": []
+    }
+  },
+  "990000100": {
+    "asOf": "2026-09-19",
+    "customer": {
+      "id": "990000100",
+      "name": "Ritu Joshi",
+      "classification": "Individual",
+      "relationship": "Prospect · NTB",
+      "tier": "Untiered",
+      "location": "Barat, Himachal Pradesh",
+      "relationshipManager": "Ananya Rao",
+      "financialHealth": {
+        "score": 79,
+        "band": "Good"
+      },
+      "contacts": {
+        "mobile": "+91 97540 68508",
+        "email": "ritu.joshi@example.com",
+        "reference": "Anil Joshi · Spouse · +91 97540 61192"
+      },
+      "about": [
+        "Salaried professional in Barat; applied for an IDBI credit card on 16 Sep 2026.",
+        "No IDBI account yet — salary and savings sit with two other banks.",
+        "Bureau record is clean across four years with no overdue reported."
+      ],
+      "snapshot": [
+        {
+          "id": "occupation",
+          "label": "Occupation",
+          "value": "Salaried",
+          "secondary": null
+        },
+        {
+          "id": "organisation",
+          "label": "Employer",
+          "value": "Himachal Power Utilities",
+          "secondary": "Deputy Manager"
+        },
+        {
+          "id": "income",
+          "label": "Primary Income Source",
+          "value": "Salary credit",
+          "secondary": "₹1.12L / month"
+        },
+        {
+          "id": "bureau",
+          "label": "Credit Bureau",
+          "value": "CIBIL · 741",
+          "secondary": "Reported 15 Sep 2026"
+        },
+        {
+          "id": "personal",
+          "label": "Personal Details",
+          "value": "Age: 36 · Gender: Female",
+          "secondary": null
+        },
+        {
+          "id": "residency",
+          "label": "Residency",
+          "value": "Resident Indian",
+          "secondary": "India"
+        },
+        {
+          "id": "since",
+          "label": "Relationship",
+          "value": "Prospect",
+          "secondary": "Applied 16 Sep 2026"
+        },
+        {
+          "id": "kyc",
+          "label": "KYC Status",
+          "value": "In progress",
+          "secondary": "Video KYC pending"
+        }
+      ],
+      "relationshipSummary": [
+        {
+          "label": "Relationship",
+          "value": "Prospect",
+          "secondary": "No IDBI account yet"
+        },
+        {
+          "label": "Accounts & Deposits",
+          "value": "None",
+          "secondary": "₹4.04L held elsewhere"
+        },
+        {
+          "label": "External Borrowing",
+          "value": "₹6.80L outstanding",
+          "secondary": "Personal loan, 26 months left"
+        },
+        {
+          "label": "Credit Cards",
+          "value": "1 external",
+          "secondary": "₹1.50L limit, 22% used"
+        }
+      ],
+      "accounts": [],
+      "loans": [
+        {
+          "facility": "Personal Loan · External",
+          "outstanding": "₹6.80L",
+          "limit": "₹9.00L sanctioned",
+          "repayment": "₹24,300 monthly",
+          "timeline": [
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current"
+          ],
+          "conduct": "0 DPD · ₹0 overdue"
+        }
+      ],
+      "cibilTrend": [
+        {
+          "date": "2025-10-15",
+          "score": 705,
+          "note": "Personal loan seasoning; single card."
+        },
+        {
+          "date": "2025-12-15",
+          "score": 712,
+          "note": "Utilisation held under 25%."
+        },
+        {
+          "date": "2026-02-15",
+          "score": 719,
+          "note": "Twelve months without a late payment."
+        },
+        {
+          "date": "2026-04-15",
+          "score": 727,
+          "note": "Loan balance reduced steadily."
+        },
+        {
+          "date": "2026-06-15",
+          "score": 734,
+          "note": "No new enquiries in the period."
+        },
+        {
+          "date": "2026-09-15",
+          "score": 741,
+          "note": "Clean record maintained across four years."
+        }
+      ],
+      "needsAttention": false,
+      "opportunities": [
+        {
+          "id": "card-onboarding",
+          "icon": "CreditCard",
+          "title": "Credit card",
+          "subtitle": "Application in progress",
+          "fit": "High Potential",
+          "tags": [],
+          "stats": [
+            {
+              "label": "Applied",
+              "value": "16 Sep 2026",
+              "icon": "CalendarDays"
+            },
+            {
+              "label": "Indicative limit",
+              "value": "₹2.50L",
+              "icon": "Coins"
+            },
+            {
+              "label": "Bureau",
+              "value": "741",
+              "icon": "TrendingUp"
+            }
+          ],
+          "whyNow": "Clean four-year bureau record and a salary of ₹1.12L a month.",
+          "nextAction": "Complete video KYC and issue the card, then open the salary account alongside.",
+          "trigger": "Clean four-year bureau record and a salary of ₹1.12L a month.",
+          "primaryAction": "Progress application",
+          "secondaryAction": null,
+          "prompt": "Ritu Joshi has applied for an IDBI credit card with a 741 bureau score and ₹1.12L monthly salary. Confirm the limit and what to collect."
+        },
+        {
+          "id": "salary-account",
+          "icon": "Landmark",
+          "title": "Salary account",
+          "subtitle": "Move the salary relationship across",
+          "fit": "Good fit",
+          "tags": [],
+          "stats": [
+            {
+              "label": "Held elsewhere",
+              "value": "₹4.04L",
+              "icon": "Landmark"
+            },
+            {
+              "label": "Monthly credit",
+              "value": "₹1.12L",
+              "icon": "BadgeIndianRupee"
+            },
+            {
+              "label": "Banks used",
+              "value": "2",
+              "icon": "Layers"
+            }
+          ],
+          "whyNow": "The card application is the opening; the salary still credits to another bank.",
+          "nextAction": "Offer the salary package while the KYC is already running.",
+          "trigger": "The card application is the opening; the salary still credits to another bank.",
+          "primaryAction": "Offer salary package",
+          "secondaryAction": null,
+          "prompt": "Ritu Joshi banks elsewhere with ₹4.04L in balances. Draft the salary-account switch conversation alongside her card application."
+        }
+      ],
+      "healthHistory": [
+        {
+          "month": "Apr",
+          "score": 74,
+          "explanation": "Balances steady across two banks.",
+          "year": 2026
+        },
+        {
+          "month": "May",
+          "score": 75,
+          "explanation": "Loan balance reduced on schedule.",
+          "year": 2026
+        },
+        {
+          "month": "Jun",
+          "score": 76,
+          "explanation": "Card utilisation held under 25%.",
+          "year": 2026
+        },
+        {
+          "month": "Jul",
+          "score": 77,
+          "explanation": "No new borrowing in the quarter.",
+          "year": 2026
+        },
+        {
+          "month": "Aug",
+          "score": 78,
+          "explanation": "Savings retained for the third month running.",
+          "year": 2026
+        },
+        {
+          "month": "Sep",
+          "score": 79,
+          "explanation": "Clean conduct maintained; card applied for.",
+          "year": 2026
+        }
+      ],
+      "healthDrivers": [
+        {
+          "name": "Cash Flow Strength",
+          "score": 78,
+          "band": "Strong"
+        },
+        {
+          "name": "Debt Sustainability",
+          "score": 82,
+          "band": "Strong"
+        },
+        {
+          "name": "Financial Resilience",
+          "score": 74,
+          "band": "Stable"
+        }
+      ],
+      "insights": [
+        {
+          "id": "ins-clean",
+          "severity": "good",
+          "isPositive": true,
+          "category": "Credit Card",
+          "description": "Clean Record. Four years on the bureau with no overdue and utilisation under 25%."
+        },
+        {
+          "id": "ins-elsewhere",
+          "severity": "medium",
+          "isPositive": false,
+          "category": "Salary Account",
+          "description": "Banks Elsewhere. ₹4.04L of balances and the salary credit sit with two other banks."
+        },
+        {
+          "id": "ins-kyc",
+          "severity": "low",
+          "isPositive": false,
+          "category": "Onboarding",
+          "description": "KYC Pending. Video KYC is outstanding and blocks the card issue."
+        }
+      ],
+      "borrowerAssessment": {
+        "financialPosition": "Financial position is comfortable. Salary of ₹1.12L a month covers a single ₹24,300 instalment with room to spare, and the bureau shows no overdue across four years.",
+        "recommendedAction": "Complete video KYC and issue the card, then use the same conversation to move the salary credit and the ₹4.04L of balances across.",
+        "opportunities": [
+          {
+            "title": "Credit Card",
+            "text": "Application in progress; a ₹2.50L limit is supported by salary and bureau record."
+          },
+          {
+            "title": "Salary Account",
+            "text": "The salary still credits elsewhere. The card issue is the natural moment to switch it."
+          },
+          {
+            "title": "Deposits",
+            "text": "₹4.04L of balances sit with two other banks and can follow the salary relationship."
+          }
+        ]
+      },
+      "events": [
+        {
+          "date": "16 Sep 2026",
+          "ago": "3 days ago",
+          "type": "Customer Event",
+          "title": "Credit card applied",
+          "detail": "Application submitted through the branch; video KYC pending.",
+          "tags": [
+            "Application",
+            "Credit Card"
+          ]
+        },
+        {
+          "date": "2 Sep 2026",
+          "ago": "2 weeks ago",
+          "type": "Account Signal",
+          "title": "Bureau score improved",
+          "detail": "CIBIL moved from 734 to 741 on continued clean conduct.",
+          "tags": [
+            "Bureau",
+            "Score"
+          ]
+        },
+        {
+          "date": "12 Aug 2026",
+          "ago": "1 month ago",
+          "type": "Career Event",
+          "title": "Promoted to Deputy Manager",
+          "detail": "LinkedIn update indicates a role change at Himachal Power Utilities.",
+          "tags": [
+            "Career",
+            "LinkedIn"
+          ]
+        }
+      ],
+      "agentStarters": [
+        {
+          "label": "Summarise the open matters",
+          "trail": {
+            "label": "Checked the relationship feed",
+            "runningLabel": "Checking the relationship feed",
+            "steps": [
+              {
+                "text": "Read the relationship feed — 1 thread"
+              },
+              {
+                "text": "Filtered to open matters — 1 found"
+              },
+              {
+                "text": "Checked the 22 Sep follow-up"
+              }
+            ]
+          },
+          "reply": "**Ritu Joshi has 1 open matter.**\n\n1. **Credit card application** — submitted 16 Sep, awaiting video KYC before issue.\n\nShe is **new to IDBI**: the salary and ₹4.04L of balances still sit with two other banks. The bureau is clean at **741** with no overdue across four years, so the card is a straightforward approve once KYC lands."
+        },
+        {
+          "label": "Which products can be pre-checked?",
+          "trail": {
+            "label": "Screened the profile",
+            "runningLabel": "Screening the profile",
+            "steps": [
+              {
+                "text": "Read the bureau — 741, no overdue in 4 years"
+              },
+              {
+                "text": "Read AA — ₹1.12L salary, ₹4.04L balances elsewhere"
+              },
+              {
+                "text": "Checked obligations — one ₹24,300 instalment"
+              }
+            ]
+          },
+          "reply": "**Three, and they follow one another.**\n\n| Product | Basis | Indicative |\n| --- | --- | --- |\n| Credit card | Salary + clean bureau | ₹2.50L limit |\n| Salary account | Payroll switch | Package benefits |\n| Deposits | ₹4.04L held elsewhere | Sweep FD |\n\nThe card is already in flight. Use the same conversation to move the salary credit — the switch is easiest while KYC is open, and the deposits usually follow the salary."
+        },
+        {
+          "label": "How should I prepare for the next call?",
+          "trail": {
+            "label": "Prepared the call",
+            "runningLabel": "Preparing the call",
+            "steps": [
+              {
+                "text": "Confirmed the pending video KYC"
+              },
+              {
+                "text": "Checked what else is winnable in the same call"
+              }
+            ]
+          },
+          "reply": "**One blocker, one ask.**\n\n- **Clear the video KYC** first — it is the only thing between her and the card.\n- Then ask the switch question: *\"Shall we route the salary here too?\"* She banks with two others and holds ₹4.04L there.\n- Mention the personal loan only if she raises it. It is serviced on time and refinancing is not obviously better for her.\n\nHealth is **79/100 (Good)**, so this is a growth conversation, not a caution one."
+        }
+      ],
+      "healthPlainTerms": "Ritu manages money well. A single instalment sits comfortably inside her salary and nothing is overdue.",
+      "healthNote": "Income comfortably covers the one obligation; reserves are building.",
+      "healthDriverBasis": {
+        "Cash Flow Strength": "Salary of ₹1.12L credited on the same date for 24 months.",
+        "Debt Sustainability": "A single ₹24,300 instalment, paid on time across four years.",
+        "Financial Resilience": "₹4.04L held across two banks, roughly 3.6 months of outflows."
+      }
+    },
+    "relationshipFeed": {
+      "highlights": [
+        {
+          "label": "Open Matters",
+          "value": "1",
+          "filter": "open"
+        },
+        {
+          "label": "Awaiting Customer",
+          "value": "1",
+          "filter": "awaiting"
+        },
+        {
+          "label": "Next Follow-up",
+          "value": "22 Sep · Video KYC",
+          "filter": "all"
+        },
+        {
+          "label": "Last Interaction",
+          "value": "16 Sep · Branch visit",
+          "filter": "all"
+        }
+      ],
+      "threads": [
+        {
+          "id": "MAT-CC-9120",
+          "title": "Credit card application",
+          "type": "Application",
+          "status": "Awaiting Customer",
+          "owner": "Ananya Rao",
+          "summary": "Application submitted on 16 Sep; video KYC pending before issue.",
+          "events": [
+            {
+              "date": "16 Sep 2026 · 11:05 AM",
+              "label": "Application submitted",
+              "detail": "Submitted at the branch with salary proof and PAN.",
+              "actor": "Ananya Rao"
+            }
+          ]
+        }
+      ]
+    },
+    "financialHealthDetail": {
+      "score": 79,
+      "band": "Good",
+      "summary": [
+        {
+          "text": "Assessed from bureau and AA data. A single personal loan is serviced on time, card utilisation stays under 25% and balances are retained month on month."
+        }
+      ],
+      "groups": [
+        {
+          "id": "cash-flow",
+          "label": "Cash Flow Strength",
+          "drivers": [
+            {
+              "code": "CFS01",
+              "id": "cfs01",
+              "name": "Income & Receipt Reliability",
+              "score": 82,
+              "band": "Strong",
+              "assessment": "Salary of ₹1.12L credited on the same date for 24 months.",
+              "applicable": true
+            },
+            {
+              "code": "CFS02",
+              "id": "cfs02",
+              "name": "Expense & Operating Load",
+              "score": 76,
+              "band": "Stable",
+              "assessment": "Regular outflows take about 58% of the monthly credit.",
+              "applicable": true
+            },
+            {
+              "code": "CFS03",
+              "id": "cfs03",
+              "name": "Cash Remaining & Recovery",
+              "score": 77,
+              "band": "Stable",
+              "assessment": "Around ₹27,000 is retained after commitments each month.",
+              "applicable": true
+            }
+          ]
+        },
+        {
+          "id": "debt",
+          "label": "Debt Sustainability",
+          "drivers": [
+            {
+              "code": "DBS01",
+              "id": "dbs01",
+              "name": "Debt Burden & Affordability",
+              "score": 84,
+              "band": "Strong",
+              "assessment": "A single ₹24,300 instalment against ₹1.12L of monthly income.",
+              "applicable": true
+            },
+            {
+              "code": "DBS02",
+              "id": "dbs02",
+              "name": "Repayment Conduct",
+              "score": 88,
+              "band": "Strong",
+              "assessment": "No overdue reported across four years on the bureau.",
+              "applicable": true
+            },
+            {
+              "code": "DBS03",
+              "id": "dbs03",
+              "name": "Revolving & Working-Capital Use",
+              "score": 75,
+              "band": "Stable",
+              "assessment": "Card utilisation has stayed under 25% throughout.",
+              "applicable": true
+            }
+          ]
+        },
+        {
+          "id": "resilience",
+          "label": "Financial Resilience",
+          "drivers": [
+            {
+              "code": "FRS01",
+              "id": "frs01",
+              "name": "Accessible Reserve Strength",
+              "score": 74,
+              "band": "Stable",
+              "assessment": "₹4.04L held across two banks, roughly 3.6 months of outflows.",
+              "applicable": true
+            },
+            {
+              "code": "FRS02",
+              "id": "frs02",
+              "name": "Savings & Investment Behaviour",
+              "score": 70,
+              "band": "Stable",
+              "assessment": "Balances grow steadily but no systematic investment is recorded.",
+              "applicable": true
+            },
+            {
+              "code": "FRS03",
+              "id": "frs03",
+              "name": "Operating Account Liquidity",
+              "score": 76,
+              "band": "Stable",
+              "assessment": "Balances never fell below ₹40,000 in twelve months.",
+              "applicable": true
+            }
+          ]
+        }
+      ],
+      "notApplicableDrivers": []
+    },
+    "financialPosition": {
+      "source": "Account Aggregator consent · 16 Sep 2026 · 2 external banks",
+      "scopeOptions": [
+        "Combined view · 3 external accounts",
+        "State Bank of India · 2 accounts",
+        "HDFC Bank · 1 account"
+      ],
+      "accountScopes": [
+        {
+          "value": "combined",
+          "label": "Combined view · 3 external accounts",
+          "share": 1.0,
+          "group": "all"
+        },
+        {
+          "value": "sbi",
+          "label": "State Bank of India · 2 accounts",
+          "share": 0.74,
+          "group": "sbi"
+        },
+        {
+          "value": "hdfc",
+          "label": "HDFC Bank · 1 account",
+          "share": 0.26,
+          "group": "hdfc"
+        }
+      ],
+      "periodOptions": [
+        "Last 3 months",
+        "Last 6 months",
+        "Last 12 months"
+      ],
+      "financialMetrics": [
+        {
+          "label": "Annual salary (T12M)",
+          "value": "₹13.44 L",
+          "secondary": "Salary credits · AA"
+        },
+        {
+          "label": "Net income (FY24)",
+          "value": "₹11.90 L",
+          "secondary": "ITR-reported · ITR-1"
+        },
+        {
+          "label": "Salary growth (YoY)",
+          "value": "+8.6%",
+          "secondary": "AA-derived"
+        },
+        {
+          "label": "Avg daily balance",
+          "value": "₹1.86 L",
+          "secondary": "External · AA"
+        }
+      ],
+      "cashflowMetrics": [
+        {
+          "label": "Total inflow",
+          "value": "₹14.10 L",
+          "secondary": "All credits · 12 months"
+        },
+        {
+          "label": "Total outflow",
+          "value": "₹10.86 L",
+          "secondary": "All debits · 12 months"
+        },
+        {
+          "label": "Avg daily balance",
+          "value": "₹1.86 L",
+          "secondary": "External · AA"
+        },
+        {
+          "label": "Balance floor",
+          "value": "₹41,200",
+          "secondary": "Lowest day in 12 months"
+        },
+        {
+          "label": "Recognised Income",
+          "value": "₹1.12 L",
+          "secondary": "Average / month"
+        },
+        {
+          "label": "Core Spending",
+          "value": "₹0.63 L",
+          "secondary": "Average / month"
+        },
+        {
+          "label": "Monthly Investments",
+          "value": "₹8,000",
+          "secondary": "Recurring deposit"
+        },
+        {
+          "label": "Monthly Surplus",
+          "value": "₹0.27 L",
+          "secondary": "After debt repayments"
+        }
+      ],
+      "cashflowMonths": [
+        {
+          "month": "Apr",
+          "income": 1.12,
+          "spending": 0.61,
+          "surplus": 0.51,
+          "closing": 1.64,
+          "bounces": 0
+        },
+        {
+          "month": "May",
+          "income": 1.12,
+          "spending": 0.66,
+          "surplus": 0.46,
+          "closing": 1.72,
+          "bounces": 0
+        },
+        {
+          "month": "Jun",
+          "income": 1.12,
+          "spending": 0.59,
+          "surplus": 0.53,
+          "closing": 1.81,
+          "bounces": 0
+        },
+        {
+          "month": "Jul",
+          "income": 1.18,
+          "spending": 0.71,
+          "surplus": 0.47,
+          "closing": 1.88,
+          "bounces": 0
+        },
+        {
+          "month": "Aug",
+          "income": 1.12,
+          "spending": 0.62,
+          "surplus": 0.5,
+          "closing": 1.94,
+          "bounces": 0
+        },
+        {
+          "month": "Sep",
+          "income": 1.12,
+          "spending": 0.64,
+          "surplus": 0.48,
+          "closing": 2.01,
+          "bounces": 0
+        }
+      ],
+      "cashflowBreakdown": [],
+      "gstTrend": [],
+      "gstReturns": [],
+      "employmentTrend": [],
+      "establishments": [],
+      "associations": [
+        {
+          "organisation": "Himachal Power Utilities",
+          "role": "Deputy Manager",
+          "from": "Mar 2019",
+          "to": "Present",
+          "status": "Active",
+          "source": "Salary credits · AA",
+          "verified": "16 Sep 2026"
+        }
+      ],
+      "loans": [
+        {
+          "facility": "Personal Loan · External",
+          "lender": "State Bank of India",
+          "outstanding": "₹6.80L",
+          "limit": "₹9.00L sanctioned",
+          "monthlyDue": "₹24,300",
+          "tenure": "26 months left",
+          "conduct": "0 DPD · ₹0 overdue"
+        }
+      ],
+      "borrowings": [
+        {
+          "id": "sbi-pl",
+          "status": "Active",
+          "portfolio": "No",
+          "startDate": "05-08-2024",
+          "lender": "State Bank of India",
+          "product": "Personal Loan",
+          "secured": "₹9,00,000",
+          "outstanding": "₹6,80,000",
+          "utilisation": "₹0.24 L",
+          "utilisationAlert": false,
+          "interest": "10.90%",
+          "timeline": [
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current",
+            "current"
+          ],
+          "collateral": {
+            "assets": 0,
+            "satisfied": 0,
+            "notSatisfied": 0
+          }
+        }
+      ],
+      "savingsMetrics": [
+        {
+          "label": "Tracked Financial Assets",
+          "value": "₹4.04L"
+        },
+        {
+          "label": "Held with IDBI",
+          "value": "Nil · 0%"
+        },
+        {
+          "label": "Market-linked Investments",
+          "value": "Nil"
+        },
+        {
+          "label": "Monthly Investments",
+          "value": "₹8,000"
+        }
+      ],
+      "allocation": [
+        {
+          "name": "Bank balances",
+          "value": 1.84,
+          "percent": 45.5,
+          "idbi": "—",
+          "other": "₹1.84L",
+          "color": "#2563eb",
+          "position": "Salary and savings balances held elsewhere",
+          "icon": "Landmark"
+        },
+        {
+          "name": "Term deposits",
+          "value": 1.6,
+          "percent": 39.6,
+          "idbi": "—",
+          "other": "₹1.60L",
+          "color": "#60a5fa",
+          "position": "Two deposits maturing in 2027",
+          "icon": "FileText"
+        },
+        {
+          "name": "Recurring deposit",
+          "value": 0.6,
+          "percent": 14.9,
+          "idbi": "—",
+          "other": "₹0.60L",
+          "color": "#10b981",
+          "position": "₹8,000 a month, 14 instalments paid",
+          "icon": "TrendingUp"
+        }
+      ],
+      "holdings": [],
+      "holdingDetails": [],
+      "assets": [],
+      "charges": {
+        "open": [],
+        "satisfied": []
+      },
+      "capacity": [],
+      "loanSummary": [],
+      "cashflowInsight": [],
+      "borrowingMetrics": [
+        {
+          "label": "Outstanding",
+          "value": "₹6.80L",
+          "secondary": "External · one personal loan",
+          "tone": "blue"
+        },
+        {
+          "label": "Sanctioned Amount / Limit",
+          "value": "₹9.00L",
+          "secondary": "Original sanction",
+          "tone": "blue"
+        },
+        {
+          "label": "Facility Utilisation",
+          "value": "22%",
+          "secondary": "On the external card",
+          "tone": "emerald"
+        },
+        {
+          "label": "Monthly Debt Repayments",
+          "value": "₹0.24L",
+          "secondary": "0 DPD · ₹0 overdue",
+          "tone": "emerald"
+        }
+      ]
+    },
+    "metrics": null
+  },
+  "DEMO-P002": {
+    "asOf": "2026-09-19",
+    "customer": {
+      "id": "DEMO-P002",
+      "name": "Simran Sethi",
+      "classification": "Individual",
+      "relationship": "Existing",
+      "tier": "Bronze",
+      "location": "Zirakpur, Punjab",
+      "relationshipManager": "Ananya Rao",
+      "financialHealth": {
+        "score": 68,
+        "band": "Fair"
+      },
+      "contacts": {
+        "mobile": "+91 70154 89913",
+        "email": "simran.sethi@example.com",
+        "reference": "Harmeet Sethi · Father · +91 70154 82260"
+      },
+      "about": [
+        "Salaried at Arcline Systems; salary account opened on 18 Sep 2026 through the employer payroll mandate.",
+        "New to credit — no loans or cards on the bureau yet.",
+        "First banking relationship, so there is no internal history to assess against."
+      ],
+      "snapshot": [
+        {
+          "id": "occupation",
+          "label": "Occupation",
+          "value": "Salaried",
+          "secondary": "New to credit"
+        },
+        {
+          "id": "organisation",
+          "label": "Employer",
+          "value": "Arcline Systems",
+          "secondary": "Analyst"
+        },
+        {
+          "id": "income",
+          "label": "Primary Income Source",
+          "value": "Salary credit",
+          "secondary": "₹64,000 / month"
+        },
+        {
+          "id": "bureau",
+          "label": "Credit Bureau",
+          "value": "No history",
+          "secondary": "New to credit"
+        },
+        {
+          "id": "personal",
+          "label": "Personal Details",
+          "value": "Age: 26 · Gender: Female",
+          "secondary": null
+        },
+        {
+          "id": "residency",
+          "label": "Residency",
+          "value": "Resident Indian",
+          "secondary": "India"
+        },
+        {
+          "id": "since",
+          "label": "Customer Since",
+          "value": "18 Sep 2026",
+          "secondary": "1 day with IDBI"
+        },
+        {
+          "id": "kyc",
+          "label": "KYC Status",
+          "value": "Verified",
+          "secondary": "Video KYC 18 Sep 2026"
+        }
+      ],
+      "relationshipSummary": [
+        {
+          "label": "Customer Since",
+          "value": "18 Sep 2026",
+          "secondary": "Opened via payroll mandate"
+        },
+        {
+          "label": "Accounts & Deposits",
+          "value": "1 active",
+          "secondary": "₹0.64L held with IDBI"
+        },
+        {
+          "label": "Loans & Facilities",
+          "value": "None",
+          "secondary": "No borrowing recorded"
+        },
+        {
+          "label": "Credit Cards",
+          "value": "None",
+          "secondary": "New to credit"
+        }
+      ],
+      "accounts": [
+        {
+          "product": "Salary Account · ••••7731",
+          "value": "₹64,000",
+          "opened": "18 Sep 2026",
+          "status": "Active"
+        }
+      ],
+      "loans": [],
+      "cibilTrend": [],
+      "needsAttention": false,
+      "opportunities": [
+        {
+          "id": "first-card",
+          "icon": "CreditCard",
+          "title": "First credit card",
+          "subtitle": "Build a credit history",
+          "fit": "Review Due",
+          "tags": [],
+          "stats": [
+            {
+              "label": "Salary",
+              "value": "₹64,000",
+              "icon": "BadgeIndianRupee"
+            },
+            {
+              "label": "Bureau",
+              "value": "No history",
+              "icon": "Clock"
+            },
+            {
+              "label": "Indicative limit",
+              "value": "₹60,000",
+              "icon": "Coins"
+            }
+          ],
+          "whyNow": "Salary is credited with us from this month, but there is no bureau record to underwrite against.",
+          "nextAction": "Offer a secured card against a small deposit until three salary credits are seen.",
+          "trigger": "Salary is credited with us from this month, but there is no bureau record to underwrite against.",
+          "primaryAction": "Check card options",
+          "secondaryAction": null,
+          "prompt": "Simran Sethi is new to credit with a ₹64,000 salary credited to IDBI from this month. Assess a first card, secured or unsecured."
+        },
+        {
+          "id": "first-sip",
+          "icon": "BarChart3",
+          "title": "Start a monthly SIP",
+          "subtitle": "Put the surplus to work",
+          "fit": "Good fit",
+          "tags": [],
+          "stats": [
+            {
+              "label": "Monthly surplus",
+              "value": "₹18,000",
+              "icon": "Coins"
+            },
+            {
+              "label": "Suggested SIP",
+              "value": "₹5,000",
+              "icon": "TrendingUp"
+            },
+            {
+              "label": "Lock-in",
+              "value": "None",
+              "icon": "Clock"
+            }
+          ],
+          "whyNow": "First salary lands this month with no obligations against it.",
+          "nextAction": "Set up a ₹5,000 SIP on the salary date so the habit starts before spending does.",
+          "trigger": "First salary lands this month with no obligations against it.",
+          "primaryAction": "Set up SIP",
+          "secondaryAction": null,
+          "prompt": "Simran Sethi earns ₹64,000 a month with no obligations. Suggest a starter SIP and explain it simply."
+        }
+      ],
+      "healthHistory": [
+        {
+          "month": "Apr",
+          "score": 64,
+          "explanation": "No borrowing recorded; salary credited elsewhere.",
+          "year": 2026
+        },
+        {
+          "month": "May",
+          "score": 65,
+          "explanation": "Salary stable at ₹64,000.",
+          "year": 2026
+        },
+        {
+          "month": "Jun",
+          "score": 66,
+          "explanation": "Savings retained for the second month.",
+          "year": 2026
+        },
+        {
+          "month": "Jul",
+          "score": 66,
+          "explanation": "Employer payroll moving to IDBI.",
+          "year": 2026
+        },
+        {
+          "month": "Aug",
+          "score": 67,
+          "explanation": "Balance held through the month.",
+          "year": 2026
+        },
+        {
+          "month": "Sep",
+          "score": 68,
+          "explanation": "Salary account opened with IDBI.",
+          "year": 2026
+        }
+      ],
+      "healthDrivers": [
+        {
+          "name": "Cash Flow Strength",
+          "score": 70,
+          "band": "Stable"
+        },
+        {
+          "name": "Debt Sustainability",
+          "score": 66,
+          "band": "Stable"
+        },
+        {
+          "name": "Financial Resilience",
+          "score": 62,
+          "band": "Stable"
+        }
+      ],
+      "insights": [
+        {
+          "id": "ins-ntc",
+          "severity": "medium",
+          "isPositive": false,
+          "category": "Credit Card",
+          "description": "New To Credit. No bureau history, so a first card needs a secured or low-limit route."
+        },
+        {
+          "id": "ins-payroll",
+          "severity": "good",
+          "isPositive": true,
+          "category": "Salary Account",
+          "description": "Payroll Onboarded. The employer mandate moved her salary credit to IDBI this month."
+        },
+        {
+          "id": "ins-surplus",
+          "severity": "low",
+          "isPositive": false,
+          "category": "Investments",
+          "description": "Unallocated Surplus. About ₹18,000 a month is left after regular spending."
+        }
+      ],
+      "borrowerAssessment": {
+        "financialPosition": "Financial position is early but clean. A ₹64,000 salary now credits to IDBI, there is no borrowing on record, and about ₹18,000 a month is left after regular spending.",
+        "recommendedAction": "Let three salary credits land before offering unsecured credit. In the meantime start a small SIP and a secured card so a bureau record begins to build.",
+        "opportunities": [
+          {
+            "title": "First Credit Card",
+            "text": "No bureau history yet — a secured or low-limit card starts the record safely."
+          },
+          {
+            "title": "Monthly SIP",
+            "text": "₹18,000 a month is unallocated; a ₹5,000 SIP on the salary date builds the habit."
+          },
+          {
+            "title": "Salary Package",
+            "text": "Payroll is onboarded; the package benefits are the reason to keep the relationship."
+          }
+        ]
+      },
+      "events": [
+        {
+          "date": "18 Sep 2026",
+          "ago": "Today",
+          "type": "Customer Event",
+          "title": "Salary account opened",
+          "detail": "Account opened through the Arcline Systems payroll mandate.",
+          "tags": [
+            "Onboarding",
+            "Salary Account"
+          ]
+        },
+        {
+          "date": "18 Sep 2026",
+          "ago": "Today",
+          "type": "Customer Event",
+          "title": "KYC verified",
+          "detail": "Video KYC completed at onboarding.",
+          "tags": [
+            "KYC",
+            "Profile Update"
+          ]
+        },
+        {
+          "date": "2 Sep 2026",
+          "ago": "2 weeks ago",
+          "type": "Career Event",
+          "title": "Employer payroll moved to IDBI",
+          "detail": "Arcline Systems onboarded its payroll with IDBI this quarter.",
+          "tags": [
+            "Employer Update",
+            "Payroll"
+          ]
+        }
+      ],
+      "agentStarters": [
+        {
+          "label": "Summarise the open matters",
+          "trail": {
+            "label": "Checked the relationship feed",
+            "runningLabel": "Checking the relationship feed",
+            "steps": [
+              {
+                "text": "Read the relationship feed — 1 thread"
+              },
+              {
+                "text": "Confirmed the account opened 18 Sep"
+              },
+              {
+                "text": "Checked the welcome-call follow-up"
+              }
+            ]
+          },
+          "reply": "**Simran Sethi joined yesterday.**\n\n1. **Salary account onboarding** — opened 18 Sep through the Arcline Systems payroll mandate, video KYC completed the same day. Resolved.\n\nNothing else is open. She is **new to credit** — no loan, no card, no bureau history — so there is no repayment record to read yet. A welcome call is scheduled for 25 Sep."
+        },
+        {
+          "label": "Which products can be pre-checked?",
+          "trail": {
+            "label": "Screened the new file",
+            "runningLabel": "Screening the new file",
+            "steps": [
+              {
+                "text": "Read the salary credit — ₹64,000 a month"
+              },
+              {
+                "text": "Checked the bureau — no history"
+              },
+              {
+                "text": "Sized the monthly surplus"
+              }
+            ]
+          },
+          "reply": "**Go gently — the file is one day old.**\n\n| Product | Verdict | Why |\n| --- | --- | --- |\n| Unsecured card | **Wait** | No bureau history to underwrite |\n| Secured card | **Proceed** | Builds a record against a small deposit |\n| SIP | **Proceed** | ₹18,000 a month is unallocated |\n| Personal loan | **No** | No need, and no history to price |\n\n**Let three salary credits land** before anything unsecured. A ₹5,000 SIP on the salary date and a secured card start the record safely."
+        },
+        {
+          "label": "How should I prepare for the next call?",
+          "trail": {
+            "label": "Prepared the welcome call",
+            "runningLabel": "Preparing the welcome call",
+            "steps": [
+              {
+                "text": "Read the onboarding record"
+              },
+              {
+                "text": "Checked what a new-to-credit file needs first"
+              }
+            ]
+          },
+          "reply": "**Make it a welcome, not a sale.**\n\n- Confirm the salary credit landed and the net-banking setup works.\n- Explain the package benefits she already has — that is why the relationship stays.\n- Offer **one** thing: a ₹5,000 SIP on the salary date. Habit before products.\n- Flag that a secured card would start her credit history, and that three clean months open the unsecured options.\n\nShe is 26 and new to credit. What you do in the first quarter decides whether the next ten years of her banking sit here."
+        }
+      ],
+      "healthPlainTerms": "Simran is off to a steady start. There is no borrowing, and about ₹18,000 a month is left after regular spending.",
+      "healthNote": "No obligations yet; the file is too new for a repayment record.",
+      "healthDriverBasis": {
+        "Cash Flow Strength": "Salary of ₹64,000 credited on the same date for eleven months.",
+        "Debt Sustainability": "No borrowing recorded, so there is no repayment history to read.",
+        "Financial Resilience": "₹0.64L held, about one month of outflows."
+      }
+    },
+    "relationshipFeed": {
+      "highlights": [
+        {
+          "label": "Open Matters",
+          "value": "1",
+          "filter": "open"
+        },
+        {
+          "label": "Awaiting Customer",
+          "value": "0",
+          "filter": "awaiting"
+        },
+        {
+          "label": "Next Follow-up",
+          "value": "25 Sep · Welcome call",
+          "filter": "all"
+        },
+        {
+          "label": "Last Interaction",
+          "value": "18 Sep · Onboarding",
+          "filter": "all"
+        }
+      ],
+      "threads": [
+        {
+          "id": "MAT-SA-4420",
+          "title": "Salary account onboarding",
+          "type": "Application",
+          "status": "Resolved",
+          "owner": "Ananya Rao",
+          "summary": "Salary account opened through the Arcline Systems payroll mandate.",
+          "events": [
+            {
+              "date": "18 Sep 2026 · 3:40 PM",
+              "label": "Account opened",
+              "detail": "Video KYC completed and account activated the same day.",
+              "actor": "Ananya Rao"
+            }
+          ]
+        }
+      ]
+    },
+    "financialHealthDetail": {
+      "score": 68,
+      "band": "Fair",
+      "summary": [
+        {
+          "text": "Assessed at onboarding. Income is stable and there is no borrowing, but the file is new to credit so there is no repayment record to read."
+        }
+      ],
+      "groups": [
+        {
+          "id": "cash-flow",
+          "label": "Cash Flow Strength",
+          "drivers": [
+            {
+              "code": "CFS01",
+              "id": "cfs01",
+              "name": "Income & Receipt Reliability",
+              "score": 74,
+              "band": "Stable",
+              "assessment": "Salary of ₹64,000 credited on the same date for eleven months.",
+              "applicable": true
+            },
+            {
+              "code": "CFS02",
+              "id": "cfs02",
+              "name": "Expense & Operating Load",
+              "score": 70,
+              "band": "Stable",
+              "assessment": "Regular spending takes about 72% of the monthly credit.",
+              "applicable": true
+            },
+            {
+              "code": "CFS03",
+              "id": "cfs03",
+              "name": "Cash Remaining & Recovery",
+              "score": 66,
+              "band": "Stable",
+              "assessment": "About ₹18,000 is left after regular spending.",
+              "applicable": true
+            }
+          ]
+        },
+        {
+          "id": "debt",
+          "label": "Debt Sustainability",
+          "drivers": [
+            {
+              "code": "DBS01",
+              "id": "dbs01",
+              "name": "Debt Burden & Affordability",
+              "score": 72,
+              "band": "Stable",
+              "assessment": "No borrowing recorded, so no servicing burden exists.",
+              "applicable": true
+            },
+            {
+              "code": "DBS02",
+              "id": "dbs02",
+              "name": "Repayment Conduct",
+              "score": 60,
+              "band": "Stable",
+              "assessment": "New to credit — no repayment history to assess.",
+              "applicable": true
+            },
+            {
+              "code": "DBS03",
+              "id": "dbs03",
+              "name": "Revolving & Working-Capital Use",
+              "score": 66,
+              "band": "Stable",
+              "assessment": "No card or revolving facility held.",
+              "applicable": true
+            }
+          ]
+        },
+        {
+          "id": "resilience",
+          "label": "Financial Resilience",
+          "drivers": [
+            {
+              "code": "FRS01",
+              "id": "frs01",
+              "name": "Accessible Reserve Strength",
+              "score": 62,
+              "band": "Stable",
+              "assessment": "₹0.64L held, about one month of outflows.",
+              "applicable": true
+            },
+            {
+              "code": "FRS02",
+              "id": "frs02",
+              "name": "Savings & Investment Behaviour",
+              "score": 58,
+              "band": "Stable",
+              "assessment": "Surplus is retained in the account with no allocation.",
+              "applicable": true
+            },
+            {
+              "code": "FRS03",
+              "id": "frs03",
+              "name": "Operating Account Liquidity",
+              "score": 66,
+              "band": "Stable",
+              "assessment": "First salary credited to the IDBI account this month.",
+              "applicable": true
+            }
+          ]
+        }
+      ],
+      "notApplicableDrivers": []
+    },
+    "financialPosition": {
+      "source": "IDBI salary account · opened 18 Sep 2026 · AA consent 18 Sep 2026",
+      "scopeOptions": [
+        "Combined view · 1 account",
+        "IDBI Bank · Salary ••••7731"
+      ],
+      "accountScopes": [
+        {
+          "value": "combined",
+          "label": "Combined view · 1 account",
+          "share": 1.0,
+          "group": "all"
+        },
+        {
+          "value": "idbi",
+          "label": "IDBI Bank · Salary ••••7731",
+          "share": 1.0,
+          "group": "idbi"
+        }
+      ],
+      "periodOptions": [
+        "Last 3 months",
+        "Last 6 months",
+        "Last 12 months"
+      ],
+      "financialMetrics": [
+        {
+          "label": "Annual salary (T12M)",
+          "value": "₹7.68 L",
+          "secondary": "Salary credits · AA"
+        },
+        {
+          "label": "Net income (FY24)",
+          "value": "₹6.90 L",
+          "secondary": "Form 16"
+        },
+        {
+          "label": "Salary growth (YoY)",
+          "value": "First year",
+          "secondary": "No prior period"
+        },
+        {
+          "label": "Avg daily balance",
+          "value": "₹31,800",
+          "secondary": "External · AA"
+        }
+      ],
+      "cashflowMetrics": [
+        {
+          "label": "Total inflow",
+          "value": "₹7.68 L",
+          "secondary": "All credits · 12 months"
+        },
+        {
+          "label": "Total outflow",
+          "value": "₹5.52 L",
+          "secondary": "All debits · 12 months"
+        },
+        {
+          "label": "Avg daily balance",
+          "value": "₹31,800",
+          "secondary": "External · AA"
+        },
+        {
+          "label": "Balance floor",
+          "value": "₹6,400",
+          "secondary": "Lowest day in 12 months"
+        },
+        {
+          "label": "Recognised Income",
+          "value": "₹0.64 L",
+          "secondary": "Average / month"
+        },
+        {
+          "label": "Core Spending",
+          "value": "₹0.46 L",
+          "secondary": "Average / month"
+        },
+        {
+          "label": "Monthly Investments",
+          "value": "Nil",
+          "secondary": "No contributions recorded"
+        },
+        {
+          "label": "Monthly Surplus",
+          "value": "₹0.18 L",
+          "secondary": "No debt obligations"
+        }
+      ],
+      "cashflowMonths": [
+        {
+          "month": "Apr",
+          "income": 0.64,
+          "spending": 0.47,
+          "surplus": 0.17,
+          "closing": 0.24,
+          "bounces": 0
+        },
+        {
+          "month": "May",
+          "income": 0.64,
+          "spending": 0.45,
+          "surplus": 0.19,
+          "closing": 0.29,
+          "bounces": 0
+        },
+        {
+          "month": "Jun",
+          "income": 0.64,
+          "spending": 0.49,
+          "surplus": 0.15,
+          "closing": 0.31,
+          "bounces": 0
+        },
+        {
+          "month": "Jul",
+          "income": 0.64,
+          "spending": 0.44,
+          "surplus": 0.2,
+          "closing": 0.36,
+          "bounces": 0
+        },
+        {
+          "month": "Aug",
+          "income": 0.64,
+          "spending": 0.46,
+          "surplus": 0.18,
+          "closing": 0.41,
+          "bounces": 0
+        },
+        {
+          "month": "Sep",
+          "income": 0.64,
+          "spending": 0.46,
+          "surplus": 0.18,
+          "closing": 0.64,
+          "bounces": 0
+        }
+      ],
+      "cashflowBreakdown": [],
+      "gstTrend": [],
+      "gstReturns": [],
+      "employmentTrend": [],
+      "establishments": [],
+      "associations": [
+        {
+          "organisation": "Arcline Systems",
+          "role": "Analyst",
+          "from": "Oct 2025",
+          "to": "Present",
+          "status": "Active",
+          "source": "Payroll mandate",
+          "verified": "18 Sep 2026"
+        }
+      ],
+      "loans": [],
+      "borrowings": [],
+      "savingsMetrics": [
+        {
+          "label": "Tracked Financial Assets",
+          "value": "₹0.64L"
+        },
+        {
+          "label": "Held with IDBI",
+          "value": "₹0.64L · 100%"
+        },
+        {
+          "label": "Market-linked Investments",
+          "value": "Nil"
+        },
+        {
+          "label": "Monthly Investments",
+          "value": "Nil"
+        }
+      ],
+      "allocation": [
+        {
+          "name": "Bank balances",
+          "value": 0.64,
+          "percent": 100.0,
+          "idbi": "₹0.64L",
+          "other": "—",
+          "color": "#2563eb",
+          "position": "Salary balance held with IDBI",
+          "icon": "Landmark"
+        }
+      ],
+      "holdings": [],
+      "holdingDetails": [],
+      "assets": [],
+      "charges": {
+        "open": [],
+        "satisfied": []
+      },
+      "capacity": [],
+      "loanSummary": [],
+      "cashflowInsight": [],
+      "borrowingMetrics": [
+        {
+          "label": "Outstanding",
+          "value": "Nil",
+          "secondary": "No borrowing recorded",
+          "tone": "emerald"
+        },
+        {
+          "label": "Sanctioned Amount / Limit",
+          "value": "Nil",
+          "secondary": "No facility held",
+          "tone": "blue"
+        },
+        {
+          "label": "Facility Utilisation",
+          "value": "—",
+          "secondary": "No revolving facility",
+          "tone": "blue"
+        },
+        {
+          "label": "Monthly Debt Repayments",
+          "value": "Nil",
+          "secondary": "New to credit",
+          "tone": "emerald"
+        }
+      ]
+    },
+    "metrics": null
+  }
+}

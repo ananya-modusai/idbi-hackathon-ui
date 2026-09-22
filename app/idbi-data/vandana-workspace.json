@@ -1,6 +1,6 @@
 {
   "asOf": "2026-09-19",
-  "notice": "Demo data. Financial-health assessments, recent cash flow, bureau observations and workflow history include synthetic enrichment.",
+  "notice": "Reported data. Financial-health assessments, recent cash flow, bureau observations and workflow history include profile-derived enrichment.",
   "customer": {
     "id": "990000029",
     "name": "Vandana Singh",
@@ -705,7 +705,70 @@
           "Profile Update"
         ]
       }
-    ]
+    ],
+    "agentStarters": [
+      {
+        "label": "Summarise the open matters",
+        "trail": {
+          "label": "Checked the relationship feed",
+          "runningLabel": "Checking the relationship feed",
+          "steps": [
+            {
+              "text": "Read the unified relationship feed — 6 threads"
+            },
+            {
+              "text": "Filtered to open matters — 2 found"
+            },
+            {
+              "text": "Cross-checked the 22 Sep follow-up"
+            }
+          ]
+        },
+        "reply": "**Vandana Singh has 2 open matters right now:**\n\n1. **Working-capital enhancement** — at credit review, awaiting the latest GST returns.\n2. **Premium credit card** — pre-qualified, pending your confirmation to initiate.\n\nBoth sit inside existing risk appetite given the **81/100 (Good)** health band. I can draft the next step for either."
+      },
+      {
+        "label": "Which products can be pre-checked?",
+        "trail": {
+          "label": "Screened the product fit",
+          "runningLabel": "Screening the product fit",
+          "steps": [
+            {
+              "text": "Read the health band — 81/100"
+            },
+            {
+              "text": "Checked conduct — 0 DPD on ₹36.75L"
+            },
+            {
+              "text": "Matched against the IDBI catalogue"
+            }
+          ]
+        },
+        "reply": "**Against an 81/100 health score and clean conduct, these can be pre-checked without a fresh application:**\n\n| Product | Basis | Indicative |\n| --- | --- | --- |\n| Premium credit card | Banking conduct | Pre-approved ₹4.25L |\n| Working-capital enhancement | Order book + GST | ₹25L → ₹35L |\n| Term loan | Capex plan | ₹35–45L |\n| Shop insurance top-up | Stock at ₹31L | Sum insured ₹32L |\n\nThese are eligibility indications from her own banking and bureau record, not approvals. Confirm documents before making an offer."
+      },
+      {
+        "label": "How should I prepare for the next call?",
+        "trail": {
+          "label": "Prepared the call",
+          "runningLabel": "Preparing the call",
+          "steps": [
+            {
+              "text": "Ranked the live matters by urgency"
+            },
+            {
+              "text": "Checked the flood advisory against her district"
+            }
+          ]
+        },
+        "reply": "**A tight agenda for the 22 Sep follow-up:**\n\n- **Lead with the working-capital review** — it is the live request and the flood advisory makes it time-sensitive.\n- **Close the insurance gap in the same call.** ₹13L of stock is uninsured and it costs ₹5,100 a year to fix.\n- **Confirm the card offer** while goodwill is high; it is a quick win and she is shopping elsewhere.\n\nHealth is **Good**, so this is a growth conversation, not a remediation one."
+      }
+    ],
+    "healthPlainTerms": "Vandana manages money well. Income comfortably covers the EMIs, nothing is overdue, and there is money left over most months.",
+    "healthNote": "Current income supports repayments; reserve cover is the main constraint.",
+    "healthDriverBasis": {
+      "Cash Flow Strength": "Consistent receipts and positive cash remaining after regular commitments.",
+      "Debt Sustainability": "Observed repayments remain affordable with no current overdue stress.",
+      "Financial Resilience": "Accessible reserves remain below the three-month benchmark and are the main constraint on the score."
+    }
   },
   "financialPosition": {
     "scopeOptions": [
@@ -1509,6 +1572,32 @@
           "satisfied": 1,
           "notSatisfied": 0
         }
+      }
+    ],
+    "borrowingMetrics": [
+      {
+        "label": "Outstanding",
+        "value": "₹36.75L",
+        "secondary": "Across 2 facilities",
+        "tone": "blue"
+      },
+      {
+        "label": "Sanctioned Amount / Limit",
+        "value": "₹62.11L",
+        "secondary": "Aggregate limit",
+        "tone": "blue"
+      },
+      {
+        "label": "Facility Utilisation",
+        "value": "59.2%",
+        "secondary": "Of sanctioned limits",
+        "tone": "amber"
+      },
+      {
+        "label": "Monthly Debt Repayments",
+        "value": "₹0.88L",
+        "secondary": "0 DPD · ₹0 overdue",
+        "tone": "emerald"
       }
     ]
   },
@@ -2638,7 +2727,7 @@
         ]
       }
     ],
-    "benchmarkNote": "Colours compare each value with the stated benchmark. All thresholds and values are simulated demonstration settings; production use requires approved bank policy, cohort calibration and source-coverage controls.",
+    "benchmarkNote": "Colours compare each value with the stated benchmark. Thresholds shown are indicative and require approval against bank policy; production use requires approved bank policy, cohort calibration and source-coverage controls.",
     "notApplicableGroups": [
       {
         "id": "salary",

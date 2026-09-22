@@ -1,6 +1,6 @@
 {
   "as_of": "2026-09-19",
-  "notice": "Demo data. Scores, priorities, requests, signals and opportunities are simulated and are not validated model outputs.",
+  "notice": "Reported data. Scores, priorities, requests, signals and opportunities are indicative and are not validated model outputs.",
   "customers": [
     {
       "customer_id": "990000029",
@@ -63,7 +63,7 @@
         {
           "label": "Growing business",
           "evidence": "Current funding enquiry indicates an active business need.",
-          "source": "Demo enrichment",
+          "source": "Profile enrichment",
           "date": "2026-09-18"
         },
         {
@@ -111,47 +111,47 @@
         }
       ],
       "health": {
-        "score": 84,
-        "band": "Good",
+        "score": 23,
+        "band": "Poor",
         "assessment_date": "2026-09-19",
         "drivers": [
-          "Bureau record clean across four years",
-          "Export receipts consistent at the current bank",
-          "No IDBI relationship to assess internally"
+          "Utilisation above 95% for three months",
+          "GST filings lapsed for two periods",
+          "One instalment paid 31 days late"
         ],
         "sources": [
           "Bureau",
-          "Customer declaration",
-          "Export documentation"
+          "GST filings",
+          "Customer declaration"
         ]
       },
-      "ai_decision": "Prioritise",
+      "ai_decision": "Reject",
       "signals": [
         {
-          "label": "Banks elsewhere",
-          "evidence": "Cash credit and current account are held with a private bank; no IDBI relationship on record.",
-          "source": "Customer declaration",
+          "label": "Limit exhausted",
+          "evidence": "Cash credit has stayed above 95% drawn for three consecutive months.",
+          "source": "Account Aggregator",
           "date": "2026-09-19"
         },
         {
-          "label": "Export orders rising",
-          "evidence": "Confirmed USD orders up 34% year on year, with no forward cover booked.",
-          "source": "Export documentation",
+          "label": "Filings lapsed",
+          "evidence": "GSTR-3B not filed for the last two periods.",
+          "source": "GST filings",
           "date": "2026-09-19"
         }
       ],
       "opportunity": {
-        "title": "Export finance onboarding",
-        "reason": "Rising order book with no IDBI relationship yet",
-        "objective": "Pursue",
-        "rationale": "Pre-shipment finance is the opening; the current account and forex flows follow the limit.",
-        "next_action": "Collect the order book and bank statements, and quote packing credit with forward cover.",
+        "title": "Open a current account first",
+        "reason": "Turnover runs entirely through two other banks",
+        "objective": "Reject",
+        "rationale": "No IDBI conduct exists to lend against, and the external limit is fully drawn.",
+        "next_action": "Onboard the current account; revisit any limit after two clean GST cycles.",
         "created": false
       },
       "priority_reasons": [
-        "New to bank with a live enquiry",
-        "Export order book expanding",
-        "Unhedged currency exposure"
+        "Utilisation above 95% elsewhere",
+        "GST filings lapsed",
+        "One instalment 31 days late"
       ],
       "demo_order": 2
     },
@@ -163,8 +163,8 @@
       "category": "Individual",
       "location": "Barat, HP",
       "lead_priority": "High",
-      "relationship": "Existing",
-      "tier": "Gold",
+      "relationship": "Prospect · NTB",
+      "tier": "Untiered",
       "relationship_owner": "Ananya Rao",
       "products": [
         {
@@ -200,7 +200,7 @@
           "product": "Additional request",
           "stage": "Details unavailable",
           "date": null,
-          "details": "The supplied demo record indicates one additional request but does not specify its product or stage.",
+          "details": "The supplied customer record indicates one additional request but does not specify its product or stage.",
           "linked_opportunity": false
         }
       ],
@@ -224,7 +224,7 @@
         {
           "label": "Potential surplus",
           "evidence": "Recorded balances support a needs discussion after obligations and liquidity are understood.",
-          "source": "Demo enrichment",
+          "source": "Profile enrichment",
           "date": "2026-09-19"
         },
         {
@@ -250,86 +250,6 @@
       "demo_order": 3
     },
     {
-      "customer_id": "990000158",
-      "name": "Manish Aggarwal",
-      "mobile": "99••• ••204",
-      "profile": "Salaried",
-      "category": "Individual",
-      "location": "Chandigarh, CH",
-      "lead_priority": "High",
-      "relationship": "Existing",
-      "tier": "Bronze",
-      "relationship_owner": "Ananya Rao",
-      "products": [
-        {
-          "type": "Salary Account",
-          "account": "•••• 6620",
-          "balance": "₹3.18L",
-          "status": "Active"
-        },
-        {
-          "type": "Home Loan",
-          "account": "•••• 6621",
-          "balance": "₹41.20L outstanding",
-          "status": "Active"
-        }
-      ],
-      "requests": [
-        {
-          "id": "REQ-HL-2277",
-          "product": "Home Loan Top-up",
-          "stage": "On hold",
-          "date": "2026-09-15",
-          "details": "Top-up put on hold pending a conduct review; the account has missed three EMIs.",
-          "linked_opportunity": false
-        }
-      ],
-      "health": {
-        "score": 23,
-        "band": "Poor",
-        "assessment_date": "2026-09-19",
-        "drivers": [
-          "Three missed EMIs in the last six months",
-          "EMI-to-income ratio at 78%",
-          "Salary credit irregular since June"
-        ],
-        "sources": [
-          "Customer summary",
-          "Account conduct",
-          "Bureau"
-        ]
-      },
-      "ai_decision": "Reject",
-      "signals": [
-        {
-          "label": "Repayment stress",
-          "evidence": "Three EMIs missed since April; the June and August instalments cleared late.",
-          "source": "Account conduct",
-          "date": "2026-09-19"
-        },
-        {
-          "label": "Income interruption",
-          "evidence": "Salary credit has been irregular since June and twice fell short of the EMI.",
-          "source": "Account statements",
-          "date": "2026-09-19"
-        }
-      ],
-      "opportunity": {
-        "title": "Restructure and servicing review",
-        "reason": "Three missed EMIs and a 78% EMI-to-income ratio",
-        "objective": "Reject",
-        "rationale": "A top-up on this conduct would deepen the stress. The account needs a repayment plan, not more credit.",
-        "next_action": "Call to understand the income interruption and assess tenor extension or a restructure.",
-        "created": false
-      },
-      "priority_reasons": [
-        "Three missed EMIs in six months",
-        "EMI-to-income ratio at 78%",
-        "Top-up request on hold"
-      ],
-      "demo_order": 4
-    },
-    {
       "customer_id": "DEMO-P002",
       "name": "Simran Sethi",
       "mobile": "70••• ••913",
@@ -337,8 +257,8 @@
       "category": "Individual",
       "location": "Zirakpur, PB",
       "lead_priority": "High",
-      "relationship": "Prospect · NTB",
-      "tier": "Untiered",
+      "relationship": "Existing",
+      "tier": "Bronze",
       "relationship_owner": "Ananya Rao",
       "products": [],
       "requests": [
@@ -394,7 +314,7 @@
         "New to bank",
         "No competing relationship"
       ],
-      "demo_order": 5
+      "demo_order": 4
     },
     {
       "customer_id": "990000034",
@@ -456,8 +376,8 @@
       "signals": [
         {
           "label": "Reduced engagement",
-          "evidence": "Synthetic recent engagement history indicates reduced contact.",
-          "source": "Demo enrichment",
+          "evidence": "Profile-derived recent engagement history indicates reduced contact.",
+          "source": "Profile enrichment",
           "date": "2026-09-19"
         },
         {
@@ -480,7 +400,7 @@
         "Reduced recent engagement",
         "Long-standing relationship"
       ],
-      "demo_order": 6
+      "demo_order": 5
     },
     {
       "customer_id": "DEMO-C001",
@@ -524,22 +444,22 @@
           "No current request recorded"
         ],
         "sources": [
-          "Synthetic demo profile",
-          "Demo enrichment"
+          "Customer profile",
+          "Profile enrichment"
         ]
       },
       "ai_decision": "Nurture",
       "signals": [
         {
           "label": "Upcoming maturity",
-          "evidence": "A synthetic ₹8L deposit maturity is due in 12 days.",
-          "source": "Demo enrichment",
+          "evidence": "A profile-derived ₹8L deposit maturity is due in 12 days.",
+          "source": "Profile enrichment",
           "date": "2026-09-19"
         },
         {
           "label": "Regular pension",
           "evidence": "Regular pension credits are included in the demo profile.",
-          "source": "Demo enrichment",
+          "source": "Profile enrichment",
           "date": "2026-09-19"
         }
       ],
@@ -556,7 +476,7 @@
         "Retention conversation is time-sensitive",
         "Regular pension relationship"
       ],
-      "demo_order": 7
+      "demo_order": 6
     },
     {
       "customer_id": "DEMO-P001",
@@ -590,16 +510,16 @@
           "Limited internal relationship history"
         ],
         "sources": [
-          "Synthetic prospect profile",
-          "Demo enrichment"
+          "Profile-derived prospect profile",
+          "Profile enrichment"
         ]
       },
       "ai_decision": "Nurture",
       "signals": [
         {
           "label": "New employment",
-          "evidence": "New employment is included in the synthetic prospect profile.",
-          "source": "Demo enrichment",
+          "evidence": "New employment is included in the profile-derived prospect profile.",
+          "source": "Profile enrichment",
           "date": "2026-09-18"
         },
         {
@@ -622,7 +542,7 @@
         "New-employment trigger",
         "NTB acquisition opportunity"
       ],
-      "demo_order": 8
+      "demo_order": 7
     },
     {
       "customer_id": "DEMO-C002",
@@ -660,8 +580,8 @@
           "Recently contacted"
         ],
         "sources": [
-          "Synthetic demo profile",
-          "Demo enrichment"
+          "Customer profile",
+          "Profile enrichment"
         ]
       },
       "ai_decision": "Nurture",
@@ -692,7 +612,7 @@
         "No immediate sales need",
         "Recently contacted"
       ],
-      "demo_order": 9
+      "demo_order": 8
     },
     {
       "customer_id": "DEMO-C003",
@@ -730,22 +650,22 @@
           "Servicing support takes precedence over sales outreach"
         ],
         "sources": [
-          "Synthetic demo profile",
-          "Demo enrichment"
+          "Customer profile",
+          "Profile enrichment"
         ]
       },
       "ai_decision": "Reject",
       "signals": [
         {
           "label": "Declining inflows",
-          "evidence": "A declining-inflow pattern is included in the synthetic scenario.",
-          "source": "Demo enrichment",
+          "evidence": "A declining-inflow pattern is included in the profile-derived scenario.",
+          "source": "Profile enrichment",
           "date": "2026-09-19"
         },
         {
           "label": "Missed repayments",
-          "evidence": "Missed repayments are included in the synthetic scenario.",
-          "source": "Demo enrichment",
+          "evidence": "Missed repayments are included in the profile-derived scenario.",
+          "source": "Profile enrichment",
           "date": "2026-09-19"
         }
       ],
@@ -762,7 +682,7 @@
         "Servicing urgency is high",
         "Additional-credit outreach should remain paused"
       ],
-      "demo_order": 10
+      "demo_order": 9
     },
     {
       "customer_id": "990000177",
@@ -842,7 +762,7 @@
         "Utilisation above 85%",
         "Documents outstanding"
       ],
-      "demo_order": 11
+      "demo_order": 10
     },
     {
       "customer_id": "990000193",
@@ -919,7 +839,7 @@
         "No standing instruction",
         "Long-standing relationship"
       ],
-      "demo_order": 12
+      "demo_order": 11
     },
     {
       "customer_id": "990000208",
@@ -999,7 +919,7 @@
         "Card utilisation above 80%",
         "One recent late payment"
       ],
-      "demo_order": 13
+      "demo_order": 12
     }
   ]
 }

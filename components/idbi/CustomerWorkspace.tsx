@@ -11,6 +11,7 @@ import { RequestsActivityTab } from "./RequestsActivityTab";
 import { AiAnalysisTab } from "./AiAnalysisTab";
 import { MetricsTab } from "./MetricsTab";
 import { EventsTab } from "./EventsTab";
+import { WorkspaceDataProvider, workspaceFor } from "./workspaceData";
 import { ModusAgentPanel } from "./ModusAgentPanel";
 
 export interface WorkspaceCustomer {
@@ -39,6 +40,7 @@ export const CustomerWorkspace: FC<{ customer: WorkspaceCustomer; onBack: () => 
   const [tab, setTab] = useState<TabId>("profile");
   const [agentOpen, setAgentOpen] = useState(false);
   const [agentPrompt, setAgentPrompt] = useState<string | undefined>(undefined);
+  const workspace = workspaceFor(customer.customer_id) as any;
   const initials = customer.name.split(" ").map((n) => n[0]).join("").slice(0, 2);
 
   const openAgent = (prompt?: string) => {
@@ -47,6 +49,7 @@ export const CustomerWorkspace: FC<{ customer: WorkspaceCustomer; onBack: () => 
   };
 
   return (
+    <WorkspaceDataProvider customerId={customer.customer_id}>
     <div className="flex min-h-0 min-w-0 flex-1 overflow-hidden">
       {/* Left column: fixed header + tabs, scrolling content */}
       <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
@@ -135,12 +138,14 @@ export const CustomerWorkspace: FC<{ customer: WorkspaceCustomer; onBack: () => 
           customerName={customer.name}
           healthScore={customer.health.score}
           healthBand={customer.health.band}
-          openMatters={2}
+          openMatters={(workspace.relationshipFeed?.threads ?? []).length}
+          starters={workspace.customer.agentStarters}
           seedPrompt={agentPrompt}
           onClose={() => setAgentOpen(false)}
         />
       )}
     </div>
+    </WorkspaceDataProvider>
   );
 };
 
