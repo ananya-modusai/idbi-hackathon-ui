@@ -589,7 +589,123 @@
           "text": "Allotment of the listed shares needs a demat account in her name, and she holds none with IDBI today."
         }
       ]
-    }
+    },
+    "events": [
+      {
+        "date": "18 Sep 2026",
+        "ago": "Today",
+        "type": "Customer Event",
+        "title": "Daughter added to health cover",
+        "detail": "A new dependent (daughter) has been added to the existing health insurance policy.",
+        "tags": [
+          "Family",
+          "Insurance",
+          "Health Cover"
+        ]
+      },
+      {
+        "date": "2 Sep 2026",
+        "ago": "2 weeks ago",
+        "type": "Career Event",
+        "title": "Role change at ABC Pvt Ltd",
+        "detail": "Vandana Singh has been promoted to Senior Manager, as per LinkedIn update.",
+        "tags": [
+          "Career",
+          "Employer Update",
+          "LinkedIn"
+        ]
+      },
+      {
+        "date": "25 Aug 2026",
+        "ago": "4 weeks ago",
+        "type": "Account Signal",
+        "title": "Higher credit card utilisation",
+        "detail": "Credit card spending is 28% higher than the 3-month average.",
+        "tags": [
+          "Credit Card",
+          "Spending Pattern"
+        ]
+      },
+      {
+        "date": "10 Aug 2026",
+        "ago": "1 month ago",
+        "type": "Account Signal",
+        "title": "Home loan enquiry",
+        "detail": "An enquiry for a home loan was made through the bank's digital channels.",
+        "tags": [
+          "Loan",
+          "Enquiry",
+          "Home Purchase"
+        ]
+      },
+      {
+        "date": "28 Jul 2026",
+        "ago": "2 months ago",
+        "type": "Customer Event",
+        "title": "New mutual fund investment",
+        "detail": "A mutual fund investment of ₹2.00L was made in an equity fund.",
+        "tags": [
+          "Investment",
+          "Mutual Fund"
+        ]
+      },
+      {
+        "date": "15 Jul 2026",
+        "ago": "2 months ago",
+        "type": "Account Signal",
+        "title": "Increase in account balance",
+        "detail": "Average monthly balance has increased significantly over the last three months.",
+        "tags": [
+          "Savings Account",
+          "Balance Trend"
+        ]
+      },
+      {
+        "date": "1 Jul 2026",
+        "ago": "3 months ago",
+        "type": "Customer Event",
+        "title": "Life insurance policy purchased",
+        "detail": "A new term life insurance policy has been purchased.",
+        "tags": [
+          "Insurance",
+          "Protection"
+        ]
+      },
+      {
+        "date": "15 Jun 2026",
+        "ago": "3 months ago",
+        "type": "Account Signal",
+        "title": "Recurring deposit matured",
+        "detail": "A recurring deposit of ₹1.00L has been matured.",
+        "tags": [
+          "Deposit",
+          "Maturity"
+        ]
+      },
+      {
+        "date": "3 Jun 2026",
+        "ago": "3 months ago",
+        "type": "Market Event",
+        "title": "RBI announces change in home loan risk weights",
+        "detail": "Regulatory update may have an impact on home loan eligibility and pricing.",
+        "tags": [
+          "Regulation",
+          "RBI",
+          "Home Loan"
+        ]
+      },
+      {
+        "date": "20 May 2026",
+        "ago": "4 months ago",
+        "type": "Customer Event",
+        "title": "KYC updated",
+        "detail": "PAN and address details were updated as part of periodic KYC review.",
+        "tags": [
+          "KYC",
+          "Profile Update"
+        ]
+      }
+    ]
   },
   "financialPosition": {
     "scopeOptions": [
@@ -1583,28 +1699,28 @@
     "capacity": [
       {
         "id": "income",
-        "label": "Recognised Monthly Receipts",
+        "label": "Monthly Receipts",
         "value": "₹4.88L",
         "secondary": "78th percentile among comparable self-employed customers",
         "definition": "Average monthly self-employed operating receipts recognised from the customer’s accounts. Own-account transfers, loan disbursals, refunds and unverified credits are excluded."
       },
       {
         "id": "surplus",
-        "label": "Post-commitment Cash Remaining",
+        "label": "Cash Remaining",
         "value": "₹1.23L",
         "secondary": "25% of recognised receipts",
         "definition": "Average money remaining after operating outflows, regular expenses and verified debt payments have been deducted from recognised receipts."
       },
       {
         "id": "debt",
-        "label": "Verified Debt Outstanding",
+        "label": "Debt Outstanding",
         "value": "₹36.75L",
         "secondary": "₹0 currently overdue",
         "definition": "Total outstanding amount from operating and personal borrowing facilities visible in the available verified records."
       },
       {
         "id": "savings",
-        "label": "Accessible Financial Reserves",
+        "label": "Accessible Reserves",
         "value": "₹6.40L",
         "secondary": "Covers 1.8 months of commitments",
         "definition": "Savings and deposits available as a financial reserve. The ₹7.80L operating current-account balance is shown in Financial Position but is not automatically treated as personal savings or a freely available reserve."
@@ -1613,16 +1729,16 @@
     "groups": [
       {
         "id": "cash-flow",
-        "label": "Cash Flow Strength",
+        "label": "Cash Flow",
         "metrics": [
           {
             "code": "CF01",
             "id": "recognised-receipts",
-            "label": "Recognised self-employed receipts",
+            "label": "Monthly Business Receipts",
             "type": "Income",
             "definition": "Monthly business credits accepted as operating receipts after transfers, financing inflows, refunds and unresolved credits are excluded.",
             "calculation": "Sum eligible business receipts for each month.",
-            "benchmark": "Comparable cohort and prior period",
+            "benchmark": "Cohort / Prior Period",
             "benchmarkDefinition": "Interpret the absolute amount against this customer’s prior comparable period and an approved self-employed cohort.",
             "format": "currency-lakh",
             "direction": "higher",
@@ -1647,11 +1763,11 @@
           {
             "code": "CF02",
             "id": "receipt-growth",
-            "label": "Self-employed receipt growth",
+            "label": "Receipt Growth",
             "type": "Income",
             "definition": "Change in recognised receipts versus the relevant prior comparable period.",
             "calculation": "(Current comparable receipts − prior comparable receipts) ÷ prior comparable receipts.",
-            "benchmark": "0% or higher",
+            "benchmark": "≥ 0%",
             "benchmarkDefinition": "Positive growth is the configured directional benchmark; seasonal businesses use the same-season baseline.",
             "format": "percent",
             "direction": "higher",
@@ -1677,11 +1793,11 @@
           {
             "code": "CF03",
             "id": "receipt-continuity",
-            "label": "Expected receipt periods met",
+            "label": "Receipt Regularity",
             "type": "Continuity",
             "definition": "Whether recognised business receipts were observed in each expected earning period.",
             "calculation": "Eligible periods with recognised receipts ÷ expected earning periods.",
-            "benchmark": "At least 5 of 6 months",
+            "benchmark": "≥ 5 of 6 months",
             "benchmarkDefinition": "Receipts should be visible in at least five of the latest six expected months.",
             "format": "text",
             "direction": "positive",
@@ -1706,11 +1822,11 @@
           {
             "code": "CF04",
             "id": "receipt-variation",
-            "label": "Self-employed receipt variation",
+            "label": "Receipt Stability",
             "type": "Stability",
             "definition": "Variation of recurring business receipts around their recent average.",
             "calculation": "Robust variation across comparable monthly recognised receipts.",
-            "benchmark": "25% or less",
+            "benchmark": "≤ 25%",
             "benchmarkDefinition": "Variation at or below 25% is the configured demo benchmark.",
             "format": "percent",
             "direction": "lower",
@@ -1736,11 +1852,11 @@
           {
             "code": "CF05",
             "id": "payer-concentration",
-            "label": "Largest payer share",
+            "label": "Payer Concentration",
             "type": "Concentration",
             "definition": "Share of recognised receipts attributable to the largest identifiable payer.",
             "calculation": "Largest verified payer receipts ÷ total recognised receipts.",
-            "benchmark": "40% or less",
+            "benchmark": "≤ 40%",
             "benchmarkDefinition": "Lower payer concentration reduces reliance on one counterparty; the threshold requires segment calibration.",
             "format": "percent",
             "direction": "lower",
@@ -1766,11 +1882,11 @@
           {
             "code": "CF06",
             "id": "operating-expense-ratio",
-            "label": "Operating expense ratio",
+            "label": "Operating Expense Ratio",
             "type": "Expenses",
             "definition": "Verified operating outflows as a share of recognised business receipts.",
             "calculation": "Verified business operating outflows ÷ recognised business receipts.",
-            "benchmark": "60% or less",
+            "benchmark": "≤ 60%",
             "benchmarkDefinition": "The configured demo benchmark expects operating outflows to remain at or below 60% of recognised receipts.",
             "format": "percent",
             "direction": "lower",
@@ -1796,11 +1912,11 @@
           {
             "code": "CF07",
             "id": "discretionary-share",
-            "label": "Discretionary spending share",
+            "label": "Discretionary Expense Share",
             "type": "Expenses",
             "definition": "Flexible household spending as a share of classified household spending.",
             "calculation": "Discretionary spending ÷ total classified household spending.",
-            "benchmark": "Customer baseline",
+            "benchmark": "Customer Baseline",
             "benchmarkDefinition": "This metric is interpreted against the customer’s own pattern and is not an adverse judgement.",
             "format": "percent",
             "direction": "lower",
@@ -1825,11 +1941,11 @@
           {
             "code": "CF08",
             "id": "expense-change",
-            "label": "Total expense change",
+            "label": "Expense Change",
             "type": "Expenses",
             "definition": "Change in classified operating and household expenses versus the prior comparable window.",
             "calculation": "(Current comparable expenses − prior comparable expenses) ÷ prior comparable expenses.",
-            "benchmark": "5% or less increase",
+            "benchmark": "≤ 5% increase",
             "benchmarkDefinition": "An increase of 5% or less is the configured demo benchmark; verified exceptional expenses are separated.",
             "format": "percent",
             "direction": "lower",
@@ -1855,11 +1971,11 @@
           {
             "code": "CF09",
             "id": "pre-debt-cash",
-            "label": "Cash remaining before debt",
+            "label": "Cash Before Debt",
             "type": "Surplus",
             "definition": "Recognised receipts remaining after verified operating and recurring non-debt outflows.",
             "calculation": "Recognised receipts − operating expenses − recurring household non-debt expenses.",
-            "benchmark": "₹1.10L or more",
+            "benchmark": "≥ ₹1.10L",
             "benchmarkDefinition": "The configured amount benchmark is based on the demo customer profile and requires bank calibration.",
             "format": "currency-lakh",
             "direction": "higher",
@@ -1885,11 +2001,11 @@
           {
             "code": "CF10",
             "id": "post-commitment-margin",
-            "label": "Post-commitment surplus margin",
+            "label": "Surplus After Commitments",
             "type": "Surplus",
             "definition": "Share of recognised receipts remaining after operating outflows, regular expenses and verified debt payments.",
             "calculation": "Cash remaining after commitments ÷ recognised receipts.",
-            "benchmark": "20% or more",
+            "benchmark": "≥ 20%",
             "benchmarkDefinition": "Retaining at least 20% after commitments is the configured demo benchmark.",
             "format": "percent",
             "direction": "higher",
@@ -1915,11 +2031,11 @@
           {
             "code": "CF11",
             "id": "positive-surplus",
-            "label": "Positive-surplus month",
+            "label": "Positive Cash-flow Months",
             "type": "Surplus",
             "definition": "Whether the monthly post-commitment cash position was non-negative.",
             "calculation": "Recognised receipts minus operating expenses, household expenses and verified debt payments.",
-            "benchmark": "At least 5 of 6 months",
+            "benchmark": "≥ 5 of 6 months",
             "benchmarkDefinition": "At least five positive-surplus months in the latest six is the configured benchmark.",
             "format": "text",
             "direction": "positive",
@@ -1944,11 +2060,11 @@
           {
             "code": "CF12",
             "id": "essential-returns",
-            "label": "Essential-payment returns",
-            "type": "Payment stability",
+            "label": "Payment Returns",
+            "type": "Payment Stability",
             "definition": "Count of verified essential non-debt payments returned for insufficient funds.",
             "calculation": "Count eligible returned essential payments by month.",
-            "benchmark": "0 returns",
+            "benchmark": "0 Returns",
             "benchmarkDefinition": "No verified essential-payment return is the configured benchmark.",
             "format": "number",
             "direction": "lower",
@@ -1975,16 +2091,16 @@
       },
       {
         "id": "debt",
-        "label": "Debt Sustainability",
+        "label": "Debt",
         "metrics": [
           {
             "code": "DB01",
             "id": "debt-outstanding",
-            "label": "Verified debt outstanding",
+            "label": "Total Debt Outstanding",
             "type": "Exposure",
             "definition": "Current outstanding across deduplicated covered loan and revolving facilities.",
             "calculation": "Sum current outstanding across canonical covered facilities.",
-            "benchmark": "Customer baseline",
+            "benchmark": "Customer Baseline",
             "benchmarkDefinition": "Outstanding is interpreted with income, purpose, repayment and limit information.",
             "format": "currency-lakh",
             "direction": "lower",
@@ -2009,11 +2125,11 @@
           {
             "code": "DB02",
             "id": "monthly-debt-service",
-            "label": "Monthly debt payments",
+            "label": "Monthly Debt Servicing",
             "type": "Burden",
             "definition": "Verified monthly loan, card and other debt payments due.",
             "calculation": "Sum monthly contractual debt payments across covered facilities.",
-            "benchmark": "Customer baseline",
+            "benchmark": "Customer Baseline",
             "benchmarkDefinition": "The absolute payment is interpreted through repayment share and debt-service coverage.",
             "format": "currency-lakh",
             "direction": "lower",
@@ -2038,11 +2154,11 @@
           {
             "code": "DB03",
             "id": "repayment-share",
-            "label": "Debt repayment share",
+            "label": "Debt Repayment Ratio",
             "type": "Burden",
             "definition": "Verified monthly debt payments divided by recognised receipts.",
             "calculation": "Monthly verified debt service ÷ recognised receipts.",
-            "benchmark": "40% or less",
+            "benchmark": "≤ 40%",
             "benchmarkDefinition": "Debt payments at or below 40% of recognised receipts are the configured demo benchmark.",
             "format": "percent",
             "direction": "lower",
@@ -2068,11 +2184,11 @@
           {
             "code": "DB04",
             "id": "debt-service-coverage",
-            "label": "Debt service coverage",
+            "label": "Debt Service Coverage",
             "type": "Affordability",
             "definition": "Cash available before debt divided by verified monthly debt payments due.",
             "calculation": "Pre-debt cash remaining ÷ monthly debt service.",
-            "benchmark": "1.25× or more",
+            "benchmark": "≥ 1.25×",
             "benchmarkDefinition": "At least ₹1.25 available for every ₹1 due is the configured benchmark.",
             "format": "multiple",
             "direction": "higher",
@@ -2098,7 +2214,7 @@
           {
             "code": "DB05",
             "id": "maximum-dpd",
-            "label": "Maximum days past due",
+            "label": "Maximum Days Past Due",
             "type": "Conduct",
             "definition": "Highest verified days past due among covered facilities during the month.",
             "calculation": "Maximum verified DPD across eligible facility cycles.",
@@ -2128,11 +2244,11 @@
           {
             "code": "DB06",
             "id": "overdue-amount",
-            "label": "Current overdue amount",
+            "label": "Current Overdue Amount",
             "type": "Conduct",
             "definition": "Verified unresolved overdue amount across covered facilities.",
             "calculation": "Sum unresolved overdue balances across covered facilities.",
-            "benchmark": "₹0 overdue",
+            "benchmark": "₹0 Overdue",
             "benchmarkDefinition": "No unresolved overdue amount is the contractual benchmark.",
             "format": "currency-lakh",
             "direction": "lower",
@@ -2158,11 +2274,11 @@
           {
             "code": "DB07",
             "id": "revolving-utilisation",
-            "label": "Revolving and working-capital utilisation",
+            "label": "Revolving / WC Utilisation",
             "type": "Utilisation",
             "definition": "Verified revolving outstanding divided by the corresponding sanctioned limits.",
             "calculation": "Total covered revolving outstanding ÷ total covered revolving limit.",
-            "benchmark": "70% or less",
+            "benchmark": "≤ 70%",
             "benchmarkDefinition": "Utilisation at or below 70% is the configured demo benchmark.",
             "format": "percent",
             "direction": "lower",
@@ -2188,11 +2304,11 @@
           {
             "code": "DB08",
             "id": "debt-burden-change",
-            "label": "Debt burden change",
+            "label": "Debt Burden Trend",
             "type": "Trend",
             "definition": "Change in debt-payment-to-receipt ratio versus the prior comparable period.",
             "calculation": "Current repayment share minus prior comparable repayment share.",
-            "benchmark": "0 percentage points or lower",
+            "benchmark": "≤ 0 pp",
             "benchmarkDefinition": "A stable or reducing burden is the configured directional benchmark.",
             "format": "percent",
             "direction": "lower",
@@ -2219,16 +2335,16 @@
       },
       {
         "id": "resilience",
-        "label": "Financial Resilience",
+        "label": "Resilience",
         "metrics": [
           {
             "code": "FR01",
             "id": "accessible-reserves",
-            "label": "Accessible financial reserves",
+            "label": "Accessible Reserves",
             "type": "Reserves",
             "definition": "Verified cash, eligible deposits and accessible investments after operating, pledged and locked funds are excluded.",
             "calculation": "Sum eligible accessible balances after approved exclusions and haircuts.",
-            "benchmark": "Comparable cohort and customer baseline",
+            "benchmark": "Cohort / Customer Baseline",
             "benchmarkDefinition": "Interpret the absolute amount against commitments and an approved comparable cohort.",
             "format": "currency-lakh",
             "direction": "higher",
@@ -2253,11 +2369,11 @@
           {
             "code": "FR02",
             "id": "reserve-coverage",
-            "label": "Reserve coverage",
+            "label": "Reserve Cover",
             "type": "Reserves",
             "definition": "Months of regular commitments covered by accessible financial reserves.",
             "calculation": "Accessible reserves ÷ average monthly core expenses and debt payments.",
-            "benchmark": "3 months or more",
+            "benchmark": "≥ 3 Months",
             "benchmarkDefinition": "Three months of covered commitments is the configured demo benchmark.",
             "format": "number",
             "direction": "higher",
@@ -2283,11 +2399,11 @@
           {
             "code": "FR03",
             "id": "monthly-savings",
-            "label": "Average monthly savings retained",
+            "label": "Monthly Savings Retained",
             "type": "Savings",
             "definition": "Cash retained after recognised receipts, regular expenses and debt payments, excluding own-account transfers.",
             "calculation": "Recognised receipts − classified expenses − verified debt payments − net investment redemptions.",
-            "benchmark": "₹0.49L or more",
+            "benchmark": "≥ ₹0.49L",
             "benchmarkDefinition": "The amount corresponds to the configured 10% savings-rate benchmark for this demo profile.",
             "format": "currency-lakh",
             "direction": "higher",
@@ -2313,11 +2429,11 @@
           {
             "code": "FR04",
             "id": "savings-rate",
-            "label": "Savings retained rate",
+            "label": "Savings Retention Rate",
             "type": "Savings",
             "definition": "Average savings retained as a share of recognised receipts.",
             "calculation": "Monthly savings retained ÷ recognised receipts.",
-            "benchmark": "10% or more",
+            "benchmark": "≥ 10%",
             "benchmarkDefinition": "A 10% retained-savings rate is the configured demo benchmark.",
             "format": "percent",
             "direction": "higher",
@@ -2343,11 +2459,11 @@
           {
             "code": "FR05",
             "id": "monthly-investments",
-            "label": "Monthly investment contributions",
+            "label": "Monthly Investment Contribution",
             "type": "Investments",
             "definition": "Verified recurring contributions to deposits, mutual funds, pension or other eligible investments.",
             "calculation": "Sum verified investment contributions net of reversals.",
-            "benchmark": "₹0.25L or more",
+            "benchmark": "≥ ₹0.25L",
             "benchmarkDefinition": "₹25,000 per month is the configured demo benchmark for this customer profile.",
             "format": "currency-lakh",
             "direction": "higher",
@@ -2373,11 +2489,11 @@
           {
             "code": "FR06",
             "id": "investment-change",
-            "label": "Investment contribution change",
+            "label": "Investment Contribution Trend",
             "type": "Investments",
             "definition": "Change in verified investment contributions versus the prior comparable period.",
             "calculation": "(Current contributions − prior comparable contributions) ÷ prior comparable contributions.",
-            "benchmark": "0% or higher",
+            "benchmark": "≥ 0%",
             "benchmarkDefinition": "Stable or increasing contributions meet the directional demo benchmark.",
             "format": "percent",
             "direction": "higher",
@@ -2403,11 +2519,11 @@
           {
             "code": "FR07",
             "id": "reserves-vs-high",
-            "label": "Reserves compared with recent high",
+            "label": "Reserve Level vs Recent Peak",
             "type": "Recovery",
             "definition": "Current accessible reserves divided by the highest balance in the latest six months.",
             "calculation": "Current accessible reserves ÷ six-month peak accessible reserves.",
-            "benchmark": "80% or more",
+            "benchmark": "≥ 80%",
             "benchmarkDefinition": "Maintaining at least 80% of the recent reserve high is the configured benchmark.",
             "format": "percent",
             "direction": "higher",
@@ -2433,11 +2549,11 @@
           {
             "code": "FR08",
             "id": "reserve-recovery",
-            "label": "Reserve recovery after drawdown",
+            "label": "Reserve Recovery",
             "type": "Recovery",
             "definition": "Amount recovered since the latest trough as a share of the preceding reserve decline.",
             "calculation": "Recovery from trough ÷ preceding peak-to-trough drawdown, capped at 100%.",
-            "benchmark": "75% or more",
+            "benchmark": "≥ 75%",
             "benchmarkDefinition": "Recovering at least 75% of the latest drawdown is the configured demo benchmark.",
             "format": "percent",
             "direction": "higher",
@@ -2463,11 +2579,11 @@
           {
             "code": "FR09",
             "id": "operating-liquidity",
-            "label": "Operating-account liquidity",
-            "type": "Operating resilience",
+            "label": "Operating Account Liquidity",
+            "type": "Operating Liquidity",
             "definition": "Eligible cash available for business operations after financing proceeds and restricted balances are excluded.",
             "calculation": "Eligible operating-account balance after approved exclusions.",
-            "benchmark": "Operating requirement to be confirmed",
+            "benchmark": "Requirement Pending",
             "benchmarkDefinition": "A benchmark cannot be assigned until the customer’s minimum operating requirement is confirmed.",
             "format": "currency-lakh",
             "direction": "higher",
@@ -2492,11 +2608,11 @@
           {
             "code": "FR10",
             "id": "low-balance-days",
-            "label": "Low operating-balance days",
-            "type": "Operating resilience",
+            "label": "Low Balance Days",
+            "type": "Operating Liquidity",
             "definition": "Days the eligible operating balance fell below the provisional business requirement.",
             "calculation": "Count days below the approved or provisional operating-liquidity requirement.",
-            "benchmark": "0 days",
+            "benchmark": "0 Days",
             "benchmarkDefinition": "No days below the operating requirement is the configured benchmark once the requirement is confirmed.",
             "format": "number",
             "direction": "lower",
@@ -2565,7 +2681,7 @@
             "unit": "%",
             "definition": "Change in fixed salary versus the prior comparable period.",
             "calculation": "(Current fixed salary − prior fixed salary) ÷ prior fixed salary.",
-            "benchmark": "0% or higher",
+            "benchmark": "≥ 0%",
             "benchmarkDefinition": "A non-negative direction is shown for demo; cohort calibration is required.",
             "format": "percent",
             "direction": "higher",
@@ -2595,7 +2711,7 @@
             "unit": "Status",
             "definition": "Whether salary arrived within the expected monthly salary window.",
             "calculation": "Expected salary months received on time ÷ expected salary months.",
-            "benchmark": "At least 5 of 6 months",
+            "benchmark": "≥ 5 of 6 months",
             "benchmarkDefinition": "Requires an approved salary-window tolerance.",
             "format": "text",
             "direction": "positive",
@@ -2659,7 +2775,7 @@
             "unit": "₹ lakh",
             "definition": "Verified recurring pension or annuity receipts.",
             "calculation": "Sum verified pension and annuity credits in the month.",
-            "benchmark": "Customer baseline",
+            "benchmark": "Customer Baseline",
             "benchmarkDefinition": "Compared with prior receipts and documented entitlement.",
             "format": "currency-lakh",
             "direction": "higher",
@@ -2688,7 +2804,7 @@
             "unit": "×",
             "definition": "Recurring pension and annuity income relative to essential monthly expenses.",
             "calculation": "Verified pension and annuity receipts ÷ essential expenses.",
-            "benchmark": "1.0× or more",
+            "benchmark": "≥ 1.0×",
             "benchmarkDefinition": "Recurring pension should cover essential expenses without regular asset liquidation.",
             "format": "multiple",
             "direction": "higher",
@@ -2782,7 +2898,7 @@
             "unit": "%",
             "definition": "Change in foreign income after holding currency conversion on a comparable basis.",
             "calculation": "Change in constant-currency eligible foreign income.",
-            "benchmark": "0% or higher",
+            "benchmark": "≥ 0%",
             "benchmarkDefinition": "Separates underlying income change from exchange-rate movement.",
             "format": "percent",
             "direction": "higher",
@@ -2812,7 +2928,7 @@
             "unit": "×",
             "definition": "Verified remittances available for India commitments relative to those commitments.",
             "calculation": "Eligible India-bound remittances ÷ verified domestic commitments.",
-            "benchmark": "1.25× or more",
+            "benchmark": "≥ 1.25×",
             "benchmarkDefinition": "Requires approved treatment of remittance timing and retained overseas funds.",
             "format": "multiple",
             "direction": "higher",
@@ -2912,7 +3028,7 @@
             "unit": "%",
             "definition": "Change in recognised seasonal receipts versus the same verified season in the prior cycle.",
             "calculation": "(Current-season receipts − prior same-season receipts) ÷ prior same-season receipts.",
-            "benchmark": "0% or higher",
+            "benchmark": "≥ 0%",
             "benchmarkDefinition": "Uses the customer’s verified earning cycle rather than month-on-month comparison.",
             "format": "percent",
             "direction": "higher",

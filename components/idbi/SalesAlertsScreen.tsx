@@ -9,7 +9,7 @@ import CustomListFilter, {
   TertiaryFilterGroup,
   useFilterState,
 } from "@/components/custom/CustomList/customListFilter";
-import { ActionButton, StatusPill } from "@/components/idbi/workspace-ui";
+import { ActionButton, StatusPill, categoryColor, tierColor } from "@/components/idbi/workspace-ui";
 import { BubbleTag } from "@/components/custom/BubbleTag";
 import alertData from "@/app/idbi-data/sales-alerts.json";
 
@@ -97,15 +97,6 @@ export const SalesAlertsScreen: FC<{ onGoToCustomers: () => void }> = ({ onGoToC
       </div>
 
       <div className="min-h-0 min-w-0 flex-1 space-y-4 overflow-y-auto px-6 pb-10 pt-5">
-        <div className="w-full border-b border-gray-200 py-2">
-          <div className="flex min-w-0 items-center gap-2">
-            <BellRing className="h-5 w-5 flex-shrink-0 text-blue-700" />
-            <span className="truncate text-lg font-semibold text-blue-700">Sales Alerts</span>
-          </div>
-          <p className="mt-1 text-sm text-gray-500">
-            Customer and market events that may warrant RM outreach.
-          </p>
-        </div>
 
         <div className="pt-4">
           <CustomListFilter
@@ -151,8 +142,8 @@ export const SalesAlertsScreen: FC<{ onGoToCustomers: () => void }> = ({ onGoToC
                       />
                       <StatusPill tone="slate">{alert.customer.cid}</StatusPill>
                       <StatusPill tone="slate">{alert.customer.relationship}</StatusPill>
-                      <StatusPill tone="slate">{alert.customer.tier}</StatusPill>
-                      <StatusPill tone="slate">{alert.customer.category}</StatusPill>
+                      <BubbleTag text={alert.customer.tier} color={tierColor(alert.customer.tier)} withBorder fixedWidth="w-[88px]" />
+                      <BubbleTag text={alert.customer.category} color={categoryColor(alert.customer.category)} withBorder fixedWidth="w-[88px]" />
                       <StatusPill tone="slate">{alert.customer.location}</StatusPill>
                     </>
                   )}

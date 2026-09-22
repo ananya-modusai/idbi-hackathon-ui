@@ -10,6 +10,7 @@
 import * as React from "react";
 import { CircleCheck, Info, Sparkles, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { toggleLabelWithCount } from "@/components/idbi/ToggleCount";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { CustomCard } from "@/components/custom/CustomCard";
 import { BubbleTag } from "@/components/custom/BubbleTag";
@@ -168,6 +169,18 @@ const flatten = (node: React.ReactNode): string =>
     )
     .join("");
 
+/** Relationship tier, coloured to its metal: Platinum · Gold · Silver · Bronze. */
+export const tierColor = (tier: string) =>
+  tier === "Platinum" ? "platinum"
+    : tier === "Gold" ? "gold"
+    : tier === "Silver" ? "silver"
+    : tier === "Bronze" ? "bronze"
+    // A prospect has not earned a tier yet — plain grey, not a metal.
+    : "gray";
+
+/** Business or Individual — what kind of customer this is. */
+export const categoryColor = (category: string) => (category === "Business" ? "indigo" : "teal");
+
 export function StatusPill({ children, tone = "slate", fixedWidth }: { children: React.ReactNode; tone?: keyof typeof PILL_COLOR; fixedWidth?: string }) {
   // inline-flex + mr keeps a gap when several chips sit next to each other.
   // fixedWidth is BubbleTag's own prop — used by the tier chips so Gold and Platinum
@@ -208,7 +221,7 @@ export function SegmentedToggle({ value, onChange, options }: { value: string; o
             value === option.value ? "bg-white text-blue-600 shadow-sm" : "text-gray-600 hover:text-gray-900"
           )}
         >
-          {option.label}
+          {toggleLabelWithCount(option.label, value === option.value)}
         </button>
       ))}
     </div>

@@ -9,6 +9,7 @@ import { FinancialPositionTab } from "./FinancialPositionTab";
 import { RequestsActivityTab } from "./RequestsActivityTab";
 import { AiAnalysisTab } from "./AiAnalysisTab";
 import { MetricsTab } from "./MetricsTab";
+import { EventsTab } from "./EventsTab";
 import { ModusAgentPanel } from "./ModusAgentPanel";
 
 export interface WorkspaceCustomer {
@@ -27,6 +28,8 @@ const TABS = [
   { id: "analysis", label: "AI Analysis" },
   { id: "financial", label: "Financial Position" },
   { id: "metrics", label: "Metrics" },
+  // Everything that has happened on this customer, newest first.
+  { id: "events", label: "Events" },
 ] as const;
 
 type TabId = (typeof TABS)[number]["id"];
@@ -114,6 +117,7 @@ export const CustomerWorkspace: FC<{ customer: WorkspaceCustomer; onBack: () => 
             {tab === "analysis" && <AiAnalysisTab />}
             {tab === "financial" && <FinancialPositionTab onOpenAgent={openAgent} />}
             {tab === "metrics" && <MetricsTab />}
+            {tab === "events" && <EventsTab />}
           </div>
         </div>
       </div>

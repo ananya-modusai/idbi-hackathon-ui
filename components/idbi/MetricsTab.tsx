@@ -151,14 +151,14 @@ export function MetricsTab() {
   return (
     <div className="space-y-10">
       <section>
-        <SectionHeader icon={BadgeIndianRupee} title="Financial Capacity" />
+        <SectionHeader icon={BadgeIndianRupee} title="Current Financial Position" />
         <MetricGrid metrics={capacityMetrics} />
       </section>
 
       <section>
         <SectionHeader
           icon={CalendarRange}
-          title="Monthly Metrics"
+          title="Metric Trends"
           action={
             <SegmentedToggle
               value={applicability}
@@ -176,7 +176,7 @@ export function MetricsTab() {
             value={groupFilter}
             onChange={setGroupFilter}
             options={[
-              { value: "All", label: `All ${showingNA ? naCount : applicableCount}` },
+              { value: "All", label: `All Metrics ${showingNA ? naCount : applicableCount}` },
               ...source.map(g => ({ value: g.label, label: `${g.label} ${g.metrics.length}` })),
             ]}
           />

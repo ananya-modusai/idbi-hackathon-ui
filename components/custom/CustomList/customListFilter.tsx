@@ -4,6 +4,7 @@ import { MultiSelect } from "@/components/ui/multi-select2";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { CustomListItemProps } from "./customListItem";
+import { toggleLabelWithCount } from "@/components/idbi/ToggleCount";
 import { CollapseButton } from "../CollapseButton";
 import {
   getColorClasses,
@@ -613,7 +614,7 @@ const FilterGroup: React.FC<{
                 {option.icon && (
                   <option.icon className={`w-3.5 h-3.5 flex-shrink-0 ${isSelected ? "text-blue-500" : "text-slate-400"}`} />
                 )}
-                <span className="truncate">{option.label}</span>
+                <span className="flex items-center gap-1.5 truncate">{toggleLabelWithCount(option.label, isSelected)}</span>
                 {showToggleOptionCounts &&
                   optionCounts[option.value] !== undefined && (
                     <span
@@ -708,7 +709,7 @@ const FilterGroup: React.FC<{
                 {option.icon && (
                   <option.icon className="w-4 h-4 flex-shrink-0" />
                 )}
-                <span className="truncate">{option.label}</span>
+                <span className="flex items-center gap-1.5 truncate">{toggleLabelWithCount(option.label, isSelected)}</span>
                 {showToggleOptionCounts &&
                   option.value !== "__all__" &&
                   optionCounts[option.value] !== undefined && (

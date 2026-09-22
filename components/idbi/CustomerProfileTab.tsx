@@ -433,7 +433,7 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
                 colourRange={[55, 85]}
                 showValueLabels
                 dropLines
-                height={255}
+                height={230}
               />
             </div>
           </div>

@@ -364,7 +364,7 @@ export function AiAnalysisTab() {
                   <TableHead className="sticky left-0 z-10 w-[360px] bg-white py-2">Driver</TableHead>
                   <TableHead className="w-[42%] py-2">Insight</TableHead>
                   <TableHead className="py-2 text-right">Score</TableHead>
-                  <TableHead className="py-2">Status</TableHead>
+                  <TableHead className="py-2 text-right">Status</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -388,7 +388,7 @@ export function AiAnalysisTab() {
                         </TableCell>
                         <TableCell className="py-3 text-slate-600">{driver.assessment}</TableCell>
                         <TableCell className="py-3 text-right font-medium tabular-nums text-slate-800">{typeof driver.score === "number" ? driver.score : "—"}</TableCell>
-                        <TableCell className="py-3"><StatusPill tone={bandTone(driver.band) as any}>{driver.band}</StatusPill></TableCell>
+                        <TableCell className="py-3 text-right"><StatusPill tone={bandTone(driver.band) as any} fixedWidth="w-[84px]">{driver.band}</StatusPill></TableCell>
                       </TableRow>
                     ))}
                   </React.Fragment>

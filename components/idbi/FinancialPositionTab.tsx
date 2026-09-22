@@ -415,10 +415,10 @@ export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: 
         <div className="mt-4 rounded-lg border border-slate-200 bg-white p-4"><div className="mb-3 flex items-center justify-between gap-3"><h3 className="text-sm font-semibold text-slate-900">Asset Allocation</h3><StatusPill tone="blue">IDBI ₹14.20L · 56.6%</StatusPill></div><div className="flex h-5 overflow-hidden rounded-full bg-slate-100" aria-label="Asset allocation">{fp.allocation.map(item => <div key={item.name} title={`${item.name}: ${item.percent}%`} style={{ width: `${item.percent}%`, backgroundColor: item.color }} />)}</div><div className="mt-3 flex flex-wrap gap-x-4 gap-y-2">{fp.allocation.map(item => <span key={item.name} className="inline-flex items-center gap-1.5 text-[11px] text-slate-600"><i className="size-2 rounded-full" style={{ backgroundColor: item.color }} />{item.name} · {item.percent}%</span>)}</div></div>
         */}
         <div className="mt-3">
-          <CompactTable minWidth={1060}>
+          <CompactTable minWidth={900}>
             <TableHead>
               <Th>Allocation</Th><Th right>Value</Th><Th right>% of Tracked Assets</Th>
-              <Th right>Held with IDBI</Th><Th right>Held Elsewhere</Th><Th>Current Position</Th><Th right>Details</Th>
+              <Th right>Held with IDBI</Th><Th right>Held Elsewhere</Th><Th right>Details</Th>
             </TableHead>
             <tbody>
               {fp.allocation.map((item: any) => {
@@ -435,7 +435,6 @@ export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: 
                     <Td right className="tabular-nums">{item.percent}%</Td>
                     <Td right className="tabular-nums">{item.idbi}</Td>
                     <Td right className="tabular-nums">{item.other}</Td>
-                    <Td className="text-slate-600">{item.position}</Td>
                     <Td right className="whitespace-nowrap">
                       <ActionButton variant="ghost" className="ml-auto" onClick={() => setSelectedHolding(fp.holdingDetails.find(group => group.category === item.name) ?? null)}>View <ChevronRight /></ActionButton>
                     </Td>

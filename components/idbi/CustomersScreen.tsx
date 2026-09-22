@@ -15,7 +15,7 @@ import { KeyMetrics } from "@/components/custom/KeyMetrics";
 import { CustomTableView, Column } from "@/components/custom/CustomTableView";
 import { BubbleTag } from "@/components/custom/BubbleTag";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Toast } from "@/components/idbi/workspace-ui";
+import { Toast, categoryColor, tierColor } from "@/components/idbi/workspace-ui";
 import { ModusAgentPanel } from "@/components/idbi/ModusAgentPanel";
 import CustomListFilter, {
   PrimaryFilterGroup,
@@ -42,18 +42,6 @@ const priorityLabel = (p: string) => `${PRIORITY_RANK_LABEL[p] ?? "P3"} · ${p}`
 
 const healthColor = (band: string) =>
   band === "Good" ? "green" : band === "Poor" ? "red" : "yellow";
-
-/** Business or Individual — what kind of customer this is. */
-const categoryColor = (category: string) => (category === "Business" ? "indigo" : "teal");
-
-/** Relationship tier, coloured to its metal: Platinum · Gold · Silver · Bronze. */
-const tierColor = (tier: string) =>
-  tier === "Platinum" ? "platinum"
-    : tier === "Gold" ? "gold"
-    : tier === "Silver" ? "silver"
-    : tier === "Bronze" ? "bronze"
-    // A prospect has not earned a tier yet — plain grey, not a metal.
-    : "gray";
 
 type Scope = "my" | "team";
 

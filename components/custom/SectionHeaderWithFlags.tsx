@@ -2,6 +2,7 @@ import { FC, useState, useEffect, ReactNode } from 'react';
 import { ChevronDown, ChevronUp, Flag, Plus, CheckCircle, XCircle, Info, AlertTriangle, AlertCircle, Download } from 'lucide-react';
 import { BubbleTag } from '@/components/custom/BubbleTag';
 import { motion, AnimatePresence } from 'framer-motion';
+import { toggleLabelWithCount } from "@/components/idbi/ToggleCount"
 import { cn } from "@/lib/utils";
 import { LucideIcon } from 'lucide-react';
 import { useReportStore } from "@/app/store/report/reportStore";
@@ -294,7 +295,7 @@ export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
                       {toggle.icons && toggle.icons[option] && (
                         <span className="flex-shrink-0">{toggle.icons[option]}</span>
                       )}
-                      <span>{option}</span>
+                      {toggleLabelWithCount(option, toggle.selectedOption === option)}
                     </button>
                   ))}
                 </div>
@@ -321,7 +322,7 @@ export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
                       {toggleIcons && toggleIcons[option] && (
                         <span className="flex-shrink-0">{toggleIcons[option]}</span>
                       )}
-                      <span>{option}</span>
+                      {toggleLabelWithCount(option, selectedToggleOption === option)}
                     </button>
                   ))}
                 </div>
