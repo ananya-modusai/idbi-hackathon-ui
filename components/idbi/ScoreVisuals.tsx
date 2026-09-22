@@ -7,7 +7,7 @@
 
 import * as React from "react";
 import {
-  Area, AreaChart, CartesianGrid, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis,
+  Area, AreaChart, CartesianGrid, Customized, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis,
 } from "recharts";
 import { cn } from "@/lib/utils";
 
@@ -74,13 +74,15 @@ const arcPath = (cx: number, cy: number, r: number, startAngle: number, endAngle
 };
 
 export function ScoreGauge({
-  score, min = 300, max = 900, bands = CIBIL_BANDS, caption,
+  score, min = 300, max = 900, bands = CIBIL_BANDS, caption, showBandRange = false,
 }: {
   score: number;
   min?: number;
   max?: number;
   bands?: GaugeBand[];
   caption?: string;
+  /** Prints the band the score sits in — "Range 720 – 780" — under the arc. */
+  showBandRange?: boolean;
 }) {
   const W = 320, H = 190, cx = W / 2, cy = 160, r = 120, stroke = 16;
   const toAngle = (v: number) => 180 + ((v - min) / (max - min)) * 180;
@@ -118,7 +120,9 @@ export function ScoreGauge({
 
   return (
     <div ref={hostRef} className="flex flex-col items-center">
-      <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Score ${score} of ${max}`}>
+      {/* Scales with its column rather than forcing 320px — the gauge now shares the
+          panel with the movement facts beside it. */}
+      <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full max-w-[300px]" role="img" aria-label={`Score ${score} of ${max}`}>
         {/* Track */}
         <path d={arcPath(cx, cy, r, 180, 360)} fill="none" stroke="#f1f5f9" strokeWidth={stroke} strokeLinecap="round" />
         {/* Bands */}
@@ -136,13 +140,15 @@ export function ScoreGauge({
         {/* Marker */}
         <circle cx={marker.x} cy={marker.y} r={11} fill="white" stroke={band.color} strokeWidth={4} />
         <circle cx={marker.x} cy={marker.y} r={4} fill={band.color} />
-        {/* Value */}
-        <text x={cx} y={cy - 34} textAnchor="middle" className="fill-slate-900" style={{ fontSize: 44, fontWeight: 700, letterSpacing: "0.04em" }}>{shownScore}</text>
-        <text x={cx} y={cy - 10} textAnchor="middle" style={{ fontSize: 14, fontWeight: 600, fill: band.color }}>{band.label}</text>
+        {/* Value, with the band name on a soft pill beneath it */}
+        <text x={cx} y={cy - 40} textAnchor="middle" className="fill-slate-900" style={{ fontSize: 44, fontWeight: 700, letterSpacing: "0.04em" }}>{shownScore}</text>
+        <rect x={cx - 48} y={cy - 31} width={96} height={24} rx={12} fill={band.color} fillOpacity={0.14} />
+        <text x={cx} y={cy - 14} textAnchor="middle" style={{ fontSize: 13, fontWeight: 600, fill: band.color }}>{band.label}</text>
         {/* Range ends */}
         <text x={cx - r} y={cy + 26} textAnchor="middle" style={{ fontSize: 12, fill: "#94a3b8" }}>{min}</text>
         <text x={cx + r} y={cy + 26} textAnchor="middle" style={{ fontSize: 12, fill: "#94a3b8" }}>{max}</text>
       </svg>
+      {showBandRange && <p className="-mt-1 text-sm text-slate-500">Range {band.from} – {band.to}</p>}
       {caption && <p className="mt-1 text-xs text-slate-500">{caption}</p>}
     </div>
   );
@@ -163,7 +169,7 @@ export interface ScorePoint {
  */
 export function GradientScoreLine({
   points, domain, bands, threshold, thresholdLabel, showValueLabels = false, height = 260,
-  colourRange, annotations = false,
+  colourRange, annotations = false, dropLines = false,
 }: {
   points: ScorePoint[];
   domain: [number, number];
@@ -176,6 +182,8 @@ export function GradientScoreLine({
   colourRange?: [number, number];
   /** Render each point's note as a callout under the line. */
   annotations?: boolean;
+  /** Dashed verticals dropping from each dot down to the axis. */
+  dropLines?: boolean;
 }) {
   const values = points.map(p => p.score);
   const [lo, hi] = colourRange ?? [Math.min(...values), Math.max(...values)];
@@ -218,21 +226,31 @@ export function GradientScoreLine({
             <linearGradient id={`stroke-${id}`} gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100%" y2="0">
               {stops.map((s, i) => <stop key={i} offset={`${s.offset}%`} stopColor={s.color} />)}
             </linearGradient>
-            {/* Fill follows the same left-to-right ramp as the line, then fades out
-                downwards through the mask below — so the tint under a dip is red and
-                under a peak is green. */}
-            <linearGradient id={`fill-${id}`} gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100%" y2="0">
-              {stops.map((st, i) => <stop key={i} offset={`${st.offset}%`} stopColor={st.color} stopOpacity={0.35} />)}
-            </linearGradient>
-            <linearGradient id={`fade-${id}`} x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#ffffff" stopOpacity={1} />
-              <stop offset="100%" stopColor="#ffffff" stopOpacity={0} />
-            </linearGradient>
-            <mask id={`mask-${id}`}>
-              <rect x="0" y="0" width="100%" height="100%" fill={`url(#fade-${id})`} />
-            </mask>
           </defs>
           <CartesianGrid vertical={false} stroke="#e2e8f0" strokeDasharray="3 3" />
+          {dropLines && (
+            <Customized
+              component={(props: any) => {
+                const xAxis: any = Object.values(props.xAxisMap ?? {})[0];
+                const yAxis: any = Object.values(props.yAxisMap ?? {})[0];
+                if (!xAxis?.scale || !yAxis?.scale) return null;
+                const bottom = props.offset.top + props.offset.height;
+                return (
+                  <g>
+                    {points.map((pt, i) => {
+                      const band = xAxis.scale.bandwidth ? xAxis.scale.bandwidth() : 0;
+                      const x = (xAxis.scale(pt.label) ?? 0) + band / 2;
+                      const y = yAxis.scale(pt.score);
+                      return (
+                        <line key={`drop-${i}`} x1={x} x2={x} y1={y} y2={bottom}
+                          stroke={colourFor(pt.score)} strokeOpacity={0.4} strokeWidth={1} strokeDasharray="3 3" />
+                      );
+                    })}
+                  </g>
+                );
+              }}
+            />
+          )}
           <XAxis dataKey="label" tick={{ fontSize: 10, fill: "#64748b" }} axisLine={false} tickLine={false} minTickGap={12} />
           <YAxis domain={domain} tick={{ fontSize: 10, fill: "#64748b" }} axisLine={false} tickLine={false} width={44} />
           <Tooltip
@@ -272,8 +290,7 @@ export function GradientScoreLine({
             dataKey="score"
             stroke={`url(#stroke-${id})`}
             strokeWidth={3}
-            fill={`url(#fill-${id})`}
-            mask={`url(#mask-${id})`}
+            fill="none"
             dot={(props: any) => {
               const { cx, cy, payload, index } = props;
               return <circle key={index} cx={cx} cy={cy} r={4.5} fill={colourFor(payload.score)} stroke="white" strokeWidth={2} />;

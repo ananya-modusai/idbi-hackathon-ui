@@ -151,6 +151,8 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
   }, [cibilAll, cibilRange]);
   const latestCibil = cibilAll[cibilAll.length - 1];
   const cibilDelta = latestCibil.score - (cibilPoints[0]?.score ?? latestCibil.score);
+  const healthDelta = latestHealth.score - (healthPoints[0]?.score ?? latestHealth.score);
+  const healthDeltaFrom = healthPoints[0]?.label ?? "";
   const contacts = [
     { label: "Mobile Number", value: customer.contacts.mobile, icon: Phone },
     { label: "Email", value: customer.contacts.email, icon: Mail },
@@ -337,19 +339,31 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
             </Select>
           }
         />
-        <div className="grid gap-4 rounded-lg border border-slate-200 bg-white p-4 lg:grid-cols-[320px_1fr]">
-          <div className="flex flex-col items-center justify-center border-b border-slate-100 pb-4 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-4">
-            <ScoreGauge score={latestCibil.score} caption={`Reported ${new Date(latestCibil.date).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" })}`} />
-            <div className="mt-1 flex items-center gap-2 text-xs">
-              <span className={cn("font-semibold", cibilDelta >= 0 ? "text-emerald-700" : "text-rose-600")}>
-                {cibilDelta >= 0 ? "↑" : "↓"} {Math.abs(cibilDelta)} points
-              </span>
-              <span className="text-slate-500">over {cibilRangeLabel.toLowerCase()}</span>
+        <div className="grid gap-4 rounded-lg border border-slate-200 bg-white p-4 lg:grid-cols-[420px_1fr]">
+          <div className="flex items-center gap-4 border-b border-slate-100 pb-4 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-4">
+            <div className="min-w-0 flex-1">
+              <ScoreGauge score={latestCibil.score} showBandRange />
+            </div>
+            {/* What moved, and when the next reading lands. */}
+            <div className="w-[142px] shrink-0 space-y-3.5 border-l border-slate-100 pl-4">
+              <div>
+                <p className={cn("flex items-center gap-1 text-base font-bold", cibilDelta >= 0 ? "text-emerald-600" : "text-rose-600")}>
+                  {cibilDelta >= 0 ? "↑" : "↓"} {cibilDelta >= 0 ? "+" : "−"}{Math.abs(cibilDelta)} points
+                </p>
+                <p className="text-xs text-slate-500">since {cibilRangeLabel.toLowerCase().replace("last ", "last ")}</p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-slate-900">Next update</p>
+                <p className="text-xs text-slate-500">in ~2 weeks</p>
+              </div>
+              <p className="text-xs text-slate-400">
+                Reported {new Date(latestCibil.date).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" })}
+              </p>
             </div>
           </div>
           <div>
-            <GradientScoreLine points={cibilPoints} domain={[600, 820]} bands={CIBIL_BANDS} colourRange={[650, 780]} height={240} />
-            <BandLegend bands={CIBIL_BANDS} className="mt-2 px-2" />
+            <BandLegend bands={CIBIL_BANDS} className="mb-2 px-2" />
+            <GradientScoreLine points={cibilPoints} domain={[600, 820]} bands={CIBIL_BANDS} colourRange={[650, 780]} height={216} dropLines />
           </div>
         </div>
       </section>
@@ -371,24 +385,59 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
           }
         />
         <div className="rounded-lg border border-slate-200 bg-white p-4">
-          <div className="mb-3">
-            <h3 className="text-base font-semibold text-slate-900">Score over time</h3>
-            <p className="mt-0.5 text-xs text-slate-500">
-              Improvement, decline and recovery · {healthPoints[0]?.label} – {healthPoints[healthPoints.length - 1]?.label}
-            </p>
+          {/* Score beside the trend, not above it: a quarter of the width, capped. */}
+          <div className="flex flex-col gap-6 lg:flex-row">
+            <div className="w-full shrink-0 border-b border-slate-100 pb-4 lg:w-1/4 lg:max-w-[320px] lg:border-b-0 lg:border-r lg:pb-0 lg:pr-5">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className={cn("text-4xl font-bold leading-none", bandText(latestHealth.score))}>{latestHealth.score}</span>
+                <StatusPill tone={bandPill(latestHealth.score)}>{healthBandLabel(latestHealth.score)}</StatusPill>
+              </div>
+              <p className={cn("mt-1.5 text-sm font-semibold", healthDelta >= 0 ? "text-emerald-600" : "text-rose-600")}>
+                {healthDelta >= 0 ? "↑" : "↓"} {healthDelta >= 0 ? "+" : "−"}{Math.abs(healthDelta)} points since {healthDeltaFrom}
+              </p>
+
+              <div className="mt-4 flex items-center gap-1.5">
+                <p className="text-sm font-semibold text-slate-900">Score Drivers</p>
+                <InfoTip text="The three measures behind the score. Each is scored out of 100 and carries equal weight." />
+              </div>
+              <div className="mt-2 space-y-1.5">
+                {customer.healthDrivers.map((driver, index) => {
+                  const DIcon = [Coins, BarChart3, ShieldCheck][index] ?? Activity;
+                  return (
+                    <div key={driver.name} className={cn("rounded-lg px-2.5 py-2", driver.score >= 75 ? "bg-emerald-50/70" : "bg-blue-50/60")}>
+                      <div className="flex items-center gap-2">
+                        <span className="grid size-6 shrink-0 place-items-center rounded-md bg-white text-blue-600 shadow-sm"><DIcon className="size-3.5" /></span>
+                        <span className="min-w-0 flex-1 truncate text-xs font-medium text-slate-800">{driver.name}</span>
+                        <span className={cn("shrink-0 text-base font-bold tabular-nums", bandText(driver.score))}>{driver.score}</span>
+                      </div>
+                      <div className="mt-1 pl-8">
+                        <StatusPill tone={driver.score >= 75 ? "emerald" : "blue"}>{driver.band}</StatusPill>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="min-w-0 flex-1">
+              <div className="mb-3">
+                <h3 className="text-base font-semibold text-slate-900">Score over time</h3>
+                <p className="mt-0.5 text-xs text-slate-500">
+                  Improvement, decline and recovery · {healthPoints[0]?.label} – {healthPoints[healthPoints.length - 1]?.label}
+                </p>
+              </div>
+              <BandLegend bands={HEALTH_BANDS} />
+              <GradientScoreLine
+                points={healthPoints}
+                domain={[0, 100]}
+                bands={HEALTH_BANDS}
+                colourRange={[55, 85]}
+                showValueLabels
+                dropLines
+                height={300}
+              />
+            </div>
           </div>
-          <BandLegend bands={HEALTH_BANDS} />
-          <GradientScoreLine
-            points={healthPoints}
-            domain={[0, 100]}
-            bands={HEALTH_BANDS}
-            colourRange={[55, 85]}
-            threshold={75}
-            thresholdLabel="75 (Good threshold)"
-            showValueLabels
-            annotations
-            height={300}
-          />
         </div>
       </section>
 

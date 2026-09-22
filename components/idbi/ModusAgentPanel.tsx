@@ -33,7 +33,7 @@ interface Turn {
 
 import probeReplies from "@/app/idbi-data/agent-probe-replies.json";
 
-interface Suggestion { label: string; reply: string; trail: Trail }
+interface Suggestion { label: string; reply: string; trail: Trail; /** Fired when this starter is asked — used by the workspace filter demo. */ action?: string }
 
 interface ModusAgentPanelProps {
   customerName: string;
@@ -42,16 +42,20 @@ interface ModusAgentPanelProps {
   openMatters: number;
   seedPrompt?: string;
   onClose: () => void;
+  /** Extra starters for the screen the panel is opened from. */
+  extraSuggestions?: Suggestion[];
+  /** Called with a starter's `action` id once its reply has been played. */
+  onAction?: (action: string) => void;
 }
 
 const now = () => new Date().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", hour12: false });
 
 export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
-  customerName, healthScore, healthBand, openMatters, seedPrompt, onClose,
+  customerName, healthScore, healthBand, openMatters, seedPrompt, onClose, extraSuggestions = [], onAction,
 }) => {
   const first = customerName.split(" ")[0];
 
-  const suggestions: Suggestion[] = [
+  const baseSuggestions: Suggestion[] = [
     {
       label: "Summarise the open matters",
       trail: { label: "Checked the relationship feed", runningLabel: "Checking the relationship feed", steps: [
@@ -82,6 +86,8 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
   ];
 
   // Prompts fired by workspace buttons (Run pre-check, Check eligibility, the Credit
+  const suggestions: Suggestion[] = [...extraSuggestions, ...baseSuggestions];
+
   // Cards panel) get their own trail and answer — otherwise a demo lands on the fallback.
   const seeded: Suggestion[] = [
     {
@@ -120,6 +126,7 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
   // A reply in flight: the trail lands step by step, then the prose types out.
   const [stream, setStream] = useState<{ trail: Trail; steps: number; running: boolean; text: string; chars: number } | null>(null);
   const [pending, setPending] = useState<{ reply: string; trail: Trail; key: number } | null>(null);
+  const [pendingAction, setPendingAction] = useState<string | null>(null);
 
   // Past conversations. A thread is archived when a new chat is started, so History
   // always offers what you were last working on.
@@ -254,6 +261,7 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
         setStream(null);
         setTurns(t => [...t, { role: "agent", text: reply, at: now(), trail }]);
         setPending(null);
+        setPendingAction(current => { if (current) onAction?.(current); return null; });
       });
     });
 
@@ -261,6 +269,7 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
   }, [pending]);
 
   const ask = (text: string, files?: Array<{ name: string; sizeLabel: string }>) => {
+    const acting = suggestions.find(s => s.label === text && s.action);
     // Probe replies are keyed by the exact prompt the Alerts tab and the insurance
     // recommendations hand over, so a "Know more" lands on a worked answer rather than
     // the generic fallback.
@@ -272,6 +281,7 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
       match?.trail ?? fallbackTrail,
       files
     );
+    if (acting?.action) setPendingAction(acting.action);
   };
 
   const send = () => {

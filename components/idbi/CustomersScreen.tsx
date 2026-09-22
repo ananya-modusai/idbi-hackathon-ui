@@ -1,7 +1,7 @@
 "use client";
 
 import { FC, useMemo, useState } from "react";
-import { CalendarClock, ContactRound, LayoutGrid, MessageSquareText, MoreHorizontal, Users } from "lucide-react";
+import { CalendarClock, ContactRound, LayoutGrid, MessageSquareText, MoreHorizontal, Sparkles, Users, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,6 +16,7 @@ import { CustomTableView, Column } from "@/components/custom/CustomTableView";
 import { BubbleTag } from "@/components/custom/BubbleTag";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Toast } from "@/components/idbi/workspace-ui";
+import { ModusAgentPanel } from "@/components/idbi/ModusAgentPanel";
 import CustomListFilter, {
   PrimaryFilterGroup,
   SecondaryFilterGroup,
@@ -64,12 +65,18 @@ export const CustomersScreen: FC<{
   const [scope, setScope] = useState<Scope>("my");
   const [searchQuery, setSearchQuery] = useState("");
   const [prioritySelected, setPrioritySelected] = useState<string[]>([]);
+  const [tierSelected, setTierSelected] = useState<string[]>([]);
+  const [relationshipSelected, setRelationshipSelected] = useState<string[]>([]);
+  const [categorySelected, setCategorySelected] = useState<string[]>([]);
   const [sortSelected, setSortSelected] = useState<string[]>(["priority"]);
   // Who each customer is assigned to. `saved` is what is on file; `draft` is what the
   // RM has changed on screen but not committed — any difference turns on edit mode.
   const [savedAssignees, setSavedAssignees] = useState<Record<string, string>>({});
   const [draftAssignees, setDraftAssignees] = useState<Record<string, string>>({});
   const [toast, setToast] = useState<string | null>(null);
+  const [agentOpen, setAgentOpen] = useState(false);
+  // A filter the agent applied on the user's behalf — shown as a removable chip.
+  const [agentFilter, setAgentFilter] = useState<{ id: string; label: string } | null>(null);
 
   const all = screenData.customers as Customer[];
 
@@ -98,6 +105,33 @@ export const CustomersScreen: FC<{
     []
   );
 
+  const tierOptions = useMemo(
+    () => [
+      { value: "Platinum", label: "Platinum" },
+      { value: "Gold", label: "Gold" },
+      { value: "Silver", label: "Silver" },
+      { value: "Bronze", label: "Bronze" },
+      { value: "Untiered", label: "No tier" },
+    ],
+    []
+  );
+
+  const relationshipOptions = useMemo(
+    () => [
+      { value: "Existing", label: "Existing" },
+      { value: "Prospect · NTB", label: "Prospect · NTB" },
+    ],
+    []
+  );
+
+  const categoryOptions = useMemo(
+    () => [
+      { value: "Business", label: "Business" },
+      { value: "Individual", label: "Individual" },
+    ],
+    []
+  );
+
   const sortOptions = useMemo(
     () => [
       { value: "priority", label: "Lead priority" },
@@ -110,6 +144,9 @@ export const CustomersScreen: FC<{
   const handleClearFilters = () => {
     setSearchQuery("");
     setPrioritySelected([]);
+    setTierSelected([]);
+    setRelationshipSelected([]);
+    setCategorySelected([]);
     setSortSelected(["priority"]);
     setFilterState((prev) => {
       const cleared = (r: Record<string, string[]>) =>
@@ -137,7 +174,7 @@ export const CustomersScreen: FC<{
         singleSelect: true,
         showAllOption: true,
         showLabel: true,
-        maxWidth: "330px",
+        width: "240px",
       },
       {
         id: "sort",
@@ -149,22 +186,45 @@ export const CustomersScreen: FC<{
         singleSelect: true,
         showAllOption: false,
         showLabel: true,
-        maxWidth: "330px",
-        // actionElements are gathered per filter ROW, so hanging Clear Filters off this
-        // primary group puts the button in the Lead Priority / Sort By row.
-        actionElements: (
-          <Button
-            onClick={handleClearFilters}
-            variant="outline"
-            className="h-10 w-auto border-gray-300 px-3 font-semibold text-gray-600 shadow-sm transition-all active:scale-95 hover:bg-gray-50"
-          >
-            Clear Filters
-          </Button>
-        ),
+        width: "250px",
+      },
+      {
+        id: "category",
+        label: "Category",
+        type: "multiselect" as const,
+        options: categoryOptions,
+        selectedValues: categorySelected,
+        onFilterChange: (vals: string[]) => setCategorySelected(vals),
+        showAllOption: true,
+        showLabel: true,
+        width: "205px",
+      },
+      {
+        id: "relationship",
+        label: "Relationship",
+        type: "multiselect" as const,
+        options: relationshipOptions,
+        selectedValues: relationshipSelected,
+        onFilterChange: (vals: string[]) => setRelationshipSelected(vals),
+        showAllOption: true,
+        showLabel: true,
+        width: "235px",
+      },
+      {
+        id: "tier",
+        label: "Tier",
+        type: "multiselect" as const,
+        options: tierOptions,
+        selectedValues: tierSelected,
+        onFilterChange: (vals: string[]) => setTierSelected(vals),
+        showAllOption: true,
+        showLabel: true,
+        width: "165px",
       },
     ],
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [priorityOptions, prioritySelected, sortOptions, sortSelected]
+    [priorityOptions, prioritySelected, sortOptions, sortSelected, categoryOptions, categorySelected,
+      relationshipOptions, relationshipSelected, tierOptions, tierSelected]
   );
 
   const secondaryFilterGroups = useMemo<SecondaryFilterGroup[]>(() => [], []);
@@ -181,8 +241,31 @@ export const CustomersScreen: FC<{
         onSearchChange: (val: string) => setSearchQuery(val),
         showLabel: false,
         searchPlaceholder: "Search by customer name, ID, location...",
+        // A max width makes the search flex-grow instead of claiming the whole row,
+        // so the agent button stays on the same line.
+        maxWidth: "100%",
+        // Sits at the right of the search row, as the Clear Filters button does on the
+        // filter row above it.
+        actionElements: (
+          <span className="flex shrink-0 items-center gap-3">
+            <Button
+              onClick={handleClearFilters}
+              variant="outline"
+              className="h-10 w-auto whitespace-nowrap border-gray-300 px-3 font-semibold text-gray-600 shadow-sm transition-all active:scale-95 hover:bg-gray-50"
+            >
+              Clear Filters
+            </Button>
+            <Button
+              onClick={() => setAgentOpen(true)}
+              className="h-10 gap-1.5 whitespace-nowrap bg-blue-600 px-3.5 font-semibold text-white shadow-sm transition-all active:scale-95 hover:bg-blue-700"
+            >
+              <Sparkles className="size-4" /> Modus Agent
+            </Button>
+          </span>
+        ),
       },
     ],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [searchQuery]
   );
@@ -197,6 +280,9 @@ export const CustomersScreen: FC<{
   const rows = useMemo(() => {
     let list = scope === "my" ? all.filter((c) => c.relationship_owner === MY_RM) : all;
     if (prioritySelected.length) list = list.filter((c) => prioritySelected.includes(c.lead_priority));
+    if (tierSelected.length) list = list.filter((c) => tierSelected.includes(c.tier));
+    if (relationshipSelected.length) list = list.filter((c) => relationshipSelected.includes(c.relationship));
+    if (categorySelected.length) list = list.filter((c) => categorySelected.includes(c.category));
     const q = searchQuery.trim().toLowerCase();
     if (q) {
       list = list.filter(
@@ -206,6 +292,9 @@ export const CustomersScreen: FC<{
           c.location.toLowerCase().includes(q)
       );
     }
+    if (agentFilter?.id === "needs-attention") list = list.filter(c => c.health.score < 70);
+    if (agentFilter?.id === "prospects") list = list.filter(c => c.relationship.startsWith("Prospect"));
+
     const key = sortSelected[0] ?? "priority";
     const sorted = [...list];
     if (key === "priority")
@@ -213,7 +302,7 @@ export const CustomersScreen: FC<{
     else if (key === "health") sorted.sort((a, b) => b.health.score - a.health.score);
     else sorted.sort((a, b) => a.name.localeCompare(b.name));
     return sorted;
-  }, [all, scope, prioritySelected, searchQuery, sortSelected]);
+  }, [all, scope, prioritySelected, tierSelected, relationshipSelected, categorySelected, searchQuery, sortSelected, agentFilter]);
 
   const metrics = useMemo(
     () => [
@@ -224,6 +313,55 @@ export const CustomersScreen: FC<{
     ],
     [rows]
   );
+
+  // Demo: asking the agent to filter the book actually filters the table once the
+  // answer has played. The figures quoted are the ones on screen.
+  const scopedRows = scope === "my" ? all.filter(c => c.relationship_owner === MY_RM) : all;
+  const attentionCount = scopedRows.filter(c => c.health.score < 70).length;
+  const prospectCount = scopedRows.filter(c => c.relationship.startsWith("Prospect")).length;
+
+  const agentStarters = [
+    {
+      label: "Filter my book to customers who need attention",
+      action: "needs-attention",
+      trail: {
+        label: "Filtered the customer book",
+        runningLabel: "Filtering the customer book",
+        steps: [
+          { text: `Read ${scopedRows.length} customers in this view` },
+          { text: "Checked the financial-health band on each" },
+          { text: `Applied filter — health below 70 · ${attentionCount} match` },
+        ],
+      },
+      reply: `**${attentionCount} of ${scopedRows.length} customers are below a financial-health score of 70.** The table is filtered to them.\n\n${scopedRows
+        .filter(c => c.health.score < 70)
+        .sort((a, b) => a.health.score - b.health.score)
+        .map(c => `- **${c.name}** — ${c.health.score}/100 (${c.health.band}). ${c.health.drivers[0]}.`)
+        .join("\n")}\n\nClear the **Agent filter** chip above the table to see the full book again.`,
+    },
+    {
+      label: "Show only the prospects in my book",
+      action: "prospects",
+      trail: {
+        label: "Filtered the customer book",
+        runningLabel: "Filtering the customer book",
+        steps: [
+          { text: `Read ${scopedRows.length} customers in this view` },
+          { text: "Split existing relationships from prospects" },
+          { text: `Applied filter — Prospect · NTB · ${prospectCount} match` },
+        ],
+      },
+      reply: `**${prospectCount} of ${scopedRows.length} are prospects rather than existing customers.** The table is filtered to them.\n\n${scopedRows
+        .filter(c => c.relationship.startsWith("Prospect"))
+        .map(c => `- **${c.name}** — ${c.opportunity.title}. ${c.opportunity.reason}.`)
+        .join("\n")}\n\nNeither holds a product with us yet, so both are acquisition conversations.`,
+    },
+  ];
+
+  const applyAgentFilter = (action: string) => {
+    if (action === "needs-attention") setAgentFilter({ id: action, label: "Health below 70" });
+    if (action === "prospects") setAgentFilter({ id: action, label: "Prospects only" });
+  };
 
   const columns: Column[] = [
     {
@@ -303,7 +441,10 @@ export const CustomersScreen: FC<{
       header: "Tier",
       width: "9%",
       minWidth: "118px",
-      render: (v: string) => <BubbleTag text={v} color={tierColor(v)} withBorder={true} fixedWidth="w-[88px]" />,
+      render: (v: string) =>
+        v === "Untiered"
+          ? <span className="text-gray-400">-</span>
+          : <BubbleTag text={v} color={tierColor(v)} withBorder={true} fixedWidth="w-[88px]" />,
     },
     {
       key: "health",
@@ -311,26 +452,6 @@ export const CustomersScreen: FC<{
       width: "11%",
       minWidth: "142px",
       render: (h: any) => <BubbleTag text={`${h.score}/100 · ${h.band}`} color={healthColor(h.band)} withBorder={true} />,
-    },
-    {
-      key: "requests",
-      header: "Requests & Applications",
-      width: "11%",
-      minWidth: "142px",
-      render: (reqs: any[]) => {
-        if (!reqs?.length) return <span className="text-gray-400">—</span>;
-        const first = reqs[0];
-        return (
-          <div className="min-w-0">
-            <span className="block text-gray-800">{first.product}</span>
-            <span className="block text-gray-800">{first.stage}</span>
-            <span className="mt-0.5 block text-xs text-gray-500">
-              {first.date}
-              {reqs.length > 1 ? ` · +${reqs.length - 1} more` : ""}
-            </span>
-          </div>
-        );
-      },
     },
     {
       key: "opportunity",
@@ -379,7 +500,8 @@ export const CustomersScreen: FC<{
   ];
 
   return (
-    <div className="flex min-h-0 min-w-0 flex-1 flex-col">
+    <div className="flex min-h-0 min-w-0 flex-1">
+      <div className="flex min-h-0 min-w-0 flex-1 flex-col">
       <Toast message={toast} onDone={() => setToast(null)} />
 
       {/* Tab bar — pinned to the very top of the content card (cam-ui pattern). */}
@@ -452,15 +574,39 @@ export const CustomersScreen: FC<{
               it scrolls sideways while Lead Priority and Customer ID stay pinned.
               CustomTableView renders the table at width:100% with a fixed layout, so
               the floor has to be set on the table element itself. */}
+          {agentFilter && (
+            <div className="mb-3 flex items-center gap-2">
+              <span className="text-xs font-medium text-gray-500">Agent filter</span>
+              <span className="inline-flex items-center gap-1.5 rounded-md border border-blue-200 bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-700">
+                <Sparkles className="size-3.5" /> {agentFilter.label}
+                <button type="button" onClick={() => setAgentFilter(null)} aria-label="Clear agent filter" className="ml-0.5 text-blue-500 hover:text-blue-800">
+                  <X className="size-3.5" />
+                </button>
+              </span>
+            </div>
+          )}
           <CustomTableView
             columns={columns}
             data={rows}
-            className={cn("w-full", scope === "team" ? "[&_table]:min-w-[1650px]" : "[&_table]:min-w-[1500px]")}
+            className={cn("w-full", scope === "team" ? "[&_table]:min-w-[1500px]" : "[&_table]:min-w-[1360px]")}
             initialRowLimit={10}
             onRowClick={(row) => onOpenCustomer?.(row)}
           />
         </div>
       </div>
+      </div>
+
+      {agentOpen && (
+        <ModusAgentPanel
+          customerName={scope === "my" ? "your book" : "the team book"}
+          healthScore={Math.round(scopedRows.reduce((n, c) => n + c.health.score, 0) / Math.max(scopedRows.length, 1))}
+          healthBand="Good"
+          openMatters={scopedRows.reduce((n, c) => n + c.requests.length, 0)}
+          extraSuggestions={agentStarters}
+          onAction={applyAgentFilter}
+          onClose={() => setAgentOpen(false)}
+        />
+      )}
     </div>
   );
 };

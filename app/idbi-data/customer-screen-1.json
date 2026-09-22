@@ -551,36 +551,17 @@
       "category": "Business",
       "location": "Ludhiana, PB",
       "lead_priority": "High",
-      "relationship": "Existing",
-      "tier": "Platinum",
+      "relationship": "Prospect · NTB",
+      "tier": "Untiered",
       "relationship_owner": "Ananya Rao",
-      "products": [
-        {
-          "type": "Current Account",
-          "account": "•••• 4410",
-          "balance": "₹8.42L",
-          "status": "Active"
-        },
-        {
-          "type": "Cash Credit",
-          "account": "•••• 4411",
-          "balance": "₹52.00L limit",
-          "status": "Active"
-        },
-        {
-          "type": "Savings",
-          "account": "•••• 4412",
-          "balance": "₹2.15L",
-          "status": "Active"
-        }
-      ],
+      "products": [],
       "requests": [
         {
           "id": "REQ-EPC-3301",
           "product": "Export Packing Credit",
-          "stage": "Under review",
+          "stage": "Enquired",
           "date": "2026-09-17",
-          "details": "Pre-shipment limit enhancement filed against confirmed export orders.",
+          "details": "Enquired about pre-shipment finance against confirmed export orders; banks elsewhere today.",
           "linked_opportunity": true
         }
       ],
@@ -589,42 +570,42 @@
         "band": "Good",
         "assessment_date": "2026-09-19",
         "drivers": [
-          "Export receipts consistent across four quarters",
-          "Cash-credit utilisation at 61%",
-          "No overdue reported"
+          "Bureau record clean across four years",
+          "Export receipts consistent at the current bank",
+          "No IDBI relationship to assess internally"
         ],
         "sources": [
-          "Customer summary",
-          "Account holdings",
-          "Reported conduct"
+          "Bureau",
+          "Customer declaration",
+          "Export documentation"
         ]
       },
       "signals": [
         {
-          "label": "Export orders rising",
-          "evidence": "Inward remittances up 34% year on year against confirmed orders.",
-          "source": "Remittance records",
+          "label": "Banks elsewhere",
+          "evidence": "Cash credit and current account are held with a private bank; no IDBI relationship on record.",
+          "source": "Customer declaration",
           "date": "2026-09-19"
         },
         {
-          "label": "Forex exposure unhedged",
-          "evidence": "No forward contracts booked despite USD receivables.",
-          "source": "Treasury records",
+          "label": "Export orders rising",
+          "evidence": "Confirmed USD orders up 34% year on year, with no forward cover booked.",
+          "source": "Export documentation",
           "date": "2026-09-19"
         }
       ],
       "opportunity": {
-        "title": "Forex hedging and export finance",
-        "reason": "Unhedged USD receivables against a rising order book",
-        "objective": "Upsell",
-        "rationale": "Export receipts have grown steadily while no forward cover is booked, leaving margins exposed.",
-        "next_action": "Review the order book and propose forward cover alongside the packing-credit enhancement.",
+        "title": "Export finance onboarding",
+        "reason": "Rising order book with no IDBI relationship yet",
+        "objective": "Acquisition",
+        "rationale": "Pre-shipment finance is the opening; the current account and forex flows follow the limit.",
+        "next_action": "Collect the order book and bank statements, and quote packing credit with forward cover.",
         "created": false
       },
       "priority_reasons": [
+        "New to bank with a live enquiry",
         "Export order book expanding",
-        "Unhedged currency exposure",
-        "Limit enhancement in progress"
+        "Unhedged currency exposure"
       ],
       "demo_order": 8
     },
@@ -637,7 +618,7 @@
       "location": "Chandigarh, CH",
       "lead_priority": "High",
       "relationship": "Existing",
-      "tier": "Gold",
+      "tier": "Bronze",
       "relationship_owner": "Ananya Rao",
       "products": [
         {
@@ -657,53 +638,53 @@
         {
           "id": "REQ-HL-2277",
           "product": "Home Loan Top-up",
-          "stage": "Documents pending",
+          "stage": "On hold",
           "date": "2026-09-15",
-          "details": "Top-up request raised; latest salary slips and property valuation awaited.",
-          "linked_opportunity": true
+          "details": "Top-up put on hold pending a conduct review; the account has missed three EMIs.",
+          "linked_opportunity": false
         }
       ],
       "health": {
-        "score": 71,
-        "band": "Fair",
+        "score": 23,
+        "band": "Poor",
         "assessment_date": "2026-09-19",
         "drivers": [
-          "Salary credit regular for 38 months",
-          "EMI-to-income ratio at 46%",
-          "No card or loan overdue"
+          "Three missed EMIs in the last six months",
+          "EMI-to-income ratio at 78%",
+          "Salary credit irregular since June"
         ],
         "sources": [
           "Customer summary",
-          "Account holdings",
-          "Reported conduct"
+          "Account conduct",
+          "Bureau"
         ]
       },
       "signals": [
         {
-          "label": "Renovation intent",
-          "evidence": "Top-up request cites interior work on the financed property.",
-          "source": "Request notes",
+          "label": "Repayment stress",
+          "evidence": "Three EMIs missed since April; the June and August instalments cleared late.",
+          "source": "Account conduct",
           "date": "2026-09-19"
         },
         {
-          "label": "No property insurance",
-          "evidence": "Home loan is running without a property or loan-cover policy.",
-          "source": "Policy records",
+          "label": "Income interruption",
+          "evidence": "Salary credit has been irregular since June and twice fell short of the EMI.",
+          "source": "Account statements",
           "date": "2026-09-19"
         }
       ],
       "opportunity": {
-        "title": "Top-up with loan protection",
-        "reason": "₹41.20L outstanding with no loan cover in place",
-        "objective": "Cross-sell",
-        "rationale": "A top-up raises the exposure on a single earner with no credit-life or property cover attached.",
-        "next_action": "Collect pending documents and quote loan protection alongside the top-up.",
+        "title": "Restructure and servicing review",
+        "reason": "Three missed EMIs and a 78% EMI-to-income ratio",
+        "objective": "Retention",
+        "rationale": "A top-up on this conduct would deepen the stress. The account needs a repayment plan, not more credit.",
+        "next_action": "Call to understand the income interruption and assess tenor extension or a restructure.",
         "created": false
       },
       "priority_reasons": [
-        "Top-up request in progress",
-        "High EMI-to-income ratio",
-        "No loan protection on file"
+        "Three missed EMIs in six months",
+        "EMI-to-income ratio at 78%",
+        "Top-up request on hold"
       ],
       "demo_order": 9
     },
@@ -783,7 +764,7 @@
       "lead_priority": "Medium",
       "relationship": "Existing",
       "tier": "Silver",
-      "relationship_owner": "Ananya Rao",
+      "relationship_owner": "Kabir Mehta",
       "products": [
         {
           "type": "Current Account",
@@ -862,7 +843,7 @@
       "lead_priority": "Low",
       "relationship": "Existing",
       "tier": "Gold",
-      "relationship_owner": "Ananya Rao",
+      "relationship_owner": "Priya Nair",
       "products": [
         {
           "type": "Savings",
@@ -938,7 +919,7 @@
       "lead_priority": "Medium",
       "relationship": "Existing",
       "tier": "Bronze",
-      "relationship_owner": "Ananya Rao",
+      "relationship_owner": "Rohan Das",
       "products": [
         {
           "type": "Salary Account",
