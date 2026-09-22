@@ -339,7 +339,7 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
             </Select>
           }
         />
-        <div className="grid gap-4 rounded-lg border border-slate-200 bg-white p-4 lg:grid-cols-[420px_1fr]">
+        <div className="grid gap-4 rounded-lg border border-slate-200 bg-white p-4 lg:grid-cols-[400px_1fr]">
           <div className="flex items-center gap-4 border-b border-slate-100 pb-4 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-4">
             <div className="min-w-0 flex-1">
               <ScoreGauge score={latestCibil.score} showBandRange />
@@ -387,7 +387,7 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
         <div className="rounded-lg border border-slate-200 bg-white p-4">
           {/* Score beside the trend, not above it: a quarter of the width, capped. */}
           <div className="flex flex-col gap-6 lg:flex-row">
-            <div className="w-full shrink-0 border-b border-slate-100 pb-4 lg:w-1/4 lg:max-w-[320px] lg:border-b-0 lg:border-r lg:pb-0 lg:pr-5">
+            <div className="flex w-full shrink-0 flex-col border-b border-slate-100 pb-4 lg:w-[400px] lg:border-b-0 lg:border-r lg:pb-0 lg:pr-5">
               <div className="flex flex-wrap items-center gap-2">
                 <span className={cn("text-4xl font-bold leading-none", bandText(latestHealth.score))}>{latestHealth.score}</span>
                 <StatusPill tone={bandPill(latestHealth.score)}>{healthBandLabel(latestHealth.score)}</StatusPill>
@@ -396,11 +396,11 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
                 {healthDelta >= 0 ? "↑" : "↓"} {healthDelta >= 0 ? "+" : "−"}{Math.abs(healthDelta)} points since {healthDeltaFrom}
               </p>
 
-              <div className="mt-4 flex items-center gap-1.5">
+              <div className="mt-4 flex shrink-0 items-center gap-1.5">
                 <p className="text-sm font-semibold text-slate-900">Score Drivers</p>
                 <InfoTip text="The three measures behind the score. Each is scored out of 100 and carries equal weight." />
               </div>
-              <div className="mt-2 space-y-1.5">
+              <div className="mt-2 flex flex-1 flex-col justify-between gap-1.5">
                 {customer.healthDrivers.map((driver, index) => {
                   const DIcon = [Coins, BarChart3, ShieldCheck][index] ?? Activity;
                   return (
@@ -432,7 +432,7 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
                 colourRange={[55, 85]}
                 showValueLabels
                 dropLines
-                height={300}
+                height={255}
               />
             </div>
           </div>

@@ -328,6 +328,8 @@ export interface ArrowSegment {
   value: number;
   color: string;
   textColor?: string;
+  /** Printed under the segment — which driver this ribbon is. */
+  name?: string;
 }
 
 /**
@@ -371,14 +373,14 @@ export function ArrowSegmentBar({
     // with no background showing between them.
     const notched = i > 0;
     const back = notched ? Math.min(tri, w) : 0;
-    const item = { ...s, x: cursor - back, w: w + back, notched, labelX: cursor + w / 2 };
+    const item = { ...s, x: cursor - back, w: w + back, notched, labelX: cursor + w / 2, share: (s.value / sum) * 100 };
     cursor += w;
     return item;
   });
 
   return (
     <div>
-      <svg viewBox={`0 0 1000 ${bottom + 16}`} className="w-full" style={{ height: 86 }}>
+      <svg viewBox={`0 0 1000 ${bottom + 16}`} className="w-full" style={{ height: 86 }} preserveAspectRatio="none">
         <rect x={pad - 6} y={top - 6} width={totalW + 12} height={height + 12} fill="none" stroke="#0f172a" strokeDasharray="6 5" strokeWidth={2} />
         {[...drawn].reverse().map((s, i) => (
           <g key={i}>
@@ -389,6 +391,16 @@ export function ArrowSegmentBar({
           </g>
         ))}
       </svg>
+      {/* Which ribbon is which, sized to the same share of the width as its segment. */}
+      {drawn.some(s => s.name) && (
+        <div className="mt-1 flex">
+          {drawn.map((s, i) => (
+            <span key={i} className="min-w-0 px-0.5 text-center" style={{ width: `${s.share}%` }}>
+              <span className="block truncate text-[11px] font-medium text-slate-700" title={s.name}>{s.name}</span>
+            </span>
+          ))}
+        </div>
+      )}
       {(leftLabel || rightLabel) && (
         <div className="flex justify-between text-[11px] text-slate-500"><span>{leftLabel}</span><span>{rightLabel}</span></div>
       )}

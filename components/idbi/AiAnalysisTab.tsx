@@ -279,18 +279,18 @@ export function AiAnalysisTab() {
               the EMIs, nothing is overdue, and there is money left over most months.
             </p>
 
-            <div className="mt-4">
+            <div className="mt-1">
               {/* <p className="text-sm font-semibold text-slate-900">What makes up this score</p>
               <p className="mt-0.5 text-xs text-slate-600">Three things are measured. A wider block means it contributes more.</p> */}
               <div className="mt-2">
                 <ArrowSegmentBar
-                  segments={customer.healthDrivers.map((d: any, i: number) => ({ label: String(d.score), value: d.score, color: DRIVER_COLORS[i] }))}
+                  segments={customer.healthDrivers.map((d: any, i: number) => ({ label: String(d.score), value: d.score, color: DRIVER_COLORS[i], name: d.name }))}
                 />
               </div>
             </div>
 
-            <div className="mt-4 flex items-start gap-2 rounded-lg border border-white/70 bg-green-800 px-3 py-2.5">
-              <Info className="mt-0.5 size-3.5 shrink-0 text-slate-400" />
+            <div className="mt-4 flex items-start gap-2 rounded-lg border border-white/70 bg-green-100/70 px-3 py-2.5">
+              <Info className="mt-0.5 size-3.5 shrink-0 text-slate-700" />
               <p className="text-xs leading-5 text-slate-600">Current income supports repayments; reserve cover is the main constraint.</p>
             </div>
           </div>
@@ -327,14 +327,6 @@ export function AiAnalysisTab() {
         </div>
       </section>
 
-        <section>
-          <SectionHeader icon={FileText} title="Assessment Commentary" />
-            <FactTable
-              rows={(health.summary as Array<{ label: string; text: string }>).slice(1).map(row => ({ label: row.label, value: row.text }))}
-              labelWidth="200px"
-            />
-            <p className="mt-3 rounded-lg border border-blue-100 bg-blue-50 px-3 py-2.5 text-[11px] leading-5 text-blue-900">{health.calculationSummary}</p>
-        </section>
 
         <section>
           <SectionHeader

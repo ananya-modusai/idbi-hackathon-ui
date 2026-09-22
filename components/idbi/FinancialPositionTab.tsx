@@ -2,8 +2,7 @@
 
 import * as React from "react";
 import {
-  Activity, BadgeIndianRupee, Banknote, BriefcaseBusiness, Building2, ChevronRight,
-  CircleCheck, Coins, CreditCard, HandCoins, Landmark, PiggyBank, TrendingUp, WalletCards,
+  Activity, ArrowDownLeft, ArrowDownToLine, ArrowLeftRight, ArrowUpRight, BadgeIndianRupee, Banknote, BriefcaseBusiness, Building2, ChevronRight, CircleCheck, Coins, CreditCard, FileSpreadsheet, FileText, HandCoins, Landmark, PiggyBank, TrendingUp, UsersRound, WalletCards,
 } from "lucide-react";
 
 import data from "@/app/idbi-data/vandana-workspace.json";
@@ -13,6 +12,7 @@ import {
   ActionButton, CompactTable, DataUnavailable, InsightBox, MetricGrid, SectionHeader,
   StatusPill, TableHead, Td, Th,
 } from "@/components/idbi/workspace-ui";
+import { Visualization } from "@/components/custom/visualization";
 import CustomListFilter, {
   PrimaryFilterGroup,
   SecondaryFilterGroup,
@@ -60,12 +60,28 @@ function FinancialSection({
   );
 }
 
-const closingBalances = [5.05, 6.50, 7.30, 7.20, 8.70, 11.65];
+const closingBalances = [1.92, 2.10, 2.28, 2.16, 2.62, 3.10];
 const bounces = [0, 0, 0, 1, 0, 0];
 
 export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: string) => void }) {
   const fp = data.financialPosition;
   const [scope, setScope] = React.useState(fp.scopeOptions[0]);
+  // Picking a single account rescales the bank-flow figures by that account's share,
+  // so the numbers on screen always belong to the selection.
+  const activeScope = (fp.accountScopes as any[]).find(s => s.label === scope) ?? fp.accountScopes[0];
+  const share = activeScope.share as number;
+  const isCombined = activeScope.value === "combined";
+
+  const scaleAmount = (text: string) => {
+    if (isCombined) return text;
+    const match = text.match(/^₹([\d.,]+)\s*(Cr|L)?$/);
+    if (!match) return text;
+    const value = Number(match[1].replace(/,/g, "")) * share;
+    const unit = match[2];
+    if (unit === "Cr") return value < 1 ? `₹${(value * 100).toFixed(2)} L` : `₹${value.toFixed(2)} Cr`;
+    if (unit === "L") return value < 1 ? `₹${Math.round(value * 100000).toLocaleString("en-IN")}` : `₹${value.toFixed(2)} L`;
+    return `₹${Math.round(value).toLocaleString("en-IN")}`;
+  };
   const [period, setPeriod] = React.useState(fp.periodOptions[1]);
   const [cashflowView, setCashflowView] = React.useState<CashflowView>("monthly");
   const [selectedHolding, setSelectedHolding] = React.useState<HoldingDetail | null>(null);
@@ -74,7 +90,7 @@ export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: 
   const startIndex = period === "Last 3 months" ? 3 : 0;
   const months = fp.cashflowMonths.slice(startIndex).map((item, index) => ({ ...item, closing: closingBalances[startIndex + index], bounces: bounces[startIndex + index] }));
   const partialPeriod = period === "Last 12 months";
-  const cashIcons = [Banknote, BadgeIndianRupee, Coins, TrendingUp, PiggyBank];
+  const cashIcons = [ArrowDownLeft, ArrowUpRight, Landmark, ArrowDownToLine, BadgeIndianRupee, Coins, TrendingUp, PiggyBank];
   const savingsIcons = [WalletCards, Landmark, TrendingUp, PiggyBank];
   const charges = assetView === "open" ? fp.charges.open : fp.charges.satisfied;
   const selectedAllocation = selectedHolding ? fp.allocation.find(item => item.name === selectedHolding.category) : null;
@@ -121,10 +137,22 @@ export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: 
 
   return (
     <div className="space-y-10">
+      <FinancialSection icon={TrendingUp} title="Financial Metrics">
+        <MetricGrid
+          metrics={fp.financialMetrics.map((item: any, index: number) => ({
+            label: item.label,
+            value: item.value,
+            secondary: item.secondary,
+            icon: [WalletCards, BadgeIndianRupee, TrendingUp, Landmark][index] ?? Coins,
+            tone: "blue" as const,
+          }))}
+        />
+      </FinancialSection>
+
       <FinancialSection
-        icon={Activity}
-        title="Income & Spending"
-        titleMeta={partialPeriod ? <StatusPill tone="amber">6 of 12 months available</StatusPill> : undefined}
+        icon={ArrowLeftRight}
+        title="Cash Flow"
+        titleMeta={<StatusPill tone="amber">Bank · Account Aggregator</StatusPill>}
         toggleOptions={["Monthly", "Breakdown"]}
         selectedToggleOption={cashflowView === "monthly" ? "Monthly" : "Breakdown"}
         onToggleOptionChange={(o) => setCashflowView(o === "Monthly" ? "monthly" : "breakdown")}
@@ -137,22 +165,118 @@ export function FinancialPositionTab({ onOpenAgent }: { onOpenAgent?: (prompt?: 
             showFilterToggle={false}
           />
         </div>
-        <MetricGrid metrics={fp.cashflowMetrics.map((item, index) => ({ label: item.label, value: item.value, secondary: item.secondary, icon: cashIcons[index], tone: index === 4 ? "emerald" as const : index === 3 ? "violet" as const : "blue" as const }))} />
-        <div className="mt-4">
-          <InsightBox headline="Income recovery has restored monthly headroom." bullets={[<><strong>Factual:</strong> September income rose 19% MoM; six-month average surplus is ₹1.23L.</>, <><strong>Sales context:</strong> Validate seasonality and GST filings before discussing working capital.</>]} />
-        </div>
+        <MetricGrid
+          metrics={fp.cashflowMetrics
+            // Recognised income and the rest are customer-level reads, not per account.
+            .filter((_: any, index: number) => isCombined || index < 4)
+            .map((item: any, index: number) => ({
+              label: item.label,
+              value: index < 4 ? scaleAmount(item.value) : item.value,
+              secondary: index < 4 && !isCombined ? activeScope.label : item.secondary,
+              icon: cashIcons[index],
+              tone: "blue" as const,
+            }))}
+        />
 
         {cashflowView === "monthly" ? (
           <>
-            <div className="mt-4"><CompactTable minWidth={760}><TableHead><Th>Month</Th><Th right>Income</Th><Th right>Spending</Th><Th center>Income vs Spending</Th><Th right>Net</Th><Th right>Closing Balance</Th><Th right>Bounces</Th></TableHead><tbody>{months.slice().reverse().map(row => {
+            <div className="mt-4"><CompactTable minWidth={760}><TableHead><Th>Month</Th><Th right>Income</Th><Th right>Spending</Th><Th center>Income vs Spending</Th><Th right>Net</Th><Th right>Closing Balance</Th></TableHead><tbody>{months.slice().reverse().map(raw => {
+              const row = isCombined ? raw : { ...raw, income: raw.income * share, spending: raw.spending * share, closing: raw.closing * share };
               const net = row.income - row.spending;
               const max = Math.max(row.income, row.spending);
-              return <tr key={row.month}><Td className="font-semibold text-slate-900">{row.month} 2026</Td><Td right>₹{row.income.toFixed(2)}L</Td><Td right>₹{row.spending.toFixed(2)}L</Td><Td><div className="mx-auto flex w-28 items-center gap-1"><span className="h-1.5 rounded-full bg-emerald-500" style={{ width: `${Math.max(18, (row.income / max) * 52)}px` }} /><span className="h-1.5 rounded-full bg-rose-400" style={{ width: `${Math.max(18, (row.spending / max) * 52)}px` }} /></div></Td><Td right className={net >= 0 ? "font-semibold text-emerald-700" : "font-semibold text-rose-600"}>{net >= 0 ? "+" : "−"}₹{Math.abs(net).toFixed(2)}L</Td><Td right>₹{row.closing.toFixed(2)}L</Td><Td right className={row.bounces ? "font-semibold text-amber-700" : undefined}>{row.bounces}</Td></tr>;
+              return <tr key={row.month}><Td className="font-semibold text-slate-900">{row.month} 2026</Td><Td right>₹{row.income.toFixed(2)}L</Td><Td right>₹{row.spending.toFixed(2)}L</Td><Td><div className="mx-auto flex w-28 items-center gap-1"><span className="h-1.5 rounded-full bg-emerald-500" style={{ width: `${Math.max(18, (row.income / max) * 52)}px` }} /><span className="h-1.5 rounded-full bg-rose-400" style={{ width: `${Math.max(18, (row.spending / max) * 52)}px` }} /></div></Td><Td right className={net >= 0 ? "font-semibold text-emerald-700" : "font-semibold text-rose-600"}>{net >= 0 ? "+" : "−"}₹{Math.abs(net).toFixed(2)}L</Td><Td right>₹{row.closing.toFixed(2)}L</Td></tr>;
             })}</tbody></CompactTable></div>
           </>
         ) : (
           <div className="mt-4"><CompactTable minWidth={900}><TableHead><Th>Overview</Th><Th right>Apr</Th><Th right>May</Th><Th right>Jun</Th><Th right>Jul</Th><Th right>Aug</Th><Th right>Sep</Th><Th right>MoM</Th></TableHead><tbody>{fp.cashflowBreakdown.map(row => <tr key={row.group}><Td className="font-semibold text-slate-900">{row.group}</Td><Td right>{row.apr}</Td><Td right>{row.may}</Td><Td right>{row.jun}</Td><Td right>{row.jul}</Td><Td right>{row.aug}</Td><Td right>{row.sep}</Td><Td right className={row.mom.startsWith("+") ? "font-semibold text-emerald-700" : undefined}>{row.mom}</Td></tr>)}</tbody></CompactTable><div className="mt-2 flex flex-wrap gap-x-3 text-[11px] text-slate-500"><span>5 accounts included</span><span>·</span><span>1 partial-history account</span><span>·</span><span>Own transfers deduplicated</span></div></div>
         )}
+      </FinancialSection>
+
+      {/* GST filing trend — stacked turnover/tax bars with value addition on the right
+          axis, through the shared Visualization combo chart. */}
+      <FinancialSection
+        icon={FileText}
+        title="GST Filing & Performance Trend"
+        titleMeta={<StatusPill tone="blue">Regular taxpayer · monthly · GSTR-3B</StatusPill>}
+      >
+        <Visualization
+          type="combo"
+          data={fp.gstTrend}
+          xAxisKey="name"
+          xAxisLabel="Period"
+          leftYAxisLabel="Amount (₹ L)"
+          rightYAxisLabel="Value Addition %"
+          yAxisKeys={[
+            { key: "Turnover", color: "#1e3a5f", type: "bar", yAxisId: "left" },
+            { key: "Tax Paid", color: "#2f9bf0", type: "bar", yAxisId: "left" },
+            { key: "Value Addition %", color: "#e8a33d", type: "line", yAxisId: "right" },
+          ]}
+          stacking="normal"
+          isEnclosedInCard
+          hideAllTabs
+          hideRefreshButton
+          height={320}
+        />
+      </FinancialSection>
+
+      <FinancialSection
+        icon={FileSpreadsheet}
+        title="GST Returns & Filing"
+        titleMeta={<StatusPill tone="slate">GST · Account Aggregator</StatusPill>}
+      >
+        <CompactTable minWidth={900}>
+          <TableHead><Th>Period</Th><Th right>Turnover</Th><Th right>Tax Paid</Th><Th right>ITC Claimed</Th><Th>Filed On</Th><Th center>Status</Th></TableHead>
+          <tbody>
+            {fp.gstReturns.map((row: any) => (
+              <tr key={row.period}>
+                <Td className="font-semibold text-slate-900">{row.period}</Td>
+                <Td right>{row.turnover}</Td>
+                <Td right>{row.taxPaid}</Td>
+                <Td right>{row.itc}</Td>
+                <Td>{row.filedOn}</Td>
+                <Td center><StatusPill tone={row.status === "On time" ? "emerald" : "rose"}>{row.status}</StatusPill></Td>
+              </tr>
+            ))}
+          </tbody>
+        </CompactTable>
+      </FinancialSection>
+
+      <FinancialSection icon={UsersRound} title="Employment & Establishment Health">
+        <p className="mb-2 text-sm font-semibold text-slate-900">Headcount &amp; Salary Delay Trend</p>
+        <Visualization
+          type="combo"
+          data={fp.employmentTrend}
+          xAxisKey="name"
+          xAxisLabel="Period"
+          leftYAxisLabel="Headcount"
+          rightYAxisLabel="Days"
+          yAxisKeys={[
+            { key: "Headcount", color: "#1e3a8a", type: "bar", yAxisId: "left" },
+            { key: "Days Delay", color: "#e8a33d", type: "line", yAxisId: "right" },
+          ]}
+          isEnclosedInCard
+          hideAllTabs
+          hideRefreshButton
+          height={320}
+        />
+
+        <div className="mt-4">
+          <CompactTable minWidth={940}>
+            <TableHead><Th>Establishment ID</Th><Th>Location</Th><Th right>Headcount</Th><Th>Last Paid On</Th><Th>Delay</Th><Th center>Status</Th></TableHead>
+            <tbody>
+              {fp.establishments.map((row: any) => (
+                <tr key={row.id}>
+                  <Td className="font-semibold text-blue-700">{row.id}</Td>
+                  <Td>{row.location}</Td>
+                  <Td right className="tabular-nums">{row.headcount}</Td>
+                  <Td>{row.lastPaid}</Td>
+                  <Td className={row.delay.startsWith("+") ? "font-semibold text-rose-600" : "text-slate-600"}>{row.delay}</Td>
+                  <Td center><StatusPill tone="emerald">{row.status}</StatusPill></Td>
+                </tr>
+              ))}
+            </tbody>
+          </CompactTable>
+        </div>
       </FinancialSection>
 
       <FinancialSection icon={BriefcaseBusiness} title="Employment & Business Associations">

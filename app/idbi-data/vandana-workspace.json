@@ -595,7 +595,12 @@
     "scopeOptions": [
       "Combined view · 5 accounts",
       "IDBI Bank · 2 accounts",
-      "Other banks · 3 accounts"
+      "Other banks · 3 accounts",
+      "IDBI Bank · Current ••••0292",
+      "IDBI Bank · Savings ••••0291",
+      "HDFC Bank · Current ••••4417",
+      "HDFC Bank · Savings ••••8830",
+      "Punjab & Sind Bank · Savings ••••2261"
     ],
     "periodOptions": [
       "Last 3 months",
@@ -605,18 +610,33 @@
     "cashflowInsight": "Recognised income recovered after July and now exceeds core spending and debt repayments. The six-month average surplus is ₹1.23L; one AA account has partial history.",
     "cashflowMetrics": [
       {
-        "label": "Primary Income Credits",
-        "value": "Business receipts",
-        "secondary": "₹4.73L average / month"
+        "label": "Total inflow",
+        "value": "₹61.20 L",
+        "secondary": "All credits · 12 months"
+      },
+      {
+        "label": "Total outflow",
+        "value": "₹54.60 L",
+        "secondary": "All debits · 12 months"
+      },
+      {
+        "label": "Avg daily balance",
+        "value": "₹2.40 L",
+        "secondary": "Bank-derived · AA"
+      },
+      {
+        "label": "Balance floor",
+        "value": "₹28,000",
+        "secondary": "Lowest day in 12 months"
       },
       {
         "label": "Recognised Income",
-        "value": "₹4.88L",
+        "value": "₹4.88 L",
         "secondary": "Average / month"
       },
       {
         "label": "Core Spending",
-        "value": "₹2.77L",
+        "value": "₹2.77 L",
         "secondary": "Average / month"
       },
       {
@@ -626,7 +646,7 @@
       },
       {
         "label": "Monthly Surplus",
-        "value": "₹1.23L",
+        "value": "₹1.23 L",
         "secondary": "After debt repayments"
       }
     ],
@@ -1016,7 +1036,283 @@
           "security": "Business equipment"
         }
       ]
-    }
+    },
+    "financialMetrics": [
+      {
+        "label": "Turnover (T12M)",
+        "value": "₹58.00 L",
+        "secondary": "GST-derived · GSTR-3B"
+      },
+      {
+        "label": "Net income (FY24)",
+        "value": "₹14.20 L",
+        "secondary": "ITR-reported · ITR-3"
+      },
+      {
+        "label": "Revenue growth (YoY)",
+        "value": "+18.4%",
+        "secondary": "GST-derived"
+      },
+      {
+        "label": "Avg daily balance",
+        "value": "₹2.40 L",
+        "secondary": "Bank-derived · AA"
+      }
+    ],
+    "gstTrend": [
+      {
+        "name": "Jul'25",
+        "Turnover": 4.3,
+        "Tax Paid": 0.45,
+        "Value Addition %": 14.4
+      },
+      {
+        "name": "Aug'25",
+        "Turnover": 4.6,
+        "Tax Paid": 0.48,
+        "Value Addition %": 15.0
+      },
+      {
+        "name": "Sep'25",
+        "Turnover": 4.2,
+        "Tax Paid": 0.44,
+        "Value Addition %": 13.7
+      },
+      {
+        "name": "Oct'25",
+        "Turnover": 5.3,
+        "Tax Paid": 0.55,
+        "Value Addition %": 16.3
+      },
+      {
+        "name": "Nov'25",
+        "Turnover": 4.9,
+        "Tax Paid": 0.51,
+        "Value Addition %": 15.2
+      },
+      {
+        "name": "Dec'25",
+        "Turnover": 5.7,
+        "Tax Paid": 0.59,
+        "Value Addition %": 17.8
+      },
+      {
+        "name": "Jan'26",
+        "Turnover": 4.7,
+        "Tax Paid": 0.49,
+        "Value Addition %": 15.7
+      },
+      {
+        "name": "Feb'26",
+        "Turnover": 4.5,
+        "Tax Paid": 0.47,
+        "Value Addition %": 14.9
+      },
+      {
+        "name": "Mar'26",
+        "Turnover": 5.4,
+        "Tax Paid": 0.56,
+        "Value Addition %": 17.2
+      },
+      {
+        "name": "Apr'26",
+        "Turnover": 4.8,
+        "Tax Paid": 0.5,
+        "Value Addition %": 15.0
+      },
+      {
+        "name": "May'26",
+        "Turnover": 4.6,
+        "Tax Paid": 0.48,
+        "Value Addition %": 14.2
+      },
+      {
+        "name": "Jun'26",
+        "Turnover": 5.0,
+        "Tax Paid": 0.52,
+        "Value Addition %": 15.4
+      }
+    ],
+    "gstReturns": [
+      {
+        "period": "Jun 2026",
+        "turnover": "₹5.00 L",
+        "taxPaid": "₹0.52 L",
+        "itc": "₹0.39 L",
+        "filedOn": "11 Jul 2026",
+        "status": "On time"
+      },
+      {
+        "period": "May 2026",
+        "turnover": "₹4.60 L",
+        "taxPaid": "₹0.48 L",
+        "itc": "₹0.36 L",
+        "filedOn": "18 Jun 2026",
+        "status": "6 days late"
+      },
+      {
+        "period": "Apr 2026",
+        "turnover": "₹4.80 L",
+        "taxPaid": "₹0.50 L",
+        "itc": "₹0.37 L",
+        "filedOn": "11 May 2026",
+        "status": "On time"
+      },
+      {
+        "period": "Mar 2026",
+        "turnover": "₹5.40 L",
+        "taxPaid": "₹0.56 L",
+        "itc": "₹0.42 L",
+        "filedOn": "10 Apr 2026",
+        "status": "On time"
+      }
+    ],
+    "employmentTrend": [
+      {
+        "name": "Jul'25",
+        "Headcount": 138,
+        "Days Delay": 2
+      },
+      {
+        "name": "Aug'25",
+        "Headcount": 140,
+        "Days Delay": 3
+      },
+      {
+        "name": "Sep'25",
+        "Headcount": 141,
+        "Days Delay": 2
+      },
+      {
+        "name": "Oct'25",
+        "Headcount": 145,
+        "Days Delay": 4
+      },
+      {
+        "name": "Nov'25",
+        "Headcount": 146,
+        "Days Delay": 3
+      },
+      {
+        "name": "Dec'25",
+        "Headcount": 149,
+        "Days Delay": 5
+      },
+      {
+        "name": "Jan'26",
+        "Headcount": 156,
+        "Days Delay": 4
+      },
+      {
+        "name": "Feb'26",
+        "Headcount": 158,
+        "Days Delay": 5
+      },
+      {
+        "name": "Mar'26",
+        "Headcount": 162,
+        "Days Delay": 6
+      },
+      {
+        "name": "Apr'26",
+        "Headcount": 165,
+        "Days Delay": 6
+      },
+      {
+        "name": "May'26",
+        "Headcount": 170,
+        "Days Delay": 7
+      },
+      {
+        "name": "Jun'26",
+        "Headcount": 171,
+        "Days Delay": 7
+      }
+    ],
+    "establishments": [
+      {
+        "id": "UPNOI0098412000",
+        "location": "Noida (HQ)",
+        "headcount": 84,
+        "lastPaid": "13 Jul 2026",
+        "delay": "On time",
+        "status": "Active"
+      },
+      {
+        "id": "DLCPM0076221000",
+        "location": "Delhi",
+        "headcount": 32,
+        "lastPaid": "13 Jul 2026",
+        "delay": "On time",
+        "status": "Active"
+      },
+      {
+        "id": "MHBAN0104533000",
+        "location": "Mumbai",
+        "headcount": 28,
+        "lastPaid": "11 Jul 2026",
+        "delay": "Stable",
+        "status": "Active"
+      },
+      {
+        "id": "KABLR0088740000",
+        "location": "Bengaluru",
+        "headcount": 27,
+        "lastPaid": "14 Jul 2026",
+        "delay": "+6 days trend",
+        "status": "Active"
+      }
+    ],
+    "accountScopes": [
+      {
+        "value": "combined",
+        "label": "Combined view · 5 accounts",
+        "share": 1.0,
+        "group": "all"
+      },
+      {
+        "value": "idbi",
+        "label": "IDBI Bank · 2 accounts",
+        "share": 0.71,
+        "group": "idbi"
+      },
+      {
+        "value": "other",
+        "label": "Other banks · 3 accounts",
+        "share": 0.29,
+        "group": "other"
+      },
+      {
+        "value": "idbi-current",
+        "label": "IDBI Bank · Current ••••0292",
+        "share": 0.62,
+        "group": "idbi"
+      },
+      {
+        "value": "idbi-savings",
+        "label": "IDBI Bank · Savings ••••0291",
+        "share": 0.09,
+        "group": "idbi"
+      },
+      {
+        "value": "hdfc-current",
+        "label": "HDFC Bank · Current ••••4417",
+        "share": 0.18,
+        "group": "other"
+      },
+      {
+        "value": "hdfc-savings",
+        "label": "HDFC Bank · Savings ••••8830",
+        "share": 0.06,
+        "group": "other"
+      },
+      {
+        "value": "psb-savings",
+        "label": "Punjab & Sind Bank · Savings ••••2261",
+        "share": 0.05,
+        "group": "other"
+      }
+    ]
   },
   "relationshipFeed": {
     "highlights": [
