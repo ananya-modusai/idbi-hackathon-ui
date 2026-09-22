@@ -404,15 +404,13 @@ export function CustomerProfileTab({ onOpenActivity, onOpenFinancial, onOpenAgen
                 {customer.healthDrivers.map((driver, index) => {
                   const DIcon = [Coins, BarChart3, ShieldCheck][index] ?? Activity;
                   return (
-                    <div key={driver.name} className={cn("rounded-lg px-2.5 py-2", driver.score >= 75 ? "bg-emerald-50/70" : "bg-blue-50/60")}>
-                      <div className="flex items-center gap-2">
-                        <span className="grid size-6 shrink-0 place-items-center rounded-md bg-white text-blue-600 shadow-sm"><DIcon className="size-3.5" /></span>
-                        <span className="min-w-0 flex-1 truncate text-xs font-medium text-slate-800">{driver.name}</span>
-                        <span className={cn("shrink-0 text-base font-bold tabular-nums", bandText(driver.score))}>{driver.score}</span>
+                    <div key={driver.name} className={cn("flex items-center gap-2 rounded-lg px-2.5 py-2", driver.score >= 75 ? "bg-emerald-50/70" : "bg-blue-50/60")}>
+                      <span className="grid size-6 shrink-0 place-items-center rounded-md bg-white text-blue-600 shadow-sm"><DIcon className="size-3.5" /></span>
+                      <div className="min-w-0 flex-1">
+                        <p className="truncate text-xs font-medium text-slate-800">{driver.name}</p>
+                        <div className="mt-1"><StatusPill tone={driver.score >= 75 ? "emerald" : "blue"}>{driver.band}</StatusPill></div>
                       </div>
-                      <div className="mt-1 pl-8">
-                        <StatusPill tone={driver.score >= 75 ? "emerald" : "blue"}>{driver.band}</StatusPill>
-                      </div>
+                      <span className={cn("shrink-0 self-center text-lg font-bold tabular-nums", bandText(driver.score))}>{driver.score}</span>
                     </div>
                   );
                 })}

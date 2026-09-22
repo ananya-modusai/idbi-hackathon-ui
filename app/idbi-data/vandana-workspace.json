@@ -547,7 +547,49 @@
         "category": "Shop Insurance",
         "description": "Coverage Review. Current stock / asset levels may be higher than existing shop-insurance cover."
       }
-    ]
+    ],
+    "borrowerAssessment": {
+      "financialPosition": "Financial position is sound. Recurring receipts comfortably cover operating expenses and debt obligations, with no current overdue stress visible. Cash generation has recovered, while accessible reserves remain the key constraint at approximately 1.8 months of commitments.",
+      "recommendedAction": "Validate external borrowing and minimum operating cash requirements before progressing the working-capital discussion. Also confirm near-term capex plans and current stock values to qualify term-loan and insurance requirements.",
+      "opportunities": [
+        {
+          "title": "Working Capital",
+          "text": "Regular commitments appear serviceable, but reserve cover remains below the 3-month benchmark. Review whether a higher CC line or short-term funding is needed to prevent liquidity tightness during business cycles."
+        },
+        {
+          "title": "Term Loan",
+          "text": "The borrower is financially sound and the business appears capital intensive. This is the right time to check for machinery, expansion, or other capex plans that may require structured funding."
+        },
+        {
+          "title": "Shop Insurance",
+          "text": "Current stock or asset values may now be ahead of existing cover. Review the declared sum insured so any growth in the business is adequately protected."
+        },
+        {
+          "title": "Sukanya Samriddhi",
+          "text": "A recent family update creates a relevant opening for a disciplined child-savings discussion. If eligible, position SSY as a long-term option with tax benefits and goal-based value."
+        },
+        {
+          "title": "Credit Card",
+          "text": "No IDBI card despite an eight-year relationship, and two card enquiries at other banks in the last 90 days. A pre-approved offer closes that gap before a competitor does."
+        },
+        {
+          "title": "Invoice Discounting",
+          "text": "OEM receivable cycles have stretched to 75 days. Discounting against confirmed invoices prices better than an overdraft and needs no fresh collateral."
+        },
+        {
+          "title": "Personal Accident Cover",
+          "text": "A sole proprietor carries the business and the EMIs. No personal-accident or income-protection policy is on record today."
+        },
+        {
+          "title": "ESOP Funding",
+          "text": "Vested Helix Logistics options become taxable at exercise ahead of the listing. Funding the exercise and the perquisite tax keeps the holding intact."
+        },
+        {
+          "title": "Demat Account",
+          "text": "Allotment of the listed shares needs a demat account in her name, and she holds none with IDBI today."
+        }
+      ]
+    }
   },
   "financialPosition": {
     "scopeOptions": [

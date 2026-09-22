@@ -244,3 +244,27 @@ Mapping to components we ALREADY have (no dumping of their markup):
       option on these two tabs — a filter request. Clicking it plays a working trail,
       generates a response, and actually applies the filter to the customers table.
       Use the data already visible in the UI.
+
+## Round O — Financial Position rebuild (NOT STARTED)
+- [ ] O1. New **Financial Metrics** section above the current Income & Spending section:
+      Turnover (T12M) ₹1.12 Cr · GST-derived · GSTR-3B; Net income (FY24) ₹14.2 L ·
+      ITR-reported · ITR-3; Revenue growth (YoY) +18.4% · GST-derived; Avg daily balance
+      ₹2.4 L · Bank-derived · AA.
+- [ ] O2. Rename **Income & Spending → Cash Flow**, new icon, chip "Bank · Account
+      Aggregator", keep the existing filters. Metrics become Total inflow ₹1.08 Cr,
+      Total outflow ₹1.01 Cr, Avg daily balance ₹2.4 L, Balance floor ₹28k — NO bounces,
+      NO net surplus, and no "(T12M)" suffix on inflow/outflow.
+- [ ] O3. Cash Flow table stays as is, minus the Bounce column; remove the blue AI
+      insight box from that section.
+- [ ] O4. New **GST Filing & Performance Trend** section — stacked Turnover/Tax Paid bars
+      with a Value Addition % line on a right axis; chip "Regular taxpayer · monthly ·
+      GSTR-3B".
+- [ ] O5. New **GST Returns & Filing** section — table of Period / Turnover / Tax paid /
+      ITC claimed / Filed on / Status (On time · 6 days late); chip "GST · Account
+      Aggregator".
+- [ ] O6. New **Employment & Establishment Health** section — Headcount bars + Days Delay
+      line combo chart, then the establishment table (ID, Location, Headcount, Last paid
+      on, Delay, Status).
+- [ ] O7. All of it in our theme: SectionHeader, BubbleTag/StatusPill chips, CompactTable,
+      KeyMetrics/MetricGrid. Check cam-ui ComboChart and the insolvency Visualization
+      before building a chart from scratch.

@@ -143,6 +143,7 @@ export const CustomersScreen: FC<{
 
   const handleClearFilters = () => {
     setSearchQuery("");
+    setAgentFilter(null);
     setPrioritySelected([]);
     setTierSelected([]);
     setRelationshipSelected([]);
@@ -161,6 +162,8 @@ export const CustomersScreen: FC<{
       };
     });
   };
+
+  const clearAgentFilter = () => setAgentFilter(null);
 
   const primaryFilterGroup = useMemo<PrimaryFilterGroup[]>(
     () => [
@@ -220,11 +223,21 @@ export const CustomersScreen: FC<{
         showAllOption: true,
         showLabel: true,
         width: "165px",
+        // Right end of the filter row — where a filter the agent applied is announced.
+        actionElements: agentFilter ? (
+          <span className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-md border border-blue-200 bg-blue-50 px-2.5 py-1.5 text-xs font-medium text-blue-700">
+            <Sparkles className="size-3.5" />
+            Agent: {agentFilter.label}
+            <button type="button" onClick={clearAgentFilter} aria-label="Clear agent filter" className="ml-0.5 text-blue-500 hover:text-blue-800">
+              <X className="size-3.5" />
+            </button>
+          </span>
+        ) : null,
       },
     ],
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [priorityOptions, prioritySelected, sortOptions, sortSelected, categoryOptions, categorySelected,
-      relationshipOptions, relationshipSelected, tierOptions, tierSelected]
+      relationshipOptions, relationshipSelected, tierOptions, tierSelected, agentFilter]
   );
 
   const secondaryFilterGroups = useMemo<SecondaryFilterGroup[]>(() => [], []);
@@ -337,7 +350,7 @@ export const CustomersScreen: FC<{
         .filter(c => c.health.score < 70)
         .sort((a, b) => a.health.score - b.health.score)
         .map(c => `- **${c.name}** — ${c.health.score}/100 (${c.health.band}). ${c.health.drivers[0]}.`)
-        .join("\n")}\n\nClear the **Agent filter** chip above the table to see the full book again.`,
+        .join("\n")}\n\nClear the **Agent** chip in the filter row to see the full book again.`,
     },
     {
       label: "Show only the prospects in my book",
@@ -359,9 +372,16 @@ export const CustomersScreen: FC<{
   ];
 
   const applyAgentFilter = (action: string) => {
-    if (action === "needs-attention") setAgentFilter({ id: action, label: "Health below 70" });
-    if (action === "prospects") setAgentFilter({ id: action, label: "Prospects only" });
+    const applied =
+      action === "needs-attention"
+        ? { id: action, label: "Health below 70", search: "Financial health below 70" }
+        : action === "prospects"
+        ? { id: action, label: "Prospects only", search: "Relationship is Prospect · NTB" }
+        : null;
+    if (!applied) return;
+    setAgentFilter({ id: applied.id, label: applied.label });
   };
+
 
   const columns: Column[] = [
     {
@@ -574,17 +594,6 @@ export const CustomersScreen: FC<{
               it scrolls sideways while Lead Priority and Customer ID stay pinned.
               CustomTableView renders the table at width:100% with a fixed layout, so
               the floor has to be set on the table element itself. */}
-          {agentFilter && (
-            <div className="mb-3 flex items-center gap-2">
-              <span className="text-xs font-medium text-gray-500">Agent filter</span>
-              <span className="inline-flex items-center gap-1.5 rounded-md border border-blue-200 bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-700">
-                <Sparkles className="size-3.5" /> {agentFilter.label}
-                <button type="button" onClick={() => setAgentFilter(null)} aria-label="Clear agent filter" className="ml-0.5 text-blue-500 hover:text-blue-800">
-                  <X className="size-3.5" />
-                </button>
-              </span>
-            </div>
-          )}
           <CustomTableView
             columns={columns}
             data={rows}

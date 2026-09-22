@@ -426,6 +426,8 @@ export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
                               <BubbleTag
                                 text={flag.category}
                                 color="blue"
+                                /* one width for every category chip, so the column lines up */
+                                fixedWidth="w-[132px]"
                               />
                             </div>
                           </td>

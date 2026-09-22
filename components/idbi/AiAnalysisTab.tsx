@@ -9,7 +9,7 @@
 // from this app, so a driver opens as a docked tab rather than a sheet.
 
 import * as React from "react";
-import { BarChart3, CalendarCheck, ChevronRight, Coins, CreditCard, FileText, Landmark, LifeBuoy, ListChecks, PiggyBank, Receipt, ShieldCheck, Sparkles, TrendingUp, Wallet } from "lucide-react";
+import { ArrowRight, BarChart3, CalendarCheck, ChevronRight, ClipboardCheck, Coins, CreditCard, FileText, Landmark, Lightbulb, LifeBuoy, ListChecks, PiggyBank, Receipt, ShieldCheck, Sparkles, TrendingUp, Wallet } from "lucide-react";
 
 import data from "@/app/idbi-data/vandana-workspace.json";
 import { cn } from "@/lib/utils";
@@ -18,6 +18,7 @@ import {
 } from "@/components/idbi/workspace-ui";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowSegmentBar, BandScale, GaugeBand } from "@/components/idbi/ScoreVisuals";
+import { Info } from "lucide-react";
 import { FactTable } from "./FactTable";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -56,9 +57,19 @@ const HEALTH_BANDS: GaugeBand[] = [
 ];
 const DRIVER_COLORS = ["#1e4e8c", "#3b82f6", "#93c5fd"];
 const healthPanelBg = (score: number) => (score >= 75 ? "bg-green-50" : score >= 60 ? "bg-blue-50" : score >= 40 ? "bg-amber-50" : "bg-red-50");
+const bandPill = (score: number) =>
+  (score >= 75 ? "emerald" : score >= 60 ? "blue" : score >= 40 ? "amber" : "rose") as "emerald" | "blue" | "amber" | "rose";
+
 const bandText = (score: number) => (score >= 75 ? "text-emerald-700" : score >= 60 ? "text-blue-700" : score >= 40 ? "text-amber-700" : "text-rose-700");
 
 /** Plain-English meaning for each driver, so the panel needs no glossary. */
+/** One line on what each driver is read from. */
+const DRIVER_BASIS: Record<string, string> = {
+  "Cash Flow Strength": "Consistent receipts and positive cash remaining after regular commitments.",
+  "Debt Sustainability": "Observed repayments remain affordable with no current overdue stress.",
+  "Financial Resilience": "Accessible reserves remain below the three-month benchmark and are the main constraint on the score.",
+};
+
 const DRIVER_PLAIN: Record<string, { title: string; meaning: string }> = {
   "Cash Flow Strength": { title: "Money coming in", meaning: "How steady the income is, and how much is left after regular spending." },
   "Debt Sustainability": { title: "Ability to repay loans", meaning: "Whether the EMIs are comfortable against the income, and paid on time." },
@@ -101,6 +112,11 @@ const bandTone = (band: string) =>
           : "rose";
 
 export function AiAnalysisTab() {
+  const assessment = (data.customer as any).borrowerAssessment;
+  const [allOpportunities, setAllOpportunities] = React.useState(false);
+  const shownOpportunities = allOpportunities ? assessment.opportunities : assessment.opportunities.slice(0, 4);
+  const hiddenOpportunities = assessment.opportunities.length - 4;
+
   const health = data.financialHealthDetail as any;
   const driverGroups = (health.groups as DriverGroup[]).filter(g => g.id !== "evidence");
   const notApplicable = (health.notApplicableDrivers ?? []) as Driver[];
@@ -186,14 +202,57 @@ export function AiAnalysisTab() {
             title="AI Assessment Summary"
             titleMeta={<StatusPill tone="emerald">{health.band}</StatusPill>}
           />
-          <InsightBox
-            label="AI assessment"
-            headline={health.summary?.[0]?.text ?? ""}
-            bullets={[
-              <><strong>RM action:</strong> Continue the working-capital discussion, verify the external borrowing position and confirm the minimum operating cash required for the business.</>,
-              <><strong>Watchout:</strong> Build accessible reserves towards at least three months of regular expenses and debt commitments.</>,
-            ]}
-          />
+          {/* Two findings side by side, then the opportunities they produce underneath. */}
+          <div className="grid gap-4 lg:grid-cols-2">
+            <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-4">
+              <div className="flex gap-3">
+                <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-white text-emerald-600 shadow-sm"><BarChart3 className="size-4" /></span>
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-emerald-700">Financial Position</p>
+                  <p className="mt-1 text-sm leading-6 text-slate-700">{assessment.financialPosition}</p>
+                </div>
+              </div>
+            </div>
+            <div className="rounded-lg border border-blue-100 bg-blue-50/50 p-4">
+              <div className="flex gap-3">
+                <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-white text-blue-600 shadow-sm"><ClipboardCheck className="size-4" /></span>
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-blue-700">Recommended Action</p>
+                  <p className="mt-1 text-sm leading-6 text-slate-700">{assessment.recommendedAction}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-4 rounded-lg border border-blue-100 bg-blue-50/40 p-4">
+            <div className="flex gap-3">
+              <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-white text-blue-600 shadow-sm"><Lightbulb className="size-4" /></span>
+              <div className="min-w-0 flex-1">
+                <p className="text-sm font-semibold text-blue-700">Opportunities</p>
+                <ul className="mt-1.5 space-y-1.5">
+                  {shownOpportunities.map((opportunity: { title: string; text: string }) => (
+                    <li key={opportunity.title} className="flex gap-2 text-sm leading-6 text-slate-700">
+                      <span className="mt-2.5 size-1 shrink-0 rounded-full bg-slate-500" />
+                      <span className="min-w-0">
+                        <strong className="text-slate-900">{opportunity.title}</strong> — {opportunity.text}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                {/* {hiddenOpportunities > 0 && (
+                  <div className="mt-2 flex justify-end">
+                    <button
+                      type="button"
+                      onClick={() => setAllOpportunities(v => !v)}
+                      className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:underline"
+                    >
+                      {allOpportunities ? "Show less" : `Show ${hiddenOpportunities} more`} <ArrowRight className="size-3.5" />
+                    </button>
+                  </div>
+                )} */}
+              </div>
+            </div>
+          </div>
         </section>
 
       <section>
@@ -201,99 +260,68 @@ export function AiAnalysisTab() {
         {/* Same panel language as the insolvency Probability-of-Default section (tinted
             panel, big band-coloured headline, dashed arrow-segment breakdown), but the
             copy is plain: one sentence per idea, no jargon, no tooltip-only meaning. */}
-        <div className={cn("grid gap-10 rounded-lg border border-gray-100 p-6 shadow-sm xl:grid-cols-2", healthPanelBg(health.score))}>
-          <div className="space-y-6">
-            <div>
-              <p className="text-sm text-gray-600">Financial health score (out of 100)</p>
-              <div className="mt-1 flex flex-wrap items-end gap-3">
-                <span className={cn("text-5xl font-bold leading-none", bandText(health.score))}>{health.score}</span>
-                <span className={cn("pb-1 text-2xl font-bold", bandText(health.score))}>{healthBandLabel(health.score)}</span>
-              </div>
-              <p className="mt-2 max-w-xl text-sm leading-6 text-slate-700">
-                In plain terms: <strong className="text-slate-900">{customer.name.split(" ")[0]} manages money well.</strong> Income comfortably covers
-                the EMIs, nothing is overdue, and there is money left over most months.
-              </p>
-              {/* Band scale — where this score falls across the whole 0–100 range. */}
-              <div className="mt-4">
-                <BandScale score={health.score} bands={HEALTH_BANDS} />
-              </div>
+        {/* Two boxes side by side: the score and what it is made of, then the drivers
+            behind it. The peer comparison that used to sit on the right is gone. */}
+        <div className="grid gap-4 lg:grid-cols-2">
+          <div className={cn("rounded-lg border border-gray-100 p-5 shadow-sm", healthPanelBg(health.score))}>
+            <p className="text-md font-semibold text-slate-900">Financial Health Score</p>
+            <div className="mt-2 flex flex-wrap items-end gap-2">
+              <span className={cn("text-5xl font-bold leading-none", bandText(health.score))}>{health.score}</span>
+              <span className="pb-1 text-lg font-semibold text-slate-500">/ 100</span>
+              <span className="pb-1"><StatusPill tone={bandPill(health.score)}>{healthBandLabel(health.score)}</StatusPill></span>
             </div>
+            <p className="mt-1.5 text-xs text-slate-600">
+              Computed from {customer.healthDrivers.length} driver groups · {applicableCount} applicable checks
+            </p>
 
-            <div>
-              <p className="text-sm font-semibold text-slate-900">What makes up this score</p>
-              <p className="mt-0.5 text-xs text-slate-600">Three things are measured. A wider block means it contributes more.</p>
+            <p className="mt-4 text-sm leading-6 text-slate-700">
+              In plain terms: <strong className="text-slate-900">{customer.name.split(" ")[0]} manages money well.</strong> Income comfortably covers
+              the EMIs, nothing is overdue, and there is money left over most months.
+            </p>
+
+            <div className="mt-4">
+              {/* <p className="text-sm font-semibold text-slate-900">What makes up this score</p>
+              <p className="mt-0.5 text-xs text-slate-600">Three things are measured. A wider block means it contributes more.</p> */}
               <div className="mt-2">
                 <ArrowSegmentBar
                   segments={customer.healthDrivers.map((d: any, i: number) => ({ label: String(d.score), value: d.score, color: DRIVER_COLORS[i] }))}
-                  leftLabel="Weakest"
-                  rightLabel="Strongest"
                 />
               </div>
-              <div className="mt-3 space-y-2">
-                {customer.healthDrivers.map((driver: any, i: number) => (
-                  <div key={driver.name} className="flex items-start gap-3 rounded-lg bg-white/70 px-3 py-2">
-                    <i className="mt-1.5 size-2.5 shrink-0 rounded-full" style={{ backgroundColor: DRIVER_COLORS[i] }} />
-                    <div className="min-w-0 flex-1">
-                      <p className="text-sm font-semibold text-slate-900">{DRIVER_PLAIN[driver.name]?.title ?? driver.name}</p>
-                      <p className="text-xs leading-5 text-slate-600">{DRIVER_PLAIN[driver.name]?.meaning}</p>
-                    </div>
-                    <span className={cn("shrink-0 text-sm font-bold", bandText(driver.score))}>{driver.score}</span>
-                  </div>
-                ))}
-              </div>
+            </div>
+
+            <div className="mt-4 flex items-start gap-2 rounded-lg border border-white/70 bg-green-800 px-3 py-2.5">
+              <Info className="mt-0.5 size-3.5 shrink-0 text-slate-400" />
+              <p className="text-xs leading-5 text-slate-600">Current income supports repayments; reserve cover is the main constraint.</p>
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div>
-              <p className="text-sm font-semibold text-slate-900">How this compares with your other customers</p>
-              <p className="mt-1 text-sm leading-6 text-slate-700">
-                Out of every 100 customers in your book, <strong className="text-slate-900">{customer.name.split(" ")[0]} scores higher than {percentile}</strong> of them.
-              </p>
-              <div className="mt-3 flex items-center gap-2">
-                <Label className="text-xs text-slate-500">Compare with</Label>
-                <Select value={cohort} onValueChange={setCohort}>
-                  <SelectTrigger className="h-8 w-[200px] bg-white text-xs"><SelectValue /></SelectTrigger>
-                  <SelectContent position="popper">
-                    <SelectItem value="portfolio">All my customers</SelectItem>
-                    <SelectItem value="self-employed">Self-employed customers</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className="mt-3 h-[19.5rem]">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={histogram.map((count, index) => ({ range: String(index * 10), band: `${index * 10}–${index === 9 ? 100 : index * 10 + 9}`, count }))} margin={{ top: 8, right: 6, left: -18, bottom: 0 }}>
-                    <CartesianGrid vertical={false} stroke="#e2e8f0" strokeDasharray="3 3" />
-                    <XAxis dataKey="range" tick={{ fontSize: 9, fill: "#64748b" }} axisLine={false} tickLine={false} interval={0} />
-                    <YAxis tick={{ fontSize: 9, fill: "#64748b" }} axisLine={false} tickLine={false} />
-                    <Tooltip
-                      content={({ active, payload }) => {
-                        const pt: any = payload?.[0]?.payload;
-                        if (!active || !pt) return null;
-                        return <div className="rounded-lg border border-slate-200 bg-white p-2 text-xs shadow-xl"><span className="font-semibold text-slate-900">Score {pt.band}</span><span className="ml-2 text-slate-600">{pt.count} customers</span></div>;
-                      }}
-                    />
-                    <Bar dataKey="count" radius={[3, 3, 0, 0]} isAnimationActive={false}>
-                      {histogram.map((_, index) => <Cell key={index} fill={index === Math.floor(health.score / 10) ? "#16a34a" : "#d7dee8"} />)}
-                    </Bar>
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-              <p className="mt-1 text-xs text-slate-600">The green bar is where this customer sits. Taller bars mean more customers score in that range.</p>
+          <div className="rounded-lg flex flex-col justify-between border border-gray-100 bg-white p-5 shadow-sm">
+            <p className="text-md font-semibold text-slate-900">What is driving the score</p>
+            <div className="mt-3 divide-y divide-slate-100">
+              {customer.healthDrivers.map((driver: any, index: number) => {
+                const DIcon = [BarChart3, Coins, ShieldCheck][index] ?? ListChecks;
+                return (
+                  <div key={driver.name} className="flex items-start gap-3 py-3 first:pt-0 last:pb-0">
+                    <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-blue-50 text-blue-600"><DIcon className="size-4" /></span>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="text-sm font-semibold text-slate-900">{driver.name}</span>
+                        <span className={cn("text-sm font-bold tabular-nums", bandText(driver.score))}>{driver.score}</span>
+                        <StatusPill tone={driver.score >= 75 ? "emerald" : "blue"}>{driver.band}</StatusPill>
+                      </div>
+                      <p className="mt-1 text-xs leading-5 text-slate-600">{DRIVER_BASIS[driver.name]}</p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
-            <div>
-              <p className="text-sm font-semibold text-slate-900">What the score ranges mean</p>
-              <div className="mt-2 space-y-1.5">
-                {HEALTH_BANDS.slice().reverse().map(band => (
-                  <div key={band.label} className="flex items-center gap-2 text-xs text-slate-700">
-                    <i className="size-2.5 shrink-0 rounded-full" style={{ backgroundColor: band.color }} />
-                    <span className="w-16 font-semibold">{band.from}–{band.to}</span>
-                    <span className="font-medium">{band.label}</span>
-                    <span className="text-slate-500">· {BAND_PLAIN[band.label]}</span>
-                  </div>
-                ))}
-              </div>
+            <div className="mt-4 flex items-start gap-2 rounded-lg bg-slate-50 px-3 py-2.5">
+              <Info className="mt-0.5 size-3.5 shrink-0 text-slate-400" />
+              <p className="text-xs leading-5 text-slate-600">
+                Score basis: recognised receipts, operating outflows, verified debt obligations and accessible reserves.
+                Operating-account liquidity is assessed separately and is not automatically treated as personal savings.
+              </p>
             </div>
           </div>
         </div>
