@@ -60,6 +60,7 @@ export const CustomersScreen: FC<{
   const [tierSelected, setTierSelected] = useState<string[]>([]);
   const [relationshipSelected, setRelationshipSelected] = useState<string[]>([]);
   const [categorySelected, setCategorySelected] = useState<string[]>([]);
+  const [decisionSelected, setDecisionSelected] = useState<string[]>([]);
   const [sortSelected, setSortSelected] = useState<string[]>(["priority"]);
   // Who each customer is assigned to. `saved` is what is on file; `draft` is what the
   // RM has changed on screen but not committed — any difference turns on edit mode.
@@ -124,6 +125,11 @@ export const CustomersScreen: FC<{
     []
   );
 
+  const decisionOptions = useMemo(
+    () => ["Prioritise", "Nurture", "Review", "Reject"].map(d => ({ value: d, label: d })),
+    []
+  );
+
   const sortOptions = useMemo(
     () => [
       { value: "priority", label: "Lead priority" },
@@ -140,6 +146,7 @@ export const CustomersScreen: FC<{
     setTierSelected([]);
     setRelationshipSelected([]);
     setCategorySelected([]);
+    setDecisionSelected([]);
     setSortSelected(["priority"]);
     setFilterState((prev) => {
       const cleared = (r: Record<string, string[]>) =>
@@ -214,7 +221,18 @@ export const CustomersScreen: FC<{
         onFilterChange: (vals: string[]) => setTierSelected(vals),
         showAllOption: true,
         showLabel: true,
-        width: "165px",
+        width: "160px",
+      },
+      {
+        id: "decision",
+        label: "AI Decision",
+        type: "multiselect" as const,
+        options: decisionOptions,
+        selectedValues: decisionSelected,
+        onFilterChange: (vals: string[]) => setDecisionSelected(vals),
+        showAllOption: true,
+        showLabel: true,
+        width: "230px",
         // Right end of the filter row — where a filter the agent applied is announced.
         actionElements: agentFilter ? (
           <span className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-md border border-blue-200 bg-blue-50 px-2.5 py-1.5 text-xs font-medium text-blue-700">
@@ -229,7 +247,8 @@ export const CustomersScreen: FC<{
     ],
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [priorityOptions, prioritySelected, sortOptions, sortSelected, categoryOptions, categorySelected,
-      relationshipOptions, relationshipSelected, tierOptions, tierSelected, agentFilter]
+      relationshipOptions, relationshipSelected, tierOptions, tierSelected,
+      decisionOptions, decisionSelected, agentFilter]
   );
 
   const secondaryFilterGroups = useMemo<SecondaryFilterGroup[]>(() => [], []);
@@ -288,6 +307,7 @@ export const CustomersScreen: FC<{
     if (tierSelected.length) list = list.filter((c) => tierSelected.includes(c.tier));
     if (relationshipSelected.length) list = list.filter((c) => relationshipSelected.includes(c.relationship));
     if (categorySelected.length) list = list.filter((c) => categorySelected.includes(c.category));
+    if (decisionSelected.length) list = list.filter((c) => decisionSelected.includes(c.ai_decision));
     const q = searchQuery.trim().toLowerCase();
     if (q) {
       list = list.filter(
@@ -318,7 +338,7 @@ export const CustomersScreen: FC<{
     else if (key === "health") sorted.sort((a, b) => b.health.score - a.health.score);
     else sorted.sort((a, b) => a.name.localeCompare(b.name));
     return sorted;
-  }, [all, scope, prioritySelected, tierSelected, relationshipSelected, categorySelected, searchQuery, sortSelected, agentFilter]);
+  }, [all, scope, prioritySelected, tierSelected, relationshipSelected, categorySelected, decisionSelected, searchQuery, sortSelected, agentFilter]);
 
   const metrics = useMemo(
     () => [
