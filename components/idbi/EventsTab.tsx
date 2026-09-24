@@ -48,13 +48,12 @@ export function EventsTab() {
             </span>
 
             {/* Title, detail and tags all sit on the one line — the row never wraps. */}
-            <p className="w-[250px] shrink-0 truncate text-sm font-semibold text-slate-950" title={event.title}>
+            <p className="w-[240px] shrink-0 text-sm font-semibold leading-5 text-slate-950">
               {event.title}
             </p>
 
-            <p className="min-w-0 flex-1 truncate text-xs text-slate-600" title={event.detail}>
-              {event.detail}
-            </p>
+            {/* Wraps rather than truncates — the detail is the point of the row. */}
+            <p className="min-w-0 flex-1 text-xs leading-5 text-slate-600">{event.detail}</p>
 
             <div className="flex shrink-0 items-center gap-1.5">
               {event.tags.map(tag => <StatusPill key={tag} tone="slate" fixedWidth="w-[124px]">{tag}</StatusPill>)}
