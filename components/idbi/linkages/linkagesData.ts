@@ -14,7 +14,7 @@
 
 // Cache-bust: the browser will otherwise serve a stale copy of the fixture
 // from its HTTP cache and no amount of regenerating the file will show up.
-const FIXTURE_VERSION = 5;
+const FIXTURE_VERSION = 6;
 const FIXTURE_URL = `/idbi-data/linkages.json?v=${FIXTURE_VERSION}`;
 
 let fixturePromise: Promise<Record<string, any>> | null = null;

@@ -65,7 +65,7 @@ const getNetworkDegreeFromSelection = (degrees: string[]): number => {
  * so without a version in the key, a browser that cached a bad payload keeps
  * serving it forever and the fix looks like it did nothing.
  */
-const FIXTURE_CACHE_VERSION = 5;
+const FIXTURE_CACHE_VERSION = 6;
 
 export const CustomerLinkagesTab: FC<{ customerId?: string }> = ({ customerId: customerIdProp }) => {
   const { activeContexts, handleSelect } = useActiveContext();

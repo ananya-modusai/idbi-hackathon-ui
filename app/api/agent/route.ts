@@ -21,9 +21,12 @@ type ChatMessage = { role: 'system' | 'user' | 'assistant'; content: string };
 export async function POST(req: NextRequest) {
   const apiKey = process.env.OPENROUTER_API_KEY;
   if (!apiKey) {
+    // Without this the fetch below sends "Bearer undefined" and the failure
+    // surfaces as an opaque 502. Name the actual cause instead.
+    console.error('[api/agent] OPENROUTER_API_KEY is not set.');
     return NextResponse.json(
-      { error: 'OPENROUTER_API_KEY is not set on the server.' },
-      { status: 500 },
+      { error: 'Agent is not configured: OPENROUTER_API_KEY is not set.' },
+      { status: 503 },
     );
   }
 

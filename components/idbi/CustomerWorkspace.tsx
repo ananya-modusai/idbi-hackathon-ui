@@ -28,13 +28,14 @@ export interface WorkspaceCustomer {
 const TABS = [
   { id: "profile", label: "Customer Profile" },
   { id: "activity", label: "Requests & Activity" },
+  // Network analysis sits before AI Analysis: the RM reads the customer's
+  // network before the assessment that draws on it.
+  { id: "linkages", label: "Network Analysis" },
   { id: "analysis", label: "AI Analysis" },
   { id: "financial", label: "Financial Position" },
   { id: "metrics", label: "Metrics" },
   // Everything that has happened on this customer, newest first.
   { id: "events", label: "Events" },
-  // Ported from customer_underwriting_ui.
-  { id: "linkages", label: "Linkages" },
 ] as const;
 
 type TabId = (typeof TABS)[number]["id"];

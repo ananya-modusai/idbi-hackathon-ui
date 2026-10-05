@@ -10,9 +10,9 @@ import { PortfolioSignalsScreen } from "./mis-portfolio/PortfolioSignalsScreen";
 import screenData from "@/app/idbi-data/customer-screen-1.json";
 import { useIdbiActiveContextStore } from "./ActiveContext/store";
 
-type Section = "Workspace" | "Customer" | "Opportunity Signals" | "Portfolio Signals";
+type Section = "Workspace" | "Customer" | "Opportunity Signals" | "Portfolio MIS";
 
-const SECTIONS: Section[] = ["Workspace", "Customer", "Opportunity Signals", "Portfolio Signals"];
+const SECTIONS: Section[] = ["Workspace", "Customer", "Portfolio MIS", "Opportunity Signals"];
 
 export const IdbiApp: FC = () => {
   const [section, setSection] = useState<Section>("Workspace");
@@ -61,7 +61,7 @@ export const IdbiApp: FC = () => {
       onNavigate={navigate}
       onSelectCustomer={(c) => openCustomer(c as WorkspaceCustomer)}
     >
-      {section === "Portfolio Signals" ? (
+      {section === "Portfolio MIS" ? (
         <PortfolioSignalsScreen onOpenCustomer={openCustomerById} />
       ) : section === "Opportunity Signals" ? (
         <SalesAlertsScreen onGoToCustomers={() => setSection("Workspace")} />

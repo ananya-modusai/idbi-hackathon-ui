@@ -386,7 +386,7 @@ export const useLinkagesStore = create(
       // captured while the graph was broken (e.g. panned ~950px off the nodes)
       // kept being restored and the canvas looked empty even once the data was
       // correct. Bump this suffix whenever the graph data shape changes.
-      name: 'linkages-store-v7',
+      name: 'linkages-store-v8',
       partialize: (state: any) => ({
         // Don't persist selectedDegree so it resets to default ['first'] on browser refresh
         graphStates: Object.entries(state.graphStates).reduce((acc: any, [customerId, graphState]: any) => {

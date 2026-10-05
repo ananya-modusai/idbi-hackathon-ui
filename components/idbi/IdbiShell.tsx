@@ -36,6 +36,8 @@ const SIDEBAR_GROUPS: SidebarGroupDef[] = [
   {
     label: "Relationship Management",
     items: [
+      // Book-level portfolio MIS: exposure, linkage, community and recency signals.
+      { label: "Portfolio MIS", icon: Activity },
       // The customer book. Carries the My Workspace icon now that the separate
       // My Workspace section is gone.
       { label: "Workspace", icon: LayoutGrid },
@@ -43,8 +45,6 @@ const SIDEBAR_GROUPS: SidebarGroupDef[] = [
       { label: "Customer", icon: UserRound },
       // Book-level view of the opportunity probes that the Customer space shows per customer.
       { label: "Opportunity Signals", icon: BellRing },
-      // Book-level portfolio MIS: exposure, linkage, community and recency signals.
-      { label: "Portfolio Signals", icon: Activity },
     ],
   },
 ];

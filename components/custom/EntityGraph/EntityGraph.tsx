@@ -2272,6 +2272,14 @@ const [tooltip, setTooltip] = useState<{ x: number; y: number; content: string }
       setHighlightLinks(new Set());
     }
 
+    // A null node means the click landed on empty canvas. The selection has
+    // already been cleared above; everything below dereferences node.id, so
+    // stop here rather than throwing.
+    if (!node) {
+      onNodeClick?.(null as any);
+      return;
+    }
+
     if (isDoubleClick) {
       // Handle double click - zoom to node and its neighbors
       handleNodeDoubleClick(node);
