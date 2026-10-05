@@ -2698,11 +2698,15 @@ export const CustomerLinkagesTab: FC<{ customerId?: string }> = ({ customerId: c
           },
           filterFunction: () => true
         },
-        // Node Type and Source live in `secondary` alongside Degree on purpose.
-        // CustomListFilter renders secondary / tertiary / quaternary as separate
-        // <FilterRow>s inside a `space-y-4` stack, so anything placed in a
-        // different group is guaranteed its own row no matter what widths or
-        // inline flags it is given. One array = one row.
+        // Node Type and Source live in `secondary` alongside Degree: CustomListFilter
+        // renders each group array as its own <FilterRow>, so splitting them across
+        // arrays would guarantee separate rows.
+        //
+        // `maxWidth` is what actually keeps them side by side. Both are Type-2
+        // (multiselect) filters, so without a cap each is handed flexBasis 50%
+        // (100 / type2Count); 50% + 50% + gap-4 overflows the row and wraps them
+        // onto separate lines. A capped group falls back to flexBasis "auto" +
+        // flex-shrink-0 — "grow into the leftover space, never push".
         ...([
         ...(combinedNodeTypeOptions.length > 0 ? [
           {
@@ -2713,7 +2717,7 @@ export const CustomerLinkagesTab: FC<{ customerId?: string }> = ({ customerId: c
             selectedValues: [],
             onFilterChange: handleNodeTypeFilterChange,
             spacingAfter: 'mr-4',
-            minWidth: 300
+            maxWidth: '360px'
           }
         ] : []),
         {
@@ -2723,7 +2727,7 @@ export const CustomerLinkagesTab: FC<{ customerId?: string }> = ({ customerId: c
           options: sourceOptions,
           selectedValues: [],
           onFilterChange: handleSourceFilterChange,
-          minWidth: 300
+          maxWidth: '360px'
         }
         ]),
       ],
@@ -2902,9 +2906,6 @@ export const CustomerLinkagesTab: FC<{ customerId?: string }> = ({ customerId: c
     }
   }, [customerId, strongConnector, transformNeptuneGraphToLinks]);
 
-  // Import PageHeader dynamically to avoid SSR issues if needed
-  const PageHeader = require('@/components/custom/PageHeader').PageHeader;
-
   return (
     <>
       {/* Portal-rendered tooltip (fixed positioned to avoid clipping). Render at top level so it overlays everything. */}
@@ -2933,16 +2934,8 @@ export const CustomerLinkagesTab: FC<{ customerId?: string }> = ({ customerId: c
         initial="hidden"
         animate="visible"
       >
-        {/* Page Header (dynamic, like overview tab) */}
-      <div className="mb-6">
-        <PageHeader
-          name={liveOverview?.name ?? customerName ?? customerId}
-          id={customerId}
-          identifierType="CID"
-          overview={liveOverview}
-          showCacheStatus={true}
-        />
-      </div>
+        {/* No page header here: the customer workspace header directly above this
+            tab already names the customer and their CID. */}
 
       <MotionDiv variants={itemVariants} className="space-y-2">
         <SectionHeaderWithFlags
@@ -2954,16 +2947,6 @@ export const CustomerLinkagesTab: FC<{ customerId?: string }> = ({ customerId: c
         />
 
         <div className="relative">
-
-          {(() => {
-            console.log('[CustomerLinkagesTab] ABOUT TO RENDER EntityGraph with data:', {
-              getCombinedRiskIntelligenceDataLength: getCombinedRiskIntelligenceData.length,
-              firstItem: getCombinedRiskIntelligenceData[0],
-              hasSynthetic: getCombinedRiskIntelligenceData.some((item: any) => item.isSynthetic === true),
-              transformNeptuneToGraphDataLength: transformNeptuneToGraphData.length
-            });
-            return null;
-          })()}
 
           <EntityGraph
             data={getCombinedRiskIntelligenceData}

@@ -773,8 +773,6 @@
   "financialPosition": {
     "scopeOptions": [
       "Combined view · 5 accounts",
-      "IDBI Bank · 2 accounts",
-      "Other banks · 3 accounts",
       "IDBI Bank · Current ••••0292",
       "IDBI Bank · Savings ••••0291",
       "HDFC Bank · Current ••••4417",
@@ -1458,18 +1456,6 @@
         "label": "Combined view · 5 accounts",
         "share": 1.0,
         "group": "all"
-      },
-      {
-        "value": "idbi",
-        "label": "IDBI Bank · 2 accounts",
-        "share": 0.71,
-        "group": "idbi"
-      },
-      {
-        "value": "other",
-        "label": "Other banks · 3 accounts",
-        "share": 0.29,
-        "group": "other"
       },
       {
         "value": "idbi-current",
