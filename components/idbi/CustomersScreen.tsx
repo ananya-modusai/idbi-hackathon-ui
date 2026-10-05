@@ -117,9 +117,11 @@ export const CustomersScreen: FC<{
     []
   );
 
+  // Constitution types, matching the `category` values in customer-screen-1.json.
   const categoryOptions = useMemo(
     () => [
-      { value: "Business", label: "Business" },
+      { value: "Proprietorship", label: "Proprietorship" },
+      { value: "Private Limited Company", label: "Private Limited Company" },
       { value: "Individual", label: "Individual" },
     ],
     []
@@ -492,9 +494,11 @@ export const CustomersScreen: FC<{
     {
       key: "category",
       header: "Category",
-      width: "10%",
-      minWidth: "124px",
-      render: (v: string) => <BubbleTag text={v} color={categoryColor(v)} withBorder={true} fixedWidth="w-[88px]" />,
+      width: "14%",
+      // "Private Limited Company" is far wider than the old "Business"/"Individual"
+      // pair, so the 88px fixed chip clipped it. Sized to the longest label instead.
+      minWidth: "188px",
+      render: (v: string) => <BubbleTag text={v} color={categoryColor(v)} withBorder={true} fixedWidth="w-[172px]" />,
     },
     { key: "location", header: "Location", width: "9%", minWidth: "128px" },
     {

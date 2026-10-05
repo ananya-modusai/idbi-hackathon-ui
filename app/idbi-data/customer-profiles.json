@@ -7,7 +7,7 @@
       "entityType": "INDIVIDUAL",
       "relationshipStatus": "EXISTING_CUSTOMER",
       "classification": "Individual",
-      "location": "Kila Raipur, Punjab",
+      "location": "Bamunimaidan, Assam",
       "relationshipOwner": "Ananya Rao",
       "about": {
         "label": "AI-generated summary",
@@ -15,7 +15,7 @@
           {
             "parts": [
               { "text": "Self-employed business owner", "strong": true },
-              { "text": " operating Vandana Enterprises in Kila Raipur, with an IDBI relationship dating to August 2018." }
+              { "text": " operating Vandana Enterprises in Bamunimaidan, with an IDBI relationship dating to August 2018." }
             ],
             "evidenceIds": ["SRC-IDENTITY", "SRC-RELATIONSHIP", "SYN-ORGANISATION"]
           },

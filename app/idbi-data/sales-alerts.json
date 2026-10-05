@@ -37,7 +37,7 @@
       "type": "Customer Event",
       "title": "Vandana Singh added her daughter to the family health cover",
       "detail": "A new dependent creates a relevant point to discuss long-term child savings and family protection planning.",
-      "customer": { "name": "Vandana Singh", "cid": "CID 990000029", "relationship": "Existing", "tier": "Platinum", "category": "Business", "location": "Kila Raipur, PB" },
+      "customer": { "name": "Vandana Singh", "cid": "CID 990000029", "relationship": "Existing", "tier": "Platinum", "category": "Business", "location": "Bamunimaidan, AS" },
       "action": "Take Action",
       "prompt": "Vandana Singh has added her daughter to the family health cover. Draft the child-savings and family protection conversation, including Sukanya Samriddhi eligibility."
     },

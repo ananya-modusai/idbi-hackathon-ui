@@ -3,7 +3,7 @@
     "asOf": "2026-09-19",
     "customer": {
       "id": "990000142",
-      "name": "Harpreet Kaur Gill",
+      "name": "TRC Private Limited",
       "classification": "Individual",
       "relationship": "Prospect · NTB",
       "tier": "Untiered",
@@ -203,7 +203,7 @@
           "trigger": "Turnover of ₹47.20L runs entirely through two other banks.",
           "primaryAction": "Offer current account",
           "secondaryAction": null,
-          "prompt": "Harpreet Kaur Gill routes ₹47.20L of turnover through two other banks. Draft the current-account onboarding conversation that builds conduct before any limit."
+          "prompt": "TRC Private Limited routes ₹47.20L of turnover through two other banks. Draft the current-account onboarding conversation that builds conduct before any limit."
         }
       ],
       "healthHistory": [
@@ -287,7 +287,7 @@
               }
             ]
           },
-          "reply": "**Nothing is open — Harpreet Kaur Gill is not a customer yet.**\n\nThe only thing on file is the **export packing credit enquiry** logged on 17 Sep 2026. There is no account, no card and no prior activity with IDBI.\n\nWhat exists instead is an onboarding assessment built from Account Aggregator, bureau and GST data, and it scores **23/100 (Stressed)**. Receipts land every month; it is utilisation and repayment timing that pull the score down."
+          "reply": "**Nothing is open — TRC Private Limited is not a customer yet.**\n\nThe only thing on file is the **export packing credit enquiry** logged on 17 Sep 2026. There is no account, no card and no prior activity with IDBI.\n\nWhat exists instead is an onboarding assessment built from Account Aggregator, bureau and GST data, and it scores **23/100 (Stressed)**. Receipts land every month; it is utilisation and repayment timing that pull the score down."
         },
         {
           "label": "Which products can be pre-checked?",
@@ -325,7 +325,7 @@
           "reply": "**Lead with what you can offer.**\n\n- Open with the **current account** — it is the yes in the conversation, and it costs her nothing.\n- If she raises the packing credit, be specific about what would change it: **two clean GST filing cycles** and **utilisation below 85% for three months**. That is a date, not a refusal.\n- Ask how the last two quarters have gone rather than quoting her own numbers back at her.\n\n**What to collect:** the last two GST challans, six months of statements from the existing banks, and the machinery loan sanction letter."
         }
       ],
-      "healthPlainTerms": "Harpreet is finding it hard to keep up. Money comes in every month, but almost all of it is going straight back out to the existing bank.",
+      "healthPlainTerms": "TRC Private Limited is finding it hard to keep up. Money comes in every month, but almost all of it is going straight back out to the existing bank.",
       "healthNote": "Utilisation and repayment timing are the constraint; income arrives reliably.",
       "healthDriverBasis": {
         "Cash Flow Strength": "Receipts land reliably every month, but almost nothing is left after operating costs.",
@@ -827,7 +827,7 @@
         {
           "asset": "Hosiery unit · Ludhiana",
           "type": "Industrial property",
-          "owner": "Harpreet Kaur Gill",
+          "owner": "TRC Private Limited",
           "location": "Ludhiana, PB",
           "value": "₹40–45L",
           "status": "Charged",
@@ -1849,7 +1849,7 @@
           ]
         }
       ],
-      "benchmarkNote": "Built entirely from Account Aggregator, bureau and GST data shared under consent on 17 Sep 2026 — Harpreet Kaur Gill holds no IDBI account, so no internal conduct is included. Colours compare each value with the stated benchmark. Thresholds shown are indicative and require approval against bank policy."
+      "benchmarkNote": "Built entirely from Account Aggregator, bureau and GST data shared under consent on 17 Sep 2026 — TRC Private Limited holds no IDBI account, so no internal conduct is included. Colours compare each value with the stated benchmark. Thresholds shown are indicative and require approval against bank policy."
     },
     "financialHealthDetail": {
       "score": 23,

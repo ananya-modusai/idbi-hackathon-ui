@@ -189,7 +189,10 @@ export const decisionColor = (decision: string) =>
     : "red";
 
 /** Business or Individual — what kind of customer this is. */
-export const categoryColor = (category: string) => (category === "Business" ? "indigo" : "teal");
+// Constitution types: the business constitutions stay indigo so they read as one
+// family against the teal used for individuals.
+export const categoryColor = (category: string) =>
+  category === "Individual" ? "teal" : "indigo";
 
 export function StatusPill({ children, tone = "slate", fixedWidth }: { children: React.ReactNode; tone?: keyof typeof PILL_COLOR; fixedWidth?: string }) {
   // inline-flex + mr keeps a gap when several chips sit next to each other.

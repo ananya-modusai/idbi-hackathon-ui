@@ -111,7 +111,7 @@
         ],
         "recommendation": {
           "headline": "No critical-illness cover behind a ₹5L base floater",
-          "detail": "The base floater is ₹5L for four members in the Ludhiana cluster, where the average cardiac-procedure claim now settles at ₹4.2L — one event would exhaust the floater for the whole family for that year. A ₹10L critical-illness rider pays a lump sum on diagnosis and costs ₹11,800 a year at her age band.",
+          "detail": "The base floater is ₹5L for four members in the Guwahati cluster, where the average cardiac-procedure claim now settles at ₹4.2L — one event would exhaust the floater for the whole family for that year. A ₹10L critical-illness rider pays a lump sum on diagnosis and costs ₹11,800 a year at her age band.",
           "product": "Critical Illness rider · ₹10L",
           "value": "₹11,800 / yr",
           "action": "Explain CI cover",
@@ -143,7 +143,7 @@
               "icon": "Coins"
             }
           ],
-          "whyNow": "One cardiac admission averages ₹4.2L in the Ludhiana cluster and would exhaust the floater for all four members.",
+          "whyNow": "One cardiac admission averages ₹4.2L in the Guwahati cluster and would exhaust the floater for all four members.",
           "nextStep": "Attach the rider at the 02 Feb renewal — mid-term addition needs fresh underwriting."
         }
       },
@@ -691,12 +691,12 @@
         "handle": "Vandana Singh · Founder, Vandana Enterprises",
         "author": "Vandana Singh",
         "authorHandle": "vandana-singh-enterprises",
-        "authorMeta": "Founder, Vandana Enterprises · Kila Raipur, Punjab",
+        "authorMeta": "Founder, Vandana Enterprises · Bamunimaidan, Assam",
         "timeAgo": "1w",
         "date": "11 Sep 2026",
         "confidence": "High",
         "matched": "Verified · name, location and business match",
-        "text": "Eight years ago this was a two-machine unit. Today Vandana Enterprises has been empanelled as a Tier-2 supplier to a leading auto OEM, and our Kila Raipur unit doubles capacity from October. To every supplier who said a woman-run shop could not hold tolerance — thank you for the motivation.",
+        "text": "Eight years ago this was a two-machine unit. Today Vandana Enterprises has been empanelled as a Tier-2 supplier to a leading auto OEM, and our Bamunimaidan unit doubles capacity from October. To every supplier who said a woman-run shop could not hold tolerance — thank you for the motivation.",
         "engagement": {
           "reactions": 412,
           "comments": 38,
@@ -711,7 +711,7 @@
         ],
         "action": "Know more",
         "prompt": "Vandana Singh posted that Vandana Enterprises has been empanelled as a Tier-2 auto OEM supplier and doubles capacity from October. Assess what this means for her working-capital enquiry and what facilities to put in front of her.",
-        "summary": "She announced that Vandana Enterprises is now a Tier-2 supplier to a large auto maker, and that the Kila Raipur unit doubles capacity from October.",
+        "summary": "She announced that Vandana Enterprises is now a Tier-2 supplier to a large auto maker, and that the Bamunimaidan unit doubles capacity from October.",
         "url": "https://www.linkedin.com/posts/vandana-singh-enterprises_oem-empanelment-activity-7112"
       },
       {
@@ -720,12 +720,12 @@
         "handle": "@vandana.enterprises",
         "author": "vandana.enterprises",
         "authorHandle": "@vandana.enterprises",
-        "authorMeta": "Kila Raipur, Punjab",
+        "authorMeta": "Bamunimaidan, Assam",
         "timeAgo": "2w",
         "date": "03 Sep 2026",
         "confidence": "High",
         "matched": "Business handle linked from the LinkedIn profile",
-        "text": "New CNC line is in. Took eleven months of planning and one very long night of installation. Kila Raipur unit, September 2026.",
+        "text": "New CNC line is in. Took eleven months of planning and one very long night of installation. Bamunimaidan unit, September 2026.",
         "engagement": {
           "likes": 1284,
           "comments": 63
@@ -740,7 +740,7 @@
         ],
         "action": "Know more",
         "prompt": "Vandana Singh installed a new CNC line in September 2026 that was not financed through IDBI. Assess the refinance and asset-insurance opportunity, and tie it to the ₹13L under-declaration on her shop policy.",
-        "summary": "She posted about a new CNC line being installed at the Kila Raipur unit in September, after eleven months of planning.",
+        "summary": "She posted about a new CNC line being installed at the Bamunimaidan unit in September, after eleven months of planning.",
         "url": "https://www.instagram.com/p/C8nKq2rVandana"
       },
       {
@@ -778,12 +778,12 @@
         "handle": "Vandana Singh · Founder, Vandana Enterprises",
         "author": "Vandana Singh",
         "authorHandle": "vandana-singh-enterprises",
-        "authorMeta": "Founder, Vandana Enterprises · Kila Raipur, Punjab",
+        "authorMeta": "Founder, Vandana Enterprises · Bamunimaidan, Assam",
         "timeAgo": "1mo",
         "date": "18 Aug 2026",
         "confidence": "Medium",
         "matched": "Verified · same profile",
-        "text": "Speaking at the Ludhiana MSME Summit next month on women-led manufacturing and access to credit. If you are building in Punjab, come say hello.",
+        "text": "Speaking at the Guwahati MSME Summit next month on women-led manufacturing and access to credit. If you are building in Assam, come say hello.",
         "engagement": {
           "reactions": 203,
           "comments": 17
@@ -795,8 +795,8 @@
           "Priority banking invite"
         ],
         "action": "Know more",
-        "prompt": "Vandana Singh is speaking at the Ludhiana MSME Summit on women-led manufacturing and access to credit. Suggest how to use this as a relationship and referral touchpoint.",
-        "summary": "She announced she is speaking at the Ludhiana MSME Summit on women-led manufacturing and access to credit.",
+        "prompt": "Vandana Singh is speaking at the Guwahati MSME Summit on women-led manufacturing and access to credit. Suggest how to use this as a relationship and referral touchpoint.",
+        "summary": "She announced she is speaking at the Guwahati MSME Summit on women-led manufacturing and access to credit.",
         "url": "https://www.linkedin.com/posts/vandana-singh-enterprises_msme-summit-activity-7108"
       }
     ]
