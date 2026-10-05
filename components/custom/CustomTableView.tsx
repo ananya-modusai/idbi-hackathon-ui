@@ -6,6 +6,7 @@ import {
   useEffect,
   useMemo,
 } from "react";
+import { Link2 } from "lucide-react";
 import CustomLoader from "./CustomLoader";
 import { CollapseButton } from "./CollapseButton";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
@@ -26,6 +27,7 @@ export interface Column {
   render?: (value: any, row: Record<string, any>) => ReactNode; // Custom render function
   align?: "left" | "center" | "right"; // Text alignment
   verticalAlign?: "top" | "middle" | "bottom"; // Vertical alignment
+  isClickable?: boolean; // Marks the column header with a link glyph
 }
 
 interface SortState {
@@ -634,19 +636,35 @@ export const CustomTableView: FC<CustomTableViewProps> = ({
   ) => {
     // Determine which columns should be frozen
     const numFixed = fixedColumnsCount ?? (fixedFirstColumn ? 1 : 0);
-    const isFixed = 
-      index < numFixed || 
-      (column as any)?.fixed === "left" || 
-      (frozenColumnIndices && frozenColumnIndices.includes(index)) ||
-      (!frozenColumnIndices && !fixedFirstColumn && !fixedColumnsCount && index < 2);
+    // Freezing is opt-in only.
+    //
+    // There used to be a final clause freezing the first TWO columns in every
+    // table that didn't ask for it. Those frozen columns are painted with a
+    // solid background and positioned absolutely, so the next column scrolls
+    // underneath them and gets clipped — that is why USER NAME was cut off
+    // behind LINKAGE and USER ID. A table that wants frozen columns should say
+    // so via fixedFirstColumn / fixedColumnsCount / frozenColumnIndices /
+    // column.fixed.
+    const isFixed =
+      index < numFixed ||
+      (column as any)?.fixed === "left" ||
+      (frozenColumnIndices ? frozenColumnIndices.includes(index) : false);
       
     if (!isFixed) return {};
 
-    // Calculate left offset based on column widths before this column
+    // Calculate left offset based on column widths before this column.
+    //
+    // This MUST use the same width the column actually renders at
+    // (getColumnWidth), not minWidth. They disagree whenever a column sets
+    // `width` without a matching `minWidth` — e.g. a 60px Sno. column was
+    // measured here as the 150px default, so every sticky column after it was
+    // offset 90px too far right, leaving a gap with the scrolling columns
+    // visible underneath.
     let leftOffset = enableRowSelection ? 48 : 0;
     for (let i = 0; i < index; i++) {
-      // Use minWidth as the actual width for sticky positioning
-      leftOffset += parseInt(getColumnMinWidth(columns[i]) || "150") || 150;
+      const rendered = getColumnWidth(columns[i], i);
+      const parsed = parseInt(String(rendered ?? ""), 10);
+      leftOffset += Number.isFinite(parsed) && parsed > 0 ? parsed : 150;
     }
 
     // Determine background color - must be solid to hide scrolling content behind it
@@ -849,7 +867,11 @@ export const CustomTableView: FC<CustomTableViewProps> = ({
             <table
               className="divide-y divide-gray-200 min-w-full"
               style={{
-                width: "100%",
+                // minWidth, not width: with tableLayout:fixed a hard 100% forces the
+                // declared column widths to be crushed, clipping cells mid-glyph. As a
+                // floor, narrow tables still fill the container and wide ones overflow
+                // into the overflow-x-auto wrapper above, which is what should scroll.
+                minWidth: "100%",
                 tableLayout: "fixed",
                 boxSizing: "border-box",
               }}
@@ -904,6 +926,9 @@ export const CustomTableView: FC<CustomTableViewProps> = ({
                             />
                           )}
                           {column.header}
+                          {column.isClickable && (
+                            <Link2 className="w-3 h-3 text-blue-500 flex-shrink-0" />
+                          )}
                           {!isRightAligned && column.sortable !== false && (
                             <SortButton
                               sortState={sortState}

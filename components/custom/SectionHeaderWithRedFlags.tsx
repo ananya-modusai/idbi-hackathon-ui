@@ -1,4 +1,4 @@
-import { FC, useState, useEffect, useRef } from 'react';
+import { FC, useState, useEffect, useRef, ReactNode } from 'react';
 import { AlertCircle, ChevronDown, ChevronUp, Flag, Plus, XCircle, AlertTriangle, Info } from 'lucide-react';
 import { BubbleTag } from '@/components/custom/BubbleTag';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -30,6 +30,9 @@ interface SectionHeaderWithRedFlagsProps {
   showSeparator?: boolean; // control bottom separator line
   //onReport?: (reportId?: string, isNewReport?: boolean) => void; // Updated to handle report selection
   showRedFlagsInHeader?: boolean; // Control whether to show red flags in header, defaults to true
+  // Custom controls rendered beside the title (left) and before the flag counts (right).
+  leftActions?: ReactNode;
+  rightActions?: ReactNode;
 }
 
 export const  SectionHeaderWithRedFlags: FC<SectionHeaderWithRedFlagsProps> = ({
@@ -40,7 +43,9 @@ export const  SectionHeaderWithRedFlags: FC<SectionHeaderWithRedFlagsProps> = ({
   iconColorClass = "text-gray-500",
   showSeparator = true,
   // onReport,
-  showRedFlagsInHeader = true
+  showRedFlagsInHeader = true,
+  leftActions,
+  rightActions
 }) => {
   // Filter flags based on the recipient ID if provided, otherwise use all flags
   const filteredRedFlags = redFlag_recepient_id 
@@ -136,8 +141,18 @@ export const  SectionHeaderWithRedFlags: FC<SectionHeaderWithRedFlagsProps> = ({
         <div className="flex items-center gap-2">
           {Icon && <Icon className={cn("h-5 w-5", iconColorClass)} />}
           <span className="text-lg font-semibold text-blue-700">{title}</span>
+          {leftActions && (
+            <div className="flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
+              {leftActions}
+            </div>
+          )}
         </div>
         <div className="flex items-center gap-2 flex-shrink-0">
+          {rightActions && (
+            <div className="flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
+              {rightActions}
+            </div>
+          )}
           {showRedFlagsInHeader && (
             <>
               {([

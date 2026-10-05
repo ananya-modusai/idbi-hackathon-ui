@@ -43,6 +43,8 @@ const SIDEBAR_GROUPS: SidebarGroupDef[] = [
       { label: "Customer", icon: UserRound },
       // Book-level view of the opportunity probes that the Customer space shows per customer.
       { label: "Opportunity Signals", icon: BellRing },
+      // Book-level portfolio MIS: exposure, linkage, community and recency signals.
+      { label: "Portfolio Signals", icon: Activity },
     ],
   },
 ];

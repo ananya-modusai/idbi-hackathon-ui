@@ -11,6 +11,7 @@ import { RequestsActivityTab } from "./RequestsActivityTab";
 import { AiAnalysisTab } from "./AiAnalysisTab";
 import { MetricsTab } from "./MetricsTab";
 import { EventsTab } from "./EventsTab";
+import { CustomerLinkagesTab } from "./linkages/CustomerLinkagesTab";
 import { WorkspaceDataProvider, workspaceFor } from "./workspaceData";
 import { ModusAgentPanel } from "./ModusAgentPanel";
 
@@ -32,6 +33,8 @@ const TABS = [
   { id: "metrics", label: "Metrics" },
   // Everything that has happened on this customer, newest first.
   { id: "events", label: "Events" },
+  // Ported from customer_underwriting_ui.
+  { id: "linkages", label: "Linkages" },
 ] as const;
 
 type TabId = (typeof TABS)[number]["id"];
@@ -40,6 +43,8 @@ export const CustomerWorkspace: FC<{ customer: WorkspaceCustomer; onBack: () => 
   const [tab, setTab] = useState<TabId>("profile");
   const [agentOpen, setAgentOpen] = useState(false);
   const [agentPrompt, setAgentPrompt] = useState<string | undefined>(undefined);
+  // Set when "Send application link" is pressed; drives the agent's composer mode.
+  const [linkProduct, setLinkProduct] = useState<{ code: string; label: string } | null>(null);
   const workspace = workspaceFor(customer.customer_id) as any;
   const initials = customer.name.split(" ").map((n) => n[0]).join("").slice(0, 2);
 
@@ -124,11 +129,23 @@ export const CustomerWorkspace: FC<{ customer: WorkspaceCustomer; onBack: () => 
                 onOpenAgent={openAgent}
               />
             )}
-            {tab === "activity" && <RequestsActivityTab />}
+            {tab === "activity" && (
+              <RequestsActivityTab
+                onSendApplicationLink={(product) => {
+                  // Reads as the RM asking the agent: the prompt lands as a user
+                  // turn in the thread, and the agent answers with the channel
+                  // options. No separate dialog, no jumping straight to a menu.
+                  setLinkProduct(product);
+                  setAgentPrompt(`Send ${customer.name} the ${product.label} application link.`);
+                  setAgentOpen(true);
+                }}
+              />
+            )}
             {tab === "analysis" && <AiAnalysisTab />}
             {tab === "financial" && <FinancialPositionTab onOpenAgent={openAgent} />}
             {tab === "metrics" && <MetricsTab />}
             {tab === "events" && <EventsTab />}
+            {tab === "linkages" && <CustomerLinkagesTab customerId={customer.customer_id} />}
           </div>
         </div>
       </div>
@@ -141,7 +158,21 @@ export const CustomerWorkspace: FC<{ customer: WorkspaceCustomer; onBack: () => 
           openMatters={(workspace.relationshipFeed?.threads ?? []).length}
           starters={workspace.customer.agentStarters}
           seedPrompt={agentPrompt}
-          onClose={() => setAgentOpen(false)}
+          applicationLink={
+            linkProduct
+              ? {
+                  customerId: customer.customer_id,
+                  customerMobile: (workspace.customer as any)?.contacts?.mobile,
+                  customerEmail: (workspace.customer as any)?.contacts?.email,
+                  product: linkProduct,
+                  // Do NOT clear linkProduct here — that unmounts the composer
+                  // mid-flow and wipes the drafts and the "Sent" confirmation.
+                  // The task ends when the RM closes the panel.
+                  onShared: () => {},
+                }
+              : null
+          }
+          onClose={() => { setAgentOpen(false); setLinkProduct(null); }}
         />
       )}
     </div>

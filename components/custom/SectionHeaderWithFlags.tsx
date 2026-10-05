@@ -224,12 +224,15 @@ export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
   return (
     <div className="w-full overflow-hidden transition-all duration-200">
       <div 
-        className={`flex items-center justify-between py-2 border-b border-gray-200 ${allowCollapse ? 'cursor-pointer' : ''}`}
+        className={`flex items-center justify-between gap-x-3 py-2 border-b border-gray-200 ${allowCollapse ? 'cursor-pointer' : ''}`}
         onClick={toggleExpand}
       >
         <div className="flex items-center gap-2 min-w-0">
           {Icon && <Icon className={cn("h-5 w-5 flex-shrink-0", iconColorClass)} />}
-          <span className={cn("text-lg font-semibold truncate", titleColorClass)}>{title}</span>
+          {/* The title holds one line. In a narrow column (two sections side by
+              side) it is the right-hand actions that compress, not the heading —
+              a wrapped heading reads as broken layout. */}
+          <span className={cn("text-lg font-semibold whitespace-nowrap", titleColorClass)}>{title}</span>
           {flagSummaryPosition === 'title' && summaryChip && (
             <span className="ml-1 flex items-center" onClick={(e) => e.stopPropagation()}>{summaryChip}</span>
           )}
@@ -251,7 +254,9 @@ export const SectionHeaderWithFlags: FC<SectionHeaderWithFlagsProps> = ({
             </button>
           )}
         </div>
-        <div className="flex items-center gap-2 ml-auto flex-shrink-0">
+        {/* Actions stay on the heading's line. They may shrink (min-w-0) but never
+            wrap underneath it. */}
+        <div className="flex min-w-0 items-center justify-end gap-2 ml-auto whitespace-nowrap">
           {flagSummaryLabel ? (flagSummaryPosition === 'right' ? summaryChip : null) : flagTypeOrderList.map(flagType => {
             const flagConfig = {
                extremeNegative: { flags: extremeNegativeFlags, label: "Severe", color: "red" as ColorScheme, icon: <XCircle className="h-3.5 w-3.5" /> },

@@ -1,7 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { CalendarClock, Check, CircleCheck, Eye, FileText, MessageSquareText, Pencil, Plus, Search, TicketCheck, UsersRound } from "lucide-react";
+import { CalendarClock, Check, CircleCheck, Eye, FileText, Link2, MessageSquareText, Pencil, Plus, Search, TicketCheck, UsersRound } from "lucide-react";
+import rmProfile from "@/app/idbi-data/rm.json";
 
 import { useWorkspaceData } from "@/components/idbi/workspaceData";
 import { cn } from "@/lib/utils";
@@ -33,7 +34,7 @@ function statusTone(status: string) {
   return "amber" as const;
 }
 
-export function RequestsActivityTab({ requestedAction = null, onActionConsumed }: { requestedAction?: ActionKind | null; onActionConsumed?: () => void }) {
+export function RequestsActivityTab({ requestedAction = null, onActionConsumed, onSendApplicationLink }: { requestedAction?: ActionKind | null; onActionConsumed?: () => void; onSendApplicationLink?: (product: { code: string; label: string }) => void }) {
   const data = useWorkspaceData();
   const [view, setView] = React.useState("allActivity");
   const [type, setType] = React.useState("all");
@@ -46,6 +47,8 @@ export function RequestsActivityTab({ requestedAction = null, onActionConsumed }
   const [formType, setFormType] = React.useState("General Relationship");
   const [formTitle, setFormTitle] = React.useState("");
   const [editing, setEditing] = React.useState(false);
+  // Product whose application link is being sent; null closes the dialog.
+  const [linkProduct, setLinkProduct] = React.useState<{ code: string; label: string } | null>(null);
   const [draft, setDraft] = React.useState({ status: "", type: "", currentState: "", nextAction: "" });
   // Edits made in the sheet, keyed by row id, layered over the fixture rows.
   const [edits, setEdits] = React.useState<Record<string, Partial<FeedRow>>>({});
@@ -247,7 +250,16 @@ export function RequestsActivityTab({ requestedAction = null, onActionConsumed }
     <div className="space-y-10">
       <section>
         <SectionHeader icon={Plus} title="Quick Actions" />
-        <div className="flex flex-wrap gap-2">{(["interaction", "ticket", "opportunity", "followup"] as ActionKind[]).map(kind => <ActionButton key={kind} variant={kind === "interaction" ? "default" : "outline"} onClick={() => setComposer(kind)}>{kind === "interaction" ? <MessageSquareText /> : kind === "ticket" ? <TicketCheck /> : kind === "opportunity" ? <Plus /> : <CalendarClock />}{actionCopy[kind].title}</ActionButton>)}</div>
+        <div className="flex flex-wrap gap-2">
+          {(["interaction", "ticket", "opportunity", "followup"] as ActionKind[]).map(kind => <ActionButton key={kind} variant={kind === "interaction" ? "default" : "outline"} onClick={() => setComposer(kind)}>{kind === "interaction" ? <MessageSquareText /> : kind === "ticket" ? <TicketCheck /> : kind === "opportunity" ? <Plus /> : <CalendarClock />}{actionCopy[kind].title}</ActionButton>)}
+          {/* Carries the RM's id so a completed application attributes back to them. */}
+          <ActionButton
+            variant="default"
+            onClick={() => onSendApplicationLink?.({ code: "working-capital", label: "Working Capital" })}
+          >
+            <Link2 />Send application link
+          </ActionButton>
+        </div>
         {activeComposer && (
           <form onSubmit={submit} className="mt-3 rounded-lg border border-blue-200 bg-blue-50/40 p-4">
             <div className="flex items-center justify-between gap-3">
@@ -322,6 +334,7 @@ export function RequestsActivityTab({ requestedAction = null, onActionConsumed }
           {selected && renderDetail(selected)}
         </SheetContent>
       </Sheet>
+
     </div>
   );
 }

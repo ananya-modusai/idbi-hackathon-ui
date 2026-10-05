@@ -15,6 +15,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { ModusMark } from "./ModusMark";
+import { ApplicationLinkComposer, ApplicationLinkProduct } from "./ApplicationLinkComposer";
 import { ModusMarkAnimated } from "./ModusMarkAnimated";
 import { AgentMarkdown } from "./AgentMarkdown";
 import { ActivityTrail, Trail } from "./ActivityTrail";
@@ -48,13 +49,29 @@ interface ModusAgentPanelProps {
   starters?: Suggestion[];
   /** Called with a starter's `action` id once its reply has been played. */
   onAction?: (action: string) => void;
+  /**
+   * When set, the panel runs the application-link composer instead of the chat:
+   * the agent asks for a channel, drafts a channel-native message, and shows a
+   * customer's-eye preview. Opening this task is what the "Send application
+   * link" action does — it belongs in the agent, not a separate dialog.
+   */
+  applicationLink?: {
+    customerId: string;
+    customerMobile?: string;
+    customerEmail?: string;
+    product: ApplicationLinkProduct;
+    onShared: (channelLabel: string, url: string) => void;
+  } | null;
 }
 
 const now = () => new Date().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", hour12: false });
 
 export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
   customerName, healthScore, healthBand, openMatters, seedPrompt, onClose, extraSuggestions = [], starters, onAction,
+  applicationLink = null,
 }) => {
+  const [linkInstruction, setLinkInstruction] = useState<string | null>(null);
+  const [busyLink] = useState(false);
   const first = customerName.split(" ")[0];
 
   const baseSuggestions: Suggestion[] = [
@@ -289,6 +306,15 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
 
   const send = () => {
     const text = value.trim();
+    // With an application-link task open, the input drives the composer's
+    // drafts rather than the canned Q&A — one input, as it should be.
+    if (applicationLink) {
+      if (!text || busyLink) return;
+      setTurns(t => [...t, { role: "user", text, at: now() }]);
+      setLinkInstruction(text);
+      setValue("");
+      return;
+    }
     // An attachment on its own is a valid thing to send — the text is optional.
     if ((!text && attachments.length === 0) || thinking || stream) return;
     const files = attachments.map(a => ({ name: a.file.name, sizeLabel: formatBytes(a.file.size) }));
@@ -303,7 +329,15 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
   useEffect(() => {
     if (seedPrompt && seedPrompt !== lastSeed.current) {
       lastSeed.current = seedPrompt;
-      ask(seedPrompt);
+      if (applicationLink) {
+        // Post the RM's request as a plain turn. Running it through ask() would
+        // play a canned reply (wrong for this task) AND set `busy`, which
+        // disables the send button — so refinements typed afterwards silently
+        // did nothing.
+        setTurns(t => [...t, { role: "user", text: seedPrompt, at: now() }]);
+      } else {
+        ask(seedPrompt);
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [seedPrompt]);
@@ -451,6 +485,23 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
               )
             )}
 
+            {/* The application-link task lives in the thread, after the turns —
+                the RM's request reads as a normal message and the agent's reply
+                is these options and previews. Refinements come from the panel's
+                own input below, so there is only one place to type. */}
+            {applicationLink && (
+              <ApplicationLinkComposer
+                customerName={customerName}
+                customerId={applicationLink.customerId}
+                customerMobile={applicationLink.customerMobile}
+                customerEmail={applicationLink.customerEmail}
+                product={applicationLink.product}
+                instruction={linkInstruction}
+                onInstructionConsumed={() => setLinkInstruction(null)}
+                onShared={applicationLink.onShared}
+              />
+            )}
+
             {stream && (
               <div className="mb-6">
                 {stream.steps > 0 && <ActivityTrail trail={stream.trail} revealed={stream.steps} running={stream.running} defaultOpen />}
@@ -482,9 +533,13 @@ export const ModusAgentPanel: FC<ModusAgentPanelProps> = ({
 
       {/* Composer */}
       <div className="shrink-0 px-4 pb-4 pt-2">
-        {/* Sets expectations before the RM types: the answers are prepared, not live. */}
+        {/* Sets expectations before the RM types. The application-link composer
+            IS live model output, so the curated-response notice would be wrong
+            there. */}
         <p className="mb-2 px-1 text-center text-[11px] leading-4 text-gray-400">
-          Responses are curated for this walkthrough and illustrate intended behaviour rather than live model output.
+          {applicationLink
+            ? "Drafts are generated live. Review before sending."
+            : "Responses are curated for this walkthrough and illustrate intended behaviour rather than live model output."}
         </p>
         {attachError && <p className="mb-2 text-xs text-red-600">{attachError}</p>}
         <div className="rounded-3xl border border-gray-200 bg-white shadow-md focus-within:border-blue-300 focus-within:ring-1 focus-within:ring-blue-200">

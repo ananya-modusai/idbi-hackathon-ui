@@ -1,0 +1,11 @@
+{
+  "_note": "Logged-in Relationship Manager. Synthetic for the demo, but built from real IDBI conventions: SOL ID is a genuine 5-6 digit IDBI branch code, and IFSC for IDBI is IBKL0 + 6 digits. Employee-code formats are not published, so rm_id is invented.",
+  "rm_id": "RM-IDBI-1359-0417",
+  "name": "Ananya Rao",
+  "role": "Relationship Manager",
+  "branch": "Kila Raipur",
+  "sol_id": "1359",
+  "ifsc": "IBKL0001359",
+  "email": "ananya.rao@idbibank.in",
+  "apply_base_url": "https://www.idbibank.in/apply"
+}

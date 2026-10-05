@@ -1,4 +1,5 @@
 import React from 'react';
+import { Download } from 'lucide-react';
 import { ListActionButton, ActionButton } from './ActionButton';
 
 interface ArtifactHeaderProps {
@@ -17,6 +18,8 @@ interface ArtifactHeaderProps {
   actionButtons?: ListActionButton[];
   // Right aligned content
   rightAlignedContent?: React.ReactNode;
+  // Renders a CSV download button when supplied; omit it and no button appears.
+  onDownloadCSV?: () => void;
 }
 
 export const ArtifactHeader: React.FC<ArtifactHeaderProps> = ({ 
@@ -31,7 +34,8 @@ export const ArtifactHeader: React.FC<ArtifactHeaderProps> = ({
   toggleIcons,
   actionButton,
   actionButtons,
-  rightAlignedContent
+  rightAlignedContent,
+  onDownloadCSV
 }) => {
   const formattedDate = lastUpdatedAt
     ? new Intl.DateTimeFormat('en-GB', {
@@ -64,6 +68,16 @@ export const ArtifactHeader: React.FC<ArtifactHeaderProps> = ({
             <div className="flex items-center">
               {rightAlignedContent}
             </div>
+          )}
+          {/* Download CSV */}
+          {onDownloadCSV && (
+            <ActionButton
+              text="Download CSV"
+              icon={Download}
+              color="gray"
+              onClick={onDownloadCSV}
+              border={true}
+            />
           )}
           {/* Action Buttons */}
           {(actionButtons && actionButtons.length > 0) && (

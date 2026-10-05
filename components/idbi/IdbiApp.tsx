@@ -6,9 +6,13 @@ import { CustomersScreen } from "./CustomersScreen";
 import { CustomerWorkspace, WorkspaceCustomer } from "./CustomerWorkspace";
 import { SelectCustomerState } from "./SelectCustomerState";
 import { SalesAlertsScreen } from "./SalesAlertsScreen";
+import { PortfolioSignalsScreen } from "./mis-portfolio/PortfolioSignalsScreen";
+import screenData from "@/app/idbi-data/customer-screen-1.json";
 import { useIdbiActiveContextStore } from "./ActiveContext/store";
 
-type Section = "Workspace" | "Customer" | "Opportunity Signals";
+type Section = "Workspace" | "Customer" | "Opportunity Signals" | "Portfolio Signals";
+
+const SECTIONS: Section[] = ["Workspace", "Customer", "Opportunity Signals", "Portfolio Signals"];
 
 export const IdbiApp: FC = () => {
   const [section, setSection] = useState<Section>("Workspace");
@@ -21,11 +25,28 @@ export const IdbiApp: FC = () => {
     setCustomer(c);
     setSection("Customer");
     // The topbar names whoever is open, set here rather than by each screen.
+    //
+    // ⚠️ DEMO-SHORTCUT / PRODUCTION-BLOCKER — raise before any real build.
+    // This stores the customer's NAME as the active-context value, and downstream
+    // screens (notably CustomerLinkagesTab, which reads activeContexts.customer)
+    // then use it as the identity KEY for data lookups.
+    // Risk: names are not unique. Two customers sharing a name collide on the same
+    // key, and one will silently render the other's data — wrong-customer disclosure.
+    // Kept for the demo because the context value also drives the topbar label,
+    // breadcrumb and command palette; re-pointing it is not a safe pre-demo change.
+    // Fix: carry customer_id as the context identity and keep the name display-only.
     setContext("customer", c.name);
   };
 
+  // Portfolio Signals hands back a CID; look up the full record so the customer
+  // space opens exactly as it does from the Workspace list.
+  const openCustomerById = (customerId: string) => {
+    const match = (screenData.customers as any[]).find((c) => c.customer_id === customerId);
+    if (match) openCustomer(match as WorkspaceCustomer);
+  };
+
   const navigate = (label: string) => {
-    if (label === "Workspace" || label === "Customer" || label === "Opportunity Signals") setSection(label as Section);
+    if ((SECTIONS as string[]).includes(label)) setSection(label as Section);
   };
 
   const breadcrumb =
@@ -40,7 +61,9 @@ export const IdbiApp: FC = () => {
       onNavigate={navigate}
       onSelectCustomer={(c) => openCustomer(c as WorkspaceCustomer)}
     >
-      {section === "Opportunity Signals" ? (
+      {section === "Portfolio Signals" ? (
+        <PortfolioSignalsScreen onOpenCustomer={openCustomerById} />
+      ) : section === "Opportunity Signals" ? (
         <SalesAlertsScreen onGoToCustomers={() => setSection("Workspace")} />
       ) : section === "Workspace" ? (
         <CustomersScreen onOpenCustomer={(c) => openCustomer(c as WorkspaceCustomer)} />
